@@ -17,7 +17,7 @@ const components = {
 
 export default function Markdown({ children }) {
   return (
-    <div className="prose prose-slate max-w-none prose-headings:scroll-mt-20 prose-h3:mt-6 prose-code:rounded prose-code:bg-slate-100 prose-code:px-1 prose-code:before:content-none prose-code:after:content-none prose-table:text-sm prose-th:bg-slate-50 prose-pre:p-4">
+    <div className="prose prose-slate max-w-none prose-headings:scroll-mt-20 prose-h3:mt-6 prose-code:rounded prose-code:bg-slate-100 prose-code:px-1 prose-code:before:content-none prose-code:after:content-none prose-table:text-sm prose-th:bg-slate-50 prose-pre:p-4 [&_pre_code]:bg-transparent [&_pre_code]:p-0 [&_pre_code]:text-inherit [&_pre_code]:rounded-none">
       <ReactMarkdown remarkPlugins={[remarkGfm]} components={components}>{children}</ReactMarkdown>
     </div>
   );
