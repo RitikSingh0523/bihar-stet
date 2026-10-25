@@ -1,0 +1,458 @@
+[
+ {
+  "q": "According to John Adams, teaching is a bipolar process. The two poles are:",
+  "options": [
+   "Teacher and learner",
+   "Curriculum and examination",
+   "School and community",
+   "Teacher and principal"
+  ],
+  "answer": 0,
+  "exp": "Adams viewed teaching as a face-to-face interaction between the teacher and the learner.",
+  "sub": "Teaching-learning process"
+ },
+ {
+  "q": "The project method of teaching was popularised by:",
+  "options": [
+   "Maria Montessori",
+   "W. H. Kilpatrick",
+   "H. E. Armstrong",
+   "Helen Parkhurst"
+  ],
+  "answer": 1,
+  "exp": "Kilpatrick developed the project method on the basis of John Dewey's philosophy.",
+  "sub": "Teaching methods"
+ },
+ {
+  "q": "In Edgar Dale's Cone of Experience, the base of the cone (most concrete) is:",
+  "options": [
+   "verbal symbols",
+   "visual symbols",
+   "direct purposeful experiences",
+   "radio and recordings"
+  ],
+  "answer": 2,
+  "exp": "Dale placed direct experience at the bottom and verbal symbols at the top.",
+  "sub": "Teaching aids and audio-visual media"
+ },
+ {
+  "q": "Microteaching was first developed at:",
+  "options": [
+   "Harvard University",
+   "University of Oxford",
+   "University of Delhi",
+   "Stanford University, USA"
+  ],
+  "answer": 3,
+  "exp": "Dwight Allen and colleagues developed it at Stanford in the early 1960s.",
+  "sub": "Microteaching and teaching skills"
+ },
+ {
+  "q": "In Herbart's five formal steps, the step that follows 'presentation' is:",
+  "options": [
+   "comparison and association",
+   "application",
+   "preparation",
+   "generalisation"
+  ],
+  "answer": 0,
+  "exp": "The order is preparation, presentation, comparison (association), generalisation, application.",
+  "sub": "Lesson planning"
+ },
+ {
+  "q": "The word 'curriculum' is derived from the Latin word 'currere', which means:",
+  "options": [
+   "to teach",
+   "to run a race or course",
+   "to write",
+   "to examine"
+  ],
+  "answer": 1,
+  "exp": "Curriculum originally meant a race course or track to be run.",
+  "sub": "Curriculum"
+ },
+ {
+  "q": "Formative assessment is conducted:",
+  "options": [
+   "only at the end of the year",
+   "only before admission",
+   "during the learning process to improve teaching and learning",
+   "only for promotion"
+  ],
+  "answer": 2,
+  "exp": "It gives continuous feedback, so that gaps can be corrected immediately.",
+  "sub": "Evaluation, formative and summative assessment, CCE"
+ },
+ {
+  "q": "A blueprint of a question paper is a:",
+  "options": [
+   "list of students' roll numbers",
+   "timetable of examinations",
+   "seating arrangement",
+   "three-dimensional chart showing weightage to objectives, content and question forms"
+  ],
+  "answer": 3,
+  "exp": "The blueprint ensures balanced coverage of objectives, content and types of questions.",
+  "sub": "Tests, blueprint and item analysis"
+ },
+ {
+  "q": "The validity of a test refers to:",
+  "options": [
+   "the extent to which it measures what it is meant to measure",
+   "its consistency of scores",
+   "its length",
+   "its cost"
+  ],
+  "answer": 0,
+  "exp": "A valid test measures the intended attribute.",
+  "sub": "Validity and reliability"
+ },
+ {
+  "q": "The main purpose of a diagnostic test is to:",
+  "options": [
+   "rank students for promotion",
+   "identify the specific weaknesses of learners and their causes",
+   "award certificates",
+   "decide admission"
+  ],
+  "answer": 1,
+  "exp": "Diagnostic testing locates learning difficulties for remediation.",
+  "sub": "Diagnostic testing and remedial teaching"
+ },
+ {
+  "q": "The term 'action research' was first used by:",
+  "options": [
+   "B. F. Skinner",
+   "Jean Piaget",
+   "Kurt Lewin",
+   "Edward Thorndike"
+  ],
+  "answer": 2,
+  "exp": "Kurt Lewin introduced the term in the 1940s.",
+  "sub": "Action research and educational research"
+ },
+ {
+  "q": "SWAYAM is:",
+  "options": [
+   "a school examination board",
+   "a computer language",
+   "a social media site only for teachers",
+   "a national platform that offers free online courses (MOOCs) to learners in India"
+  ],
+  "answer": 3,
+  "exp": "SWAYAM is the Government of India MOOC platform from the Ministry of Education.",
+  "sub": "ICT in education"
+ },
+ {
+  "q": "The school structure proposed in NEP 2020 is:",
+  "options": [
+   "5+3+3+4",
+   "10+2",
+   "8+4",
+   "6+3+3"
+  ],
+  "answer": 0,
+  "exp": "The 5+3+3+4 design replaces the earlier 10+2 structure.",
+  "sub": "NEP 2020 and education bodies"
+ },
+ {
+  "q": "Which of the following is the most important quality of a good teacher?",
+  "options": [
+   "Strictness only",
+   "Empathy and subject mastery",
+   "Wealth",
+   "Physical strength only"
+  ],
+  "answer": 1,
+  "exp": "Understanding learners together with command of the subject makes teaching effective.",
+  "sub": "Teacher qualities and professional ethics"
+ },
+ {
+  "q": "Which of the following is NOT a core element of computational thinking?",
+  "options": [
+   "Decomposition",
+   "Pattern recognition",
+   "Memorising code",
+   "Abstraction"
+  ],
+  "answer": 2,
+  "exp": "The core elements are decomposition, pattern recognition, abstraction and algorithm design.",
+  "sub": "Pedagogy of computer science"
+ },
+ {
+  "q": "The maxim 'from concrete to abstract' in teaching means that a teacher should:",
+  "options": [
+   "begin with definitions and later show examples",
+   "begin with real objects or examples before introducing ideas and symbols",
+   "teach only the abstract part of every topic",
+   "avoid examples when the topic is difficult"
+  ],
+  "answer": 1,
+  "exp": "Learners grasp ideas more easily when they first see or handle concrete things.",
+  "sub": "Teaching-learning process"
+ },
+ {
+  "q": "The major weakness of the lecture method is that:",
+  "options": [
+   "it cannot cover large syllabus",
+   "it needs expensive apparatus",
+   "students remain mostly passive listeners",
+   "it ignores the teacher's knowledge"
+  ],
+  "answer": 2,
+  "exp": "The lecture method is teacher-centred and gives little scope for learner activity.",
+  "sub": "Teaching methods"
+ },
+ {
+  "q": "Which of the following is a purely audio aid?",
+  "options": [
+   "Film",
+   "Chart",
+   "Model",
+   "Radio broadcast"
+  ],
+  "answer": 3,
+  "exp": "Radio gives only sound; film combines sound and picture.",
+  "sub": "Teaching aids and audio-visual media"
+ },
+ {
+  "q": "A typical microteaching lesson lasts about:",
+  "options": [
+   "5 to 10 minutes with a small group of students",
+   "40 to 45 minutes with a full class",
+   "2 hours with 100 students",
+   "1 minute with one student"
+  ],
+  "answer": 0,
+  "exp": "Microteaching scales down time, class size and content.",
+  "sub": "Microteaching and teaching skills"
+ },
+ {
+  "q": "Which of the following is the last step of the Herbartian plan?",
+  "options": [
+   "Preparation",
+   "Application",
+   "Presentation",
+   "Comparison"
+  ],
+  "answer": 1,
+  "exp": "Learners apply the generalised rule to new situations at the end.",
+  "sub": "Lesson planning"
+ },
+ {
+  "q": "The hidden curriculum refers to:",
+  "options": [
+   "the syllabus printed in the textbook",
+   "the examination scheme",
+   "unplanned values and attitudes learnt through school life and culture",
+   "extra tuition classes"
+  ],
+  "answer": 2,
+  "exp": "Hidden curriculum is learned implicitly from the school environment and teacher behaviour.",
+  "sub": "Curriculum"
+ },
+ {
+  "q": "Summative assessment is mainly used to:",
+  "options": [
+   "monitor daily progress for correction",
+   "diagnose learning difficulties only",
+   "decide the seating plan",
+   "judge the overall achievement at the end of a course"
+  ],
+  "answer": 3,
+  "exp": "It is used for grading, certification and promotion.",
+  "sub": "Evaluation, formative and summative assessment, CCE"
+ },
+ {
+  "q": "A major limitation of essay-type questions is:",
+  "options": [
+   "subjectivity in scoring",
+   "they cannot test expression",
+   "they cannot test organisation of ideas",
+   "they are easy to guess"
+  ],
+  "answer": 0,
+  "exp": "Different examiners may give different marks to the same answer.",
+  "sub": "Tests, blueprint and item analysis"
+ },
+ {
+  "q": "The reliability of a test refers to:",
+  "options": [
+   "the attractiveness of the paper",
+   "the consistency of the test scores",
+   "the number of questions only",
+   "the speed of checking"
+  ],
+  "answer": 1,
+  "exp": "A reliable test gives similar results on repeated administration.",
+  "sub": "Validity and reliability"
+ },
+ {
+  "q": "Remedial teaching is given to:",
+  "options": [
+   "only toppers",
+   "only new teachers",
+   "students having specific learning difficulties identified through diagnosis",
+   "every student at the same time without need"
+  ],
+  "answer": 2,
+  "exp": "It is corrective instruction targeted at diagnosed difficulties.",
+  "sub": "Diagnostic testing and remedial teaching"
+ },
+ {
+  "q": "In education, action research was popularised by:",
+  "options": [
+   "John Adams",
+   "Jerome Bruner",
+   "Maria Montessori",
+   "Stephen Corey"
+  ],
+  "answer": 3,
+  "exp": "Corey applied action research to improve school practices.",
+  "sub": "Action research and educational research"
+ },
+ {
+  "q": "The full form of MOOC is:",
+  "options": [
+   "Massive Open Online Course",
+   "Massive Offline Output Course",
+   "Main Online Open Class",
+   "Multiple Open Optional Course"
+  ],
+  "answer": 0,
+  "exp": "MOOCs are open-access online courses for large-scale participation.",
+  "sub": "ICT in education"
+ },
+ {
+  "q": "In the 5+3+3+4 structure, the 'foundational stage' lasts for:",
+  "options": [
+   "3 years, ages 8 to 11",
+   "5 years, covering ages 3 to 8",
+   "4 years, ages 14 to 18",
+   "2 years, ages 6 to 8"
+  ],
+  "answer": 1,
+  "exp": "It includes three years of pre-school and Grades 1 and 2.",
+  "sub": "NEP 2020 and education bodies"
+ },
+ {
+  "q": "Professional ethics requires a teacher to:",
+  "options": [
+   "share marks publicly to shame students",
+   "discuss students' family problems with strangers",
+   "keep students' personal information confidential",
+   "favour wealthy students"
+  ],
+  "answer": 2,
+  "exp": "Confidentiality respects the dignity and privacy of students.",
+  "sub": "Teacher qualities and professional ethics"
+ },
+ {
+  "q": "'Unplugged' activities in computer science teaching are:",
+  "options": [
+   "activities done only on the internet",
+   "activities with robots only",
+   "activities that need servers",
+   "activities that teach computing concepts without using computers"
+  ],
+  "answer": 3,
+  "exp": "Examples include sorting with cards or searching games.",
+  "sub": "Pedagogy of computer science"
+ },
+ {
+  "q": "In Morris Hunt's classification, which level of teaching is the highest?",
+  "options": [
+   "Memory level",
+   "Understanding level",
+   "Reflective level",
+   "Rote level"
+  ],
+  "answer": 2,
+  "exp": "Memory is the lowest, understanding is the middle and reflective level (problem-centred, critical thinking) is the highest.",
+  "sub": "Teaching-learning process"
+ },
+ {
+  "q": "The demonstration method is most suitable when:",
+  "options": [
+   "students need to practise typing speed",
+   "a topic is purely theoretical",
+   "the class has very few students",
+   "an experiment is costly or hazardous for students to perform individually"
+  ],
+  "answer": 3,
+  "exp": "The teacher performs the activity while students observe, saving cost and avoiding danger.",
+  "sub": "Teaching methods"
+ },
+ {
+  "q": "Which of the following is an audio-visual aid?",
+  "options": [
+   "Educational video film",
+   "Gramophone record",
+   "Wall chart",
+   "Photograph"
+  ],
+  "answer": 0,
+  "exp": "A video film presents both pictures and sound.",
+  "sub": "Teaching aids and audio-visual media"
+ },
+ {
+  "q": "Which is the correct sequence of the microteaching cycle?",
+  "options": [
+   "Plan, test, evaluate, promote, certify",
+   "Teach, feedback, re-plan, re-teach, re-feedback",
+   "Feedback, teach, plan, certify, re-teach",
+   "Teach, test, grade, promote, stop"
+  ],
+  "answer": 1,
+  "exp": "The cycle is repeated until the skill is mastered.",
+  "sub": "Microteaching and teaching skills"
+ },
+ {
+  "q": "Instructional objectives in a lesson plan should be written in:",
+  "options": [
+   "vague general terms",
+   "terms of teacher activity only",
+   "observable and measurable behavioural terms",
+   "terms of the textbook chapters"
+  ],
+  "answer": 2,
+  "exp": "Behavioural objectives can be checked by evaluation.",
+  "sub": "Lesson planning"
+ },
+ {
+  "q": "An example of hidden curriculum is:",
+  "options": [
+   "students learning algebra from a textbook",
+   "students solving a prescribed exercise",
+   "students taking a written test",
+   "students learning punctuality by watching their teacher always come on time"
+  ],
+  "answer": 3,
+  "exp": "Such learning is not formally listed in any syllabus.",
+  "sub": "Curriculum"
+ },
+ {
+  "q": "Which of the following is an example of formative assessment?",
+  "options": [
+   "A short class quiz followed by feedback",
+   "The annual board examination",
+   "The final semester examination",
+   "The entrance test"
+  ],
+  "answer": 0,
+  "exp": "A short quiz with feedback helps improve learning during the course.",
+  "sub": "Evaluation, formative and summative assessment, CCE"
+ },
+ {
+  "q": "Objective-type tests are called objective because:",
+  "options": [
+   "they test only objectives",
+   "scoring does not depend on the examiner's personal judgement",
+   "they have no answers",
+   "they are always easy"
+  ],
+  "answer": 1,
+  "exp": "The answer key is fixed, so any scorer gives the same marks.",
+  "sub": "Tests, blueprint and item analysis"
+ }
+]

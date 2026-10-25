@@ -1,0 +1,482 @@
+[
+ {
+  "q": "Assertion (A): The NAND gate is called a universal gate.\nReason (R): NOT, AND and OR operations can all be realised using only NAND gates.\nWhich is correct?",
+  "options": [
+   "Both A and R are true but R does not explain A",
+   "A is true but R is false",
+   "Both A and R are true and R explains A",
+   "A is false but R is true"
+  ],
+  "answer": 2,
+  "exp": "Since every basic gate can be built from NAND, any logic function can be implemented with NAND alone.",
+  "sub": "Logic gates"
+ },
+ {
+  "q": "The hexadecimal representation of decimal 2023 is",
+  "options": [
+   "7E3",
+   "8E7",
+   "7D7",
+   "7E7"
+  ],
+  "answer": 3,
+  "exp": "2023 = 7×256 + 231; 231 = 14×16 + 7, so 7, E, 7.",
+  "sub": "Number systems"
+ },
+ {
+  "q": "The minimum number of flip-flops required to count from 0 to 1000 in a binary counter is",
+  "options": [
+   "10",
+   "8",
+   "9",
+   "11"
+  ],
+  "answer": 0,
+  "exp": "1001 states need 2^n ≥ 1001; 2⁹ = 512 < 1001 ≤ 1024 = 2¹⁰.",
+  "sub": "Counters"
+ },
+ {
+  "q": "The number of distinct Boolean functions of 3 variables is",
+  "options": [
+   "8",
+   "256",
+   "64",
+   "512"
+  ],
+  "answer": 1,
+  "exp": "There are 2³ = 8 minterms and each may be 0 or 1 in a function: 2⁸ = 256.",
+  "sub": "Boolean algebra"
+ },
+ {
+  "q": "In a 4-variable K-map, each cell is adjacent to how many other cells (with wrap-around)?",
+  "options": [
+   "2",
+   "4",
+   "3",
+   "6"
+  ],
+  "answer": 1,
+  "exp": "Each cell differs in exactly one variable from four cells (one per variable).",
+  "sub": "K-map"
+ },
+ {
+  "q": "The product of the binary numbers 1011 and 101 is",
+  "options": [
+   "101111",
+   "111011",
+   "110111",
+   "110011"
+  ],
+  "answer": 2,
+  "exp": "11 × 5 = 55 = 110111₂.",
+  "sub": "Computer arithmetic"
+ },
+ {
+  "q": "The decimal value of the octal number (237)₈ is",
+  "options": [
+   "157",
+   "167",
+   "149",
+   "159"
+  ],
+  "answer": 3,
+  "exp": "2×64 + 3×8 + 7 = 128 + 24 + 7 = 159.",
+  "sub": "Number systems"
+ },
+ {
+  "q": "Which statement about Mealy and Moore machines is correct?",
+  "options": [
+   "In a Moore machine the output depends only on the present state",
+   "In a Mealy machine the output depends only on the present state",
+   "In a Moore machine the output is a function of present state and present input",
+   "A Mealy machine always needs more states than an equivalent Moore machine"
+  ],
+  "answer": 0,
+  "exp": "Moore outputs are functions of state alone; Mealy outputs depend on state and input and usually need fewer states.",
+  "sub": "Sequential circuits"
+ },
+ {
+  "q": "The sum output of a full adder, F = Σm(1, 2, 4, 7), can be implemented using a 3-to-8 decoder (active-high outputs) and",
+  "options": [
+   "one 4-input AND gate",
+   "one 3-input OR gate",
+   "one 4-input OR gate",
+   "four 2-input AND gates only"
+  ],
+  "answer": 2,
+  "exp": "OR the four decoder outputs corresponding to minterms 1, 2, 4 and 7.",
+  "sub": "MUX/Decoder"
+ },
+ {
+  "q": "The minimum number of 2-input NAND gates required to realise a half adder (both Sum and Carry) is",
+  "options": [
+   "4",
+   "6",
+   "7",
+   "5"
+  ],
+  "answer": 3,
+  "exp": "Sum (XOR) takes 4 NANDs sharing a first gate; the carry (AB) reuses that gate's output via one more inverting NAND, total 5.",
+  "sub": "Adders"
+ },
+ {
+  "q": "Sign-extending the 8-bit 2's complement number 10110101 to 16 bits gives",
+  "options": [
+   "1111111110110101",
+   "0000000010110101",
+   "1000000010110101",
+   "1111111100110101"
+  ],
+  "answer": 0,
+  "exp": "Sign extension replicates the sign bit (1) in the added upper bits.",
+  "sub": "Computer arithmetic"
+ },
+ {
+  "q": "The bitwise XOR of the hexadecimal values B6 and CC is",
+  "options": [
+   "84",
+   "7A",
+   "FE",
+   "3A"
+  ],
+  "answer": 1,
+  "exp": "B6 = 1011 0110, CC = 1100 1100; XOR = 0111 1010 = 7A.",
+  "sub": "Computer arithmetic"
+ },
+ {
+  "q": "Overflow in 2's complement addition is detected by",
+  "options": [
+   "XOR of the carry into and the carry out of the sign bit",
+   "carry out of the MSB alone",
+   "carry into the MSB alone",
+   "AND of the carry into and carry out of the MSB"
+  ],
+  "answer": 0,
+  "exp": "Overflow occurs exactly when these two carries differ.",
+  "sub": "Computer arithmetic"
+ },
+ {
+  "q": "An arithmetic right shift by 2 positions on the 8-bit 2's complement number 11010100 gives",
+  "options": [
+   "00110101",
+   "11110100",
+   "11110101",
+   "01110101"
+  ],
+  "answer": 2,
+  "exp": "The sign bit is replicated while shifting: 11010100 → 11110101 (-44 → -11).",
+  "sub": "Computer arithmetic"
+ },
+ {
+  "q": "In a 3-bit synchronous up counter built with T flip-flops (Q2 the MSB), the T input of the MSB flip-flop is",
+  "options": [
+   "Q1 + Q0",
+   "Q1'",
+   "1",
+   "Q1·Q0"
+  ],
+  "answer": 3,
+  "exp": "The MSB must toggle only when all lower bits are 1.",
+  "sub": "Counters"
+ },
+ {
+  "q": "The output of the circuit Y = NAND( NAND(A, B), NAND(C, D) ) is",
+  "options": [
+   "(A + B)(C + D)",
+   "AB + CD",
+   "ABCD",
+   "A'B' + C'D'"
+  ],
+  "answer": 1,
+  "exp": "Y = ((AB)'·(CD)')' = AB + CD.",
+  "sub": "Logic gates"
+ },
+ {
+  "q": "Standard ASCII uses how many bits to represent each character?",
+  "options": [
+   "5",
+   "7",
+   "6",
+   "8"
+  ],
+  "answer": 1,
+  "exp": "Standard ASCII is a 7-bit code with 128 characters; the 8th bit is for parity or extended sets.",
+  "sub": "Codes"
+ },
+ {
+  "q": "The Gray code equivalent of the binary number 101101 is",
+  "options": [
+   "111011",
+   "110111",
+   "111010",
+   "100110"
+  ],
+  "answer": 0,
+  "exp": "g5 = 1, then 1⊕0 = 1, 0⊕1 = 1, 1⊕1 = 0, 1⊕0 = 1, 0⊕1 = 1, giving 111011.",
+  "sub": "Codes"
+ },
+ {
+  "q": "The IEEE 754 single-precision representation of -2.0 in hexadecimal is",
+  "options": [
+   "40000000",
+   "BF800000",
+   "C0800000",
+   "C0000000"
+  ],
+  "answer": 3,
+  "exp": "-2.0 = -1.0 × 2¹; sign 1, exponent 128 = 10000000, mantissa 0 → 1100 0000 ... = C0000000.",
+  "sub": "Floating point"
+ },
+ {
+  "q": "Which of the following is NOT a characteristic of an asynchronous (ripple) counter?",
+  "options": [
+   "Each flip-flop is clocked by the output of the preceding stage",
+   "Its speed is limited by cumulative propagation delay",
+   "All flip-flops receive the clock pulse simultaneously",
+   "Its hardware is simpler than a synchronous counter"
+  ],
+  "answer": 2,
+  "exp": "Simultaneous clocking of all stages characterises synchronous counters.",
+  "sub": "Counters"
+ },
+ {
+  "q": "The decimal value of the binary fraction 0.1101 is",
+  "options": [
+   "0.8125",
+   "0.6875",
+   "0.75",
+   "0.9375"
+  ],
+  "answer": 0,
+  "exp": "0.5 + 0.25 + 0.0625 = 0.8125.",
+  "sub": "Number systems"
+ },
+ {
+  "q": "A static-1 hazard in a two-level AND-OR circuit can be removed by",
+  "options": [
+   "reducing the clock frequency",
+   "adding an inverter at the output",
+   "converting every gate to XOR",
+   "adding the redundant (consensus) prime implicant"
+  ],
+  "answer": 3,
+  "exp": "The extra term covers the adjacent cells so the output cannot glitch to 0.",
+  "sub": "Combinational circuits"
+ },
+ {
+  "q": "A 4:1 multiplexer has data inputs I0 = 0, I1 = 1, I2 = 1, I3 = 0 and select lines S1 S0. Its output equals",
+  "options": [
+   "S1 · S0",
+   "S1 ⊕ S0",
+   "S1 + S0",
+   "S1 ⊙ S0"
+  ],
+  "answer": 1,
+  "exp": "Output is 1 only for select values 01 and 10, which is the XOR truth table.",
+  "sub": "MUX/Decoder"
+ },
+ {
+  "q": "In a 4-bit 2's complement system, the bit pattern 1000 represents",
+  "options": [
+   "+8",
+   "-7",
+   "-8",
+   "-0"
+  ],
+  "answer": 2,
+  "exp": "The MSB has weight -2³ = -8, so 1000 = -8.",
+  "sub": "Complements"
+ },
+ {
+  "q": "The smallest positive normalised number in IEEE 754 single precision is",
+  "options": [
+   "2⁻¹²⁷",
+   "2⁻¹²⁶",
+   "2⁻¹⁴⁹",
+   "2⁻¹²⁸"
+  ],
+  "answer": 1,
+  "exp": "Minimum normalised exponent is 1 - 127 = -126 with significand 1.0.",
+  "sub": "Floating point"
+ },
+ {
+  "q": "An 8-bit serial-in shift register is clocked at 1 MHz. The time needed to load an 8-bit word serially is",
+  "options": [
+   "1 μs",
+   "4 μs",
+   "16 μs",
+   "8 μs"
+  ],
+  "answer": 3,
+  "exp": "One bit per clock pulse of period 1 μs: 8 × 1 μs = 8 μs.",
+  "sub": "Registers"
+ },
+ {
+  "q": "The expression A'B'C + A'BC + ABC' + ABC simplifies to",
+  "options": [
+   "A'C + AB",
+   "A'B + AC",
+   "A'C + B",
+   "AB + BC"
+  ],
+  "answer": 0,
+  "exp": "A'C(B' + B) + AB(C' + C) = A'C + AB.",
+  "sub": "Boolean algebra"
+ },
+ {
+  "q": "The function F(A, B, C, D) = Σm(0, 2, 5, 7, 8, 10, 13, 15) simplifies to",
+  "options": [
+   "B ⊕ D",
+   "B'D'",
+   "BD + B'D'",
+   "BD"
+  ],
+  "answer": 2,
+  "exp": "Corners (0, 2, 8, 10) give B'D' and the centre block (5, 7, 13, 15) gives BD, so F = B ⊙ D.",
+  "sub": "K-map"
+ },
+ {
+  "q": "To convert a JK flip-flop into a D flip-flop, the inputs are connected as",
+  "options": [
+   "J = D', K = D",
+   "J = K = D",
+   "J = D, K = D'",
+   "J = K = 1"
+  ],
+  "answer": 2,
+  "exp": "J = D, K = D' gives Q+ = DQ' + DQ = D.",
+  "sub": "Flip-flops"
+ },
+ {
+  "q": "A 16-bit ripple-carry adder uses full adders whose carry delay is 10 ns each. The worst-case carry propagation delay is about",
+  "options": [
+   "80 ns",
+   "160 ns",
+   "320 ns",
+   "10 ns"
+  ],
+  "answer": 1,
+  "exp": "The carry ripples through all 16 stages: 16 × 10 ns = 160 ns.",
+  "sub": "Adders"
+ },
+ {
+  "q": "The octal equivalent of the hexadecimal number (ABC)₁₆ is",
+  "options": [
+   "5274",
+   "5273",
+   "5724",
+   "5247"
+  ],
+  "answer": 0,
+  "exp": "ABC = 1010 1011 1100 = 101 010 111 100 = 5274₈.",
+  "sub": "Number systems"
+ },
+ {
+  "q": "In floating-point addition, the first step performed is to",
+  "options": [
+   "add the mantissas",
+   "normalise the result",
+   "round the result",
+   "align the exponents of the two operands"
+  ],
+  "answer": 3,
+  "exp": "The operand with the smaller exponent must be shifted so exponents match before mantissas are added.",
+  "sub": "Floating point"
+ },
+ {
+  "q": "The sum-of-products expression for the XNOR function of A and B is",
+  "options": [
+   "A'B + AB'",
+   "A + B",
+   "AB + A'B'",
+   "A' + B'"
+  ],
+  "answer": 2,
+  "exp": "XNOR is 1 when both inputs are equal: AB + A'B'.",
+  "sub": "Logic gates"
+ },
+ {
+  "q": "Which of the following is a valid 2-bit Gray code sequence?",
+  "options": [
+   "00, 01, 11, 10",
+   "00, 01, 10, 11",
+   "00, 11, 01, 10",
+   "01, 10, 11, 00"
+  ],
+  "answer": 0,
+  "exp": "Only the first has exactly one bit change between each pair of successive codes.",
+  "sub": "Codes"
+ },
+ {
+  "q": "Which programmable device has a fixed AND array and a programmable OR array?",
+  "options": [
+   "PAL",
+   "PROM",
+   "PLA",
+   "Static RAM"
+  ],
+  "answer": 1,
+  "exp": "A PROM's AND array is a fixed full decoder; its OR array is programmed.",
+  "sub": "PLA/ROM"
+ },
+ {
+  "q": "Assertion (A): Gray code is preferred in rotary shaft position encoders.\nReason (R): Only one bit changes between adjacent positions, which limits transition errors.\nWhich is correct?",
+  "options": [
+   "Both A and R are true but R does not explain A",
+   "A is true but R is false",
+   "A is false but R is true",
+   "Both A and R are true and R explains A"
+  ],
+  "answer": 3,
+  "exp": "With unit-distance coding a misread at a boundary leads to an error of at most one position.",
+  "sub": "Codes"
+ },
+ {
+  "q": "In a full subtractor with A = 0, B = 1 and borrow-in = 1, the Difference and Borrow-out are",
+  "options": [
+   "D = 1, Bout = 1",
+   "D = 0, Bout = 0",
+   "D = 1, Bout = 0",
+   "D = 0, Bout = 1"
+  ],
+  "answer": 3,
+  "exp": "0 - 1 - 1 = -2: difference bit = 0 and a borrow is generated.",
+  "sub": "Subtractors"
+ },
+ {
+  "q": "The number of bits required to represent the decimal number 999 in straight binary and in BCD respectively are",
+  "options": [
+   "10 and 12",
+   "9 and 12",
+   "10 and 10",
+   "12 and 10"
+  ],
+  "answer": 0,
+  "exp": "999 < 1024 = 2¹⁰ needs 10 bits; BCD uses 4 bits for each of 3 digits = 12 bits.",
+  "sub": "Number systems"
+ },
+ {
+  "q": "The result of the hexadecimal subtraction (A5)₁₆ - (3C)₁₆ is",
+  "options": [
+   "79",
+   "69",
+   "59",
+   "6B"
+  ],
+  "answer": 1,
+  "exp": "165 - 60 = 105 = 69₁₆.",
+  "sub": "Computer arithmetic"
+ },
+ {
+  "q": "A (7,4) even-parity Hamming code word is received as 0110111 with bit positions numbered 1 to 7 from the left (parity bits at positions 1, 2, 4). Assuming a single error, the erroneous bit position is",
+  "options": [
+   "3",
+   "6",
+   "5",
+   "7"
+  ],
+  "answer": 2,
+  "exp": "c1 (positions 1,3,5,7) = 0⊕1⊕1⊕1 = 1; c2 (2,3,6,7) = 1⊕1⊕1⊕1 = 0; c4 (4,5,6,7) = 0⊕1⊕1⊕1 = 1; syndrome 101 = 5.",
+  "sub": "Codes"
+ }
+]

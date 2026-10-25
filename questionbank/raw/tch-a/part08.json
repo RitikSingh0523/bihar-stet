@@ -1,0 +1,362 @@
+[
+ {
+  "q": "Carl Rogers' idea that a child needs acceptance regardless of behaviour is called",
+  "options": [
+   "unconditional positive regard",
+   "reinforcement",
+   "libido",
+   "conditioned response"
+  ],
+  "answer": 0,
+  "exp": "Rogers held that unconditional positive regard promotes a healthy self-concept.",
+  "sub": "Personality"
+ },
+ {
+  "q": "Which is a major cause of juvenile delinquency?",
+  "options": [
+   "Over-protection only",
+   "Neglect, broken homes and bad company",
+   "High intelligence",
+   "Good schooling"
+  ],
+  "answer": 1,
+  "exp": "Family disorganisation and bad peers contribute strongly.",
+  "sub": "Adolescence"
+ },
+ {
+  "q": "Which attitude of a teacher towards gender or caste differences is professionally correct?",
+  "options": [
+   "Give more attention to boys",
+   "Favour high-caste students",
+   "Label students by background",
+   "Treat all learners equally and avoid stereotypes"
+  ],
+  "answer": 3,
+  "exp": "Equity and non-discrimination are central to teaching ethics.",
+  "sub": "Individual differences"
+ },
+ {
+  "q": "The Braille system for the visually impaired was invented by",
+  "options": [
+   "Helen Keller",
+   "Alexander Bell",
+   "Louis Braille",
+   "Thomas Edison"
+  ],
+  "answer": 2,
+  "exp": "Louis Braille developed the six-dot tactile system.",
+  "sub": "Gifted and special education"
+ },
+ {
+  "q": "An eclectic approach to counselling was advocated by",
+  "options": [
+   "F. C. Thorne",
+   "Rogers",
+   "Williamson",
+   "Skinner"
+  ],
+  "answer": 0,
+  "exp": "Thorne combined directive and non-directive techniques.",
+  "sub": "Guidance and counselling"
+ },
+ {
+  "q": "Smooth transitions between activities in a lesson help to",
+  "options": [
+   "increase noise",
+   "reduce misbehaviour and lost time",
+   "avoid lesson planning",
+   "punish students"
+  ],
+  "answer": 1,
+  "exp": "Kounin found that smoothness prevents disruptions.",
+  "sub": "Classroom management and discipline"
+ },
+ {
+  "q": "Match the person with the institution: (1) Gandhi (2) Tagore; (a) Sevagram / Wardha basic school (b) Santiniketan.",
+  "options": [
+   "1-b, 2-a",
+   "Both with (a)",
+   "1-a, 2-b",
+   "Both with (b)"
+  ],
+  "answer": 2,
+  "exp": "Gandhi's Nai Talim was based at Wardha and Sevagram; Tagore established Santiniketan.",
+  "sub": "Gandhi and Tagore"
+ },
+ {
+  "q": "Aurobindo advocated which medium for early education?",
+  "options": [
+   "French",
+   "Mother tongue",
+   "English only",
+   "Latin"
+  ],
+  "answer": 1,
+  "exp": "He insisted that the mother tongue should be the medium.",
+  "sub": "Vivekananda and Aurobindo"
+ },
+ {
+  "q": "The four pillars of education in the Delors Commission report are learning to know, learning to do, learning to live together and",
+  "options": [
+   "learning to earn",
+   "learning to win",
+   "learning to compete",
+   "learning to be"
+  ],
+  "answer": 3,
+  "exp": "The report 'Learning: The Treasure Within' lists these four pillars.",
+  "sub": "Philosophy of education"
+ },
+ {
+  "q": "According to Section 14, admission to school shall not be denied because of",
+  "options": [
+   "lack of proof of age or birth certificate",
+   "lack of seats in the class",
+   "late payment of fees by parents",
+   "refusal to wear uniform"
+  ],
+  "answer": 0,
+  "exp": "Age proof cannot be a ground for denying admission.",
+  "sub": "Right to Education Act 2009"
+ },
+ {
+  "q": "Gesell's theory of development stresses mainly the role of",
+  "options": [
+   "reinforcement",
+   "maturation and biological readiness",
+   "social modelling",
+   "cultural tools"
+  ],
+  "answer": 1,
+  "exp": "Gesell held that development follows an inner maturational timetable; training cannot hasten it much.",
+  "sub": "Growth and development"
+ },
+ {
+  "q": "A four-year-old says, 'The sun is sleeping because it is night.' This reflects",
+  "options": [
+   "animism",
+   "conservation",
+   "hypothetical thinking",
+   "object permanence"
+  ],
+  "answer": 0,
+  "exp": "Animism is attributing life and feelings to inanimate objects, common in the preoperational stage.",
+  "sub": "Piaget"
+ },
+ {
+  "q": "Which book is associated with Vygotsky?",
+  "options": [
+   "The Language and Thought of the Child",
+   "Emile",
+   "The Republic",
+   "Thought and Language"
+  ],
+  "answer": 3,
+  "exp": "Vygotsky's 'Thought and Language' discusses the relation between speech and thinking.",
+  "sub": "Vygotsky"
+ },
+ {
+  "q": "Match the level with its description: (1) Preconventional (2) Conventional (3) Postconventional; (a) rules and social order (b) universal principles (c) punishment and reward.",
+  "options": [
+   "1-a, 2-b, 3-c",
+   "1-b, 2-c, 3-a",
+   "1-c, 2-a, 3-b",
+   "1-c, 2-b, 3-a"
+  ],
+  "answer": 2,
+  "exp": "Preconventional is based on consequences, conventional on social rules, postconventional on principles.",
+  "sub": "Kohlberg"
+ },
+ {
+  "q": "Which teacher behaviour best supports Erikson's school-age stage?",
+  "options": [
+   "Constantly comparing children with toppers",
+   "Ridiculing mistakes",
+   "Giving only very difficult tasks",
+   "Giving tasks that can be completed successfully and praising effort"
+  ],
+  "answer": 3,
+  "exp": "Experiences of competence lead to industry rather than inferiority.",
+  "sub": "Erikson"
+ },
+ {
+  "q": "Programmed instruction and teaching machines were developed on the basis of the ideas of",
+  "options": [
+   "Piaget",
+   "Kohler",
+   "B. F. Skinner",
+   "Freud"
+  ],
+  "answer": 2,
+  "exp": "Skinner advocated small steps, immediate feedback and reinforcement.",
+  "sub": "Classical and operant conditioning"
+ },
+ {
+  "q": "Match the theorist with the idea: (1) Tolman (2) Bruner (3) Ausubel; (a) discovery learning (b) latent learning (c) advance organisers.",
+  "options": [
+   "1-a, 2-b, 3-c",
+   "1-b, 2-a, 3-c",
+   "1-c, 2-a, 3-b",
+   "1-b, 2-c, 3-a"
+  ],
+  "answer": 1,
+  "exp": "Tolman: latent learning and cognitive maps; Bruner: discovery; Ausubel: meaningful learning with advance organisers.",
+  "sub": "Other learning theories"
+ },
+ {
+  "q": "The Yerkes-Dodson law says that",
+  "options": [
+   "moderate arousal gives the best performance on complex tasks",
+   "higher anxiety always gives better performance",
+   "no arousal is best",
+   "arousal has no effect on performance"
+  ],
+  "answer": 0,
+  "exp": "Performance follows an inverted U-shape with arousal.",
+  "sub": "Motivation"
+ },
+ {
+  "q": "The term 'Intelligence Quotient' was first used by",
+  "options": [
+   "Alfred Binet",
+   "David Wechsler",
+   "William Stern",
+   "Charles Spearman"
+  ],
+  "answer": 2,
+  "exp": "Stern, a German psychologist, introduced the ratio of mental age to chronological age.",
+  "sub": "Intelligence"
+ },
+ {
+  "q": "Gordon's 'synectics' is a method that develops creativity through",
+  "options": [
+   "rote drill",
+   "punishment",
+   "mental age testing",
+   "analogies and metaphors in group problem-solving"
+  ],
+  "answer": 3,
+  "exp": "Synectics joins different elements using analogy.",
+  "sub": "Creativity"
+ },
+ {
+  "q": "Cattell's personality inventory is known as",
+  "options": [
+   "16 PF",
+   "MMPI only",
+   "TAT",
+   "Rorschach"
+  ],
+  "answer": 0,
+  "exp": "Cattell identified 16 source traits and developed the 16 Personality Factor Questionnaire.",
+  "sub": "Personality"
+ },
+ {
+  "q": "Which is the BEST preventive step against substance abuse among adolescents?",
+  "options": [
+   "Strict isolation of students",
+   "Life skills education and counselling",
+   "Public humiliation",
+   "Ignoring the issue"
+  ],
+  "answer": 1,
+  "exp": "Awareness, life skills and guidance reduce risk.",
+  "sub": "Adolescence"
+ },
+ {
+  "q": "Multi-level (tiered) tasks in a class help mainly to",
+  "options": [
+   "increase punishment",
+   "reduce teaching time only",
+   "avoid assessment",
+   "address different ability levels simultaneously"
+  ],
+  "answer": 3,
+  "exp": "Tiered tasks let each learner work at a suitable level.",
+  "sub": "Individual differences"
+ },
+ {
+  "q": "Which statement correctly differentiates integration from inclusion?",
+  "options": [
+   "Inclusion modifies the school to fit the child, while integration expects the child to adapt",
+   "They are identical",
+   "Integration is better than inclusion",
+   "Inclusion keeps children in special schools"
+  ],
+  "answer": 0,
+  "exp": "Inclusion restructures school systems for all learners; integration places children in regular school with limited change.",
+  "sub": "Gifted and special education"
+ },
+ {
+  "q": "Assertion (A): Group guidance is economical and useful. Reason (R): It can give common information to many students at the same time. Choose the correct option.",
+  "options": [
+   "Both A and R are true but R does not explain A",
+   "A is true but R is false",
+   "Both A and R are true and R explains A",
+   "A is false but R is true"
+  ],
+  "answer": 2,
+  "exp": "Career talks and orientation save time and resources.",
+  "sub": "Guidance and counselling"
+ },
+ {
+  "q": "In the 'ripple effect' as described by Kounin,",
+  "options": [
+   "noise spreads from one room to another",
+   "a teacher's correction of one student influences nearby students' behaviour",
+   "learning transfers across subjects",
+   "rewards decrease motivation"
+  ],
+  "answer": 1,
+  "exp": "Handling misbehaviour of one student affects others.",
+  "sub": "Classroom management and discipline"
+ },
+ {
+  "q": "Tagore's Sriniketan was meant for",
+  "options": [
+   "military training",
+   "medical education only",
+   "foreign trade",
+   "rural reconstruction"
+  ],
+  "answer": 3,
+  "exp": "Sriniketan, founded in 1922, worked on rural development.",
+  "sub": "Gandhi and Tagore"
+ },
+ {
+  "q": "Match: (1) Vivekananda (2) Aurobindo (3) Gandhi; (a) Integral education (b) Nai Talim (c) Man-making education.",
+  "options": [
+   "1-a, 2-b, 3-c",
+   "1-b, 2-c, 3-a",
+   "1-c, 2-a, 3-b",
+   "1-c, 2-b, 3-a"
+  ],
+  "answer": 2,
+  "exp": "Vivekananda: man-making; Aurobindo: integral; Gandhi: Nai Talim.",
+  "sub": "Vivekananda and Aurobindo"
+ },
+ {
+  "q": "Constructivism in education holds that",
+  "options": [
+   "knowledge is passively received",
+   "learners construct knowledge from their experiences",
+   "the teacher transfers knowledge intact",
+   "knowledge is fixed and unchanging"
+  ],
+  "answer": 1,
+  "exp": "Learners actively create meaning by relating new ideas to prior knowledge.",
+  "sub": "Philosophy of education"
+ },
+ {
+  "q": "Section 4 of the RTE Act provides for",
+  "options": [
+   "special training for out-of-school children to bring them to age-appropriate class",
+   "free secondary education",
+   "teacher recruitment",
+   "college admissions"
+  ],
+  "answer": 0,
+  "exp": "Out-of-school children are admitted to age-appropriate class with special training.",
+  "sub": "Right to Education Act 2009"
+ }
+]

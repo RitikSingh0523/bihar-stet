@@ -1,0 +1,482 @@
+[
+ {
+  "q": "Which recurrence describes the running time of binary search on n elements?",
+  "options": [
+   "T(n) = 2T(n/2) + 1",
+   "T(n) = T(n−1) + 1",
+   "T(n) = T(n/2) + 1",
+   "T(n) = 2T(n/2) + n"
+  ],
+  "answer": 2,
+  "exp": "One comparison, then recursion on one half.",
+  "sub": "Divide and Conquer"
+ },
+ {
+  "q": "Which statement about Prim's and Kruskal's algorithms is correct?",
+  "options": [
+   "Prim's maintains a forest and Kruskal's grows a single tree",
+   "Both require edges to be sorted initially",
+   "Neither can handle graphs with equal edge weights",
+   "Prim's grows a single tree from a start vertex, while Kruskal's maintains a forest of trees"
+  ],
+  "answer": 3,
+  "exp": "Prim's always keeps one connected tree; Kruskal's merges components using union-find.",
+  "sub": "Greedy"
+ },
+ {
+  "q": "To prove that a problem X is NP-complete one must show that",
+  "options": [
+   "X is in NP and a known NP-complete problem reduces to X in polynomial time",
+   "X is in P and X reduces to a known NP-complete problem",
+   "X reduces to a problem in P",
+   "X cannot be verified in polynomial time"
+  ],
+  "answer": 0,
+  "exp": "NP-completeness requires membership in NP plus NP-hardness via reduction from a known NP-complete problem.",
+  "sub": "P NP NP-Complete"
+ },
+ {
+  "q": "Quick sort with Lomuto partition (pivot = last element) on an array of n equal elements takes time",
+  "options": [
+   "O(n log n)",
+   "O(n²)",
+   "O(n)",
+   "O(log n)"
+  ],
+  "answer": 1,
+  "exp": "Every element satisfies ≤ pivot, so partitions are always of size n−1 and 0.",
+  "sub": "Divide and Conquer"
+ },
+ {
+  "q": "Rabin–Karp string matching has a worst-case running time of",
+  "options": [
+   "O(n + m)",
+   "O(nm)",
+   "O(n log m)",
+   "O(n)"
+  ],
+  "answer": 1,
+  "exp": "If every window hash collides with the pattern hash, each window needs m comparisons.",
+  "sub": "String Matching"
+ },
+ {
+  "q": "Items: A (weight 6, value 9), B (weight 5, value 7), C (weight 5, value 7); capacity 10. The optimal 0/1 knapsack value (greedy-by-highest-value would give only 9) is",
+  "options": [
+   "9",
+   "16",
+   "14",
+   "23"
+  ],
+  "answer": 2,
+  "exp": "B and C together weigh 10 and give 14.",
+  "sub": "Greedy"
+ },
+ {
+  "q": "With coin denominations {1, 3, 4}, the minimum number of coins needed to make 6 is",
+  "options": [
+   "3",
+   "4",
+   "5",
+   "2"
+  ],
+  "answer": 3,
+  "exp": "3 + 3 uses two coins; the greedy choice 4 + 1 + 1 uses three.",
+  "sub": "Dynamic Programming"
+ },
+ {
+  "q": "Match the algorithm with its design paradigm:\n1. Huffman coding  2. Floyd–Warshall  3. N-Queens  4. Strassen multiplication\na. Dynamic programming  b. Backtracking  c. Greedy  d. Divide and conquer",
+  "options": [
+   "1-c, 2-a, 3-b, 4-d",
+   "1-a, 2-c, 3-b, 4-d",
+   "1-c, 2-b, 3-a, 4-d",
+   "1-d, 2-a, 3-b, 4-c"
+  ],
+  "answer": 0,
+  "exp": "Huffman is greedy, Floyd–Warshall is DP, N-Queens uses backtracking, Strassen is divide and conquer.",
+  "sub": "Divide and Conquer"
+ },
+ {
+  "q": "In the Tower of Hanoi, the recurrence T(n) = 2T(n−1) + 1 with T(1) = 1 gives the number of moves for 5 disks as",
+  "options": [
+   "25",
+   "32",
+   "31",
+   "63"
+  ],
+  "answer": 2,
+  "exp": "T(n) = 2ⁿ − 1, so T(5) = 31.",
+  "sub": "Recurrences"
+ },
+ {
+  "q": "In merge sort, the worst-case number of comparisons M(n) = 2M(n/2) + n − 1 with M(1) = 0. The value of M(8) is",
+  "options": [
+   "24",
+   "16",
+   "12",
+   "17"
+  ],
+  "answer": 3,
+  "exp": "M(2)=1, M(4)=2·1+3=5, M(8)=2·5+7=17.",
+  "sub": "Divide and Conquer"
+ },
+ {
+  "q": "The solution of T(n) = 9T(n/3) + n is",
+  "options": [
+   "Θ(n²)",
+   "Θ(n log n)",
+   "Θ(n³)",
+   "Θ(n² log n)"
+  ],
+  "answer": 0,
+  "exp": "n^(log₃9) = n² dominates f(n) = n.",
+  "sub": "Recurrences"
+ },
+ {
+  "q": "log(n!) is",
+  "options": [
+   "Θ(n)",
+   "Θ(n log n)",
+   "Θ(n²)",
+   "Θ(log n)"
+  ],
+  "answer": 1,
+  "exp": "By Stirling's approximation, log(n!) ≈ n log n − n log e.",
+  "sub": "Asymptotic Notation"
+ },
+ {
+  "q": "Using dynamic programming, the shortest path in a multistage graph with V vertices and E edges can be found in time",
+  "options": [
+   "O(V + E)",
+   "O(V³)",
+   "O(2^V)",
+   "O(E²)"
+  ],
+  "answer": 0,
+  "exp": "Each vertex's cost is computed once from its outgoing (or incoming) edges.",
+  "sub": "Dynamic Programming"
+ },
+ {
+  "q": "Statement I: Prim's algorithm correctly finds an MST even when some edge weights are negative.\nStatement II: Dijkstra's algorithm correctly finds shortest paths even when some edge weights are negative.\nWhich is correct?",
+  "options": [
+   "Both Statement I and II are true",
+   "Only Statement II is true",
+   "Only Statement I is true",
+   "Neither is true"
+  ],
+  "answer": 2,
+  "exp": "MST algorithms depend only on relative order of weights; Dijkstra's fails with negative edges.",
+  "sub": "Greedy"
+ },
+ {
+  "q": "The chromatic number of a cycle graph with 5 vertices (found by graph colouring) is",
+  "options": [
+   "2",
+   "4",
+   "5",
+   "3"
+  ],
+  "answer": 3,
+  "exp": "An odd cycle cannot be 2-coloured, but three colours suffice.",
+  "sub": "Backtracking"
+ },
+ {
+  "q": "For four cities with distances A-B 10, A-C 15, A-D 20, B-C 35, B-D 25, C-D 30, the minimum TSP tour cost is",
+  "options": [
+   "85",
+   "80",
+   "90",
+   "95"
+  ],
+  "answer": 1,
+  "exp": "Tour A-B-D-C-A costs 10 + 25 + 30 + 15 = 80; the other tours cost 95.",
+  "sub": "Dynamic Programming"
+ },
+ {
+  "q": "In branch and bound, a live node is a node",
+  "options": [
+   "that has been completely expanded",
+   "that has been generated but whose children have not all been generated",
+   "that is a leaf giving a solution",
+   "that has been pruned by the bounding function"
+  ],
+  "answer": 1,
+  "exp": "Live nodes are the candidates still available for expansion.",
+  "sub": "Branch and Bound"
+ },
+ {
+  "q": "The matching phase of the finite-automaton string matcher on a text of length n takes time",
+  "options": [
+   "Θ(n)",
+   "Θ(nm)",
+   "Θ(n log m)",
+   "Θ(m|Σ|)"
+  ],
+  "answer": 0,
+  "exp": "One state transition per text character; preprocessing is the costly part.",
+  "sub": "String Matching"
+ },
+ {
+  "q": "Any comparison-based sorting algorithm needs, in the worst case, at least how many comparisons for n elements?",
+  "options": [
+   "Ω(n)",
+   "Ω(n²)",
+   "Ω(log n)",
+   "Ω(n log n)"
+  ],
+  "answer": 3,
+  "exp": "The decision tree has at least n! leaves and so height at least log(n!) = Ω(n log n).",
+  "sub": "Divide and Conquer"
+ },
+ {
+  "q": "A file has 100 characters over {a, b, c, d} with frequencies 40, 30, 20, 10. The total number of bits used by the Huffman code is",
+  "options": [
+   "200",
+   "180",
+   "190",
+   "170"
+  ],
+  "answer": 2,
+  "exp": "Code lengths are 1, 2, 3, 3: 40 + 60 + 60 + 30 = 190 bits.",
+  "sub": "Greedy"
+ },
+ {
+  "q": "The class NP consists of decision problems that",
+  "options": [
+   "can be solved in polynomial time by a non-deterministic Turing machine",
+   "can be solved only in exponential time",
+   "are not solvable by any algorithm",
+   "can be solved using logarithmic space only"
+  ],
+  "answer": 0,
+  "exp": "Equivalently, a proposed solution can be verified in polynomial time.",
+  "sub": "P NP NP-Complete"
+ },
+ {
+  "q": "The space required by the Floyd–Warshall algorithm (reusing a single matrix) for n vertices is",
+  "options": [
+   "O(n)",
+   "O(n³)",
+   "O(n log n)",
+   "O(n²)"
+  ],
+  "answer": 3,
+  "exp": "One n × n distance matrix updated in place is sufficient.",
+  "sub": "Dynamic Programming"
+ },
+ {
+  "q": "The recurrence T(n) = T(n/3) + T(2n/3) + n has solution",
+  "options": [
+   "Θ(n)",
+   "Θ(n log n)",
+   "Θ(n²)",
+   "Θ(log n)"
+  ],
+  "answer": 1,
+  "exp": "Each level of the recursion tree costs n and the depth is about log_(3/2) n.",
+  "sub": "Recurrences"
+ },
+ {
+  "q": "Which pair of functions satisfies f(n) = o(g(n)) (little-o)?",
+  "options": [
+   "f(n) = 3n², g(n) = n²",
+   "f(n) = n², g(n) = n",
+   "f(n) = n, g(n) = n log n",
+   "f(n) = 2n, g(n) = n"
+  ],
+  "answer": 2,
+  "exp": "Only n/(n log n) → 0; the other pairs have ratio tending to a nonzero constant or infinity.",
+  "sub": "Asymptotic Notation"
+ },
+ {
+  "q": "A connected graph has 12 vertices and 30 edges. The number of edges in its minimum spanning tree is",
+  "options": [
+   "12",
+   "11",
+   "18",
+   "29"
+  ],
+  "answer": 1,
+  "exp": "Any spanning tree of V vertices has V − 1 edges.",
+  "sub": "Greedy"
+ },
+ {
+  "q": "In 4-queens with queens already placed at (row 1, column 2), (row 2, column 4), (row 3, column 1), the column of the queen in row 4 that gives a solution is",
+  "options": [
+   "1",
+   "2",
+   "4",
+   "3"
+  ],
+  "answer": 3,
+  "exp": "Columns 1, 2 and 4 are used; column 3 is not diagonal-attacked by any previous queen.",
+  "sub": "Backtracking"
+ },
+ {
+  "q": "Assuming P ≠ NP, which statement must be true?",
+  "options": [
+   "No NP-complete problem can be solved in polynomial time",
+   "Every problem in NP is in P",
+   "SAT can be solved in polynomial time",
+   "No problem is NP-complete"
+  ],
+  "answer": 0,
+  "exp": "If any NP-complete problem were in P, then P = NP.",
+  "sub": "P NP NP-Complete"
+ },
+ {
+  "q": "Strassen's algorithm has the recurrence",
+  "options": [
+   "T(n) = 8T(n/2) + Θ(n²)",
+   "T(n) = 7T(n/2) + Θ(n)",
+   "T(n) = 7T(n/2) + Θ(n²)",
+   "T(n) = 2T(n/2) + Θ(n²)"
+  ],
+  "answer": 2,
+  "exp": "Seven half-size multiplications plus Θ(n²) additions.",
+  "sub": "Divide and Conquer"
+ },
+ {
+  "q": "The length of the longest common subsequence of AXYT and AYZX is",
+  "options": [
+   "1",
+   "3",
+   "2",
+   "4"
+  ],
+  "answer": 2,
+  "exp": "AY and AX are common subsequences of length 2; no length-3 one exists.",
+  "sub": "Dynamic Programming"
+ },
+ {
+  "q": "Which data structure is typically used by Kruskal's algorithm to detect cycles efficiently?",
+  "options": [
+   "Stack",
+   "Disjoint-set (union-find)",
+   "Queue",
+   "Hash table of vertices"
+  ],
+  "answer": 1,
+  "exp": "Union-find checks whether two endpoints are already in the same component.",
+  "sub": "Greedy"
+ },
+ {
+  "q": "Karatsuba's algorithm multiplies two n-digit numbers using T(n) = 3T(n/2) + O(n), which gives",
+  "options": [
+   "Θ(n^log₂3) ≈ Θ(n^1.585)",
+   "Θ(n²)",
+   "Θ(n log n)",
+   "Θ(n³)"
+  ],
+  "answer": 0,
+  "exp": "log₂3 > 1, so case 1 of the master theorem applies.",
+  "sub": "Divide and Conquer"
+ },
+ {
+  "q": "For the cost matrix rows [9,2,7], [6,4,3], [5,8,1] of an assignment problem, the lower bound obtained by adding the minimum of each row is",
+  "options": [
+   "9",
+   "8",
+   "14",
+   "6"
+  ],
+  "answer": 3,
+  "exp": "2 + 3 + 1 = 6.",
+  "sub": "Branch and Bound"
+ },
+ {
+  "q": "Which is the decision version of the travelling salesman problem?",
+  "options": [
+   "What is the minimum cost tour?",
+   "List all possible tours.",
+   "Is there a tour of total cost at most K?",
+   "How many cities are there?"
+  ],
+  "answer": 2,
+  "exp": "NP problems are decision problems; the optimisation version is converted using a cost threshold K.",
+  "sub": "P NP NP-Complete"
+ },
+ {
+  "q": "In KMP matching with pattern ababaca, a mismatch occurs at pattern index 5 (0-based). The next pattern index to compare is",
+  "options": [
+   "3",
+   "0",
+   "1",
+   "2"
+  ],
+  "answer": 0,
+  "exp": "The prefix function value at index 4 is 3 (border 'aba').",
+  "sub": "String Matching"
+ },
+ {
+  "q": "Which algorithm can compute all-pairs shortest paths in a graph with negative edge weights but no negative cycles?",
+  "options": [
+   "Dijkstra's algorithm",
+   "Floyd–Warshall",
+   "Prim's algorithm",
+   "Kruskal's algorithm"
+  ],
+  "answer": 1,
+  "exp": "Floyd–Warshall tolerates negative edges provided there is no negative cycle.",
+  "sub": "Dynamic Programming"
+ },
+ {
+  "q": "An algorithm takes 2ⁿ steps. When the input size increases from 10 to 13, the running time is multiplied by",
+  "options": [
+   "3",
+   "6",
+   "13/10",
+   "8"
+  ],
+  "answer": 3,
+  "exp": "2¹³ / 2¹⁰ = 2³ = 8.",
+  "sub": "Asymptotic Notation"
+ },
+ {
+  "q": "The solution of T(n) = 2T(n/2) + log n is",
+  "options": [
+   "Θ(log n)",
+   "Θ(n log n)",
+   "Θ(n²)",
+   "Θ(n)"
+  ],
+  "answer": 3,
+  "exp": "n^(log₂2) = n dominates log n polynomially, so case 1 applies.",
+  "sub": "Recurrences"
+ },
+ {
+  "q": "The recurrence for the optimal value of the 0/1 knapsack, K[i][w], for item i with weight wᵢ and value vᵢ when wᵢ ≤ w is",
+  "options": [
+   "max(K[i−1][w], vᵢ + K[i−1][w − wᵢ])",
+   "max(K[i−1][w], vᵢ + K[i][w − wᵢ])",
+   "K[i−1][w] + vᵢ",
+   "min(K[i−1][w], vᵢ + K[i−1][w − wᵢ])"
+  ],
+  "answer": 0,
+  "exp": "Each item is either skipped or taken exactly once, so the taken case refers to row i−1.",
+  "sub": "Dynamic Programming"
+ },
+ {
+  "q": "Which statement about backtracking is NOT correct?",
+  "options": [
+   "It uses feasibility or bounding tests to prune partial solutions",
+   "It always explores the complete state space tree before reporting a solution",
+   "It explores the state space tree in depth-first manner",
+   "It can be used to solve N-Queens and graph colouring"
+  ],
+  "answer": 1,
+  "exp": "Backtracking abandons a branch as soon as it cannot lead to a solution, and may stop at the first solution.",
+  "sub": "Backtracking"
+ },
+ {
+  "q": "In the Rabin–Karp algorithm over decimal digits with window size 3, the rolling hash of window 273 in text 27358 is 273. The hash of the next window is computed as",
+  "options": [
+   "273 + 5 = 278",
+   "(273 − 7)·10 + 5 = 2665",
+   "(273 − 2·100)·10 + 5 = 735",
+   "273·10 + 5 = 2735"
+  ],
+  "answer": 2,
+  "exp": "Remove the leading digit's contribution, shift by base 10 and add the new digit.",
+  "sub": "String Matching"
+ }
+]

@@ -1,0 +1,482 @@
+[
+ {
+  "q": "What is the output of the following code?\nprint(type(3/2), type(3//2))",
+  "options": [
+   "<class 'float'> <class 'int'>",
+   "<class 'int'> <class 'int'>",
+   "<class 'float'> <class 'float'>",
+   "<class 'int'> <class 'float'>"
+  ],
+  "answer": 0,
+  "exp": "The / operator always gives a float, while // on two ints gives an int.",
+  "sub": "Data types & operators"
+ },
+ {
+  "q": "What is the output of the following code?\ns = \"programming\"\nprint(s[2:8:2], s[::-3])",
+  "options": [
+   "orm gmrg",
+   "orm gmrr",
+   "rgam gmrr",
+   "ogm gmrr"
+  ],
+  "answer": 1,
+  "exp": "s[2:8:2] takes indices 2,4,6 = o,r,m; s[::-3] takes indices 10,7,4,1 = g,m,r,r.",
+  "sub": "Strings"
+ },
+ {
+  "q": "Which of the following Python data types is NOT mutable?",
+  "options": [
+   "list",
+   "dict",
+   "tuple",
+   "set"
+  ],
+  "answer": 2,
+  "exp": "Tuples are immutable sequences; lists, dictionaries and sets can be modified in place.",
+  "sub": "Data types & operators"
+ },
+ {
+  "q": "What is the output of the following code?\nd = {'a': 1, 'b': 2}\nd['c'] = d.get('c', 0) + 5\nd.update({'a': 10})\nprint(d)",
+  "options": [
+   "{'a': 1, 'b': 2, 'c': 5}",
+   "{'a': 10, 'b': 2, 'c': 0}",
+   "{'a': 10, 'b': 2}",
+   "{'a': 10, 'b': 2, 'c': 5}"
+  ],
+  "answer": 3,
+  "exp": "get returns 0 for missing 'c' so c becomes 5; update overwrites 'a' with 10.",
+  "sub": "Dictionaries"
+ },
+ {
+  "q": "Which of the following function headers is syntactically INVALID in Python 3?",
+  "options": [
+   "def f(a, b=1, c=2):",
+   "def f(a, b=1, c):",
+   "def f(a, *args, b=1):",
+   "def f(*args, **kwargs):"
+  ],
+  "answer": 1,
+  "exp": "A parameter without a default value cannot follow a parameter that has a default.",
+  "sub": "Functions"
+ },
+ {
+  "q": "Which file mode opens a file for both reading and writing and first erases any existing content?",
+  "options": [
+   "w+",
+   "r+",
+   "a+",
+   "rb"
+  ],
+  "answer": 0,
+  "exp": "w+ truncates the file and allows reading and writing; r+ keeps content and a+ appends.",
+  "sub": "File handling"
+ },
+ {
+  "q": "What is the output of the following code?\nprint(2 + 3 * 4 ** 2 // 5 % 4)",
+  "options": [
+   "5",
+   "1",
+   "3",
+   "11"
+  ],
+  "answer": 2,
+  "exp": "4**2=16; 3*16=48; 48//5=9; 9%4=1 (left to right for * // %); 2+1=3.",
+  "sub": "Operators & precedence"
+ },
+ {
+  "q": "What is the output of the following code?\nt = (1, 2, [3, 4])\nt[2].append(5)\nprint(t, len(t))",
+  "options": [
+   "(1, 2, [3, 4]) 3",
+   "(1, 2, [3, 4, 5]) 4",
+   "TypeError",
+   "(1, 2, [3, 4, 5]) 3"
+  ],
+  "answer": 3,
+  "exp": "The tuple itself is not changed but the list inside it is mutable; length stays 3.",
+  "sub": "Tuples"
+ },
+ {
+  "q": "Statement I: The finally block of a try statement executes whether or not an exception occurs.\nStatement II: The else block of a try statement executes only when an exception is raised in the try block.\nWhich is correct?",
+  "options": [
+   "Statement I is true and Statement II is false",
+   "Both statements are true",
+   "Statement I is false and Statement II is true",
+   "Both statements are false"
+  ],
+  "answer": 0,
+  "exp": "finally always runs; else runs only when the try block completes without an exception.",
+  "sub": "Exceptions"
+ },
+ {
+  "q": "What is the output of the following code?\na = {1, 2, 3, 4}\nb = {3, 4, 5}\nprint(sorted(a ^ b), len(a | b))",
+  "options": [
+   "[3, 4] 5",
+   "[1, 2, 5] 4",
+   "[1, 2] 5",
+   "[1, 2, 5] 5"
+  ],
+  "answer": 3,
+  "exp": "a ^ b is the symmetric difference {1,2,5}; the union {1,2,3,4,5} has 5 elements.",
+  "sub": "Sets"
+ },
+ {
+  "q": "What is the output of the following code?\nimport numpy as np\na = np.arange(12).reshape(3, 4)\nprint(a[1:, ::2].sum())",
+  "options": [
+   "24",
+   "36",
+   "28",
+   "20"
+  ],
+  "answer": 2,
+  "exp": "Rows 1 and 2, columns 0 and 2 give 4,6,8,10 whose sum is 28.",
+  "sub": "NumPy"
+ },
+ {
+  "q": "What is the output of the following code?\ndef f(n):\n    return 1 if n <= 1 else n * f(n - 2)\nprint(f(7), f(6))",
+  "options": [
+   "105 720",
+   "105 48",
+   "35 48",
+   "5040 48"
+  ],
+  "answer": 1,
+  "exp": "f(7)=7*5*3*1=105 and f(6)=6*4*2*1=48 (f(0)=1).",
+  "sub": "Recursion"
+ },
+ {
+  "q": "What is the output of the following code?\nimport pandas as pd\ns = pd.Series([10, 20, 30], index=['a', 'b', 'c'])\nprint(s['b':'c'].sum(), s.iloc[0])",
+  "options": [
+   "30 10",
+   "50 20",
+   "50 10",
+   "20 10"
+  ],
+  "answer": 2,
+  "exp": "Label slicing includes both ends so b and c give 20+30=50; iloc[0] is the first value 10.",
+  "sub": "Pandas"
+ },
+ {
+  "q": "Which string method raises a ValueError when the substring is not found?",
+  "options": [
+   "find()",
+   "count()",
+   "startswith()",
+   "index()"
+  ],
+  "answer": 3,
+  "exp": "find() returns -1 whereas index() raises ValueError.",
+  "sub": "Strings"
+ },
+ {
+  "q": "What is the output of the following code?\nf = lambda x, y=3: x ** y\nprint(f(2), f(2, 2), list(map(f, [1, 2, 3])))",
+  "options": [
+   "8 4 [1, 8, 27]",
+   "6 4 [1, 4, 9]",
+   "8 4 [1, 4, 9]",
+   "8 2 [1, 8, 27]"
+  ],
+  "answer": 0,
+  "exp": "Default y=3 gives 2**3=8; f(2,2)=4; map uses y=3 giving cubes.",
+  "sub": "Functions & lambda"
+ },
+ {
+  "q": "What is the output of the following code?\ntotal = 0\nfor i in range(1, 8):\n    if i % 3 == 0:\n        continue\n    if i > 5:\n        break\n    total += i\nprint(total)",
+  "options": [
+   "13",
+   "12",
+   "28",
+   "15"
+  ],
+  "answer": 1,
+  "exp": "Adds 1,2,4,5; 3 is skipped by continue; at i=6 continue skips, at i=7 break ends: total 12.",
+  "sub": "Control flow"
+ },
+ {
+  "q": "Statement I: csv.reader returns every row of a CSV file as a list of strings.\nStatement II: csv.writer.writerows() accepts a single flat list and writes it as one row.\nWhich is correct?",
+  "options": [
+   "Both statements are true",
+   "Statement I is true and Statement II is false",
+   "Statement I is false and Statement II is true",
+   "Both statements are false"
+  ],
+  "answer": 1,
+  "exp": "writerows() expects an iterable of rows (e.g., a list of lists); writerow() writes a single row.",
+  "sub": "CSV files"
+ },
+ {
+  "q": "Which statement imports only the function ceil from the math module so that it can be called as ceil(2.1)?",
+  "options": [
+   "import math.ceil",
+   "import ceil from math",
+   "import math as ceil",
+   "from math import ceil"
+  ],
+  "answer": 3,
+  "exp": "The from ... import ... form brings the name directly into the current namespace.",
+  "sub": "Modules"
+ },
+ {
+  "q": "What is the output of the following code?\nx = 10\ndef f():\n    x = 5\n    def g():\n        global x\n        x += 1\n    g()\n    return x\nprint(f(), x)",
+  "options": [
+   "5 11",
+   "6 10",
+   "11 11",
+   "5 10"
+  ],
+  "answer": 0,
+  "exp": "g changes the global x (10 to 11), while f returns its own local x which is still 5.",
+  "sub": "Scope"
+ },
+ {
+  "q": "What is the output of the following code?\ndef add(v, L=[]):\n    L.append(v)\n    return L\nprint(add(1), add(2), add(3, [9]))",
+  "options": [
+   "[1] [2] [9, 3]",
+   "[1] [1, 2] [9, 3]",
+   "[1, 2] [1, 2] [9, 3]",
+   "[1, 2] [1, 2] [3]"
+  ],
+  "answer": 2,
+  "exp": "The default list is created once and shared; the first two calls return the same list object holding [1, 2].",
+  "sub": "Functions"
+ },
+ {
+  "q": "In which mode should a file be opened to store an object with pickle.dump()?",
+  "options": [
+   "'w'",
+   "'r'",
+   "'rb'",
+   "'wb'"
+  ],
+  "answer": 3,
+  "exp": "pickle writes bytes, so the file must be opened in binary write mode.",
+  "sub": "Binary files"
+ },
+ {
+  "q": "What is the output of the following code?\ns = \"Hello, World\"\nprint(s.lower().count(\"l\"), s.replace(\"l\", \"L\", 2), s.partition(\", \")[2])",
+  "options": [
+   "2 HeLLo, World World",
+   "3 HeLLo, World World",
+   "3 HeLLo, WorLd World",
+   "3 HeLLo, World Hello"
+  ],
+  "answer": 1,
+  "exp": "There are three l's; replace with count 2 changes only the first two; partition gives the part after ', '.",
+  "sub": "Strings"
+ },
+ {
+  "q": "What is the output of the following code?\nimport numpy as np\na = np.array([1, 2, 3])\nb = np.array([[1], [2]])\nprint((a + b).shape)",
+  "options": [
+   "(3, 2)",
+   "(2,)",
+   "(2, 3)",
+   "(3,)"
+  ],
+  "answer": 2,
+  "exp": "Broadcasting a shape (3,) with (2,1) gives (2,3).",
+  "sub": "NumPy"
+ },
+ {
+  "q": "Which of the following is a valid Python identifier?",
+  "options": [
+   "_total2",
+   "2nd_val",
+   "my-var",
+   "class"
+  ],
+  "answer": 0,
+  "exp": "Identifiers cannot start with a digit, contain hyphens or be keywords.",
+  "sub": "Data types & operators"
+ },
+ {
+  "q": "What is the output of the following code?\nprint([x * y for x in range(1, 4) for y in range(x, 4) if (x + y) % 2 == 0])",
+  "options": [
+   "[1, 3, 9]",
+   "[1, 3, 4, 9]",
+   "[1, 4, 9]",
+   "[1, 2, 3, 4, 6, 9]"
+  ],
+  "answer": 1,
+  "exp": "Pairs with even sum: (1,1),(1,3),(2,2),(3,3) giving 1,3,4,9.",
+  "sub": "Lists"
+ },
+ {
+  "q": "What is the output of the following code?\nL = [1, 2, 3, 4, 5, 6]\nL[1:4] = [9]\ndel L[0]\nprint(L)",
+  "options": [
+   "[9, 5, 6]",
+   "[1, 9, 5, 6]",
+   "[9, 9, 9, 5, 6]",
+   "[2, 9, 5, 6]"
+  ],
+  "answer": 0,
+  "exp": "Slice assignment gives [1,9,5,6]; deleting index 0 leaves [9,5,6].",
+  "sub": "Lists"
+ },
+ {
+  "q": "Which exception is raised by the statement int('12.5')?",
+  "options": [
+   "TypeError",
+   "SyntaxError",
+   "ValueError",
+   "NameError"
+  ],
+  "answer": 2,
+  "exp": "The argument is a string of the wrong format for int, which raises ValueError.",
+  "sub": "Exceptions"
+ },
+ {
+  "q": "What is the output of the following code?\ndef f():\n    try:\n        return 1\n    finally:\n        print(\"F\")\nprint(f())",
+  "options": [
+   "1 | F",
+   "1",
+   "F",
+   "F | 1"
+  ],
+  "answer": 3,
+  "exp": "The finally block runs before the function actually returns, so F is printed first, then 1.",
+  "sub": "Exceptions"
+ },
+ {
+  "q": "Which Pandas attribute/method selects rows and columns purely by integer position?",
+  "options": [
+   "loc",
+   "iloc",
+   "at",
+   "columns"
+  ],
+  "answer": 1,
+  "exp": "iloc is position-based, loc is label-based.",
+  "sub": "Pandas"
+ },
+ {
+  "q": "Match the file method with its action:\n(i) read(4)  (ii) readline()  (iii) readlines()  (iv) seek(0)\n(a) returns the remaining lines as a list  (b) moves the pointer to the start  (c) returns a single line  (d) returns the next 4 characters",
+  "options": [
+   "(i)-(c), (ii)-(d), (iii)-(a), (iv)-(b)",
+   "(i)-(d), (ii)-(a), (iii)-(c), (iv)-(b)",
+   "(i)-(d), (ii)-(c), (iii)-(b), (iv)-(a)",
+   "(i)-(d), (ii)-(c), (iii)-(a), (iv)-(b)"
+  ],
+  "answer": 3,
+  "exp": "read(n) reads n characters, readline() one line, readlines() all lines as a list, seek(0) rewinds.",
+  "sub": "File handling"
+ },
+ {
+  "q": "What is the output of the following code?\nprint(-2 ** 2, (-2) ** 2, 2 ** 3 ** 2)",
+  "options": [
+   "4 4 64",
+   "-4 4 64",
+   "-4 4 512",
+   "-4 -4 512"
+  ],
+  "answer": 2,
+  "exp": "** binds tighter than unary minus so -2**2=-4; ** is right associative so 2**3**2=2**9=512.",
+  "sub": "Operators & precedence"
+ },
+ {
+  "q": "What is the output of the following code?\nprint(bool(\"\"), bool(\"0\"), bool([0]), bool(0.0))",
+  "options": [
+   "False True True False",
+   "False False True False",
+   "True True True False",
+   "False True False False"
+  ],
+  "answer": 0,
+  "exp": "Empty string and 0.0 are falsy; the string '0' and the non-empty list [0] are truthy.",
+  "sub": "Data types & operators"
+ },
+ {
+  "q": "What is the output of the following code?\nname = \"Asha\"\nm = 82.456\nprint(f\"{name:*>6}|{m:.1f}|{7:03d}\")",
+  "options": [
+   "Asha**|82.4|007",
+   "**Asha|82.5|007",
+   "**Asha|82.5|7",
+   "**Asha|82.46|007"
+  ],
+  "answer": 1,
+  "exp": "*>6 right-aligns in width 6 padded with *, .1f rounds to 82.5, 03d zero pads to 007.",
+  "sub": "Strings"
+ },
+ {
+  "q": "What is the output of the following code?\nd = {'x': 3, 'y': 1, 'z': 2}\nprint(sorted(d, key=d.get), max(d.values()), list(d.items())[0])",
+  "options": [
+   "['x', 'y', 'z'] 3 ('x', 3)",
+   "['y', 'z', 'x'] 3 'x'",
+   "['y', 'z', 'x'] 3 ('x', 3)",
+   "['x', 'z', 'y'] 3 ('x', 3)"
+  ],
+  "answer": 2,
+  "exp": "Keys sorted by value 1,2,3 give y,z,x; the first item pair is ('x', 3).",
+  "sub": "Dictionaries"
+ },
+ {
+  "q": "What happens if a recursive function has no base case?",
+  "options": [
+   "It returns None after one call",
+   "It runs in an infinite loop without using extra memory",
+   "A SyntaxError is raised before execution",
+   "RecursionError is raised when maximum depth is exceeded"
+  ],
+  "answer": 3,
+  "exp": "Every call adds a frame to the stack until the recursion limit is hit, raising RecursionError.",
+  "sub": "Recursion"
+ },
+ {
+  "q": "Which call moves the file pointer to the end of a binary file f?",
+  "options": [
+   "f.seek(0, 2)",
+   "f.seek(2, 0)",
+   "f.tell()",
+   "f.seek(-1)"
+  ],
+  "answer": 0,
+  "exp": "The second argument 2 means relative to the end; offset 0 puts the pointer exactly at the end.",
+  "sub": "File handling"
+ },
+ {
+  "q": "What is the output of the following code?\ndef outer():\n    n = 0\n    def inc():\n        nonlocal n\n        n += 1\n        return n\n    return inc\nc = outer()\nc()\nc()\nprint(c())",
+  "options": [
+   "1",
+   "0",
+   "UnboundLocalError",
+   "3"
+  ],
+  "answer": 3,
+  "exp": "nonlocal lets inc modify the enclosing n; the third call returns 3.",
+  "sub": "Scope"
+ },
+ {
+  "q": "What is the output of the following code?\nprint(len({1, 1.0, True, '1'}))",
+  "options": [
+   "2",
+   "4",
+   "3",
+   "1"
+  ],
+  "answer": 0,
+  "exp": "1, 1.0 and True are equal with the same hash so they collapse to one element; '1' is separate.",
+  "sub": "Sets"
+ },
+ {
+  "q": "Which of the following is NOT a valid mode string for open()?",
+  "options": [
+   "'rb'",
+   "'wb+'",
+   "'rw'",
+   "'ab'"
+  ],
+  "answer": 2,
+  "exp": "Valid modes combine r, w, a, x with b, t and +; 'rw' is not valid.",
+  "sub": "File handling"
+ },
+ {
+  "q": "What is the output of the following code?\nprint(\"a-b-c\".split(\"-\", 1), \"  xy \".strip() + \"!\", \"abc\" * 2 + \"d\")",
+  "options": [
+   "['a', 'b', 'c'] xy! abcabcd",
+   "['a', 'b-c'] xy! abcabcd",
+   "['a', 'b-c'] xy ! abcabcd",
+   "['a', 'b-c'] xy! abcdabcd"
+  ],
+  "answer": 1,
+  "exp": "maxsplit=1 splits only at the first '-'; strip removes spaces; * repeats before + concatenates.",
+  "sub": "Strings"
+ }
+]

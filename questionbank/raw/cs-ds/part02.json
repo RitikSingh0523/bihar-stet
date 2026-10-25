@@ -1,0 +1,482 @@
+[
+ {
+  "q": "A 2D array A[0..9][0..14] is stored in row-major order with base address 500 and 4 bytes per element. What is the address of A[6][7]?",
+  "options": [
+   "884",
+   "892",
+   "888",
+   "880"
+  ],
+  "answer": 2,
+  "exp": "Index = 6×15 + 7 = 97; offset = 97×4 = 388; address = 500 + 388 = 888.",
+  "sub": "arrays"
+ },
+ {
+  "q": "While converting A*(B+C)/D-E to postfix using an operator stack, what is the maximum number of symbols (including parentheses) on the stack at any moment?",
+  "options": [
+   "3",
+   "2",
+   "4",
+   "5"
+  ],
+  "answer": 0,
+  "exp": "The stack reaches [*, (, +] = 3 symbols; later it only holds / or -.",
+  "sub": "stacks"
+ },
+ {
+  "q": "In an array-based circular queue of capacity N, which statement correctly advances the rear index after an enqueue?",
+  "options": [
+   "rear = rear + 1",
+   "rear = (rear - 1) % N",
+   "rear = rear % (N + 1)",
+   "rear = (rear + 1) % N"
+  ],
+  "answer": 3,
+  "exp": "Taking modulo N makes rear wrap around from N-1 to 0.",
+  "sub": "queues"
+ },
+ {
+  "q": "Which of the following gives O(1) insertion at both the front and the rear of a singly linked list?",
+  "options": [
+   "Only a head pointer in a linear list",
+   "A pointer to the last node of a circular singly linked list",
+   "Only a pointer to the middle node",
+   "A pointer to the second node of a linear list"
+  ],
+  "answer": 1,
+  "exp": "In a circular list the last node's next is the first node, so both ends are reachable in O(1).",
+  "sub": "linked lists"
+ },
+ {
+  "q": "A binary tree has 24 leaf nodes and 9 nodes having exactly one child. What is the total number of nodes?",
+  "options": [
+   "56",
+   "57",
+   "47",
+   "33"
+  ],
+  "answer": 0,
+  "exp": "Nodes with two children = leaves - 1 = 23. Total = 24 + 9 + 23 = 56.",
+  "sub": "trees"
+ },
+ {
+  "q": "In a weighted graph the edges are S-A 4, S-B 1, B-A 2, A-C 1, B-C 5. What is the length of the shortest path from S to C?",
+  "options": [
+   "5",
+   "6",
+   "4",
+   "3"
+  ],
+  "answer": 2,
+  "exp": "S-B-A-C = 1 + 2 + 1 = 4, which beats S-A-C (5) and S-B-C (6).",
+  "sub": "graphs"
+ },
+ {
+  "q": "Statement I: Linear probing suffers from primary clustering.\nStatement II: Quadratic probing completely eliminates all clustering.\nWhich option is correct?",
+  "options": [
+   "Both statements are true",
+   "Both statements are false",
+   "Statement I is false and Statement II is true",
+   "Statement I is true and Statement II is false"
+  ],
+  "answer": 3,
+  "exp": "Quadratic probing removes primary clustering but still has secondary clustering (keys with the same initial slot follow the same probe sequence).",
+  "sub": "hashing"
+ },
+ {
+  "q": "Quick sort with the first element as pivot is applied to an array that is already sorted. What is the time complexity?",
+  "options": [
+   "O(n log n)",
+   "O(n²)",
+   "O(n)",
+   "O(log n)"
+  ],
+  "answer": 1,
+  "exp": "Every partition is maximally unbalanced (one side empty), giving n + (n-1) + ... = O(n²).",
+  "sub": "sorting"
+ },
+ {
+  "q": "What does the following function print for p(2)?\nvoid p(int n){ if(n>0){ p(n-1); printf(\"%d \", n); p(n-1); } }",
+  "options": [
+   "2 1 1",
+   "1 2 1",
+   "1 1 2",
+   "2 1 2"
+  ],
+  "answer": 1,
+  "exp": "p(2) calls p(1) (prints 1), prints 2, then calls p(1) again (prints 1): 1 2 1.",
+  "sub": "recursion"
+ },
+ {
+  "q": "Match the operation with its complexity.\nOperations: P - insertion into a binary heap, Q - worst case of bubble sort, R - merge sort, S - access of A[i] in an array.\nComplexities: 1 - O(1), 2 - O(log n), 3 - O(n log n), 4 - O(n²).",
+  "options": [
+   "P-1, Q-2, R-3, S-4",
+   "P-3, Q-4, R-2, S-1",
+   "P-2, Q-4, R-3, S-1",
+   "P-2, Q-3, R-4, S-1"
+  ],
+  "answer": 2,
+  "exp": "Heap insertion O(log n), bubble sort O(n²), merge sort O(n log n), array access O(1).",
+  "sub": "complexity"
+ },
+ {
+  "q": "How many elements does the array A[-2..3][1..4][0..2] contain?",
+  "options": [
+   "72",
+   "48",
+   "60",
+   "36"
+  ],
+  "answer": 0,
+  "exp": "Sizes are 6, 4 and 3, so 6 × 4 × 3 = 72.",
+  "sub": "arrays"
+ },
+ {
+  "q": "Evaluate the postfix expression: 2 3 1 * + 9 -",
+  "options": [
+   "4",
+   "-2",
+   "14",
+   "-4"
+  ],
+  "answer": 3,
+  "exp": "3*1=3; 2+3=5; 5-9=-4.",
+  "sub": "stacks"
+ },
+ {
+  "q": "What is the minimum number of stacks required to implement a queue using only push and pop operations on the stacks?",
+  "options": [
+   "1",
+   "3",
+   "2",
+   "4"
+  ],
+  "answer": 2,
+  "exp": "One stack takes the incoming elements and the second reverses their order for dequeue.",
+  "sub": "queues"
+ },
+ {
+  "q": "A singly linked list has 9 nodes. A slow pointer moves one node per step and a fast pointer moves two nodes per step from the head until the fast pointer cannot move two more steps. At which node does the slow pointer stop?",
+  "options": [
+   "4th node",
+   "5th node",
+   "6th node",
+   "3rd node"
+  ],
+  "answer": 1,
+  "exp": "The fast pointer reaches the 9th node after 4 steps, when the slow pointer is at the 5th node (the middle).",
+  "sub": "linked lists"
+ },
+ {
+  "q": "A BST is built by inserting 40, 20, 10, 30, 60, 50, 70 in this order. What is its postorder traversal?",
+  "options": [
+   "10 30 20 50 70 60 40",
+   "10 20 30 50 60 70 40",
+   "30 10 20 70 50 60 40",
+   "10 30 20 70 50 60 40"
+  ],
+  "answer": 0,
+  "exp": "Left subtree 20(10,30) gives 10 30 20; right subtree 60(50,70) gives 50 70 60; then root 40.",
+  "sub": "trees"
+ },
+ {
+  "q": "How many edges does a complete undirected graph on 7 vertices have?",
+  "options": [
+   "14",
+   "42",
+   "28",
+   "21"
+  ],
+  "answer": 3,
+  "exp": "n(n-1)/2 = 7×6/2 = 21.",
+  "sub": "graph representation"
+ },
+ {
+  "q": "In the mid-square hashing method a key 54 is squared and the two middle digits of the square are used as the address in a table of 100 slots. What address is obtained?",
+  "options": [
+   "29",
+   "16",
+   "21",
+   "91"
+  ],
+  "answer": 3,
+  "exp": "54² = 2916; the two middle digits are 91.",
+  "sub": "hashing"
+ },
+ {
+  "q": "How many levels of merging (merge passes) does a bottom-up merge sort need to sort 16 elements?",
+  "options": [
+   "3",
+   "4",
+   "5",
+   "8"
+  ],
+  "answer": 1,
+  "exp": "Run sizes double each pass: 1,2,4,8,16, so log₂16 = 4 merge passes.",
+  "sub": "sorting"
+ },
+ {
+  "q": "What is the time complexity of the naive recursive Fibonacci function fib(n) = fib(n-1) + fib(n-2)?",
+  "options": [
+   "O(n)",
+   "O(n²)",
+   "O(2ⁿ)",
+   "O(log n)"
+  ],
+  "answer": 2,
+  "exp": "Each call spawns two calls and the recursion tree has about 2ⁿ nodes (exponential).",
+  "sub": "recursion"
+ },
+ {
+  "q": "The elements of A[1..100] are stored from address 2000 and A[40] is at address 2156. What is the address of A[75]?",
+  "options": [
+   "2296",
+   "2300",
+   "2292",
+   "2304"
+  ],
+  "answer": 0,
+  "exp": "Element size = 156/39 = 4 bytes. Address of A[75] = 2000 + 74×4 = 2296.",
+  "sub": "arrays"
+ },
+ {
+  "q": "A string STET is pushed onto a stack one character at a time (S first). The characters are then popped one by one and printed. What is printed?",
+  "options": [
+   "STET",
+   "TETS",
+   "ETTS",
+   "TEST"
+  ],
+  "answer": 1,
+  "exp": "A stack reverses order, so STET becomes TETS.",
+  "sub": "stacks"
+ },
+ {
+  "q": "Elements 5, 3, 8, 1 are inserted into a min priority queue and then two extract-min operations are performed. What will the next extract-min return?",
+  "options": [
+   "3",
+   "8",
+   "1",
+   "5"
+  ],
+  "answer": 3,
+  "exp": "The first two extractions remove 1 and 3; the smallest remaining is 5.",
+  "sub": "queues"
+ },
+ {
+  "q": "Assertion (A): Binary search cannot be performed efficiently on a singly linked list.\nReason (R): A linked list does not allow direct access to the middle element by index.",
+  "options": [
+   "Both A and R are true and R is the correct explanation of A",
+   "Both A and R are true but R is not the correct explanation of A",
+   "A is true but R is false",
+   "A is false but R is true"
+  ],
+  "answer": 0,
+  "exp": "Reaching the middle node needs traversal, which destroys the O(log n) advantage; R explains A.",
+  "sub": "linked lists"
+ },
+ {
+  "q": "What is the height (in edges) of a complete binary tree with 100 nodes?",
+  "options": [
+   "5",
+   "7",
+   "6",
+   "8"
+  ],
+  "answer": 2,
+  "exp": "Height = floor(log₂ 100) = 6 since 2⁶ = 64 ≤ 100 < 128.",
+  "sub": "trees"
+ },
+ {
+  "q": "A weighted undirected graph has edges: A-B 2, A-C 3, B-C 1, B-D 4, C-D 5, C-E 7, D-E 8. What is the weight of the minimum spanning tree?",
+  "options": [
+   "14",
+   "15",
+   "12",
+   "16"
+  ],
+  "answer": 0,
+  "exp": "Kruskal picks B-C(1), A-B(2), B-D(4) and C-E(7): total 14 (A-C and C-D form cycles).",
+  "sub": "graphs"
+ },
+ {
+  "q": "A 3 × 4 matrix is stored in row-major order in a 1D array with 0-based indexing. The element at 1D index 7 corresponds to which (row, column) position (0-based)?",
+  "options": [
+   "(2, 1)",
+   "(1, 2)",
+   "(1, 3)",
+   "(2, 3)"
+  ],
+  "answer": 2,
+  "exp": "Row = 7 div 4 = 1 and column = 7 mod 4 = 3.",
+  "sub": "arrays"
+ },
+ {
+  "q": "What is the prefix form of the infix expression (A+B)*(C-D)?",
+  "options": [
+   "+*AB-CD",
+   "*AB+CD-",
+   "AB+CD-*",
+   "*+AB-CD"
+  ],
+  "answer": 3,
+  "exp": "Root operator * with left prefix +AB and right prefix -CD gives *+AB-CD.",
+  "sub": "stacks"
+ },
+ {
+  "q": "An empty deque undergoes: insertFront(1), insertRear(2), insertFront(3), insertRear(4), deleteFront, deleteRear. What are the front and rear elements now?",
+  "options": [
+   "front = 3, rear = 4",
+   "front = 1, rear = 2",
+   "front = 3, rear = 2",
+   "front = 1, rear = 4"
+  ],
+  "answer": 1,
+  "exp": "The deque goes 1 -> 1 2 -> 3 1 2 -> 3 1 2 4; deleting both ends leaves 1 2.",
+  "sub": "queues"
+ },
+ {
+  "q": "What is the final list after this code runs on the list 1->2->3->4->5?\np = head;\nwhile(p != NULL && p->next != NULL){ t = p->data; p->data = p->next->data; p->next->data = t; p = p->next->next; }",
+  "options": [
+   "1 2 3 4 5",
+   "2 1 3 4 5",
+   "2 1 4 3 5",
+   "5 4 3 2 1"
+  ],
+  "answer": 2,
+  "exp": "The loop swaps data of each adjacent pair (1,2) and (3,4); node 5 has no partner and is unchanged.",
+  "sub": "linked lists"
+ },
+ {
+  "q": "In a BST with root 50 whose right subtree has root 70 with left child 60 and right child 80, what is the inorder successor of 50?",
+  "options": [
+   "60",
+   "70",
+   "80",
+   "65"
+  ],
+  "answer": 0,
+  "exp": "The inorder successor is the leftmost node of the right subtree, which is 60.",
+  "sub": "trees"
+ },
+ {
+  "q": "Which of the following is NOT a valid topological ordering of the DAG with edges 5->2, 5->0, 4->0, 4->1, 2->3, 3->1?",
+  "options": [
+   "5 4 2 3 1 0",
+   "5 2 3 1 4 0",
+   "4 5 2 3 1 0",
+   "5 4 0 2 3 1"
+  ],
+  "answer": 1,
+  "exp": "In 5 2 3 1 4 0 vertex 1 appears before 4 although 4->1 is an edge, so the order is invalid.",
+  "sub": "graphs"
+ },
+ {
+  "q": "Which of the following sorting algorithms is NOT stable in its standard implementation?",
+  "options": [
+   "Merge sort",
+   "Insertion sort",
+   "Bubble sort",
+   "Selection sort"
+  ],
+  "answer": 3,
+  "exp": "Selection sort swaps the minimum with the current position, which can jump over equal keys and change their relative order.",
+  "sub": "sorting"
+ },
+ {
+  "q": "How many function calls (including the first) are made when gcd(48, 18) is evaluated?\nint gcd(int a,int b){ if(b==0) return a; return gcd(b, a%b); }",
+  "options": [
+   "4",
+   "3",
+   "5",
+   "6"
+  ],
+  "answer": 0,
+  "exp": "gcd(48,18) -> gcd(18,12) -> gcd(12,6) -> gcd(6,0): 4 calls, returning 6.",
+  "sub": "recursion"
+ },
+ {
+  "q": "What is the auxiliary space complexity of merge sort on an array of n elements?",
+  "options": [
+   "O(1)",
+   "O(n)",
+   "O(log n)",
+   "O(n log n)"
+  ],
+  "answer": 1,
+  "exp": "Merging needs a temporary array of size up to n.",
+  "sub": "complexity"
+ },
+ {
+  "q": "In a zero-indexed array the address of A[12] is 3048 and the address of A[20] is 3080. What is the base address (address of A[0])?",
+  "options": [
+   "2976",
+   "3012",
+   "3024",
+   "3000"
+  ],
+  "answer": 3,
+  "exp": "Element size = (3080-3048)/8 = 4 bytes. Base = 3048 - 12×4 = 3000.",
+  "sub": "arrays"
+ },
+ {
+  "q": "Evaluate the postfix expression: 8 2 3 ^ / 2 3 * + 5 3 * -",
+  "options": [
+   "8",
+   "22",
+   "-8",
+   "2"
+  ],
+  "answer": 2,
+  "exp": "2^3=8; 8/8=1; 2*3=6; 1+6=7; 5*3=15; 7-15=-8.",
+  "sub": "stacks"
+ },
+ {
+  "q": "Assertion (A): A circular queue uses array space better than a simple linear array queue.\nReason (R): In a circular queue the rear index can wrap around to index 0 when free slots exist at the front.",
+  "options": [
+   "Both A and R are true and R is the correct explanation of A",
+   "Both A and R are true but R is not the correct explanation of A",
+   "A is true but R is false",
+   "A is false but R is true"
+  ],
+  "answer": 0,
+  "exp": "Wrap-around reuses freed slots, which is exactly why circular queues avoid wasted space.",
+  "sub": "queues"
+ },
+ {
+  "q": "Which of the following is NOT an advantage of a doubly linked list over a singly linked list?",
+  "options": [
+   "It can be traversed in both directions",
+   "A node can be deleted in O(1) when only a pointer to it is given",
+   "Insertion before a given node is O(1)",
+   "It needs less memory per node"
+  ],
+  "answer": 3,
+  "exp": "A doubly linked list stores an extra pointer in every node, so it uses more memory.",
+  "sub": "linked lists"
+ },
+ {
+  "q": "How many structurally different binary search trees can be built with 5 distinct keys?",
+  "options": [
+   "32",
+   "42",
+   "52",
+   "14"
+  ],
+  "answer": 1,
+  "exp": "The count is the Catalan number C₅ = (1/6)·C(10,5) = 42.",
+  "sub": "trees"
+ },
+ {
+  "q": "What is the time complexity of Dijkstra's shortest path algorithm using a binary min-heap and an adjacency list?",
+  "options": [
+   "O(V + E)",
+   "O(E)",
+   "O((V + E) log V)",
+   "O(V³)"
+  ],
+  "answer": 2,
+  "exp": "Each vertex extraction and edge relaxation costs O(log V) in the heap.",
+  "sub": "graphs"
+ }
+]

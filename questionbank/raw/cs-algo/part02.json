@@ -1,0 +1,482 @@
+[
+ {
+  "q": "The Knuth–Morris–Pratt algorithm finds a pattern of length m in a text of length n in time",
+  "options": [
+   "O(nm)",
+   "O(n + m)",
+   "O(n log m)",
+   "O(m²)"
+  ],
+  "answer": 1,
+  "exp": "Prefix function takes O(m) and the scan takes O(n).",
+  "sub": "String Matching"
+ },
+ {
+  "q": "How many distinct Hamiltonian tours (counting a tour and its reverse as the same) exist in a complete graph of 5 cities?",
+  "options": [
+   "24",
+   "60",
+   "12",
+   "120"
+  ],
+  "answer": 2,
+  "exp": "(n−1)!/2 = 4!/2 = 12.",
+  "sub": "Dynamic Programming"
+ },
+ {
+  "q": "The recurrence T(n) = 3T(n/2) + n² has solution",
+  "options": [
+   "Θ(n²)",
+   "Θ(n^1.58)",
+   "Θ(n² log n)",
+   "Θ(n³)"
+  ],
+  "answer": 0,
+  "exp": "log₂3 ≈ 1.58 < 2, so f(n) = n² dominates (regularity holds): Θ(n²).",
+  "sub": "Recurrences"
+ },
+ {
+  "q": "Assertion (A): n log n = Ω(n).\nReason (R): For n ≥ 2, log₂ n ≥ 1, so n log₂ n ≥ n.\nChoose the correct option.",
+  "options": [
+   "Both A and R are true but R does not explain A",
+   "A is true but R is false",
+   "A is false but R is true",
+   "Both A and R are true and R explains A"
+  ],
+  "answer": 3,
+  "exp": "The inequality n log n ≥ n for n ≥ 2 is exactly the lower-bound definition.",
+  "sub": "Asymptotic Notation"
+ },
+ {
+  "q": "Which statement about Huffman coding is NOT correct?",
+  "options": [
+   "Characters with lower frequency receive shorter codes",
+   "It generates a prefix-free code",
+   "It follows a greedy strategy using a min-priority queue",
+   "The code is optimal among prefix codes for the given frequencies"
+  ],
+  "answer": 0,
+  "exp": "Huffman assigns shorter codes to more frequent characters, not less frequent ones.",
+  "sub": "Greedy"
+ },
+ {
+  "q": "Using Strassen's method recursively, the number of scalar multiplications needed to multiply two 4×4 matrices is",
+  "options": [
+   "64",
+   "56",
+   "49",
+   "42"
+  ],
+  "answer": 2,
+  "exp": "Seven multiplications of 2×2 blocks, each done with 7 scalar multiplications: 7×7 = 49.",
+  "sub": "Divide and Conquer"
+ },
+ {
+  "q": "Dynamic programming is applicable to a problem when it has",
+  "options": [
+   "only independent subproblems",
+   "no optimal substructure",
+   "only the greedy choice property",
+   "optimal substructure and overlapping subproblems"
+  ],
+  "answer": 3,
+  "exp": "These two properties allow storing and reusing subproblem solutions.",
+  "sub": "Dynamic Programming"
+ },
+ {
+  "q": "The number of distinct solutions of the 8-queens problem is",
+  "options": [
+   "64",
+   "92",
+   "40",
+   "120"
+  ],
+  "answer": 1,
+  "exp": "There are 92 distinct non-attacking placements of 8 queens on an 8×8 board.",
+  "sub": "Backtracking"
+ },
+ {
+  "q": "In Floyd–Warshall, the weights are 1→2: 4, 1→3: 11, 2→1: 6, 2→3: 2, 3→1: 3. The shortest distance from vertex 1 to vertex 3 is",
+  "options": [
+   "6",
+   "11",
+   "4",
+   "8"
+  ],
+  "answer": 0,
+  "exp": "Going 1→2→3 costs 4 + 2 = 6, less than the direct 11.",
+  "sub": "Dynamic Programming"
+ },
+ {
+  "q": "Jobs with (deadline, profit): (4,20), (1,10), (1,40), (1,30). With unit processing time, the maximum profit by job sequencing is",
+  "options": [
+   "70",
+   "100",
+   "60",
+   "40"
+  ],
+  "answer": 2,
+  "exp": "Take profit 40 in slot 1 and profit 20 in slot 4; others have deadline 1 and are rejected.",
+  "sub": "Greedy"
+ },
+ {
+  "q": "The time complexity of Kruskal's algorithm on a graph with V vertices and E edges is",
+  "options": [
+   "O(E²)",
+   "O(E log E)",
+   "O(V³)",
+   "O(V + E)"
+  ],
+  "answer": 1,
+  "exp": "Sorting the edges dominates; union-find operations are nearly constant.",
+  "sub": "Greedy"
+ },
+ {
+  "q": "Lomuto partition with the last element as pivot is applied to [7, 2, 9, 4, 6, 5]. The array after partition is",
+  "options": [
+   "[2, 4, 5, 6, 7, 9]",
+   "[2, 4, 9, 7, 6, 5]",
+   "[4, 2, 5, 7, 6, 9]",
+   "[2, 4, 5, 7, 6, 9]"
+  ],
+  "answer": 3,
+  "exp": "Elements ≤ 5 (2 then 4) are swapped to the front, then the pivot is swapped into index 2.",
+  "sub": "Divide and Conquer"
+ },
+ {
+  "q": "In least-cost (LC) branch and bound, the next E-node is chosen as the live node with",
+  "options": [
+   "the earliest generation time (FIFO)",
+   "the latest generation time (LIFO)",
+   "a randomly selected position",
+   "the smallest cost estimate (bound)"
+  ],
+  "answer": 3,
+  "exp": "LC search ranks live nodes by estimated cost and expands the most promising one.",
+  "sub": "Branch and Bound"
+ },
+ {
+  "q": "In the Rabin–Karp algorithm with text 31415926535, pattern 26 and modulus 11, the number of spurious hits is",
+  "options": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "answer": 2,
+  "exp": "26 mod 11 = 4. Windows 15, 59 and 92 also give 4 but are not 26: three spurious hits.",
+  "sub": "String Matching"
+ },
+ {
+  "q": "The solution of T(n) = T(n/2) + n is",
+  "options": [
+   "Θ(log n)",
+   "Θ(n)",
+   "Θ(n log n)",
+   "Θ(n²)"
+  ],
+  "answer": 1,
+  "exp": "Case 3 of the master theorem (f(n) = n dominates); the sum n + n/2 + n/4 + … = 2n.",
+  "sub": "Recurrences"
+ },
+ {
+  "q": "Which of the following functions grows asymptotically slowest?",
+  "options": [
+   "(log n)²",
+   "n log n",
+   "n^1.5",
+   "n"
+  ],
+  "answer": 0,
+  "exp": "Polylogarithmic functions grow slower than any positive power of n.",
+  "sub": "Asymptotic Notation"
+ },
+ {
+  "q": "Edges: A-B 4, A-C 2, B-C 1, B-D 5, C-D 8, C-E 10, D-E 2. The weight of the minimum spanning tree is",
+  "options": [
+   "9",
+   "11",
+   "10",
+   "12"
+  ],
+  "answer": 2,
+  "exp": "Edges chosen: B-C 1, A-C 2, D-E 2, B-D 5, total 10.",
+  "sub": "Greedy"
+ },
+ {
+  "q": "Which sorting algorithm below is stable and has worst-case running time O(n log n)?",
+  "options": [
+   "Quick sort",
+   "Merge sort",
+   "Heap sort",
+   "Selection sort"
+  ],
+  "answer": 1,
+  "exp": "Merge sort preserves order of equal keys and always takes O(n log n).",
+  "sub": "Divide and Conquer"
+ },
+ {
+  "q": "The time complexity of computing the LCS of strings of length m and n by dynamic programming is",
+  "options": [
+   "Θ(mn)",
+   "Θ(m + n)",
+   "Θ(2^(m+n))",
+   "Θ(m log n)"
+  ],
+  "answer": 0,
+  "exp": "The table has (m+1)(n+1) entries each filled in O(1).",
+  "sub": "Dynamic Programming"
+ },
+ {
+  "q": "Statement I: P ⊆ NP.\nStatement II: Every problem in NP is NP-complete.\nWhich is correct?",
+  "options": [
+   "Both Statement I and II are true",
+   "Only Statement II is true",
+   "Neither is true",
+   "Only Statement I is true"
+  ],
+  "answer": 3,
+  "exp": "Any problem solvable in polynomial time is verifiable in polynomial time. Sorting-type problems in P are in NP but not NP-complete (unless P = NP).",
+  "sub": "P NP NP-Complete"
+ },
+ {
+  "q": "Binary search is applied to the sorted array [3, 8, 12, 17, 21, 29, 35, 41, 50] to find 29, using mid = ⌊(low + high)/2⌋. How many array elements are examined (including 29)?",
+  "options": [
+   "2",
+   "3",
+   "4",
+   "5"
+  ],
+  "answer": 1,
+  "exp": "Mid indices: 4 (21), then 6 (35), then 5 (29): three elements are examined.",
+  "sub": "Divide and Conquer"
+ },
+ {
+  "q": "Standard divide and conquer matrix multiplication making 8 recursive multiplications of size n/2 has running time T(n) = 8T(n/2) + n², which solves to",
+  "options": [
+   "Θ(n³)",
+   "Θ(n² log n)",
+   "Θ(n^2.81)",
+   "Θ(n²)"
+  ],
+  "answer": 0,
+  "exp": "log₂8 = 3 > 2, so case 1 gives Θ(n³).",
+  "sub": "Recurrences"
+ },
+ {
+  "q": "Symbols with frequencies 1, 1, 2, 3, 5, 8 are Huffman coded. The total weighted code length is",
+  "options": [
+   "40",
+   "48",
+   "45",
+   "50"
+  ],
+  "answer": 2,
+  "exp": "Merges: 1+1=2, 2+2=4, 3+4=7, 5+7=12, 8+12=20; sum = 2+4+7+12+20 = 45.",
+  "sub": "Greedy"
+ },
+ {
+  "q": "A knapsack of capacity 5 has items (weight, value): (2,3), (3,4), (4,5), (5,6). The best 0/1 knapsack value is",
+  "options": [
+   "6",
+   "8",
+   "9",
+   "7"
+  ],
+  "answer": 3,
+  "exp": "Items (2,3) and (3,4) fit exactly with value 7; item (5,6) gives only 6.",
+  "sub": "Dynamic Programming"
+ },
+ {
+  "q": "Which pair of queens, given as (row, column), attack each other?",
+  "options": [
+   "(1,1) and (2,3)",
+   "(3,2) and (5,3)",
+   "(4,1) and (6,4)",
+   "(2,3) and (5,6)"
+  ],
+  "answer": 3,
+  "exp": "|2−5| = 3 = |3−6|, so they share a diagonal. The other pairs differ in the row and column gaps.",
+  "sub": "Backtracking"
+ },
+ {
+  "q": "Which of the following is NOT known to be NP-complete?",
+  "options": [
+   "Subset sum",
+   "Finding a minimum spanning tree (decision version)",
+   "Graph 3-colouring",
+   "Vertex cover"
+  ],
+  "answer": 1,
+  "exp": "MST is solvable in polynomial time by Kruskal or Prim.",
+  "sub": "P NP NP-Complete"
+ },
+ {
+  "q": "The maximum number of mutually compatible activities from (start, finish): (1,4), (3,5), (0,6), (5,7), (3,9), (5,9), (6,10), (8,11), (8,12), (2,14), (12,16) is",
+  "options": [
+   "4",
+   "3",
+   "5",
+   "6"
+  ],
+  "answer": 0,
+  "exp": "Earliest-finish greedy picks (1,4), (5,7), (8,11), (12,16).",
+  "sub": "Greedy"
+ },
+ {
+  "q": "Dijkstra's algorithm with a binary min-heap on a graph with V vertices and E edges runs in time",
+  "options": [
+   "O(V³)",
+   "O(V·E)",
+   "O((V + E) log V)",
+   "O(V²·E)"
+  ],
+  "answer": 2,
+  "exp": "Each vertex and edge causes O(log V) heap operations.",
+  "sub": "Greedy"
+ },
+ {
+  "q": "In the Floyd–Warshall algorithm, after the k-th iteration the entry d[i][j] is the shortest path length from i to j using intermediate vertices only from",
+  "options": [
+   "the single vertex k",
+   "the set {k, k+1, …, n}",
+   "paths having at most k edges",
+   "the set {1, 2, …, k}"
+  ],
+  "answer": 3,
+  "exp": "This is the defining invariant of the algorithm.",
+  "sub": "Dynamic Programming"
+ },
+ {
+  "q": "The number of inversions in the array [2, 4, 1, 3, 5] (pairs i < j with a[i] > a[j]), which a modified merge sort can count, is",
+  "options": [
+   "3",
+   "2",
+   "4",
+   "5"
+  ],
+  "answer": 0,
+  "exp": "The inversions are (2,1), (4,1) and (4,3).",
+  "sub": "Divide and Conquer"
+ },
+ {
+  "q": "The naive string matching algorithm (comparing left to right and stopping a shift at the first mismatch) is run on text AAAAAB with pattern AAB. The total number of character comparisons is",
+  "options": [
+   "9",
+   "10",
+   "12",
+   "8"
+  ],
+  "answer": 2,
+  "exp": "Each of the four shifts 0, 1, 2, 3 needs 3 comparisons: 12 in total.",
+  "sub": "String Matching"
+ },
+ {
+  "q": "How many subsets of {3, 5, 6, 7} sum exactly to 15?",
+  "options": [
+   "0",
+   "1",
+   "2",
+   "3"
+  ],
+  "answer": 1,
+  "exp": "Only {3, 5, 7} sums to 15; all other subsets give 14, 16, 18, 21 or at most 13.",
+  "sub": "Backtracking"
+ },
+ {
+  "q": "The solution of T(n) = 16T(n/4) + n is",
+  "options": [
+   "Θ(n)",
+   "Θ(n log n)",
+   "Θ(n²)",
+   "Θ(n⁴)"
+  ],
+  "answer": 2,
+  "exp": "n^(log₄16) = n² dominates f(n) = n, so case 1 gives Θ(n²).",
+  "sub": "Recurrences"
+ },
+ {
+  "q": "If f(n) = O(n²) and g(n) = O(n³), then f(n) · g(n) is",
+  "options": [
+   "O(n⁵)",
+   "Θ(n⁵)",
+   "Θ(n⁶)",
+   "O(n²)"
+  ],
+  "answer": 0,
+  "exp": "Product of upper bounds is an upper bound: O(n⁵), but equality is not guaranteed.",
+  "sub": "Asymptotic Notation"
+ },
+ {
+  "q": "The fractional knapsack problem with n items is solved by the greedy method in time",
+  "options": [
+   "O(nW)",
+   "O(2ⁿ)",
+   "O(n³)",
+   "O(n log n)"
+  ],
+  "answer": 3,
+  "exp": "Sorting by value/weight ratio dominates the running time.",
+  "sub": "Greedy"
+ },
+ {
+  "q": "In how many different ways can a product of 5 matrices be fully parenthesised?",
+  "options": [
+   "10",
+   "14",
+   "12",
+   "24"
+  ],
+  "answer": 1,
+  "exp": "The number of parenthesisations of n matrices is the Catalan number C(n−1); C(4) = 14.",
+  "sub": "Dynamic Programming"
+ },
+ {
+  "q": "A problem is NP-hard if",
+  "options": [
+   "it can be solved in polynomial time",
+   "it belongs to both P and NP",
+   "every problem in NP can be reduced to it in polynomial time",
+   "its solutions cannot be verified in polynomial time"
+  ],
+  "answer": 2,
+  "exp": "NP-hardness is defined by polynomial-time reducibility of all NP problems to it.",
+  "sub": "P NP NP-Complete"
+ },
+ {
+  "q": "The KMP prefix function for the pattern AABAA is",
+  "options": [
+   "[0, 1, 0, 1, 2]",
+   "[0, 1, 2, 0, 1]",
+   "[0, 0, 1, 0, 1]",
+   "[0, 1, 0, 0, 1]"
+  ],
+  "answer": 0,
+  "exp": "Longest border lengths for A, AA, AAB, AABA, AABAA are 0, 1, 0, 1, 2.",
+  "sub": "String Matching"
+ },
+ {
+  "q": "The matrix chain with dimensions p = [5, 10, 3, 12, 5] (A1 is 5×10, A2 is 10×3, A3 is 3×12, A4 is 12×5) needs a minimum number of scalar multiplications equal to",
+  "options": [
+   "330",
+   "405",
+   "580",
+   "630"
+  ],
+  "answer": 1,
+  "exp": "Best split is (A1A2)(A3A4): 150 + 180 + 5·3·5 = 405.",
+  "sub": "Dynamic Programming"
+ },
+ {
+  "q": "In Dijkstra's algorithm on a graph with edges S-A 7, S-B 2, B-A 3, A-C 1, B-C 8, starting at S, the order in which vertices are finalised is",
+  "options": [
+   "S, A, B, C",
+   "S, B, C, A",
+   "S, A, C, B",
+   "S, B, A, C"
+  ],
+  "answer": 3,
+  "exp": "Distances: B=2, A=min(7,5)=5, C=min(6,10)=6, so the order is S, B, A, C.",
+  "sub": "Greedy"
+ }
+]

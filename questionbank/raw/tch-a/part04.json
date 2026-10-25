@@ -1,0 +1,362 @@
+[
+ {
+  "q": "The 'Big Five' personality traits are abbreviated as",
+  "options": [
+   "OCEAN",
+   "STEM",
+   "SMART",
+   "PQRST"
+  ],
+  "answer": 0,
+  "exp": "Openness, Conscientiousness, Extraversion, Agreeableness and Neuroticism.",
+  "sub": "Personality"
+ },
+ {
+  "q": "Which characteristic is typical of adolescents?",
+  "options": [
+   "Complete dependence on parents",
+   "Strong influence of the peer group",
+   "Lack of any emotions",
+   "Inability to think abstractly"
+  ],
+  "answer": 1,
+  "exp": "Adolescents often prefer peers' approval and values.",
+  "sub": "Adolescence"
+ },
+ {
+  "q": "Kolb's experiential learning cycle includes",
+  "options": [
+   "concrete experience, reflective observation, abstract conceptualisation and active experimentation",
+   "attention, retention, reproduction and motivation",
+   "readiness, exercise and effect",
+   "preparation, incubation, illumination and verification"
+  ],
+  "answer": 0,
+  "exp": "These are the four phases of Kolb's cycle.",
+  "sub": "Individual differences"
+ },
+ {
+  "q": "Dyscalculia refers to difficulty in",
+  "options": [
+   "reading",
+   "speaking",
+   "mathematical concepts and calculation",
+   "walking"
+  ],
+  "answer": 2,
+  "exp": "It is a specific learning disability in arithmetic.",
+  "sub": "Gifted and special education"
+ },
+ {
+  "q": "Which of the following best distinguishes guidance from counselling?",
+  "options": [
+   "They are the same",
+   "Counselling is broader than guidance",
+   "Guidance is only for adults",
+   "Guidance is broader, while counselling is a more personal, one-to-one process"
+  ],
+  "answer": 3,
+  "exp": "Counselling is one important means within the wider guidance programme.",
+  "sub": "Guidance and counselling"
+ },
+ {
+  "q": "Corporal punishment in schools is prohibited in India under",
+  "options": [
+   "Section 4 of the RTE Act",
+   "Section 17 of the RTE Act",
+   "Article 51A",
+   "Article 29"
+  ],
+  "answer": 1,
+  "exp": "Section 17 prohibits physical punishment and mental harassment of children.",
+  "sub": "Classroom management and discipline"
+ },
+ {
+  "q": "Gandhi's scheme proposed free and compulsory education for the age group",
+  "options": [
+   "3 to 6 years",
+   "7 to 14 years",
+   "14 to 18 years",
+   "18 to 25 years"
+  ],
+  "answer": 1,
+  "exp": "Basic education was designed for seven years from age 7 to 14.",
+  "sub": "Gandhi and Tagore"
+ },
+ {
+  "q": "According to Vivekananda, the essence of education lies in",
+  "options": [
+   "concentration of mind",
+   "collecting information",
+   "passing exams",
+   "becoming wealthy"
+  ],
+  "answer": 0,
+  "exp": "He said that concentration of mind is the essence of education.",
+  "sub": "Vivekananda and Aurobindo"
+ },
+ {
+  "q": "According to Dewey, education is",
+  "options": [
+   "preparation for a future life only",
+   "memorisation of facts",
+   "obedience to authority",
+   "life itself and not merely a preparation for life"
+  ],
+  "answer": 3,
+  "exp": "Dewey stressed that education is a continual reconstruction of experience.",
+  "sub": "Philosophy of education"
+ },
+ {
+  "q": "Which of the following is prohibited under Section 13 of the RTE Act?",
+  "options": [
+   "Free textbooks",
+   "Mid-day meals",
+   "Capitation fee and screening procedure for admission",
+   "School uniforms"
+  ],
+  "answer": 2,
+  "exp": "Section 13 bans capitation fees and screening tests for admission.",
+  "sub": "Right to Education Act 2009"
+ },
+ {
+  "q": "Maturation refers to",
+  "options": [
+   "growth and changes that occur due to internal biological factors, independent of practice",
+   "changes brought about only by teaching",
+   "the end of all development",
+   "learning through imitation"
+  ],
+  "answer": 0,
+  "exp": "Maturation is the unfolding of inherited biological patterns, e.g., walking when the nervous system is ready.",
+  "sub": "Growth and development"
+ },
+ {
+  "q": "A child sees a zebra for the first time and calls it a 'striped horse'. In Piaget's terms the child is using",
+  "options": [
+   "accommodation",
+   "equilibration",
+   "conservation",
+   "assimilation"
+  ],
+  "answer": 3,
+  "exp": "The child fits a new object into an existing schema (horse), which is assimilation.",
+  "sub": "Piaget"
+ },
+ {
+  "q": "In Vygotsky's terms, a 'More Knowledgeable Other' (MKO) can be",
+  "options": [
+   "only the teacher",
+   "a teacher, parent or even a peer who knows more about the task",
+   "only an adult",
+   "only a computer"
+  ],
+  "answer": 1,
+  "exp": "MKO is anyone with better understanding or skill than the learner for a given task.",
+  "sub": "Vygotsky"
+ },
+ {
+  "q": "Which stage is based on the idea 'You scratch my back and I will scratch yours'?",
+  "options": [
+   "Stage 1, obedience orientation",
+   "Stage 4, law and order orientation",
+   "Stage 2, instrumental relativist orientation",
+   "Stage 5, social contract orientation"
+  ],
+  "answer": 2,
+  "exp": "Stage 2 involves fair exchange based on self-interest.",
+  "sub": "Kohlberg"
+ },
+ {
+  "q": "A toddler insists, 'I will do it myself', and parents encourage this. The child is likely to develop",
+  "options": [
+   "guilt",
+   "autonomy",
+   "mistrust",
+   "role confusion"
+  ],
+  "answer": 1,
+  "exp": "Allowing independent tasks supports autonomy in the stage of autonomy versus shame and doubt (1-3 years).",
+  "sub": "Erikson"
+ },
+ {
+  "q": "A dog conditioned to salivate to a bell also salivates to a similar buzzer. This is",
+  "options": [
+   "stimulus discrimination",
+   "extinction",
+   "negative reinforcement",
+   "stimulus generalisation"
+  ],
+  "answer": 3,
+  "exp": "Responding to stimuli similar to the conditioned stimulus is generalisation.",
+  "sub": "Classical and operant conditioning"
+ },
+ {
+  "q": "The famous 'Bobo doll' experiment is associated with",
+  "options": [
+   "Albert Bandura",
+   "Pavlov",
+   "Skinner",
+   "Thorndike"
+  ],
+  "answer": 0,
+  "exp": "Children imitated aggressive models in the Bobo doll studies.",
+  "sub": "Other learning theories"
+ },
+ {
+  "q": "The need for achievement (n-Ach) is associated with",
+  "options": [
+   "Maslow",
+   "Freud",
+   "McClelland",
+   "Piaget"
+  ],
+  "answer": 2,
+  "exp": "McClelland studied the need to achieve, affiliate and gain power.",
+  "sub": "Motivation"
+ },
+ {
+  "q": "Guilford's Structure of Intellect model has the three dimensions of",
+  "options": [
+   "analytical, creative and practical",
+   "verbal, spatial and numerical",
+   "operations, contents and products",
+   "fluid, crystallised and general"
+  ],
+  "answer": 2,
+  "exp": "Guilford classified intellect by operations, contents and products.",
+  "sub": "Intelligence"
+ },
+ {
+  "q": "In the brainstorming technique of Osborn, the most important rule is",
+  "options": [
+   "only the best idea is accepted",
+   "criticism of ideas is withheld during idea generation",
+   "the teacher judges each idea at once",
+   "ideas must be written in silence"
+  ],
+  "answer": 1,
+  "exp": "Deferring judgment encourages many free ideas.",
+  "sub": "Creativity"
+ },
+ {
+  "q": "Sheldon's somatotype classification includes",
+  "options": [
+   "endomorph, mesomorph and ectomorph",
+   "pyknic, athletic and asthenic",
+   "introvert, extrovert and ambivert",
+   "id, ego and superego"
+  ],
+  "answer": 0,
+  "exp": "Sheldon related body build to temperament in these three types.",
+  "sub": "Personality"
+ },
+ {
+  "q": "The best way for a teacher to deal with adolescent problems is",
+  "options": [
+   "harsh punishment",
+   "ignoring them",
+   "public criticism",
+   "understanding, guidance and sympathetic attitude"
+  ],
+  "answer": 3,
+  "exp": "Adolescents need empathy, counselling and guidance.",
+  "sub": "Adolescence"
+ },
+ {
+  "q": "A slow learner generally has an IQ in the range of",
+  "options": [
+   "110 to 120",
+   "130 to 140",
+   "70 to 90",
+   "below 25"
+  ],
+  "answer": 2,
+  "exp": "Slow learners fall below average but above intellectual disability.",
+  "sub": "Individual differences"
+ },
+ {
+  "q": "Inclusive education means",
+  "options": [
+   "educating all children, including those with disabilities, together in regular schools",
+   "educating disabled children in special schools only",
+   "separating gifted children",
+   "educating only average children"
+  ],
+  "answer": 0,
+  "exp": "Inclusion removes barriers so all learners learn together.",
+  "sub": "Gifted and special education"
+ },
+ {
+  "q": "Maintaining secrecy about the client's personal information is the principle of",
+  "options": [
+   "directiveness",
+   "confidentiality",
+   "referral",
+   "diagnosis"
+  ],
+  "answer": 1,
+  "exp": "Confidentiality protects trust in counselling.",
+  "sub": "Guidance and counselling"
+ },
+ {
+  "q": "Which style of leadership in the classroom is best for developing initiative and responsibility?",
+  "options": [
+   "Autocratic",
+   "Laissez-faire",
+   "Dictatorial",
+   "Democratic"
+  ],
+  "answer": 3,
+  "exp": "Lewin's studies found democratic groups showed cooperation and motivation.",
+  "sub": "Classroom management and discipline"
+ },
+ {
+  "q": "The committee that prepared the detailed Wardha scheme was headed by",
+  "options": [
+   "Radhakrishnan",
+   "Kothari",
+   "Mudaliar",
+   "Zakir Husain"
+  ],
+  "answer": 3,
+  "exp": "The Zakir Husain Committee framed the syllabus in 1938.",
+  "sub": "Gandhi and Tagore"
+ },
+ {
+  "q": "Vivekananda strongly advocated",
+  "options": [
+   "education of women and the masses",
+   "education only for men",
+   "education only for the elite",
+   "no education for the poor"
+  ],
+  "answer": 0,
+  "exp": "He said the uplift of women and the masses was essential.",
+  "sub": "Vivekananda and Aurobindo"
+ },
+ {
+  "q": "Which philosophy gives the greatest importance to individual freedom and choice?",
+  "options": [
+   "Realism",
+   "Existentialism",
+   "Idealism",
+   "Naturalism"
+  ],
+  "answer": 1,
+  "exp": "Existentialists stress personal responsibility and freedom.",
+  "sub": "Philosophy of education"
+ },
+ {
+  "q": "Under the RTE Act the prescribed pupil-teacher ratio at the primary level is",
+  "options": [
+   "40:1",
+   "25:1",
+   "30:1",
+   "50:1"
+  ],
+  "answer": 2,
+  "exp": "The Schedule prescribes 30:1 for primary and 35:1 for upper primary.",
+  "sub": "Right to Education Act 2009"
+ }
+]

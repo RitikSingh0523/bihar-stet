@@ -1,0 +1,362 @@
+[
+ {
+  "q": "In educational psychology, the term 'growth' mainly refers to",
+  "options": [
+   "qualitative changes in behaviour and skills",
+   "changes in personality due to training",
+   "changes caused only by learning",
+   "quantitative physical changes such as increase in height and weight"
+  ],
+  "answer": 3,
+  "exp": "Growth is the measurable, quantitative increase in size, height and weight; development is qualitative and wider.",
+  "sub": "Growth and development"
+ },
+ {
+  "q": "According to Piaget, the first stage of cognitive development is the",
+  "options": [
+   "preoperational stage",
+   "sensorimotor stage",
+   "concrete operational stage",
+   "formal operational stage"
+  ],
+  "answer": 1,
+  "exp": "Piaget's stages in order are sensorimotor, preoperational, concrete operational and formal operational.",
+  "sub": "Piaget"
+ },
+ {
+  "q": "Vygotsky's 'Zone of Proximal Development' is the gap between",
+  "options": [
+   "what a child can do alone and what the child can do with guidance",
+   "a child's mental age and chronological age",
+   "intelligence and achievement",
+   "home and school learning"
+  ],
+  "answer": 0,
+  "exp": "ZPD lies between independent performance and the level reachable with help from a more capable person.",
+  "sub": "Vygotsky"
+ },
+ {
+  "q": "Kohlberg's theory of moral development is based on",
+  "options": [
+   "moral behaviour observed in daily life",
+   "rewards and punishment",
+   "moral reasoning given in response to dilemmas",
+   "inherited moral instincts"
+  ],
+  "answer": 2,
+  "exp": "Kohlberg analysed the reasons people gave for solving dilemmas such as the Heinz dilemma.",
+  "sub": "Kohlberg"
+ },
+ {
+  "q": "Erikson's theory of development is known as the",
+  "options": [
+   "psychosocial theory",
+   "psychosexual theory",
+   "cognitive theory",
+   "behavioural theory"
+  ],
+  "answer": 0,
+  "exp": "Erikson described eight stages of psychosocial crises over the life span.",
+  "sub": "Erikson"
+ },
+ {
+  "q": "In Pavlov's experiment, the sound of the bell before conditioning is a",
+  "options": [
+   "unconditioned stimulus",
+   "neutral stimulus",
+   "conditioned response",
+   "unconditioned response"
+  ],
+  "answer": 1,
+  "exp": "Before pairing with food, the bell does not cause salivation, so it is neutral.",
+  "sub": "Classical and operant conditioning"
+ },
+ {
+  "q": "Thorndike's 'Law of Effect' states that",
+  "options": [
+   "learning needs only repetition",
+   "learning takes place by insight",
+   "responses followed by satisfying consequences are strengthened",
+   "behaviour is controlled by imitation"
+  ],
+  "answer": 2,
+  "exp": "Satisfying outcomes stamp in a stimulus-response connection.",
+  "sub": "Other learning theories"
+ },
+ {
+  "q": "At the base of Maslow's hierarchy of needs lie the",
+  "options": [
+   "safety needs",
+   "esteem needs",
+   "self-actualisation needs",
+   "physiological needs"
+  ],
+  "answer": 3,
+  "exp": "Basic needs such as food, water and sleep must be satisfied first.",
+  "sub": "Motivation"
+ },
+ {
+  "q": "The formula for the intelligence quotient is",
+  "options": [
+   "(Chronological Age / Mental Age) × 100",
+   "(Mental Age + Chronological Age) / 100",
+   "(Mental Age - Chronological Age) × 100",
+   "(Mental Age / Chronological Age) × 100"
+  ],
+  "answer": 3,
+  "exp": "Intelligence quotient = MA/CA × 100.",
+  "sub": "Intelligence"
+ },
+ {
+  "q": "Guilford regarded creativity as closely related to",
+  "options": [
+   "convergent thinking",
+   "divergent thinking",
+   "rote memory",
+   "reflex action"
+  ],
+  "answer": 1,
+  "exp": "Divergent thinking produces many different ideas for open-ended problems.",
+  "sub": "Creativity"
+ },
+ {
+  "q": "Allport defined personality as the dynamic organisation within the individual of",
+  "options": [
+   "his intelligence and memory only",
+   "his physical features only",
+   "those psychophysical systems that determine his unique adjustment to the environment",
+   "his habits formed by reward"
+  ],
+  "answer": 2,
+  "exp": "This is Allport's classic definition.",
+  "sub": "Personality"
+ },
+ {
+  "q": "G. Stanley Hall described adolescence as a period of",
+  "options": [
+   "storm and stress",
+   "calm and peace",
+   "latency",
+   "complete independence"
+  ],
+  "answer": 0,
+  "exp": "Hall regarded adolescence as a turbulent period with emotional ups and downs.",
+  "sub": "Adolescence"
+ },
+ {
+  "q": "Individual differences among students are caused by",
+  "options": [
+   "heredity only",
+   "heredity and environment together",
+   "environment only",
+   "chance only"
+  ],
+  "answer": 1,
+  "exp": "Both inherited and environmental factors produce variation.",
+  "sub": "Individual differences"
+ },
+ {
+  "q": "A child with IQ 130 or above is generally termed",
+  "options": [
+   "gifted",
+   "slow learner",
+   "average",
+   "borderline"
+  ],
+  "answer": 0,
+  "exp": "IQ above about 130 is commonly considered gifted.",
+  "sub": "Gifted and special education"
+ },
+ {
+  "q": "Frank Parsons is known as the father of",
+  "options": [
+   "educational psychology",
+   "classical conditioning",
+   "vocational guidance",
+   "intelligence testing"
+  ],
+  "answer": 2,
+  "exp": "Parsons founded the Vocation Bureau in 1908.",
+  "sub": "Guidance and counselling"
+ },
+ {
+  "q": "Kounin's concept of 'withitness' means the teacher",
+  "options": [
+   "punishes every mistake",
+   "stays at the desk",
+   "avoids all interaction",
+   "is aware of what is happening in all parts of the classroom"
+  ],
+  "answer": 3,
+  "exp": "Withitness shows students that the teacher knows what is going on.",
+  "sub": "Classroom management and discipline"
+ },
+ {
+  "q": "The Wardha Scheme of Basic Education (Nai Talim) was proposed by",
+  "options": [
+   "Rabindranath Tagore",
+   "Vivekananda",
+   "Mahatma Gandhi",
+   "Aurobindo"
+  ],
+  "answer": 2,
+  "exp": "Gandhi launched Nai Talim at the Wardha conference in 1937.",
+  "sub": "Gandhi and Tagore"
+ },
+ {
+  "q": "'Education is the manifestation of the perfection already in man' is a statement of",
+  "options": [
+   "Gandhi",
+   "Swami Vivekananda",
+   "Tagore",
+   "Dewey"
+  ],
+  "answer": 1,
+  "exp": "This is Vivekananda's best-known definition of education.",
+  "sub": "Vivekananda and Aurobindo"
+ },
+ {
+  "q": "Which philosophy considers self-realisation as the aim of education?",
+  "options": [
+   "Idealism",
+   "Pragmatism",
+   "Realism",
+   "Behaviourism"
+  ],
+  "answer": 0,
+  "exp": "Idealists such as Plato hold that education leads to realising the spiritual self.",
+  "sub": "Philosophy of education"
+ },
+ {
+  "q": "The Right of Children to Free and Compulsory Education Act came into force on",
+  "options": [
+   "26 January 2010",
+   "15 August 2009",
+   "2 October 2009",
+   "1 April 2010"
+  ],
+  "answer": 3,
+  "exp": "The Act was passed in 2009 and came into force on 1 April 2010.",
+  "sub": "Right to Education Act 2009"
+ },
+ {
+  "q": "Which statement correctly distinguishes development from growth?",
+  "options": [
+   "Growth continues throughout life while development stops at adolescence",
+   "Growth is psychological and development is only physical",
+   "Development is a continuous, progressive and qualitative change, while growth is mostly quantitative",
+   "Both terms mean exactly the same thing"
+  ],
+  "answer": 2,
+  "exp": "Development includes qualitative and functional changes and continues lifelong; growth is structural and often stops at maturity.",
+  "sub": "Growth and development"
+ },
+ {
+  "q": "A baby searches for a toy that has been covered with a cloth. The baby has acquired",
+  "options": [
+   "conservation",
+   "object permanence",
+   "reversibility",
+   "abstract reasoning"
+  ],
+  "answer": 1,
+  "exp": "Object permanence, knowing that things exist when out of sight, develops late in the sensorimotor stage.",
+  "sub": "Piaget"
+ },
+ {
+  "q": "The term 'scaffolding' in teaching means",
+  "options": [
+   "punishing wrong answers",
+   "giving final answers directly",
+   "keeping students in groups by ability",
+   "giving temporary support that is gradually withdrawn as the learner becomes competent"
+  ],
+  "answer": 3,
+  "exp": "Scaffolding is adjustable support within the ZPD, later removed as skill grows.",
+  "sub": "Vygotsky"
+ },
+ {
+  "q": "How many levels and stages does Kohlberg's theory have?",
+  "options": [
+   "Three levels and six stages",
+   "Two levels and four stages",
+   "Three levels and nine stages",
+   "Four levels and eight stages"
+  ],
+  "answer": 0,
+  "exp": "Preconventional, conventional and postconventional levels, each with two stages, make six stages.",
+  "sub": "Kohlberg"
+ },
+ {
+  "q": "How many stages does Erikson's theory have?",
+  "options": [
+   "Five",
+   "Eight",
+   "Six",
+   "Four"
+  ],
+  "answer": 1,
+  "exp": "Erikson proposed eight stages from infancy to old age.",
+  "sub": "Erikson"
+ },
+ {
+  "q": "In Pavlov's experiment, food is the",
+  "options": [
+   "unconditioned stimulus",
+   "conditioned stimulus",
+   "conditioned response",
+   "neutral stimulus"
+  ],
+  "answer": 0,
+  "exp": "Food naturally causes salivation without learning.",
+  "sub": "Classical and operant conditioning"
+ },
+ {
+  "q": "Thorndike's experiments with a cat in a puzzle box led to the theory of",
+  "options": [
+   "insight learning",
+   "observational learning",
+   "trial and error learning",
+   "classical conditioning"
+  ],
+  "answer": 2,
+  "exp": "The cat gradually reduced errors through repeated trials, reflecting trial-and-error (connectionism).",
+  "sub": "Other learning theories"
+ },
+ {
+  "q": "The highest need in Maslow's hierarchy is",
+  "options": [
+   "love and belonging",
+   "esteem",
+   "safety",
+   "self-actualisation"
+  ],
+  "answer": 3,
+  "exp": "Self-actualisation means realising one's full potential.",
+  "sub": "Motivation"
+ },
+ {
+  "q": "A child of chronological age 10 years has a mental age of 12 years. The IQ is",
+  "options": [
+   "83",
+   "100",
+   "22",
+   "120"
+  ],
+  "answer": 3,
+  "exp": "IQ = 12/10 × 100 = 120.",
+  "sub": "Intelligence"
+ },
+ {
+  "q": "The four main components of creativity measured by Torrance are",
+  "options": [
+   "fluency, flexibility, originality and elaboration",
+   "memory, reasoning, speed and accuracy",
+   "analysis, synthesis, evaluation and recall",
+   "verbal, spatial, numeric and logical"
+  ],
+  "answer": 0,
+  "exp": "These are the standard components in the Torrance tests.",
+  "sub": "Creativity"
+ }
+]

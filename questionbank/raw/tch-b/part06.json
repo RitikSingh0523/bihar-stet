@@ -1,0 +1,458 @@
+[
+ {
+  "q": "The historical method of research is concerned with:",
+  "options": [
+   "conducting laboratory experiments",
+   "predicting the future by tests",
+   "studying past events using records and documents",
+   "only counting students"
+  ],
+  "answer": 2,
+  "exp": "It involves critical examination of sources.",
+  "sub": "Action research and educational research"
+ },
+ {
+  "q": "The National Educational Technology Forum (NETF) was proposed in the NEP 2020 to:",
+  "options": [
+   "conduct board examinations",
+   "set school timetables",
+   "construct school buildings",
+   "provide a platform for free exchange of ideas on the use of technology for learning"
+  ],
+  "answer": 3,
+  "exp": "NETF is an autonomous body for technology in education.",
+  "sub": "ICT in education"
+ },
+ {
+  "q": "PARAKH, proposed in NEP 2020, is:",
+  "options": [
+   "a national assessment centre setting norms for student assessment",
+   "a digital library",
+   "a sports authority",
+   "a textbook publisher"
+  ],
+  "answer": 0,
+  "exp": "PARAKH stands for Performance Assessment, Review, and Analysis of Knowledge for Holistic Development.",
+  "sub": "NEP 2020 and education bodies"
+ },
+ {
+  "q": "Gender-sensitive teaching means that the teacher:",
+  "options": [
+   "prefers boys in computer lab work",
+   "gives equal opportunity and respect to boys and girls",
+   "prefers girls only in arts",
+   "uses stereotyped examples"
+  ],
+  "answer": 1,
+  "exp": "It avoids bias and promotes equity.",
+  "sub": "Teacher qualities and professional ethics"
+ },
+ {
+  "q": "Worked examples in teaching programming are effective because they:",
+  "options": [
+   "hide the reasoning",
+   "replace practice entirely",
+   "show the complete solution process for learners to study",
+   "are only for toppers"
+  ],
+  "answer": 2,
+  "exp": "Studying solved examples helps beginners learn problem-solving patterns.",
+  "sub": "Pedagogy of computer science"
+ },
+ {
+  "q": "Gagne's nine events of instruction begin with:",
+  "options": [
+   "assessing performance",
+   "gaining the attention of the learners",
+   "providing learner guidance",
+   "presenting the stimulus material"
+  ],
+  "answer": 1,
+  "exp": "Gaining attention is the first event, followed by informing the learner of the objective.",
+  "sub": "Teaching-learning process"
+ },
+ {
+  "q": "Which of the following is the best description of 'panel discussion'?",
+  "options": [
+   "Several students write answers simultaneously",
+   "One person reads a paper without interaction",
+   "A small group of experts discusses a topic informally in front of an audience",
+   "The teacher dictates questions to the class"
+  ],
+  "answer": 2,
+  "exp": "In a panel discussion the experts talk with one another under a moderator while the audience listens.",
+  "sub": "Teaching methods"
+ },
+ {
+  "q": "An interactive whiteboard (smart board) is useful mainly because it:",
+  "options": [
+   "works without any power supply",
+   "replaces the need for lesson planning",
+   "only plays audio",
+   "allows the teacher to write, display digital content and save the lesson"
+  ],
+  "answer": 3,
+  "exp": "It combines a touch-sensitive board with a computer and projector.",
+  "sub": "Teaching aids and audio-visual media"
+ },
+ {
+  "q": "Fluency in questioning means:",
+  "options": [
+   "asking questions smoothly and in a logical sequence",
+   "asking very difficult questions only",
+   "asking the same question again and again",
+   "avoiding questions altogether"
+  ],
+  "answer": 0,
+  "exp": "Fluency means the ability to frame and ask questions without hesitation.",
+  "sub": "Microteaching and teaching skills"
+ },
+ {
+  "q": "The annual plan of a teacher is prepared:",
+  "options": [
+   "after the final examination",
+   "at the beginning of the academic session",
+   "only in the last month",
+   "only if the principal asks"
+  ],
+  "answer": 1,
+  "exp": "It distributes the syllabus over the year.",
+  "sub": "Lesson planning"
+ },
+ {
+  "q": "Which of the following is the correct sequence in curriculum development?",
+  "options": [
+   "Evaluation, content, objectives, needs, experiences",
+   "Content, evaluation, needs, objectives, experiences",
+   "Needs assessment, objectives, content selection, learning experiences, evaluation",
+   "Objectives, evaluation, content, experiences, needs"
+  ],
+  "answer": 2,
+  "exp": "Development begins by assessing needs and defining objectives and ends with evaluation.",
+  "sub": "Curriculum"
+ },
+ {
+  "q": "What should be the first step in the evaluation process?",
+  "options": [
+   "Declaring results",
+   "Preparing the answer key",
+   "Giving the grades",
+   "Defining the objectives of teaching"
+  ],
+  "answer": 3,
+  "exp": "Evaluation is meaningless without clearly stated objectives.",
+  "sub": "Evaluation, formative and summative assessment, CCE"
+ },
+ {
+  "q": "A well-designed blueprint helps mainly to improve:",
+  "options": [
+   "content validity of the test",
+   "the paper quality",
+   "the printing speed",
+   "the school's image"
+  ],
+  "answer": 0,
+  "exp": "It ensures that the test samples all the objectives and content areas.",
+  "sub": "Tests, blueprint and item analysis"
+ },
+ {
+  "q": "The parallel-forms method estimates reliability by:",
+  "options": [
+   "giving one form twice",
+   "giving two equivalent forms of the test to the same group",
+   "using a single form once",
+   "using a rating scale"
+  ],
+  "answer": 1,
+  "exp": "The correlation between two equivalent forms indicates reliability.",
+  "sub": "Validity and reliability"
+ },
+ {
+  "q": "Which of the following is a proper principle of remedial teaching?",
+  "options": [
+   "It should humiliate the learner",
+   "It should be a repetition of the same method that failed",
+   "It should be individualised and encouraging",
+   "It should be done only by the principal"
+  ],
+  "answer": 2,
+  "exp": "Different, supportive strategies suit the learner's difficulty.",
+  "sub": "Diagnostic testing and remedial teaching"
+ },
+ {
+  "q": "Research that focuses on testing theories without immediate application is called:",
+  "options": [
+   "action research",
+   "applied research",
+   "classroom research",
+   "fundamental (basic) research"
+  ],
+  "answer": 3,
+  "exp": "Basic research aims at knowledge, not an immediate solution.",
+  "sub": "Action research and educational research"
+ },
+ {
+  "q": "Virtual labs help students by:",
+  "options": [
+   "allowing them to perform simulated experiments online",
+   "replacing the whole curriculum",
+   "eliminating the teacher",
+   "printing textbooks"
+  ],
+  "answer": 0,
+  "exp": "They give access to experiments where physical labs are limited.",
+  "sub": "ICT in education"
+ },
+ {
+  "q": "Which of the following is a feature of NEP 2020 regarding board examinations?",
+  "options": [
+   "Making them more high-stakes",
+   "Making them low-stakes with an emphasis on testing core concepts and skills",
+   "Abolishing all assessment",
+   "Conducting them only once at the end of Grade 12 with memory focus"
+  ],
+  "answer": 1,
+  "exp": "Board exams are to be redesigned to reduce pressure and test competencies.",
+  "sub": "NEP 2020 and education bodies"
+ },
+ {
+  "q": "A teacher who is always punctual and honest is serving as:",
+  "options": [
+   "a hidden examiner",
+   "an administrator only",
+   "a role model for students",
+   "a record keeper"
+  ],
+  "answer": 2,
+  "exp": "Students learn values by observing their teacher's conduct.",
+  "sub": "Teacher qualities and professional ethics"
+ },
+ {
+  "q": "Project-based learning in CS, such as building a small library management program, helps to:",
+  "options": [
+   "avoid learning theory",
+   "reduce collaboration",
+   "focus only on memorisation",
+   "integrate concepts and develop real-world skills"
+  ],
+  "answer": 3,
+  "exp": "Projects apply many concepts together.",
+  "sub": "Pedagogy of computer science"
+ },
+ {
+  "q": "Constructivism holds that:",
+  "options": [
+   "knowledge is poured into passive learners",
+   "learning is only memorisation of facts",
+   "learners actively build their own knowledge from experience",
+   "the teacher is the sole source of knowledge"
+  ],
+  "answer": 2,
+  "exp": "Constructivists see learning as active construction of meaning on the basis of prior knowledge.",
+  "sub": "Teaching-learning process"
+ },
+ {
+  "q": "A teacher narrates how a king solved problems through logical steps to introduce algorithms to young learners. This method is:",
+  "options": [
+   "demonstration",
+   "laboratory method",
+   "dictation",
+   "storytelling"
+  ],
+  "answer": 3,
+  "exp": "Narrating a story to convey a concept or value is the storytelling method.",
+  "sub": "Teaching methods"
+ },
+ {
+  "q": "A working model of a human heart is an example of:",
+  "options": [
+   "a three-dimensional teaching aid",
+   "an audio aid",
+   "a verbal symbol",
+   "a purely written aid"
+  ],
+  "answer": 0,
+  "exp": "Models are 3-D representations that show structure and function.",
+  "sub": "Teaching aids and audio-visual media"
+ },
+ {
+  "q": "Assertion (A): Microteaching reduces the complexity of normal teaching.\nReason (R): It limits the class size, time and number of skills practised.\nChoose the correct option.",
+  "options": [
+   "A is true but R is false",
+   "Both A and R are true, and R explains A",
+   "Both A and R are true, but R does not explain A",
+   "A is false but R is true"
+  ],
+  "answer": 1,
+  "exp": "Reducing size, time and skills makes the teaching situation simpler.",
+  "sub": "Microteaching and teaching skills"
+ },
+ {
+  "q": "Arrange the following in the usual order in a lesson plan:\nP. Presentation of content\nQ. Statement of objectives\nR. Evaluation\nS. Introduction",
+  "options": [
+   "Q, S, P, R",
+   "S, Q, R, P",
+   "P, Q, S, R",
+   "R, P, S, Q"
+  ],
+  "answer": 0,
+  "exp": "Objectives are fixed first, followed by introduction, presentation and evaluation.",
+  "sub": "Lesson planning"
+ },
+ {
+  "q": "The national framework for the school curriculum in India is prepared by:",
+  "options": [
+   "UGC",
+   "AICTE",
+   "NIOS",
+   "NCERT"
+  ],
+  "answer": 3,
+  "exp": "NCERT develops the National Curriculum Framework.",
+  "sub": "Curriculum"
+ },
+ {
+  "q": "Peer assessment means:",
+  "options": [
+   "students assess each other's work using given criteria",
+   "teachers assess themselves",
+   "the principal grades every student",
+   "computers grade only multiple choice"
+  ],
+  "answer": 0,
+  "exp": "Peer assessment develops critical judgement and responsibility.",
+  "sub": "Evaluation, formative and summative assessment, CCE"
+ },
+ {
+  "q": "A teacher-made test is different from a standardised test because the teacher-made test:",
+  "options": [
+   "has fixed national norms",
+   "is prepared by the teacher for a specific class and lacks established norms",
+   "is always more reliable",
+   "is administered to the whole country"
+  ],
+  "answer": 1,
+  "exp": "Standardised tests have tried-out items, norms and uniform procedures.",
+  "sub": "Tests, blueprint and item analysis"
+ },
+ {
+  "q": "Face validity means that:",
+  "options": [
+   "the test has fixed norms",
+   "the test has two forms",
+   "the test appears on the surface to measure what it should",
+   "the test has no errors"
+  ],
+  "answer": 2,
+  "exp": "It is a superficial judgement of appropriateness.",
+  "sub": "Validity and reliability"
+ },
+ {
+  "q": "Programmed instruction, based on Skinner's ideas, presents:",
+  "options": [
+   "a whole textbook at once",
+   "only lectures",
+   "no feedback",
+   "material in small steps with immediate feedback"
+  ],
+  "answer": 3,
+  "exp": "Small steps, active response and immediate reinforcement are its features.",
+  "sub": "Diagnostic testing and remedial teaching"
+ },
+ {
+  "q": "Informed consent in educational research means that participants:",
+  "options": [
+   "agree to take part after knowing the purpose and nature of the study",
+   "are not told anything",
+   "are forced to participate",
+   "are paid for answers"
+  ],
+  "answer": 0,
+  "exp": "It is a basic ethical principle.",
+  "sub": "Action research and educational research"
+ },
+ {
+  "q": "Presenting someone else's work as your own without acknowledgement is called:",
+  "options": [
+   "citation",
+   "plagiarism",
+   "collaboration",
+   "paraphrasing with credit"
+  ],
+  "answer": 1,
+  "exp": "Plagiarism is a violation of academic ethics.",
+  "sub": "ICT in education"
+ },
+ {
+  "q": "NEP 2020 recommends introducing coding to students from:",
+  "options": [
+   "Grade 1",
+   "Grade 10",
+   "Grade 6",
+   "Grade 12 only"
+  ],
+  "answer": 2,
+  "exp": "A fun course on coding starts in Grade 6 as part of computational thinking.",
+  "sub": "NEP 2020 and education bodies"
+ },
+ {
+  "q": "The preventive approach to classroom management emphasises:",
+  "options": [
+   "punishing after every mistake",
+   "ignoring routines",
+   "only physical control",
+   "planning routines and activities to avoid discipline problems"
+  ],
+  "answer": 3,
+  "exp": "Good planning and engagement reduce misbehaviour.",
+  "sub": "Teacher qualities and professional ethics"
+ },
+ {
+  "q": "Which of the following is a safe lab practice that a CS teacher should teach?",
+  "options": [
+   "Shutting down systems properly and not eating near computers",
+   "Removing the power cable to shut down",
+   "Eating while working on machines",
+   "Opening unknown email attachments"
+  ],
+  "answer": 0,
+  "exp": "Proper handling protects equipment and data.",
+  "sub": "Pedagogy of computer science"
+ },
+ {
+  "q": "Statement I: Teaching is always intentional and planned.\nStatement II: Learning can occur incidentally, without any teacher.\nChoose the correct option.",
+  "options": [
+   "Only Statement I is true",
+   "Only Statement II is true",
+   "Both Statements I and II are true",
+   "Both Statements I and II are false"
+  ],
+  "answer": 2,
+  "exp": "Teaching aims at specific outcomes, while learning can also happen informally and by chance.",
+  "sub": "Teaching-learning process"
+ },
+ {
+  "q": "In the jigsaw technique of cooperative learning:",
+  "options": [
+   "each group member becomes an expert on one part and teaches it to the others",
+   "all students read the entire text alone",
+   "the teacher teaches each part in turn",
+   "students compete against each other for marks"
+  ],
+  "answer": 0,
+  "exp": "Jigsaw makes learners interdependent as each one is responsible for teaching a part.",
+  "sub": "Teaching methods"
+ },
+ {
+  "q": "Which of the following aids requires no electricity?",
+  "options": [
+   "Video projector",
+   "Flip chart",
+   "Smart board",
+   "Computer"
+  ],
+  "answer": 1,
+  "exp": "A flip chart is paper-based and used manually.",
+  "sub": "Teaching aids and audio-visual media"
+ }
+]

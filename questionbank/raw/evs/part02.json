@@ -1,0 +1,482 @@
+[
+ {
+  "q": "Which of the following is the correct set of the three levels of biodiversity?",
+  "options": [
+   "Genetic, population and community diversity",
+   "Genetic, species and ecosystem diversity",
+   "Species, family and order diversity",
+   "Ecosystem, biome and biosphere diversity"
+  ],
+  "answer": 1,
+  "exp": "Biodiversity is studied at genetic, species and ecosystem levels.",
+  "sub": "Biodiversity"
+ },
+ {
+  "q": "Narmada Bachao Andolan was led by",
+  "options": [
+   "Vandana Shiva",
+   "Sunderlal Bahuguna",
+   "Medha Patkar",
+   "Anil Agarwal"
+  ],
+  "answer": 2,
+  "exp": "Medha Patkar led the movement against large dams on the Narmada, especially the Sardar Sarovar project.",
+  "sub": "Environmental movements"
+ },
+ {
+  "q": "The Convention on International Trade in Endangered Species of Wild Fauna and Flora is commonly known as",
+  "options": [
+   "CITES",
+   "CBD",
+   "UNFCCC",
+   "CMS"
+  ],
+  "answer": 0,
+  "exp": "CITES (1973, Washington) regulates international trade in endangered species.",
+  "sub": "Conventions"
+ },
+ {
+  "q": "Which convention regulates the transboundary movement of hazardous wastes?",
+  "options": [
+   "Ramsar Convention",
+   "Rotterdam Convention",
+   "Vienna Convention",
+   "Basel Convention"
+  ],
+  "answer": 3,
+  "exp": "The Basel Convention (1989) controls the movement and disposal of hazardous wastes across borders.",
+  "sub": "Conventions"
+ },
+ {
+  "q": "Valmiki Tiger Reserve, the only tiger reserve of Bihar, is located in which district?",
+  "options": [
+   "Gaya",
+   "West Champaran",
+   "Kaimur",
+   "Jamui"
+  ],
+  "answer": 1,
+  "exp": "Valmiki Tiger Reserve lies in West Champaran, bordering Nepal's Chitwan National Park.",
+  "sub": "Bihar environment"
+ },
+ {
+  "q": "The Vikramshila Gangetic Dolphin Sanctuary in Bihar protects which aquatic mammal?",
+  "options": [
+   "Indus river dolphin",
+   "Irrawaddy dolphin",
+   "Dugong",
+   "Ganges river dolphin"
+  ],
+  "answer": 3,
+  "exp": "The sanctuary along the Ganga near Bhagalpur protects the Ganges river dolphin, India's national aquatic animal.",
+  "sub": "Bihar environment"
+ },
+ {
+  "q": "Thermal pollution of rivers caused by power plants chiefly results in",
+  "options": [
+   "Increase in pH to above 10",
+   "Increase in dissolved oxygen",
+   "Decrease in dissolved oxygen of water",
+   "Rise of salinity only"
+  ],
+  "answer": 2,
+  "exp": "Warm water holds less dissolved oxygen, harming aquatic life.",
+  "sub": "Water pollution"
+ },
+ {
+  "q": "The 3 R's principle of waste management stands for",
+  "options": [
+   "Reduce, Reuse, Recycle",
+   "Refuse, Repair, Return",
+   "Reduce, Replace, Recover",
+   "Recycle, Reclaim, Reform"
+  ],
+  "answer": 0,
+  "exp": "The 3 R's - reduce, reuse and recycle - form the basic waste hierarchy.",
+  "sub": "Waste management"
+ },
+ {
+  "q": "Which of the following is NOT biodegradable?",
+  "options": [
+   "Paper",
+   "Vegetable peel",
+   "Cotton cloth",
+   "Polythene bag"
+  ],
+  "answer": 3,
+  "exp": "Plastics such as polythene are not broken down by microbes in a reasonable time.",
+  "sub": "Waste management"
+ },
+ {
+  "q": "Photochemical smog contains which harmful secondary pollutant?",
+  "options": [
+   "Peroxyacetyl nitrate (PAN)",
+   "Carbon tetrachloride",
+   "Sulphuric acid mist",
+   "Methane"
+  ],
+  "answer": 0,
+  "exp": "PAN and ozone are formed by sunlight acting on hydrocarbons and nitrogen oxides.",
+  "sub": "Air pollution"
+ },
+ {
+  "q": "PM2.5 in air quality measurement refers to particulate matter with diameter",
+  "options": [
+   "2.5 millimetres or less",
+   "2.5 micrometres or less",
+   "25 micrometres or less",
+   "2.5 nanometres or less"
+  ],
+  "answer": 1,
+  "exp": "PM2.5 particles are fine enough to enter the lungs and bloodstream.",
+  "sub": "Air pollution"
+ },
+ {
+  "q": "The ozone hole is most pronounced over which region?",
+  "options": [
+   "Equator",
+   "Arctic",
+   "Antarctica",
+   "Sahara desert"
+  ],
+  "answer": 2,
+  "exp": "Extremely cold stratospheric clouds over Antarctica enable rapid ozone destruction in spring.",
+  "sub": "Atmosphere"
+ },
+ {
+  "q": "Excess exposure to UV-B radiation reaching the Earth's surface due to ozone depletion can cause",
+  "options": [
+   "Goitre",
+   "Rickets",
+   "Skin cancer and cataract",
+   "Night blindness"
+  ],
+  "answer": 2,
+  "exp": "UV-B damages DNA and the lens of the eye.",
+  "sub": "Atmosphere"
+ },
+ {
+  "q": "El Niño is characterised by",
+  "options": [
+   "Warming of the Arctic Ocean only",
+   "Cooling of the Indian Ocean",
+   "Formation of ozone holes",
+   "Abnormal warming of surface water in the central and eastern Pacific Ocean"
+  ],
+  "answer": 3,
+  "exp": "El Niño often weakens the Indian summer monsoon.",
+  "sub": "Climate change"
+ },
+ {
+  "q": "Which of the following contributes to sea-level rise due to global warming?",
+  "options": [
+   "Thermal expansion of sea water and melting of land ice",
+   "Melting of floating sea ice only",
+   "Increased evaporation only",
+   "Oceanic currents only"
+  ],
+  "answer": 0,
+  "exp": "Warmer water expands and melting glaciers/ice sheets add water to oceans.",
+  "sub": "Climate change"
+ },
+ {
+  "q": "Forests act as carbon sinks because they",
+  "options": [
+   "Release large amounts of CO2",
+   "Absorb CO2 during photosynthesis and store carbon in biomass",
+   "Produce methane",
+   "Absorb oxygen in large quantities"
+  ],
+  "answer": 1,
+  "exp": "Trees fix atmospheric CO2 and store carbon in wood and soil.",
+  "sub": "Climate change"
+ },
+ {
+  "q": "Species richness generally",
+  "options": [
+   "Increases from the poles towards the equator",
+   "Increases from the equator to poles",
+   "Remains the same at all latitudes",
+   "Is highest in deserts"
+  ],
+  "answer": 0,
+  "exp": "Tropical regions have more stable climate and energy, supporting greater species diversity.",
+  "sub": "Biodiversity"
+ },
+ {
+  "q": "Pneumatophores or breathing roots are characteristic of which ecosystem?",
+  "options": [
+   "Temperate grassland",
+   "Desert",
+   "Tundra",
+   "Mangrove"
+  ],
+  "answer": 3,
+  "exp": "Mangroves growing in waterlogged saline mud have pneumatophores for gas exchange.",
+  "sub": "Ecosystem"
+ },
+ {
+  "q": "The Biological Diversity Act of India was passed in",
+  "options": [
+   "1996",
+   "1992",
+   "2002",
+   "2010"
+  ],
+  "answer": 2,
+  "exp": "The Biological Diversity Act, 2002 led to creation of the National Biodiversity Authority (Chennai).",
+  "sub": "Environmental laws"
+ },
+ {
+  "q": "The National Green Tribunal was established in India in",
+  "options": [
+   "1986",
+   "2010",
+   "1995",
+   "2005"
+  ],
+  "answer": 1,
+  "exp": "The NGT Act, 2010 created a specialised body for speedy disposal of environmental cases.",
+  "sub": "Environmental laws"
+ },
+ {
+  "q": "Which Act restricts diversion of forest land for non-forest purposes without central government approval?",
+  "options": [
+   "Indian Forest Act, 1927",
+   "Forest (Conservation) Act, 1980",
+   "Wildlife Protection Act, 1972",
+   "Biological Diversity Act, 2002"
+  ],
+  "answer": 1,
+  "exp": "The Forest (Conservation) Act, 1980 regulates de-reservation of forests and use of forest land.",
+  "sub": "Environmental laws"
+ },
+ {
+  "q": "The Bishnoi community of Rajasthan is well known for protecting",
+  "options": [
+   "Coral reefs",
+   "Teak forests",
+   "Mangroves",
+   "Khejri trees and blackbuck/wildlife"
+  ],
+  "answer": 3,
+  "exp": "In 1730 Amrita Devi and villagers of Khejarli died trying to save khejri trees.",
+  "sub": "Environmental movements"
+ },
+ {
+  "q": "The Stockholm Conference of 1972 is notable because it",
+  "options": [
+   "Adopted the Paris Agreement",
+   "Adopted the Kyoto Protocol",
+   "Was the first major UN conference on the human environment",
+   "Launched Agenda 21"
+  ],
+  "answer": 2,
+  "exp": "It led to the creation of UNEP and the observance of World Environment Day on 5 June.",
+  "sub": "Conventions"
+ },
+ {
+  "q": "The Kigali Amendment (2016) to the Montreal Protocol aims to phase down",
+  "options": [
+   "Hydrofluorocarbons (HFCs)",
+   "Chlorofluorocarbons",
+   "Carbon dioxide",
+   "Halons only"
+  ],
+  "answer": 0,
+  "exp": "HFCs do not harm ozone but are strong greenhouse gases.",
+  "sub": "Conventions"
+ },
+ {
+  "q": "The Paris Agreement (2015) aims to limit the global average temperature rise to",
+  "options": [
+   "Below 3 °C above pre-industrial levels",
+   "Below 4 °C above 1990 levels",
+   "Well below 2 °C above pre-industrial levels, pursuing 1.5 °C",
+   "Exactly 0.5 °C above present level"
+  ],
+  "answer": 2,
+  "exp": "The Paris Agreement under UNFCCC seeks to hold warming well below 2 °C and pursue 1.5 °C.",
+  "sub": "Conventions"
+ },
+ {
+  "q": "Which of the following is a primary pollutant?",
+  "options": [
+   "Smog",
+   "Ozone near the ground",
+   "Peroxyacetyl nitrate",
+   "Sulphur dioxide"
+  ],
+  "answer": 3,
+  "exp": "Primary pollutants are emitted directly; ozone and PAN are formed by reactions in air.",
+  "sub": "Air pollution"
+ },
+ {
+  "q": "The type of disaster to which a cyclone belongs is",
+  "options": [
+   "Meteorological (atmospheric) disaster",
+   "Geological disaster",
+   "Biological disaster",
+   "Industrial disaster"
+  ],
+  "answer": 0,
+  "exp": "Cyclones originate in atmospheric conditions, unlike earthquakes and landslides.",
+  "sub": "Disaster management"
+ },
+ {
+  "q": "The intensity or magnitude of an earthquake is recorded by which instrument?",
+  "options": [
+   "Barometer",
+   "Seismograph",
+   "Anemometer",
+   "Hygrometer"
+  ],
+  "answer": 1,
+  "exp": "A seismograph records ground vibrations; magnitude is expressed on the Richter scale.",
+  "sub": "Disaster management"
+ },
+ {
+  "q": "Rainwater harvesting is mainly done to",
+  "options": [
+   "Increase soil salinity",
+   "Recharge groundwater and conserve water",
+   "Reduce rainfall",
+   "Increase evaporation"
+  ],
+  "answer": 1,
+  "exp": "Collecting and storing rainwater helps recharge aquifers and reduces dependence on groundwater.",
+  "sub": "Natural resources"
+ },
+ {
+  "q": "Organic farming mainly avoids the use of",
+  "options": [
+   "Crop rotation",
+   "Water for irrigation",
+   "Animal manure",
+   "Synthetic fertilisers and pesticides"
+  ],
+  "answer": 3,
+  "exp": "Organic farming relies on compost, manure and biological pest control.",
+  "sub": "Sustainable development"
+ },
+ {
+  "q": "Which of the following best describes the ecological niche of an organism?",
+  "options": [
+   "Its functional role and position in the ecosystem",
+   "Its geographic address",
+   "The number of individuals in a population",
+   "The nutrients present in the soil"
+  ],
+  "answer": 0,
+  "exp": "Habitat is the address; niche is the occupation or role of the species.",
+  "sub": "Ecology basics"
+ },
+ {
+  "q": "Statement I: A population growing in an unlimited-resource environment shows a J-shaped curve.\nStatement II: Logistic growth in a limited environment shows an S-shaped curve.",
+  "options": [
+   "Both Statement I and Statement II are true",
+   "Statement I is true but Statement II is false",
+   "Statement I is false but Statement II is true",
+   "Both Statement I and Statement II are false"
+  ],
+  "answer": 0,
+  "exp": "Exponential growth gives a J-curve; limited resources lead to logistic S-curve with carrying capacity K.",
+  "sub": "Population ecology"
+ },
+ {
+  "q": "The maximum number of individuals of a species that the environment can sustain indefinitely is called",
+  "options": [
+   "Carrying capacity",
+   "Biotic potential",
+   "Population density",
+   "Environmental resistance"
+  ],
+  "answer": 0,
+  "exp": "Carrying capacity (K) is the upper asymptote of the logistic growth curve.",
+  "sub": "Population ecology"
+ },
+ {
+  "q": "The plant Cuscuta (dodder) growing on a host plant is an example of",
+  "options": [
+   "Commensalism",
+   "Mutualism",
+   "Parasitism",
+   "Amensalism"
+  ],
+  "answer": 2,
+  "exp": "Cuscuta is a parasitic climber that draws nutrients from its host.",
+  "sub": "Ecology basics"
+ },
+ {
+  "q": "An orchid growing on the branch of a mango tree is an example of",
+  "options": [
+   "Mutualism",
+   "Commensalism",
+   "Parasitism",
+   "Predation"
+  ],
+  "answer": 1,
+  "exp": "The epiphytic orchid benefits (support, light) while the tree is neither harmed nor helped.",
+  "sub": "Ecology basics"
+ },
+ {
+  "q": "Assertion (A): Pyramid of numbers in a tree ecosystem is usually inverted.\nReason (R): A single large tree supports a large number of insects and other consumers.",
+  "options": [
+   "Both A and R are true and R is the correct explanation of A",
+   "Both A and R are true but R is not the correct explanation of A",
+   "A is true but R is false",
+   "A is false but R is true"
+  ],
+  "answer": 0,
+  "exp": "One producer (tree) supports many primary consumers, so the base is narrower than the next level.",
+  "sub": "Ecosystem"
+ },
+ {
+  "q": "The Chernobyl accident of 1986 was a major case of",
+  "options": [
+   "Noise pollution",
+   "Oil spill pollution",
+   "Radioactive pollution",
+   "Thermal pollution only"
+  ],
+  "answer": 2,
+  "exp": "A nuclear reactor explosion released radioactive isotopes over large areas of Europe.",
+  "sub": "Pollution"
+ },
+ {
+  "q": "E-waste mainly consists of",
+  "options": [
+   "Discarded electronic and electrical equipment",
+   "Food waste",
+   "Textile waste",
+   "Agricultural residues"
+  ],
+  "answer": 0,
+  "exp": "E-waste includes computers, phones and appliances, often containing lead, mercury and cadmium.",
+  "sub": "Waste management"
+ },
+ {
+  "q": "The pH of normal unpolluted rain water is approximately",
+  "options": [
+   "7.0",
+   "5.6",
+   "8.5",
+   "3.0"
+  ],
+  "answer": 1,
+  "exp": "CO2 dissolves in rain to form carbonic acid, making natural rain slightly acidic (pH about 5.6).",
+  "sub": "Pollution"
+ },
+ {
+  "q": "A keystone species is one that",
+  "options": [
+   "Is found only in one area",
+   "Is the most abundant species",
+   "Is the largest animal",
+   "Has a disproportionately large effect on its ecosystem relative to its abundance"
+  ],
+  "answer": 3,
+  "exp": "Removal of keystone species such as sea otters or top predators changes ecosystem structure significantly.",
+  "sub": "Ecology basics"
+ }
+]

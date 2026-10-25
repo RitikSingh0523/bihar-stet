@@ -1,0 +1,482 @@
+[
+ {
+  "q": "A hospital's patient records are secretly modified by an unauthorised person. Which principle of the CIA triad is violated?",
+  "options": [
+   "Confidentiality",
+   "Integrity",
+   "Availability",
+   "Non-repudiation"
+  ],
+  "answer": 1,
+  "exp": "Unauthorised modification of data violates integrity, which ensures data stays accurate and unaltered.",
+  "sub": "CIA triad"
+ },
+ {
+  "q": "Using a Caesar cipher with key 3, the plaintext CAT is encrypted as",
+  "options": [
+   "FBS",
+   "GEX",
+   "DBU",
+   "FDW"
+  ],
+  "answer": 3,
+  "exp": "Each letter shifts 3 places forward: C→F, A→D, T→W.",
+  "sub": "Classical ciphers"
+ },
+ {
+  "q": "Which malware spreads across a network by copying itself, without needing a host file or any user action?",
+  "options": [
+   "Worm",
+   "Virus",
+   "Trojan horse",
+   "Spyware"
+  ],
+  "answer": 0,
+  "exp": "A worm is self-replicating and standalone; a virus needs a host file and a trojan does not replicate.",
+  "sub": "Malware"
+ },
+ {
+  "q": "Under the IT Act 2000 (as amended in 2008), which section deals with punishment for identity theft?",
+  "options": [
+   "Section 66A",
+   "Section 66B",
+   "Section 66C",
+   "Section 66E"
+  ],
+  "answer": 2,
+  "exp": "Section 66C punishes fraudulent or dishonest use of another person's password, digital signature or unique identification feature.",
+  "sub": "IT Act 2000"
+ },
+ {
+  "q": "A packet-filtering firewall makes its decisions mainly by examining",
+  "options": [
+   "The full text of e-mail bodies",
+   "The physical condition of network cables",
+   "IP addresses and port numbers in packet headers",
+   "The user's biometric data"
+  ],
+  "answer": 2,
+  "exp": "Packet filters inspect header fields such as source/destination IP address, port and protocol against rules.",
+  "sub": "Firewalls"
+ },
+ {
+  "q": "Which statement correctly describes AES?",
+  "options": [
+   "128-bit block size with 128, 192 or 256-bit keys",
+   "64-bit block size with a 56-bit key",
+   "64-bit block size with 128-bit keys only",
+   "256-bit block size with a 64-bit key"
+  ],
+  "answer": 0,
+  "exp": "AES (Rijndael) works on 128-bit blocks and supports key lengths of 128, 192 and 256 bits.",
+  "sub": "Symmetric cryptography"
+ },
+ {
+  "q": "An e-mail that appears to come from a bank asks the user to click a link and enter net-banking credentials on a look-alike page. This attack is called",
+  "options": [
+   "Pharming",
+   "Salami attack",
+   "Buffer overflow",
+   "Phishing"
+  ],
+  "answer": 3,
+  "exp": "Tricking users via deceptive messages into revealing credentials on fake sites is phishing.",
+  "sub": "Attacks"
+ },
+ {
+  "q": "A differential backup copies",
+  "options": [
+   "Only files changed since the most recent backup of any type",
+   "All files changed since the last full backup",
+   "All files on every run",
+   "Only the files deleted since the last full backup"
+  ],
+  "answer": 1,
+  "exp": "Differential backups grow each day because they always compare against the last full backup.",
+  "sub": "Backup and recovery"
+ },
+ {
+  "q": "Which of the following is NOT a property of a cryptographic hash function?",
+  "options": [
+   "It must be possible to recover the original message from its hash",
+   "It produces a fixed-length output for any input size",
+   "It is hard to find two inputs with the same hash",
+   "A tiny change in input changes the output drastically"
+  ],
+  "answer": 0,
+  "exp": "Hash functions are one-way; reversibility would defeat their purpose.",
+  "sub": "Hashing"
+ },
+ {
+  "q": "Under the Indian Copyright Act, 1957, copyright in a literary work generally lasts for",
+  "options": [
+   "The author's lifetime plus 25 years",
+   "The author's lifetime plus 100 years",
+   "The author's lifetime plus 60 years",
+   "20 years from the date of publication"
+  ],
+  "answer": 2,
+  "exp": "For original literary, dramatic, musical and artistic works the term is the author's life plus 60 years.",
+  "sub": "Copyright and IPR"
+ },
+ {
+  "q": "In an RSA system p = 3, q = 11 and e = 7. The ciphertext for plaintext m = 2 is",
+  "options": [
+   "14",
+   "29",
+   "31",
+   "128"
+  ],
+  "answer": 1,
+  "exp": "n = 33; c = 2^7 mod 33 = 128 mod 33 = 128 − 99 = 29.",
+  "sub": "RSA numeric"
+ },
+ {
+  "q": "An attacker sends a flood of TCP SYN packets and never completes the handshake, leaving the server with many half-open connections. This is a",
+  "options": [
+   "Smurf attack",
+   "ARP poisoning",
+   "DNS spoofing",
+   "SYN flood (denial of service)"
+  ],
+  "answer": 3,
+  "exp": "A SYN flood exhausts the server's connection table with half-open connections, denying service to legitimate users.",
+  "sub": "DoS attacks"
+ },
+ {
+  "q": "Which intrusion detection approach compares observed traffic with a database of known attack patterns?",
+  "options": [
+   "Anomaly-based detection",
+   "Stateful inspection",
+   "Network address translation",
+   "Signature-based detection"
+  ],
+  "answer": 3,
+  "exp": "Signature-based IDS matches events against stored patterns of known attacks; anomaly-based IDS looks for deviations from a baseline.",
+  "sub": "IDS"
+ },
+ {
+  "q": "Withdrawing money from an ATM using a debit card and a PIN is an example of",
+  "options": [
+   "Two factors, both of the 'something you know' type",
+   "Two-factor authentication (something you have plus something you know)",
+   "Biometric-only authentication",
+   "Single sign-on"
+  ],
+  "answer": 1,
+  "exp": "The card is something you have and the PIN is something you know, so two different factor categories are used.",
+  "sub": "Authentication and 2FA"
+ },
+ {
+  "q": "An ethical (white-hat) hacker differs from a malicious hacker mainly because the ethical hacker",
+  "options": [
+   "Sells stolen data to the highest bidder",
+   "Attacks systems to promote a political cause",
+   "Tests systems with the owner's authorisation to find and report weaknesses",
+   "Writes malware to infect public computers"
+  ],
+  "answer": 2,
+  "exp": "Authorisation and intent to improve security define ethical hacking.",
+  "sub": "Digital ethics"
+ },
+ {
+  "q": "A login query is: SELECT * FROM users WHERE name='$u' AND pass='$p'. An attacker enters admin' -- as the username and anything as the password. What is the likely result?",
+  "options": [
+   "The password check is commented out and the attacker logs in as admin",
+   "The database is encrypted",
+   "The server always returns a syntax error",
+   "The password is automatically hashed and compared"
+  ],
+  "answer": 0,
+  "exp": "The quote closes the name string and -- starts a comment, so the AND pass condition is ignored.",
+  "sub": "SQL injection"
+ },
+ {
+  "q": "Every pair among 20 users must share a distinct secret key for symmetric encryption. How many keys are needed?",
+  "options": [
+   "20",
+   "40",
+   "190",
+   "380"
+  ],
+  "answer": 2,
+  "exp": "n(n−1)/2 = 20×19/2 = 190.",
+  "sub": "Symmetric cryptography"
+ },
+ {
+  "q": "A company invents a new type of water-purification machine and wants exclusive rights over the invention. Which form of IPR applies?",
+  "options": [
+   "Copyright",
+   "Trademark",
+   "Geographical indication",
+   "Patent"
+  ],
+  "answer": 3,
+  "exp": "Patents protect new, useful, non-obvious inventions.",
+  "sub": "Copyright and IPR"
+ },
+ {
+  "q": "The default TCP port used by HTTPS is",
+  "options": [
+   "80",
+   "443",
+   "22",
+   "25"
+  ],
+  "answer": 1,
+  "exp": "HTTP uses 80, SSH 22 and SMTP 25; HTTPS (HTTP over TLS) uses 443.",
+  "sub": "SSL/TLS"
+ },
+ {
+  "q": "A full backup is taken every Sunday and an incremental backup every night from Monday to Saturday. The system fails on Thursday morning. How many backup sets are needed to restore it?",
+  "options": [
+   "4",
+   "2",
+   "3",
+   "5"
+  ],
+  "answer": 0,
+  "exp": "Restore requires the Sunday full plus incrementals of Monday, Tuesday and Wednesday: 1 + 3 = 4.",
+  "sub": "Backup and recovery"
+ },
+ {
+  "q": "Match the IT Act sections: (i) 66E (ii) 66F (iii) 67B (iv) 66D with (p) cyber terrorism (q) cheating by personation using a computer resource (r) child sexually explicit material (s) violation of privacy.",
+  "options": [
+   "i-s, ii-p, iii-r, iv-q",
+   "i-p, ii-s, iii-q, iv-r",
+   "i-q, ii-r, iii-s, iv-p",
+   "i-r, ii-q, iii-p, iv-s"
+  ],
+  "answer": 0,
+  "exp": "66E is privacy violation, 66F cyber terrorism, 67B child pornography and 66D cheating by personation.",
+  "sub": "IT Act 2000"
+ },
+ {
+  "q": "A digital signature is created by encrypting the message digest with the",
+  "options": [
+   "Sender's public key",
+   "Sender's private key",
+   "Receiver's private key",
+   "Receiver's public key"
+  ],
+  "answer": 1,
+  "exp": "Only the sender holds the private key, so anyone can verify the signature with the sender's public key.",
+  "sub": "Digital signatures"
+ },
+ {
+  "q": "Files on a company server are renamed with a strange extension and a note demands payment in cryptocurrency for the decryption key. This malware is",
+  "options": [
+   "Adware",
+   "Rootkit",
+   "Keylogger",
+   "Ransomware"
+  ],
+  "answer": 3,
+  "exp": "Ransomware encrypts victim data and demands a ransom.",
+  "sub": "Malware"
+ },
+ {
+  "q": "Which of the following is NOT plagiarism?",
+  "options": [
+   "Submitting an essay written by someone else as one's own",
+   "Copying paragraphs from a website without acknowledgement",
+   "Quoting a passage in quotation marks with a proper citation of the source",
+   "Presenting another researcher's idea in your own words without crediting them"
+  ],
+  "answer": 2,
+  "exp": "Properly quoted and cited material acknowledges the source; the others pass off others' work as one's own.",
+  "sub": "Plagiarism"
+ },
+ {
+  "q": "The primary purpose of a Virtual Private Network (VPN) is to",
+  "options": [
+   "Increase the physical bandwidth of the link",
+   "Remove viruses from downloaded files",
+   "Assign IP addresses dynamically to hosts",
+   "Create an encrypted tunnel for private communication over a public network"
+  ],
+  "answer": 3,
+  "exp": "A VPN uses tunnelling and encryption so that data crossing the Internet stays confidential.",
+  "sub": "VPN"
+ },
+ {
+  "q": "The DES algorithm processes 64-bit blocks using how many rounds?",
+  "options": [
+   "16",
+   "8",
+   "10",
+   "14"
+  ],
+  "answer": 0,
+  "exp": "DES is a 16-round Feistel cipher with a 56-bit effective key.",
+  "sub": "Symmetric cryptography"
+ },
+ {
+  "q": "Which attack injects malicious client-side script into a web page that is later viewed by other users?",
+  "options": [
+   "SQL injection",
+   "Buffer overflow",
+   "Cross-site scripting (XSS)",
+   "Denial of service"
+  ],
+  "answer": 2,
+  "exp": "XSS makes the victim's browser execute attacker-supplied script from a trusted site.",
+  "sub": "XSS"
+ },
+ {
+  "q": "An X.509 digital certificate essentially binds",
+  "options": [
+   "A private key to a user's password",
+   "The identity of an entity to its public key, signed by a Certificate Authority",
+   "A user name to a MAC address",
+   "An IP address to a domain's TTL value"
+  ],
+  "answer": 1,
+  "exp": "The CA signs the certificate to vouch that the public key belongs to the named subject.",
+  "sub": "PKI and certificates"
+ },
+ {
+  "q": "Statement I: In symmetric-key cryptography the same key is used for encryption and decryption.\nStatement II: Asymmetric cryptography is generally faster than symmetric cryptography for bulk data.",
+  "options": [
+   "Both Statement I and Statement II are true",
+   "Only Statement I is true",
+   "Only Statement II is true",
+   "Both Statement I and Statement II are false"
+  ],
+  "answer": 1,
+  "exp": "Statement I is true. Public-key algorithms are far slower, so symmetric ciphers encrypt bulk data; Statement II is false.",
+  "sub": "Cryptography basics"
+ },
+ {
+  "q": "In disaster recovery, the Recovery Time Objective (RTO) is",
+  "options": [
+   "The maximum acceptable amount of data loss measured in time",
+   "The interval between two consecutive backups",
+   "The maximum acceptable time within which a service must be restored after a failure",
+   "The total cost of the backup system"
+  ],
+  "answer": 2,
+  "exp": "RTO is about downtime; the data-loss tolerance is the Recovery Point Objective.",
+  "sub": "Backup and recovery"
+ },
+ {
+  "q": "In a man-in-the-middle attack, the attacker",
+  "options": [
+   "Secretly sits between two communicating parties and can read or alter their messages",
+   "Floods the server with traffic to make it unavailable",
+   "Encrypts the victim's files and demands money",
+   "Guesses passwords using a word list"
+  ],
+  "answer": 0,
+  "exp": "MITM relays and possibly modifies communication while both ends believe they talk directly to each other.",
+  "sub": "MITM"
+ },
+ {
+  "q": "Section 66A of the IT Act was struck down as unconstitutional by the Supreme Court in",
+  "options": [
+   "Justice K. S. Puttaswamy v. Union of India (2017)",
+   "Vishaka v. State of Rajasthan (1997)",
+   "Maneka Gandhi v. Union of India (1978)",
+   "Shreya Singhal v. Union of India (2015)"
+  ],
+  "answer": 3,
+  "exp": "In Shreya Singhal (2015) the Court held Section 66A violated freedom of speech under Article 19(1)(a).",
+  "sub": "IT Act 2000"
+ },
+ {
+  "q": "Which of the following is NOT a function of a firewall?",
+  "options": [
+   "Filtering inbound traffic by rules",
+   "Repairing corrupted files on the hard disk",
+   "Blocking selected ports",
+   "Logging connection attempts"
+  ],
+  "answer": 1,
+  "exp": "A firewall controls and logs network traffic; it does not repair files.",
+  "sub": "Firewalls"
+ },
+ {
+  "q": "In a TLS session, after the handshake the bulk application data is encrypted using",
+  "options": [
+   "The server's private key",
+   "The CA's public key",
+   "A hash function only",
+   "A symmetric session key"
+  ],
+  "answer": 3,
+  "exp": "Asymmetric methods establish the keys; fast symmetric encryption then protects the data.",
+  "sub": "SSL/TLS"
+ },
+ {
+  "q": "In an RSA system n = 55 (p = 5, q = 11) and e = 3. The private exponent d is",
+  "options": [
+   "27",
+   "13",
+   "17",
+   "37"
+  ],
+  "answer": 0,
+  "exp": "φ(n) = 4×10 = 40. d satisfies 3d ≡ 1 (mod 40); 3×27 = 81 = 2×40 + 1.",
+  "sub": "RSA numeric"
+ },
+ {
+  "q": "Fraud carried out through voice calls in which a caller pretends to be a bank official to obtain OTPs is called",
+  "options": [
+   "Smishing",
+   "Pharming",
+   "Vishing",
+   "Whaling"
+  ],
+  "answer": 2,
+  "exp": "Vishing is voice phishing; smishing uses SMS.",
+  "sub": "Attacks"
+ },
+ {
+  "q": "The output size of the SHA-256 hash function is",
+  "options": [
+   "128 bits",
+   "160 bits",
+   "256 bits",
+   "512 bits"
+  ],
+  "answer": 2,
+  "exp": "SHA-256 yields a 256-bit digest (MD5 is 128 and SHA-1 is 160 bits).",
+  "sub": "Hashing"
+ },
+ {
+  "q": "The trail of data that a person leaves through online activities such as browsing, posting and purchasing is called the",
+  "options": [
+   "Digital footprint",
+   "Digital divide",
+   "Firewall log",
+   "Cookie jar"
+  ],
+  "answer": 0,
+  "exp": "A digital footprint is the data trail created by one's online activity.",
+  "sub": "Digital ethics"
+ },
+ {
+  "q": "In a fraud, a program deducts very small amounts such as fractions of a rupee from thousands of accounts and credits them to the attacker. This is a",
+  "options": [
+   "Logic bomb",
+   "Data diddling",
+   "Spear phishing",
+   "Salami attack"
+  ],
+  "answer": 3,
+  "exp": "Salami attacks slice off tiny amounts that individually go unnoticed.",
+  "sub": "Cyber crime"
+ },
+ {
+  "q": "The '3-2-1' backup rule recommends",
+  "options": [
+   "3 servers, 2 passwords and 1 firewall",
+   "3 copies of data, on 2 different media, with 1 copy kept off-site",
+   "3 full backups, 2 incremental backups and 1 differential backup",
+   "3 backups per day, 2 per week and 1 per month"
+  ],
+  "answer": 1,
+  "exp": "Keeping three copies on two media types with one off-site guards against most failures.",
+  "sub": "Backup and recovery"
+ }
+]

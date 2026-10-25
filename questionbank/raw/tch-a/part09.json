@@ -1,0 +1,362 @@
+[
+ {
+  "q": "A teacher who begins a topic only after judging that students are mentally prepared for it is applying the idea of",
+  "options": [
+   "extinction",
+   "reinforcement",
+   "transfer of training",
+   "readiness"
+  ],
+  "answer": 3,
+  "exp": "Readiness depends on maturation and prior experience; teaching before readiness is ineffective.",
+  "sub": "Growth and development"
+ },
+ {
+  "q": "Which classroom practice follows Piaget's ideas most closely?",
+  "options": [
+   "Providing hands-on activities and encouraging discovery",
+   "Long lectures with rote repetition",
+   "Frequent punishment for mistakes",
+   "Competition based only on marks"
+  ],
+  "answer": 0,
+  "exp": "Piaget saw the child as an active learner who constructs knowledge through exploration.",
+  "sub": "Piaget"
+ },
+ {
+  "q": "Assertion (A): Teaching should be aimed within the learner's ZPD. Reason (R): Tasks far below the independent level or far above the assisted level produce little cognitive growth. Choose the correct option.",
+  "options": [
+   "Both A and R are true but R does not explain A",
+   "A is true but R is false",
+   "Both A and R are true and R explains A",
+   "A is false but R is true"
+  ],
+  "answer": 2,
+  "exp": "Instruction is most effective in the ZPD; too easy or too hard tasks do not stretch the learner.",
+  "sub": "Vygotsky"
+ },
+ {
+  "q": "Which classroom approach best promotes moral development according to Kohlberg?",
+  "options": [
+   "Memorising moral stories only",
+   "Discussing moral dilemmas to challenge students' reasoning",
+   "Strict punishment for wrongdoing",
+   "Avoiding any discussion of values"
+  ],
+  "answer": 1,
+  "exp": "Exposure to reasoning one stage above the present level encourages moral growth.",
+  "sub": "Kohlberg"
+ },
+ {
+  "q": "Match the stage with age: (1) Autonomy vs shame (2) Identity vs role confusion (3) Industry vs inferiority; (a) 12-18 years (b) 1-3 years (c) 6-12 years.",
+  "options": [
+   "1-a, 2-b, 3-c",
+   "1-c, 2-a, 3-b",
+   "1-b, 2-a, 3-c",
+   "1-b, 2-c, 3-a"
+  ],
+  "answer": 2,
+  "exp": "Autonomy 1-3, industry 6-12, identity 12-18 years.",
+  "sub": "Erikson"
+ },
+ {
+  "q": "A child who was once scolded by a harsh teacher now feels anxious in every classroom. This is best explained by",
+  "options": [
+   "operant shaping",
+   "classical conditioning",
+   "insight learning",
+   "latent learning"
+  ],
+  "answer": 1,
+  "exp": "An emotional response was conditioned to the school situation through association.",
+  "sub": "Classical and operant conditioning"
+ },
+ {
+  "q": "Bruner's three modes of representation in order are",
+  "options": [
+   "enactive, iconic, symbolic",
+   "iconic, enactive, symbolic",
+   "symbolic, iconic, enactive",
+   "enactive, symbolic, iconic"
+  ],
+  "answer": 0,
+  "exp": "Children first learn by actions, then images, then symbols such as language.",
+  "sub": "Other learning theories"
+ },
+ {
+  "q": "A teacher wants to build intrinsic motivation. Which strategy is best?",
+  "options": [
+   "Offer prizes for every answer",
+   "Threaten with low marks",
+   "Give only repetitive drill",
+   "Link tasks to students' interests and give choice"
+  ],
+  "answer": 3,
+  "exp": "Relevance, choice and challenge foster internal interest.",
+  "sub": "Motivation"
+ },
+ {
+  "q": "Wechsler's intelligence scales are divided into",
+  "options": [
+   "verbal and performance scales",
+   "fluid and crystallised scales",
+   "analytical and creative scales",
+   "oral and written scales"
+  ],
+  "answer": 0,
+  "exp": "Wechsler scales provide verbal, performance and full-scale scores.",
+  "sub": "Intelligence"
+ },
+ {
+  "q": "Which statement about creativity is correct?",
+  "options": [
+   "It exists only in arts",
+   "It cannot be improved",
+   "It is the same as intelligence",
+   "Creativity can be nurtured in all children to some extent"
+  ],
+  "answer": 3,
+  "exp": "Creativity appears in every domain and can be developed by suitable environments.",
+  "sub": "Creativity"
+ },
+ {
+  "q": "Which of the following is NOT a personality dimension of Eysenck?",
+  "options": [
+   "Extraversion-introversion",
+   "Openness",
+   "Neuroticism",
+   "Psychoticism"
+  ],
+  "answer": 1,
+  "exp": "Openness belongs to the Big Five; Eysenck proposed extraversion, neuroticism and psychoticism.",
+  "sub": "Personality"
+ },
+ {
+  "q": "The adolescent growth spurt generally starts earlier in",
+  "options": [
+   "boys than in girls",
+   "neither; both start at 18",
+   "girls than in boys",
+   "tall children only"
+  ],
+  "answer": 2,
+  "exp": "Girls usually begin the spurt about two years before boys.",
+  "sub": "Adolescence"
+ },
+ {
+  "q": "Which of the following is a criticism of rigid ability grouping (tracking)?",
+  "options": [
+   "It increases peer learning for all",
+   "It may label children and lower expectations of low groups",
+   "It always raises motivation",
+   "It removes all differences"
+  ],
+  "answer": 1,
+  "exp": "Labelling can limit opportunities and self-esteem.",
+  "sub": "Individual differences"
+ },
+ {
+  "q": "The Salamanca Statement (1994) is associated with",
+  "options": [
+   "adult literacy",
+   "vocational education",
+   "technical education",
+   "inclusive education"
+  ],
+  "answer": 3,
+  "exp": "It called on governments to adopt inclusive education.",
+  "sub": "Gifted and special education"
+ },
+ {
+  "q": "The first step in the counselling process is usually",
+  "options": [
+   "establishing rapport",
+   "giving advice",
+   "terminating the session",
+   "testing the intelligence"
+  ],
+  "answer": 0,
+  "exp": "Rapport creates the trust needed for open sharing.",
+  "sub": "Guidance and counselling"
+ },
+ {
+  "q": "For resolving a quarrel between two students, the best method is",
+  "options": [
+   "caning both students",
+   "ignoring the matter",
+   "peer mediation or guided discussion",
+   "expelling both students"
+  ],
+  "answer": 2,
+  "exp": "Conflict resolution skills encourage responsible behaviour.",
+  "sub": "Classroom management and discipline"
+ },
+ {
+  "q": "Tagore received the Nobel Prize for literature in",
+  "options": [
+   "1901",
+   "1913",
+   "1921",
+   "1930"
+  ],
+  "answer": 1,
+  "exp": "Tagore won it for Gitanjali in 1913.",
+  "sub": "Gandhi and Tagore"
+ },
+ {
+  "q": "Vivekananda's view of the teacher-student relationship is based on",
+  "options": [
+   "distant relation",
+   "fear and authority",
+   "the Gurukul ideal of close personal contact",
+   "commercial relation"
+  ],
+  "answer": 2,
+  "exp": "He favoured students living close to a character-building teacher.",
+  "sub": "Vivekananda and Aurobindo"
+ },
+ {
+  "q": "The Kothari Commission (1964-66) famously said that",
+  "options": [
+   "the destiny of India is being shaped in her classrooms",
+   "education is a luxury",
+   "classrooms are not important",
+   "textbooks decide the future"
+  ],
+  "answer": 0,
+  "exp": "This is the opening line of its report.",
+  "sub": "Philosophy of education"
+ },
+ {
+  "q": "The body that monitors the implementation of the RTE Act at the national level is the",
+  "options": [
+   "UGC",
+   "AICTE",
+   "NCTE only",
+   "National Commission for Protection of Child Rights"
+  ],
+  "answer": 3,
+  "exp": "Section 31 gives monitoring powers to NCPCR and State commissions.",
+  "sub": "Right to Education Act 2009"
+ },
+ {
+  "q": "Which of the following best expresses the view of modern psychology on heredity and environment?",
+  "options": [
+   "Heredity alone decides development",
+   "Environment alone decides development",
+   "Development results from continuous interaction between heredity and environment",
+   "Neither affects development"
+  ],
+  "answer": 2,
+  "exp": "Heredity sets potentials while environment determines how far they are realised; both interact.",
+  "sub": "Growth and development"
+ },
+ {
+  "q": "Assertion (A): Piaget's theory is called a constructivist theory. Reason (R): It holds that children actively build their knowledge through interaction with the environment. Choose the correct option.",
+  "options": [
+   "Both A and R are true and R explains A",
+   "Both A and R are true but R does not explain A",
+   "A is true but R is false",
+   "A is false but R is true"
+  ],
+  "answer": 0,
+  "exp": "Constructivism views learners as active builders of knowledge, exactly as Piaget described.",
+  "sub": "Piaget"
+ },
+ {
+  "q": "According to Vygotsky, 'tools of intellectual adaptation' include",
+  "options": [
+   "only physical tools",
+   "only inherited reflexes",
+   "only rewards and punishments",
+   "language, counting systems and symbols of the culture"
+  ],
+  "answer": 3,
+  "exp": "Cultural tools such as language and number systems mediate thinking.",
+  "sub": "Vygotsky"
+ },
+ {
+  "q": "Kohlberg's theory extended the earlier work on moral judgment of",
+  "options": [
+   "B. F. Skinner",
+   "Jean Piaget",
+   "Ivan Pavlov",
+   "Erik Erikson"
+  ],
+  "answer": 1,
+  "exp": "Kohlberg built on Piaget's stage approach to moral thinking.",
+  "sub": "Kohlberg"
+ },
+ {
+  "q": "In Freud's psychosexual theory, the Oedipus complex appears in the",
+  "options": [
+   "phallic stage",
+   "oral stage",
+   "anal stage",
+   "latency stage"
+  ],
+  "answer": 0,
+  "exp": "The phallic stage (3-6 years) involves attachment to the opposite-sex parent.",
+  "sub": "Erikson"
+ },
+ {
+  "q": "Which of the following is NOT an example of operant behaviour?",
+  "options": [
+   "A pigeon pecking a key for food",
+   "A student raising a hand to get attention",
+   "A rat pressing a lever for water",
+   "Salivating at the sound of a bell after conditioning"
+  ],
+  "answer": 3,
+  "exp": "Salivation is a reflex controlled by antecedent stimuli, which is respondent (classical) behaviour.",
+  "sub": "Classical and operant conditioning"
+ },
+ {
+  "q": "Learning that occurs without reinforcement and remains hidden until a reward appears is called",
+  "options": [
+   "insight learning",
+   "latent learning",
+   "rote learning",
+   "shaping"
+  ],
+  "answer": 1,
+  "exp": "Tolman's rats formed cognitive maps without reward.",
+  "sub": "Other learning theories"
+ },
+ {
+  "q": "'Level of aspiration' refers to",
+  "options": [
+   "the amount of reward received",
+   "the speed of learning",
+   "the goal a person sets for future performance",
+   "a type of intelligence"
+  ],
+  "answer": 2,
+  "exp": "It is the standard a person tries to reach in a task, often shifting after success or failure.",
+  "sub": "Motivation"
+ },
+ {
+  "q": "Raven's Progressive Matrices is considered a",
+  "options": [
+   "personality inventory",
+   "projective test",
+   "non-verbal, culture-fair test of intelligence",
+   "achievement test"
+  ],
+  "answer": 2,
+  "exp": "It uses patterns rather than language, reducing cultural bias.",
+  "sub": "Intelligence"
+ },
+ {
+  "q": "The Remote Associates Test, designed to assess creative thinking, was developed by",
+  "options": [
+   "Mednick",
+   "Torrance",
+   "Raven",
+   "Binet"
+  ],
+  "answer": 0,
+  "exp": "Mednick's RAT asks for a word linking three apparently unrelated words.",
+  "sub": "Creativity"
+ }
+]

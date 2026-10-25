@@ -1,0 +1,362 @@
+[
+ {
+  "q": "Twin studies, comparing identical twins raised apart, are mainly used to estimate",
+  "options": [
+   "the speed of learning",
+   "the relative influence of heredity and environment",
+   "the effect of punishment",
+   "the effect of motivation on memory"
+  ],
+  "answer": 1,
+  "exp": "Identical twins share genes; differences when reared apart point to environmental influences.",
+  "sub": "Growth and development"
+ },
+ {
+  "q": "After being told that a zebra is a different animal, the child creates a new category for zebras. This is",
+  "options": [
+   "accommodation",
+   "assimilation",
+   "imitation",
+   "extinction"
+  ],
+  "answer": 0,
+  "exp": "Accommodation is changing or creating schemas to fit new information.",
+  "sub": "Piaget"
+ },
+ {
+  "q": "A teacher first models how to solve a problem, then gives hints, and finally lets the student solve it alone. This is an example of",
+  "options": [
+   "extinction",
+   "shaping by punishment",
+   "scaffolding",
+   "latent learning"
+  ],
+  "answer": 2,
+  "exp": "Progressive withdrawal of help matches scaffolding within the ZPD.",
+  "sub": "Vygotsky"
+ },
+ {
+  "q": "Stage 6 of Kohlberg's theory is oriented towards",
+  "options": [
+   "obedience to authority",
+   "personal gain",
+   "peer approval",
+   "universal ethical principles"
+  ],
+  "answer": 3,
+  "exp": "At the top stage individuals follow self-chosen universal principles such as justice and human rights.",
+  "sub": "Kohlberg"
+ },
+ {
+  "q": "Initiative versus guilt is the crisis of",
+  "options": [
+   "infancy",
+   "preschool years (about 3 to 6)",
+   "old age",
+   "young adulthood"
+  ],
+  "answer": 1,
+  "exp": "Preschoolers who plan and start activities develop initiative; harsh criticism produces guilt.",
+  "sub": "Erikson"
+ },
+ {
+  "q": "Skinner's operant conditioning emphasises that behaviour is controlled by",
+  "options": [
+   "its consequences",
+   "the preceding unconditioned stimulus",
+   "inborn instincts only",
+   "insight"
+  ],
+  "answer": 0,
+  "exp": "Behaviour followed by reinforcement is strengthened; operants act on the environment.",
+  "sub": "Classical and operant conditioning"
+ },
+ {
+  "q": "Which is NOT one of the four processes of observational learning in Bandura's theory?",
+  "options": [
+   "Attention",
+   "Retention",
+   "Extinction",
+   "Motivation"
+  ],
+  "answer": 2,
+  "exp": "The processes are attention, retention, reproduction and motivation.",
+  "sub": "Other learning theories"
+ },
+ {
+  "q": "In Weiner's attribution theory, which cause is both internal and stable?",
+  "options": [
+   "Effort",
+   "Luck",
+   "Task difficulty",
+   "Ability"
+  ],
+  "answer": 3,
+  "exp": "Ability is inside the person and relatively fixed; effort is internal but unstable.",
+  "sub": "Motivation"
+ },
+ {
+  "q": "Howard Gardner is known for the theory of",
+  "options": [
+   "triarchic intelligence",
+   "two-factor intelligence",
+   "emotional intelligence",
+   "multiple intelligences"
+  ],
+  "answer": 3,
+  "exp": "Gardner proposed several relatively independent intelligences such as linguistic, musical and bodily-kinaesthetic.",
+  "sub": "Intelligence"
+ },
+ {
+  "q": "Convergent thinking involves",
+  "options": [
+   "producing many answers",
+   "random guessing",
+   "arriving at the single best answer to a problem",
+   "dreaming"
+  ],
+  "answer": 2,
+  "exp": "Convergent thinking narrows down to one correct solution.",
+  "sub": "Creativity"
+ },
+ {
+  "q": "Which of the following is a projective test of personality?",
+  "options": [
+   "Raven's Progressive Matrices",
+   "Thematic Apperception Test",
+   "Stanford-Binet Scale",
+   "Differential Aptitude Test"
+  ],
+  "answer": 1,
+  "exp": "TAT, developed by Murray and Morgan, asks subjects to tell stories about pictures.",
+  "sub": "Personality"
+ },
+ {
+  "q": "Admiring and imitating a film star or leader without questioning is called",
+  "options": [
+   "hero worship",
+   "egocentrism",
+   "regression",
+   "sublimation"
+  ],
+  "answer": 0,
+  "exp": "Hero worship is a typical adolescent tendency.",
+  "sub": "Adolescence"
+ },
+ {
+  "q": "A student who performs below the level expected from his ability is called",
+  "options": [
+   "an underachiever",
+   "a gifted child",
+   "an overachiever",
+   "a prodigy"
+  ],
+  "answer": 0,
+  "exp": "Underachievement is a gap between potential and performance.",
+  "sub": "Individual differences"
+ },
+ {
+  "q": "Which of the following is a characteristic of ADHD?",
+  "options": [
+   "Superior memory only",
+   "Hearing loss",
+   "Inattention, hyperactivity and impulsiveness",
+   "Visual impairment"
+  ],
+  "answer": 2,
+  "exp": "ADHD involves persistent inattention and hyperactivity-impulsivity.",
+  "sub": "Gifted and special education"
+ },
+ {
+  "q": "A cumulative record card of a student is useful mainly for",
+  "options": [
+   "punishing the student",
+   "understanding the student's overall development and guiding him",
+   "ranking teachers",
+   "deciding fees"
+  ],
+  "answer": 1,
+  "exp": "It stores continuous data on academic, personal and social growth.",
+  "sub": "Guidance and counselling"
+ },
+ {
+  "q": "The ultimate aim of discipline in school is",
+  "options": [
+   "fear of the teacher",
+   "obedience to rules without thinking",
+   "silence in class",
+   "self-discipline"
+  ],
+  "answer": 3,
+  "exp": "Education aims at internal self-control.",
+  "sub": "Classroom management and discipline"
+ },
+ {
+  "q": "Tagore founded Santiniketan in the year",
+  "options": [
+   "1921",
+   "1901",
+   "1937",
+   "1947"
+  ],
+  "answer": 1,
+  "exp": "Tagore started the Brahmacharyashram school at Santiniketan in 1901.",
+  "sub": "Gandhi and Tagore"
+ },
+ {
+  "q": "Aurobindo's educational philosophy is called",
+  "options": [
+   "Basic education",
+   "Pragmatic education",
+   "Naturalistic education",
+   "Integral education"
+  ],
+  "answer": 3,
+  "exp": "He held that education should develop all parts of the being.",
+  "sub": "Vivekananda and Aurobindo"
+ },
+ {
+  "q": "Froebel is known as the founder of",
+  "options": [
+   "the Montessori method",
+   "the Dalton plan",
+   "the kindergarten system",
+   "the Winnetka plan"
+  ],
+  "answer": 2,
+  "exp": "Froebel started the first kindergarten in Germany in 1837.",
+  "sub": "Philosophy of education"
+ },
+ {
+  "q": "As per the RTE Schedule, a primary school with 90 pupils needs at least how many teachers at a PTR of 30:1?",
+  "options": [
+   "3",
+   "2",
+   "4",
+   "5"
+  ],
+  "answer": 0,
+  "exp": "90 / 30 = 3 teachers (the Schedule prescribes three teachers for 61-90 children).",
+  "sub": "Right to Education Act 2009"
+ },
+ {
+  "q": "Statement I: Development is a continuous process. Statement II: All children develop at exactly the same rate. Which is correct?",
+  "options": [
+   "Both statements are true",
+   "Statement I is false and Statement II is true",
+   "Both statements are false",
+   "Statement I is true and Statement II is false"
+  ],
+  "answer": 3,
+  "exp": "Development is continuous but the rate differs among children, which is the principle of individual differences.",
+  "sub": "Growth and development"
+ },
+ {
+  "q": "In Piaget's theory, the process of balancing assimilation and accommodation is called",
+  "options": [
+   "centration",
+   "adaptation only",
+   "equilibration",
+   "decentration"
+  ],
+  "answer": 2,
+  "exp": "Equilibration is the self-regulating drive that restores balance when new experiences cause disequilibrium.",
+  "sub": "Piaget"
+ },
+ {
+  "q": "A child's mental age on tasks done alone is 6 years, and with adult help it is 8 years. The size of the ZPD in years is",
+  "options": [
+   "6",
+   "2",
+   "8",
+   "14"
+  ],
+  "answer": 1,
+  "exp": "ZPD = level with help minus independent level = 8 - 6 = 2 years.",
+  "sub": "Vygotsky"
+ },
+ {
+  "q": "The 'Heinz dilemma' is used to assess",
+  "options": [
+   "moral reasoning",
+   "intelligence",
+   "creativity",
+   "personality type"
+  ],
+  "answer": 0,
+  "exp": "In the dilemma a man steals a drug for his wife, and responses reveal the stage of moral reasoning.",
+  "sub": "Kohlberg"
+ },
+ {
+  "q": "Intimacy versus isolation is the main concern of",
+  "options": [
+   "adolescence",
+   "middle age",
+   "old age",
+   "young adulthood"
+  ],
+  "answer": 3,
+  "exp": "Forming close, committed relationships is the task of young adulthood.",
+  "sub": "Erikson"
+ },
+ {
+  "q": "A student studies hard to avoid a parent's scolding. In Skinner's terms the studying is strengthened by",
+  "options": [
+   "negative reinforcement",
+   "positive reinforcement",
+   "punishment",
+   "extinction"
+  ],
+  "answer": 0,
+  "exp": "Removing or avoiding an unpleasant stimulus that increases behaviour is negative reinforcement.",
+  "sub": "Classical and operant conditioning"
+ },
+ {
+  "q": "Bandura's term for a person's belief in his or her ability to succeed in a task is",
+  "options": [
+   "self-esteem",
+   "locus of control",
+   "self-efficacy",
+   "level of aspiration"
+  ],
+  "answer": 2,
+  "exp": "Self-efficacy influences effort and persistence.",
+  "sub": "Other learning theories"
+ },
+ {
+  "q": "A student who attributes failure to 'bad luck' rather than to lack of ability is likely to",
+  "options": [
+   "feel hopeless since luck cannot change",
+   "keep trying since luck is external and unstable",
+   "stop all attempts",
+   "become overconfident only"
+  ],
+  "answer": 1,
+  "exp": "Attributing failure to unstable external causes protects motivation for future attempts.",
+  "sub": "Motivation"
+ },
+ {
+  "q": "A student who is very good at understanding his own feelings and goals shows high",
+  "options": [
+   "interpersonal intelligence",
+   "logical-mathematical intelligence",
+   "intrapersonal intelligence",
+   "naturalist intelligence"
+  ],
+  "answer": 2,
+  "exp": "Intrapersonal intelligence is self-understanding.",
+  "sub": "Intelligence"
+ },
+ {
+  "q": "The relationship between intelligence and creativity is generally",
+  "options": [
+   "positive but not perfect",
+   "perfectly positive",
+   "negative",
+   "zero"
+  ],
+  "answer": 0,
+  "exp": "A minimum level of intelligence is needed, but high intelligence does not guarantee creativity.",
+  "sub": "Creativity"
+ }
+]

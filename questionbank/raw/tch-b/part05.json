@@ -1,0 +1,458 @@
+[
+ {
+  "q": "Which of the following is the best aid to show a trend in marks over several years?",
+  "options": [
+   "Line graph",
+   "Photograph",
+   "Map",
+   "Flannel board"
+  ],
+  "answer": 0,
+  "exp": "A line graph shows change over time clearly.",
+  "sub": "Teaching aids and audio-visual media"
+ },
+ {
+  "q": "Feedback in microteaching can be obtained from:",
+  "options": [
+   "only the principal",
+   "supervisor, peers and video or audio recordings",
+   "only parents",
+   "only the examination result"
+  ],
+  "answer": 1,
+  "exp": "Multiple sources give objective information about the performance.",
+  "sub": "Microteaching and teaching skills"
+ },
+ {
+  "q": "A unit plan differs from a lesson plan because it:",
+  "options": [
+   "is meant for a single period only",
+   "has no objectives",
+   "covers a larger part of the syllabus spread over several periods",
+   "is prepared by students"
+  ],
+  "answer": 2,
+  "exp": "A unit plan organises a whole unit while a lesson plan covers one period.",
+  "sub": "Lesson planning"
+ },
+ {
+  "q": "Correlation among subjects in a curriculum ensures that:",
+  "options": [
+   "each subject is isolated",
+   "examinations are not needed",
+   "the number of subjects is doubled",
+   "related ideas in different subjects reinforce one another"
+  ],
+  "answer": 3,
+  "exp": "Correlation links subjects so that learning is more meaningful.",
+  "sub": "Curriculum"
+ },
+ {
+  "q": "Evaluation is different from measurement because evaluation:",
+  "options": [
+   "includes value judgement about the quantitative and qualitative evidence",
+   "gives only numerical scores",
+   "is done without objectives",
+   "ignores the learner's behaviour"
+  ],
+  "answer": 0,
+  "exp": "Measurement gives numbers; evaluation interprets them against objectives.",
+  "sub": "Evaluation, formative and summative assessment, CCE"
+ },
+ {
+  "q": "An aptitude test is used to:",
+  "options": [
+   "measure past learning only",
+   "predict future ability to learn or perform in an area",
+   "check attendance",
+   "assess handwriting"
+  ],
+  "answer": 1,
+  "exp": "Aptitude tests measure potential.",
+  "sub": "Tests, blueprint and item analysis"
+ },
+ {
+  "q": "The reliability coefficient normally ranges from:",
+  "options": [
+   "-10 to 10",
+   "0 to 100",
+   "0 to 1",
+   "1 to 10"
+  ],
+  "answer": 2,
+  "exp": "A value near 1 indicates high reliability.",
+  "sub": "Validity and reliability"
+ },
+ {
+  "q": "Peer tutoring can help remedial work because:",
+  "options": [
+   "it replaces the teacher",
+   "it avoids practice",
+   "it stops all feedback",
+   "students learn from classmates who explain things in simple language"
+  ],
+  "answer": 3,
+  "exp": "Peers can provide additional support and explanation.",
+  "sub": "Diagnostic testing and remedial teaching"
+ },
+ {
+  "q": "Review of related literature is done to:",
+  "options": [
+   "know what has already been studied and avoid duplication",
+   "increase page count",
+   "copy earlier results",
+   "avoid collecting data"
+  ],
+  "answer": 0,
+  "exp": "It identifies gaps and guides the design.",
+  "sub": "Action research and educational research"
+ },
+ {
+  "q": "A recorded video lecture that a student can watch at any time is an example of:",
+  "options": [
+   "synchronous learning",
+   "asynchronous learning",
+   "face-to-face learning",
+   "examination"
+  ],
+  "answer": 1,
+  "exp": "The learner can access it at a time of choice.",
+  "sub": "ICT in education"
+ },
+ {
+  "q": "SCERT stands for:",
+  "options": [
+   "Standard Council for Education and Research Teaching",
+   "School Council of Examination and Reform Training",
+   "State Council of Educational Research and Training",
+   "State Centre of Educational Records and Testing"
+  ],
+  "answer": 2,
+  "exp": "SCERT is the state-level academic body for school education.",
+  "sub": "NEP 2020 and education bodies"
+ },
+ {
+  "q": "Reflective teaching involves:",
+  "options": [
+   "avoiding self-evaluation",
+   "blaming students for results",
+   "copying other teachers",
+   "thinking critically about one's own teaching to improve it"
+  ],
+  "answer": 3,
+  "exp": "Reflective practice, associated with Schon, uses experience as a basis for improvement.",
+  "sub": "Teacher qualities and professional ethics"
+ },
+ {
+  "q": "A good way to teach debugging is to:",
+  "options": [
+   "give students programs with errors and ask them to locate and correct them",
+   "tell them to avoid mistakes",
+   "only show correct programs",
+   "ask them to memorise error messages"
+  ],
+  "answer": 0,
+  "exp": "Learning from errors strengthens understanding.",
+  "sub": "Pedagogy of computer science"
+ },
+ {
+  "q": "Which of the following is an example of intrinsic motivation in a classroom?",
+  "options": [
+   "A student studies to win a cash prize",
+   "A student studies to avoid punishment",
+   "A student studies to please the examiner",
+   "A student solves puzzles because she enjoys the challenge"
+  ],
+  "answer": 3,
+  "exp": "Intrinsic motivation comes from interest and enjoyment of the activity itself, not external rewards.",
+  "sub": "Teaching-learning process"
+ },
+ {
+  "q": "In the inductive method of teaching:",
+  "options": [
+   "examples are studied first and then a general rule is derived",
+   "a rule is stated first and then applied to examples",
+   "only definitions are taught",
+   "there is no use of examples"
+  ],
+  "answer": 0,
+  "exp": "Induction proceeds from particular instances to a general principle.",
+  "sub": "Teaching methods"
+ },
+ {
+  "q": "Which of the following is a good practice while using the blackboard?",
+  "options": [
+   "Writing very small letters",
+   "Writing legibly and organising content in a planned layout",
+   "Standing in front of the written matter",
+   "Writing continuously without erasing or summarising"
+  ],
+  "answer": 1,
+  "exp": "Legible, planned writing helps all students see and follow the content.",
+  "sub": "Teaching aids and audio-visual media"
+ },
+ {
+  "q": "The major advantage of microteaching is that it:",
+  "options": [
+   "eliminates the need for school practice",
+   "is useful only for experienced teachers",
+   "provides a safe, controlled setting for practising and improving specific skills",
+   "avoids all feedback"
+  ],
+  "answer": 2,
+  "exp": "Its reduced complexity lets trainees master skills before facing real classrooms.",
+  "sub": "Microteaching and teaching skills"
+ },
+ {
+  "q": "The recapitulation questions asked at the end of a lesson serve to:",
+  "options": [
+   "start a new topic",
+   "punish inattentive students",
+   "reduce the syllabus",
+   "evaluate how far the objectives have been achieved"
+  ],
+  "answer": 3,
+  "exp": "They check understanding and give feedback.",
+  "sub": "Lesson planning"
+ },
+ {
+  "q": "Co-curricular activities such as debates and sports are included in the curriculum to:",
+  "options": [
+   "develop the all-round personality of learners",
+   "reduce the school working days",
+   "replace academic subjects",
+   "increase school fees"
+  ],
+  "answer": 0,
+  "exp": "They support social, emotional and physical development.",
+  "sub": "Curriculum"
+ },
+ {
+  "q": "A student's marks are compared with other students' marks in:",
+  "options": [
+   "criterion-referenced assessment",
+   "norm-referenced assessment",
+   "self-referenced assessment only",
+   "diagnostic assessment"
+  ],
+  "answer": 1,
+  "exp": "Norm-referenced tests rank students relative to a group.",
+  "sub": "Evaluation, formative and summative assessment, CCE"
+ },
+ {
+  "q": "Anecdotal record is a tool used to:",
+  "options": [
+   "calculate marks",
+   "conduct oral tests",
+   "note the significant behaviour incidents of a student",
+   "compare two textbooks"
+  ],
+  "answer": 2,
+  "exp": "It is a brief factual record of a particular observed event.",
+  "sub": "Tests, blueprint and item analysis"
+ },
+ {
+  "q": "Cronbach's alpha is used to estimate:",
+  "options": [
+   "content validity",
+   "the height of the students",
+   "the mean score",
+   "internal consistency reliability"
+  ],
+  "answer": 3,
+  "exp": "Alpha measures how consistently items measure the same construct.",
+  "sub": "Validity and reliability"
+ },
+ {
+  "q": "The Right of Children to Free and Compulsory Education Act came into force in:",
+  "options": [
+   "2005",
+   "2009",
+   "2012",
+   "2010"
+  ],
+  "answer": 3,
+  "exp": "The RTE Act was passed in 2009 and came into force on 1 April 2010.",
+  "sub": "Diagnostic testing and remedial teaching"
+ },
+ {
+  "q": "A questionnaire is a tool used to:",
+  "options": [
+   "measure intelligence by observation",
+   "collect information in written form from respondents",
+   "record physical growth",
+   "treat the learner"
+  ],
+  "answer": 1,
+  "exp": "It consists of a set of written questions for respondents.",
+  "sub": "Action research and educational research"
+ },
+ {
+  "q": "PM eVidya was announced to:",
+  "options": [
+   "control the price of books",
+   "regulate school fees",
+   "unify digital, online and on-air education initiatives",
+   "provide mid-day meals"
+  ],
+  "answer": 2,
+  "exp": "It brings together DIKSHA, TV channels, radio and other modes.",
+  "sub": "ICT in education"
+ },
+ {
+  "q": "The National Testing Agency (NTA) is mainly responsible for:",
+  "options": [
+   "preparing school textbooks",
+   "paying teachers' salaries",
+   "training NCC cadets",
+   "conducting entrance examinations for higher education"
+  ],
+  "answer": 3,
+  "exp": "NTA conducts exams such as JEE Main and NEET.",
+  "sub": "NEP 2020 and education bodies"
+ },
+ {
+  "q": "The best way for a teacher to handle misbehaviour is:",
+  "options": [
+   "to understand its cause and respond constructively",
+   "to humiliate the student in public",
+   "to ignore it permanently",
+   "to expel at once"
+  ],
+  "answer": 0,
+  "exp": "Positive discipline addresses the cause without harming dignity.",
+  "sub": "Teacher qualities and professional ethics"
+ },
+ {
+  "q": "Parsons problems are exercises in which students:",
+  "options": [
+   "write an essay about computers",
+   "arrange scrambled lines of code in the correct order",
+   "draw logos",
+   "type fast"
+  ],
+  "answer": 1,
+  "exp": "They reduce the cognitive load of writing code from scratch.",
+  "sub": "Pedagogy of computer science"
+ },
+ {
+  "q": "Which one of the following is NOT a feature of effective teaching?",
+  "options": [
+   "One-way flow of information with no learner participation",
+   "Clear objectives",
+   "Use of feedback",
+   "Attention to individual differences"
+  ],
+  "answer": 0,
+  "exp": "Effective teaching is interactive; one-way talk without participation is not.",
+  "sub": "Teaching-learning process"
+ },
+ {
+  "q": "Which of the following is an essential feature of the project method?",
+  "options": [
+   "It follows a rigid timetable",
+   "It is a purposeful activity carried out in a natural setting",
+   "It is done under strict dictation",
+   "It avoids the use of real-life problems"
+  ],
+  "answer": 1,
+  "exp": "Projects are purposeful, problem-oriented and based on real life.",
+  "sub": "Teaching methods"
+ },
+ {
+  "q": "While preparing PowerPoint slides for a class, which practice is NOT recommended?",
+  "options": [
+   "Using key points and diagrams",
+   "Using a readable font size",
+   "Filling each slide with long paragraphs in small font",
+   "Using consistent colours"
+  ],
+  "answer": 2,
+  "exp": "Overloaded slides reduce attention and are hard to read.",
+  "sub": "Teaching aids and audio-visual media"
+ },
+ {
+  "q": "Which of the following is NOT a teaching skill in microteaching?",
+  "options": [
+   "Skill of explaining",
+   "Skill of questioning",
+   "Skill of using illustrations",
+   "Preparing the school budget"
+  ],
+  "answer": 3,
+  "exp": "Budget preparation is an administrative task, not a classroom teaching skill.",
+  "sub": "Microteaching and teaching skills"
+ },
+ {
+  "q": "Home assignment in a lesson plan should be:",
+  "options": [
+   "related to the lesson and within the capacity of students",
+   "completely unrelated to the topic",
+   "too lengthy to finish",
+   "given only to some students as punishment"
+  ],
+  "answer": 0,
+  "exp": "Meaningful assignments reinforce learning.",
+  "sub": "Lesson planning"
+ },
+ {
+  "q": "The principle of flexibility in curriculum means that it should:",
+  "options": [
+   "never change",
+   "be adaptable to local needs and changing times",
+   "be the same everywhere with no change",
+   "ignore learners"
+  ],
+  "answer": 1,
+  "exp": "A flexible curriculum can be revised and adapted.",
+  "sub": "Curriculum"
+ },
+ {
+  "q": "In criterion-referenced assessment, a student's performance is compared with:",
+  "options": [
+   "performance of other students",
+   "the teacher's mood",
+   "a fixed standard of mastery",
+   "last year's average"
+  ],
+  "answer": 2,
+  "exp": "The student is judged on whether the pre-set criterion has been achieved.",
+  "sub": "Evaluation, formative and summative assessment, CCE"
+ },
+ {
+  "q": "A sociometric technique is used to find out:",
+  "options": [
+   "the intelligence of the students",
+   "the height of the students",
+   "the marks in mathematics",
+   "the social relationships and acceptance among students in a group"
+  ],
+  "answer": 3,
+  "exp": "Sociometry, developed by Moreno, shows preferences and rejections within a group.",
+  "sub": "Tests, blueprint and item analysis"
+ },
+ {
+  "q": "Inter-rater reliability concerns the:",
+  "options": [
+   "agreement between different scorers marking the same answers",
+   "agreement between two textbooks",
+   "agreement of two syllabi",
+   "agreement of students' ages"
+  ],
+  "answer": 0,
+  "exp": "High inter-rater reliability means scorers give similar marks.",
+  "sub": "Validity and reliability"
+ },
+ {
+  "q": "Differentiated instruction involves:",
+  "options": [
+   "giving the same task to all in the same way",
+   "adjusting content, process or product according to learner needs",
+   "avoiding assessments",
+   "grouping by hair colour"
+  ],
+  "answer": 1,
+  "exp": "It accommodates differences in readiness and learning style.",
+  "sub": "Diagnostic testing and remedial teaching"
+ }
+]

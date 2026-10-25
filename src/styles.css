@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --color-brand: #2d5bff;
+}
+
+body {
+  @apply bg-slate-100 text-slate-800 antialiased;
+}
+
+@media print {
+  header, .print\:hidden { display: none !important; }
+  body { background: #fff; }
+}

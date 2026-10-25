@@ -1,0 +1,242 @@
+[
+ {
+  "q": "Which of the following is an example of an energy source obtained from Earth's internal heat?",
+  "options": [
+   "Wind energy",
+   "Tidal energy",
+   "Geothermal energy",
+   "Solar energy"
+  ],
+  "answer": 2,
+  "exp": "Geothermal energy uses heat from within Earth, e.g. hot springs and steam.",
+  "sub": "Renewable energy"
+ },
+ {
+  "q": "Which of the following is the process used in a nuclear power plant to generate energy?",
+  "options": [
+   "Photosynthesis",
+   "Nuclear fusion",
+   "Combustion",
+   "Nuclear fission"
+  ],
+  "answer": 3,
+  "exp": "Nuclear reactors split heavy nuclei such as uranium-235 to release energy.",
+  "sub": "Natural resources"
+ },
+ {
+  "q": "Compressed Natural Gas (CNG) used as a cleaner vehicle fuel is mainly composed of",
+  "options": [
+   "Butane",
+   "Methane",
+   "Propane",
+   "Ethanol"
+  ],
+  "answer": 1,
+  "exp": "CNG is mostly methane, burning with lower particulate emissions than petrol or diesel.",
+  "sub": "Air pollution"
+ },
+ {
+  "q": "The Environment Impact Assessment (EIA) is carried out",
+  "options": [
+   "Before starting a development project to assess its likely environmental effects",
+   "After completion of a project",
+   "Only for agricultural projects",
+   "Only during disasters"
+  ],
+  "answer": 0,
+  "exp": "EIA is a pre-project study to predict and mitigate environmental impacts.",
+  "sub": "Environmental laws"
+ },
+ {
+  "q": "Joint Forest Management in India involves",
+  "options": [
+   "Local communities and the forest department sharing management and benefits",
+   "Complete privatisation of forests",
+   "Banning entry of local people",
+   "Only the Army protecting forests"
+  ],
+  "answer": 0,
+  "exp": "JFM (1990) involves village committees in protecting forests in return for usufruct benefits.",
+  "sub": "Conservation"
+ },
+ {
+  "q": "The Kanwar Lake (Kabartal) wetland, a Ramsar site, is located in which Bihar district?",
+  "options": [
+   "Darbhanga",
+   "Begusarai",
+   "Vaishali",
+   "Purnia"
+  ],
+  "answer": 1,
+  "exp": "Kabartal (Kanwar Jheel) in Begusarai was designated a Ramsar site in 2020.",
+  "sub": "Bihar environment"
+ },
+ {
+  "q": "The soil conservation method of ploughing along the contour lines of a slope helps to",
+  "options": [
+   "Reduce soil fertility",
+   "Increase soil erosion",
+   "Make soil saline",
+   "Reduce soil erosion by slowing run-off"
+  ],
+  "answer": 3,
+  "exp": "Contour ploughing creates barriers to run-off, retaining water and soil.",
+  "sub": "Natural resources"
+ },
+ {
+  "q": "Which of the following is a perpetual (inexhaustible) resource?",
+  "options": [
+   "Forests",
+   "Groundwater",
+   "Solar radiation",
+   "Soil"
+  ],
+  "answer": 2,
+  "exp": "Solar energy is available continuously and is not depleted by use; groundwater, forests and soil are renewable only if managed.",
+  "sub": "Natural resources"
+ },
+ {
+  "q": "Which of the following is NOT a method of in-situ conservation?",
+  "options": [
+   "National park",
+   "Seed bank",
+   "Wildlife sanctuary",
+   "Biosphere reserve"
+  ],
+  "answer": 1,
+  "exp": "A seed bank stores seeds outside the natural habitat and is therefore ex-situ.",
+  "sub": "Conservation"
+ },
+ {
+  "q": "A major difference between a National Park and a Wildlife Sanctuary is that in a National Park",
+  "options": [
+   "Boundaries can change anytime freely",
+   "Hunting is allowed",
+   "Private ownership of land is encouraged",
+   "Human activities such as grazing and forestry are not permitted"
+  ],
+  "answer": 3,
+  "exp": "National parks have stricter protection with no grazing or collection of forest produce.",
+  "sub": "Conservation"
+ },
+ {
+  "q": "The Earth Summit held at Rio de Janeiro in 1992 resulted in which of the following?",
+  "options": [
+   "Montreal Protocol",
+   "Kyoto Protocol",
+   "Convention on Biological Diversity and Agenda 21",
+   "Paris Agreement"
+  ],
+  "answer": 2,
+  "exp": "The 1992 UN Conference on Environment and Development opened CBD and UNFCCC for signature and adopted Agenda 21.",
+  "sub": "Conventions"
+ },
+ {
+  "q": "The Intergovernmental Panel on Climate Change (IPCC) was set up by",
+  "options": [
+   "UNEP and WMO",
+   "WHO and FAO",
+   "UNESCO and UNICEF",
+   "IMF and World Bank"
+  ],
+  "answer": 0,
+  "exp": "IPCC was established in 1988 by the United Nations Environment Programme and World Meteorological Organization.",
+  "sub": "Climate change"
+ },
+ {
+  "q": "Landslides in hilly areas are mainly aggravated by",
+  "options": [
+   "Terrace farming",
+   "Afforestation",
+   "Deforestation and heavy rainfall",
+   "Contour bunding"
+  ],
+  "answer": 2,
+  "exp": "Removal of vegetation loosens soil, which slides down during heavy rain.",
+  "sub": "Disaster management"
+ },
+ {
+  "q": "Which of the following is the first step in the disaster management cycle aimed at reducing the impact of a future disaster?",
+  "options": [
+   "Reconstruction",
+   "Relief",
+   "Rehabilitation",
+   "Mitigation and preparedness"
+  ],
+  "answer": 3,
+  "exp": "Mitigation and preparedness precede response and recovery measures.",
+  "sub": "Disaster management"
+ },
+ {
+  "q": "Which of the following is a renewable resource?",
+  "options": [
+   "Coal",
+   "Forest",
+   "Petroleum",
+   "Natural gas"
+  ],
+  "answer": 1,
+  "exp": "Forests regenerate if managed sustainably, unlike fossil fuels.",
+  "sub": "Natural resources"
+ },
+ {
+  "q": "Which of the following layers of the atmosphere contains most of the weather phenomena?",
+  "options": [
+   "Troposphere",
+   "Stratosphere",
+   "Mesosphere",
+   "Exosphere"
+  ],
+  "answer": 0,
+  "exp": "The troposphere, the lowest layer, contains most water vapour, clouds and weather.",
+  "sub": "Atmosphere"
+ },
+ {
+  "q": "Fossil fuels such as coal and petroleum are formed from",
+  "options": [
+   "Remains of ancient plants and animals buried and heated over millions of years",
+   "Volcanic ash",
+   "Quartz crystals",
+   "Salts of sea water"
+  ],
+  "answer": 0,
+  "exp": "Burial under heat and pressure converts organic remains into coal, oil and gas.",
+  "sub": "Natural resources"
+ },
+ {
+  "q": "The movement 'Appiko' in the Western Ghats of Karnataka was aimed at",
+  "options": [
+   "Stopping river dams",
+   "Protecting turtles",
+   "Banning mining of coal",
+   "Saving trees from felling by embracing them"
+  ],
+  "answer": 3,
+  "exp": "Appiko (Kannada for hugging) was launched in 1983 in Uttara Kannada by Pandurang Hegde.",
+  "sub": "Environmental movements"
+ },
+ {
+  "q": "Which of the following is an example of a biotic component of an ecosystem?",
+  "options": [
+   "Soil minerals",
+   "Temperature",
+   "Decomposers",
+   "Sunlight"
+  ],
+  "answer": 2,
+  "exp": "Biotic components are living organisms - producers, consumers and decomposers.",
+  "sub": "Ecosystem"
+ },
+ {
+  "q": "Decomposers such as fungi and bacteria play an important role in an ecosystem by",
+  "options": [
+   "Producing food by photosynthesis",
+   "Recycling nutrients from dead organic matter",
+   "Serving as primary consumers",
+   "Fixing carbon dioxide"
+  ],
+  "answer": 1,
+  "exp": "Decomposers break down dead matter, returning mineral nutrients to the soil.",
+  "sub": "Ecosystem"
+ }
+]

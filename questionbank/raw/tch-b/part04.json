@@ -1,0 +1,458 @@
+[
+ {
+  "q": "Which of the following is an example of error analysis in a programming class?",
+  "options": [
+   "Examining students' wrong programs to find recurring misconceptions",
+   "Marking only the final output",
+   "Giving the same test again",
+   "Ignoring wrong answers"
+  ],
+  "answer": 0,
+  "exp": "Error analysis reveals the pattern of mistakes and their causes.",
+  "sub": "Diagnostic testing and remedial teaching"
+ },
+ {
+  "q": "In an experimental study, the variable manipulated by the researcher is the:",
+  "options": [
+   "dependent variable",
+   "independent variable",
+   "extraneous variable only",
+   "control group"
+  ],
+  "answer": 1,
+  "exp": "The effect of the independent variable on the dependent variable is studied.",
+  "sub": "Action research and educational research"
+ },
+ {
+  "q": "The term 'digital divide' refers to:",
+  "options": [
+   "a break in a computer program",
+   "a division of the school into sections",
+   "the gap between those who have access to ICT and those who do not",
+   "the difference between two software versions"
+  ],
+  "answer": 2,
+  "exp": "It describes unequal access to digital technology.",
+  "sub": "ICT in education"
+ },
+ {
+  "q": "NEP 2020 proposes that the minimum degree qualification for teaching will be:",
+  "options": [
+   "a one-year diploma",
+   "a 10+2 certificate",
+   "a 6-month course",
+   "a 4-year integrated B.Ed. degree"
+  ],
+  "answer": 3,
+  "exp": "By 2030 the 4-year integrated B.Ed. is to become the minimum qualification.",
+  "sub": "NEP 2020 and education bodies"
+ },
+ {
+  "q": "Emotional intelligence, an idea popularised by Daniel Goleman, is the ability to:",
+  "options": [
+   "recognise and manage one's own and others' emotions",
+   "memorise facts quickly",
+   "solve only numerical problems",
+   "speak many languages"
+  ],
+  "answer": 0,
+  "exp": "It includes self-awareness, self-regulation and empathy.",
+  "sub": "Teacher qualities and professional ethics"
+ },
+ {
+  "q": "Dry-running (tracing) a program on paper helps students to:",
+  "options": [
+   "avoid learning loops",
+   "understand how values change step by step",
+   "skip testing",
+   "compile faster"
+  ],
+  "answer": 1,
+  "exp": "Tracing builds an accurate mental model of execution.",
+  "sub": "Pedagogy of computer science"
+ },
+ {
+  "q": "The 'Zone of Proximal Development' (ZPD) given by Vygotsky refers to the gap between:",
+  "options": [
+   "what a learner can do alone and what the learner can do with guidance",
+   "a learner's age and mental age",
+   "the syllabus and the examination",
+   "the teacher's and learner's knowledge of the subject"
+  ],
+  "answer": 0,
+  "exp": "ZPD is the range of tasks a learner can complete only with help from a more knowledgeable person.",
+  "sub": "Teaching-learning process"
+ },
+ {
+  "q": "According to Dewey, the first step in the problem-solving method is:",
+  "options": [
+   "testing the solution",
+   "sensing or identifying the problem",
+   "collecting the final results",
+   "writing the conclusion"
+  ],
+  "answer": 1,
+  "exp": "Dewey's steps begin with recognising a felt difficulty, then defining it, hypothesising, testing and concluding.",
+  "sub": "Teaching methods"
+ },
+ {
+  "q": "The satellite launched in 2004 exclusively for educational services in India is:",
+  "options": [
+   "INSAT-1A",
+   "GSAT-6",
+   "EDUSAT",
+   "Aryabhata"
+  ],
+  "answer": 2,
+  "exp": "EDUSAT, launched on 20 September 2004, was dedicated to educational broadcasting.",
+  "sub": "Teaching aids and audio-visual media"
+ },
+ {
+  "q": "Asking follow-up questions to push a student to give a complete or deeper answer is the skill of:",
+  "options": [
+   "stimulus variation",
+   "reinforcement",
+   "set induction",
+   "probing questioning"
+  ],
+  "answer": 3,
+  "exp": "Probing prompts students to clarify, extend or justify their responses.",
+  "sub": "Microteaching and teaching skills"
+ },
+ {
+  "q": "A good lesson plan should be:",
+  "options": [
+   "flexible enough to be adjusted to the class situation",
+   "rigid and never changed",
+   "copied from another teacher without change",
+   "written only after the lesson"
+  ],
+  "answer": 0,
+  "exp": "Flexibility lets the teacher respond to students' needs.",
+  "sub": "Lesson planning"
+ },
+ {
+  "q": "Which of the following is a principle of curriculum construction?",
+  "options": [
+   "Rigid uniformity for all",
+   "Child-centredness",
+   "Neglecting community needs",
+   "Teacher-only decision making"
+  ],
+  "answer": 1,
+  "exp": "A good curriculum considers the needs and interests of the learner.",
+  "sub": "Curriculum"
+ },
+ {
+  "q": "A rubric is:",
+  "options": [
+   "a type of objective question",
+   "a standardised intelligence test",
+   "a scoring guide listing criteria and performance levels",
+   "a school timetable"
+  ],
+  "answer": 2,
+  "exp": "Rubrics make scoring of projects and essays transparent and consistent.",
+  "sub": "Evaluation, formative and summative assessment, CCE"
+ },
+ {
+  "q": "The mean of the scores 4, 6, 8, 10 and 12 is:",
+  "options": [
+   "6",
+   "10",
+   "7",
+   "8"
+  ],
+  "answer": 3,
+  "exp": "Sum = 40; mean = 40/5 = 8.",
+  "sub": "Tests, blueprint and item analysis"
+ },
+ {
+  "q": "Which of the following would INCREASE the reliability of a test?",
+  "options": [
+   "Increasing the number of good-quality items",
+   "Using ambiguous questions",
+   "Giving unclear instructions",
+   "Allowing inconsistent scoring"
+  ],
+  "answer": 0,
+  "exp": "A longer test with well-written items gives more stable scores.",
+  "sub": "Validity and reliability"
+ },
+ {
+  "q": "A diagnostic test differs from an achievement test because it:",
+  "options": [
+   "gives only total marks",
+   "has many small items on specific skills to locate weak points",
+   "is conducted only at the end of the year",
+   "has no questions"
+  ],
+  "answer": 1,
+  "exp": "It analyses specific skills rather than giving an overall measure.",
+  "sub": "Diagnostic testing and remedial teaching"
+ },
+ {
+  "q": "The dependent variable in an experiment on the effect of a new teaching method on marks is:",
+  "options": [
+   "the teaching method",
+   "the name of the school",
+   "the students' marks",
+   "the textbook"
+  ],
+  "answer": 2,
+  "exp": "Marks depend on the method.",
+  "sub": "Action research and educational research"
+ },
+ {
+  "q": "OER stands for:",
+  "options": [
+   "Online Examination Results",
+   "Official Education Records",
+   "Open Entrance Registration",
+   "Open Educational Resources"
+  ],
+  "answer": 3,
+  "exp": "OER are freely available teaching and learning materials.",
+  "sub": "ICT in education"
+ },
+ {
+  "q": "Which body is responsible for developing the National Curriculum Framework and model textbooks?",
+  "options": [
+   "NCERT",
+   "NCTE",
+   "UGC",
+   "AICTE"
+  ],
+  "answer": 0,
+  "exp": "NCERT prepares the NCF and model textbooks for schools.",
+  "sub": "NEP 2020 and education bodies"
+ },
+ {
+  "q": "A democratic teacher in the classroom:",
+  "options": [
+   "imposes decisions without discussion",
+   "encourages participation and respects students' opinions",
+   "ignores the class",
+   "does not communicate"
+  ],
+  "answer": 1,
+  "exp": "A democratic style promotes participation and responsibility.",
+  "sub": "Teacher qualities and professional ethics"
+ },
+ {
+  "q": "In the teaching of CS, a practical examination along with a viva voce is useful as it:",
+  "options": [
+   "tests only memory",
+   "avoids using computers",
+   "tests skills and understanding that written tests cannot",
+   "is easier for the examiner"
+  ],
+  "answer": 2,
+  "exp": "Hands-on tasks and oral questioning show real competence.",
+  "sub": "Pedagogy of computer science"
+ },
+ {
+  "q": "In the revised Bloom's taxonomy (2001), the highest level of the cognitive domain is:",
+  "options": [
+   "Evaluating",
+   "Creating",
+   "Analysing",
+   "Remembering"
+  ],
+  "answer": 1,
+  "exp": "The revised order is Remember, Understand, Apply, Analyse, Evaluate, Create.",
+  "sub": "Teaching-learning process"
+ },
+ {
+  "q": "Brainstorming is a technique in which:",
+  "options": [
+   "only the best idea is allowed",
+   "the teacher judges every idea at once",
+   "many ideas are generated freely without immediate criticism",
+   "answers are copied from the textbook"
+  ],
+  "answer": 2,
+  "exp": "Osborn's brainstorming defers judgement to encourage a large number of creative ideas.",
+  "sub": "Teaching methods"
+ },
+ {
+  "q": "Gyan Vani, in the Indian context, is:",
+  "options": [
+   "a DTH television network",
+   "a mobile app for examination",
+   "a national digital library",
+   "a network of educational FM radio stations"
+  ],
+  "answer": 3,
+  "exp": "Gyan Vani broadcasts educational radio programmes through FM stations.",
+  "sub": "Teaching aids and audio-visual media"
+ },
+ {
+  "q": "In microteaching, the number of pupils generally taken is:",
+  "options": [
+   "5 to 10",
+   "30 to 40",
+   "50 to 60",
+   "more than 100"
+  ],
+  "answer": 0,
+  "exp": "Small groups of about 5-10 pupils are used.",
+  "sub": "Microteaching and teaching skills"
+ },
+ {
+  "q": "Which of the following is NOT an advantage of a lesson plan?",
+  "options": [
+   "It provides direction to teaching",
+   "It removes the need for the teacher to know the subject",
+   "It helps in time management",
+   "It builds the teacher's confidence"
+  ],
+  "answer": 1,
+  "exp": "A lesson plan guides the teacher but cannot replace subject knowledge.",
+  "sub": "Lesson planning"
+ },
+ {
+  "q": "Which statement correctly describes a core curriculum?",
+  "options": [
+   "It is for gifted students only",
+   "It contains only optional subjects",
+   "It contains the subjects or experiences common to all students",
+   "It is made only by students"
+  ],
+  "answer": 2,
+  "exp": "A core curriculum is the compulsory common component.",
+  "sub": "Curriculum"
+ },
+ {
+  "q": "A cumulative record card is maintained to:",
+  "options": [
+   "list the fee payments",
+   "give rank in the class only",
+   "list the teachers' leave",
+   "record the overall progress of a student over the years"
+  ],
+  "answer": 3,
+  "exp": "It stores academic, personal and social information of the student.",
+  "sub": "Evaluation, formative and summative assessment, CCE"
+ },
+ {
+  "q": "A test that measures what a student has learnt after instruction in a subject is called:",
+  "options": [
+   "an achievement test",
+   "an aptitude test",
+   "an interest inventory",
+   "a personality test"
+  ],
+  "answer": 0,
+  "exp": "Achievement tests measure acquired knowledge and skills.",
+  "sub": "Tests, blueprint and item analysis"
+ },
+ {
+  "q": "Which of the following lowers the reliability of a test?",
+  "options": [
+   "Clear instructions",
+   "Ambiguous questions",
+   "Objective scoring",
+   "Adequate time"
+  ],
+  "answer": 1,
+  "exp": "Ambiguity leads to inconsistent interpretation and responses.",
+  "sub": "Validity and reliability"
+ },
+ {
+  "q": "An underachiever is a student who:",
+  "options": [
+   "performs above ability",
+   "has no ability",
+   "performs below the level expected from his or her ability",
+   "is absent daily"
+  ],
+  "answer": 2,
+  "exp": "Underachievement is a gap between potential and performance.",
+  "sub": "Diagnostic testing and remedial teaching"
+ },
+ {
+  "q": "A sample should be:",
+  "options": [
+   "very small and biased",
+   "always the topper group",
+   "made of volunteers only",
+   "representative of the population"
+  ],
+  "answer": 3,
+  "exp": "Representativeness allows generalisation to the population.",
+  "sub": "Action research and educational research"
+ },
+ {
+  "q": "Learners and teacher interact at the same time in:",
+  "options": [
+   "synchronous online learning",
+   "asynchronous learning",
+   "self-study from a book",
+   "correspondence course"
+  ],
+  "answer": 0,
+  "exp": "A live virtual class is a synchronous mode.",
+  "sub": "ICT in education"
+ },
+ {
+  "q": "The role of the National Council for Teacher Education (NCTE) is to:",
+  "options": [
+   "conduct university entrance tests",
+   "regulate and maintain standards of teacher education",
+   "publish school textbooks",
+   "distribute scholarships"
+  ],
+  "answer": 1,
+  "exp": "NCTE recognises teacher education institutions and sets norms.",
+  "sub": "NEP 2020 and education bodies"
+ },
+ {
+  "q": "The 'Pygmalion effect' in classrooms means that:",
+  "options": [
+   "students always perform below expectations",
+   "teachers should avoid expectations",
+   "high teacher expectations tend to raise student performance",
+   "punishment improves performance"
+  ],
+  "answer": 2,
+  "exp": "Rosenthal and Jacobson showed expectations influence achievement.",
+  "sub": "Teacher qualities and professional ethics"
+ },
+ {
+  "q": "Explaining a stack using a pile of plates is an example of using:",
+  "options": [
+   "rote learning",
+   "punishment",
+   "dictation",
+   "analogy"
+  ],
+  "answer": 3,
+  "exp": "An analogy relates an unfamiliar concept to a familiar one.",
+  "sub": "Pedagogy of computer science"
+ },
+ {
+  "q": "In Maslow's hierarchy of needs, which need must be satisfied first for a child to be ready to learn?",
+  "options": [
+   "Self-actualisation",
+   "Esteem needs",
+   "Physiological needs such as food and rest",
+   "Aesthetic needs"
+  ],
+  "answer": 2,
+  "exp": "Lower-level needs like hunger and sleep take priority before higher needs can motivate learning.",
+  "sub": "Teaching-learning process"
+ },
+ {
+  "q": "Which of the following methods is MOST teacher-centred?",
+  "options": [
+   "Project method",
+   "Role play",
+   "Discussion method",
+   "Lecture method"
+  ],
+  "answer": 3,
+  "exp": "In the lecture method the teacher does most of the talking and decides everything.",
+  "sub": "Teaching methods"
+ }
+]

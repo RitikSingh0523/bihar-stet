@@ -1,0 +1,242 @@
+[
+ {
+  "q": "In a certain code, each word is first reversed and then each letter is replaced by the next letter. How is BOARD written in that code?",
+  "options": [
+   "CPBSE",
+   "DRAOB",
+   "ESBPC",
+   "CNZQE"
+  ],
+  "answer": 2,
+  "exp": "Reversing BOARD gives DRAOB; shifting each letter one step forward gives E S B P C.",
+  "sub": "coding-decoding"
+ },
+ {
+  "q": "Find the next term: 100, 91, 83, 76, 70, ?",
+  "options": [
+   "64",
+   "66",
+   "60",
+   "65"
+  ],
+  "answer": 3,
+  "exp": "The differences are −9, −8, −7, −6, so the next is −5: 70 − 5 = 65.",
+  "sub": "number series"
+ },
+ {
+  "q": "Poet : Poem :: Sculptor : ?",
+  "options": [
+   "Painting",
+   "Statue",
+   "Chisel",
+   "Museum"
+  ],
+  "answer": 1,
+  "exp": "A poet creates a poem; a sculptor creates a statue.",
+  "sub": "analogy"
+ },
+ {
+  "q": "Which of the following is the odd one out?",
+  "options": [
+   "Tabla",
+   "Sitar",
+   "Violin",
+   "Guitar"
+  ],
+  "answer": 0,
+  "exp": "Sitar, violin and guitar are string instruments; tabla is a percussion instrument.",
+  "sub": "odd one out"
+ },
+ {
+  "q": "T is older than P but younger than S. Q is older than R but younger than P. Who is the third in order of age (from the oldest)?",
+  "options": [
+   "P",
+   "Q",
+   "S",
+   "T"
+  ],
+  "answer": 0,
+  "exp": "Order of age: S > T > P > Q > R. The third is P.",
+  "sub": "ranking"
+ },
+ {
+  "q": "What is the sum of the alphabet positions of all the vowels in the word EDUCATION?",
+  "options": [
+   "41",
+   "51",
+   "46",
+   "56"
+  ],
+  "answer": 1,
+  "exp": "The vowels are E(5), U(21), A(1), I(9), O(15). Sum = 5 + 21 + 1 + 9 + 15 = 51.",
+  "sub": "alphabet position"
+ },
+ {
+  "q": "If the value of a word is the sum of the alphabet positions of its letters, which of the following words has the value 30?",
+  "options": [
+   "NAME",
+   "MEAL",
+   "FACT",
+   "HEAL"
+  ],
+  "answer": 2,
+  "exp": "FACT = 6 + 1 + 3 + 20 = 30. NAME = 33, MEAL = 31 and HEAL = 26.",
+  "sub": "alphabet position"
+ },
+ {
+  "q": "A month of 30 days begins on a Saturday. How many Sundays does the month have?",
+  "options": [
+   "3",
+   "4",
+   "6",
+   "5"
+  ],
+  "answer": 3,
+  "exp": "30 days = 4 weeks + 2 extra days (Saturday and Sunday). So Sunday occurs 5 times.",
+  "sub": "calendar"
+ },
+ {
+  "q": "If P means '+', Q means '×' and R means '−', then 8 Q 3 P 10 R 6 = ?",
+  "options": [
+   "20",
+   "40",
+   "32",
+   "28"
+  ],
+  "answer": 3,
+  "exp": "8 × 3 + 10 − 6 = 24 + 10 − 6 = 28.",
+  "sub": "mathematical operations"
+ },
+ {
+  "q": "Five books P, Q, R, S and T are stacked one on another. P is above Q but below R. S is at the bottom. T is between R and P. Which book is second from the top?",
+  "options": [
+   "R",
+   "P",
+   "T",
+   "Q"
+  ],
+  "answer": 2,
+  "exp": "From top to bottom: R, T, P, Q, S. The second from the top is T.",
+  "sub": "seating arrangement"
+ },
+ {
+  "q": "In a certain code, CAT is written as 3120 and DOG as 4157. How is COT written in that code?",
+  "options": [
+   "31520",
+   "315020",
+   "31502",
+   "3152"
+  ],
+  "answer": 0,
+  "exp": "Each letter is replaced by its alphabet position and joined: C=3, O=15, T=20, giving 31520.",
+  "sub": "coding-decoding"
+ },
+ {
+  "q": "Find the next number: 4, 7, 11, 18, 29, ?",
+  "options": [
+   "45",
+   "47",
+   "44",
+   "48"
+  ],
+  "answer": 1,
+  "exp": "Each term is the sum of the previous two: 18 + 29 = 47.",
+  "sub": "number series"
+ },
+ {
+  "q": "3 : 27 :: 4 : ?",
+  "options": [
+   "16",
+   "64",
+   "48",
+   "81"
+  ],
+  "answer": 1,
+  "exp": "27 = 3³, so the same relation gives 4³ = 64.",
+  "sub": "analogy"
+ },
+ {
+  "q": "Which of the following letter pairs is the odd one out?",
+  "options": [
+   "MN",
+   "EG",
+   "IK",
+   "QS"
+  ],
+  "answer": 0,
+  "exp": "In EG, IK and QS the second letter is two places after the first; in MN it is one place after.",
+  "sub": "odd one out"
+ },
+ {
+  "q": "How many days are there from 15 January to 10 March of a non-leap year, excluding both the dates?",
+  "options": [
+   "52",
+   "54",
+   "53",
+   "55"
+  ],
+  "answer": 2,
+  "exp": "Remaining days of January (16 to 31) = 16; February = 28; March 1 to 9 = 9. Total = 16 + 28 + 9 = 53.",
+  "sub": "calendar"
+ },
+ {
+  "q": "Rita's house is to the north of Sita's house. Sita's house is to the west of Tina's house. In which direction is Rita's house with respect to Tina's house?",
+  "options": [
+   "North-east",
+   "South-west",
+   "South-east",
+   "North-west"
+  ],
+  "answer": 3,
+  "exp": "Rita is north of Sita, and Sita is west of Tina, so Rita is to the north and west of Tina, i.e. north-west.",
+  "sub": "direction sense"
+ },
+ {
+  "q": "In a certain code, STUDY is written as TVXHD. How is LEARN written in that code?",
+  "options": [
+   "MGDUS",
+   "MFDVS",
+   "MGDVS",
+   "NGDWS"
+  ],
+  "answer": 2,
+  "exp": "Letters are shifted +1, +2, +3, +4, +5: L→M, E→G, A→D, R→V, N→S, giving MGDVS.",
+  "sub": "coding-decoding"
+ },
+ {
+  "q": "Naresh said to a woman, 'Your husband's mother is my mother's mother.' How is the woman related to Naresh?",
+  "options": [
+   "Mother",
+   "Sister",
+   "Paternal aunt",
+   "Wife of maternal uncle"
+  ],
+  "answer": 3,
+  "exp": "Her husband's mother is Naresh's maternal grandmother, so her husband is a son of that grandmother, i.e. Naresh's maternal uncle. She is the wife of his maternal uncle.",
+  "sub": "blood relations"
+ },
+ {
+  "q": "Find the value of 36 ÷ 6 × 3 − 4 + 2 × 5.",
+  "options": [
+   "24",
+   "18",
+   "28",
+   "22"
+  ],
+  "answer": 0,
+  "exp": "Using BODMAS: 36 ÷ 6 × 3 = 18; 2 × 5 = 10; so 18 − 4 + 10 = 24.",
+  "sub": "mathematical operations"
+ },
+ {
+  "q": "The image of a clock in a mirror shows the time 3:20. What is the actual time?",
+  "options": [
+   "8:20",
+   "8:40",
+   "9:40",
+   "3:40"
+  ],
+  "answer": 1,
+  "exp": "Actual time = 11:60 − 3:20 = 8:40.",
+  "sub": "clock"
+ }
+]

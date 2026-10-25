@@ -1,0 +1,482 @@
+[
+ {
+  "q": "What is the number of states in the minimal complete DFA over {a,b} that accepts exactly the strings of length 3?",
+  "options": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "answer": 2,
+  "exp": "States count symbols read 0, 1, 2, 3 and one dead state for length > 3: total 5.",
+  "sub": "Finite automata"
+ },
+ {
+  "q": "How many strings of length 5 over {a,b} belong to the language of (a+b)*bb?",
+  "options": [
+   "4",
+   "16",
+   "32",
+   "8"
+  ],
+  "answer": 3,
+  "exp": "The last two symbols are fixed as bb; the first 3 symbols are free, giving 2^3 = 8 strings.",
+  "sub": "Regular expressions"
+ },
+ {
+  "q": "Which of the following equals ∅* (the Kleene star of the empty set)?",
+  "options": [
+   "ε",
+   "∅",
+   "a",
+   "it is undefined"
+  ],
+  "answer": 0,
+  "exp": "By definition the star of any language includes the empty string, and ∅* = {ε}.",
+  "sub": "Regular expressions"
+ },
+ {
+  "q": "For a string derived from an unambiguous context-free grammar, how many leftmost derivations does it have?",
+  "options": [
+   "exactly two",
+   "exactly one",
+   "n, where n is the string length",
+   "n!"
+  ],
+  "answer": 1,
+  "exp": "A grammar is unambiguous exactly when every string has a unique leftmost derivation.",
+  "sub": "Ambiguity"
+ },
+ {
+  "q": "Consider the grammar S → AB | a, A → aA, B → b. After removing useless symbols, what remains?",
+  "options": [
+   "S → AB | a and B → b",
+   "S → a only",
+   "S → a and A → aA",
+   "the grammar generates the empty language"
+  ],
+  "answer": 1,
+  "exp": "A is non-generating, so S → AB is removed, making B unreachable; only S → a remains.",
+  "sub": "Normal forms"
+ },
+ {
+  "q": "Deterministic context-free languages are closed under",
+  "options": [
+   "union",
+   "intersection",
+   "complementation",
+   "concatenation"
+  ],
+  "answer": 2,
+  "exp": "DCFLs are closed under complement but not under union, intersection or concatenation.",
+  "sub": "Closure properties"
+ },
+ {
+  "q": "Which statement about recursive languages is TRUE?",
+  "options": [
+   "They are not closed under intersection",
+   "They are the same as recursively enumerable languages",
+   "They form a proper subset of the context-free languages",
+   "They are closed under complement"
+  ],
+  "answer": 3,
+  "exp": "A decider can be modified to swap accept and reject, so recursive languages are closed under complement.",
+  "sub": "Turing machines & decidability"
+ },
+ {
+  "q": "For the augmented grammar S' → S, S → aS | b, how many states are in the canonical LR(0) collection of items?",
+  "options": [
+   "5",
+   "4",
+   "6",
+   "7"
+  ],
+  "answer": 0,
+  "exp": "States: I0 start, goto on S, goto on b, goto on a (I2 with self-loop on a), and goto from I2 on S: 5 states.",
+  "sub": "Parsing"
+ },
+ {
+  "q": "Given E → TE', E' → +TE' | ε, T → FT', T' → *FT' | ε, F → (E) | id, what is FOLLOW(F)?",
+  "options": [
+   "{*, +}",
+   "{+, $}",
+   "{*, +, ), $}",
+   "{(, id}"
+  ],
+  "answer": 2,
+  "exp": "FOLLOW(F) includes * from T', and since T' is nullable it includes FOLLOW(T) = {+, ), $}.",
+  "sub": "Parsing"
+ },
+ {
+  "q": "Eliminating left recursion from A → Aa | b gives",
+  "options": [
+   "A → bA', A' → A'a | ε",
+   "A → aA | b",
+   "A → A'b, A' → aA' | ε",
+   "A → bA', A' → aA' | ε"
+  ],
+  "answer": 3,
+  "exp": "Standard transformation A → βA', A' → αA' | ε with α = a and β = b; it still generates b a*.",
+  "sub": "Parsing"
+ },
+ {
+  "q": "How many tokens are there in: if (a >= 10) b = a;",
+  "options": [
+   "10",
+   "8",
+   "9",
+   "11"
+  ],
+  "answer": 0,
+  "exp": "Tokens: if, (, a, >=, 10, ), b, =, a, ; which makes 10.",
+  "sub": "Lexical analysis"
+ },
+ {
+  "q": "In a block-structured language, when a name is used, the compiler first searches the symbol table of",
+  "options": [
+   "the global scope only",
+   "the innermost (current) scope, then enclosing scopes",
+   "the outermost scope first, then inner scopes",
+   "all scopes in alphabetical order"
+  ],
+  "answer": 1,
+  "exp": "The most closely nested declaration hides outer ones, so lookup proceeds from inner to outer scopes.",
+  "sub": "Symbol table"
+ },
+ {
+  "q": "In static single assignment (SSA) form of intermediate code,",
+  "options": [
+   "every variable is assigned exactly once in the program text",
+   "every variable is used exactly once",
+   "branches are not allowed",
+   "only constants may be assigned"
+  ],
+  "answer": 0,
+  "exp": "SSA renames variables so each has a single definition, using phi functions at merge points.",
+  "sub": "Intermediate code"
+ },
+ {
+  "q": "Consider the code:\n1 a = 1\n2 if a > 5 goto 6\n3 b = 2\n4 c = 3\n5 goto 7\n6 b = 4\n7 print b\nHow many basic blocks does it contain?",
+  "options": [
+   "3",
+   "5",
+   "4",
+   "7"
+  ],
+  "answer": 2,
+  "exp": "Leaders are statements 1, 3 (after a conditional jump), 6 (jump target and after a goto) and 7 (jump target). Blocks: 1-2, 3-5, 6, 7.",
+  "sub": "Code optimization"
+ },
+ {
+  "q": "Which of the following is an example of strength reduction?",
+  "options": [
+   "Removing unreachable statements",
+   "Evaluating 2 + 3 at compile time",
+   "Merging two identical expressions into one",
+   "Replacing i * 8 by i << 3"
+  ],
+  "answer": 3,
+  "exp": "Strength reduction replaces an expensive operation (multiplication) by a cheaper one (shift).",
+  "sub": "Code optimization"
+ },
+ {
+  "q": "In an assembler with 3-byte words, the program is: START 2000; LDA ALPHA; ADD BETA; STA GAMMA; ALPHA WORD 7; BETA RESW 2; GAMMA RESB 1. Each instruction occupies 3 bytes. What is the address assigned to GAMMA?",
+  "options": [
+   "2015",
+   "2018",
+   "2021",
+   "2012"
+  ],
+  "answer": 1,
+  "exp": "Three instructions occupy 2000-2008, ALPHA is at 2009, BETA at 2012 occupying 2 words = 6 bytes, so GAMMA is at 2018.",
+  "sub": "Assembler"
+ },
+ {
+  "q": "A macro ADDM &X,&Y is defined with body LDA &X and ADD &Y. After the calls ADDM P,Q and ADDM R,S, how many instruction lines appear in the expanded program?",
+  "options": [
+   "2",
+   "4",
+   "3",
+   "6"
+  ],
+  "answer": 1,
+  "exp": "Each call expands into two lines (LDA and ADD), so two calls give 4 lines.",
+  "sub": "Macros"
+ },
+ {
+  "q": "An unresolved external reference arises when",
+  "options": [
+   "a symbol is used in one module but defined in none of the modules being linked",
+   "two modules define the same symbol",
+   "a symbol is defined but never used",
+   "a label is defined twice in the same module"
+  ],
+  "answer": 0,
+  "exp": "The linker cannot find a definition for the referenced symbol.",
+  "sub": "Assembler, linker & loader"
+ },
+ {
+  "q": "A cross compiler is a compiler that",
+  "options": [
+   "compiles several languages at once",
+   "translates assembly code into machine code",
+   "executes the program statement by statement",
+   "runs on one machine but generates code for a different machine"
+  ],
+  "answer": 3,
+  "exp": "The host and target architectures differ in a cross compiler.",
+  "sub": "Compiler phases"
+ },
+ {
+  "q": "Which statement about an interpreter is correct?",
+  "options": [
+   "It always executes faster than compiled code",
+   "It first converts the entire program into machine code",
+   "It translates and executes the program statement by statement without producing a persistent object program",
+   "It always requires a separate linker"
+  ],
+  "answer": 2,
+  "exp": "An interpreter processes source statements one at a time at run time.",
+  "sub": "Compiler phases"
+ },
+ {
+  "q": "Which of the following phases of a compiler is machine dependent?",
+  "options": [
+   "Code generation",
+   "Lexical analysis",
+   "Syntax analysis",
+   "Intermediate code generation"
+  ],
+  "answer": 0,
+  "exp": "Code generation produces target machine code and depends on the target architecture.",
+  "sub": "Compiler phases"
+ },
+ {
+  "q": "The right-linear grammar S → aS | bA, A → aA | ε generates which language?",
+  "options": [
+   "a*b*",
+   "(a+b)*b",
+   "ba*",
+   "a*ba* (strings with exactly one b)"
+  ],
+  "answer": 3,
+  "exp": "S generates any number of a's, then one b, then A generates any number of a's.",
+  "sub": "Regular expressions"
+ },
+ {
+  "q": "A DFA with 7 states accepts at least one string of length 9. What must be true of its language?",
+  "options": [
+   "It is finite",
+   "It is infinite",
+   "It is empty",
+   "Nothing can be concluded"
+  ],
+  "answer": 1,
+  "exp": "A string of length at least the number of states forces a repeated state, so a loop can be pumped to give infinitely many accepted strings.",
+  "sub": "Pumping lemma"
+ },
+ {
+  "q": "What is the number of states in the minimal complete DFA over {0,1} that accepts strings containing 101 as a substring?",
+  "options": [
+   "3",
+   "5",
+   "4",
+   "6"
+  ],
+  "answer": 2,
+  "exp": "States track the matched prefix of 101 (ε, 1, 10) and a final trap state after 101: 4 states.",
+  "sub": "Finite automata"
+ },
+ {
+  "q": "In the grammar E → E+E | E*E | a, how many distinct parse trees does the string a+a*a have?",
+  "options": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "answer": 1,
+  "exp": "It can be parsed as (a+a)*a or as a+(a*a), giving 2 parse trees.",
+  "sub": "Ambiguity"
+ },
+ {
+  "q": "When converting a context-free grammar into an equivalent PDA that accepts by empty stack, the minimum number of PDA states needed is",
+  "options": [
+   "2",
+   "3",
+   "equal to the number of variables",
+   "1"
+  ],
+  "answer": 3,
+  "exp": "The standard construction uses a single state, with the stack simulating leftmost derivations.",
+  "sub": "PDA & CFL"
+ },
+ {
+  "q": "Deterministic and nondeterministic Turing machines are equivalent in",
+  "options": [
+   "the class of languages they accept",
+   "running time for every language",
+   "the space used for every language",
+   "the number of states required"
+  ],
+  "answer": 0,
+  "exp": "Any NTM can be simulated by a DTM, though possibly with exponential slowdown.",
+  "sub": "Turing machines & decidability"
+ },
+ {
+  "q": "Which of the following problems is undecidable?",
+  "options": [
+   "Whether a given DFA accepts a given string",
+   "Whether a given CFG generates a given string",
+   "Whether a given regular expression matches the empty string",
+   "Whether a given Turing machine halts on a given input"
+  ],
+  "answer": 3,
+  "exp": "The halting problem is the classic undecidable problem; the others are decidable.",
+  "sub": "Turing machines & decidability"
+ },
+ {
+  "q": "Assertion (A): The language {a^n b^n | n ≥ 0} is not regular.\nReason (R): A DFA has only finite memory and cannot count an unbounded number of a's.\nWhich is correct?",
+  "options": [
+   "Both A and R are true but R is not the correct explanation of A",
+   "A is true but R is false",
+   "Both A and R are true and R is the correct explanation of A",
+   "A is false but R is true"
+  ],
+  "answer": 2,
+  "exp": "Matching the number of b's to a's needs unbounded counting, which a finite-state machine cannot provide.",
+  "sub": "Pumping lemma"
+ },
+ {
+  "q": "Which representation keeps only operators and operands and omits grammar non-terminals from the derivation?",
+  "options": [
+   "Concrete parse tree",
+   "Abstract syntax tree",
+   "Symbol table",
+   "Activation record"
+  ],
+  "answer": 1,
+  "exp": "An abstract syntax tree is a condensed form of the parse tree retaining the essential structure.",
+  "sub": "Compiler phases"
+ },
+ {
+  "q": "In panic-mode error recovery, the parser",
+  "options": [
+   "discards input symbols until it finds a synchronizing token",
+   "inserts missing tokens automatically",
+   "restarts the whole compilation",
+   "replaces the erroneous symbol by a default value"
+  ],
+  "answer": 0,
+  "exp": "Panic mode skips input until a delimiter such as a semicolon allows parsing to resume.",
+  "sub": "Compiler phases"
+ },
+ {
+  "q": "Which of the following is NOT stored in an activation record of a procedure?",
+  "options": [
+   "Return address",
+   "Local variables",
+   "Actual parameters",
+   "Source code of the procedure"
+  ],
+  "answer": 3,
+  "exp": "Activation records hold run-time data such as return address, parameters and locals, not the source code.",
+  "sub": "Runtime environment"
+ },
+ {
+  "q": "Consider:\nvoid f(int a, int b) { a = a + b; b = a - b; }\nIn main, x = 2 and y = 3 and f(x, y) is called with call by reference. What are x and y afterwards?",
+  "options": [
+   "x = 2, y = 3",
+   "x = 5, y = 3",
+   "x = 5, y = 2",
+   "x = 2, y = 5"
+  ],
+  "answer": 2,
+  "exp": "a becomes 2+3 = 5 (x = 5); then b = 5 - 3 = 2 (y = 2).",
+  "sub": "Runtime environment"
+ },
+ {
+  "q": "Languages that allow recursive procedures normally require",
+  "options": [
+   "stack allocation of activation records",
+   "only static allocation",
+   "no run-time storage",
+   "allocation in registers only"
+  ],
+  "answer": 0,
+  "exp": "Each active call needs its own activation record, naturally managed on a stack.",
+  "sub": "Runtime environment"
+ },
+ {
+  "q": "For the code:\n1 a = b + c\n2 d = a * 2\n3 a = 5\n4 e = d + a\nand assuming e is used later, which variables are live immediately after statement 1?",
+  "options": [
+   "a and d",
+   "a only",
+   "b and c",
+   "d and e"
+  ],
+  "answer": 1,
+  "exp": "After statement 1, only a is used (in statement 2) before being redefined; d is defined at statement 2, and b, c are not used later.",
+  "sub": "Code optimization"
+ },
+ {
+  "q": "Which function is NOT performed by an absolute loader?",
+  "options": [
+   "Placing the object code into memory",
+   "Transferring control to the program's starting address",
+   "Reading the object program records",
+   "Relocation of the program to a different address"
+  ],
+  "answer": 3,
+  "exp": "An absolute loader just loads code at the addresses specified in the object program; no relocation is done.",
+  "sub": "Assembler, linker & loader"
+ },
+ {
+  "q": "The Macro Name Table and Macro Definition Table of a two-pass macro processor are built during",
+  "options": [
+   "Pass 2, while expanding macro calls",
+   "linking",
+   "loading",
+   "Pass 1, while recognizing and saving macro definitions"
+  ],
+  "answer": 3,
+  "exp": "Pass 1 stores definitions; Pass 2 uses them to expand calls.",
+  "sub": "Macros"
+ },
+ {
+  "q": "Which of the following is an assembler directive (pseudo-operation) rather than a machine instruction?",
+  "options": [
+   "EQU",
+   "ADD",
+   "JMP",
+   "STA"
+  ],
+  "answer": 0,
+  "exp": "EQU defines a symbol's value for the assembler and generates no machine code.",
+  "sub": "Assembler"
+ },
+ {
+  "q": "Which error is detected by the lexical analyzer?",
+  "options": [
+   "A missing semicolon at the end of a statement",
+   "A character that cannot begin any valid token, such as @ in a C program",
+   "Adding an integer to a string",
+   "Use of an undeclared variable"
+  ],
+  "answer": 1,
+  "exp": "Invalid characters fail to match any token pattern, which is a lexical error; the others are syntax or semantic errors.",
+  "sub": "Lexical analysis"
+ },
+ {
+  "q": "How many target instructions are needed for a = b + c on a simple load-store machine with registers, using LD, ADD and ST instructions?",
+  "options": [
+   "2",
+   "3",
+   "4",
+   "5"
+  ],
+  "answer": 2,
+  "exp": "LD R1,b; LD R2,c; ADD R1,R1,R2; ST a,R1 are 4 instructions.",
+  "sub": "Code generation"
+ }
+]

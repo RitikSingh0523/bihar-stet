@@ -1,0 +1,482 @@
+[
+ {
+  "q": "A system has 4 processes, each needing at most 3 units of the same resource type. What is the minimum number of resource units that guarantees the system is deadlock-free?",
+  "options": [
+   "6",
+   "9",
+   "8",
+   "12"
+  ],
+  "answer": 1,
+  "exp": "Minimum = n(m-1) + 1 = 4×2 + 1 = 9.",
+  "sub": "Deadlock"
+ },
+ {
+  "q": "What is the output of this program on a Unix system?\nint main() {\n  int x = 10;\n  if (fork() == 0) { x = x + 5; printf(\"%d \", x); }\n  else { wait(NULL); printf(\"%d \", x); }\n  return 0;\n}",
+  "options": [
+   "10 10",
+   "15 15",
+   "10 15",
+   "15 10"
+  ],
+  "answer": 3,
+  "exp": "The child has its own copy of x and prints 15 first; the parent waits, then prints its unchanged x = 10.",
+  "sub": "System Calls and Kernel"
+ },
+ {
+  "q": "Non-preemptive priority scheduling (smaller number = higher priority): P1 (arrival 0, burst 4, priority 3), P2 (1, 3, priority 1), P3 (2, 2, priority 2). What is the waiting time of P3?",
+  "options": [
+   "3 ms",
+   "7 ms",
+   "5 ms",
+   "2 ms"
+  ],
+  "answer": 2,
+  "exp": "P1 runs 0-4, then P2 4-7, then P3 7-9. P3 waits 7 - 2 = 5 ms.",
+  "sub": "CPU Scheduling"
+ },
+ {
+  "q": "In a system with 32-bit logical addresses, 4 KB pages and 4-byte page-table entries, what is the size of a single-level page table?",
+  "options": [
+   "4 MB",
+   "1 MB",
+   "4 KB",
+   "16 MB"
+  ],
+  "answer": 0,
+  "exp": "Entries = 2^20; size = 2^20 × 4 B = 4 MB.",
+  "sub": "Memory Management"
+ },
+ {
+  "q": "A file /home/a.txt has one hard link /home/b.txt and one symbolic link /home/c.txt to it. If a.txt is deleted, which statement is true?",
+  "options": [
+   "c.txt still works but b.txt does not",
+   "b.txt still gives access to the data but c.txt becomes a dangling link",
+   "Both b.txt and c.txt become invalid",
+   "Both b.txt and c.txt remain valid"
+  ],
+  "answer": 1,
+  "exp": "The inode survives as long as a hard link remains; the symbolic link only stores the path and breaks.",
+  "sub": "File Systems"
+ },
+ {
+  "q": "Reference string: 1,2,3,4,1,2,5,1,2,3,4,5 with 3 frames and the Optimal policy. How many page faults occur?",
+  "options": [
+   "6",
+   "9",
+   "7",
+   "8"
+  ],
+  "answer": 2,
+  "exp": "Faults on 1,2,3,4,5 then 3 and 4 = 7; 1,2 hits after 4 and 5, and the last 5 hits.",
+  "sub": "Page Replacement"
+ },
+ {
+  "q": "Statement I: Creating a thread is generally faster and uses fewer resources than creating a process.\nStatement II: Threads of the same process have separate address spaces.\nWhich option is correct?",
+  "options": [
+   "Only Statement I is true",
+   "Both Statement I and Statement II are true",
+   "Only Statement II is true",
+   "Both Statement I and Statement II are false"
+  ],
+  "answer": 0,
+  "exp": "Threads share the address space of their process, so they are lightweight; Statement II is false.",
+  "sub": "Process and Thread"
+ },
+ {
+  "q": "Head at cylinder 50 moving toward higher cylinders; queue 82, 170, 43, 140, 24, 16, 190. What is the total head movement under LOOK?",
+  "options": [
+   "240 cylinders",
+   "340 cylinders",
+   "208 cylinders",
+   "314 cylinders"
+  ],
+  "answer": 3,
+  "exp": "50 → 190 costs 140, then 190 → 16 costs 174; total 314.",
+  "sub": "Disk Scheduling"
+ },
+ {
+  "q": "The main goal of multiprogramming is to:",
+  "options": [
+   "speed up a single program on many cores",
+   "use more than one CPU",
+   "reduce the number of users",
+   "maximize CPU utilization by keeping several jobs in memory so the CPU is never idle"
+  ],
+  "answer": 3,
+  "exp": "When one job waits for I/O, the CPU switches to another job in memory.",
+  "sub": "OS Types and Basics"
+ },
+ {
+  "q": "Spooling is mainly used to:",
+  "options": [
+   "switch between user mode and kernel mode",
+   "overlap I/O of one job with computation of others, e.g. queuing print jobs on disk",
+   "increase the size of RAM",
+   "encrypt printer data"
+  ],
+  "answer": 1,
+  "exp": "Spooling uses disk as a large buffer so slow devices like printers can be shared efficiently.",
+  "sub": "I/O Management"
+ },
+ {
+  "q": "Two threads each execute the single statement count = count + 1 (not atomic) on a shared variable with initial value 5. Which set contains all possible final values?",
+  "options": [
+   "{6, 7}",
+   "{5, 7}",
+   "{5, 6}",
+   "{7} only"
+  ],
+  "answer": 0,
+  "exp": "If both read 5 before either writes, the result is 6 (lost update); otherwise 7. 5 is not possible.",
+  "sub": "Process Synchronization"
+ },
+ {
+  "q": "Which command counts the number of lines in the file notes.txt?",
+  "options": [
+   "ls -l notes.txt",
+   "wc -w notes.txt",
+   "wc -l notes.txt",
+   "wc -c notes.txt"
+  ],
+  "answer": 2,
+  "exp": "wc -l counts lines; -w counts words and -c counts bytes.",
+  "sub": "Unix/Linux Commands"
+ },
+ {
+  "q": "A system has 6 identical resources and each process needs exactly 2 of them. What is the maximum number of processes that can be in the system with deadlock never occurring?",
+  "options": [
+   "3",
+   "6",
+   "5",
+   "4"
+  ],
+  "answer": 2,
+  "exp": "Deadlock-free requires n(2-1) + 1 ≤ 6, i.e. n ≤ 5.",
+  "sub": "Deadlock"
+ },
+ {
+  "q": "Preemptive priority scheduling (smaller number = higher priority): P1 (arrival 0, burst 5, priority 2) and P2 (arrival 1, burst 3, priority 1). At what time does P1 complete?",
+  "options": [
+   "5 ms",
+   "9 ms",
+   "4 ms",
+   "8 ms"
+  ],
+  "answer": 3,
+  "exp": "P1 runs 0-1, preempted by P2 (1-4), then P1 resumes 4-8 for its remaining 4 ms.",
+  "sub": "CPU Scheduling"
+ },
+ {
+  "q": "Memory access time is 200 ns and servicing a page fault takes 8 ms. If the page-fault rate is 1 in 1000 accesses, what is the effective access time (approximately)?",
+  "options": [
+   "8199.8 ns",
+   "8200000 ns",
+   "200 ns",
+   "4100 ns"
+  ],
+  "answer": 0,
+  "exp": "EAT = 0.999×200 + 0.001×8,000,000 = 199.8 + 8000 = 8199.8 ns.",
+  "sub": "Memory Management"
+ },
+ {
+  "q": "Contiguous file allocation has which of the following disadvantages?",
+  "options": [
+   "Wasting space for index blocks",
+   "External fragmentation and difficulty in growing a file",
+   "Slow direct access",
+   "A pointer is needed in every block"
+  ],
+  "answer": 1,
+  "exp": "Contiguous allocation gives fast sequential and direct access but suffers external fragmentation and file growth problems.",
+  "sub": "File Systems"
+ },
+ {
+  "q": "What values does fork() return on success?",
+  "options": [
+   "-1 in the child and 0 in the parent",
+   "The child's PID in the parent and 0 in the child",
+   "The parent's PID in both",
+   "0 in the parent and the child's PID in the child"
+  ],
+  "answer": 1,
+  "exp": "fork() returns 0 to the child, the new child's PID to the parent, and -1 on failure.",
+  "sub": "System Calls and Kernel"
+ },
+ {
+  "q": "Reference string: 2,3,2,1,5,2,4,5,3,2,5,2 with 3 frames and LRU. How many page faults occur?",
+  "options": [
+   "9",
+   "6",
+   "8",
+   "7"
+  ],
+  "answer": 3,
+  "exp": "Faults at 2,3,1,5,4,3,2 = 7; the remaining five references are hits.",
+  "sub": "Page Replacement"
+ },
+ {
+  "q": "A context switch is best described as:",
+  "options": [
+   "switching the monitor between two applications",
+   "moving a process from user mode to kernel mode permanently",
+   "saving the state of the current process and loading the state of the next process",
+   "copying a file from disk to memory"
+  ],
+  "answer": 2,
+  "exp": "A context switch stores the PCB state of the outgoing process and restores that of the incoming one; it is pure overhead.",
+  "sub": "Process and Thread"
+ },
+ {
+  "q": "Under FCFS, processes arrive at time 0 in the order P1 (burst 24), P2 (burst 3), P3 (burst 3). What is the average waiting time?",
+  "options": [
+   "17 ms",
+   "3 ms",
+   "13 ms",
+   "27 ms"
+  ],
+  "answer": 0,
+  "exp": "Waiting times are 0, 24 and 27, so the average is 51/3 = 17 ms.",
+  "sub": "CPU Scheduling"
+ },
+ {
+  "q": "The disk head is at cylinder 100. Requests arrive in the order 30, 160, 120, 60, 180. What is the total head movement under FCFS?",
+  "options": [
+   "300 cylinders",
+   "420 cylinders",
+   "380 cylinders",
+   "268 cylinders"
+  ],
+  "answer": 1,
+  "exp": "70 + 130 + 40 + 60 + 120 = 420.",
+  "sub": "Disk Scheduling"
+ },
+ {
+  "q": "A multiprocessing operating system is one that:",
+  "options": [
+   "uses two or more CPUs that share memory and I/O devices",
+   "runs only one process at a time",
+   "allows many users on a terminal",
+   "runs only on embedded devices"
+  ],
+  "answer": 0,
+  "exp": "Multiprocessing refers to multiple processors working together under one OS.",
+  "sub": "OS Types and Basics"
+ },
+ {
+  "q": "Peterson's solution for two processes uses which shared variables?",
+  "options": [
+   "A test-and-set lock only",
+   "A single binary semaphore and a counter",
+   "Two semaphores",
+   "flag[2] array and turn"
+  ],
+  "answer": 3,
+  "exp": "Peterson's algorithm uses a flag array to indicate interest and a turn variable to break ties.",
+  "sub": "Process Synchronization"
+ },
+ {
+  "q": "Which command lists all files in the current directory, including hidden files whose names begin with a dot?",
+  "options": [
+   "ls -l",
+   "ls -t",
+   "ls -a",
+   "ls -r"
+  ],
+  "answer": 2,
+  "exp": "-a (all) includes entries starting with '.'.",
+  "sub": "Unix/Linux Commands"
+ },
+ {
+  "q": "In a resource-allocation graph where every resource type has a single instance, a cycle indicates that:",
+  "options": [
+   "the system is in a safe state",
+   "a deadlock may or may not exist",
+   "a deadlock exists",
+   "no process is waiting"
+  ],
+  "answer": 2,
+  "exp": "With single-instance resources, a cycle is both necessary and sufficient for deadlock.",
+  "sub": "Deadlock"
+ },
+ {
+  "q": "In a segmentation system, segment 2 has base 4300 and limit 400. What is the physical address for the logical address (segment 2, offset 53)?",
+  "options": [
+   "453",
+   "4353",
+   "4247",
+   "4700"
+  ],
+  "answer": 1,
+  "exp": "Offset 53 < limit 400, so physical address = base + offset = 4300 + 53 = 4353.",
+  "sub": "Memory Management"
+ },
+ {
+  "q": "Which statement about linked allocation of disk blocks is correct?",
+  "options": [
+   "It requires the file size to be known at creation",
+   "It suffers from external fragmentation",
+   "It needs no space for pointers",
+   "It does not support efficient direct access to the middle of a file"
+  ],
+  "answer": 3,
+  "exp": "To reach block k, the k preceding blocks must be traversed through their pointers.",
+  "sub": "File Systems"
+ },
+ {
+  "q": "Four processes arrive at time 0 with CPU bursts 5, 9, 6 and 2 ms. Under non-preemptive SJF, what is the average waiting time?",
+  "options": [
+   "5.5 ms",
+   "5.0 ms",
+   "7.0 ms",
+   "6.5 ms"
+  ],
+  "answer": 0,
+  "exp": "Order 2, 5, 6, 9 gives waiting times 0, 2, 7, 13; sum 22, average 5.5.",
+  "sub": "CPU Scheduling"
+ },
+ {
+  "q": "A buffer in I/O management is:",
+  "options": [
+   "a memory area that temporarily holds data while it is transferred between two entities",
+   "a device driver",
+   "a type of file system",
+   "a hardware port for the keyboard"
+  ],
+  "answer": 0,
+  "exp": "Buffers cope with speed mismatch between producer and consumer of data.",
+  "sub": "I/O Management"
+ },
+ {
+  "q": "Which of the following instructions can be executed only in kernel (privileged) mode?",
+  "options": [
+   "Loading a value from the user's own memory",
+   "Instructions that perform I/O or modify the memory-management registers",
+   "Adding two integers in registers",
+   "Jumping to another instruction in the program"
+  ],
+  "answer": 1,
+  "exp": "Privileged instructions such as direct I/O and MMU changes are restricted to kernel mode to protect the system.",
+  "sub": "System Calls and Kernel"
+ },
+ {
+  "q": "Reference string: 2,3,2,1,5,2,4,5,3,2,5,2 with 3 frames and FIFO. How many page faults occur?",
+  "options": [
+   "8",
+   "10",
+   "7",
+   "9"
+  ],
+  "answer": 3,
+  "exp": "Faults at 2,3,1,5,2,4,3,5,2 = 9.",
+  "sub": "Page Replacement"
+ },
+ {
+  "q": "The medium-term scheduler is mainly responsible for:",
+  "options": [
+   "allocating disk blocks to files",
+   "selecting the next ready process to run on the CPU",
+   "swapping processes out of and back into main memory",
+   "admitting new jobs from the job pool into memory"
+  ],
+  "answer": 2,
+  "exp": "Medium-term scheduling reduces the degree of multiprogramming by swapping out processes and later swapping them in.",
+  "sub": "Process and Thread"
+ },
+ {
+  "q": "Head at cylinder 100 moving upward on a disk of cylinders 0-199; queue 30, 160, 120, 60, 180. What is the total head movement under SCAN?",
+  "options": [
+   "268 cylinders",
+   "169 cylinders",
+   "250 cylinders",
+   "199 cylinders"
+  ],
+  "answer": 0,
+  "exp": "100 → 199 costs 99, then 199 → 30 costs 169; total 268.",
+  "sub": "Disk Scheduling"
+ },
+ {
+  "q": "A distributed operating system differs from a network operating system in that it:",
+  "options": [
+   "only lets users share files through FTP",
+   "has no scheduler",
+   "runs on a single machine",
+   "makes a collection of computers appear to users as a single coherent system"
+  ],
+  "answer": 3,
+  "exp": "In a distributed OS the location of resources is transparent; in a network OS users are aware of the separate machines.",
+  "sub": "OS Types and Basics"
+ },
+ {
+  "q": "The test-and-set instruction is useful for implementing locks because it:",
+  "options": [
+   "works only on a single-processor system",
+   "reads and sets a memory word as one atomic operation",
+   "avoids busy waiting completely",
+   "disables all interrupts permanently"
+  ],
+  "answer": 1,
+  "exp": "Atomicity ensures only one process can acquire the lock; the resulting spinlock still uses busy waiting.",
+  "sub": "Process Synchronization"
+ },
+ {
+  "q": "The command kill -9 1234 does what?",
+  "options": [
+   "Pauses process 1234 temporarily",
+   "Reduces the priority of process 1234",
+   "Sends the SIGKILL signal, forcibly terminating process 1234",
+   "Restarts process 1234"
+  ],
+  "answer": 2,
+  "exp": "Signal 9 is SIGKILL, which cannot be caught or ignored.",
+  "sub": "Unix/Linux Commands"
+ },
+ {
+  "q": "In a resource-allocation graph where resource types have multiple instances, the presence of a cycle:",
+  "options": [
+   "always means a safe state",
+   "means no resource is allocated",
+   "always means deadlock",
+   "is necessary but not sufficient for deadlock"
+  ],
+  "answer": 3,
+  "exp": "Another instance may let a process in the cycle finish, so a cycle only signals possible deadlock.",
+  "sub": "Deadlock"
+ },
+ {
+  "q": "A process of size 72,766 bytes is loaded in a paging system with 2048-byte pages. How much internal fragmentation occurs in its last page?",
+  "options": [
+   "962 bytes",
+   "1086 bytes",
+   "0 bytes",
+   "2048 bytes"
+  ],
+  "answer": 0,
+  "exp": "72,766 = 35 × 2048 + 1086, so 36 pages are needed; waste = 2048 - 1086 = 962 bytes.",
+  "sub": "Memory Management"
+ },
+ {
+  "q": "Which allocation method avoids external fragmentation and also supports efficient direct access?",
+  "options": [
+   "Linked allocation",
+   "Contiguous allocation",
+   "Indexed allocation",
+   "Chained allocation without index"
+  ],
+  "answer": 2,
+  "exp": "An index block lists the data blocks, so any block can be reached directly with no external fragmentation.",
+  "sub": "File Systems"
+ },
+ {
+  "q": "The convoy effect in FCFS scheduling refers to:",
+  "options": [
+   "processes being starved by higher-priority processes",
+   "short processes waiting behind one long CPU-bound process",
+   "many processes simultaneously requesting the same device",
+   "repeated preemption of processes of equal priority"
+  ],
+  "answer": 1,
+  "exp": "A long CPU-bound process holding the CPU forces many short I/O-bound processes to wait, lowering utilization.",
+  "sub": "CPU Scheduling"
+ }
+]

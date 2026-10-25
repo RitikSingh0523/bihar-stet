@@ -1,0 +1,482 @@
+[
+ {
+  "q": "What is the output of the following code?\nimport numpy as np\na = np.array([4, 7, 1, 9])\nprint(a.argmax(), a[a > 3].sum(), np.sort(a)[-2])",
+  "options": [
+   "3 20 7",
+   "9 20 7",
+   "3 20 9",
+   "3 21 7"
+  ],
+  "answer": 0,
+  "exp": "argmax is index 3; elements >3 are 4,7,9 with sum 20; sorted array is [1,4,7,9] so [-2] is 7.",
+  "sub": "NumPy"
+ },
+ {
+  "q": "Assertion (A): Dictionary keys in Python must be of an immutable (hashable) type.\nReason (R): A dictionary locates entries using the hash value of the key, which must not change.",
+  "options": [
+   "Both A and R are true but R is not the correct explanation of A",
+   "A is true but R is false",
+   "Both A and R are true and R is the correct explanation of A",
+   "A is false but R is true"
+  ],
+  "answer": 2,
+  "exp": "Hash-based lookup requires keys whose hash stays constant, hence immutable types.",
+  "sub": "Dictionaries"
+ },
+ {
+  "q": "What is the output of the following code?\nx = [1, 2, 3]\ny = x\ny += [4]\nz = x + [5]\nprint(x, z, x is y)",
+  "options": [
+   "[1, 2, 3] [1, 2, 3, 5] False",
+   "[1, 2, 3, 4] [1, 2, 3, 4, 5] True",
+   "[1, 2, 3, 4] [1, 2, 3, 5] True",
+   "[1, 2, 3] [1, 2, 3, 4, 5] True"
+  ],
+  "answer": 1,
+  "exp": "+= on a list extends in place so x also changes; x + [5] builds a new list.",
+  "sub": "Lists"
+ },
+ {
+  "q": "What is the output of the following code?\nprint(17 % -5, -17 // 5, divmod(17, 5), round(2.5), round(3.5))",
+  "options": [
+   "2 -3 (3, 2) 3 4",
+   "-3 -3 (3, 2) 2 4",
+   "-3 -4 (3, 2) 3 4",
+   "-3 -4 (3, 2) 2 4"
+  ],
+  "answer": 3,
+  "exp": "17 = (-5)(-4) + (-3); floor division rounds down to -4; round() uses banker's rounding so 2.5 gives 2.",
+  "sub": "Operators & precedence"
+ },
+ {
+  "q": "A file 'data.txt' contains the two lines 'AB' and 'CD' (each ending with a newline). What does open('data.txt').read(3) return?",
+  "options": [
+   "'ABC'",
+   "'AB'",
+   "'AB\\nC'",
+   "'AB\\n'"
+  ],
+  "answer": 3,
+  "exp": "read(3) reads three characters: A, B and the newline character.",
+  "sub": "File handling"
+ },
+ {
+  "q": "What is the output of the following code?\nimport csv, io\ndata = io.StringIO(\"id,mark\\n1,40\\n2,55\\n3,70\\n\")\nr = csv.reader(data)\nnext(r)\nprint(sum(int(row[1]) for row in r))",
+  "options": [
+   "165",
+   "110",
+   "6",
+   "TypeError"
+  ],
+  "answer": 0,
+  "exp": "next(r) skips the header; marks 40+55+70=165.",
+  "sub": "CSV files"
+ },
+ {
+  "q": "In a try-except-else-finally structure, which block runs only when the try block finishes WITHOUT raising any exception?",
+  "options": [
+   "except",
+   "finally",
+   "else",
+   "raise"
+  ],
+  "answer": 2,
+  "exp": "The else clause is executed only if no exception occurred in try.",
+  "sub": "Exceptions"
+ },
+ {
+  "q": "What is the output of the following code?\nprint(*[i for i in range(10) if i % 3 == 1], sep='-')",
+  "options": [
+   "1-4-7-",
+   "1-4-7",
+   "0-3-6-9",
+   "1 4 7"
+  ],
+  "answer": 1,
+  "exp": "Numbers with remainder 1 on division by 3 are 1,4,7, joined by sep '-'.",
+  "sub": "Control flow"
+ },
+ {
+  "q": "What is the output of the following code?\ndef f(a, b, *c, d=1, **e):\n    print(a, b, c, d, e)\nf(1, 2, 3, 4, d=5, x=6)",
+  "options": [
+   "1 2 [3, 4] 5 {'x': 6}",
+   "1 2 (3, 4) 1 {'d': 5, 'x': 6}",
+   "1 2 3 5 {'x': 6}",
+   "1 2 (3, 4) 5 {'x': 6}"
+  ],
+  "answer": 3,
+  "exp": "*c collects extra positionals as a tuple, d is keyword-only, and **e collects unknown keywords.",
+  "sub": "Functions"
+ },
+ {
+  "q": "What is the output of the following code?\nimport pandas as pd\ns = pd.Series([3, 6, 9, 12])\nprint(s[s % 2 == 0].tolist(), s.mean(), s.idxmax())",
+  "options": [
+   "[6, 12] 7.5 3",
+   "[6, 12] 7.5 12",
+   "[3, 9] 7.5 3",
+   "[6, 12] 30 3"
+  ],
+  "answer": 0,
+  "exp": "Even values are 6 and 12; mean=30/4=7.5; the maximum 12 has index label 3.",
+  "sub": "Pandas"
+ },
+ {
+  "q": "Match the expression with its value:\n(i) math.ceil(4.2)  (ii) math.floor(-4.2)  (iii) round(4.5)  (iv) abs(-4.2)\n(a) 4.2  (b) 5  (c) -5  (d) 4",
+  "options": [
+   "(i)-(b), (ii)-(d), (iii)-(c), (iv)-(a)",
+   "(i)-(b), (ii)-(c), (iii)-(d), (iv)-(a)",
+   "(i)-(d), (ii)-(c), (iii)-(b), (iv)-(a)",
+   "(i)-(b), (ii)-(c), (iii)-(a), (iv)-(d)"
+  ],
+  "answer": 1,
+  "exp": "ceil(4.2)=5, floor(-4.2)=-5, round(4.5)=4 (banker's rounding), abs(-4.2)=4.2.",
+  "sub": "Modules"
+ },
+ {
+  "q": "What is the output of the following code?\ns = \"level\"\nprint(s == s[::-1], s.upper().isupper(), \"a1\".isalnum(), \"12\".isdigit(), \"x y\".isalpha())",
+  "options": [
+   "True True True False False",
+   "False True True True False",
+   "True True True True False",
+   "True True False True False"
+  ],
+  "answer": 2,
+  "exp": "level is a palindrome; the other tests are true except 'x y' which contains a space.",
+  "sub": "Strings"
+ },
+ {
+  "q": "What is the output of the following code?\ndef p(n):\n    if n == 0:\n        return\n    p(n - 1)\n    print(n, end=' ')\np(3)",
+  "options": [
+   "3 2 1",
+   "1 2 3 0",
+   "3 3 3",
+   "1 2 3"
+  ],
+  "answer": 3,
+  "exp": "The print happens after the recursive call returns, so the values appear in order 1, 2, 3.",
+  "sub": "Recursion"
+ },
+ {
+  "q": "In Python, in which order does the interpreter search for a name (the LEGB rule)?",
+  "options": [
+   "Local, Global, Enclosing, Built-in",
+   "Global, Local, Enclosing, Built-in",
+   "Local, Enclosing, Global, Built-in",
+   "Built-in, Global, Enclosing, Local"
+  ],
+  "answer": 2,
+  "exp": "Names are resolved first locally, then in enclosing functions, then globally, finally in built-ins.",
+  "sub": "Scope"
+ },
+ {
+  "q": "What is the output of the following code?\nd = {}\nfor w in \"banana\":\n    d[w] = d.get(w, 0) + 1\nprint(d)",
+  "options": [
+   "{'a': 3, 'b': 1, 'n': 2}",
+   "{'b': 1, 'a': 3, 'n': 2}",
+   "{'b': 1, 'a': 1, 'n': 1}",
+   "{'b': 1, 'a': 2, 'n': 3}"
+  ],
+  "answer": 1,
+  "exp": "Counts are b=1, a=3, n=2 and keys keep their first-insertion order.",
+  "sub": "Dictionaries"
+ },
+ {
+  "q": "What is the output of the following code?\nimport numpy as np\na = np.array([[1, 2], [3, 4]])\nb = np.array([[0, 1], [1, 0]])\nprint((a * b).sum(), (a @ b)[0, 0], a.T[0, 1])",
+  "options": [
+   "5 2 3",
+   "5 4 2",
+   "10 2 3",
+   "5 2 2"
+  ],
+  "answer": 0,
+  "exp": "a*b is elementwise [[0,2],[3,0]] sum 5; matrix product's [0,0] is 1*0+2*1=2; a.T[0,1]=a[1,0]=3.",
+  "sub": "NumPy"
+ },
+ {
+  "q": "What is the output of the following code?\nprint(0.1 + 0.2 == 0.3, abs((0.1 + 0.2) - 0.3) < 1e-9)",
+  "options": [
+   "True True",
+   "False True",
+   "False False",
+   "True False"
+  ],
+  "answer": 1,
+  "exp": "Binary floating point makes 0.1+0.2 slightly different from 0.3, but the difference is tiny.",
+  "sub": "Data types & operators"
+ },
+ {
+  "q": "What is the output of the following code?\nn = 7\nfor i in range(2, n):\n    if n % i == 0:\n        print('composite')\n        break\nelse:\n    print('prime')",
+  "options": [
+   "prime",
+   "composite",
+   "composite | prime",
+   "Nothing is printed"
+  ],
+  "answer": 0,
+  "exp": "No i in 2..6 divides 7, so the loop completes without break and the else clause prints prime.",
+  "sub": "Control flow"
+ },
+ {
+  "q": "What is the output of the following code?\na, *b, c = range(1, 6)\nprint(b, a + c)",
+  "options": [
+   "(2, 3, 4) 6",
+   "[2, 3, 4] 5",
+   "[2, 3, 4] 6",
+   "[1, 2, 3, 4] 6"
+  ],
+  "answer": 2,
+  "exp": "Starred target collects the middle items as a list; a=1 and c=5.",
+  "sub": "Tuples"
+ },
+ {
+  "q": "Which file method returns the current position of the file pointer?",
+  "options": [
+   "seek()",
+   "pos()",
+   "position()",
+   "tell()"
+  ],
+  "answer": 3,
+  "exp": "tell() returns the current offset in bytes from the start of the file.",
+  "sub": "File handling"
+ },
+ {
+  "q": "What is the output of the following code?\ndef g(x):\n    try:\n        return 10 // x\n    except ZeroDivisionError:\n        return -1\n    except TypeError:\n        return -2\nprint(g(0), g('a'), g(3))",
+  "options": [
+   "-1 -2 3.33",
+   "-1 -1 3",
+   "0 -2 3",
+   "-1 -2 3"
+  ],
+  "answer": 3,
+  "exp": "g(0) raises ZeroDivisionError, g('a') raises TypeError, and 10//3 is 3.",
+  "sub": "Exceptions"
+ },
+ {
+  "q": "What is the output of the following code?\nm = [[1, 2, 3], [4, 5, 6]]\nprint([r[1] for r in m], [sum(c) for c in zip(*m)])",
+  "options": [
+   "[2, 5] [5, 7, 9]",
+   "[2, 5] [6, 15]",
+   "[4, 5, 6] [5, 7, 9]",
+   "[2, 5] [9, 12]"
+  ],
+  "answer": 0,
+  "exp": "r[1] picks the middle element of each row; zip(*m) pairs the columns whose sums are 5,7,9.",
+  "sub": "Lists"
+ },
+ {
+  "q": "Which statement best describes dynamic typing in Python?",
+  "options": [
+   "Variables must be declared with a type before use",
+   "The type of a variable is determined at run time by the value it refers to",
+   "A variable can never be reassigned to a different type",
+   "Types are checked only at compile time"
+  ],
+  "answer": 1,
+  "exp": "Names are bound to objects; the type belongs to the object and a name may be rebound to any type.",
+  "sub": "Data types & operators"
+ },
+ {
+  "q": "What is the output of the following code?\nwords = [\"pear\", \"fig\", \"banana\", \"kiwi\"]\nprint(sorted(words, key=lambda w: (len(w), w)))",
+  "options": [
+   "['fig', 'pear', 'kiwi', 'banana']",
+   "['banana', 'kiwi', 'pear', 'fig']",
+   "['fig', 'kiwi', 'pear', 'banana']",
+   "['banana', 'fig', 'kiwi', 'pear']"
+  ],
+  "answer": 2,
+  "exp": "Sorted by length then alphabetically: fig(3), kiwi and pear(4, kiwi before pear), banana(6).",
+  "sub": "Functions & lambda"
+ },
+ {
+  "q": "What is the output of the following code?\nimport pandas as pd\ndf = pd.DataFrame({'a': [1, 2, 3], 'b': [4, 5, 6]}, index=['x', 'y', 'z'])\nprint(df.loc['y', 'b'], df.iloc[2, 0], df.shape)",
+  "options": [
+   "2 6 (3, 2)",
+   "5 3 (3, 2)",
+   "5 3 (2, 3)",
+   "4 3 (3, 2)"
+  ],
+  "answer": 1,
+  "exp": "loc['y','b'] is 5; iloc[2,0] is row 2 column 0 = 3; shape is (rows, columns) = (3, 2).",
+  "sub": "Pandas"
+ },
+ {
+  "q": "What is the output of the following code?\nprint(int(\"5\") * 5, \"5\" + \"5\", ord(\"A\") + 2, chr(100), len(\"hi\\n\"))",
+  "options": [
+   "10 55 67 d 3",
+   "25 55 67 d 2",
+   "25 10 67 d 3",
+   "25 55 67 d 3"
+  ],
+  "answer": 3,
+  "exp": "Integer 5*5=25; string concatenation gives 55; ord('A')=65 so 67; chr(100)='d'; 'hi\\n' has 3 characters.",
+  "sub": "Strings"
+ },
+ {
+  "q": "What is the output of the following code?\nprint(type(()), type({}), type({1}), type(None).__name__, isinstance(True, int))",
+  "options": [
+   "<class 'tuple'> <class 'dict'> <class 'set'> NoneType True",
+   "<class 'tuple'> <class 'set'> <class 'set'> NoneType True",
+   "<class 'list'> <class 'dict'> <class 'set'> NoneType True",
+   "<class 'tuple'> <class 'dict'> <class 'set'> None False"
+  ],
+  "answer": 0,
+  "exp": "{} is an empty dict; bool is a subclass of int.",
+  "sub": "Data types & operators"
+ },
+ {
+  "q": "What is the output of the following code?\ndef fib(n):\n    return n if n < 2 else fib(n - 1) + fib(n - 2)\nprint([fib(i) for i in range(8)])",
+  "options": [
+   "[1, 1, 2, 3, 5, 8, 13, 21]",
+   "[0, 1, 2, 3, 5, 8, 13, 21]",
+   "[0, 1, 1, 2, 3, 5, 8, 13]",
+   "[0, 1, 1, 2, 3, 5, 8]"
+  ],
+  "answer": 2,
+  "exp": "Fibonacci with fib(0)=0 and fib(1)=1 gives the stated eight terms.",
+  "sub": "Recursion"
+ },
+ {
+  "q": "What happens when an existing text file is opened with open('notes.txt', 'w')?",
+  "options": [
+   "The new text is added at the end",
+   "A FileExistsError is raised",
+   "Its previous contents are erased",
+   "The file is opened read-only"
+  ],
+  "answer": 2,
+  "exp": "Mode 'w' truncates an existing file; 'a' appends and 'x' raises FileExistsError.",
+  "sub": "File handling"
+ },
+ {
+  "q": "What is the output of the following code?\nprint(list(range(10, 0, -3)), list(range(5))[-2:], sum(range(1, 11, 2)))",
+  "options": [
+   "[10, 7, 4] [3, 4] 25",
+   "[10, 7, 4, 1] [3, 4] 30",
+   "[9, 6, 3] [3, 4] 25",
+   "[10, 7, 4, 1] [3, 4] 25"
+  ],
+  "answer": 3,
+  "exp": "range stops before 0 giving 10,7,4,1; last two of 0..4 are 3,4; odd numbers 1..9 sum to 25.",
+  "sub": "Lists"
+ },
+ {
+  "q": "What is the output of the following code?\ns = {1, 2, 3}\nt = s.copy()\nt.add(4)\ns.discard(10)\nprint(s, t, s < t)",
+  "options": [
+   "{1, 2, 3, 4} {1, 2, 3, 4} False",
+   "{1, 2, 3} {1, 2, 3, 4} True",
+   "{1, 2, 3} {1, 2, 3, 4} False",
+   "KeyError"
+  ],
+  "answer": 1,
+  "exp": "copy makes an independent set; discard of a missing element is silent; s is a proper subset of t.",
+  "sub": "Sets"
+ },
+ {
+  "q": "Which of the following is NOT a keyword in Python 3?",
+  "options": [
+   "then",
+   "pass",
+   "lambda",
+   "elif"
+  ],
+  "answer": 0,
+  "exp": "Python uses if/elif/else without a 'then' keyword.",
+  "sub": "Data types & operators"
+ },
+ {
+  "q": "What is the output of the following code?\ni = 1\nwhile i < 20:\n    i *= 3\nprint(i)",
+  "options": [
+   "9",
+   "81",
+   "20",
+   "27"
+  ],
+  "answer": 3,
+  "exp": "i takes 1, 3, 9, 27; the loop stops when i=27 is not less than 20.",
+  "sub": "Control flow"
+ },
+ {
+  "q": "What happens when the following code is executed?\nx = 5\ndef f():\n    print(x)\n    x = 3\nf()",
+  "options": [
+   "UnboundLocalError",
+   "5",
+   "3",
+   "NameError"
+  ],
+  "answer": 0,
+  "exp": "Assignment inside f makes x local for the whole function, so printing it before assignment raises UnboundLocalError.",
+  "sub": "Scope"
+ },
+ {
+  "q": "What is the output of the following code?\nimport pandas as pd\ns = pd.Series({'a': 1, 'b': 2})\nt = pd.Series({'b': 10, 'c': 20})\nprint((s + t).isna().sum())",
+  "options": [
+   "0",
+   "2",
+   "1",
+   "3"
+  ],
+  "answer": 1,
+  "exp": "Addition aligns on index: a and c have no match and become NaN, b gives 12; two NaN values.",
+  "sub": "Pandas"
+ },
+ {
+  "q": "What is the output of the following code?\nprint(\"-\".join(sorted(\"dcba\")), \"abc\".center(7, \"*\"), \"TeSt\".swapcase())",
+  "options": [
+   "abcd *abc** tEsT",
+   "a-b-c-d ***abc*** tEsT",
+   "a-b-c-d **abc** tEsT",
+   "d-c-b-a **abc** tEsT"
+  ],
+  "answer": 2,
+  "exp": "sorted gives a,b,c,d; center pads 2 stars each side; swapcase flips each letter.",
+  "sub": "Strings"
+ },
+ {
+  "q": "Which statement opens a CSV file for writing so that no extra blank lines are written on Windows?",
+  "options": [
+   "open('f.csv', 'wb', newline='')",
+   "open('f.csv', 'w', newline='')",
+   "open('f.csv', 'r', newline='')",
+   "open('f.csv', 'w', blank=False)"
+  ],
+  "answer": 1,
+  "exp": "csv recommends newline='' so the csv module controls line endings itself.",
+  "sub": "CSV files"
+ },
+ {
+  "q": "What is the output of the following code?\nprint(10 > 5 > 2, 10 > 5 > 7, not 1 and 0, 1 or 0 and 0, \"a\" in \"cat\" and 3 not in [1, 2])",
+  "options": [
+   "True True False 1 True",
+   "True False 0 1 True",
+   "True False False 0 True",
+   "True False False 1 True"
+  ],
+  "answer": 3,
+  "exp": "Chained comparison; (not 1) is False so 'and' gives False; 1 or (0 and 0) is 1.",
+  "sub": "Operators & precedence"
+ },
+ {
+  "q": "What is the output of the following code?\nt = ((1, 2), (3, 4), (5, 6))\nprint(sum(a * b for a, b in t), t[-1][0], t.count((3, 4)), t.index((5, 6)))",
+  "options": [
+   "21 5 1 2",
+   "44 6 1 2",
+   "44 5 1 2",
+   "44 5 1 3"
+  ],
+  "answer": 2,
+  "exp": "2+12+30=44; last tuple's first item is 5; (3,4) occurs once; (5,6) is at index 2.",
+  "sub": "Tuples"
+ },
+ {
+  "q": "What is the output of the following code?\nprint({k: v for k, v in zip(\"abc\", [3, 1, 2]) if v > 1})",
+  "options": [
+   "{'a': 3, 'c': 2}",
+   "{'b': 1}",
+   "{'a': 3, 'b': 1, 'c': 2}",
+   "{3: 'a', 2: 'c'}"
+  ],
+  "answer": 0,
+  "exp": "Pairs a:3, b:1, c:2 are filtered to keep values greater than 1.",
+  "sub": "Dictionaries"
+ }
+]

@@ -1,0 +1,482 @@
+[
+ {
+  "q": "A family's monthly budget is Rs 36,000. A pie chart shows 40% on food and 25% on rent. How much is spent on food and rent together?",
+  "options": [
+   "Rs 21,600",
+   "Rs 25,200",
+   "Rs 23,400",
+   "Rs 22,500"
+  ],
+  "answer": 2,
+  "exp": "Food + rent = 65% of 36000 = 23400.",
+  "sub": "Data interpretation"
+ },
+ {
+  "q": "What single discount is equivalent to two successive discounts of 10% and 20%?",
+  "options": [
+   "30%",
+   "25%",
+   "27%",
+   "28%"
+  ],
+  "answer": 3,
+  "exp": "Net price factor = 0.9 x 0.8 = 0.72, so the single discount is 28%.",
+  "sub": "Profit and loss"
+ },
+ {
+  "q": "A 13 m ladder leans against a wall with its foot 5 m from the wall. How high up the wall does it reach?",
+  "options": [
+   "12 m",
+   "8 m",
+   "10 m",
+   "11 m"
+  ],
+  "answer": 0,
+  "exp": "Height = √(13² - 5²) = √144 = 12 m.",
+  "sub": "Geometry - Pythagoras"
+ },
+ {
+  "q": "How many prime numbers lie between 20 and 40?",
+  "options": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "answer": 1,
+  "exp": "The primes are 23, 29, 31 and 37, so there are 4.",
+  "sub": "Number system"
+ },
+ {
+  "q": "A's salary is 25% more than B's. By what percent is B's salary less than A's?",
+  "options": [
+   "25%",
+   "15%",
+   "22.5%",
+   "20%"
+  ],
+  "answer": 3,
+  "exp": "Let B = 100, A = 125; B is 25 less than A, and 25/125 x 100 = 20%.",
+  "sub": "Percentages"
+ },
+ {
+  "q": "A can do a job in 10 days and B in 15 days. They work together for 3 days and then B leaves. How many more days will A alone take to finish the job?",
+  "options": [
+   "5 days",
+   "3 days",
+   "4 days",
+   "6 days"
+  ],
+  "answer": 0,
+  "exp": "In 3 days they do 3 x (1/10 + 1/15) = 3/6 = 1/2; the remaining 1/2 takes A (1/2)/(1/10) = 5 days.",
+  "sub": "Time and work"
+ },
+ {
+  "q": "At what rate of simple interest per annum will a sum of money double itself in 8 years?",
+  "options": [
+   "10%",
+   "12.5%",
+   "15%",
+   "8%"
+  ],
+  "answer": 1,
+  "exp": "SI = P, so P x R x 8 / 100 = P gives R = 12.5%.",
+  "sub": "Simple interest"
+ },
+ {
+  "q": "How many square tiles of side 20 cm are needed to cover a floor 6 m long and 4 m wide?",
+  "options": [
+   "300",
+   "480",
+   "600",
+   "1200"
+  ],
+  "answer": 2,
+  "exp": "Floor area = 600 x 400 = 240000 cm²; tile area = 400 cm²; tiles = 600.",
+  "sub": "Mensuration - tiles"
+ },
+ {
+  "q": "Which of the following is the factorisation of x² - x - 12?",
+  "options": [
+   "(x - 4)(x + 3)",
+   "(x + 4)(x - 3)",
+   "(x - 6)(x + 2)",
+   "(x - 12)(x + 1)"
+  ],
+  "answer": 0,
+  "exp": "(x - 4)(x + 3) = x² + 3x - 4x - 12 = x² - x - 12.",
+  "sub": "Algebra basics"
+ },
+ {
+  "q": "Which activity best develops the concept of area in Class VI before the formula is introduced?",
+  "options": [
+   "Telling learners to memorise length x breadth",
+   "Covering shapes with unit square tiles or counting squares on grid paper",
+   "Asking learners to copy formulas from the board",
+   "Giving a test on area formulas"
+  ],
+  "answer": 1,
+  "exp": "Counting unit squares builds meaning of area; formulas then emerge from patterns.",
+  "sub": "Pedagogy of mathematics"
+ },
+ {
+  "q": "The population of a town is 20000 and grows 10% every year. What will it be after 2 years?",
+  "options": [
+   "24000",
+   "22000",
+   "24200",
+   "23000"
+  ],
+  "answer": 2,
+  "exp": "20000 x 1.1 x 1.1 = 24200.",
+  "sub": "Percentages"
+ },
+ {
+  "q": "A trader buys 40 kg of rice at Rs 25/kg and 60 kg at Rs 30/kg, mixes them and sells the whole at Rs 32/kg. What is his total profit?",
+  "options": [
+   "Rs 300",
+   "Rs 500",
+   "Rs 280",
+   "Rs 400"
+  ],
+  "answer": 3,
+  "exp": "Cost = 1000 + 1800 = 2800; sale = 100 x 32 = 3200; profit = 400.",
+  "sub": "Profit and loss"
+ },
+ {
+  "q": "What is the measure of each interior angle of a regular octagon?",
+  "options": [
+   "120°",
+   "135°",
+   "144°",
+   "150°"
+  ],
+  "answer": 1,
+  "exp": "Sum = (8 - 2) x 180° = 1080°; each angle = 1080/8 = 135°.",
+  "sub": "Geometry - polygons"
+ },
+ {
+  "q": "The product of two numbers is 2160 and their HCF is 12. What is their LCM?",
+  "options": [
+   "144",
+   "120",
+   "180",
+   "216"
+  ],
+  "answer": 2,
+  "exp": "HCF x LCM = product, so LCM = 2160/12 = 180.",
+  "sub": "LCM and HCF"
+ },
+ {
+  "q": "Five students scored 45, 60, 52, 48 and 70 marks. What is the mean score?",
+  "options": [
+   "52",
+   "56",
+   "58",
+   "55"
+  ],
+  "answer": 3,
+  "exp": "Sum = 275; mean = 275/5 = 55.",
+  "sub": "Data interpretation"
+ },
+ {
+  "q": "A man walking at 5 km/h reaches his office 12 minutes late; walking at 6 km/h he is 6 minutes early. What is the distance to the office?",
+  "options": [
+   "9 km",
+   "6 km",
+   "10 km",
+   "7.5 km"
+  ],
+  "answer": 0,
+  "exp": "d/5 - d/6 = 18/60 h = 0.3, so d/30 = 0.3 and d = 9 km.",
+  "sub": "Speed, distance, time"
+ },
+ {
+  "q": "In a group of 100 people, 60 speak Hindi, 45 speak English and 20 speak both. How many speak exactly one of the two languages?",
+  "options": [
+   "45",
+   "85",
+   "65",
+   "25"
+  ],
+  "answer": 2,
+  "exp": "Only Hindi = 40, only English = 25; exactly one = 65.",
+  "sub": "Venn diagram / sets"
+ },
+ {
+  "q": "A chord 16 cm long is drawn in a circle of radius 10 cm. What is its distance from the centre?",
+  "options": [
+   "8 cm",
+   "4 cm",
+   "5 cm",
+   "6 cm"
+  ],
+  "answer": 3,
+  "exp": "Half-chord = 8; distance = √(10² - 8²) = 6 cm (perpendicular from centre bisects the chord).",
+  "sub": "Geometry - circles"
+ },
+ {
+  "q": "If 2x + 3y = 12 and x - y = 1, what is the value of y?",
+  "options": [
+   "2",
+   "3",
+   "1",
+   "4"
+  ],
+  "answer": 0,
+  "exp": "x = y + 1, so 2y + 2 + 3y = 12 gives y = 2 (and x = 3).",
+  "sub": "Algebra basics"
+ },
+ {
+  "q": "A Class VI student says 0.35 is greater than 0.4 because 35 is greater than 4. What misconception does this show?",
+  "options": [
+   "Not knowing how to subtract",
+   "Treating the decimal digits as a whole number without regard to place value",
+   "Confusing fractions with percentages",
+   "Being unable to read numbers aloud"
+  ],
+  "answer": 1,
+  "exp": "The student ignores place value after the decimal point; 0.35 = 35/100 < 40/100 = 0.4.",
+  "sub": "Pedagogy of mathematics"
+ },
+ {
+  "q": "A student must score 40% to pass. He scored 180 marks and failed by 20 marks. What are the maximum marks?",
+  "options": [
+   "450",
+   "400",
+   "550",
+   "500"
+  ],
+  "answer": 3,
+  "exp": "Pass marks = 180 + 20 = 200 = 40% of max, so max = 500.",
+  "sub": "Percentages"
+ },
+ {
+  "q": "What is the amount on Rs 12000 at 5% per annum compound interest for 2 years?",
+  "options": [
+   "Rs 13,230",
+   "Rs 13,200",
+   "Rs 13,000",
+   "Rs 13,500"
+  ],
+  "answer": 0,
+  "exp": "12000 x (1.05)² = 12000 x 1.1025 = 13230.",
+  "sub": "Compound interest"
+ },
+ {
+  "q": "If A : B = 2 : 3 and B : C = 4 : 5, what is A : B : C?",
+  "options": [
+   "2 : 3 : 5",
+   "8 : 12 : 15",
+   "4 : 6 : 5",
+   "8 : 6 : 5"
+  ],
+  "answer": 1,
+  "exp": "Make B equal: A:B = 8:12 and B:C = 12:15, so A:B:C = 8:12:15.",
+  "sub": "Ratio and proportion"
+ },
+ {
+  "q": "The perimeter of a rectangle is 36 cm and its length is 10 cm. What is its area?",
+  "options": [
+   "72 cm²",
+   "90 cm²",
+   "80 cm²",
+   "100 cm²"
+  ],
+  "answer": 2,
+  "exp": "l + b = 18 so b = 8; area = 10 x 8 = 80 cm².",
+  "sub": "Mensuration"
+ },
+ {
+  "q": "What is the units digit of 3^15?",
+  "options": [
+   "7",
+   "1",
+   "3",
+   "9"
+  ],
+  "answer": 0,
+  "exp": "Units digits of powers of 3 repeat 3, 9, 7, 1; 15 mod 4 = 3, so the digit is 7.",
+  "sub": "Number system"
+ },
+ {
+  "q": "12 men can complete a work in 20 days. How many days will 15 men take?",
+  "options": [
+   "18 days",
+   "16 days",
+   "25 days",
+   "14 days"
+  ],
+  "answer": 1,
+  "exp": "Work = 12 x 20 = 240 man-days; 240/15 = 16 days.",
+  "sub": "Time and work"
+ },
+ {
+  "q": "A shopkeeper marks goods 40% above cost price and allows a discount of 10%. What is his profit percent?",
+  "options": [
+   "30%",
+   "25%",
+   "26%",
+   "28%"
+  ],
+  "answer": 2,
+  "exp": "SP = 1.4 x 0.9 = 1.26 of CP, so profit = 26%.",
+  "sub": "Profit and loss"
+ },
+ {
+  "q": "What is the volume of a cone of base radius 6 cm and height 7 cm? (π = 22/7)",
+  "options": [
+   "132 cm³",
+   "528 cm³",
+   "308 cm³",
+   "264 cm³"
+  ],
+  "answer": 3,
+  "exp": "V = (1/3)πr²h = (1/3) x 22/7 x 36 x 7 = 264 cm³.",
+  "sub": "Mensuration"
+ },
+ {
+  "q": "In an isosceles triangle the vertex angle is 40°. What is each base angle?",
+  "options": [
+   "60°",
+   "70°",
+   "80°",
+   "50°"
+  ],
+  "answer": 1,
+  "exp": "Base angles are equal: (180° - 40°)/2 = 70°.",
+  "sub": "Geometry - triangles"
+ },
+ {
+  "q": "What is the average of the first 10 even natural numbers?",
+  "options": [
+   "10",
+   "12",
+   "11",
+   "10.5"
+  ],
+  "answer": 2,
+  "exp": "Sum = 2 + 4 + ... + 20 = 110; average = 110/10 = 11.",
+  "sub": "Averages"
+ },
+ {
+  "q": "What percent of 2 hours is 15 minutes?",
+  "options": [
+   "15%",
+   "10%",
+   "7.5%",
+   "12.5%"
+  ],
+  "answer": 3,
+  "exp": "2 hours = 120 min; 15/120 x 100 = 12.5%.",
+  "sub": "Percentages"
+ },
+ {
+  "q": "A boat goes 10 km/h in still water and the stream flows at 2 km/h. How long will it take to go 36 km downstream?",
+  "options": [
+   "3 hours",
+   "3.6 hours",
+   "4.5 hours",
+   "2.5 hours"
+  ],
+  "answer": 0,
+  "exp": "Downstream speed = 12 km/h; time = 36/12 = 3 hours.",
+  "sub": "Speed, distance, time"
+ },
+ {
+  "q": "The volume of a cube is 343 cm³. What is its total surface area?",
+  "options": [
+   "196 cm²",
+   "343 cm²",
+   "294 cm²",
+   "252 cm²"
+  ],
+  "answer": 2,
+  "exp": "Side = 7 cm; surface area = 6 x 49 = 294 cm².",
+  "sub": "Mensuration"
+ },
+ {
+  "q": "What is the smallest number that must be added to 1000 to make it divisible by 7?",
+  "options": [
+   "3",
+   "6",
+   "7",
+   "1"
+  ],
+  "answer": 3,
+  "exp": "1000 = 7 x 142 + 6, so add 7 - 6 = 1 to get 1001 = 7 x 143.",
+  "sub": "Number system"
+ },
+ {
+  "q": "A school has 40 students in Class VI, 50 in VII, 60 in VIII and 50 in IX. What percent of all students are in Class VIII?",
+  "options": [
+   "30%",
+   "25%",
+   "20%",
+   "35%"
+  ],
+  "answer": 0,
+  "exp": "Total = 200; 60/200 x 100 = 30%.",
+  "sub": "Data interpretation"
+ },
+ {
+  "q": "A sum amounts to Rs 11,500 in 3 years at 5% simple interest per annum. What is the principal?",
+  "options": [
+   "Rs 9,500",
+   "Rs 10,000",
+   "Rs 10,500",
+   "Rs 9,000"
+  ],
+  "answer": 1,
+  "exp": "Amount = P(1 + 0.15) = 1.15P = 11500, so P = 10000.",
+  "sub": "Simple interest"
+ },
+ {
+  "q": "If x + 1/x = 3, what is x² + 1/x²?",
+  "options": [
+   "9",
+   "11",
+   "5",
+   "7"
+  ],
+  "answer": 3,
+  "exp": "Square both sides: x² + 2 + 1/x² = 9, so x² + 1/x² = 7.",
+  "sub": "Algebra basics"
+ },
+ {
+  "q": "Which of the following sets of sides forms a right-angled triangle?",
+  "options": [
+   "8, 15, 17",
+   "5, 12, 14",
+   "9, 12, 16",
+   "7, 10, 12"
+  ],
+  "answer": 0,
+  "exp": "8² + 15² = 64 + 225 = 289 = 17²; the other sets fail the Pythagoras relation.",
+  "sub": "Geometry - Pythagoras"
+ },
+ {
+  "q": "What is the mean proportional between 4 and 25?",
+  "options": [
+   "14.5",
+   "10",
+   "12",
+   "20"
+  ],
+  "answer": 1,
+  "exp": "Mean proportional = √(4 x 25) = 10.",
+  "sub": "Ratio and proportion"
+ },
+ {
+  "q": "Which of the following is an open-ended question suitable for Class VI?",
+  "options": [
+   "Find 3/4 of 24.",
+   "Add 345 and 678.",
+   "How many different rectangles with whole-number sides have an area of 24 square units?",
+   "Write the LCM of 4 and 6."
+  ],
+  "answer": 2,
+  "exp": "An open-ended task has several valid answers/approaches and encourages exploration; the others have a single fixed answer.",
+  "sub": "Pedagogy of mathematics"
+ }
+]

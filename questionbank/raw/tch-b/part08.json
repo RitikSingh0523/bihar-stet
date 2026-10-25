@@ -1,0 +1,410 @@
+[
+ {
+  "q": "e-PG Pathshala provides:",
+  "options": [
+   "high-quality e-content for postgraduate subjects",
+   "only primary school lessons",
+   "entrance examinations",
+   "school uniforms"
+  ],
+  "answer": 0,
+  "exp": "It is a UGC-MHRD initiative for e-content at the postgraduate level.",
+  "sub": "ICT in education"
+ },
+ {
+  "q": "The 'Holistic Progress Card' proposed in NEP 2020 will:",
+  "options": [
+   "show only the marks of the final exam",
+   "give a 360-degree view of the learner's progress including self- and peer-assessment",
+   "show only attendance",
+   "be only for teachers"
+  ],
+  "answer": 1,
+  "exp": "It records cognitive, affective and psychomotor development.",
+  "sub": "NEP 2020 and education bodies"
+ },
+ {
+  "q": "Which of the following is NOT a desirable quality of a teacher?",
+  "options": [
+   "Patience",
+   "Good communication",
+   "Rigid attitude towards change",
+   "Fairness"
+  ],
+  "answer": 2,
+  "exp": "Teachers must be open to new ideas.",
+  "sub": "Teacher qualities and professional ethics"
+ },
+ {
+  "q": "Which of the following assessment tasks best tests the practical skills in CS?",
+  "options": [
+   "Writing the definition of a compiler",
+   "Listing the generations of computers",
+   "Naming computer inventors",
+   "Writing and running a program to solve a given problem"
+  ],
+  "answer": 3,
+  "exp": "Executing a program shows application ability.",
+  "sub": "Pedagogy of computer science"
+ },
+ {
+  "q": "A teacher asks students to think of reasons why a program may be slow and to suggest improvements. This question mainly develops:",
+  "options": [
+   "rote memory",
+   "handwriting speed",
+   "higher-order thinking",
+   "physical skills"
+  ],
+  "answer": 2,
+  "exp": "Analysing causes and proposing solutions is a higher-order thinking task.",
+  "sub": "Teaching-learning process"
+ },
+ {
+  "q": "The deductive method moves from:",
+  "options": [
+   "specific examples to general rules",
+   "known to unknown only",
+   "concrete objects to abstract symbols",
+   "general rules to specific examples"
+  ],
+  "answer": 3,
+  "exp": "In deduction the rule or principle is given first and then applied to particular cases.",
+  "sub": "Teaching methods"
+ },
+ {
+  "q": "A bulletin board in the school is mainly used to:",
+  "options": [
+   "display notices, pictures and student work for information",
+   "conduct laboratory experiments",
+   "store textbooks",
+   "measure intelligence"
+  ],
+  "answer": 0,
+  "exp": "It is a display aid for information and motivation.",
+  "sub": "Teaching aids and audio-visual media"
+ },
+ {
+  "q": "The 'Skill of illustrating with examples' is best shown when a teacher:",
+  "options": [
+   "gives long theoretical explanation only",
+   "uses simple, relevant examples to clarify a rule",
+   "uses unrelated stories",
+   "avoids all examples"
+  ],
+  "answer": 1,
+  "exp": "Relevant examples link abstract concepts to the learner's experience.",
+  "sub": "Microteaching and teaching skills"
+ },
+ {
+  "q": "Assertion (A): A lesson plan should include evaluation questions.\nReason (R): Evaluation tells whether the objectives were achieved.\nChoose the correct option.",
+  "options": [
+   "Both A and R are true but R does not explain A",
+   "A is true and R is false",
+   "Both A and R are true and R explains A",
+   "A is false and R is true"
+  ],
+  "answer": 2,
+  "exp": "Evaluation is the means to know whether objectives were reached.",
+  "sub": "Lesson planning"
+ },
+ {
+  "q": "The principle of community-centredness suggests that the curriculum should:",
+  "options": [
+   "ignore local needs",
+   "be copied from other countries",
+   "be made only for the urban area",
+   "reflect the social and cultural needs of the community"
+  ],
+  "answer": 3,
+  "exp": "The school serves society, so content should relate to community life.",
+  "sub": "Curriculum"
+ },
+ {
+  "q": "An open-book examination primarily tests:",
+  "options": [
+   "application and understanding rather than rote memorisation",
+   "only memory",
+   "handwriting only",
+   "speed of copying"
+  ],
+  "answer": 0,
+  "exp": "With resources available, questions focus on higher-order skills.",
+  "sub": "Evaluation, formative and summative assessment, CCE"
+ },
+ {
+  "q": "A rating scale is useful for evaluating:",
+  "options": [
+   "only factual recall",
+   "qualities such as attitudes and performance on a continuum",
+   "only attendance",
+   "only handwriting speed"
+  ],
+  "answer": 1,
+  "exp": "Rating scales record the degree of a trait, for example from excellent to poor.",
+  "sub": "Tests, blueprint and item analysis"
+ },
+ {
+  "q": "Concurrent validity is checked by:",
+  "options": [
+   "comparing with results after five years",
+   "counting test items",
+   "comparing test scores with another established measure taken at about the same time",
+   "asking friends"
+  ],
+  "answer": 2,
+  "exp": "Concurrent validity uses a criterion available at present.",
+  "sub": "Validity and reliability"
+ },
+ {
+  "q": "Case study as a tool in remedial work helps the teacher to:",
+  "options": [
+   "compare textbooks",
+   "fix timetables",
+   "prepare blueprints",
+   "study an individual learner's background in depth"
+  ],
+  "answer": 3,
+  "exp": "A case study gathers detailed information about one learner.",
+  "sub": "Diagnostic testing and remedial teaching"
+ },
+ {
+  "q": "The final stage of a research study is generally:",
+  "options": [
+   "preparing and presenting the report",
+   "selecting the topic",
+   "framing the hypothesis",
+   "reviewing literature"
+  ],
+  "answer": 0,
+  "exp": "Findings are communicated through a report.",
+  "sub": "Action research and educational research"
+ },
+ {
+  "q": "Statement I: ICT can help provide access to education in remote areas.\nStatement II: ICT in education requires no training for teachers.\nChoose the correct option.",
+  "options": [
+   "Both Statements I and II are true",
+   "Only Statement II is true",
+   "Only Statement I is true",
+   "Both Statements I and II are false"
+  ],
+  "answer": 2,
+  "exp": "ICT widens access, but teachers need training to use it effectively.",
+  "sub": "ICT in education"
+ },
+ {
+  "q": "Statement I: NEP 2020 promotes multidisciplinary education without rigid separation of arts and sciences.\nStatement II: NEP 2020 proposes rigid streams that students cannot cross after Grade 10.\nChoose the correct option.",
+  "options": [
+   "Only Statement II is true",
+   "Both Statements are true",
+   "Both Statements are false",
+   "Only Statement I is true"
+  ],
+  "answer": 3,
+  "exp": "NEP 2020 removes hard separations between streams.",
+  "sub": "NEP 2020 and education bodies"
+ },
+ {
+  "q": "Sharing a student's low marks with the entire class to motivate others is:",
+  "options": [
+   "ethical as it is honest",
+   "ethical as it improves discipline",
+   "required by law",
+   "unethical as it violates the dignity and privacy of the student"
+  ],
+  "answer": 3,
+  "exp": "Results should be communicated privately.",
+  "sub": "Teacher qualities and professional ethics"
+ },
+ {
+  "q": "Statement I: Teaching algorithms before coding helps students to separate logic from syntax.\nStatement II: Students should be told to memorise code rather than understand it.\nChoose the correct option.",
+  "options": [
+   "Both Statements I and II are true",
+   "Both Statements I and II are false",
+   "Only Statement II is true",
+   "Only Statement I is true"
+  ],
+  "answer": 3,
+  "exp": "Understanding logic matters more than memorising code.",
+  "sub": "Pedagogy of computer science"
+ },
+ {
+  "q": "Which principle of teaching is followed when a teacher first teaches addition and later multiplication?",
+  "options": [
+   "Complex to simple",
+   "Whole to part",
+   "Indefinite to definite",
+   "Simple to complex"
+  ],
+  "answer": 3,
+  "exp": "Progressing from simple ideas to complex ones is the 'simple to complex' maxim.",
+  "sub": "Teaching-learning process"
+ },
+ {
+  "q": "Which method gives individual attention to students in small groups to clear their doubts after the main lecture?",
+  "options": [
+   "Tutorial method",
+   "Lecture method",
+   "Seminar method",
+   "Demonstration method"
+  ],
+  "answer": 0,
+  "exp": "A tutorial is a small-group or one-to-one session for clarifying difficulties and guided practice.",
+  "sub": "Teaching methods"
+ },
+ {
+  "q": "A flannel board is used to:",
+  "options": [
+   "project films on a wall",
+   "present cut-out figures and symbols that stick to a cloth-covered board",
+   "record voices",
+   "print worksheets"
+  ],
+  "answer": 1,
+  "exp": "Flannel cut-outs adhere to the cloth surface, allowing step-wise presentation.",
+  "sub": "Teaching aids and audio-visual media"
+ },
+ {
+  "q": "Who is credited, along with Allen, with the development of the microteaching technique at Stanford?",
+  "options": [
+   "Benjamin Bloom",
+   "Lee Cronbach",
+   "Robert Bush",
+   "Edgar Dale"
+  ],
+  "answer": 2,
+  "exp": "Dwight Allen and Robert Bush developed microteaching at Stanford University.",
+  "sub": "Microteaching and teaching skills"
+ },
+ {
+  "q": "Which step of the Herbartian plan involves the teacher stating the aim of the lesson and arousing interest?",
+  "options": [
+   "Application",
+   "Generalisation",
+   "Comparison",
+   "Preparation"
+  ],
+  "answer": 3,
+  "exp": "Preparation (introduction) states the aim and prepares the minds of learners.",
+  "sub": "Lesson planning"
+ },
+ {
+  "q": "A curriculum that arranges learning around subjects like Physics, History and Computer Science is called:",
+  "options": [
+   "subject-centred curriculum",
+   "child-centred curriculum",
+   "activity curriculum",
+   "hidden curriculum"
+  ],
+  "answer": 0,
+  "exp": "A subject-centred curriculum organises knowledge by disciplines.",
+  "sub": "Curriculum"
+ },
+ {
+  "q": "A major limitation of oral examinations is:",
+  "options": [
+   "they cannot test speaking ability",
+   "subjectivity and difficulty of keeping uniform standards",
+   "they take no time",
+   "they need no preparation by the examiner"
+  ],
+  "answer": 1,
+  "exp": "Different examiners and questions reduce objectivity.",
+  "sub": "Evaluation, formative and summative assessment, CCE"
+ },
+ {
+  "q": "Which question type is MOST suitable to test the ability to organise and express ideas?",
+  "options": [
+   "True-false",
+   "Matching",
+   "Essay type",
+   "Multiple choice"
+  ],
+  "answer": 2,
+  "exp": "Essays test organisation, expression and integration of ideas.",
+  "sub": "Tests, blueprint and item analysis"
+ },
+ {
+  "q": "Norms of a standardised test are used to:",
+  "options": [
+   "print the test",
+   "fix the fees",
+   "select the teacher",
+   "interpret an individual's score in comparison with a reference group"
+  ],
+  "answer": 3,
+  "exp": "Norms give meaning to raw scores.",
+  "sub": "Validity and reliability"
+ },
+ {
+  "q": "A student repeatedly fails to follow the logic of loops. The best first step is to:",
+  "options": [
+   "find out through questioning and a diagnostic task where the misunderstanding lies",
+   "declare the student incapable",
+   "give a higher-level topic",
+   "stop asking questions"
+  ],
+  "answer": 0,
+  "exp": "Diagnosis of the specific misconception should precede any remedy.",
+  "sub": "Diagnostic testing and remedial teaching"
+ },
+ {
+  "q": "A teacher finds that many students fail to complete programming exercises and tries a pair-programming strategy to check if results improve. This is an example of:",
+  "options": [
+   "historical research",
+   "action research",
+   "philosophical research",
+   "meta-analysis"
+  ],
+  "answer": 1,
+  "exp": "It is a systematic classroom study to solve a local problem.",
+  "sub": "Action research and educational research"
+ },
+ {
+  "q": "A podcast in education is useful mainly because it:",
+  "options": [
+   "replaces all books",
+   "needs no device",
+   "delivers audio content that learners can listen to at their convenience",
+   "is only for entertainment"
+  ],
+  "answer": 2,
+  "exp": "Podcasts are portable audio learning resources.",
+  "sub": "ICT in education"
+ },
+ {
+  "q": "NEP 2020 supports a three-language formula which:",
+  "options": [
+   "makes one language compulsory everywhere",
+   "bans regional languages",
+   "bans English",
+   "remains flexible and no language is imposed on any state"
+  ],
+  "answer": 3,
+  "exp": "States, regions and students choose the languages, with at least two being Indian languages.",
+  "sub": "NEP 2020 and education bodies"
+ },
+ {
+  "q": "A teacher using private tuition to pressurise his own class students to join is an example of:",
+  "options": [
+   "conflict of interest violating professional ethics",
+   "good teaching practice",
+   "a method of remedial teaching",
+   "a part of the curriculum"
+  ],
+  "answer": 0,
+  "exp": "Using one's position for private gain is unethical.",
+  "sub": "Teacher qualities and professional ethics"
+ },
+ {
+  "q": "Encouraging girls and students from rural backgrounds in CS classes is an example of:",
+  "options": [
+   "discrimination",
+   "equity and inclusion in computing education",
+   "hidden punishment",
+   "ignoring the syllabus"
+  ],
+  "answer": 1,
+  "exp": "Equal opportunities widen participation in computing.",
+  "sub": "Pedagogy of computer science"
+ }
+]

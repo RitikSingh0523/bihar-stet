@@ -1,0 +1,458 @@
+[
+ {
+  "q": "The test-retest method estimates reliability by:",
+  "options": [
+   "giving two different tests to different groups",
+   "comparing with an intelligence test",
+   "giving the same test twice to the same group and correlating the scores",
+   "checking the paper twice by one teacher"
+  ],
+  "answer": 2,
+  "exp": "The correlation between two administrations shows stability.",
+  "sub": "Validity and reliability"
+ },
+ {
+  "q": "What is the correct order in dealing with learning difficulties?",
+  "options": [
+   "Give remedy, identify, diagnose",
+   "Diagnose, grade, promote",
+   "Test, rank, forget",
+   "Identify the problem, diagnose the cause, apply the remedy"
+  ],
+  "answer": 3,
+  "exp": "A remedy is useful only after the difficulty and its cause are known.",
+  "sub": "Diagnostic testing and remedial teaching"
+ },
+ {
+  "q": "The main purpose of action research in a classroom is to:",
+  "options": [
+   "solve an immediate practical problem and improve practice",
+   "develop a universal theory",
+   "get a degree only",
+   "compare countries"
+  ],
+  "answer": 0,
+  "exp": "Action research is aimed at local, practical improvement.",
+  "sub": "Action research and educational research"
+ },
+ {
+  "q": "DIKSHA is:",
+  "options": [
+   "a computer virus",
+   "a national digital platform for school education e-content",
+   "a school transport scheme",
+   "an examination board"
+  ],
+  "answer": 1,
+  "exp": "DIKSHA (Digital Infrastructure for Knowledge Sharing) provides e-content, QR-coded textbooks and teacher training.",
+  "sub": "ICT in education"
+ },
+ {
+  "q": "According to NEP 2020, the secondary stage covers the ages of:",
+  "options": [
+   "11 to 14 years",
+   "8 to 11 years",
+   "14 to 18 years",
+   "3 to 8 years"
+  ],
+  "answer": 2,
+  "exp": "The secondary stage consists of Grades 9 to 12.",
+  "sub": "NEP 2020 and education bodies"
+ },
+ {
+  "q": "Teachers' Day in India is celebrated on:",
+  "options": [
+   "14 November",
+   "2 October",
+   "26 January",
+   "5 September"
+  ],
+  "answer": 3,
+  "exp": "It marks the birth anniversary of Dr. Sarvepalli Radhakrishnan.",
+  "sub": "Teacher qualities and professional ethics"
+ },
+ {
+  "q": "Before writing a program in a class, a teacher should first ask students to:",
+  "options": [
+   "design the algorithm or flowchart",
+   "type the program immediately",
+   "memorise the syntax",
+   "copy the final code"
+  ],
+  "answer": 0,
+  "exp": "Planning the logic first improves problem-solving.",
+  "sub": "Pedagogy of computer science"
+ },
+ {
+  "q": "Learning is best defined as:",
+  "options": [
+   "any temporary change in mood",
+   "a change caused only by growth and maturation",
+   "a change caused by fatigue or drugs",
+   "a relatively permanent change in behaviour brought about by experience or practice"
+  ],
+  "answer": 3,
+  "exp": "Maturation, fatigue and drugs produce temporary or non-learned changes, so they are excluded from the definition.",
+  "sub": "Teaching-learning process"
+ },
+ {
+  "q": "In a symposium:",
+  "options": [
+   "several speakers present different aspects of a single topic before an audience",
+   "participants silently read a paper",
+   "students enact characters in a drama",
+   "a teacher dictates notes to the class"
+  ],
+  "answer": 0,
+  "exp": "A symposium is a series of short prepared talks on different aspects of the same theme.",
+  "sub": "Teaching methods"
+ },
+ {
+  "q": "An overhead projector (OHP) is classified as a:",
+  "options": [
+   "non-projected visual aid",
+   "projected visual aid",
+   "audio aid",
+   "activity aid"
+  ],
+  "answer": 1,
+  "exp": "OHP projects transparencies on a screen so it is a projected visual aid.",
+  "sub": "Teaching aids and audio-visual media"
+ },
+ {
+  "q": "In microteaching, a teacher trainee practises:",
+  "options": [
+   "all skills simultaneously",
+   "only lesson writing",
+   "one specific teaching skill at a time",
+   "administrative work"
+  ],
+  "answer": 2,
+  "exp": "Focusing on a single skill makes feedback and improvement manageable.",
+  "sub": "Microteaching and teaching skills"
+ },
+ {
+  "q": "Which of the following verbs is NOT suitable for writing a specific measurable objective?",
+  "options": [
+   "List",
+   "Define",
+   "Calculate",
+   "Appreciate"
+  ],
+  "answer": 3,
+  "exp": "'Appreciate' describes an internal state that cannot be directly observed.",
+  "sub": "Lesson planning"
+ },
+ {
+  "q": "An integrated curriculum is one in which:",
+  "options": [
+   "subject boundaries are reduced and related content is combined around themes",
+   "each subject is taught fully separately",
+   "only one subject is taught",
+   "there is no content"
+  ],
+  "answer": 0,
+  "exp": "Integration links knowledge from different subjects.",
+  "sub": "Curriculum"
+ },
+ {
+  "q": "Continuous and Comprehensive Evaluation (CCE) was mandated for elementary education under:",
+  "options": [
+   "the University Grants Commission Act",
+   "the Right to Education Act, 2009",
+   "the National Policy on Education, 1968",
+   "the Indian Education Commission Act"
+  ],
+  "answer": 1,
+  "exp": "Section 29 of the RTE Act, 2009 provides for CCE.",
+  "sub": "Evaluation, formative and summative assessment, CCE"
+ },
+ {
+  "q": "In an MCQ, the incorrect options are called:",
+  "options": [
+   "stems",
+   "keys",
+   "distractors",
+   "criteria"
+  ],
+  "answer": 2,
+  "exp": "Distractors are plausible wrong options; the correct one is the key.",
+  "sub": "Tests, blueprint and item analysis"
+ },
+ {
+  "q": "In the split-half method, the test is commonly divided into:",
+  "options": [
+   "easy and difficult students",
+   "first and last students",
+   "boys and girls",
+   "odd-numbered and even-numbered items"
+  ],
+  "answer": 3,
+  "exp": "The correlation of half-scores is stepped up by the Spearman-Brown formula.",
+  "sub": "Validity and reliability"
+ },
+ {
+  "q": "Enrichment programmes are designed mainly for:",
+  "options": [
+   "gifted learners",
+   "slow learners",
+   "absentees",
+   "new admissions"
+  ],
+  "answer": 0,
+  "exp": "Enrichment adds depth and challenge for talented children.",
+  "sub": "Diagnostic testing and remedial teaching"
+ },
+ {
+  "q": "Which is the correct cycle of action research?",
+  "options": [
+   "Observe, forget, plan, stop",
+   "Plan, act, observe, reflect",
+   "Test, rank, promote, certify",
+   "Read, copy, submit, publish"
+  ],
+  "answer": 1,
+  "exp": "The cycle repeats with the revised plan after reflection.",
+  "sub": "Action research and educational research"
+ },
+ {
+  "q": "SWAYAM Prabha is:",
+  "options": [
+   "an examination",
+   "a programming language",
+   "a group of DTH educational channels that telecast high-quality programmes",
+   "a mobile game"
+  ],
+  "answer": 2,
+  "exp": "It broadcasts educational content 24x7 through DTH channels.",
+  "sub": "ICT in education"
+ },
+ {
+  "q": "NEP 2020 recommends that, wherever possible, the medium of instruction till at least Grade 5 should be:",
+  "options": [
+   "only English",
+   "only Sanskrit",
+   "only a foreign language",
+   "the home language, mother tongue or local language"
+  ],
+  "answer": 3,
+  "exp": "Children learn most easily in their home language.",
+  "sub": "NEP 2020 and education bodies"
+ },
+ {
+  "q": "In the modern view, the teacher's role is best described as:",
+  "options": [
+   "a facilitator of learning",
+   "a dictator of knowledge",
+   "only an examiner",
+   "only a disciplinarian"
+  ],
+  "answer": 0,
+  "exp": "The teacher guides and supports learners in constructing knowledge.",
+  "sub": "Teacher qualities and professional ethics"
+ },
+ {
+  "q": "Pair programming in the classroom is an approach where:",
+  "options": [
+   "students copy each other's answers",
+   "two students work together at one computer, one coding and the other reviewing",
+   "only the teacher codes",
+   "each student works with different tasks silently"
+  ],
+  "answer": 1,
+  "exp": "It promotes collaboration and fewer errors.",
+  "sub": "Pedagogy of computer science"
+ },
+ {
+  "q": "Skinner's operant conditioning is mainly concerned with:",
+  "options": [
+   "learning through insight",
+   "strengthening voluntary behaviour through reinforcement",
+   "learning by imitating a model",
+   "pairing neutral and unconditioned stimuli"
+  ],
+  "answer": 1,
+  "exp": "Operant conditioning shapes voluntary behaviour by its consequences (reinforcement/punishment).",
+  "sub": "Teaching-learning process"
+ },
+ {
+  "q": "A seminar is best described as:",
+  "options": [
+   "a one-way lecture by an expert",
+   "a group meeting where papers are presented and discussed under guidance",
+   "a written test with objective questions",
+   "a practical session in the laboratory"
+  ],
+  "answer": 1,
+  "exp": "In a seminar participants present prepared papers followed by interaction.",
+  "sub": "Teaching methods"
+ },
+ {
+  "q": "Which of the following is a non-projected visual aid?",
+  "options": [
+   "Slide projector",
+   "Film strip projector",
+   "Chart",
+   "Epidiascope"
+  ],
+  "answer": 2,
+  "exp": "Charts, models and maps are shown directly without projection.",
+  "sub": "Teaching aids and audio-visual media"
+ },
+ {
+  "q": "Using praise such as 'Very good' and a nod for a correct answer is the skill of:",
+  "options": [
+   "probing",
+   "closure",
+   "explaining",
+   "reinforcement"
+  ],
+  "answer": 3,
+  "exp": "Positive verbal and non-verbal responses strengthen desired behaviour.",
+  "sub": "Microteaching and teaching skills"
+ },
+ {
+  "q": "The 5E instructional model consists of Engage, Explain, Elaborate, Evaluate and:",
+  "options": [
+   "Explore",
+   "Examine",
+   "Experience",
+   "Execute"
+  ],
+  "answer": 0,
+  "exp": "The sequence is Engage, Explore, Explain, Elaborate, Evaluate.",
+  "sub": "Lesson planning"
+ },
+ {
+  "q": "The term 'null curriculum' refers to:",
+  "options": [
+   "the officially prescribed content",
+   "what the school does not teach but could have",
+   "the activities after school",
+   "the hidden values"
+  ],
+  "answer": 1,
+  "exp": "Eisner used it for content and skills that are left out.",
+  "sub": "Curriculum"
+ },
+ {
+  "q": "In CCE, the word 'comprehensive' means that the evaluation covers:",
+  "options": [
+   "only the subjects in the examination",
+   "only sports",
+   "both scholastic and co-scholastic aspects of the learner's development",
+   "only attendance"
+  ],
+  "answer": 2,
+  "exp": "Comprehensive evaluation assesses overall development, including attitudes and skills.",
+  "sub": "Evaluation, formative and summative assessment, CCE"
+ },
+ {
+  "q": "Which of the following is a supply-type (recall) item?",
+  "options": [
+   "Multiple-choice question",
+   "True-false question",
+   "Matching question",
+   "Short-answer question"
+  ],
+  "answer": 3,
+  "exp": "Supply-type items require the student to produce the answer.",
+  "sub": "Tests, blueprint and item analysis"
+ },
+ {
+  "q": "A test that adequately covers the syllabus content has high:",
+  "options": [
+   "content validity",
+   "predictive validity",
+   "concurrent validity",
+   "face validity only"
+  ],
+  "answer": 0,
+  "exp": "Content validity is judged by how well the test represents the subject content.",
+  "sub": "Validity and reliability"
+ },
+ {
+  "q": "Dysgraphia is a learning difficulty related to:",
+  "options": [
+   "reading",
+   "arithmetic",
+   "hearing",
+   "writing"
+  ],
+  "answer": 3,
+  "exp": "Dysgraphia affects handwriting and written expression.",
+  "sub": "Diagnostic testing and remedial teaching"
+ },
+ {
+  "q": "Who generally conducts action research?",
+  "options": [
+   "Only university professors",
+   "Only the education minister",
+   "The practising teacher in his or her own class",
+   "Only the school inspector"
+  ],
+  "answer": 2,
+  "exp": "Teachers research their own problems.",
+  "sub": "Action research and educational research"
+ },
+ {
+  "q": "NPTEL provides:",
+  "options": [
+   "only school textbooks",
+   "only sports training",
+   "only entrance coaching for medical",
+   "video and web courses in engineering and science through IITs and IISc"
+  ],
+  "answer": 3,
+  "exp": "NPTEL is a joint initiative of the IITs and IISc.",
+  "sub": "ICT in education"
+ },
+ {
+  "q": "NEP 2020 recommends public investment in education of:",
+  "options": [
+   "6 per cent of GDP",
+   "2 per cent of GDP",
+   "10 per cent of GDP",
+   "15 per cent of GDP"
+  ],
+  "answer": 0,
+  "exp": "The policy reiterates the target of 6% of GDP.",
+  "sub": "NEP 2020 and education bodies"
+ },
+ {
+  "q": "Corporal punishment of children in schools is prohibited by:",
+  "options": [
+   "Section 29 of the RTE Act",
+   "Section 17 of the RTE Act, 2009",
+   "The Indian Penal Code only for adults",
+   "the Consumer Protection Act"
+  ],
+  "answer": 1,
+  "exp": "Section 17 prohibits physical punishment and mental harassment.",
+  "sub": "Teacher qualities and professional ethics"
+ },
+ {
+  "q": "Block-based languages like Scratch are useful for beginners because they:",
+  "options": [
+   "are the only way to learn programming",
+   "avoid logical thinking",
+   "remove syntax errors and focus on logic",
+   "are faster than every other language"
+  ],
+  "answer": 2,
+  "exp": "Drag-and-drop blocks help novices concentrate on concepts.",
+  "sub": "Pedagogy of computer science"
+ },
+ {
+  "q": "Operant conditioning theory of learning is associated with:",
+  "options": [
+   "Ivan Pavlov",
+   "B. F. Skinner",
+   "Jean Piaget",
+   "Lev Vygotsky"
+  ],
+  "answer": 1,
+  "exp": "Skinner studied how behaviour is shaped by reinforcement; Pavlov proposed classical conditioning.",
+  "sub": "Teaching-learning process"
+ }
+]

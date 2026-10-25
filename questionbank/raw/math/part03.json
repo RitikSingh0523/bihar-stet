@@ -1,0 +1,242 @@
+[
+ {
+  "q": "A number increased by 25% becomes 150. What is the number?",
+  "options": [
+   "120",
+   "112.5",
+   "125",
+   "110"
+  ],
+  "answer": 0,
+  "exp": "1.25 x N = 150, so N = 120.",
+  "sub": "Percentages"
+ },
+ {
+  "q": "Two articles are sold at Rs 990 each, one at 10% gain and the other at 10% loss. What is the overall result?",
+  "options": [
+   "Gain of 1%",
+   "Loss of 1%",
+   "No gain no loss",
+   "Loss of 2%"
+  ],
+  "answer": 1,
+  "exp": "CP1 = 990/1.1 = 900, CP2 = 990/0.9 = 1100; total CP = 2000, SP = 1980; loss = 20/2000 = 1%.",
+  "sub": "Profit and loss"
+ },
+ {
+  "q": "A can do a job in 10 days and B in 15 days. They are paid Rs 1800 for completing it together. What is A's share?",
+  "options": [
+   "Rs 900",
+   "Rs 720",
+   "Rs 1080",
+   "Rs 1200"
+  ],
+  "answer": 2,
+  "exp": "Work rates are 1/10 : 1/15 = 3 : 2; A's share = 3/5 x 1800 = 1080.",
+  "sub": "Time and work"
+ },
+ {
+  "q": "What is the area of a trapezium whose parallel sides are 10 cm and 14 cm and whose height is 8 cm?",
+  "options": [
+   "192 cm²",
+   "112 cm²",
+   "80 cm²",
+   "96 cm²"
+  ],
+  "answer": 3,
+  "exp": "Area = (1/2)(10 + 14) x 8 = 96 cm².",
+  "sub": "Mensuration"
+ },
+ {
+  "q": "What is the largest number that divides 245 and 1029 leaving a remainder 5 in each case?",
+  "options": [
+   "8",
+   "16",
+   "12",
+   "24"
+  ],
+  "answer": 1,
+  "exp": "Required number = HCF(240, 1024) = 16.",
+  "sub": "LCM and HCF"
+ },
+ {
+  "q": "Of 70 students, 40 play cricket, 30 play football and 10 play neither. How many play both games?",
+  "options": [
+   "20",
+   "0",
+   "10",
+   "15"
+  ],
+  "answer": 2,
+  "exp": "Students playing at least one = 60; both = 40 + 30 - 60 = 10.",
+  "sub": "Venn diagram / sets"
+ },
+ {
+  "q": "An arc of a circle subtends an angle of 80° at the centre. What angle does it subtend at a point on the remaining part of the circle?",
+  "options": [
+   "80°",
+   "160°",
+   "20°",
+   "40°"
+  ],
+  "answer": 3,
+  "exp": "The angle at the centre is double the angle at the circumference, so 80°/2 = 40°.",
+  "sub": "Geometry - circles"
+ },
+ {
+  "q": "A cyclist rides at 16 km/h. How far will he travel in 45 minutes?",
+  "options": [
+   "12 km",
+   "10 km",
+   "14 km",
+   "8 km"
+  ],
+  "answer": 0,
+  "exp": "45 minutes = 0.75 h; distance = 16 x 0.75 = 12 km.",
+  "sub": "Speed, distance, time"
+ },
+ {
+  "q": "The population of a village (in hundreds) was 40, 46, 55 and 60 in 2019, 2020, 2021 and 2022. What is the percentage increase from 2019 to 2020?",
+  "options": [
+   "6%",
+   "10%",
+   "15%",
+   "20%"
+  ],
+  "answer": 2,
+  "exp": "Increase = 6 on 40, so (6/40) x 100 = 15%.",
+  "sub": "Data interpretation"
+ },
+ {
+  "q": "A learner knows 7 x 4 = 28 but cannot find 7 x 8. Which teaching strategy best uses prior knowledge?",
+  "options": [
+   "Ask the learner to memorise the whole table by rote",
+   "Tell the learner to look the answer up",
+   "Skip the topic until next year",
+   "Show that 7 x 8 is double 7 x 4, i.e. 2 x 28 = 56"
+  ],
+  "answer": 3,
+  "exp": "Linking new facts to known ones (doubling) builds understanding and number sense.",
+  "sub": "Pedagogy of mathematics"
+ },
+ {
+  "q": "If the side of a square is increased by 10%, by what percent does its area increase?",
+  "options": [
+   "21%",
+   "20%",
+   "10%",
+   "11%"
+  ],
+  "answer": 0,
+  "exp": "New area = (1.1)² = 1.21 of the old area, an increase of 21%.",
+  "sub": "Percentages"
+ },
+ {
+  "q": "What is the amount on Rs 10000 at 20% per annum for 1 year, compounded half-yearly?",
+  "options": [
+   "Rs 12,000",
+   "Rs 12,100",
+   "Rs 12,200",
+   "Rs 11,000"
+  ],
+  "answer": 1,
+  "exp": "Rate per half-year = 10% for 2 periods: 10000 x 1.1 x 1.1 = 12100.",
+  "sub": "Compound interest"
+ },
+ {
+  "q": "Simplify (x² - 9)/(x - 3) for x ≠ 3.",
+  "options": [
+   "x - 3",
+   "x² + 3",
+   "x + 9",
+   "x + 3"
+  ],
+  "answer": 3,
+  "exp": "x² - 9 = (x - 3)(x + 3), so the quotient is x + 3.",
+  "sub": "Algebra basics"
+ },
+ {
+  "q": "What is the smallest 4-digit number divisible by 12?",
+  "options": [
+   "1008",
+   "1000",
+   "1002",
+   "1012"
+  ],
+  "answer": 0,
+  "exp": "1000/12 leaves remainder 4; 1000 + 8 = 1008 = 12 x 84.",
+  "sub": "Number system"
+ },
+ {
+  "q": "A rectangular tank is 5 m long, 4 m wide and 3 m deep. What is its capacity in litres?",
+  "options": [
+   "6,000 litres",
+   "60,000 litres",
+   "600 litres",
+   "12,000 litres"
+  ],
+  "answer": 1,
+  "exp": "Volume = 5 x 4 x 3 = 60 m³ = 60 x 1000 = 60,000 litres.",
+  "sub": "Mensuration"
+ },
+ {
+  "q": "The ratio of a person's income to expenditure is 5 : 4 and his savings are Rs 4000. What is his income?",
+  "options": [
+   "Rs 16,000",
+   "Rs 18,000",
+   "Rs 20,000",
+   "Rs 24,000"
+  ],
+  "answer": 2,
+  "exp": "Savings = 1 part = 4000, so income = 5 x 4000 = 20000.",
+  "sub": "Ratio and proportion"
+ },
+ {
+  "q": "A train 200 m long running at 72 km/h crosses a platform 300 m long. How long does it take?",
+  "options": [
+   "25 s",
+   "20 s",
+   "15 s",
+   "30 s"
+  ],
+  "answer": 0,
+  "exp": "Speed = 20 m/s; distance = 500 m; time = 500/20 = 25 s.",
+  "sub": "Speed, distance, time"
+ },
+ {
+  "q": "Which of the following sets of lengths cannot be the sides of a triangle?",
+  "options": [
+   "3 cm, 4 cm, 5 cm",
+   "5 cm, 7 cm, 13 cm",
+   "6 cm, 8 cm, 10 cm",
+   "7 cm, 7 cm, 7 cm"
+  ],
+  "answer": 1,
+  "exp": "A triangle needs the sum of any two sides to exceed the third; 5 + 7 = 12 < 13.",
+  "sub": "Geometry - triangles"
+ },
+ {
+  "q": "Statement I: Whole numbers include zero. Statement II: In the NCERT convention, natural numbers include zero. Which is correct?",
+  "options": [
+   "Both statements are true",
+   "Statement I is false and Statement II is true",
+   "Statement I is true and Statement II is false",
+   "Both statements are false"
+  ],
+  "answer": 2,
+  "exp": "Whole numbers = 0, 1, 2, ...; natural (counting) numbers start at 1 in the school convention.",
+  "sub": "Pedagogy of mathematics"
+ },
+ {
+  "q": "The average of 11 numbers is 50. The average of the first six is 49 and that of the last six is 52. What is the sixth number?",
+  "options": [
+   "54",
+   "52",
+   "58",
+   "56"
+  ],
+  "answer": 3,
+  "exp": "Sixth = 6 x 49 + 6 x 52 - 11 x 50 = 294 + 312 - 550 = 56.",
+  "sub": "Averages"
+ }
+]

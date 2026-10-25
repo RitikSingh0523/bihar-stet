@@ -1,0 +1,362 @@
+[
+ {
+  "q": "The inkblot test of personality was developed by",
+  "options": [
+   "Murray",
+   "Hermann Rorschach",
+   "Cattell",
+   "Eysenck"
+  ],
+  "answer": 1,
+  "exp": "The Rorschach test uses ten inkblots.",
+  "sub": "Personality"
+ },
+ {
+  "q": "Mood swings and emotional instability in adolescents are mainly due to",
+  "options": [
+   "lack of intelligence",
+   "poor memory",
+   "heredity alone",
+   "hormonal and social changes"
+  ],
+  "answer": 3,
+  "exp": "Hormonal changes and role conflicts affect emotions.",
+  "sub": "Adolescence"
+ },
+ {
+  "q": "Which of the following is the correct meaning of 'aptitude'?",
+  "options": [
+   "Knowledge already acquired",
+   "A temporary mood",
+   "Potential to acquire a skill with training",
+   "A habit"
+  ],
+  "answer": 2,
+  "exp": "Aptitude is the latent capacity to learn certain tasks.",
+  "sub": "Individual differences"
+ },
+ {
+  "q": "Learning disabilities are NOT primarily caused by",
+  "options": [
+   "neurological differences",
+   "low intelligence or sensory defects",
+   "processing difficulties",
+   "genetic factors"
+  ],
+  "answer": 1,
+  "exp": "A learning disability occurs in children of average or above-average intelligence and is not due to low IQ or sensory defects.",
+  "sub": "Gifted and special education"
+ },
+ {
+  "q": "Helping a student choose suitable subjects after Class 10 is an example of",
+  "options": [
+   "vocational guidance",
+   "personal guidance",
+   "health guidance",
+   "educational guidance"
+  ],
+  "answer": 3,
+  "exp": "Educational guidance concerns courses, subjects and school adjustment.",
+  "sub": "Guidance and counselling"
+ },
+ {
+  "q": "Giving tokens that can be exchanged for rewards for good behaviour is called",
+  "options": [
+   "token economy",
+   "extinction",
+   "punishment",
+   "time-out"
+  ],
+  "answer": 0,
+  "exp": "Token economy is based on operant reinforcement.",
+  "sub": "Classroom management and discipline"
+ },
+ {
+  "q": "Visva-Bharati was established by Tagore in",
+  "options": [
+   "1921",
+   "1901",
+   "1913",
+   "1937"
+  ],
+  "answer": 0,
+  "exp": "Visva-Bharati became a university in 1921.",
+  "sub": "Gandhi and Tagore"
+ },
+ {
+  "q": "Which of the following is NOT among the five aspects of Aurobindo's integral education?",
+  "options": [
+   "Physical",
+   "Economic",
+   "Vital",
+   "Spiritual"
+  ],
+  "answer": 1,
+  "exp": "The five are physical, vital, mental, psychic and spiritual.",
+  "sub": "Vivekananda and Aurobindo"
+ },
+ {
+  "q": "Montessori's method stresses",
+  "options": [
+   "lecture method",
+   "punishments and rewards",
+   "a prepared environment and self-education with didactic materials",
+   "rote learning"
+  ],
+  "answer": 2,
+  "exp": "Maria Montessori gave children freedom within a prepared environment.",
+  "sub": "Philosophy of education"
+ },
+ {
+  "q": "The School Management Committee under the RTE Act must have at least what share of members from parents or guardians?",
+  "options": [
+   "One-fourth",
+   "One-half",
+   "One-third",
+   "Three-fourths"
+  ],
+  "answer": 3,
+  "exp": "Section 21 requires that at least 75 percent of members be parents or guardians.",
+  "sub": "Right to Education Act 2009"
+ },
+ {
+  "q": "A 'critical period' in development means a period during which",
+  "options": [
+   "development stops completely",
+   "the organism is especially sensitive to particular environmental stimuli",
+   "growth is slowest",
+   "learning is impossible"
+  ],
+  "answer": 1,
+  "exp": "A critical or sensitive period is a time when specific experiences have the maximum effect on development.",
+  "sub": "Growth and development"
+ },
+ {
+  "q": "A schema is best described as",
+  "options": [
+   "an organised mental structure or pattern of thought and action",
+   "a reward given for correct response",
+   "a stage of moral development",
+   "a type of intelligence test"
+  ],
+  "answer": 0,
+  "exp": "Schemas are the building blocks of knowledge that change through assimilation and accommodation.",
+  "sub": "Piaget"
+ },
+ {
+  "q": "Which statement is consistent with Vygotsky's view?",
+  "options": [
+   "Cognitive development is complete before social learning begins",
+   "Learning is purely an individual discovery",
+   "Language has little role in thinking",
+   "Social interaction comes first and leads to individual cognitive development"
+  ],
+  "answer": 3,
+  "exp": "Vygotsky held that higher mental functions appear first between people and then within the individual.",
+  "sub": "Vygotsky"
+ },
+ {
+  "q": "Carol Gilligan criticised Kohlberg's theory mainly because it",
+  "options": [
+   "had too many stages",
+   "was based on animal studies",
+   "ignored the 'ethic of care' emphasised more by women",
+   "ignored thinking and reasoning"
+  ],
+  "answer": 2,
+  "exp": "Gilligan argued that Kohlberg's justice-focused scheme was biased towards male perspectives.",
+  "sub": "Kohlberg"
+ },
+ {
+  "q": "Generativity versus stagnation relates to",
+  "options": [
+   "childhood",
+   "adolescence",
+   "middle adulthood",
+   "infancy"
+  ],
+  "answer": 2,
+  "exp": "Middle-aged adults contribute to the next generation through work, family and society.",
+  "sub": "Erikson"
+ },
+ {
+  "q": "Which statement is correct?",
+  "options": [
+   "Negative reinforcement and punishment are the same",
+   "Negative reinforcement increases behaviour, while punishment decreases it",
+   "Punishment increases behaviour",
+   "Negative reinforcement decreases behaviour"
+  ],
+  "answer": 1,
+  "exp": "Negative reinforcement removes an aversive stimulus to strengthen behaviour; punishment weakens behaviour.",
+  "sub": "Classical and operant conditioning"
+ },
+ {
+  "q": "A student starts working hard after seeing a classmate praised for hard work. This is",
+  "options": [
+   "negative reinforcement",
+   "extinction",
+   "punishment",
+   "vicarious reinforcement"
+  ],
+  "answer": 3,
+  "exp": "Seeing another person being reinforced strengthens the observer's behaviour.",
+  "sub": "Other learning theories"
+ },
+ {
+  "q": "Learned helplessness, a state in which people stop trying after repeated failure, was described by",
+  "options": [
+   "Martin Seligman",
+   "Bandura",
+   "Maslow",
+   "Thorndike"
+  ],
+  "answer": 0,
+  "exp": "Seligman's experiments showed passivity after uncontrollable negative events.",
+  "sub": "Motivation"
+ },
+ {
+  "q": "Cattell's distinction is between",
+  "options": [
+   "fluid and crystallised intelligence",
+   "verbal and non-verbal intelligence",
+   "g and s factors",
+   "creative and practical intelligence"
+  ],
+  "answer": 0,
+  "exp": "Fluid intelligence is reasoning ability; crystallised intelligence is acquired knowledge.",
+  "sub": "Intelligence"
+ },
+ {
+  "q": "Which classroom practice best encourages creativity?",
+  "options": [
+   "Insisting on one correct method",
+   "Asking open-ended questions and accepting varied answers",
+   "Punishing unusual ideas",
+   "Giving only fact-recall tests"
+  ],
+  "answer": 1,
+  "exp": "Open-ended tasks and a supportive climate foster creative thinking.",
+  "sub": "Creativity"
+ },
+ {
+  "q": "A student who fails an exam and says 'The exam was unfair and the teacher was biased' uses the defence mechanism of",
+  "options": [
+   "regression",
+   "sublimation",
+   "repression",
+   "rationalisation"
+  ],
+  "answer": 3,
+  "exp": "Giving socially acceptable excuses to hide the real reason is rationalisation.",
+  "sub": "Personality"
+ },
+ {
+  "q": "Elkind's 'imaginary audience' in adolescence refers to",
+  "options": [
+   "a group of imaginary friends",
+   "an audience for stage performance",
+   "the belief that everyone is watching and judging them",
+   "peer pressure only"
+  ],
+  "answer": 2,
+  "exp": "Adolescent egocentrism includes feeling constantly observed.",
+  "sub": "Adolescence"
+ },
+ {
+  "q": "Which of the following is an aptitude test?",
+  "options": [
+   "Differential Aptitude Test",
+   "Rorschach test",
+   "TAT",
+   "Word association test"
+  ],
+  "answer": 0,
+  "exp": "DAT measures verbal, numerical, mechanical and other abilities.",
+  "sub": "Individual differences"
+ },
+ {
+  "q": "Mild intellectual disability is generally associated with an IQ range of",
+  "options": [
+   "70 to 90",
+   "90 to 110",
+   "50 to 70",
+   "110 to 130"
+  ],
+  "answer": 2,
+  "exp": "Mild intellectual disability is IQ about 50-70.",
+  "sub": "Gifted and special education"
+ },
+ {
+  "q": "Providing information about careers and occupations belongs to",
+  "options": [
+   "educational guidance",
+   "moral guidance",
+   "recreational guidance",
+   "vocational guidance"
+  ],
+  "answer": 3,
+  "exp": "Vocational guidance helps individuals select, prepare for and progress in an occupation.",
+  "sub": "Guidance and counselling"
+ },
+ {
+  "q": "Which rule-making practice is most effective?",
+  "options": [
+   "Making many strict rules secretly",
+   "Involving students in setting a few clear rules",
+   "Changing rules daily",
+   "Applying rules only to some students"
+  ],
+  "answer": 1,
+  "exp": "Shared ownership increases compliance.",
+  "sub": "Classroom management and discipline"
+ },
+ {
+  "q": "Tagore's educational philosophy gives special importance to",
+  "options": [
+   "mechanical drill",
+   "strict examination",
+   "bookish study",
+   "education in natural surroundings and creative self-expression"
+  ],
+  "answer": 3,
+  "exp": "He believed in open-air classes and harmony with nature.",
+  "sub": "Gandhi and Tagore"
+ },
+ {
+  "q": "Which is one of Aurobindo's three principles of teaching?",
+  "options": [
+   "The teacher must dictate",
+   "Nothing can be taught; the teacher is a helper and guide",
+   "Punishment is necessary",
+   "The child is a blank slate"
+  ],
+  "answer": 1,
+  "exp": "He said the true teacher helps the pupil to learn rather than imposing knowledge.",
+  "sub": "Vivekananda and Aurobindo"
+ },
+ {
+  "q": "'Negative education', in Rousseau's view, means",
+  "options": [
+   "protecting the child from harmful social influences and letting natural growth occur",
+   "teaching only negative things",
+   "punishing the child",
+   "denying education"
+  ],
+  "answer": 0,
+  "exp": "Rousseau wanted no early bookish teaching, just free natural development.",
+  "sub": "Philosophy of education"
+ },
+ {
+  "q": "Under the RTE Act, teachers may be assigned non-educational duties only for",
+  "options": [
+   "household work of officials",
+   "tax collection",
+   "census, disaster relief and elections",
+   "party campaigns"
+  ],
+  "answer": 2,
+  "exp": "Section 27 limits non-educational duties to these purposes.",
+  "sub": "Right to Education Act 2009"
+ }
+]

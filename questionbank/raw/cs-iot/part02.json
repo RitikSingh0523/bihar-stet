@@ -1,0 +1,398 @@
+[
+ {
+  "q": "Which of the following is the largest unit of data storage?",
+  "options": [
+   "Petabyte",
+   "Exabyte",
+   "Terabyte",
+   "Gigabyte"
+  ],
+  "answer": 1,
+  "exp": "Order: GB < TB < PB < EB.",
+  "sub": "Data units"
+ },
+ {
+  "q": "Which network topology is NOT supported by ZigBee?",
+  "options": [
+   "Star",
+   "Mesh",
+   "Cluster tree",
+   "Bus"
+  ],
+  "answer": 3,
+  "exp": "ZigBee supports star, mesh and cluster-tree topologies only.",
+  "sub": "ZigBee"
+ },
+ {
+  "q": "Which cloud service model gives the consumer control over the operating system, storage and deployed applications, but not over the underlying physical infrastructure?",
+  "options": [
+   "IaaS",
+   "SaaS",
+   "PaaS",
+   "Business process as a service"
+  ],
+  "answer": 0,
+  "exp": "With IaaS the consumer rents virtual machines and manages the OS and above.",
+  "sub": "Cloud computing"
+ },
+ {
+  "q": "Which Government of India platform allows citizens to store and share digital copies of documents such as driving licence and mark sheets?",
+  "options": [
+   "MyGov",
+   "Aarogya Setu",
+   "CoWIN",
+   "DigiLocker"
+  ],
+  "answer": 3,
+  "exp": "DigiLocker is the cloud-based document wallet under Digital India.",
+  "sub": "Digital India"
+ },
+ {
+  "q": "Statement I: A digital footprint is the trail of data left by a user's online activities.\nStatement II: Phishing is a malware attack that encrypts a victim's files and demands ransom.\nWhich option is correct?",
+  "options": [
+   "Statement I is true and Statement II is false",
+   "Both statements are true",
+   "Statement I is false and Statement II is true",
+   "Both statements are false"
+  ],
+  "answer": 0,
+  "exp": "Statement I is true. Statement II describes ransomware; phishing is a deceptive attempt to steal credentials.",
+  "sub": "Social media and ICT"
+ },
+ {
+  "q": "In MS Excel, cells A1, A2 and A3 contain 4, 6 and 5 respectively. What is the value of =SUM(A1:A3)*2?",
+  "options": [
+   "30",
+   "15",
+   "24",
+   "60"
+  ],
+  "answer": 0,
+  "exp": "SUM = 4 + 6 + 5 = 15; 15 × 2 = 30.",
+  "sub": "MS Excel"
+ },
+ {
+  "q": "In MQTT, which Quality of Service (QoS) level guarantees that a message is delivered exactly once?",
+  "options": [
+   "QoS 0",
+   "QoS 2",
+   "QoS 1",
+   "QoS 3"
+  ],
+  "answer": 1,
+  "exp": "QoS 0 is at most once, QoS 1 at least once and QoS 2 exactly once; there is no QoS 3.",
+  "sub": "IoT protocols"
+ },
+ {
+  "q": "The very first block of a blockchain is known as the:",
+  "options": [
+   "Root block",
+   "Origin block",
+   "Genesis block",
+   "Alpha block"
+  ],
+  "answer": 2,
+  "exp": "The first block, which has no previous block, is called the genesis block.",
+  "sub": "Blockchain"
+ },
+ {
+  "q": "In a credit card transaction, the 'acquiring bank' is the bank that:",
+  "options": [
+   "Issues the credit card to the customer",
+   "Prints the card and sends it to the customer",
+   "Regulates all banks in the country",
+   "Holds the merchant's account and processes card payments on its behalf"
+  ],
+  "answer": 3,
+  "exp": "The acquirer serves the merchant; the issuer serves the cardholder.",
+  "sub": "Payment systems"
+ },
+ {
+  "q": "Who invented the World Wide Web in 1989-91 while working at CERN?",
+  "options": [
+   "Tim Berners-Lee",
+   "Vint Cerf",
+   "Marc Andreessen",
+   "Bill Gates"
+  ],
+  "answer": 0,
+  "exp": "Tim Berners-Lee proposed the WWW, HTML and HTTP at CERN.",
+  "sub": "History of computing"
+ },
+ {
+  "q": "The BIOS (basic input/output system) program of a PC is stored in:",
+  "options": [
+   "RAM",
+   "Hard disk",
+   "A ROM/flash chip on the motherboard",
+   "Cache memory"
+  ],
+  "answer": 2,
+  "exp": "BIOS is firmware kept in non-volatile ROM/flash memory so it is available at power-on.",
+  "sub": "Computer fundamentals"
+ },
+ {
+  "q": "Which frequency is used by High Frequency (HF) RFID and NFC systems?",
+  "options": [
+   "13.56 MHz",
+   "125 kHz",
+   "915 MHz",
+   "2.4 GHz"
+  ],
+  "answer": 0,
+  "exp": "HF RFID and NFC operate at 13.56 MHz.",
+  "sub": "RFID"
+ },
+ {
+  "q": "A bank keeps its customer data in its own private cloud but uses a public cloud for handling peak web traffic. This deployment is a:",
+  "options": [
+   "Community cloud",
+   "Public cloud",
+   "Hybrid cloud",
+   "Private cloud"
+  ],
+  "answer": 2,
+  "exp": "Combining private and public clouds is a hybrid cloud.",
+  "sub": "Cloud deployment models"
+ },
+ {
+  "q": "In mobile telephony, SIM stands for:",
+  "options": [
+   "System Identity Module",
+   "Secure Internet Module",
+   "Signal Interface Module",
+   "Subscriber Identity Module"
+  ],
+  "answer": 3,
+  "exp": "A SIM card stores the subscriber's identity and authentication keys.",
+  "sub": "Mobile communication"
+ },
+ {
+  "q": "Issuing of birth certificates online to citizens is an example of which type of e-governance interaction?",
+  "options": [
+   "G2G",
+   "G2C",
+   "G2B",
+   "C2C"
+  ],
+  "answer": 1,
+  "exp": "Government delivering services to citizens is G2C.",
+  "sub": "E-governance in India"
+ },
+ {
+  "q": "In MS Word, which shortcut centre-aligns the selected paragraph?",
+  "options": [
+   "Ctrl+J",
+   "Ctrl+E",
+   "Ctrl+L",
+   "Ctrl+R"
+  ],
+  "answer": 1,
+  "exp": "Ctrl+E centres, Ctrl+J justifies, Ctrl+L left-aligns and Ctrl+R right-aligns.",
+  "sub": "MS Office shortcuts"
+ },
+ {
+  "q": "Which of the following is a Low-Power Wide-Area Network (LPWAN) technology commonly used in IoT?",
+  "options": [
+   "Bluetooth Classic",
+   "LoRaWAN",
+   "Gigabit Ethernet",
+   "HDMI"
+  ],
+  "answer": 1,
+  "exp": "LoRaWAN offers long range at low power and data rate.",
+  "sub": "IoT architecture"
+ },
+ {
+  "q": "Match the instruments with the quantity they measure:\n1. Anemometer  2. Hygrometer  3. Barometer\n(a) Humidity  (b) Atmospheric pressure  (c) Wind speed",
+  "options": [
+   "1-a, 2-b, 3-c",
+   "1-c, 2-a, 3-b",
+   "1-b, 2-c, 3-a",
+   "1-c, 2-b, 3-a"
+  ],
+  "answer": 1,
+  "exp": "Anemometer measures wind speed, hygrometer humidity and barometer atmospheric pressure.",
+  "sub": "Sensors"
+ },
+ {
+  "q": "MongoDB is an example of which type of NoSQL database?",
+  "options": [
+   "Key-value",
+   "Column-family",
+   "Document-oriented",
+   "Graph"
+  ],
+  "answer": 2,
+  "exp": "MongoDB stores data as JSON-like (BSON) documents.",
+  "sub": "Big data"
+ },
+ {
+  "q": "A program that replicates itself by attaching to other executable files and spreads when the infected file is run is a:",
+  "options": [
+   "Virus",
+   "Firewall",
+   "Spyware cookie",
+   "Proxy"
+  ],
+  "answer": 0,
+  "exp": "A virus needs a host file; a worm spreads independently.",
+  "sub": "Social media and ICT"
+ },
+ {
+  "q": "Convert 3 MB into KB, taking 1 MB = 1024 KB.",
+  "options": [
+   "3000 KB",
+   "30720 KB",
+   "3145728 KB",
+   "3072 KB"
+  ],
+  "answer": 3,
+  "exp": "3 × 1024 = 3072 KB; 3145728 is the number of bytes.",
+  "sub": "Data units"
+ },
+ {
+  "q": "Duty cycling in battery-powered wireless sensor nodes is mainly used to:",
+  "options": [
+   "Increase sensor sampling resolution",
+   "Save energy by periodically putting the radio to sleep",
+   "Encrypt the transmitted data",
+   "Select the shortest route to the sink"
+  ],
+  "answer": 1,
+  "exp": "The radio is the major energy consumer, so nodes sleep for most of the time.",
+  "sub": "IoT resource management"
+ },
+ {
+  "q": "Which of the following is a SaaS offering?",
+  "options": [
+   "Google Docs",
+   "Amazon EC2",
+   "Google App Engine",
+   "Amazon Virtual Private Cloud"
+  ],
+  "answer": 0,
+  "exp": "Google Docs is application software delivered over the web.",
+  "sub": "Cloud computing"
+ },
+ {
+  "q": "Which statement about Ethereum smart contracts is correct?",
+  "options": [
+   "They are self-executing programs stored and run on the blockchain",
+   "They are paper agreements digitally scanned",
+   "They can be altered by one administrator at any time",
+   "They work only on Bitcoin"
+  ],
+  "answer": 0,
+  "exp": "A smart contract's code executes automatically when conditions are met and is stored on-chain.",
+  "sub": "Blockchain"
+ },
+ {
+  "q": "Assertion (A): Digital signatures provide non-repudiation.\nReason (R): A digital signature is created with the signer's private key, which only the signer possesses.",
+  "options": [
+   "Both Assertion and Reason are true, but Reason is not the correct explanation of Assertion",
+   "Assertion is true but Reason is false",
+   "Both Assertion and Reason are true, and Reason is the correct explanation of Assertion",
+   "Assertion is false but Reason is true"
+  ],
+  "answer": 2,
+  "exp": "Because only the signer holds the private key, the signer cannot deny having signed, so R explains A.",
+  "sub": "E-commerce security"
+ },
+ {
+  "q": "Which of the following is an output device?",
+  "options": [
+   "Scanner",
+   "Light pen",
+   "Microphone",
+   "Plotter"
+  ],
+  "answer": 3,
+  "exp": "A plotter produces hard-copy drawings; the others are input devices.",
+  "sub": "Computer fundamentals"
+ },
+ {
+  "q": "ZigBee devices operating in the 2.4 GHz band offer a maximum data rate of about:",
+  "options": [
+   "250 kbps",
+   "54 Mbps",
+   "11 Mbps",
+   "1 Gbps"
+  ],
+  "answer": 0,
+  "exp": "IEEE 802.15.4 at 2.4 GHz gives 250 kbps.",
+  "sub": "ZigBee"
+ },
+ {
+  "q": "Which of the following is a Type 2 (hosted) hypervisor?",
+  "options": [
+   "VMware ESXi",
+   "Microsoft Hyper-V Server",
+   "Xen",
+   "Oracle VirtualBox"
+  ],
+  "answer": 3,
+  "exp": "VirtualBox runs on top of a host operating system.",
+  "sub": "Virtualization"
+ },
+ {
+  "q": "The BharatNet project primarily aims to:",
+  "options": [
+   "Provide high-speed broadband connectivity to gram panchayats using optical fibre",
+   "Distribute free laptops to students",
+   "Launch communication satellites",
+   "Digitize land records only"
+  ],
+  "answer": 0,
+  "exp": "BharatNet connects rural gram panchayats under Digital India.",
+  "sub": "Digital India"
+ },
+ {
+  "q": "An ENERGY STAR label on a computer or monitor indicates that the product:",
+  "options": [
+   "Is made entirely of recycled plastic",
+   "Meets energy efficiency guidelines",
+   "Has the fastest processor",
+   "Is free of all software licences"
+  ],
+  "answer": 1,
+  "exp": "ENERGY STAR certifies energy-efficient products.",
+  "sub": "Green computing"
+ },
+ {
+  "q": "Which MS Excel function counts only the cells that contain numbers in a range?",
+  "options": [
+   "COUNT",
+   "COUNTA",
+   "COUNTIF",
+   "LEN"
+  ],
+  "answer": 0,
+  "exp": "COUNT counts numeric cells; COUNTA counts all non-empty cells.",
+  "sub": "MS Excel"
+ },
+ {
+  "q": "In an IoT system, the main role of a gateway is to:",
+  "options": [
+   "Generate electricity for sensors",
+   "Store the sensors' calibration charts",
+   "Bridge local device protocols such as ZigBee or BLE to IP networks and the cloud",
+   "Replace all sensors in the network"
+  ],
+  "answer": 2,
+  "exp": "Gateways translate between constrained-device protocols and the internet.",
+  "sub": "IoT architecture"
+ },
+ {
+  "q": "Statement I: MQTT runs over TCP.\nStatement II: CoAP uses UDP and supports multicast.\nWhich option is correct?",
+  "options": [
+   "Statement I is true and Statement II is false",
+   "Both statements are true",
+   "Statement I is false and Statement II is true",
+   "Both statements are false"
+  ],
+  "answer": 1,
+  "exp": "MQTT is TCP-based; CoAP is UDP-based and supports multicast and resource discovery.",
+  "sub": "IoT protocols"
+ }
+]

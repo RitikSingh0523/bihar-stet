@@ -1,0 +1,458 @@
+[
+ {
+  "q": "Which skill uses simple examples, analogies and a clear sequence to make a concept understandable?",
+  "options": [
+   "Skill of closure",
+   "Skill of reinforcement",
+   "Skill of explaining",
+   "Skill of set induction"
+  ],
+  "answer": 2,
+  "exp": "Explaining involves clear, connected statements with examples and links.",
+  "sub": "Microteaching and teaching skills"
+ },
+ {
+  "q": "In a constructivist lesson plan, the teacher's main role is to:",
+  "options": [
+   "dictate notes",
+   "avoid questions",
+   "only conduct tests",
+   "arrange activities that help students build their own understanding"
+  ],
+  "answer": 3,
+  "exp": "Constructivist plans centre on learner activity and guidance.",
+  "sub": "Lesson planning"
+ },
+ {
+  "q": "An activity-centred curriculum primarily emphasises:",
+  "options": [
+   "learning through doing and experience",
+   "memorising textbooks",
+   "teacher lectures",
+   "examination marks alone"
+  ],
+  "answer": 0,
+  "exp": "Learning is organised around the activities of the learner.",
+  "sub": "Curriculum"
+ },
+ {
+  "q": "Which of the following is NOT a purpose of evaluation?",
+  "options": [
+   "Finding learner difficulties",
+   "Increasing the syllabus without need",
+   "Improving teaching methods",
+   "Providing feedback to students"
+  ],
+  "answer": 1,
+  "exp": "Evaluation aims at feedback, improvement and decision making.",
+  "sub": "Evaluation, formative and summative assessment, CCE"
+ },
+ {
+  "q": "Selection-type items include:",
+  "options": [
+   "short answer and essay",
+   "only essay",
+   "multiple-choice and matching items",
+   "only oral questions"
+  ],
+  "answer": 2,
+  "exp": "In selection items the answer is selected from the options given.",
+  "sub": "Tests, blueprint and item analysis"
+ },
+ {
+  "q": "Construct validity indicates how well a test measures:",
+  "options": [
+   "the length of the test",
+   "the number of examinees",
+   "the printing quality",
+   "a theoretical trait such as intelligence or creativity"
+  ],
+  "answer": 3,
+  "exp": "It checks whether the test measures the abstract construct it claims to.",
+  "sub": "Validity and reliability"
+ },
+ {
+  "q": "Statement I: Remedial teaching should follow a diagnostic procedure.\nStatement II: Remedial teaching can be given without knowing the cause of the difficulty.\nChoose the correct option.",
+  "options": [
+   "Both Statements I and II are true",
+   "Only Statement I is true",
+   "Only Statement II is true",
+   "Both Statements I and II are false"
+  ],
+  "answer": 1,
+  "exp": "Without diagnosis, the remedy may not address the real cause.",
+  "sub": "Diagnostic testing and remedial teaching"
+ },
+ {
+  "q": "Which of the following is a limitation of action research?",
+  "options": [
+   "It cannot solve classroom problems",
+   "Findings are context-specific and cannot be easily generalised",
+   "It ignores the teacher",
+   "It always requires a laboratory"
+  ],
+  "answer": 1,
+  "exp": "The sample is usually a single class or school.",
+  "sub": "Action research and educational research"
+ },
+ {
+  "q": "A Creative Commons licence allows:",
+  "options": [
+   "nobody to use the work",
+   "users to claim ownership",
+   "creators to give others permission to use their work under specified conditions",
+   "only government to use the work"
+  ],
+  "answer": 2,
+  "exp": "It is a flexible copyright licensing system.",
+  "sub": "ICT in education"
+ },
+ {
+  "q": "The Academic Bank of Credit (ABC) proposed in NEP 2020 is meant to:",
+  "options": [
+   "store money of students",
+   "store textbooks",
+   "store examination papers",
+   "digitally store academic credits earned from different institutions"
+  ],
+  "answer": 3,
+  "exp": "It facilitates credit transfer and multiple entry and exit.",
+  "sub": "NEP 2020 and education bodies"
+ },
+ {
+  "q": "A teacher's cooperation with parents is important because:",
+  "options": [
+   "it supports the child's learning and behaviour at home and school",
+   "it reduces the teacher's work to nil",
+   "it avoids lesson planning",
+   "it eliminates examinations"
+  ],
+  "answer": 0,
+  "exp": "Joint effort improves the child's progress.",
+  "sub": "Teacher qualities and professional ethics"
+ },
+ {
+  "q": "A CS teacher giving students of different levels tasks of varying difficulty on the same topic is practising:",
+  "options": [
+   "rote teaching",
+   "differentiated instruction",
+   "uniform dictation",
+   "summative testing only"
+  ],
+  "answer": 1,
+  "exp": "Tasks are adapted to readiness levels.",
+  "sub": "Pedagogy of computer science"
+ },
+ {
+  "q": "Assertion (A): Individual differences must be considered in the teaching-learning process.\nReason (R): Learners differ in ability, interest and pace of learning.\nChoose the best option.",
+  "options": [
+   "Both A and R are true and R is the correct explanation of A",
+   "Both A and R are true but R is not the correct explanation of A",
+   "A is true but R is false",
+   "A is false but R is true"
+  ],
+  "answer": 0,
+  "exp": "Because learners differ in many respects, teaching must be adapted to them.",
+  "sub": "Teaching-learning process"
+ },
+ {
+  "q": "In a 'flipped classroom':",
+  "options": [
+   "students study only in class",
+   "students study content at home and use class time for practice and discussion",
+   "the classroom has no teacher",
+   "homework is never given"
+  ],
+  "answer": 1,
+  "exp": "Instruction is shifted outside the class so class time becomes active learning.",
+  "sub": "Teaching methods"
+ },
+ {
+  "q": "In Dale's cone, 'verbal symbols' (spoken or written words) are placed:",
+  "options": [
+   "at the base",
+   "exactly in the middle",
+   "at the top, being the most abstract",
+   "outside the cone"
+  ],
+  "answer": 2,
+  "exp": "Words are the most abstract form of experience.",
+  "sub": "Teaching aids and audio-visual media"
+ },
+ {
+  "q": "Microteaching is mainly used in:",
+  "options": [
+   "secondary school examinations",
+   "school admission",
+   "student counselling only",
+   "pre-service and in-service teacher training"
+  ],
+  "answer": 3,
+  "exp": "It helps trainees and serving teachers develop specific skills.",
+  "sub": "Microteaching and teaching skills"
+ },
+ {
+  "q": "General objectives differ from specific objectives in that general objectives are:",
+  "options": [
+   "broad aims of teaching a subject, and specific ones are what a lesson achieves",
+   "narrower than specific objectives",
+   "always measurable in minutes",
+   "written by students"
+  ],
+  "answer": 0,
+  "exp": "General objectives are broad; specific objectives are lesson-level and measurable.",
+  "sub": "Lesson planning"
+ },
+ {
+  "q": "Statement I: The hidden curriculum is part of the officially written syllabus.\nStatement II: The hidden curriculum can influence the values of students.\nChoose the correct option.",
+  "options": [
+   "Both Statements I and II are true",
+   "Only Statement I is true",
+   "Only Statement II is true",
+   "Both Statements I and II are false"
+  ],
+  "answer": 2,
+  "exp": "The hidden curriculum is unwritten, yet shapes values and attitudes.",
+  "sub": "Curriculum"
+ },
+ {
+  "q": "Grading is preferred over marking in CCE mainly because it:",
+  "options": [
+   "increases the examination load",
+   "hides learner performance",
+   "reduces unhealthy competition and stress among students",
+   "is easier to write"
+  ],
+  "answer": 2,
+  "exp": "Grades express performance in bands and lower the pressure of exact marks.",
+  "sub": "Evaluation, formative and summative assessment, CCE"
+ },
+ {
+  "q": "Statement I: Objective-type questions can cover a large amount of content in a short time.\nStatement II: Objective-type questions are best to test the writing skill of students.\nChoose the correct option.",
+  "options": [
+   "Only Statement I is true",
+   "Only Statement II is true",
+   "Both statements are true",
+   "Both statements are false"
+  ],
+  "answer": 0,
+  "exp": "Objective items sample wide content but do not test writing ability.",
+  "sub": "Tests, blueprint and item analysis"
+ },
+ {
+  "q": "Practicability (usability) of a test relates to:",
+  "options": [
+   "ease of administration, scoring and cost",
+   "only its validity",
+   "only its reliability",
+   "only its difficulty level"
+  ],
+  "answer": 0,
+  "exp": "A test should be practical in time, cost and scoring effort.",
+  "sub": "Validity and reliability"
+ },
+ {
+  "q": "A student with an IQ of about 140 is generally classified as:",
+  "options": [
+   "slow learner",
+   "gifted",
+   "average",
+   "mentally retarded"
+  ],
+  "answer": 1,
+  "exp": "IQ above about 130 is generally regarded as gifted.",
+  "sub": "Diagnostic testing and remedial teaching"
+ },
+ {
+  "q": "Qualitative research mainly collects data in the form of:",
+  "options": [
+   "only numbers",
+   "only graphs",
+   "words, observations and descriptions",
+   "only formulas"
+  ],
+  "answer": 2,
+  "exp": "It uses interviews, observations and documents to describe meanings.",
+  "sub": "Action research and educational research"
+ },
+ {
+  "q": "Which of the following is a good practice for cyber safety in school?",
+  "options": [
+   "Sharing passwords with friends",
+   "Opening unknown email attachments",
+   "Using the same simple password everywhere",
+   "Using strong passwords and not sharing them"
+  ],
+  "answer": 3,
+  "exp": "Strong, private passwords protect accounts.",
+  "sub": "ICT in education"
+ },
+ {
+  "q": "NEP 2020 replaced which earlier national policy on education?",
+  "options": [
+   "National Policy on Education, 1986 (modified in 1992)",
+   "Kothari Commission, 1964",
+   "Sargent Report, 1944",
+   "Indian Education Commission, 1882"
+  ],
+  "answer": 0,
+  "exp": "NEP 2020 is the first education policy of the 21st century, succeeding the 1986 policy.",
+  "sub": "NEP 2020 and education bodies"
+ },
+ {
+  "q": "Statement I: A teacher should keep updating subject knowledge.\nStatement II: Once a teacher gets a degree, there is no need for further learning.\nChoose the correct option.",
+  "options": [
+   "Both Statements I and II are true",
+   "Only Statement II is true",
+   "Both Statements I and II are false",
+   "Only Statement I is true"
+  ],
+  "answer": 3,
+  "exp": "Knowledge changes fast, so a teacher must keep learning.",
+  "sub": "Teacher qualities and professional ethics"
+ },
+ {
+  "q": "Digital citizenship education includes teaching students about:",
+  "options": [
+   "only typing speed",
+   "only hardware repair",
+   "responsible and ethical use of technology, privacy and netiquette",
+   "only gaming"
+  ],
+  "answer": 2,
+  "exp": "It prepares learners for safe and ethical use of ICT.",
+  "sub": "Pedagogy of computer science"
+ },
+ {
+  "q": "Which is the correct sequence of the maxims 'known to unknown' used for teaching a new CS topic?",
+  "options": [
+   "Start with the most advanced topic and go backward",
+   "Link the new topic to what students already know and then extend it",
+   "Teach unrelated topics at random",
+   "Begin with the unknown and then revise the known"
+  ],
+  "answer": 1,
+  "exp": "Using prior knowledge as the starting point is the 'known to unknown' maxim.",
+  "sub": "Teaching-learning process"
+ },
+ {
+  "q": "Match the method with its proponent:\nP. Project method\nQ. Heuristic method\nR. Dalton Plan\nS. Kindergarten system",
+  "options": [
+   "P-Kilpatrick, Q-Armstrong, R-Parkhurst, S-Froebel",
+   "P-Armstrong, Q-Kilpatrick, R-Froebel, S-Parkhurst",
+   "P-Parkhurst, Q-Froebel, R-Kilpatrick, S-Armstrong",
+   "P-Froebel, Q-Parkhurst, R-Armstrong, S-Kilpatrick"
+  ],
+  "answer": 0,
+  "exp": "Kilpatrick - project; Armstrong - heuristic; Parkhurst - Dalton; Froebel - kindergarten.",
+  "sub": "Teaching methods"
+ },
+ {
+  "q": "Statement I: Audio-visual aids can make abstract ideas easier to understand.\nStatement II: Audio-visual aids should be used only at the end of a lesson.\nChoose the correct option.",
+  "options": [
+   "Both Statements I and II are true",
+   "Only Statement I is true",
+   "Only Statement II is true",
+   "Both Statements I and II are false"
+  ],
+  "answer": 1,
+  "exp": "Aids are used wherever they help understanding, not only at the end.",
+  "sub": "Teaching aids and audio-visual media"
+ },
+ {
+  "q": "After a first microteaching session, the trainee should:",
+  "options": [
+   "modify the lesson using the feedback and teach it again",
+   "stop the practice permanently",
+   "give a test to the pupils",
+   "change the topic every time"
+  ],
+  "answer": 0,
+  "exp": "Re-plan and re-teach follow feedback in the cycle.",
+  "sub": "Microteaching and teaching skills"
+ },
+ {
+  "q": "Teaching-learning material (TLM) is listed in the lesson plan so that:",
+  "options": [
+   "students can buy them",
+   "the aids needed are decided and arranged in advance",
+   "the lesson can be shortened",
+   "the supervisor can award marks"
+  ],
+  "answer": 1,
+  "exp": "Advance planning ensures aids are available and well used.",
+  "sub": "Lesson planning"
+ },
+ {
+  "q": "Which of the following is NOT a component of curriculum?",
+  "options": [
+   "Objectives",
+   "Content",
+   "School building construction cost",
+   "Evaluation"
+  ],
+  "answer": 2,
+  "exp": "The usual components are objectives, content, learning experiences and evaluation.",
+  "sub": "Curriculum"
+ },
+ {
+  "q": "Statement I: Formative evaluation is a continuous process.\nStatement II: Summative evaluation is generally conducted at the end of a term or course.\nChoose the correct option.",
+  "options": [
+   "Only Statement I is true",
+   "Only Statement II is true",
+   "Both Statements I and II are false",
+   "Both Statements I and II are true"
+  ],
+  "answer": 3,
+  "exp": "Formative is ongoing; summative is terminal.",
+  "sub": "Evaluation, formative and summative assessment, CCE"
+ },
+ {
+  "q": "The 'stem' of a multiple-choice question is:",
+  "options": [
+   "the question or incomplete statement presented to the learner",
+   "the list of wrong options",
+   "the key",
+   "the marking scheme"
+  ],
+  "answer": 0,
+  "exp": "The stem poses the problem; options follow.",
+  "sub": "Tests, blueprint and item analysis"
+ },
+ {
+  "q": "Assertion (A): A test can be reliable without being valid.\nReason (R): Reliability only ensures consistency, not that the right trait is measured.\nChoose the correct option.",
+  "options": [
+   "Both A and R are true but R does not explain A",
+   "Both A and R are true and R explains A",
+   "A is true but R is false",
+   "A is false but R is true"
+  ],
+  "answer": 1,
+  "exp": "Consistent measurement of the wrong thing is reliable but invalid.",
+  "sub": "Validity and reliability"
+ },
+ {
+  "q": "Slow learners are usually those with an IQ in the range of about:",
+  "options": [
+   "110 to 120",
+   "130 to 140",
+   "70 to 90",
+   "above 140"
+  ],
+  "answer": 2,
+  "exp": "Slow learners are below average but not mentally disabled.",
+  "sub": "Diagnostic testing and remedial teaching"
+ },
+ {
+  "q": "Statement I: Action research begins with identifying a problem in one's own practice.\nStatement II: Action research is conducted only by external experts.\nChoose the correct option.",
+  "options": [
+   "Both statements are true",
+   "Only Statement I is true",
+   "Only Statement II is true",
+   "Both statements are false"
+  ],
+  "answer": 1,
+  "exp": "The teacher-practitioner identifies and investigates the problem.",
+  "sub": "Action research and educational research"
+ }
+]

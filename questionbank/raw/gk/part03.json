@@ -1,0 +1,242 @@
+[
+ {
+  "q": "The Doctrine of Lapse was introduced by which Governor-General?",
+  "options": [
+   "Lord Cornwallis",
+   "Lord Wellesley",
+   "Lord Dalhousie",
+   "Lord Curzon"
+  ],
+  "answer": 2,
+  "exp": "Dalhousie (1848-56) annexed states such as Satara, Jhansi and Nagpur by the Doctrine of Lapse.",
+  "sub": "Modern history"
+ },
+ {
+  "q": "Indira Point, the southernmost point of India, is located in",
+  "options": [
+   "Lakshadweep",
+   "Kanyakumari",
+   "Port Blair",
+   "Great Nicobar"
+  ],
+  "answer": 3,
+  "exp": "Indira Point (6°45'N) is in Great Nicobar Island of the Andaman and Nicobar Islands.",
+  "sub": "Geography"
+ },
+ {
+  "q": "Which city of Bihar is popularly known as the 'Silk City'?",
+  "options": [
+   "Gaya",
+   "Bhagalpur",
+   "Purnia",
+   "Munger"
+  ],
+  "answer": 1,
+  "exp": "Bhagalpur is famous for Tussar (Bhagalpuri) silk.",
+  "sub": "Bihar culture"
+ },
+ {
+  "q": "Fundamental Rights are contained in which Part of the Indian Constitution?",
+  "options": [
+   "Part III",
+   "Part II",
+   "Part IV",
+   "Part IV-A"
+  ],
+  "answer": 0,
+  "exp": "Part III (Articles 12-35) contains Fundamental Rights.",
+  "sub": "Polity"
+ },
+ {
+  "q": "India's first lunar probe, Chandrayaan-1, was launched in",
+  "options": [
+   "2003",
+   "2008",
+   "2005",
+   "2013"
+  ],
+  "answer": 1,
+  "exp": "Chandrayaan-1 was launched by PSLV-C11 on 22 October 2008.",
+  "sub": "Science and technology"
+ },
+ {
+  "q": "Which Gupta ruler is called the 'Napoleon of India' by V. A. Smith?",
+  "options": [
+   "Skandagupta",
+   "Chandragupta II",
+   "Samudragupta",
+   "Kumaragupta I"
+  ],
+  "answer": 2,
+  "exp": "Samudragupta's many conquests, recorded in the Allahabad Pillar inscription, earned him the title.",
+  "sub": "Ancient history"
+ },
+ {
+  "q": "Which Indian city is popularly called the 'Pink City'?",
+  "options": [
+   "Jaisalmer",
+   "Jodhpur",
+   "Udaipur",
+   "Jaipur"
+  ],
+  "answer": 3,
+  "exp": "Jaipur's old city was painted pink in 1876 to welcome the Prince of Wales.",
+  "sub": "Geography"
+ },
+ {
+  "q": "What is the state bird of Bihar?",
+  "options": [
+   "House sparrow (Gauraiya)",
+   "Peacock",
+   "Sarus crane",
+   "Koel"
+  ],
+  "answer": 0,
+  "exp": "The house sparrow was declared the state bird of Bihar.",
+  "sub": "Bihar GK"
+ },
+ {
+  "q": "Who administers the oath of office to the President of India?",
+  "options": [
+   "Speaker of Lok Sabha",
+   "Vice-President",
+   "Chief Justice of India",
+   "Prime Minister"
+  ],
+  "answer": 2,
+  "exp": "Under Article 60, the oath is administered by the Chief Justice of India or the senior-most judge available.",
+  "sub": "Polity"
+ },
+ {
+  "q": "Mining, fishing and agriculture belong to which sector of the economy?",
+  "options": [
+   "Secondary sector",
+   "Primary sector",
+   "Tertiary sector",
+   "Quaternary sector"
+  ],
+  "answer": 1,
+  "exp": "The primary sector extracts natural resources directly from nature.",
+  "sub": "Economy"
+ },
+ {
+  "q": "Match the battle with its year.\nP. First Battle of Panipat   Q. Battle of Haldighati   R. Battle of Buxar\n1. 1764   2. 1526   3. 1576",
+  "options": [
+   "P-2, Q-3, R-1",
+   "P-3, Q-2, R-1",
+   "P-2, Q-1, R-3",
+   "P-1, Q-3, R-2"
+  ],
+  "answer": 0,
+  "exp": "Panipat I was fought in 1526, Haldighati in 1576 and Buxar in 1764.",
+  "sub": "Medieval and modern history"
+ },
+ {
+  "q": "The book 'Wings of Fire' is the autobiography of",
+  "options": [
+   "A. P. J. Abdul Kalam",
+   "Satish Dhawan",
+   "Vikram Sarabhai",
+   "Homi J. Bhabha"
+  ],
+  "answer": 0,
+  "exp": "'Wings of Fire' (1999) was written by A. P. J. Abdul Kalam with Arun Tiwari.",
+  "sub": "Books and authors"
+ },
+ {
+  "q": "Who was the first Indian woman to win an individual Olympic medal?",
+  "options": [
+   "P. T. Usha",
+   "Karnam Malleswari",
+   "Mary Kom",
+   "Saina Nehwal"
+  ],
+  "answer": 1,
+  "exp": "Karnam Malleswari won weightlifting bronze at Sydney 2000.",
+  "sub": "Sports"
+ },
+ {
+  "q": "National Youth Day in India is celebrated on the birth anniversary of",
+  "options": [
+   "Mahatma Gandhi",
+   "Subhas Chandra Bose",
+   "Swami Vivekananda",
+   "Jawaharlal Nehru"
+  ],
+  "answer": 2,
+  "exp": "National Youth Day is observed on 12 January, Swami Vivekananda's birthday.",
+  "sub": "Important days"
+ },
+ {
+  "q": "The national song of India, 'Vande Mataram', was composed by",
+  "options": [
+   "Bankim Chandra Chattopadhyay",
+   "Rabindranath Tagore",
+   "Muhammad Iqbal",
+   "Sarojini Naidu"
+  ],
+  "answer": 0,
+  "exp": "Vande Mataram appeared in Bankim Chandra's novel Anandamath (1882); Tagore wrote the national anthem.",
+  "sub": "National symbols"
+ },
+ {
+  "q": "Indian Standard Time is calculated on the basis of which longitude?",
+  "options": [
+   "90° E",
+   "68°7′ E",
+   "75° E",
+   "82°30′ E"
+  ],
+  "answer": 3,
+  "exp": "The standard meridian 82°30′ E passes near Mirzapur; IST is UTC+5:30.",
+  "sub": "Geography"
+ },
+ {
+  "q": "Dr. Rajendra Prasad, the first President of India, was born at Ziradei in which present-day Bihar district?",
+  "options": [
+   "Siwan",
+   "Saran",
+   "Gopalganj",
+   "Vaishali"
+  ],
+  "answer": 0,
+  "exp": "Ziradei is a village in Siwan district.",
+  "sub": "Bihar personalities"
+ },
+ {
+  "q": "Under which Article can the President proclaim a National Emergency?",
+  "options": [
+   "Article 365",
+   "Article 356",
+   "Article 360",
+   "Article 352"
+  ],
+  "answer": 3,
+  "exp": "Article 352 deals with emergency due to war, external aggression or armed rebellion; 356 is State Emergency, 360 Financial Emergency.",
+  "sub": "Polity"
+ },
+ {
+  "q": "Who is regarded as the Father of the Indian space programme?",
+  "options": [
+   "Satish Dhawan",
+   "Homi J. Bhabha",
+   "Vikram Sarabhai",
+   "A. P. J. Abdul Kalam"
+  ],
+  "answer": 2,
+  "exp": "Vikram Sarabhai founded ISRO's precursor INCOSPAR; Bhabha is father of the nuclear programme.",
+  "sub": "Science and technology"
+ },
+ {
+  "q": "Which of the following is a Kharif crop?",
+  "options": [
+   "Wheat",
+   "Paddy",
+   "Gram",
+   "Mustard"
+  ],
+  "answer": 1,
+  "exp": "Kharif crops are sown with the monsoon (June-July), e.g. paddy, maize; wheat, gram and mustard are Rabi crops.",
+  "sub": "Economy and agriculture"
+ }
+]

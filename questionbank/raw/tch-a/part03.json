@@ -1,0 +1,362 @@
+[
+ {
+  "q": "A child learns to control the shoulders and arms before the fingers. This illustrates",
+  "options": [
+   "cephalocaudal development",
+   "proximodistal development",
+   "critical period",
+   "regression"
+  ],
+  "answer": 1,
+  "exp": "Proximodistal development proceeds from the centre of the body to the periphery.",
+  "sub": "Growth and development"
+ },
+ {
+  "q": "Which age range corresponds to Piaget's concrete operational stage?",
+  "options": [
+   "About 7 to 11 years",
+   "About 0 to 2 years",
+   "About 2 to 7 years",
+   "About 11 years onwards"
+  ],
+  "answer": 0,
+  "exp": "Concrete operational thinking develops at roughly 7-11 years.",
+  "sub": "Piaget"
+ },
+ {
+  "q": "Vygotsky regarded 'private speech' (children talking to themselves) as",
+  "options": [
+   "a sign of mental illness",
+   "a form of egocentric speech that must be stopped",
+   "a tool for thinking and self-regulation that later becomes inner speech",
+   "a proof of lack of intelligence"
+  ],
+  "answer": 2,
+  "exp": "For Vygotsky self-talk guides problem-solving and gradually becomes silent inner speech.",
+  "sub": "Vygotsky"
+ },
+ {
+  "q": "A student says, 'I will not copy in the exam because rules must be followed to keep society in order.' This is",
+  "options": [
+   "preconventional level, instrumental orientation",
+   "postconventional level, universal principles",
+   "pre-moral stage",
+   "conventional level, law and order orientation"
+  ],
+  "answer": 3,
+  "exp": "Respect for rules and social order is Stage 4 of the conventional level.",
+  "sub": "Kohlberg"
+ },
+ {
+  "q": "Which crisis is typical of the school-age years of 6 to 12?",
+  "options": [
+   "Initiative versus guilt",
+   "Identity versus role confusion",
+   "Autonomy versus shame and doubt",
+   "Industry versus inferiority"
+  ],
+  "answer": 3,
+  "exp": "Children learn skills and either feel competent (industry) or inadequate (inferiority).",
+  "sub": "Erikson"
+ },
+ {
+  "q": "Repeated presentation of the conditioned stimulus without the unconditioned stimulus leads to",
+  "options": [
+   "generalisation",
+   "extinction",
+   "discrimination",
+   "shaping"
+  ],
+  "answer": 1,
+  "exp": "The conditioned response gradually weakens and disappears.",
+  "sub": "Classical and operant conditioning"
+ },
+ {
+  "q": "Thorndike's Law of Readiness states that",
+  "options": [
+   "learning is more effective when the learner is prepared to act",
+   "learning needs no preparation",
+   "readiness depends only on age",
+   "punishment is necessary"
+  ],
+  "answer": 0,
+  "exp": "When a conduction unit is ready to act, acting is satisfying.",
+  "sub": "Other learning theories"
+ },
+ {
+  "q": "A student reads novels purely for the joy of reading. This is",
+  "options": [
+   "extrinsic motivation",
+   "amotivation",
+   "intrinsic motivation",
+   "negative reinforcement"
+  ],
+  "answer": 2,
+  "exp": "Intrinsic motivation comes from interest or enjoyment of the activity itself.",
+  "sub": "Motivation"
+ },
+ {
+  "q": "Spearman's two-factor theory proposed",
+  "options": [
+   "seven primary mental abilities",
+   "three types of intelligence",
+   "eight intelligences",
+   "a general factor (g) and specific factors (s)"
+  ],
+  "answer": 3,
+  "exp": "Spearman held that all tasks involve g plus task-specific s.",
+  "sub": "Intelligence"
+ },
+ {
+  "q": "Producing ideas from many different categories shows",
+  "options": [
+   "flexibility",
+   "fluency",
+   "elaboration",
+   "convergence"
+  ],
+  "answer": 0,
+  "exp": "Flexibility is the ability to shift categories or approaches.",
+  "sub": "Creativity"
+ },
+ {
+  "q": "The id operates on the",
+  "options": [
+   "reality principle",
+   "moral principle",
+   "pleasure principle",
+   "social principle"
+  ],
+  "answer": 2,
+  "exp": "The id seeks immediate gratification of instincts.",
+  "sub": "Personality"
+ },
+ {
+  "q": "Erikson's 'identity crisis' is mainly associated with",
+  "options": [
+   "infancy",
+   "adolescence",
+   "childhood",
+   "old age"
+  ],
+  "answer": 1,
+  "exp": "Adolescents struggle with who they are and what role to adopt.",
+  "sub": "Adolescence"
+ },
+ {
+  "q": "Learners who prefer diagrams and charts are mainly",
+  "options": [
+   "auditory learners",
+   "kinaesthetic learners",
+   "visual learners",
+   "tactile only"
+  ],
+  "answer": 2,
+  "exp": "A preference for seeing information is the visual style.",
+  "sub": "Individual differences"
+ },
+ {
+  "q": "Difficulty in handwriting and expressing thoughts in writing is called",
+  "options": [
+   "dysgraphia",
+   "dyslexia",
+   "dyscalculia",
+   "dysphasia"
+  ],
+  "answer": 0,
+  "exp": "Dysgraphia is a writing disability.",
+  "sub": "Gifted and special education"
+ },
+ {
+  "q": "Which is the most important quality of an effective counsellor?",
+  "options": [
+   "Strictness",
+   "Giving orders",
+   "Judging the client",
+   "Empathy and good listening"
+  ],
+  "answer": 3,
+  "exp": "Empathic listening builds trust and rapport.",
+  "sub": "Guidance and counselling"
+ },
+ {
+  "q": "A student is whispering during the lesson. The teacher's best first step is",
+  "options": [
+   "shouting at the student",
+   "using a non-verbal cue or moving close to the student",
+   "sending the student out",
+   "publicly shaming the student"
+  ],
+  "answer": 1,
+  "exp": "Least intrusive interventions maintain the lesson flow.",
+  "sub": "Classroom management and discipline"
+ },
+ {
+  "q": "Basic education of Gandhi centred around",
+  "options": [
+   "examinations",
+   "religion only",
+   "a productive craft",
+   "sports only"
+  ],
+  "answer": 2,
+  "exp": "Learning was to be correlated with a useful craft such as spinning or agriculture.",
+  "sub": "Gandhi and Tagore"
+ },
+ {
+  "q": "Vivekananda addressed the Parliament of World's Religions in Chicago in",
+  "options": [
+   "1893",
+   "1897",
+   "1902",
+   "1885"
+  ],
+  "answer": 0,
+  "exp": "His speech made in 1893 became famous.",
+  "sub": "Vivekananda and Aurobindo"
+ },
+ {
+  "q": "The project method was developed by",
+  "options": [
+   "Froebel",
+   "W. H. Kilpatrick",
+   "Montessori",
+   "Herbart"
+  ],
+  "answer": 1,
+  "exp": "Kilpatrick developed it from Dewey's ideas.",
+  "sub": "Philosophy of education"
+ },
+ {
+  "q": "Under the RTE Act, private unaided schools must reserve what percentage of seats at entry level for weaker and disadvantaged sections?",
+  "options": [
+   "10 percent",
+   "50 percent",
+   "15 percent",
+   "25 percent"
+  ],
+  "answer": 3,
+  "exp": "Section 12(1)(c) mandates 25 percent reservation.",
+  "sub": "Right to Education Act 2009"
+ },
+ {
+  "q": "Which of the following is NOT a general principle of growth and development?",
+  "options": [
+   "Development follows a definite sequence",
+   "Development is continuous",
+   "Development proceeds from specific responses to general responses",
+   "Development proceeds from general to specific responses"
+  ],
+  "answer": 2,
+  "exp": "Development moves from general to specific (e.g., whole-hand grasp to pincer grasp), not from specific to general.",
+  "sub": "Growth and development"
+ },
+ {
+  "q": "Hypothetico-deductive reasoning and abstract thinking are typical of the",
+  "options": [
+   "sensorimotor stage",
+   "preoperational stage",
+   "concrete operational stage",
+   "formal operational stage"
+  ],
+  "answer": 3,
+  "exp": "Formal operational thinkers (11+ years) reason about hypothetical and abstract problems systematically.",
+  "sub": "Piaget"
+ },
+ {
+  "q": "Piaget saw egocentric speech as immature, whereas Vygotsky saw it as",
+  "options": [
+   "helpful for guiding thought and action",
+   "harmful for development",
+   "unrelated to cognition",
+   "a result of reinforcement"
+  ],
+  "answer": 0,
+  "exp": "Vygotsky considered private speech a bridge between social speech and inner thought.",
+  "sub": "Vygotsky"
+ },
+ {
+  "q": "The 'good boy - nice girl' orientation belongs to Kohlberg's",
+  "options": [
+   "Stage 1",
+   "Stage 3",
+   "Stage 5",
+   "Stage 6"
+  ],
+  "answer": 1,
+  "exp": "Stage 3 is guided by approval from others and maintaining good relationships.",
+  "sub": "Kohlberg"
+ },
+ {
+  "q": "The central task of adolescence in Erikson's theory is",
+  "options": [
+   "intimacy versus isolation",
+   "identity versus role confusion",
+   "generativity versus stagnation",
+   "trust versus mistrust"
+  ],
+  "answer": 1,
+  "exp": "Adolescents search for a sense of self and future roles.",
+  "sub": "Erikson"
+ },
+ {
+  "q": "The sudden reappearance of an extinguished conditioned response after a rest period is called",
+  "options": [
+   "stimulus generalisation",
+   "discrimination",
+   "spontaneous recovery",
+   "latent learning"
+  ],
+  "answer": 2,
+  "exp": "Spontaneous recovery occurs after a pause following extinction.",
+  "sub": "Classical and operant conditioning"
+ },
+ {
+  "q": "Bandura's social learning theory states that people learn by",
+  "options": [
+   "conditioned reflexes only",
+   "random trial and error",
+   "maturation only",
+   "observing and imitating models"
+  ],
+  "answer": 3,
+  "exp": "Bandura showed learning occurs through observation of others.",
+  "sub": "Other learning theories"
+ },
+ {
+  "q": "A student studies only to receive a gift promised by parents. This is",
+  "options": [
+   "extrinsic motivation",
+   "intrinsic motivation",
+   "self-actualisation",
+   "latent motivation"
+  ],
+  "answer": 0,
+  "exp": "Extrinsic motivation depends on external rewards.",
+  "sub": "Motivation"
+ },
+ {
+  "q": "Thurstone's theory of intelligence is about",
+  "options": [
+   "triarchic abilities",
+   "fluid and crystallised abilities",
+   "primary mental abilities",
+   "emotional abilities"
+  ],
+  "answer": 2,
+  "exp": "Thurstone identified seven independent primary mental abilities.",
+  "sub": "Intelligence"
+ },
+ {
+  "q": "Which is the correct order of stages in Wallas's model of the creative process?",
+  "options": [
+   "Incubation, preparation, verification, illumination",
+   "Preparation, illumination, incubation, verification",
+   "Illumination, preparation, incubation, verification",
+   "Preparation, incubation, illumination, verification"
+  ],
+  "answer": 3,
+  "exp": "Wallas described four stages in this order.",
+  "sub": "Creativity"
+ }
+]

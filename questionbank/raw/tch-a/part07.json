@@ -1,0 +1,362 @@
+[
+ {
+  "q": "Bronfenbrenner's ecological theory calls the immediate settings such as family, school and peers the",
+  "options": [
+   "macrosystem",
+   "microsystem",
+   "exosystem",
+   "chronosystem"
+  ],
+  "answer": 1,
+  "exp": "The microsystem is the innermost layer containing the person's direct, face-to-face settings.",
+  "sub": "Growth and development"
+ },
+ {
+  "q": "Which of the following is NOT a feature of the preoperational stage?",
+  "options": [
+   "Egocentric thinking",
+   "Animistic thinking",
+   "Use of symbols and language",
+   "Mastery of reversible mental operations"
+  ],
+  "answer": 3,
+  "exp": "Lack of reversibility and logical operations is typical of this stage; mastery of them is concrete operational.",
+  "sub": "Piaget"
+ },
+ {
+  "q": "Which of these is NOT a Vygotskian idea?",
+  "options": [
+   "Cultural tools such as language shape thinking",
+   "Learning can lead development",
+   "Development must precede and limit all learning in fixed stages",
+   "Cooperation with peers promotes growth"
+  ],
+  "answer": 2,
+  "exp": "Fixed stage-limited development is Piagetian; Vygotsky said good instruction leads development.",
+  "sub": "Vygotsky"
+ },
+ {
+  "q": "Which term is NOT a Kohlberg level or stage?",
+  "options": [
+   "Autonomous morality",
+   "Preconventional morality",
+   "Conventional morality",
+   "Postconventional morality"
+  ],
+  "answer": 0,
+  "exp": "Autonomous morality is Piaget's term for the later stage of moral thinking.",
+  "sub": "Kohlberg"
+ },
+ {
+  "q": "Ego integrity versus despair is the final stage, occurring in",
+  "options": [
+   "middle adulthood",
+   "adolescence",
+   "early childhood",
+   "late adulthood"
+  ],
+  "answer": 3,
+  "exp": "Old people review their lives and feel either fulfilment or regret.",
+  "sub": "Erikson"
+ },
+ {
+  "q": "Which schedule of reinforcement produces high response rates and the greatest resistance to extinction?",
+  "options": [
+   "Variable ratio",
+   "Fixed interval",
+   "Continuous",
+   "Fixed ratio with predictable timing"
+  ],
+  "answer": 0,
+  "exp": "Unpredictable payoffs as in gambling make variable-ratio behaviour very persistent.",
+  "sub": "Classical and operant conditioning"
+ },
+ {
+  "q": "Kohler's experiments with the chimpanzee Sultan are cited as evidence for",
+  "options": [
+   "trial and error learning",
+   "classical conditioning",
+   "insight learning",
+   "operant conditioning"
+  ],
+  "answer": 2,
+  "exp": "The ape suddenly solved the problem by combining two sticks.",
+  "sub": "Other learning theories"
+ },
+ {
+  "q": "Self-determination theory states that intrinsic motivation grows when the needs for autonomy, competence and",
+  "options": [
+   "money",
+   "relatedness",
+   "fame",
+   "punishment"
+  ],
+  "answer": 1,
+  "exp": "Deci and Ryan identified autonomy, competence and relatedness as basic needs.",
+  "sub": "Motivation"
+ },
+ {
+  "q": "Sternberg's triarchic theory includes",
+  "options": [
+   "verbal, numerical and spatial intelligence",
+   "logical, musical and kinaesthetic intelligence",
+   "fluid, crystallised and emotional intelligence",
+   "analytical, creative and practical intelligence"
+  ],
+  "answer": 3,
+  "exp": "The three components are analytical, creative and practical.",
+  "sub": "Intelligence"
+ },
+ {
+  "q": "Which of the following is likely to hinder creativity in the classroom?",
+  "options": [
+   "Freedom to explore",
+   "Encouragement of curiosity",
+   "Excessive fear of failure and strict conformity",
+   "Tolerance of mistakes"
+  ],
+  "answer": 2,
+  "exp": "Fear and rigid conformity suppress original ideas.",
+  "sub": "Creativity"
+ },
+ {
+  "q": "A person who hates a colleague but says 'He hates me' is using",
+  "options": [
+   "projection",
+   "reaction formation",
+   "displacement",
+   "denial"
+  ],
+  "answer": 0,
+  "exp": "Projection attributes one's own unacceptable feelings to others.",
+  "sub": "Personality"
+ },
+ {
+  "q": "Which cognitive development is typical of adolescence according to Piaget?",
+  "options": [
+   "Object permanence",
+   "Abstract and hypothetical reasoning",
+   "Animistic thinking",
+   "Centration"
+  ],
+  "answer": 1,
+  "exp": "Formal operations appear in adolescence.",
+  "sub": "Adolescence"
+ },
+ {
+  "q": "Most students in a class fall in the average ability range. This is according to",
+  "options": [
+   "the law of effect",
+   "the zone of proximal development",
+   "the principle of reinforcement",
+   "the normal distribution curve"
+  ],
+  "answer": 3,
+  "exp": "Abilities are distributed normally, with most scores near the mean.",
+  "sub": "Individual differences"
+ },
+ {
+  "q": "The Rights of Persons with Disabilities Act was passed in",
+  "options": [
+   "1995",
+   "2009",
+   "2016",
+   "2005"
+  ],
+  "answer": 2,
+  "exp": "The RPwD Act 2016 recognises 21 disabilities and replaced the 1995 Act.",
+  "sub": "Gifted and special education"
+ },
+ {
+  "q": "A teacher notices a student with severe depression. The teacher should",
+  "options": [
+   "scold the student",
+   "refer the student to a qualified counsellor or psychologist",
+   "ignore the issue",
+   "tell classmates about it"
+  ],
+  "answer": 1,
+  "exp": "Serious disturbances need professional help.",
+  "sub": "Guidance and counselling"
+ },
+ {
+  "q": "Which of the following should a teacher NOT do?",
+  "options": [
+   "Humiliate a student in front of the class",
+   "Praise good behaviour",
+   "Maintain routines",
+   "Give clear instructions"
+  ],
+  "answer": 0,
+  "exp": "Public humiliation damages self-esteem and is unethical.",
+  "sub": "Classroom management and discipline"
+ },
+ {
+  "q": "In which of Tagore's writings does he criticise rote education through a story of a caged bird?",
+  "options": [
+   "The Parrot's Training",
+   "Gitanjali",
+   "Gora",
+   "Chokher Bali"
+  ],
+  "answer": 0,
+  "exp": "In The Parrot's Training the bird dies from being stuffed with pages of books.",
+  "sub": "Gandhi and Tagore"
+ },
+ {
+  "q": "Aurobindo established an ashram at",
+  "options": [
+   "Wardha",
+   "Santiniketan",
+   "Belur",
+   "Pondicherry"
+  ],
+  "answer": 3,
+  "exp": "Sri Aurobindo Ashram was set up in Pondicherry in 1926.",
+  "sub": "Vivekananda and Aurobindo"
+ },
+ {
+  "q": "Match the person with the philosophy: (1) Plato (2) Aristotle (3) Dewey; (a) Pragmatism (b) Realism (c) Idealism.",
+  "options": [
+   "1-a, 2-b, 3-c",
+   "1-c, 2-b, 3-a",
+   "1-b, 2-c, 3-a",
+   "1-c, 2-a, 3-b"
+  ],
+  "answer": 1,
+  "exp": "Plato was an idealist, Aristotle a realist, and Dewey a pragmatist.",
+  "sub": "Philosophy of education"
+ },
+ {
+  "q": "Teachers are prohibited from engaging in private tuition under",
+  "options": [
+   "Section 12",
+   "Section 4",
+   "Section 28",
+   "Section 21"
+  ],
+  "answer": 2,
+  "exp": "Section 28 bans private tuition by teachers.",
+  "sub": "Right to Education Act 2009"
+ },
+ {
+  "q": "According to Bronfenbrenner, the link between a child's home and school is part of the",
+  "options": [
+   "microsystem",
+   "mesosystem",
+   "macrosystem",
+   "exosystem"
+  ],
+  "answer": 1,
+  "exp": "The mesosystem consists of interrelations among the microsystems such as home-school connections.",
+  "sub": "Growth and development"
+ },
+ {
+  "q": "The 'three mountains task' was designed by Piaget to study",
+  "options": [
+   "moral judgment",
+   "memory span",
+   "egocentrism in young children",
+   "creativity"
+  ],
+  "answer": 2,
+  "exp": "Young children cannot see the view from another person's position, showing egocentrism.",
+  "sub": "Piaget"
+ },
+ {
+  "q": "Reciprocal teaching and peer tutoring are classroom applications mainly of",
+  "options": [
+   "Vygotsky's theory",
+   "Pavlov's theory",
+   "Thorndike's theory",
+   "Freud's theory"
+  ],
+  "answer": 0,
+  "exp": "These methods use social interaction and guided support within the ZPD.",
+  "sub": "Vygotsky"
+ },
+ {
+  "q": "Piaget's younger children (moral realism) judge an act as more wrong when",
+  "options": [
+   "it was done intentionally",
+   "it was done by an adult",
+   "it was done in public",
+   "it causes more damage, regardless of intention"
+  ],
+  "answer": 3,
+  "exp": "Heteronomous morality focuses on consequences rather than intentions.",
+  "sub": "Kohlberg"
+ },
+ {
+  "q": "A child whose school projects are regularly appreciated is most likely to develop",
+  "options": [
+   "a sense of guilt",
+   "identity confusion",
+   "a sense of industry",
+   "isolation"
+  ],
+  "answer": 2,
+  "exp": "Success and encouragement in work at ages 6-12 build industry.",
+  "sub": "Erikson"
+ },
+ {
+  "q": "Reinforcing successive approximations of a desired behaviour is called",
+  "options": [
+   "extinction",
+   "generalisation",
+   "insight",
+   "shaping"
+  ],
+  "answer": 3,
+  "exp": "Shaping builds complex behaviour step by step.",
+  "sub": "Classical and operant conditioning"
+ },
+ {
+  "q": "The word 'Gestalt' means",
+  "options": [
+   "whole or configuration",
+   "stimulus",
+   "reinforcement",
+   "habit"
+  ],
+  "answer": 0,
+  "exp": "Gestalt psychologists stress that the whole is more than the sum of its parts.",
+  "sub": "Other learning theories"
+ },
+ {
+  "q": "The 'overjustification effect' suggests that",
+  "options": [
+   "rewards always increase interest",
+   "excessive external rewards can reduce intrinsic motivation",
+   "rewards have no effect",
+   "punishment increases interest"
+  ],
+  "answer": 1,
+  "exp": "Rewarding an already enjoyable activity may shift motivation to the reward.",
+  "sub": "Motivation"
+ },
+ {
+  "q": "Who gave the first successful intelligence test in 1905?",
+  "options": [
+   "Wechsler",
+   "Terman",
+   "Binet and Simon",
+   "Thurstone"
+  ],
+  "answer": 2,
+  "exp": "Alfred Binet and Theodore Simon created the first practical test in France.",
+  "sub": "Intelligence"
+ },
+ {
+  "q": "'Originality' in the Torrance tests is scored on the basis of",
+  "options": [
+   "length of the response",
+   "speed of the response",
+   "correctness only",
+   "statistical rarity of the response"
+  ],
+  "answer": 3,
+  "exp": "Unusual responses given by few people score high.",
+  "sub": "Creativity"
+ }
+]

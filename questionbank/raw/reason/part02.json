@@ -1,0 +1,482 @@
+[
+ {
+  "q": "If the letters of the word DIRECTION are arranged in alphabetical order, which letter will be fourth from the right end?",
+  "options": [
+   "O",
+   "N",
+   "R",
+   "I"
+  ],
+  "answer": 1,
+  "exp": "Sorted: C D E I I N O R T. From the right: T, R, O, N. The fourth is N.",
+  "sub": "alphabet position"
+ },
+ {
+  "q": "In a certain code, CAB is written as 312 and BED as 254. How is DEAF written in that code?",
+  "options": [
+   "4516",
+   "4156",
+   "4615",
+   "5416"
+  ],
+  "answer": 0,
+  "exp": "Each letter is replaced by its alphabet position and joined: D=4, E=5, A=1, F=6, giving 4516.",
+  "sub": "coding-decoding"
+ },
+ {
+  "q": "Given: A + B means A is the mother of B; A − B means A is the brother of B; A × B means A is the sister of B. Which expression shows that M is the maternal uncle of N?",
+  "options": [
+   "M × K + N",
+   "M + K − N",
+   "K + M − N",
+   "M − K + N"
+  ],
+  "answer": 3,
+  "exp": "M − K + N means M is the brother of K and K is the mother of N, so M is N's mother's brother (maternal uncle). The other options give an aunt or a mother.",
+  "sub": "blood relations"
+ },
+ {
+  "q": "One morning Anita and Bina stand back to back with the sun in front of Anita. Towards which direction is Bina's right hand pointing?",
+  "options": [
+   "South",
+   "East",
+   "North",
+   "West"
+  ],
+  "answer": 2,
+  "exp": "In the morning the sun is in the east, so Anita faces east and Bina faces west. Facing west, the right hand points north.",
+  "sub": "direction sense"
+ },
+ {
+  "q": "In a test, 8 students scored higher than Neha and 12 students scored lower than her (no ties). How many students took the test?",
+  "options": [
+   "20",
+   "22",
+   "19",
+   "21"
+  ],
+  "answer": 3,
+  "exp": "Total = 8 + 1 (Neha) + 12 = 21.",
+  "sub": "ranking"
+ },
+ {
+  "q": "Find the next pair: AZ, BY, CX, DW, ?",
+  "options": [
+   "EW",
+   "FV",
+   "EV",
+   "DV"
+  ],
+  "answer": 2,
+  "exp": "The first letter moves forward and the second moves backward by one each time: D→E and W→V, giving EV.",
+  "sub": "letter series"
+ },
+ {
+  "q": "Find the missing number: 5, 6, 8, 11, 15, 20, ?",
+  "options": [
+   "25",
+   "26",
+   "27",
+   "24"
+  ],
+  "answer": 1,
+  "exp": "The differences are 1, 2, 3, 4, 5, so the next difference is 6: 20 + 6 = 26.",
+  "sub": "number series"
+ },
+ {
+  "q": "Find the odd letter group.",
+  "options": [
+   "TVY",
+   "CEG",
+   "KMO",
+   "QSU"
+  ],
+  "answer": 0,
+  "exp": "In CEG, KMO and QSU the letters are two places apart each time; in TVY the gaps are 2 and 3.",
+  "sub": "odd one out"
+ },
+ {
+  "q": "Statements: All engineers are graduates. All graduates are citizens. Some citizens are artists.\nConclusions: I. All engineers are citizens. II. Some artists are graduates.",
+  "options": [
+   "Only conclusion I follows",
+   "Only conclusion II follows",
+   "Both I and II follow",
+   "Neither I nor II follows"
+  ],
+  "answer": 0,
+  "exp": "I follows from the chain engineer → graduate → citizen. The artists among the citizens may not be graduates, so II does not follow.",
+  "sub": "syllogism"
+ },
+ {
+  "q": "How many times do the hands of a clock form a right angle in 12 hours?",
+  "options": [
+   "11",
+   "24",
+   "22",
+   "44"
+  ],
+  "answer": 2,
+  "exp": "The hands are at right angles 2 times in each hour on average (the relative gain of 5.5° per minute gives 90° and 270° once each per 12/11 hours), so 22 times in 12 hours.",
+  "sub": "clock"
+ },
+ {
+  "q": "In a certain code, LILY is written as NKNA. How is ROSE written?",
+  "options": [
+   "TQVG",
+   "SPTF",
+   "TQUH",
+   "TQUG"
+  ],
+  "answer": 3,
+  "exp": "Each letter is shifted +2 (L→N, I→K, L→N, Y→A with wrap-around). So R→T, O→Q, S→U, E→G, giving TQUG.",
+  "sub": "coding-decoding"
+ },
+ {
+  "q": "Find the next term: 2, 5, 10, 17, 26, 37, ?",
+  "options": [
+   "48",
+   "50",
+   "49",
+   "51"
+  ],
+  "answer": 1,
+  "exp": "The terms are n² + 1: 1²+1 = 2, ..., 6²+1 = 37, so the next is 7²+1 = 50.",
+  "sub": "number series"
+ },
+ {
+  "q": "Fish : Shoal :: Sheep : ?",
+  "options": [
+   "Herd",
+   "Pack",
+   "Flock",
+   "Swarm"
+  ],
+  "answer": 2,
+  "exp": "A group of fish is a shoal and a group of sheep is a flock.",
+  "sub": "analogy"
+ },
+ {
+  "q": "Which of the following is the odd one out?",
+  "options": [
+   "Triangle",
+   "Cube",
+   "Square",
+   "Circle"
+  ],
+  "answer": 1,
+  "exp": "Triangle, square and circle are two-dimensional figures; a cube is three-dimensional.",
+  "sub": "odd one out"
+ },
+ {
+  "q": "Pointing to a photograph, a man said, 'I have no brother or sister, but that man's father is my father's son.' Whose photograph was it?",
+  "options": [
+   "His son",
+   "Himself",
+   "His father",
+   "His nephew"
+  ],
+  "answer": 0,
+  "exp": "The man has no brother, so 'my father's son' is the man himself. Hence the person in the photograph is his son.",
+  "sub": "blood relations"
+ },
+ {
+  "q": "A man walks 7 km north, then 8 km east, then 3 km west and then 5 km north. How far is he from the starting point?",
+  "options": [
+   "12 km",
+   "17 km",
+   "23 km",
+   "13 km"
+  ],
+  "answer": 3,
+  "exp": "Net displacement: 5 km east and 7 + 5 = 12 km north. Distance = √(5² + 12²) = 13 km.",
+  "sub": "direction sense"
+ },
+ {
+  "q": "If 6 # 2 = 4, 9 # 3 = 6, then 15 # 5 = ?",
+  "options": [
+   "8",
+   "12",
+   "6",
+   "10"
+  ],
+  "answer": 3,
+  "exp": "The rule is a − b (equivalently two-thirds of a): 15 − 5 = 10.",
+  "sub": "mathematical operations"
+ },
+ {
+  "q": "If the first day of a non-leap year is Monday, on which day will 31 December of that year fall?",
+  "options": [
+   "Monday",
+   "Sunday",
+   "Tuesday",
+   "Saturday"
+  ],
+  "answer": 0,
+  "exp": "A non-leap year has 52 weeks and 1 odd day, so the last day falls on the same weekday as the first day: Monday.",
+  "sub": "calendar"
+ },
+ {
+  "q": "In a survey of 100 people, 60 read the Hindi newspaper, 45 read the English newspaper and 20 read both. How many read exactly one of the two newspapers?",
+  "options": [
+   "40",
+   "65",
+   "85",
+   "25"
+  ],
+  "answer": 1,
+  "exp": "Only Hindi = 60 − 20 = 40 and only English = 45 − 20 = 25. Exactly one = 40 + 25 = 65.",
+  "sub": "venn logic"
+ },
+ {
+  "q": "Statements: All members of a club are adults. Some adults are chess players.\nConclusions: I. Some members are chess players. II. Some chess players are adults.",
+  "options": [
+   "Only conclusion I follows",
+   "Both I and II follow",
+   "Only conclusion II follows",
+   "Neither I nor II follows"
+  ],
+  "answer": 2,
+  "exp": "Some adults are chess players directly gives II. The chess-playing adults may not be club members, so I does not follow.",
+  "sub": "statement-conclusion"
+ },
+ {
+  "q": "In a certain code language, CHAIR is written as XSZRI. How is TABLE written in that code?",
+  "options": [
+   "GZYLV",
+   "GZYOV",
+   "HAZPW",
+   "GZXOV"
+  ],
+  "answer": 1,
+  "exp": "Each letter is replaced by its mirror letter (A↔Z, B↔Y, ...): T↔G, A↔Z, B↔Y, L↔O, E↔V, giving GZYOV.",
+  "sub": "coding-decoding"
+ },
+ {
+  "q": "Find the next term: 1, 2, 6, 24, 120, ?",
+  "options": [
+   "600",
+   "480",
+   "720",
+   "840"
+  ],
+  "answer": 2,
+  "exp": "The terms are factorials: 1!, 2!, 3!, 4!, 5!, so next is 6! = 720.",
+  "sub": "number series"
+ },
+ {
+  "q": "Caterpillar : Butterfly :: Tadpole : ?",
+  "options": [
+   "Lizard",
+   "Snake",
+   "Crab",
+   "Frog"
+  ],
+  "answer": 3,
+  "exp": "A caterpillar is the larva of a butterfly; a tadpole is the larva of a frog.",
+  "sub": "analogy"
+ },
+ {
+  "q": "Which number is the odd one out among the following?",
+  "options": [
+   "33",
+   "23",
+   "29",
+   "41"
+  ],
+  "answer": 0,
+  "exp": "23, 29 and 41 are prime numbers, while 33 = 3 × 11 is composite.",
+  "sub": "odd one out"
+ },
+ {
+  "q": "Arun scored more than Bala but less than Chitra. Deepa scored less than Bala but more than Esha. Who scored the second lowest?",
+  "options": [
+   "Deepa",
+   "Bala",
+   "Arun",
+   "Esha"
+  ],
+  "answer": 0,
+  "exp": "Order: Chitra > Arun > Bala > Deepa > Esha. The second lowest is Deepa.",
+  "sub": "ranking"
+ },
+ {
+  "q": "If the English alphabet is written in reverse order (Z first, A last), which letter will be 10th from the left?",
+  "options": [
+   "R",
+   "P",
+   "N",
+   "Q"
+  ],
+  "answer": 3,
+  "exp": "In reverse order the 10th letter from the left is the 10th from the right of the normal alphabet, i.e. position 27 − 10 = 17, which is Q.",
+  "sub": "alphabet position"
+ },
+ {
+  "q": "If 4 ▲ 3 = 19, 5 ▲ 2 = 27 and 6 ▲ 1 = 37, then 7 ▲ 4 = ?",
+  "options": [
+   "49",
+   "56",
+   "53",
+   "60"
+  ],
+  "answer": 2,
+  "exp": "The rule is a² + b: 16 + 3 = 19, 25 + 2 = 27, 36 + 1 = 37. So 49 + 4 = 53.",
+  "sub": "mathematical operations"
+ },
+ {
+  "q": "If 15 August 2021 was a Sunday, then on which day did 15 August 2023 fall?",
+  "options": [
+   "Monday",
+   "Tuesday",
+   "Wednesday",
+   "Sunday"
+  ],
+  "answer": 1,
+  "exp": "The period from 15 Aug 2021 to 15 Aug 2023 has 730 days (no leap day in between). 730 mod 7 = 2, so Sunday + 2 = Tuesday.",
+  "sub": "calendar"
+ },
+ {
+  "q": "Five persons Ram, Shyam, Tina, Uma and Vinay sit in a row facing north. Shyam sits at an extreme end and Tina sits immediately to his right. Uma sits at the other extreme end. Ram does not sit next to Tina. Who sits in the middle?",
+  "options": [
+   "Ram",
+   "Tina",
+   "Vinay",
+   "Uma"
+  ],
+  "answer": 2,
+  "exp": "Shyam is at the left end (Tina is to his right), Tina is 2nd and Uma is 5th. Ram and Vinay take places 3 and 4; Ram cannot be next to Tina, so Ram is 4th and Vinay is 3rd, the middle.",
+  "sub": "seating arrangement"
+ },
+ {
+  "q": "Statements: Some teachers are poets. Some poets are doctors.\nConclusions: I. Some teachers are doctors. II. Some doctors are teachers.",
+  "options": [
+   "Neither I nor II follows",
+   "Only conclusion I follows",
+   "Only conclusion II follows",
+   "Both I and II follow"
+  ],
+  "answer": 0,
+  "exp": "The teacher-poets and the doctor-poets may be different sets of poets, so no relation between teachers and doctors can be concluded.",
+  "sub": "statement-conclusion"
+ },
+ {
+  "q": "In a certain code, 'DOG' is written as 'GRJ'. On the same pattern, how is BIHAR written?",
+  "options": [
+   "ELKDT",
+   "ELKDU",
+   "YFEXO",
+   "ELJDU"
+  ],
+  "answer": 1,
+  "exp": "Each letter is shifted three places forward: B→E, I→L, H→K, A→D, R→U, giving ELKDU.",
+  "sub": "coding-decoding"
+ },
+ {
+  "q": "Find the next number: 3, 7, 16, 35, 74, ?",
+  "options": [
+   "148",
+   "150",
+   "158",
+   "153"
+  ],
+  "answer": 3,
+  "exp": "The rule is ×2 plus an increasing number: 3×2+1 = 7, 7×2+2 = 16, 16×2+3 = 35, 35×2+4 = 74, so 74×2+5 = 153.",
+  "sub": "number series"
+ },
+ {
+  "q": "Heart : Pump :: Kidney : ?",
+  "options": [
+   "Store",
+   "Filter",
+   "Digest",
+   "Breathe"
+  ],
+  "answer": 1,
+  "exp": "The heart pumps blood; the kidney filters blood.",
+  "sub": "analogy"
+ },
+ {
+  "q": "Which of the following months is the odd one out?",
+  "options": [
+   "March",
+   "May",
+   "August",
+   "June"
+  ],
+  "answer": 3,
+  "exp": "March, May and August have 31 days; June has 30 days.",
+  "sub": "odd one out"
+ },
+ {
+  "q": "P is the brother of Q. R is the mother of Q. S is the father of R. T is the mother of S. How is P related to T?",
+  "options": [
+   "Grandson",
+   "Son",
+   "Great-grandson",
+   "Nephew"
+  ],
+  "answer": 2,
+  "exp": "T is the mother of S, S is the father of R, and R is the mother of P. So T is P's great-grandmother and P (male) is her great-grandson.",
+  "sub": "blood relations"
+ },
+ {
+  "q": "At sunset, Rohan's shadow falls to his left. Towards which direction is Rohan facing?",
+  "options": [
+   "South",
+   "North",
+   "East",
+   "West"
+  ],
+  "answer": 0,
+  "exp": "At sunset the sun is in the west, so the shadow falls towards the east. If the east is on his left, he must be facing south.",
+  "sub": "direction sense"
+ },
+ {
+  "q": "If ÷ means +, × means ÷, − means × and + means −, then the value of 18 ÷ 6 × 3 − 5 + 2 is:",
+  "options": [
+   "38",
+   "22",
+   "30",
+   "26"
+  ],
+  "answer": 3,
+  "exp": "Substituting the signs: 18 + 6 ÷ 3 × 5 − 2 = 18 + 2 × 5 − 2 = 18 + 10 − 2 = 26.",
+  "sub": "mathematical operations"
+ },
+ {
+  "q": "Find the next letter: Z, X, U, Q, L, ?",
+  "options": [
+   "E",
+   "F",
+   "G",
+   "H"
+  ],
+  "answer": 1,
+  "exp": "The positions are 26, 24, 21, 17, 12; the differences are −2, −3, −4, −5, so the next is 12 − 6 = 6, which is F.",
+  "sub": "letter series"
+ },
+ {
+  "q": "If all A are B, all B are C and no C is D, which of the following is definitely true?",
+  "options": [
+   "No A is D",
+   "Some A are D",
+   "All D are A",
+   "Some B are D"
+  ],
+  "answer": 0,
+  "exp": "A ⊂ B ⊂ C and C has no overlap with D, so A, being inside C, cannot overlap with D.",
+  "sub": "venn logic"
+ },
+ {
+  "q": "What is the angle between the hands of a clock at 3:15?",
+  "options": [
+   "0°",
+   "15°",
+   "7.5°",
+   "22.5°"
+  ],
+  "answer": 2,
+  "exp": "At 3:15 the hour hand is at 90 + 7.5 = 97.5° and the minute hand is at 90°. The angle is 7.5°.",
+  "sub": "clock"
+ }
+]

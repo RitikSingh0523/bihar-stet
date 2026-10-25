@@ -1,0 +1,242 @@
+[
+ {
+  "q": "The main purpose of a CAPTCHA test on a website is to",
+  "options": [
+   "Encrypt the user's password",
+   "Remove viruses from uploaded files",
+   "Distinguish human users from automated bots",
+   "Compress web pages"
+  ],
+  "answer": 2,
+  "exp": "CAPTCHAs present challenges that are easy for humans but hard for bots.",
+  "sub": "Authentication and 2FA"
+ },
+ {
+  "q": "The rail fence cipher is an example of a",
+  "options": [
+   "Substitution cipher",
+   "Stream cipher based on XOR",
+   "Public-key cipher",
+   "Transposition cipher"
+  ],
+  "answer": 3,
+  "exp": "It rearranges letter positions in a zig-zag without changing the letters.",
+  "sub": "Classical ciphers"
+ },
+ {
+  "q": "A list published by a Certificate Authority of certificates revoked before their expiry date is called a",
+  "options": [
+   "Certificate Signing Request (CSR)",
+   "Certificate Revocation List (CRL)",
+   "Certification Practice Statement (CPS)",
+   "One-Time Password list"
+  ],
+  "answer": 1,
+  "exp": "Browsers can check the CRL (or use OCSP) to see whether a certificate is still valid.",
+  "sub": "PKI and certificates"
+ },
+ {
+  "q": "Malware designed to hide its presence while keeping privileged access to a system is a",
+  "options": [
+   "Rootkit",
+   "Adware",
+   "Ransomware",
+   "Macro virus"
+  ],
+  "answer": 0,
+  "exp": "Rootkits conceal processes and files and give persistent administrator-level control.",
+  "sub": "Malware"
+ },
+ {
+  "q": "Compared with a differential backup, an incremental backup",
+  "options": [
+   "Takes less time and space per run, but restoration needs more backup sets",
+   "Takes more space but restores from only two sets",
+   "Copies every file each time",
+   "Cannot be combined with a full backup"
+  ],
+  "answer": 0,
+  "exp": "Incremental backups store only changes since the last backup of any kind, so a restore chains many sets.",
+  "sub": "Backup and recovery"
+ },
+ {
+  "q": "Which section of the IT Act empowers the government to intercept, monitor or decrypt information in the interest of national security?",
+  "options": [
+   "Section 43",
+   "Section 69",
+   "Section 65",
+   "Section 72"
+  ],
+  "answer": 1,
+  "exp": "Section 69 authorises interception, monitoring and decryption of information through any computer resource under stated conditions.",
+  "sub": "IT Act 2000"
+ },
+ {
+  "q": "Which is the strongest sign that an e-mail link is a phishing attempt?",
+  "options": [
+   "The e-mail contains a greeting",
+   "The e-mail is very long",
+   "The e-mail arrived in the morning",
+   "The link's domain differs from the organisation it claims to represent"
+  ],
+  "answer": 3,
+  "exp": "A mismatched or look-alike domain is a classic phishing indicator.",
+  "sub": "Attacks"
+ },
+ {
+  "q": "Why is a random salt added to a password before hashing it?",
+  "options": [
+   "To allow the password to be decrypted later",
+   "To shorten the stored hash",
+   "To defeat precomputed (rainbow table) attacks and make identical passwords hash differently",
+   "To speed up password verification"
+  ],
+  "answer": 2,
+  "exp": "Per-user salts force attackers to attack each hash separately.",
+  "sub": "Hashing"
+ },
+ {
+  "q": "Which of the following is NOT a symmetric-key algorithm?",
+  "options": [
+   "Blowfish",
+   "Triple DES",
+   "AES",
+   "RSA"
+  ],
+  "answer": 3,
+  "exp": "RSA is an asymmetric (public-key) algorithm; the others use one shared key.",
+  "sub": "Asymmetric cryptography"
+ },
+ {
+  "q": "A browser trusts a website's TLS certificate mainly because it",
+  "options": [
+   "Is signed by a trusted CA whose root certificate is in the browser's trust store",
+   "Uses port 443",
+   "Has a long domain name",
+   "Was loaded quickly"
+  ],
+  "answer": 0,
+  "exp": "Trust is chained from the site certificate up to a root CA that the browser already trusts.",
+  "sub": "SSL/TLS"
+ },
+ {
+  "q": "Which practice is environmentally responsible for disposing of an old computer?",
+  "options": [
+   "Burning it in the open",
+   "Dumping it in a landfill",
+   "Handing it over to an authorised e-waste recycler",
+   "Throwing it into a river"
+  ],
+  "answer": 2,
+  "exp": "E-waste contains toxic materials such as lead and mercury and must be recycled through authorised channels.",
+  "sub": "Digital ethics"
+ },
+ {
+  "q": "Creative Commons licences are used to",
+  "options": [
+   "Register inventions as patents",
+   "Let creators grant specified permissions for others to share and reuse their work",
+   "Encrypt digital documents",
+   "Block access to copyrighted material"
+  ],
+  "answer": 1,
+  "exp": "CC licences are standard copyright licences that state what reuse is permitted.",
+  "sub": "Copyright and IPR"
+ },
+ {
+  "q": "A zero-day attack is one that",
+  "options": [
+   "Occurs on the day a computer is bought",
+   "Exploits a vulnerability unknown to the vendor for which no patch yet exists",
+   "Takes zero seconds to complete",
+   "Deletes all data in zero days"
+  ],
+  "answer": 1,
+  "exp": "Defenders have had 'zero days' to prepare a fix.",
+  "sub": "Attacks"
+ },
+ {
+  "q": "Copying the magnetic-stripe data of a debit card with a small device fitted on an ATM slot is called",
+  "options": [
+   "Phishing",
+   "Pharming",
+   "Skimming",
+   "Spamming"
+  ],
+  "answer": 2,
+  "exp": "Skimmers read card data (often with a hidden camera for the PIN) to clone cards.",
+  "sub": "Cyber crime"
+ },
+ {
+  "q": "The principle of least privilege states that",
+  "options": [
+   "Users and programs should get only the minimum access needed for their tasks",
+   "All users should have administrator rights",
+   "Passwords must be at least 8 characters",
+   "Data must be backed up weekly"
+  ],
+  "answer": 0,
+  "exp": "Limiting rights reduces damage from errors or compromise.",
+  "sub": "Access control"
+ },
+ {
+  "q": "Authorisation differs from authentication in that authorisation",
+  "options": [
+   "Verifies the identity of the user",
+   "Encrypts the network traffic",
+   "Backs up the user's files",
+   "Decides what an already identified user is permitted to do"
+  ],
+  "answer": 3,
+  "exp": "Authentication proves who you are; authorisation grants permissions.",
+  "sub": "Access control"
+ },
+ {
+  "q": "In a stream cipher the plaintext bits 1011 are XORed with the key bits 0110. The ciphertext is",
+  "options": [
+   "1111",
+   "1101",
+   "0101",
+   "1001"
+  ],
+  "answer": 1,
+  "exp": "1⊕0=1, 0⊕1=1, 1⊕1=0, 1⊕0=1, giving 1101.",
+  "sub": "Symmetric cryptography"
+ },
+ {
+  "q": "An attacker forges the source IP address in packets so that they appear to come from a trusted host. This is",
+  "options": [
+   "Port scanning",
+   "Packet sniffing",
+   "A dictionary attack",
+   "IP spoofing"
+  ],
+  "answer": 3,
+  "exp": "Spoofing falsifies the source address to impersonate another system.",
+  "sub": "Attacks"
+ },
+ {
+  "q": "Backups run at 00:00, 06:00, 12:00 and 18:00. A failure occurs at 17:30 and the system is restored from the latest backup. How much data (in time) is lost?",
+  "options": [
+   "5.5 hours",
+   "11.5 hours",
+   "6 hours",
+   "17.5 hours"
+  ],
+  "answer": 0,
+  "exp": "The latest backup is at 12:00, so work from 12:00 to 17:30 = 5.5 hours is lost.",
+  "sub": "Backup and recovery"
+ },
+ {
+  "q": "The main objective of the Information Technology Act, 2000 is to",
+  "options": [
+   "Regulate telecom tariffs",
+   "Protect patents and trade marks",
+   "Give legal recognition to electronic transactions and records and facilitate e-commerce and e-governance",
+   "Control the import of computer hardware"
+  ],
+  "answer": 2,
+  "exp": "The Act provides legal recognition for electronic records and digital signatures and defines cyber offences.",
+  "sub": "IT Act 2000"
+ }
+]

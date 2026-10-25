@@ -1,0 +1,482 @@
+[
+ {
+  "q": "What is 35% of 640?",
+  "options": [
+   "224",
+   "214",
+   "234",
+   "244"
+  ],
+  "answer": 0,
+  "exp": "35% of 640 = 0.35 x 640 = 224.",
+  "sub": "Percentages"
+ },
+ {
+  "q": "A trader buys a table for Rs 1250 and sells it at a loss of 12%. What is the selling price?",
+  "options": [
+   "Rs 1150",
+   "Rs 1100",
+   "Rs 1075",
+   "Rs 1125"
+  ],
+  "answer": 1,
+  "exp": "Loss = 12% of 1250 = 150, so SP = 1250 - 150 = 1100.",
+  "sub": "Profit and loss"
+ },
+ {
+  "q": "What is the simple interest on Rs 4000 at 7.5% per annum for 3 years?",
+  "options": [
+   "Rs 850",
+   "Rs 950",
+   "Rs 900",
+   "Rs 1000"
+  ],
+  "answer": 2,
+  "exp": "SI = P x R x T / 100 = 4000 x 7.5 x 3 / 100 = 900.",
+  "sub": "Simple interest"
+ },
+ {
+  "q": "Rs 840 is divided among three persons in the ratio 3 : 4 : 5. What is the smallest share?",
+  "options": [
+   "Rs 240",
+   "Rs 180",
+   "Rs 250",
+   "Rs 210"
+  ],
+  "answer": 3,
+  "exp": "Total parts = 12, one part = 840/12 = 70, smallest share = 3 x 70 = 210.",
+  "sub": "Ratio and proportion"
+ },
+ {
+  "q": "What is the LCM of 12, 18 and 30?",
+  "options": [
+   "90",
+   "180",
+   "360",
+   "120"
+  ],
+  "answer": 1,
+  "exp": "12 = 2²x3, 18 = 2x3², 30 = 2x3x5, so LCM = 2²x3²x5 = 180.",
+  "sub": "LCM and HCF"
+ },
+ {
+  "q": "The average of five numbers is 24. If one of the numbers, 14, is removed, what is the average of the remaining four?",
+  "options": [
+   "25.5",
+   "27",
+   "26.5",
+   "28"
+  ],
+  "answer": 2,
+  "exp": "Sum = 5 x 24 = 120; remaining sum = 106; average = 106/4 = 26.5.",
+  "sub": "Averages"
+ },
+ {
+  "q": "A can finish a job in 12 days and B in 18 days. Working together, in how many days will they finish it?",
+  "options": [
+   "6 days",
+   "8 days",
+   "7.5 days",
+   "7.2 days"
+  ],
+  "answer": 3,
+  "exp": "Combined rate = 1/12 + 1/18 = 5/36 per day, so time = 36/5 = 7.2 days.",
+  "sub": "Time and work"
+ },
+ {
+  "q": "A train 150 m long runs at 54 km/h. How long does it take to pass a pole?",
+  "options": [
+   "10 s",
+   "8 s",
+   "12 s",
+   "15 s"
+  ],
+  "answer": 0,
+  "exp": "54 km/h = 54 x 5/18 = 15 m/s; time = 150/15 = 10 s.",
+  "sub": "Speed, distance, time"
+ },
+ {
+  "q": "A room is 8 m long, 6 m wide and 3 m high. What is the total area of its four walls?",
+  "options": [
+   "72 m²",
+   "96 m²",
+   "84 m²",
+   "144 m²"
+  ],
+  "answer": 2,
+  "exp": "Area of four walls = 2(l + b) x h = 2(8 + 6) x 3 = 84 m².",
+  "sub": "Mensuration"
+ },
+ {
+  "q": "Solve for x: 5(x - 2) = 3x + 6.",
+  "options": [
+   "x = 6",
+   "x = 4",
+   "x = 10",
+   "x = 8"
+  ],
+  "answer": 3,
+  "exp": "5x - 10 = 3x + 6, so 2x = 16 and x = 8.",
+  "sub": "Algebra basics"
+ },
+ {
+  "q": "The angles of a triangle are in the ratio 2 : 3 : 4. What is the largest angle?",
+  "options": [
+   "80°",
+   "60°",
+   "90°",
+   "100°"
+  ],
+  "answer": 0,
+  "exp": "Sum of angles 180°; one part = 180/9 = 20°; largest = 4 x 20 = 80°.",
+  "sub": "Geometry - triangles"
+ },
+ {
+  "q": "In a class of 50 students, 30 like tea, 25 like coffee and 10 like both. How many like neither?",
+  "options": [
+   "10",
+   "5",
+   "15",
+   "0"
+  ],
+  "answer": 1,
+  "exp": "Students liking at least one = 30 + 25 - 10 = 45; neither = 50 - 45 = 5.",
+  "sub": "Venn diagram / sets"
+ },
+ {
+  "q": "Which activity is most suitable for introducing the idea of a fraction as part of a whole to Class VI learners?",
+  "options": [
+   "Memorising rules for adding fractions with unlike denominators",
+   "Solving a long list of fraction problems from the textbook",
+   "Dictating the definition of a fraction to be copied down",
+   "Folding paper strips or circles into equal parts and shading some of them"
+  ],
+  "answer": 3,
+  "exp": "Concrete, hands-on activities such as paper folding build conceptual understanding before symbolic rules.",
+  "sub": "Pedagogy of mathematics"
+ },
+ {
+  "q": "Which of the following numbers is divisible by 11?",
+  "options": [
+   "2728",
+   "2735",
+   "2741",
+   "2753"
+  ],
+  "answer": 0,
+  "exp": "For 2728: (2 + 2) - (7 + 8) = -11, a multiple of 11 (2728 = 11 x 248). The others give differences -7, -2 and -3.",
+  "sub": "Number system"
+ },
+ {
+  "q": "What is the compound interest on Rs 8000 for 2 years at 10% per annum compounded annually?",
+  "options": [
+   "Rs 1600",
+   "Rs 1680",
+   "Rs 1640",
+   "Rs 1800"
+  ],
+  "answer": 1,
+  "exp": "Amount = 8000 x (1.1)² = 9680; CI = 9680 - 8000 = 1680.",
+  "sub": "Compound interest"
+ },
+ {
+  "q": "The price of an article is increased by 20% and then the new price is decreased by 20%. What is the net change in the price?",
+  "options": [
+   "No change",
+   "4% increase",
+   "4% decrease",
+   "2% decrease"
+  ],
+  "answer": 2,
+  "exp": "Final price = 1.2 x 0.8 = 0.96 of the original, i.e. a 4% decrease.",
+  "sub": "Percentages"
+ },
+ {
+  "q": "What is the HCF of 84 and 126?",
+  "options": [
+   "42",
+   "21",
+   "14",
+   "84"
+  ],
+  "answer": 0,
+  "exp": "84 = 2²x3x7 and 126 = 2x3²x7, so HCF = 2x3x7 = 42.",
+  "sub": "LCM and HCF"
+ },
+ {
+  "q": "The marked price of a shirt is Rs 900 and a discount of 15% is given. What is the selling price?",
+  "options": [
+   "Rs 750",
+   "Rs 765",
+   "Rs 785",
+   "Rs 810"
+  ],
+  "answer": 1,
+  "exp": "Discount = 15% of 900 = 135; SP = 900 - 135 = 765.",
+  "sub": "Profit and loss"
+ },
+ {
+  "q": "The circumference of a circle is 44 cm. What is its area? (take π = 22/7)",
+  "options": [
+   "144 cm²",
+   "308 cm²",
+   "154 cm²",
+   "22 cm²"
+  ],
+  "answer": 2,
+  "exp": "2πr = 44 gives r = 7 cm; area = πr² = 22/7 x 49 = 154 cm².",
+  "sub": "Geometry - circles"
+ },
+ {
+  "q": "A shop sold 120, 150, 90 and 140 units in four consecutive months. What is the average monthly sale?",
+  "options": [
+   "120 units",
+   "130 units",
+   "135 units",
+   "125 units"
+  ],
+  "answer": 3,
+  "exp": "Total = 120 + 150 + 90 + 140 = 500; average = 500/4 = 125.",
+  "sub": "Data interpretation"
+ },
+ {
+  "q": "If 6 workers build a wall in 10 days, how many days will 4 workers (working at the same rate) take?",
+  "options": [
+   "12 days",
+   "15 days",
+   "20 days",
+   "6.67 days"
+  ],
+  "answer": 1,
+  "exp": "Work = 6 x 10 = 60 worker-days; days for 4 workers = 60/4 = 15 (inverse proportion).",
+  "sub": "Ratio and proportion"
+ },
+ {
+  "q": "How many bricks of size 20 cm x 10 cm x 6 cm are needed to build a wall 12 m long, 20 cm thick and 3 m high? (ignore mortar)",
+  "options": [
+   "600",
+   "5000",
+   "6000",
+   "7200"
+  ],
+  "answer": 2,
+  "exp": "Wall volume = 1200 x 20 x 300 = 7,200,000 cm³; brick volume = 1200 cm³; number = 7,200,000/1200 = 6000.",
+  "sub": "Mensuration - bricks"
+ },
+ {
+  "q": "If a + b = 10 and ab = 21, what is the value of a² + b²?",
+  "options": [
+   "79",
+   "62",
+   "100",
+   "58"
+  ],
+  "answer": 3,
+  "exp": "a² + b² = (a + b)² - 2ab = 100 - 42 = 58.",
+  "sub": "Algebra basics"
+ },
+ {
+  "q": "Which of the following is NOT a criterion for congruence of two triangles?",
+  "options": [
+   "SSA (two sides and a non-included angle)",
+   "SAS",
+   "ASA",
+   "SSS"
+  ],
+  "answer": 0,
+  "exp": "SSA does not guarantee congruence in general; SAS, ASA and SSS are valid criteria (RHS is valid only for right triangles).",
+  "sub": "Geometry - congruence"
+ },
+ {
+  "q": "A sum of Rs 5000 earns a simple interest of Rs 1200 in 4 years. What is the rate of interest per annum?",
+  "options": [
+   "5%",
+   "8%",
+   "6%",
+   "7.5%"
+  ],
+  "answer": 2,
+  "exp": "R = SI x 100 / (P x T) = 1200 x 100 / (5000 x 4) = 6%.",
+  "sub": "Simple interest"
+ },
+ {
+  "q": "If the cost price of 15 articles equals the selling price of 12 articles, what is the profit percent?",
+  "options": [
+   "20%",
+   "15%",
+   "30%",
+   "25%"
+  ],
+  "answer": 3,
+  "exp": "15 C = 12 S gives S = 1.25 C, so profit = 25%.",
+  "sub": "Profit and loss"
+ },
+ {
+  "q": "In an election between two candidates, the winner got 55% of the votes and won by 3000 votes. How many votes were cast in total?",
+  "options": [
+   "30000",
+   "27000",
+   "33000",
+   "25000"
+  ],
+  "answer": 0,
+  "exp": "Margin = 55% - 45% = 10% of total = 3000, so total = 30000.",
+  "sub": "Percentages"
+ },
+ {
+  "q": "A car travels 180 km at 60 km/h and returns the same distance at 90 km/h. What is its average speed for the whole journey?",
+  "options": [
+   "75 km/h",
+   "72 km/h",
+   "70 km/h",
+   "80 km/h"
+  ],
+  "answer": 1,
+  "exp": "Average speed = 2 x 60 x 90 / (60 + 90) = 10800/150 = 72 km/h.",
+  "sub": "Speed, distance, time"
+ },
+ {
+  "q": "What is the volume of a cylinder of radius 7 cm and height 10 cm? (π = 22/7)",
+  "options": [
+   "1450 cm³",
+   "770 cm³",
+   "3080 cm³",
+   "1540 cm³"
+  ],
+  "answer": 3,
+  "exp": "V = πr²h = 22/7 x 49 x 10 = 1540 cm³.",
+  "sub": "Mensuration"
+ },
+ {
+  "q": "If n(A) = 40, n(B) = 35 and n(A ∪ B) = 60, what is n(A ∩ B)?",
+  "options": [
+   "15",
+   "5",
+   "20",
+   "25"
+  ],
+  "answer": 0,
+  "exp": "n(A ∩ B) = n(A) + n(B) - n(A ∪ B) = 75 - 60 = 15.",
+  "sub": "Venn diagram / sets"
+ },
+ {
+  "q": "A Class VI student writes 3/4 + 2/5 = 5/9. What misconception does this error most likely show, and what should the teacher infer?",
+  "options": [
+   "The student cannot count",
+   "The student adds numerators and denominators separately and does not grasp the need for a common denominator",
+   "The student has not memorised the multiplication tables",
+   "The student is careless and has no misconception"
+  ],
+  "answer": 1,
+  "exp": "Adding top and bottom separately is a classic conceptual error; diagnosing it guides remedial teaching.",
+  "sub": "Pedagogy of mathematics"
+ },
+ {
+  "q": "The average age of 6 persons is 30 years. A new person joins and the average becomes 31 years. What is the age of the new person?",
+  "options": [
+   "31 years",
+   "35 years",
+   "37 years",
+   "40 years"
+  ],
+  "answer": 2,
+  "exp": "New total = 7 x 31 = 217; old total = 6 x 30 = 180; new person = 217 - 180 = 37.",
+  "sub": "Averages"
+ },
+ {
+  "q": "Three bells ring at intervals of 6, 8 and 12 minutes. If they ring together at 9:00 a.m., when will they next ring together?",
+  "options": [
+   "9:24 a.m.",
+   "9:48 a.m.",
+   "9:12 a.m.",
+   "10:00 a.m."
+  ],
+  "answer": 0,
+  "exp": "LCM of 6, 8, 12 = 24 minutes, so the next common ring is at 9:24 a.m.",
+  "sub": "LCM and HCF"
+ },
+ {
+  "q": "A father is 3 times as old as his son. After 12 years he will be twice as old as his son. What is the son's present age?",
+  "options": [
+   "10 years",
+   "12 years",
+   "14 years",
+   "8 years"
+  ],
+  "answer": 1,
+  "exp": "Let son = x: 3x + 12 = 2(x + 12) gives x = 12.",
+  "sub": "Algebra - word problem"
+ },
+ {
+  "q": "An exterior angle of a triangle is 110° and one of its interior opposite angles is 45°. What is the other interior opposite angle?",
+  "options": [
+   "55°",
+   "70°",
+   "65°",
+   "75°"
+  ],
+  "answer": 2,
+  "exp": "Exterior angle = sum of the two interior opposite angles, so the other = 110° - 45° = 65°.",
+  "sub": "Geometry - triangles"
+ },
+ {
+  "q": "18 is what percent of 72?",
+  "options": [
+   "20%",
+   "30%",
+   "40%",
+   "25%"
+  ],
+  "answer": 3,
+  "exp": "(18/72) x 100 = 25%.",
+  "sub": "Percentages"
+ },
+ {
+  "q": "What is the difference between compound interest and simple interest on Rs 5000 at 8% per annum for 2 years?",
+  "options": [
+   "Rs 40",
+   "Rs 32",
+   "Rs 16",
+   "Rs 64"
+  ],
+  "answer": 1,
+  "exp": "Difference for 2 years = P(R/100)² = 5000 x 0.0064 = 32 (CI = 832, SI = 800).",
+  "sub": "Compound interest"
+ },
+ {
+  "q": "Milk and water are in the ratio 3 : 2 in 20 litres of a mixture. How much water must be added to make the ratio 1 : 1?",
+  "options": [
+   "2 litres",
+   "5 litres",
+   "4 litres",
+   "8 litres"
+  ],
+  "answer": 2,
+  "exp": "Milk = 12 L, water = 8 L; for 1 : 1 water must be 12 L, so add 4 L.",
+  "sub": "Ratio and proportion"
+ },
+ {
+  "q": "Pipe A fills a tank in 20 minutes, pipe B in 30 minutes, and pipe C empties it in 60 minutes. If all three are open, how long to fill the tank?",
+  "options": [
+   "12 minutes",
+   "18 minutes",
+   "20 minutes",
+   "15 minutes"
+  ],
+  "answer": 3,
+  "exp": "Net rate = 1/20 + 1/30 - 1/60 = (3 + 2 - 1)/60 = 1/15, so 15 minutes.",
+  "sub": "Time and work"
+ },
+ {
+  "q": "Two trains of lengths 100 m and 140 m run in opposite directions at 40 km/h and 32 km/h. How long do they take to cross each other?",
+  "options": [
+   "12 s",
+   "10 s",
+   "15 s",
+   "8 s"
+  ],
+  "answer": 0,
+  "exp": "Relative speed = 72 km/h = 20 m/s; distance = 240 m; time = 240/20 = 12 s.",
+  "sub": "Speed, distance, time"
+ }
+]

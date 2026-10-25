@@ -1,0 +1,482 @@
+[
+ {
+  "q": "Assertion (A): A hash value can be used to check the integrity of a downloaded file.\nReason (R): Any change in the file produces a different hash value.",
+  "options": [
+   "Both A and R are true and R is the correct explanation of A",
+   "Both A and R are true but R is not the correct explanation of A",
+   "A is true but R is false",
+   "A is false but R is true"
+  ],
+  "answer": 0,
+  "exp": "Comparing the computed hash with the published hash reveals tampering because even a small change alters the hash.",
+  "sub": "Hashing"
+ },
+ {
+  "q": "In Diffie-Hellman key exchange with p = 11 and g = 2, Alice's secret is 3 and Bob's secret is 4. The shared secret key is",
+  "options": [
+   "8",
+   "5",
+   "4",
+   "2"
+  ],
+  "answer": 2,
+  "exp": "A = 2³ mod 11 = 8; B = 2⁴ mod 11 = 5; key = 5³ mod 11 = 125 mod 11 = 4 (also 8⁴ mod 11 = 4).",
+  "sub": "Key exchange"
+ },
+ {
+  "q": "A free game installer secretly opens a backdoor on the computer but does not copy itself to other files or machines. It is a",
+  "options": [
+   "Worm",
+   "Trojan horse",
+   "File-infecting virus",
+   "Macro virus"
+  ],
+  "answer": 1,
+  "exp": "A trojan masquerades as useful software and does not self-replicate.",
+  "sub": "Malware"
+ },
+ {
+  "q": "In India, a registered trade mark is initially valid for",
+  "options": [
+   "5 years, non-renewable",
+   "20 years, non-renewable",
+   "Lifetime of the owner",
+   "10 years, renewable"
+  ],
+  "answer": 3,
+  "exp": "Trade mark registration lasts 10 years and can be renewed indefinitely for further 10-year periods.",
+  "sub": "Copyright and IPR"
+ },
+ {
+  "q": "How does an Intrusion Prevention System (IPS) differ from an Intrusion Detection System (IDS)?",
+  "options": [
+   "An IPS only works on hosts and an IDS only on networks",
+   "An IDS encrypts traffic and an IPS decrypts it",
+   "An IPS cannot detect attacks, it only logs them",
+   "An IPS sits inline and can actively block malicious traffic, whereas an IDS mainly alerts"
+  ],
+  "answer": 3,
+  "exp": "IDS monitors and raises alerts; IPS is placed in the traffic path and drops or blocks attacks.",
+  "sub": "IDS"
+ },
+ {
+  "q": "A message DWWDFN was encrypted with a Caesar cipher using shift 3. The plaintext is",
+  "options": [
+   "ZSSZBJ",
+   "ATTACK",
+   "GZZGIQ",
+   "ATTCAK"
+  ],
+  "answer": 1,
+  "exp": "Shifting each letter back by 3: D→A, W→T, W→T, D→A, F→C, N→K.",
+  "sub": "Classical ciphers"
+ },
+ {
+  "q": "Under the IT Act, certifying authorities are licensed and regulated by the",
+  "options": [
+   "CERT-In",
+   "TRAI",
+   "Controller of Certifying Authorities (CCA)",
+   "SEBI"
+  ],
+  "answer": 2,
+  "exp": "The CCA licenses CAs and supervises the issue of digital signature certificates.",
+  "sub": "IT Act 2000"
+ },
+ {
+  "q": "In a stored (persistent) XSS attack, the malicious script is",
+  "options": [
+   "Saved on the target server, for example in a comment, and served to every visitor",
+   "Present only in a link sent to one victim",
+   "Stored on the attacker's USB drive",
+   "Executed only inside the database engine"
+  ],
+  "answer": 0,
+  "exp": "Persistent XSS keeps the payload in server-side storage, so each viewer's browser runs it.",
+  "sub": "XSS"
+ },
+ {
+  "q": "Which of the following is NOT provided by a digital signature on its own?",
+  "options": [
+   "Authentication of the sender",
+   "Integrity of the message",
+   "Confidentiality of the message content",
+   "Non-repudiation"
+  ],
+  "answer": 2,
+  "exp": "A signature proves origin and integrity; the message stays readable unless it is also encrypted.",
+  "sub": "Digital signatures"
+ },
+ {
+  "q": "Which of the following is an example of the 'something you are' authentication factor?",
+  "options": [
+   "Password",
+   "One-time password token",
+   "Smart card",
+   "Fingerprint"
+  ],
+  "answer": 3,
+  "exp": "Biometrics such as fingerprints are inherence factors.",
+  "sub": "Authentication and 2FA"
+ },
+ {
+  "q": "Which of the following is NOT protected by copyright?",
+  "options": [
+   "Source code of a program",
+   "An idea or concept as such, apart from its expression",
+   "A recorded song",
+   "A painting"
+  ],
+  "answer": 1,
+  "exp": "Copyright protects the expression of ideas, not ideas themselves.",
+  "sub": "Copyright and IPR"
+ },
+ {
+  "q": "A DMZ (demilitarised zone) in network security is",
+  "options": [
+   "A separate subnet exposing public-facing servers between the Internet and the internal network",
+   "A zone where all traffic is blocked permanently",
+   "A backup site in another city",
+   "A wireless network without a password"
+  ],
+  "answer": 0,
+  "exp": "Placing web or mail servers in a DMZ limits damage to the internal LAN if they are compromised.",
+  "sub": "Firewalls"
+ },
+ {
+  "q": "A full backup is taken on Sunday and a differential backup each night from Monday to Saturday. The system fails on Friday morning. How many backup sets are needed to restore it?",
+  "options": [
+   "2",
+   "1",
+   "4",
+   "5"
+  ],
+  "answer": 0,
+  "exp": "Only the Sunday full backup and Thursday night's differential (all changes since Sunday) are needed.",
+  "sub": "Backup and recovery"
+ },
+ {
+  "q": "How many different passwords of exactly 3 lowercase letters (a-z, repetition allowed) are possible?",
+  "options": [
+   "78",
+   "17576",
+   "15600",
+   "2600"
+  ],
+  "answer": 1,
+  "exp": "26 × 26 × 26 = 17576.",
+  "sub": "Password strength"
+ },
+ {
+  "q": "The main purpose of the TLS handshake is to",
+  "options": [
+   "Compress the web page before transfer",
+   "Assign an IP address to the client",
+   "Scan the client for viruses",
+   "Authenticate the server and agree on cipher suite and session keys"
+  ],
+  "answer": 3,
+  "exp": "The handshake verifies the server's certificate and establishes shared symmetric keys.",
+  "sub": "SSL/TLS"
+ },
+ {
+  "q": "Legal recognition to electronic records under the IT Act 2000 is given in Section",
+  "options": [
+   "2",
+   "43",
+   "4",
+   "69"
+  ],
+  "answer": 2,
+  "exp": "Section 4 gives legal recognition to electronic records, Section 2 holds definitions.",
+  "sub": "IT Act 2000"
+ },
+ {
+  "q": "Malware that secretly records every key pressed by the user in order to steal passwords is",
+  "options": [
+   "Adware",
+   "A worm",
+   "A boot loader",
+   "A keylogger"
+  ],
+  "answer": 3,
+  "exp": "Keyloggers capture keystrokes and send them to the attacker.",
+  "sub": "Malware"
+ },
+ {
+  "q": "Users typing the correct URL of their bank are silently redirected to a fake site because DNS records were corrupted. This is",
+  "options": [
+   "Pharming",
+   "Phishing",
+   "Vishing",
+   "Packet sniffing"
+  ],
+  "answer": 0,
+  "exp": "Pharming poisons DNS or host files to redirect users, even when they type the right address.",
+  "sub": "Attacks"
+ },
+ {
+  "q": "The number of rounds in AES when a 192-bit key is used is",
+  "options": [
+   "10",
+   "14",
+   "12",
+   "16"
+  ],
+  "answer": 2,
+  "exp": "AES uses 10, 12 and 14 rounds for 128, 192 and 256-bit keys respectively.",
+  "sub": "Symmetric cryptography"
+ },
+ {
+  "q": "According to netiquette, typing an entire message in capital letters is generally regarded as",
+  "options": [
+   "Politeness",
+   "Shouting",
+   "A formal e-mail format",
+   "A form of encryption"
+  ],
+  "answer": 1,
+  "exp": "All capitals is read as shouting in online communication.",
+  "sub": "Digital ethics"
+ },
+ {
+  "q": "Alice wants to send Bob a confidential message using public-key cryptography. She should encrypt it with",
+  "options": [
+   "Alice's private key",
+   "Bob's public key",
+   "Alice's public key",
+   "Bob's private key"
+  ],
+  "answer": 1,
+  "exp": "Only Bob's private key can decrypt a message encrypted with his public key.",
+  "sub": "Asymmetric cryptography"
+ },
+ {
+  "q": "Match the attack with its description: (i) Smishing (ii) Whaling (iii) Spear phishing (iv) Pharming with (p) targets senior executives (q) fraudulent SMS (r) personalised e-mail aimed at a specific person (s) DNS redirection to a fake site.",
+  "options": [
+   "i-p, ii-q, iii-s, iv-r",
+   "i-r, ii-s, iii-q, iv-p",
+   "i-q, ii-p, iii-r, iv-s",
+   "i-s, ii-r, iii-p, iv-q"
+  ],
+  "answer": 2,
+  "exp": "Smishing uses SMS, whaling targets big fish such as executives, spear phishing is personalised and pharming redirects via DNS.",
+  "sub": "Attacks"
+ },
+ {
+  "q": "A toy hash function is h(x) = x mod 11. Which pair of inputs causes a collision?",
+  "options": [
+   "25 and 36",
+   "12 and 24",
+   "13 and 26",
+   "15 and 29"
+  ],
+  "answer": 0,
+  "exp": "25 mod 11 = 3 and 36 mod 11 = 3, so both give the same hash; the other pairs give different values.",
+  "sub": "Hashing"
+ },
+ {
+  "q": "Cyber terrorism under Section 66F of the IT Act is punishable with",
+  "options": [
+   "Imprisonment up to 3 years",
+   "Imprisonment up to 7 years",
+   "A fine only",
+   "Imprisonment which may extend to life"
+  ],
+  "answer": 3,
+  "exp": "Section 66F prescribes imprisonment that may extend to imprisonment for life.",
+  "sub": "IT Act 2000"
+ },
+ {
+  "q": "In disaster recovery planning, a 'hot site' is",
+  "options": [
+   "An empty building with only power and space",
+   "A fully equipped alternate facility with current data that can take over almost immediately",
+   "A vault that stores backup tapes",
+   "A site used only for printing records"
+  ],
+  "answer": 1,
+  "exp": "Hot sites mirror systems and data for near-instant failover; cold sites are empty shells.",
+  "sub": "Backup and recovery"
+ },
+ {
+  "q": "Statement I: A stateful inspection firewall keeps track of the state of active connections.\nStatement II: A firewall alone gives complete protection against attacks by trusted insiders.",
+  "options": [
+   "Both Statement I and Statement II are true",
+   "Only Statement II is true",
+   "Both Statement I and Statement II are false",
+   "Only Statement I is true"
+  ],
+  "answer": 3,
+  "exp": "Statement I is true; a firewall filters traffic at the perimeter and cannot stop all insider misuse, so Statement II is false.",
+  "sub": "Firewalls"
+ },
+ {
+  "q": "IPsec, commonly used to build VPNs, operates at which layer of the OSI/TCP-IP model?",
+  "options": [
+   "Network layer",
+   "Application layer",
+   "Data link layer",
+   "Transport layer only"
+  ],
+  "answer": 0,
+  "exp": "IPsec secures IP packets themselves, so it works at the network layer.",
+  "sub": "VPN"
+ },
+ {
+  "q": "A disgruntled employee's program deletes the payroll database if his name is removed from the payroll list. This is an example of a",
+  "options": [
+   "Worm",
+   "Spyware",
+   "Logic bomb",
+   "Adware"
+  ],
+  "answer": 2,
+  "exp": "A logic bomb stays dormant until a specific condition is met.",
+  "sub": "Malware"
+ },
+ {
+  "q": "The national nodal agency in India for responding to computer security incidents is",
+  "options": [
+   "NIC",
+   "BIS",
+   "CERT-In",
+   "TRAI"
+  ],
+  "answer": 2,
+  "exp": "CERT-In (Indian Computer Emergency Response Team) handles cyber security incidents under the IT Act.",
+  "sub": "IT Act 2000"
+ },
+ {
+  "q": "The science of analysing and breaking ciphers without knowing the key is called",
+  "options": [
+   "Cryptanalysis",
+   "Steganography",
+   "Encryption",
+   "Authentication"
+  ],
+  "answer": 0,
+  "exp": "Cryptanalysis attempts to recover plaintext or keys from ciphertext.",
+  "sub": "Cryptography basics"
+ },
+ {
+  "q": "Hiding a secret message in the least significant bits of an image file is called",
+  "options": [
+   "Cryptanalysis",
+   "Hashing",
+   "Salting",
+   "Steganography"
+  ],
+  "answer": 3,
+  "exp": "Steganography conceals the existence of the message itself.",
+  "sub": "Cryptography basics"
+ },
+ {
+  "q": "In a DDoS attack the large group of compromised computers controlled remotely by the attacker is called a",
+  "options": [
+   "Honeynet",
+   "Botnet",
+   "Intranet",
+   "Subnet"
+  ],
+  "answer": 1,
+  "exp": "Bots under a command-and-control server form a botnet used to flood the victim.",
+  "sub": "DoS attacks"
+ },
+ {
+  "q": "In India, a patent is granted for a term of",
+  "options": [
+   "20 years from the date of filing",
+   "10 years from grant",
+   "14 years from grant",
+   "25 years from publication"
+  ],
+  "answer": 0,
+  "exp": "Under the Patents Act, 1970 the term is 20 years from the filing date.",
+  "sub": "Copyright and IPR"
+ },
+ {
+  "q": "Which kind of software is available free of cost but its source code is not made available?",
+  "options": [
+   "Free and open-source software",
+   "Copyleft (GPL) software",
+   "Freeware",
+   "Public domain software"
+  ],
+  "answer": 2,
+  "exp": "Freeware costs nothing to use but remains proprietary with closed source.",
+  "sub": "Software licensing"
+ },
+ {
+  "q": "The most effective programming-level defence against SQL injection is",
+  "options": [
+   "Making the input text boxes longer",
+   "Using parameterised queries (prepared statements)",
+   "Only hiding database error messages",
+   "Relying only on client-side JavaScript validation"
+  ],
+  "answer": 1,
+  "exp": "Parameterised queries keep user data separate from SQL code, so input cannot alter the query structure.",
+  "sub": "SQL injection"
+ },
+ {
+  "q": "For RSA with p = 7 and q = 11, which value of e is a valid public exponent?",
+  "options": [
+   "5",
+   "6",
+   "15",
+   "7"
+  ],
+  "answer": 3,
+  "exp": "φ(n) = 6×10 = 60. e must be coprime with 60; gcd(5,60)=5, gcd(6,60)=6, gcd(15,60)=15, but gcd(7,60)=1.",
+  "sub": "RSA numeric"
+ },
+ {
+  "q": "Which of the following is NOT a type of malware?",
+  "options": [
+   "Rootkit",
+   "Adware",
+   "Spyware",
+   "Honeypot"
+  ],
+  "answer": 3,
+  "exp": "A honeypot is a decoy system used by defenders to study attackers.",
+  "sub": "Malware"
+ },
+ {
+  "q": "Section 43A of the IT Act (inserted in 2008) deals with",
+  "options": [
+   "Punishment for cyber terrorism",
+   "Compensation when a body corporate fails to protect sensitive personal data",
+   "Cheating by personation using a computer resource",
+   "Publishing obscene material in electronic form"
+  ],
+  "answer": 1,
+  "exp": "Section 43A makes a body corporate liable to pay compensation for negligence in protecting sensitive personal data.",
+  "sub": "IT Act 2000"
+ },
+ {
+  "q": "Which of the following is a passive attack?",
+  "options": [
+   "Replay of captured messages",
+   "Masquerading as another user",
+   "Eavesdropping on network traffic",
+   "Denial of service"
+  ],
+  "answer": 2,
+  "exp": "Passive attacks only observe; replay, masquerade and DoS actively alter or disrupt communication.",
+  "sub": "Attacks"
+ },
+ {
+  "q": "India's Digital Personal Data Protection Act was enacted in the year",
+  "options": [
+   "2023",
+   "2000",
+   "2008",
+   "2016"
+  ],
+  "answer": 0,
+  "exp": "The Digital Personal Data Protection Act received assent in August 2023.",
+  "sub": "Cyber law"
+ }
+]

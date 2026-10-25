@@ -1,0 +1,482 @@
+[
+ {
+  "q": "Among the following parsers, which is the most powerful (accepts the largest class of grammars)?",
+  "options": [
+   "SLR(1)",
+   "Canonical LR(1)",
+   "LALR(1)",
+   "LL(1)"
+  ],
+  "answer": 1,
+  "exp": "CLR(1) accepts every grammar accepted by SLR(1) and LALR(1), and LL(1) grammars are a subset of LR(1).",
+  "sub": "Parsing"
+ },
+ {
+  "q": "Moving a computation that gives the same result in every iteration out of a loop is called",
+  "options": [
+   "strength reduction",
+   "loop unrolling",
+   "loop-invariant code motion",
+   "constant propagation"
+  ],
+  "answer": 2,
+  "exp": "Hoisting invariant expressions out of the loop body is code motion.",
+  "sub": "Code optimization"
+ },
+ {
+  "q": "What is the number of states in the minimal DFA that accepts binary strings representing numbers divisible by 5?",
+  "options": [
+   "5",
+   "3",
+   "4",
+   "6"
+  ],
+  "answer": 0,
+  "exp": "The DFA tracks the remainder modulo 5, requiring 5 states.",
+  "sub": "Finite automata"
+ },
+ {
+  "q": "An NFA has states q0, q1, q2 over {a,b}. q0 loops on a and b, q0 --a--> q1, q1 --b--> q2, and q2 loops on a and b. q2 is the only final state. What does it accept?",
+  "options": [
+   "strings ending in ab",
+   "strings starting with ab",
+   "strings containing exactly one ab",
+   "strings containing ab as a substring"
+  ],
+  "answer": 3,
+  "exp": "The machine guesses an ab, then accepts whatever follows, so any string containing ab is accepted.",
+  "sub": "Finite automata"
+ },
+ {
+  "q": "The regular expression (a+b)*a(a+b) describes strings over {a,b} in which",
+  "options": [
+   "the second symbol from the right end is a",
+   "the last symbol is a",
+   "the second symbol from the left is a",
+   "a appears exactly once"
+  ],
+  "answer": 0,
+  "exp": "a(a+b) at the end means an a followed by exactly one more symbol, so a is second from the end.",
+  "sub": "Regular expressions"
+ },
+ {
+  "q": "Which of the following languages is NOT context-free?",
+  "options": [
+   "{ww^R | w ∈ {a,b}*}",
+   "{a^n b^m c^n | n, m ≥ 0}",
+   "{ww | w ∈ {a,b}*}",
+   "{a^n b^2n | n ≥ 0}"
+  ],
+  "answer": 2,
+  "exp": "The copy language ww cannot be handled by a stack; the pumping lemma for CFLs rules it out.",
+  "sub": "Pumping lemma"
+ },
+ {
+  "q": "The grammar S → AB, A → aA | a, B → bB | b generates",
+  "options": [
+   "zero or more a's followed by zero or more b's",
+   "strings with equal numbers of a's and b's",
+   "strings of alternating a and b",
+   "one or more a's followed by one or more b's"
+  ],
+  "answer": 3,
+  "exp": "A derives a+ and B derives b+, so S derives a+b+.",
+  "sub": "Context-free grammars"
+ },
+ {
+  "q": "In Greibach normal form, every production has the form",
+  "options": [
+   "A → BC or A → a",
+   "A → aα, where a is a terminal and α is a string of variables (possibly empty)",
+   "A → αβ, where α and β are terminals",
+   "A → ε only"
+  ],
+  "answer": 1,
+  "exp": "GNF requires each right-hand side to start with exactly one terminal followed by variables.",
+  "sub": "Normal forms"
+ },
+ {
+  "q": "If both a language L and its complement are recursively enumerable, then L is",
+  "options": [
+   "recursive (decidable)",
+   "regular",
+   "context-free",
+   "undecidable"
+  ],
+  "answer": 0,
+  "exp": "Run the two recognizers in parallel; exactly one halts and accepts, giving a decider.",
+  "sub": "Turing machines & decidability"
+ },
+ {
+  "q": "For the grammar S → aAb, A → cA | ε, what is FOLLOW(A)?",
+  "options": [
+   "{c}",
+   "{a}",
+   "{b}",
+   "{$}"
+  ],
+  "answer": 2,
+  "exp": "A appears only just before b in S → aAb, and A → cA places A at the end of a right-hand side, adding FOLLOW(A) to itself; so FOLLOW(A) = {b}.",
+  "sub": "Parsing"
+ },
+ {
+  "q": "In a language where else is a keyword, the lexical analyzer reads the input elsewhere using the longest-match (maximal munch) rule. What does it return?",
+  "options": [
+   "the keyword else followed by an identifier where",
+   "a single identifier token elsewhere",
+   "two keyword tokens",
+   "a lexical error"
+  ],
+  "answer": 1,
+  "exp": "Maximal munch picks the longest lexeme that matches a token pattern, which is the identifier elsewhere.",
+  "sub": "Lexical analysis"
+ },
+ {
+  "q": "Peephole optimization works by",
+  "options": [
+   "analysing the whole program flow graph",
+   "optimizing only the source code before parsing",
+   "optimizing only loops",
+   "examining a small window of adjacent target instructions and replacing them with better ones"
+  ],
+  "answer": 3,
+  "exp": "A peephole optimizer slides a small window over the generated code and applies local improvements.",
+  "sub": "Code optimization"
+ },
+ {
+  "q": "Compared with a subroutine call, the use of a macro generally results in",
+  "options": [
+   "smaller object code and slower execution",
+   "smaller object code and faster execution",
+   "the same code size but extra stack usage",
+   "larger object code but no call/return overhead at run time"
+  ],
+  "answer": 3,
+  "exp": "A macro body is copied inline at each call, increasing size but avoiding call and return overhead.",
+  "sub": "Macros"
+ },
+ {
+  "q": "The forward reference problem in assembly language is usually solved by",
+  "options": [
+   "using larger registers",
+   "macro expansion",
+   "a two-pass assembler",
+   "the loader"
+  ],
+  "answer": 2,
+  "exp": "The first pass collects all label addresses so the second pass can resolve forward references.",
+  "sub": "Assembler"
+ },
+ {
+  "q": "To obtain a DFA for the complement of a regular language from a complete DFA, we",
+  "options": [
+   "reverse all transitions",
+   "interchange final and non-final states",
+   "make the start state final",
+   "add ε-transitions to all states"
+  ],
+  "answer": 1,
+  "exp": "In a complete DFA a string is rejected exactly when it ends in a non-final state, so swapping accepting status complements the language.",
+  "sub": "Finite automata"
+ },
+ {
+  "q": "What is the number of states in the minimal DFA for the language of (a+b)*abb?",
+  "options": [
+   "4",
+   "3",
+   "5",
+   "8"
+  ],
+  "answer": 0,
+  "exp": "The DFA tracks the longest suffix matching a prefix of abb: states for ε, a, ab, abb, so 4 states.",
+  "sub": "Regular expressions"
+ },
+ {
+  "q": "A context-free language for which every grammar is ambiguous is called",
+  "options": [
+   "context-sensitive",
+   "nondeterministic",
+   "inherently ambiguous",
+   "regular"
+  ],
+  "answer": 2,
+  "exp": "This is the definition of an inherently ambiguous language, such as {a^i b^j c^k | i = j or j = k}.",
+  "sub": "Ambiguity"
+ },
+ {
+  "q": "A pushdown automaton is a finite automaton equipped with",
+  "options": [
+   "a queue",
+   "a stack",
+   "a second input tape",
+   "an unbounded counter only"
+  ],
+  "answer": 1,
+  "exp": "The stack gives a PDA unbounded last-in-first-out memory.",
+  "sub": "PDA & CFL"
+ },
+ {
+  "q": "A universal Turing machine is one that",
+  "options": [
+   "simulates any Turing machine given its description and input",
+   "decides the halting problem",
+   "has infinitely many states",
+   "accepts only regular languages"
+  ],
+  "answer": 0,
+  "exp": "A UTM takes an encoding of a machine M and input w and simulates M on w.",
+  "sub": "Turing machines & decidability"
+ },
+ {
+  "q": "In bottom-up parsing, a handle is",
+  "options": [
+   "a substring used in a leftmost derivation step",
+   "the first terminal in the input",
+   "the top symbol of the parse stack always",
+   "a substring matching a production's right side whose reduction is a step of a reverse rightmost derivation"
+  ],
+  "answer": 3,
+  "exp": "Reducing the handle at each step traces a rightmost derivation in reverse.",
+  "sub": "Parsing"
+ },
+ {
+  "q": "What is the postfix form of the infix expression a*(b+c)-d?",
+  "options": [
+   "ab*c+d-",
+   "abc+*d-",
+   "abcd+*-",
+   "ab+c*d-"
+  ],
+  "answer": 1,
+  "exp": "b+c becomes bc+; a*(b+c) becomes abc+*; subtracting d gives abc+*d-.",
+  "sub": "Intermediate code"
+ },
+ {
+  "q": "In graph-coloring register allocation, an edge between two nodes means",
+  "options": [
+   "the two variables are live at the same time and cannot share a register",
+   "the two variables must be in the same register",
+   "one variable is a copy of the other",
+   "they appear in the same statement"
+  ],
+  "answer": 0,
+  "exp": "Nodes are live ranges; an interference edge forces different colors (registers).",
+  "sub": "Code generation"
+ },
+ {
+  "q": "Dynamic linking resolves references to library routines",
+  "options": [
+   "at compile time",
+   "during lexical analysis",
+   "at load time or run time",
+   "at assembly time"
+  ],
+  "answer": 2,
+  "exp": "Dynamic linking postpones resolution until the program is loaded or executed.",
+  "sub": "Assembler, linker & loader"
+ },
+ {
+  "q": "Relocation information in an object module is used by the loader to",
+  "options": [
+   "distinguish instructions from data",
+   "check the syntax of the program",
+   "allocate registers",
+   "find which words must be adjusted when the program is loaded at a different base address"
+  ],
+  "answer": 3,
+  "exp": "Words holding addresses are flagged so the loader can add the load-address offset to them.",
+  "sub": "Assembler, linker & loader"
+ },
+ {
+  "q": "The intersection of a context-free language and a regular language is",
+  "options": [
+   "always regular",
+   "never context-free",
+   "not necessarily recursive",
+   "always context-free"
+  ],
+  "answer": 3,
+  "exp": "Run the PDA and the DFA together using product construction; the result is a PDA.",
+  "sub": "Closure properties"
+ },
+ {
+  "q": "Assertion (A): Every regular language is context-free.\nReason (R): A PDA that ignores its stack can simulate any DFA.\nWhich is correct?",
+  "options": [
+   "Both A and R are true but R is not the correct explanation of A",
+   "Both A and R are true and R is the correct explanation of A",
+   "A is true but R is false",
+   "A is false but R is true"
+  ],
+  "answer": 1,
+  "exp": "Regular languages form a subset of CFLs because a PDA with unused stack behaves like a DFA.",
+  "sub": "Chomsky hierarchy"
+ },
+ {
+  "q": "Match the compiler phase with its output.\n1 Lexical analysis  2 Syntax analysis  3 Semantic analysis  4 Code optimization\nP: Parse tree  Q: Stream of tokens  R: Type-checked annotated tree  S: Improved intermediate code",
+  "options": [
+   "1-Q, 2-P, 3-R, 4-S",
+   "1-P, 2-Q, 3-R, 4-S",
+   "1-Q, 2-R, 3-P, 4-S",
+   "1-Q, 2-P, 3-S, 4-R"
+  ],
+  "answer": 0,
+  "exp": "Lexical analysis yields tokens, parsing yields a parse tree, semantic analysis yields an annotated tree, and optimization yields improved code.",
+  "sub": "Compiler phases"
+ },
+ {
+  "q": "Match each language with the smallest class containing it.\nP: (ab)*   Q: {a^n b^n | n ≥ 1}   R: {a^n b^n c^n | n ≥ 1}   S: set of pairs (M,w) where TM M halts on w\n1 Regular  2 CFL but not regular  3 CSL but not CFL  4 RE but not recursive",
+  "options": [
+   "P-1, Q-3, R-2, S-4",
+   "P-2, Q-1, R-3, S-4",
+   "P-1, Q-2, R-3, S-4",
+   "P-1, Q-2, R-4, S-3"
+  ],
+  "answer": 2,
+  "exp": "(ab)* is regular; a^n b^n is CFL; a^n b^n c^n is context-sensitive; the halting language is RE but not recursive.",
+  "sub": "Chomsky hierarchy"
+ },
+ {
+  "q": "A complete DFA has states A (start), B, C, D with final states C and D. Transitions: A-0->B, A-1->C, B-0->A, B-1->D, C-0->C, C-1->C, D-0->D, D-1->D. How many states does the minimal equivalent DFA have?",
+  "options": [
+   "1",
+   "3",
+   "4",
+   "2"
+  ],
+  "answer": 3,
+  "exp": "C and D are equivalent (both always stay accepting); A and B are equivalent (both go to accepting states on 1 and swap on 0). So 2 classes.",
+  "sub": "Finite automata"
+ },
+ {
+  "q": "An NFA over {a,b} has states p (start), q, r with r final. p-a->{p,q}, p-b->{p}, q-b->{r}, and there are no other transitions. How many states (excluding the empty set) does the subset construction produce?",
+  "options": [
+   "3",
+   "2",
+   "4",
+   "6"
+  ],
+  "answer": 0,
+  "exp": "Reachable subsets: {p}; on a {p,q}; from {p,q} on a {p,q}, on b {p,r}; from {p,r} on a {p,q}, on b {p}. Total 3.",
+  "sub": "Finite automata"
+ },
+ {
+  "q": "How many distinct strings of length 4 are generated by the grammar S → aSb | SS | ε?",
+  "options": [
+   "1",
+   "3",
+   "2",
+   "4"
+  ],
+  "answer": 2,
+  "exp": "The grammar generates balanced a/b sequences; of length 4 they are aabb and abab.",
+  "sub": "Context-free grammars"
+ },
+ {
+  "q": "A PDA for {a^n b^n | n ≥ 1} pushes one symbol A on the stack for each a and pops one A for each b. After reading aaabb, how many A symbols are on the stack?",
+  "options": [
+   "0",
+   "1",
+   "2",
+   "3"
+  ],
+  "answer": 1,
+  "exp": "Three pushes and two pops leave 3 - 2 = 1 symbol A.",
+  "sub": "PDA & CFL"
+ },
+ {
+  "q": "A Turing machine moves right, replacing every 0 by 1 and every 1 by 0, and halts at the first blank. If the tape initially holds 01101, what does it hold after halting?",
+  "options": [
+   "01101",
+   "10110",
+   "10010",
+   "11111"
+  ],
+  "answer": 2,
+  "exp": "Flipping each bit of 01101 gives 10010.",
+  "sub": "Turing machines & decidability"
+ },
+ {
+  "q": "Rice's theorem states that",
+  "options": [
+   "every non-trivial semantic property of the language accepted by a Turing machine is undecidable",
+   "every property of Turing machines is decidable",
+   "the halting problem is decidable for deterministic machines",
+   "all languages are recursively enumerable"
+  ],
+  "answer": 0,
+  "exp": "Any property of the accepted language that some, but not all, RE languages have cannot be decided.",
+  "sub": "Turing machines & decidability"
+ },
+ {
+  "q": "Why is the grammar S → aS | a not LL(1)?",
+  "options": [
+   "It is left recursive",
+   "It is ambiguous",
+   "It contains ε productions",
+   "Both alternatives begin with a, so their FIRST sets overlap and left factoring is needed"
+  ],
+  "answer": 3,
+  "exp": "With one lookahead symbol a the parser cannot choose between the two productions.",
+  "sub": "Parsing"
+ },
+ {
+  "q": "The dangling-else problem leads to which kind of parsing conflict?",
+  "options": [
+   "Reduce-reduce conflict",
+   "Shift-reduce conflict",
+   "Lexical error",
+   "Left-recursion conflict"
+  ],
+  "answer": 1,
+  "exp": "On seeing else, the parser can either shift it (attach to nearest if) or reduce the inner if statement.",
+  "sub": "Parsing"
+ },
+ {
+  "q": "YACC is a tool that generates",
+  "options": [
+   "a lexical analyzer",
+   "an LL(1) parser",
+   "an LALR(1) parser",
+   "an assembler"
+  ],
+  "answer": 2,
+  "exp": "YACC builds LALR(1) parsers from grammar specifications; Lex generates lexical analyzers.",
+  "sub": "Compiler tools"
+ },
+ {
+  "q": "How many three-address instructions are generated for a = b + c*d - e, using temporaries for each intermediate result and a final assignment?",
+  "options": [
+   "4",
+   "3",
+   "5",
+   "6"
+  ],
+  "answer": 0,
+  "exp": "t1 = c*d; t2 = b + t1; t3 = t2 - e; a = t3 gives 4 instructions.",
+  "sub": "Intermediate code"
+ },
+ {
+  "q": "Consider the code:\n1 a = 4\n2 b = a + 1\n3 a = 9\n4 c = b * 2\n5 print(c)\nWhich statement is dead code that can be removed without changing the output?",
+  "options": [
+   "Statement 1",
+   "Statement 3",
+   "Statement 2",
+   "Statement 4"
+  ],
+  "answer": 1,
+  "exp": "The value 9 assigned to a in statement 3 is never used afterwards; statement 1 is needed by statement 2.",
+  "sub": "Code optimization"
+ },
+ {
+  "q": "In x = (a+b)*c; y = (a+b)*d; with a and b unchanged between the statements, how many addition operations remain after common subexpression elimination?",
+  "options": [
+   "0",
+   "2",
+   "3",
+   "1"
+  ],
+  "answer": 3,
+  "exp": "a+b is computed once and reused, so one addition remains.",
+  "sub": "Code optimization"
+ }
+]

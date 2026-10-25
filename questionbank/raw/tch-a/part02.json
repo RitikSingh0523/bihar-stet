@@ -1,0 +1,362 @@
+[
+ {
+  "q": "The classification of people into introverts and extroverts was given by",
+  "options": [
+   "Sheldon",
+   "Kretschmer",
+   "Carl Jung",
+   "Allport"
+  ],
+  "answer": 2,
+  "exp": "Jung classified personality as introvert or extrovert on the basis of the direction of libido.",
+  "sub": "Personality"
+ },
+ {
+  "q": "The period of adolescence roughly covers the age of",
+  "options": [
+   "3 to 6 years",
+   "12 to 19 years",
+   "6 to 12 years",
+   "20 to 30 years"
+  ],
+  "answer": 1,
+  "exp": "Adolescence is the transition between childhood and adulthood during the teen years.",
+  "sub": "Adolescence"
+ },
+ {
+  "q": "Which teaching practice best respects individual differences?",
+  "options": [
+   "Differentiated instruction",
+   "Teaching only the average student",
+   "Same homework to all",
+   "Lecture only"
+  ],
+  "answer": 0,
+  "exp": "Differentiated instruction adjusts content, process and product to learner needs.",
+  "sub": "Individual differences"
+ },
+ {
+  "q": "Which provision is most suitable for a gifted child in the regular classroom?",
+  "options": [
+   "Repetition of the same easy work",
+   "Ignoring the child",
+   "Enrichment activities with higher-level tasks",
+   "Punishment for boredom"
+  ],
+  "answer": 2,
+  "exp": "Enrichment offers deeper, broader learning matching high ability.",
+  "sub": "Gifted and special education"
+ },
+ {
+  "q": "In directive counselling the main role is played by the",
+  "options": [
+   "client",
+   "teacher only",
+   "parents",
+   "counsellor"
+  ],
+  "answer": 3,
+  "exp": "Directive counselling (Williamson) is counsellor-centred.",
+  "sub": "Guidance and counselling"
+ },
+ {
+  "q": "According to Baumrind-type styles, which teaching style generally gives the best classroom climate?",
+  "options": [
+   "Authoritarian",
+   "Authoritative or democratic",
+   "Permissive",
+   "Neglectful"
+  ],
+  "answer": 1,
+  "exp": "Warmth with firm limits leads to cooperation and self-discipline.",
+  "sub": "Classroom management and discipline"
+ },
+ {
+  "q": "Gandhi's three H's in education stand for",
+  "options": [
+   "Health, Happiness and Harmony",
+   "History, Hindi and Hygiene",
+   "Head, Heart and Hand",
+   "Hearing, Handling and Habit"
+  ],
+  "answer": 2,
+  "exp": "Gandhi wanted balanced development of the intellect, emotions and skills.",
+  "sub": "Gandhi and Tagore"
+ },
+ {
+  "q": "Vivekananda's ideal of education is",
+  "options": [
+   "man-making and character-building",
+   "job-oriented training only",
+   "memorisation",
+   "purely vocational education"
+  ],
+  "answer": 0,
+  "exp": "He wanted education that builds character and strength of mind.",
+  "sub": "Vivekananda and Aurobindo"
+ },
+ {
+  "q": "Rousseau, the author of 'Emile', is a famous representative of",
+  "options": [
+   "idealism",
+   "naturalism",
+   "pragmatism",
+   "realism"
+  ],
+  "answer": 1,
+  "exp": "Rousseau emphasised 'back to nature' and child-centred education.",
+  "sub": "Philosophy of education"
+ },
+ {
+  "q": "The RTE Act is based on which constitutional provision?",
+  "options": [
+   "Article 14",
+   "Article 19",
+   "Article 32",
+   "Article 21A"
+  ],
+  "answer": 3,
+  "exp": "Article 21A, inserted by the 86th Amendment (2002), makes education a fundamental right.",
+  "sub": "Right to Education Act 2009"
+ },
+ {
+  "q": "The principle that development proceeds from the head towards the feet is called",
+  "options": [
+   "proximodistal principle",
+   "cephalocaudal principle",
+   "principle of integration",
+   "principle of individual differences"
+  ],
+  "answer": 1,
+  "exp": "Cephalocaudal means head-to-tail: a child gains control of the head before the trunk and legs.",
+  "sub": "Growth and development"
+ },
+ {
+  "q": "A child pours water from a short wide glass into a tall thin glass and says the amount is the same. This child has grasped",
+  "options": [
+   "egocentrism",
+   "animism",
+   "conservation",
+   "centration"
+  ],
+  "answer": 2,
+  "exp": "Conservation is the understanding that quantity remains unchanged despite changes in appearance; it appears in the concrete operational stage.",
+  "sub": "Piaget"
+ },
+ {
+  "q": "Vygotsky's theory is generally known as",
+  "options": [
+   "sociocultural theory",
+   "psychoanalytic theory",
+   "behaviourist theory",
+   "maturation theory"
+  ],
+  "answer": 0,
+  "exp": "Vygotsky emphasised the role of culture and social interaction in cognitive development.",
+  "sub": "Vygotsky"
+ },
+ {
+  "q": "A child shares sweets with a sibling only to avoid being scolded. This reflects",
+  "options": [
+   "conventional level, law and order",
+   "postconventional level, social contract",
+   "postconventional level, universal ethical principles",
+   "preconventional level, obedience and punishment orientation"
+  ],
+  "answer": 3,
+  "exp": "Avoiding punishment as the reason for good behaviour marks Stage 1.",
+  "sub": "Kohlberg"
+ },
+ {
+  "q": "The crisis of 'Trust versus Mistrust' occurs in",
+  "options": [
+   "infancy (birth to about 1 year)",
+   "early childhood",
+   "school age",
+   "adolescence"
+  ],
+  "answer": 0,
+  "exp": "Consistent caregiving in the first year builds basic trust.",
+  "sub": "Erikson"
+ },
+ {
+  "q": "Salivation at the sound of the bell alone, after repeated pairing with food, is the",
+  "options": [
+   "unconditioned response",
+   "unconditioned stimulus",
+   "conditioned response",
+   "reinforcer"
+  ],
+  "answer": 2,
+  "exp": "A learned response to a conditioned stimulus is a conditioned response.",
+  "sub": "Classical and operant conditioning"
+ },
+ {
+  "q": "According to Thorndike's Law of Exercise, connections are strengthened by",
+  "options": [
+   "rewards only",
+   "insight",
+   "observation",
+   "use and weakened by disuse"
+  ],
+  "answer": 3,
+  "exp": "Practice strengthens S-R bonds, and disuse weakens them.",
+  "sub": "Other learning theories"
+ },
+ {
+  "q": "Which sequence of Maslow's needs from lower to higher is correct?",
+  "options": [
+   "Safety, physiological, esteem, belonging, self-actualisation",
+   "Physiological, safety, belonging, esteem, self-actualisation",
+   "Physiological, belonging, safety, esteem, self-actualisation",
+   "Esteem, safety, physiological, belonging, self-actualisation"
+  ],
+  "answer": 1,
+  "exp": "This is the standard order of the hierarchy.",
+  "sub": "Motivation"
+ },
+ {
+  "q": "A child has an IQ of 75 and a chronological age of 16 years. What is the mental age?",
+  "options": [
+   "12 years",
+   "21 years",
+   "16 years",
+   "9 years"
+  ],
+  "answer": 0,
+  "exp": "MA = IQ × CA / 100 = 75 × 16 / 100 = 12 years.",
+  "sub": "Intelligence"
+ },
+ {
+  "q": "A student lists 20 possible uses of a brick. This score mainly shows",
+  "options": [
+   "elaboration only",
+   "reasoning",
+   "fluency",
+   "conservation"
+  ],
+  "answer": 2,
+  "exp": "Fluency is the number of relevant ideas produced.",
+  "sub": "Creativity"
+ },
+ {
+  "q": "In Freud's theory, the part of personality that works on the reality principle is the",
+  "options": [
+   "id",
+   "ego",
+   "superego",
+   "libido"
+  ],
+  "answer": 1,
+  "exp": "The ego balances the demands of the id with the real world.",
+  "sub": "Personality"
+ },
+ {
+  "q": "The onset of sexual maturity with rapid physical changes is called",
+  "options": [
+   "infancy",
+   "senescence",
+   "latency",
+   "puberty"
+  ],
+  "answer": 3,
+  "exp": "Puberty marks the beginning of reproductive capability.",
+  "sub": "Adolescence"
+ },
+ {
+  "q": "Differences in a single person's abilities, e.g., good in maths but weak in language, are called",
+  "options": [
+   "inter-individual differences",
+   "group differences",
+   "sex differences",
+   "intra-individual differences"
+  ],
+  "answer": 3,
+  "exp": "Intra-individual differences exist within the same person.",
+  "sub": "Individual differences"
+ },
+ {
+  "q": "Dyslexia is a learning disability related to",
+  "options": [
+   "writing",
+   "arithmetic",
+   "reading",
+   "hearing"
+  ],
+  "answer": 2,
+  "exp": "Dyslexia affects the ability to read and decode words.",
+  "sub": "Gifted and special education"
+ },
+ {
+  "q": "Non-directive or client-centred counselling was developed by",
+  "options": [
+   "E. G. Williamson",
+   "Carl Rogers",
+   "Frank Parsons",
+   "Skinner"
+  ],
+  "answer": 1,
+  "exp": "Rogers emphasised the client's own capacity for growth.",
+  "sub": "Guidance and counselling"
+ },
+ {
+  "q": "Which approach to discipline is best?",
+  "options": [
+   "Preventive discipline",
+   "Punitive discipline only",
+   "Repressive discipline",
+   "Ignoring indiscipline"
+  ],
+  "answer": 0,
+  "exp": "Preventing problems through planning and engagement is most effective.",
+  "sub": "Classroom management and discipline"
+ },
+ {
+  "q": "Gandhi favoured which medium of instruction?",
+  "options": [
+   "English",
+   "Sanskrit",
+   "Mother tongue",
+   "Persian"
+  ],
+  "answer": 2,
+  "exp": "He considered education through the mother tongue natural and effective.",
+  "sub": "Gandhi and Tagore"
+ },
+ {
+  "q": "Vivekananda founded the Ramakrishna Mission in",
+  "options": [
+   "1893",
+   "1897",
+   "1901",
+   "1921"
+  ],
+  "answer": 1,
+  "exp": "The Mission was founded in 1897.",
+  "sub": "Vivekananda and Aurobindo"
+ },
+ {
+  "q": "'Learning by doing' is the central slogan of",
+  "options": [
+   "pragmatism",
+   "idealism",
+   "realism",
+   "existentialism"
+  ],
+  "answer": 0,
+  "exp": "Dewey's pragmatism stresses experience and activity.",
+  "sub": "Philosophy of education"
+ },
+ {
+  "q": "The RTE Act covers children in the age group",
+  "options": [
+   "3 to 6 years",
+   "6 to 18 years",
+   "14 to 18 years",
+   "6 to 14 years"
+  ],
+  "answer": 3,
+  "exp": "It provides free and compulsory elementary education for ages 6-14.",
+  "sub": "Right to Education Act 2009"
+ }
+]

@@ -1,0 +1,362 @@
+[
+ {
+  "q": "Which is NOT a projective technique?",
+  "options": [
+   "Word association test",
+   "Sentence completion test",
+   "Thematic Apperception Test",
+   "Self-report questionnaire"
+  ],
+  "answer": 3,
+  "exp": "Questionnaires are objective tests; projective tests use ambiguous stimuli.",
+  "sub": "Personality"
+ },
+ {
+  "q": "Why is sex education considered important in schools?",
+  "options": [
+   "It promotes early marriage",
+   "It gives correct scientific knowledge and removes myths and misconceptions",
+   "It is useful only for adults",
+   "It encourages indiscipline"
+  ],
+  "answer": 1,
+  "exp": "Accurate information helps adolescents develop healthy attitudes.",
+  "sub": "Adolescence"
+ },
+ {
+  "q": "A 'backward child' as defined by Burt is one whose",
+  "options": [
+   "IQ is above 140",
+   "height is below normal",
+   "behaviour is aggressive",
+   "educational attainment is below that of the age group"
+  ],
+  "answer": 3,
+  "exp": "Burt defined backwardness in terms of attainment lagging behind age.",
+  "sub": "Individual differences"
+ },
+ {
+  "q": "For a child with hearing impairment, the teacher should",
+  "options": [
+   "seat the child at the back",
+   "seat the child in front and use visual aids and clear lip-visible speech",
+   "speak very loudly while facing the board",
+   "avoid group work"
+  ],
+  "answer": 1,
+  "exp": "Front seating and visual support help communication.",
+  "sub": "Gifted and special education"
+ },
+ {
+  "q": "Which of the following is NOT a role of a teacher in a school guidance programme?",
+  "options": [
+   "Prescribing medicines for students' illnesses",
+   "Observing students' behaviour",
+   "Identifying students needing help",
+   "Cooperating with the counsellor"
+  ],
+  "answer": 0,
+  "exp": "A teacher is not a medical professional.",
+  "sub": "Guidance and counselling"
+ },
+ {
+  "q": "Seating students in a U-shape arrangement mainly encourages",
+  "options": [
+   "silent individual work only",
+   "isolation",
+   "interaction and discussion",
+   "rote learning"
+  ],
+  "answer": 2,
+  "exp": "A U-shape lets the teacher and students see each other easily.",
+  "sub": "Classroom management and discipline"
+ },
+ {
+  "q": "Which of the following is NOT associated with Gandhi's educational thought?",
+  "options": [
+   "Learning through productive work",
+   "Moral and character development",
+   "Heavy emphasis on English medium and bookish knowledge",
+   "Self-supporting education"
+  ],
+  "answer": 2,
+  "exp": "Gandhi opposed an education that was bookish and in a foreign language.",
+  "sub": "Gandhi and Tagore"
+ },
+ {
+  "q": "Which book was written by Sri Aurobindo?",
+  "options": [
+   "The Life Divine",
+   "Hind Swaraj",
+   "Gitanjali",
+   "Discovery of India"
+  ],
+  "answer": 0,
+  "exp": "The Life Divine is Aurobindo's major philosophical work.",
+  "sub": "Vivekananda and Aurobindo"
+ },
+ {
+  "q": "Which of the following is an individual aim of education?",
+  "options": [
+   "Preservation of culture only",
+   "All-round development of personality",
+   "Training for national defence only",
+   "Economic planning only"
+  ],
+  "answer": 1,
+  "exp": "Individual aims focus on developing each learner's potential.",
+  "sub": "Philosophy of education"
+ },
+ {
+  "q": "According to the usual norm under RTE rules, a primary school should be within",
+  "options": [
+   "5 km",
+   "10 km",
+   "50 m",
+   "1 km of the child's neighbourhood"
+  ],
+  "answer": 3,
+  "exp": "The model rules specify within 1 km for classes I-V and 3 km for classes VI-VIII.",
+  "sub": "Right to Education Act 2009"
+ },
+ {
+  "q": "Approximately how long does the prenatal stage of human development last?",
+  "options": [
+   "About 90 days",
+   "About 280 days from conception to birth",
+   "About 365 days",
+   "About 180 days"
+  ],
+  "answer": 1,
+  "exp": "The prenatal period is roughly 266-280 days, i.e., nine months.",
+  "sub": "Growth and development"
+ },
+ {
+  "q": "Seriation (arranging sticks from shortest to longest) becomes possible in the",
+  "options": [
+   "sensorimotor stage",
+   "preoperational stage",
+   "concrete operational stage",
+   "early infancy"
+  ],
+  "answer": 2,
+  "exp": "Logical operations on concrete objects such as ordering and classifying emerge at 7-11 years.",
+  "sub": "Piaget"
+ },
+ {
+  "q": "Which teaching strategy is MOST in line with Vygotsky?",
+  "options": [
+   "Collaborative group work with guidance from the teacher",
+   "Silent individual seat work only",
+   "Memorising answers",
+   "Strict ability tracking without interaction"
+  ],
+  "answer": 0,
+  "exp": "Learning through guided social interaction is central to his theory.",
+  "sub": "Vygotsky"
+ },
+ {
+  "q": "According to Kohlberg, most adults reach which level?",
+  "options": [
+   "Preconventional level",
+   "Postconventional level only",
+   "No level",
+   "Conventional level"
+  ],
+  "answer": 3,
+  "exp": "Most adolescents and adults reason at the conventional level; postconventional reasoning is less common.",
+  "sub": "Kohlberg"
+ },
+ {
+  "q": "The main difference between Freud's and Erikson's theories is that Erikson emphasised",
+  "options": [
+   "social and cultural influences across the whole life span",
+   "only the first five years",
+   "only biological drives",
+   "only reinforcement"
+  ],
+  "answer": 0,
+  "exp": "Erikson stressed psychosocial crises through life rather than sexual drives in childhood.",
+  "sub": "Erikson"
+ },
+ {
+  "q": "Watson and Rayner's 'Little Albert' experiment demonstrated the",
+  "options": [
+   "role of insight",
+   "law of effect",
+   "conditioning of fear",
+   "observational learning"
+  ],
+  "answer": 2,
+  "exp": "A fear of a white rat was conditioned by pairing it with a loud noise.",
+  "sub": "Classical and operant conditioning"
+ },
+ {
+  "q": "Which theory is most closely linked to the idea of 'learning by insight' and 'perceptual organisation'?",
+  "options": [
+   "Behaviourism",
+   "Social learning theory",
+   "Connectionism",
+   "Gestalt theory"
+  ],
+  "answer": 3,
+  "exp": "Wertheimer, Kohler and Koffka stressed insight and perception of the whole.",
+  "sub": "Other learning theories"
+ },
+ {
+  "q": "Hull's drive-reduction theory holds that behaviour is motivated by",
+  "options": [
+   "need for self-actualisation",
+   "reduction of biological drives",
+   "observational learning",
+   "social approval alone"
+  ],
+  "answer": 1,
+  "exp": "Hull said an unsatisfied need creates a drive and drive reduction reinforces behaviour.",
+  "sub": "Motivation"
+ },
+ {
+  "q": "The concept of Emotional Intelligence was popularised by",
+  "options": [
+   "Gardner",
+   "Daniel Goleman",
+   "Spearman",
+   "Guilford"
+  ],
+  "answer": 1,
+  "exp": "Goleman popularised it after Salovey and Mayer introduced the term.",
+  "sub": "Intelligence"
+ },
+ {
+  "q": "The stage in which the creator is not consciously working on the problem but the mind continues to process it is",
+  "options": [
+   "preparation",
+   "verification",
+   "incubation",
+   "evaluation"
+  ],
+  "answer": 2,
+  "exp": "In incubation, unconscious processing occurs before the sudden insight.",
+  "sub": "Creativity"
+ },
+ {
+  "q": "Kretschmer classified people by body build into",
+  "options": [
+   "pyknic, athletic and asthenic types",
+   "endomorph, mesomorph and ectomorph",
+   "introvert and extrovert",
+   "id, ego and superego types"
+  ],
+  "answer": 0,
+  "exp": "Kretschmer's classification is pyknic, athletic and asthenic.",
+  "sub": "Personality"
+ },
+ {
+  "q": "Statement I: Adolescents need independence. Statement II: They also need guidance from adults. Which is correct?",
+  "options": [
+   "Only Statement I is true",
+   "Only Statement II is true",
+   "Both statements are false",
+   "Both statements are true"
+  ],
+  "answer": 3,
+  "exp": "Adolescents seek autonomy but still require supportive guidance.",
+  "sub": "Adolescence"
+ },
+ {
+  "q": "The statement 'No two persons are exactly alike' is called the",
+  "options": [
+   "law of readiness",
+   "principle of continuity",
+   "principle of individual differences",
+   "principle of integration"
+  ],
+  "answer": 2,
+  "exp": "It is the basic principle of individual differences.",
+  "sub": "Individual differences"
+ },
+ {
+  "q": "Which of these children is also referred to as 'twice exceptional'?",
+  "options": [
+   "A child with two siblings",
+   "A child with two talents",
+   "A child repeating class twice",
+   "A gifted child who also has a learning disability"
+  ],
+  "answer": 3,
+  "exp": "Twice exceptional learners have both high ability and a disability.",
+  "sub": "Gifted and special education"
+ },
+ {
+  "q": "Guidance mainly aims at",
+  "options": [
+   "helping an individual to help himself",
+   "doing the individual's work for him",
+   "controlling his decisions",
+   "selecting a job for him"
+  ],
+  "answer": 0,
+  "exp": "Guidance develops self-direction and self-understanding.",
+  "sub": "Guidance and counselling"
+ },
+ {
+  "q": "Effective teachers handle misbehaviour mainly by",
+  "options": [
+   "reacting angrily",
+   "understanding its cause and responding calmly",
+   "ignoring all cases",
+   "sending all students to the principal"
+  ],
+  "answer": 1,
+  "exp": "Calm, cause-based responses solve problems more permanently.",
+  "sub": "Classroom management and discipline"
+ },
+ {
+  "q": "Tagore's idea of education aimed at",
+  "options": [
+   "harmony between the individual, society and nature, and international understanding",
+   "narrow nationalism",
+   "job training only",
+   "sports alone"
+  ],
+  "answer": 0,
+  "exp": "Tagore wanted a universal humanism with global outlook.",
+  "sub": "Gandhi and Tagore"
+ },
+ {
+  "q": "Vivekananda held that religion in education should be",
+  "options": [
+   "narrow sectarian",
+   "ignored",
+   "ritual only",
+   "universal and aimed at realising the divinity within"
+  ],
+  "answer": 3,
+  "exp": "He emphasised the essential unity of all religions.",
+  "sub": "Vivekananda and Aurobindo"
+ },
+ {
+  "q": "Which of the following is a feature of progressive education?",
+  "options": [
+   "It is teacher-centred and textbook-based",
+   "It is authoritarian",
+   "It is child-centred and activity-based",
+   "It stresses rote memory"
+  ],
+  "answer": 2,
+  "exp": "Progressivism, influenced by Dewey, puts the child at the centre.",
+  "sub": "Philosophy of education"
+ },
+ {
+  "q": "Which of the following is true about the RTE Act?",
+  "options": [
+   "It permits mild caning",
+   "It prohibits physical punishment and mental harassment of children",
+   "It applies only to private schools",
+   "It covers children above 14 only"
+  ],
+  "answer": 1,
+  "exp": "Section 17 prohibits corporal punishment and mental harassment.",
+  "sub": "Right to Education Act 2009"
+ }
+]

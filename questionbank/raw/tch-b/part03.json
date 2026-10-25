@@ -1,0 +1,458 @@
+[
+ {
+  "q": "In the role-play method, learners:",
+  "options": [
+   "listen to the teacher's continuous talk",
+   "memorise facts through repetition",
+   "act out situations or characters to understand a concept or problem",
+   "solve numerical problems individually"
+  ],
+  "answer": 2,
+  "exp": "Role play develops empathy, communication and understanding through enactment.",
+  "sub": "Teaching methods"
+ },
+ {
+  "q": "The best statement about teaching aids is that they:",
+  "options": [
+   "replace the teacher completely",
+   "are required only for weak students",
+   "should be used whether or not the topic needs them",
+   "supplement the teacher but cannot replace the teacher"
+  ],
+  "answer": 3,
+  "exp": "Aids support and make teaching effective; the teacher remains central.",
+  "sub": "Teaching aids and audio-visual media"
+ },
+ {
+  "q": "Varying voice, gestures, movement and using pauses are components of the skill of:",
+  "options": [
+   "stimulus variation",
+   "questioning",
+   "blackboard writing",
+   "illustrating with examples"
+  ],
+  "answer": 0,
+  "exp": "Stimulus variation sustains attention by changing the stimuli presented to learners.",
+  "sub": "Microteaching and teaching skills"
+ },
+ {
+  "q": "In Mager's ABCD format for writing objectives, 'D' stands for:",
+  "options": [
+   "Duration of the class",
+   "Degree (standard of acceptable performance)",
+   "Difficulty of the question",
+   "Department"
+  ],
+  "answer": 1,
+  "exp": "The ABCD elements are Audience, Behaviour, Condition and Degree.",
+  "sub": "Lesson planning"
+ },
+ {
+  "q": "A spiral curriculum, proposed by Bruner, means that:",
+  "options": [
+   "each topic is taught only once",
+   "topics are removed after the first class",
+   "topics are revisited at increasing levels of complexity",
+   "lessons are arranged randomly"
+  ],
+  "answer": 2,
+  "exp": "Concepts are repeatedly met at greater depth as learners grow.",
+  "sub": "Curriculum"
+ },
+ {
+  "q": "Which of the following is a co-scholastic area?",
+  "options": [
+   "Mathematics marks",
+   "Science marks",
+   "Language marks",
+   "Life skills and attitudes"
+  ],
+  "answer": 3,
+  "exp": "Co-scholastic areas include life skills, attitudes, values, sports and arts.",
+  "sub": "Evaluation, formative and summative assessment, CCE"
+ },
+ {
+  "q": "In a test, 40 out of 50 students answered an item correctly. The difficulty index (p = R/N) of this item is:",
+  "options": [
+   "0.80",
+   "0.40",
+   "0.20",
+   "1.25"
+  ],
+  "answer": 0,
+  "exp": "p = 40/50 = 0.80, so the item is easy.",
+  "sub": "Tests, blueprint and item analysis"
+ },
+ {
+  "q": "A weighing scale always shows 2 kg more than the actual weight. The scale is:",
+  "options": [
+   "valid but not reliable",
+   "reliable but not valid",
+   "both valid and reliable",
+   "neither reliable nor consistent"
+  ],
+  "answer": 1,
+  "exp": "It is consistent (reliable) but does not give the true weight (not valid).",
+  "sub": "Validity and reliability"
+ },
+ {
+  "q": "ADHD is mainly characterised by:",
+  "options": [
+   "difficulty in calculation",
+   "inattention, hyperactivity and impulsivity",
+   "loss of hearing",
+   "inability to speak"
+  ],
+  "answer": 1,
+  "exp": "Attention-Deficit Hyperactivity Disorder shows persistent inattention with hyperactivity/impulsivity.",
+  "sub": "Diagnostic testing and remedial teaching"
+ },
+ {
+  "q": "A hypothesis is best defined as:",
+  "options": [
+   "a proven fact",
+   "a final conclusion",
+   "a summary of the literature",
+   "a tentative statement about the relation between variables, to be tested"
+  ],
+  "answer": 3,
+  "exp": "It is a testable proposition that guides the investigation.",
+  "sub": "Action research and educational research"
+ },
+ {
+  "q": "Which of the following is an open-source learning management system (LMS)?",
+  "options": [
+   "Moodle",
+   "Microsoft Excel",
+   "Windows Media Player",
+   "Notepad"
+  ],
+  "answer": 0,
+  "exp": "Moodle is a widely used open-source LMS.",
+  "sub": "ICT in education"
+ },
+ {
+  "q": "NEP 2020 set a target of Gross Enrolment Ratio in higher education of:",
+  "options": [
+   "25 per cent by 2025",
+   "50 per cent by 2035",
+   "80 per cent by 2030",
+   "100 per cent by 2040"
+  ],
+  "answer": 1,
+  "exp": "The aim is to raise GER to 50% by 2035.",
+  "sub": "NEP 2020 and education bodies"
+ },
+ {
+  "q": "Which of the following is an unethical practice for a teacher?",
+  "options": [
+   "Maintaining punctuality",
+   "Treating all students equally",
+   "Favouring some students in marking because of personal relations",
+   "Updating one's knowledge"
+  ],
+  "answer": 2,
+  "exp": "Partiality violates fairness.",
+  "sub": "Teacher qualities and professional ethics"
+ },
+ {
+  "q": "Which of the following is a common misconception of novice programmers?",
+  "options": [
+   "Understanding that assignment overwrites the old value",
+   "Knowing loops repeat statements",
+   "Using indentation in Python",
+   "Believing that a variable stores all values it has ever held"
+  ],
+  "answer": 3,
+  "exp": "A variable holds only its current value; novices often think it keeps history.",
+  "sub": "Pedagogy of computer science"
+ },
+ {
+  "q": "In Pavlov's experiment, the sound of the bell that initially caused no salivation is called the:",
+  "options": [
+   "unconditioned response",
+   "unconditioned stimulus",
+   "neutral stimulus which later becomes the conditioned stimulus",
+   "negative reinforcer"
+  ],
+  "answer": 2,
+  "exp": "The bell was neutral at first; after pairing with food it became the conditioned stimulus.",
+  "sub": "Teaching-learning process"
+ },
+ {
+  "q": "The heuristic method of teaching was advocated by:",
+  "options": [
+   "Froebel",
+   "Herbart",
+   "Pestalozzi",
+   "H. E. Armstrong"
+  ],
+  "answer": 3,
+  "exp": "Armstrong wanted students to discover facts for themselves, as 'heurisko' means 'I find out'.",
+  "sub": "Teaching methods"
+ },
+ {
+  "q": "Which of the following is the most important criterion for selecting a teaching aid?",
+  "options": [
+   "Relevance to the learning objective",
+   "Its cost alone",
+   "Its attractive colour alone",
+   "Its popularity among other teachers"
+  ],
+  "answer": 0,
+  "exp": "An aid must help achieve the specific objective of the lesson.",
+  "sub": "Teaching aids and audio-visual media"
+ },
+ {
+  "q": "The skill of 'set induction' refers to:",
+  "options": [
+   "summarising at the end of a lesson",
+   "creating readiness among students at the start of a lesson",
+   "giving homework",
+   "punishing latecomers"
+  ],
+  "answer": 1,
+  "exp": "Set induction prepares learners mentally for the new topic.",
+  "sub": "Microteaching and teaching skills"
+ },
+ {
+  "q": "Which of the following is the best specific objective for a computer science lesson?",
+  "options": [
+   "The student will like computers",
+   "The teacher will explain number systems",
+   "The student will convert the decimal number 25 into binary correctly",
+   "The student will know everything about numbers"
+  ],
+  "answer": 2,
+  "exp": "It is specific, observable and measurable.",
+  "sub": "Lesson planning"
+ },
+ {
+  "q": "Which of the following is a difference between curriculum and syllabus?",
+  "options": [
+   "Both mean the same",
+   "Syllabus is wider than curriculum",
+   "Curriculum is only for universities",
+   "Syllabus is narrower and lists topics for a subject, while curriculum includes all learning experiences"
+  ],
+  "answer": 3,
+  "exp": "Curriculum is broader and includes co-curricular experiences and methods.",
+  "sub": "Curriculum"
+ },
+ {
+  "q": "'Assessment for learning' differs from 'assessment of learning' in that it:",
+  "options": [
+   "is used to guide and improve instruction during learning",
+   "is conducted only at the end",
+   "is meant only for ranking",
+   "ignores feedback"
+  ],
+  "answer": 0,
+  "exp": "Assessment for learning is formative, whereas assessment of learning is summative.",
+  "sub": "Evaluation, formative and summative assessment, CCE"
+ },
+ {
+  "q": "In item analysis, the upper group had 18 correct answers and the lower group had 6 correct answers, each group having 20 students. The discrimination index is:",
+  "options": [
+   "0.30",
+   "0.60",
+   "0.90",
+   "1.20"
+  ],
+  "answer": 1,
+  "exp": "D = (U - L)/n = (18 - 6)/20 = 12/20 = 0.60.",
+  "sub": "Tests, blueprint and item analysis"
+ },
+ {
+  "q": "The test–retest method is used to estimate which characteristic of a test?",
+  "options": [
+   "Validity",
+   "Difficulty index",
+   "Reliability",
+   "Discrimination index"
+  ],
+  "answer": 2,
+  "exp": "Administering the same test twice and correlating scores gives the coefficient of stability (reliability).",
+  "sub": "Validity and reliability"
+ },
+ {
+  "q": "Dysgraphia is a disorder related to:",
+  "options": [
+   "speaking",
+   "reading",
+   "walking",
+   "writing"
+  ],
+  "answer": 3,
+  "exp": "Dysgraphia affects handwriting and written expression.",
+  "sub": "Diagnostic testing and remedial teaching"
+ },
+ {
+  "q": "The research method in which the investigator collects data from a large group through questionnaires or interviews is the:",
+  "options": [
+   "survey method",
+   "historical method",
+   "case study method",
+   "experimental method"
+  ],
+  "answer": 0,
+  "exp": "Survey research describes the existing conditions in a population.",
+  "sub": "Action research and educational research"
+ },
+ {
+  "q": "Blended learning is:",
+  "options": [
+   "only face-to-face teaching",
+   "a combination of face-to-face teaching and online learning",
+   "only recorded lectures",
+   "learning without a teacher or books"
+  ],
+  "answer": 1,
+  "exp": "It combines classroom and online modes.",
+  "sub": "ICT in education"
+ },
+ {
+  "q": "NEP 2020 recommended renaming the Ministry of Human Resource Development as:",
+  "options": [
+   "Ministry of Learning",
+   "Ministry of Schools",
+   "Ministry of Education",
+   "Ministry of Culture"
+  ],
+  "answer": 2,
+  "exp": "The ministry was renamed accordingly.",
+  "sub": "NEP 2020 and education bodies"
+ },
+ {
+  "q": "Professional development of a teacher is best promoted by:",
+  "options": [
+   "avoiding new ideas",
+   "teaching only from old notes",
+   "never seeking feedback",
+   "attending workshops, reading and reflecting on one's teaching"
+  ],
+  "answer": 3,
+  "exp": "Continuous learning keeps teaching effective.",
+  "sub": "Teacher qualities and professional ethics"
+ },
+ {
+  "q": "Python is often chosen as a first language in schools because it:",
+  "options": [
+   "has simple, readable syntax",
+   "has the most complex syntax",
+   "needs no interpreter",
+   "cannot be used for real applications"
+  ],
+  "answer": 0,
+  "exp": "Simple syntax lets learners focus on problem-solving.",
+  "sub": "Pedagogy of computer science"
+ },
+ {
+  "q": "According to Piaget, children aged about 7 to 11 years are in the:",
+  "options": [
+   "sensorimotor stage",
+   "pre-operational stage",
+   "formal operational stage",
+   "concrete operational stage"
+  ],
+  "answer": 3,
+  "exp": "Logical thinking about concrete objects, conservation and classification develop in the concrete operational stage.",
+  "sub": "Teaching-learning process"
+ },
+ {
+  "q": "The Dalton Plan of education was proposed by:",
+  "options": [
+   "Helen Parkhurst",
+   "W. H. Kilpatrick",
+   "John Dewey",
+   "Maria Montessori"
+  ],
+  "answer": 0,
+  "exp": "Parkhurst's Dalton Plan lets pupils work at their own pace through assignments and contracts.",
+  "sub": "Teaching methods"
+ },
+ {
+  "q": "An epidiascope is used to:",
+  "options": [
+   "record audio lectures",
+   "project opaque objects such as pictures from books",
+   "print documents",
+   "store data"
+  ],
+  "answer": 1,
+  "exp": "The epidiascope can project both opaque pictures and transparencies.",
+  "sub": "Teaching aids and audio-visual media"
+ },
+ {
+  "q": "The skill of closure is mainly concerned with:",
+  "options": [
+   "starting the lesson with a joke",
+   "collecting fees",
+   "consolidating the lesson at the end and linking it to the next",
+   "preparing a question paper"
+  ],
+  "answer": 2,
+  "exp": "Closure helps students retain the main points.",
+  "sub": "Microteaching and teaching skills"
+ },
+ {
+  "q": "Testing the previous knowledge of students at the start of a lesson is part of which step?",
+  "options": [
+   "Generalisation",
+   "Home assignment",
+   "Blackboard summary",
+   "Introduction or preparation"
+  ],
+  "answer": 3,
+  "exp": "Previous knowledge is tested to link the new matter with what is already known.",
+  "sub": "Lesson planning"
+ },
+ {
+  "q": "The report 'Learning Without Burden' (1993) was chaired by:",
+  "options": [
+   "Yash Pal",
+   "D. S. Kothari",
+   "Kasturirangan",
+   "S. Radhakrishnan"
+  ],
+  "answer": 0,
+  "exp": "The Yash Pal Committee highlighted the need to reduce curriculum load.",
+  "sub": "Curriculum"
+ },
+ {
+  "q": "A collection of a student's work over time that shows progress is called:",
+  "options": [
+   "a blueprint",
+   "a portfolio",
+   "a rating scale",
+   "a norm table"
+  ],
+  "answer": 1,
+  "exp": "Portfolio assessment documents learner growth through samples of work.",
+  "sub": "Evaluation, formative and summative assessment, CCE"
+ },
+ {
+  "q": "A student has mental age 12 and chronological age 10. The intelligence quotient is:",
+  "options": [
+   "83",
+   "100",
+   "120",
+   "22"
+  ],
+  "answer": 2,
+  "exp": "IQ = (MA/CA) × 100 = (12/10) × 100 = 120.",
+  "sub": "Tests, blueprint and item analysis"
+ },
+ {
+  "q": "Predictive validity is established by:",
+  "options": [
+   "counting the number of items",
+   "checking the grammar of questions",
+   "reading the instructions",
+   "correlating test scores with later performance"
+  ],
+  "answer": 3,
+  "exp": "If scores predict future success, the test has predictive validity.",
+  "sub": "Validity and reliability"
+ }
+]

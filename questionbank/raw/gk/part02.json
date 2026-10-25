@@ -1,0 +1,482 @@
+[
+ {
+  "q": "Who was the Governor-General of India at the time of the Revolt of 1857?",
+  "options": [
+   "Lord Dalhousie",
+   "Lord Canning",
+   "Lord Curzon",
+   "Lord William Bentinck"
+  ],
+  "answer": 1,
+  "exp": "Lord Canning was Governor-General (1856-62) and became the first Viceroy in 1858.",
+  "sub": "Modern history"
+ },
+ {
+  "q": "Which pass connects Srinagar with Leh?",
+  "options": [
+   "Shipki La",
+   "Nathu La",
+   "Zoji La",
+   "Bomdi La"
+  ],
+  "answer": 2,
+  "exp": "Zoji La, in the Pir Panjal/Himalaya region, links Srinagar and Leh on NH-1.",
+  "sub": "Geography"
+ },
+ {
+  "q": "The Kesaria stupa, one of the largest Buddhist stupas in the world, is located in which district of Bihar?",
+  "options": [
+   "East Champaran",
+   "Vaishali",
+   "West Champaran",
+   "Nalanda"
+  ],
+  "answer": 0,
+  "exp": "Kesaria Stupa is in East Champaran (Purvi Champaran) district.",
+  "sub": "Bihar history"
+ },
+ {
+  "q": "Which Article of the Constitution provides for the Election Commission of India?",
+  "options": [
+   "Article 356",
+   "Article 280",
+   "Article 312",
+   "Article 324"
+  ],
+  "answer": 3,
+  "exp": "Article 324 vests superintendence, direction and control of elections in the Election Commission.",
+  "sub": "Polity"
+ },
+ {
+  "q": "Which of the following is a direct tax?",
+  "options": [
+   "Goods and Services Tax",
+   "Income tax",
+   "Customs duty",
+   "Excise duty"
+  ],
+  "answer": 1,
+  "exp": "A direct tax is borne by the person on whom it is levied, e.g. income tax; GST and duties are indirect.",
+  "sub": "Economy"
+ },
+ {
+  "q": "Match the organisation/movement with its founder.\nP. Servants of India Society   Q. Swaraj Party   R. Satyashodhak Samaj\n1. G. K. Gokhale   2. C. R. Das and Motilal Nehru   3. Jyotiba Phule",
+  "options": [
+   "P-1, Q-2, R-3",
+   "P-2, Q-1, R-3",
+   "P-3, Q-2, R-1",
+   "P-1, Q-3, R-2"
+  ],
+  "answer": 0,
+  "exp": "Gokhale founded the Servants of India Society (1905), Das and Motilal Nehru the Swaraj Party (1923), Phule the Satyashodhak Samaj (1873).",
+  "sub": "Freedom struggle"
+ },
+ {
+  "q": "Which Indian state has the longest coastline?",
+  "options": [
+   "Tamil Nadu",
+   "Andhra Pradesh",
+   "Gujarat",
+   "Maharashtra"
+  ],
+  "answer": 2,
+  "exp": "Gujarat has the longest mainland coastline (about 1,600 km), followed by Andhra Pradesh.",
+  "sub": "Geography"
+ },
+ {
+  "q": "The river Gandak, which flows through Bihar, is also known as",
+  "options": [
+   "Falgu",
+   "Karmanasa",
+   "Punpun",
+   "Narayani"
+  ],
+  "answer": 3,
+  "exp": "The Gandak is called Narayani (or Saligrami) in Nepal.",
+  "sub": "Bihar geography"
+ },
+ {
+  "q": "Statement I: A Money Bill can be introduced only in the Lok Sabha.\nStatement II: The Rajya Sabha has the power to reject a Money Bill.",
+  "options": [
+   "Both Statement I and Statement II are true",
+   "Statement I is true but Statement II is false",
+   "Statement I is false but Statement II is true",
+   "Both Statement I and Statement II are false"
+  ],
+  "answer": 1,
+  "exp": "Money Bills originate only in the Lok Sabha; the Rajya Sabha can only make recommendations within 14 days and cannot reject them.",
+  "sub": "Polity"
+ },
+ {
+  "q": "Which part of the human eye controls the amount of light entering it?",
+  "options": [
+   "Cornea",
+   "Iris",
+   "Retina",
+   "Lens"
+  ],
+  "answer": 1,
+  "exp": "The iris adjusts the size of the pupil and hence the amount of light entering the eye.",
+  "sub": "Science"
+ },
+ {
+  "q": "The Third Battle of Panipat (1761) was fought between the Marathas and",
+  "options": [
+   "Babur",
+   "Nadir Shah",
+   "Ahmad Shah Abdali",
+   "Ibrahim Lodi"
+  ],
+  "answer": 2,
+  "exp": "The Marathas were defeated by Ahmad Shah Abdali's Afghan forces in 1761.",
+  "sub": "Medieval history"
+ },
+ {
+  "q": "The Western Ghats are also known as the",
+  "options": [
+   "Sahyadri",
+   "Purvanchal",
+   "Aravalli",
+   "Satpura"
+  ],
+  "answer": 0,
+  "exp": "In Maharashtra, the Western Ghats are called the Sahyadri range.",
+  "sub": "Geography"
+ },
+ {
+  "q": "The famous Sonepur cattle fair in Bihar is held near the confluence of which two rivers?",
+  "options": [
+   "Sone and Falgu",
+   "Kosi and Ganga",
+   "Ganga and Gandak",
+   "Bagmati and Burhi Gandak"
+  ],
+  "answer": 2,
+  "exp": "The Harihar Kshetra (Sonepur) fair is held at the Ganga-Gandak confluence in Saran district.",
+  "sub": "Bihar culture"
+ },
+ {
+  "q": "The writ of Habeas Corpus literally means",
+  "options": [
+   "By what authority",
+   "We command",
+   "To be certified",
+   "To have the body"
+  ],
+  "answer": 3,
+  "exp": "Habeas Corpus is issued to produce a detained person before a court to examine legality of detention.",
+  "sub": "Polity"
+ },
+ {
+  "q": "The Human Development Index (HDI) is published by which organisation?",
+  "options": [
+   "World Bank",
+   "UNDP",
+   "IMF",
+   "WTO"
+  ],
+  "answer": 1,
+  "exp": "HDI, combining health, education and income indices, is published by the UN Development Programme.",
+  "sub": "Economy"
+ },
+ {
+  "q": "Who was the first Governor-General of independent India?",
+  "options": [
+   "Lord Mountbatten",
+   "C. Rajagopalachari",
+   "Lord Wavell",
+   "Dr. Rajendra Prasad"
+  ],
+  "answer": 0,
+  "exp": "Mountbatten served from 15 August 1947 to June 1948, followed by C. Rajagopalachari.",
+  "sub": "Modern history"
+ },
+ {
+  "q": "The Jog Falls, one of the highest waterfalls of India, is formed by which river?",
+  "options": [
+   "Sharavathi",
+   "Cauvery",
+   "Krishna",
+   "Tungabhadra"
+  ],
+  "answer": 0,
+  "exp": "The Sharavathi river plunges down the Western Ghats in Karnataka to form Jog Falls.",
+  "sub": "Geography"
+ },
+ {
+  "q": "The Champaran Satyagraha of 1917 was launched against which system?",
+  "options": [
+   "Salt tax",
+   "Tinkathia system of indigo cultivation",
+   "Zamindari settlement",
+   "Ryotwari revenue system"
+  ],
+  "answer": 1,
+  "exp": "Gandhi's first satyagraha in India was for peasants forced to grow indigo on 3/20 of their land.",
+  "sub": "Bihar freedom struggle"
+ },
+ {
+  "q": "Who appoints the Governor of a state in India?",
+  "options": [
+   "The Chief Justice of India",
+   "The Chief Minister",
+   "The Prime Minister",
+   "The President of India"
+  ],
+  "answer": 3,
+  "exp": "Under Article 155, the Governor is appointed by the President by warrant under his hand and seal.",
+  "sub": "Polity"
+ },
+ {
+  "q": "India's first satellite, Aryabhata, was launched in which year?",
+  "options": [
+   "1980",
+   "1969",
+   "1975",
+   "1984"
+  ],
+  "answer": 2,
+  "exp": "Aryabhata was launched on 19 April 1975 with Soviet help.",
+  "sub": "Science and technology"
+ },
+ {
+  "q": "The ancient treatise on statecraft 'Arthashastra' was written by",
+  "options": [
+   "Kalidasa",
+   "Kautilya",
+   "Banabhatta",
+   "Vishakhadatta"
+  ],
+  "answer": 1,
+  "exp": "Kautilya (Chanakya), minister of Chandragupta Maurya, wrote the Arthashastra.",
+  "sub": "Ancient history"
+ },
+ {
+  "q": "Which state is the largest producer of tea in India?",
+  "options": [
+   "Kerala",
+   "West Bengal",
+   "Assam",
+   "Tamil Nadu"
+  ],
+  "answer": 2,
+  "exp": "Assam produces more than half of India's tea.",
+  "sub": "Geography"
+ },
+ {
+  "q": "Bhikhari Thakur, known as the 'Shakespeare of Bhojpuri', is associated with which folk theatre form?",
+  "options": [
+   "Bidesia",
+   "Nautanki",
+   "Tamasha",
+   "Yakshagana"
+  ],
+  "answer": 0,
+  "exp": "Bhikhari Thakur of Saran popularised Bidesia, a theatre form on the pain of migration.",
+  "sub": "Bihar culture"
+ },
+ {
+  "q": "Who is the ex-officio Chairman of the Rajya Sabha?",
+  "options": [
+   "The President of India",
+   "The Prime Minister",
+   "The Speaker of Lok Sabha",
+   "The Vice-President of India"
+  ],
+  "answer": 3,
+  "exp": "Under Article 89, the Vice-President is ex-officio Chairman of the Rajya Sabha.",
+  "sub": "Polity"
+ },
+ {
+  "q": "The financial year in India runs from",
+  "options": [
+   "1 January to 31 December",
+   "1 April to 31 March",
+   "1 July to 30 June",
+   "1 October to 30 September"
+  ],
+  "answer": 1,
+  "exp": "India's financial year starts on 1 April and ends on 31 March.",
+  "sub": "Economy"
+ },
+ {
+  "q": "The Quit India Movement was launched on 8 August 1942 from which place?",
+  "options": [
+   "Chauri Chaura",
+   "Jallianwala Bagh, Amritsar",
+   "Dandi",
+   "Gowalia Tank Maidan, Bombay"
+  ],
+  "answer": 3,
+  "exp": "The AICC passed the Quit India resolution at Gowalia Tank Maidan, Bombay.",
+  "sub": "Freedom struggle"
+ },
+ {
+  "q": "The river Brahmaputra is known by which name in Tibet?",
+  "options": [
+   "Jamuna",
+   "Dihang",
+   "Tsangpo",
+   "Padma"
+  ],
+  "answer": 2,
+  "exp": "The Brahmaputra is the Yarlung Tsangpo in Tibet, Dihang in Arunachal Pradesh and Jamuna in Bangladesh.",
+  "sub": "Geography"
+ },
+ {
+  "q": "Vikramshila Mahavihara, an ancient centre of learning in Bihar, was established by which Pala king?",
+  "options": [
+   "Dharmapala",
+   "Gopala",
+   "Devapala",
+   "Mahipala"
+  ],
+  "answer": 0,
+  "exp": "Dharmapala (late 8th century) founded Vikramshila near Bhagalpur.",
+  "sub": "Bihar history"
+ },
+ {
+  "q": "How many Schedules does the Constitution of India contain at present?",
+  "options": [
+   "10",
+   "8",
+   "12",
+   "14"
+  ],
+  "answer": 2,
+  "exp": "The Constitution has 12 Schedules (the 12th, added in 1992, lists municipal functions).",
+  "sub": "Polity"
+ },
+ {
+  "q": "Which vitamin is synthesised in human skin on exposure to sunlight?",
+  "options": [
+   "Vitamin D",
+   "Vitamin A",
+   "Vitamin C",
+   "Vitamin K"
+  ],
+  "answer": 0,
+  "exp": "UV-B rays convert 7-dehydrocholesterol in the skin into vitamin D3.",
+  "sub": "Science"
+ },
+ {
+  "q": "The Jnanpith Award is given for outstanding contribution in the field of",
+  "options": [
+   "Cinema",
+   "Science",
+   "Sports",
+   "Literature"
+  ],
+  "answer": 3,
+  "exp": "The Jnanpith Award is India's highest literary honour.",
+  "sub": "Awards"
+ },
+ {
+  "q": "Who is the author of the Hindi novel 'Godan'?",
+  "options": [
+   "Yashpal",
+   "Premchand",
+   "Phanishwar Nath Renu",
+   "Ramdhari Singh Dinkar"
+  ],
+  "answer": 1,
+  "exp": "Godan (1936) by Munshi Premchand portrays the plight of a peasant, Hori.",
+  "sub": "Books and authors"
+ },
+ {
+  "q": "The Thomas Cup is associated with which sport?",
+  "options": [
+   "Squash",
+   "Tennis",
+   "Table tennis",
+   "Badminton"
+  ],
+  "answer": 3,
+  "exp": "The Thomas Cup is the world men's team championship in badminton.",
+  "sub": "Sports"
+ },
+ {
+  "q": "International Yoga Day is observed on",
+  "options": [
+   "21 June",
+   "5 June",
+   "8 March",
+   "1 May"
+  ],
+  "answer": 0,
+  "exp": "The UN General Assembly declared 21 June as International Day of Yoga in 2014.",
+  "sub": "Important days"
+ },
+ {
+  "q": "Which is the national flower of India?",
+  "options": [
+   "Rose",
+   "Lotus",
+   "Marigold",
+   "Jasmine"
+  ],
+  "answer": 1,
+  "exp": "The lotus (Nelumbo nucifera) is India's national flower.",
+  "sub": "National symbols"
+ },
+ {
+  "q": "Which Ashokan inscription describes the Kalinga war and Ashoka's remorse?",
+  "options": [
+   "Major Rock Edict V",
+   "Major Rock Edict II",
+   "Major Rock Edict XIII",
+   "Pillar Edict VII"
+  ],
+  "answer": 2,
+  "exp": "Rock Edict XIII records the bloody Kalinga war (261 BCE) and Ashoka's turn to dhamma.",
+  "sub": "Ancient history"
+ },
+ {
+  "q": "Which of the following is NOT a Himalayan range?",
+  "options": [
+   "Shiwalik",
+   "Himadri",
+   "Himachal",
+   "Aravalli"
+  ],
+  "answer": 3,
+  "exp": "The Aravallis are an old fold-mountain range in Rajasthan; Himadri, Himachal and Shiwalik are Himalayan ranges.",
+  "sub": "Geography"
+ },
+ {
+  "q": "The tomb of Sher Shah Suri is located at which place in Bihar?",
+  "options": [
+   "Sasaram",
+   "Gaya",
+   "Arrah",
+   "Buxar"
+  ],
+  "answer": 0,
+  "exp": "Sher Shah's tomb stands in the middle of a lake at Sasaram (Rohtas district).",
+  "sub": "Bihar history"
+ },
+ {
+  "q": "The Directive Principles of State Policy in the Indian Constitution were borrowed from the Constitution of",
+  "options": [
+   "Canada",
+   "USA",
+   "Ireland",
+   "Australia"
+  ],
+  "answer": 2,
+  "exp": "The Directive Principles were inspired by the Irish Constitution.",
+  "sub": "Polity"
+ },
+ {
+  "q": "Who is regarded as the 'Father of the Green Revolution in India'?",
+  "options": [
+   "Verghese Kurien",
+   "M. S. Swaminathan",
+   "Homi J. Bhabha",
+   "Vikram Sarabhai"
+  ],
+  "answer": 1,
+  "exp": "M. S. Swaminathan led high-yielding wheat and rice programmes; Kurien was the father of the White Revolution.",
+  "sub": "Economy"
+ }
+]

@@ -1,0 +1,482 @@
+[
+ {
+  "q": "A one-dimensional array A[-5..20] is stored in memory with base address 1000 and each element occupies 4 bytes. What is the address of A[8]?",
+  "options": [
+   "1032",
+   "1052",
+   "1048",
+   "1056"
+  ],
+  "answer": 1,
+  "exp": "Offset = (8 - (-5)) × 4 = 13 × 4 = 52, so address = 1000 + 52 = 1052.",
+  "sub": "arrays"
+ },
+ {
+  "q": "Evaluate the postfix expression: 5 6 2 + * 12 4 / -",
+  "options": [
+   "37",
+   "40",
+   "34",
+   "43"
+  ],
+  "answer": 0,
+  "exp": "6+2=8; 5*8=40; 12/4=3; 40-3=37.",
+  "sub": "stacks"
+ },
+ {
+  "q": "A circular queue is implemented in an array of size 6 (indices 0 to 5). Front = 4 and rear = 1, where rear is the index of the last inserted element. How many elements are in the queue?",
+  "options": [
+   "2",
+   "3",
+   "5",
+   "4"
+  ],
+  "answer": 3,
+  "exp": "Count = (rear - front + size) mod size + 1 = (1 - 4 + 6) mod 6 + 1 = 3 + 1 = 4 (elements at indices 4, 5, 0, 1).",
+  "sub": "queues"
+ },
+ {
+  "q": "In a singly linked list that has only a head pointer, which of the following operations takes O(n) time?",
+  "options": [
+   "Inserting a node at the beginning",
+   "Deleting the first node",
+   "Deleting the last node",
+   "Checking whether the list is empty"
+  ],
+  "answer": 2,
+  "exp": "To delete the last node we must traverse to the second last node, which needs O(n) time; the other operations are O(1).",
+  "sub": "linked lists"
+ },
+ {
+  "q": "A full binary tree (every node has 0 or 2 children) has 5 internal nodes. What is the total number of nodes in the tree?",
+  "options": [
+   "10",
+   "11",
+   "9",
+   "12"
+  ],
+  "answer": 1,
+  "exp": "In a full binary tree, leaves = internal nodes + 1 = 6, so total = 5 + 6 = 11.",
+  "sub": "trees"
+ },
+ {
+  "q": "Statement I: Depth First Search of a graph can be implemented using a stack.\nStatement II: Breadth First Search finds the shortest path (fewest edges) from the source in an unweighted graph.\nWhich option is correct?",
+  "options": [
+   "Only Statement I is true",
+   "Only Statement II is true",
+   "Both Statement I and Statement II are true",
+   "Both Statement I and Statement II are false"
+  ],
+  "answer": 2,
+  "exp": "DFS uses an explicit or recursion stack, and BFS explores vertices level by level, so it gives fewest-edge paths.",
+  "sub": "graphs"
+ },
+ {
+  "q": "A hash table of size 7 uses h(k) = k mod 7 with linear probing. Keys 15, 22, 8 and 29 are inserted in this order. In which slot does 29 finally get stored?",
+  "options": [
+   "4",
+   "3",
+   "5",
+   "2"
+  ],
+  "answer": 0,
+  "exp": "All four keys hash to slot 1. 15 goes to 1, 22 to 2, 8 to 3 and 29 to 4.",
+  "sub": "hashing"
+ },
+ {
+  "q": "How many swaps does bubble sort perform to sort the array 5 4 3 2 1 into ascending order?",
+  "options": [
+   "4",
+   "15",
+   "6",
+   "10"
+  ],
+  "answer": 3,
+  "exp": "Each swap removes exactly one inversion. The reversed array of 5 elements has 5×4/2 = 10 inversions, so 10 swaps.",
+  "sub": "sorting"
+ },
+ {
+  "q": "Consider the function:\nint f(int n){ if(n<=1) return 1; return f(n-1)+f(n-2); }\nWhat is the value of f(6)?",
+  "options": [
+   "8",
+   "21",
+   "13",
+   "11"
+  ],
+  "answer": 2,
+  "exp": "f(1)=1, f(2)=2, f(3)=3, f(4)=5, f(5)=8, f(6)=13.",
+  "sub": "recursion"
+ },
+ {
+  "q": "What is the worst-case time complexity of searching for a key in a binary search tree of n nodes that has become completely skewed?",
+  "options": [
+   "O(log n)",
+   "O(n log n)",
+   "O(1)",
+   "O(n)"
+  ],
+  "answer": 3,
+  "exp": "A skewed BST degenerates into a linked list of height n-1, so search may visit all n nodes.",
+  "sub": "complexity"
+ },
+ {
+  "q": "A two-dimensional array A[1..4][1..5] is stored in column-major order with base address 200 and element size 2 bytes. What is the address of A[3][4]?",
+  "options": [
+   "228",
+   "226",
+   "236",
+   "216"
+  ],
+  "answer": 0,
+  "exp": "Offset = ((4-1)×4 + (3-1)) × 2 = 14 × 2 = 28, so address = 228. (226 would be the row-major address.)",
+  "sub": "arrays"
+ },
+ {
+  "q": "The postfix form of the infix expression (A+B)*C-D/E is",
+  "options": [
+   "AB+C*D-E/",
+   "AB+C*DE/-",
+   "ABC*+DE/-",
+   "AB+CDE/*-"
+  ],
+  "answer": 1,
+  "exp": "(A+B) gives AB+; times C gives AB+C*; D/E gives DE/; subtraction gives AB+C*DE/-.",
+  "sub": "stacks"
+ },
+ {
+  "q": "A queue is initially empty. The operations performed are: enqueue(1), enqueue(2), enqueue(3), dequeue, enqueue(4), dequeue, enqueue(5). Which element is now at the front?",
+  "options": [
+   "5",
+   "4",
+   "2",
+   "3"
+  ],
+  "answer": 3,
+  "exp": "After enqueues 1,2,3 and a dequeue the queue is 2,3; add 4 then dequeue removes 2 giving 3,4; adding 5 gives 3,4,5. Front is 3.",
+  "sub": "queues"
+ },
+ {
+  "q": "Floyd's tortoise-and-hare algorithm detects a cycle in a linked list. What is its auxiliary space complexity?",
+  "options": [
+   "O(1)",
+   "O(n)",
+   "O(log n)",
+   "O(n²)"
+  ],
+  "answer": 0,
+  "exp": "It uses only two pointers (slow and fast), so extra space is constant.",
+  "sub": "linked lists"
+ },
+ {
+  "q": "The preorder traversal of a binary tree is A B D E C F and the inorder traversal is D B E A F C. What is its postorder traversal?",
+  "options": [
+   "D E B C F A",
+   "D B E F C A",
+   "D E B F C A",
+   "F D E B C A"
+  ],
+  "answer": 2,
+  "exp": "A is the root; B(D,E) is the left subtree and C with left child F is the right subtree. Postorder = D E B F C A.",
+  "sub": "trees"
+ },
+ {
+  "q": "Selection sort is used to sort 10 elements. Exactly how many comparisons does it make?",
+  "options": [
+   "36",
+   "45",
+   "90",
+   "55"
+  ],
+  "answer": 1,
+  "exp": "Selection sort always does (n-1)+(n-2)+...+1 = n(n-1)/2 = 45 comparisons.",
+  "sub": "sorting"
+ },
+ {
+  "q": "A hash table with 10 slots uses chaining and h(k) = k mod 10. Keys 12, 22, 32, 15, 25 and 7 are inserted. What is the length of the longest chain?",
+  "options": [
+   "3",
+   "2",
+   "4",
+   "1"
+  ],
+  "answer": 0,
+  "exp": "12, 22 and 32 all hash to slot 2 giving a chain of 3; slot 5 has 2 keys and slot 7 has 1.",
+  "sub": "hashing"
+ },
+ {
+  "q": "Keys 10, 20, 15, 30, 40 are inserted one by one into an initially empty max-heap (stored in an array, using standard sift-up). What is the final array?",
+  "options": [
+   "40 30 20 15 10",
+   "40 20 30 10 15",
+   "40 30 20 10 15",
+   "40 30 15 10 20"
+  ],
+  "answer": 3,
+  "exp": "[10] -> [20,10] -> [20,10,15] -> 30 sifts to top: [30,20,15,10] -> 40 sifts to top: [40,30,15,10,20].",
+  "sub": "heaps"
+ },
+ {
+  "q": "In a B-tree of order 5 (maximum 5 children per node), what is the minimum number of keys in a non-root internal node?",
+  "options": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "answer": 1,
+  "exp": "Minimum children = ceil(5/2) = 3, so minimum keys = 3 - 1 = 2.",
+  "sub": "B-trees"
+ },
+ {
+  "q": "An array A[-3..4][2..6] has how many elements?",
+  "options": [
+   "35",
+   "45",
+   "40",
+   "30"
+  ],
+  "answer": 2,
+  "exp": "Rows = 4-(-3)+1 = 8, columns = 6-2+1 = 5, total = 8 × 5 = 40.",
+  "sub": "arrays"
+ },
+ {
+  "q": "Evaluate the prefix expression: - * + 4 3 2 5",
+  "options": [
+   "14",
+   "19",
+   "9",
+   "7"
+  ],
+  "answer": 2,
+  "exp": "Scanning from the right: 4+3=7; 7*2=14; 14-5=9.",
+  "sub": "stacks"
+ },
+ {
+  "q": "Which of the following is NOT an application of a queue?",
+  "options": [
+   "Breadth first traversal",
+   "Evaluation of postfix expressions",
+   "Round-robin CPU scheduling",
+   "Print spooling"
+  ],
+  "answer": 1,
+  "exp": "Postfix evaluation uses a stack; the others use FIFO queues.",
+  "sub": "queues"
+ },
+ {
+  "q": "A weighted undirected graph has edges: A-B 4, A-C 2, B-C 1, B-D 5, C-D 8, C-E 10, D-E 2, D-F 6, E-F 3. What is the weight of its minimum spanning tree?",
+  "options": [
+   "15",
+   "14",
+   "11",
+   "13"
+  ],
+  "answer": 3,
+  "exp": "Kruskal picks B-C(1), A-C(2), D-E(2), E-F(3), skips A-B (cycle), picks B-D(5): 1+2+2+3+5 = 13.",
+  "sub": "graphs"
+ },
+ {
+  "q": "What is the minimum number of moves required to solve the Tower of Hanoi puzzle with 5 disks?",
+  "options": [
+   "31",
+   "32",
+   "25",
+   "15"
+  ],
+  "answer": 0,
+  "exp": "Minimum moves = 2ⁿ - 1 = 2⁵ - 1 = 31.",
+  "sub": "recursion"
+ },
+ {
+  "q": "What is the time complexity of building a binary heap from n unordered elements using the bottom-up (Floyd) method?",
+  "options": [
+   "O(n log n)",
+   "O(log n)",
+   "O(n²)",
+   "O(n)"
+  ],
+  "answer": 3,
+  "exp": "Most nodes are near the leaves and sift down only a few levels, so the total work sums to O(n).",
+  "sub": "complexity"
+ },
+ {
+  "q": "What is the minimum number of nodes in an AVL tree of height 4? (Height of a single-node tree is 0.)",
+  "options": [
+   "12",
+   "10",
+   "15",
+   "9"
+  ],
+  "answer": 0,
+  "exp": "N(h) = N(h-1) + N(h-2) + 1 with N(0)=1, N(1)=2: N(2)=4, N(3)=7, N(4)=12.",
+  "sub": "AVL trees"
+ },
+ {
+  "q": "An undirected graph has 8 vertices and 11 edges. How many entries equal 1 in its adjacency matrix?",
+  "options": [
+   "11",
+   "16",
+   "22",
+   "64"
+  ],
+  "answer": 2,
+  "exp": "Each undirected edge sets two entries (A[i][j] and A[j][i]), so 2 × 11 = 22.",
+  "sub": "graph representation"
+ },
+ {
+  "q": "Insertion sort is applied to the array 7 3 5 1. What does the array look like after the first two insertions (the first two passes)?",
+  "options": [
+   "3 7 5 1",
+   "3 5 7 1",
+   "1 3 5 7",
+   "3 5 1 7"
+  ],
+  "answer": 1,
+  "exp": "Pass 1 inserts 3 giving 3 7 5 1; pass 2 inserts 5 giving 3 5 7 1.",
+  "sub": "sorting"
+ },
+ {
+  "q": "Which statement correctly gives the time and extra space needed to reverse a singly linked list of n nodes iteratively?",
+  "options": [
+   "O(n) time and O(n) extra space",
+   "O(n) time and O(1) extra space",
+   "O(n²) time and O(1) extra space",
+   "O(log n) time and O(1) extra space"
+  ],
+  "answer": 1,
+  "exp": "One pass changes each node's next pointer using three pointers, so it is O(n) time and O(1) space.",
+  "sub": "linked lists"
+ },
+ {
+  "q": "A hash table of size 50 currently stores 35 keys. What is its load factor?",
+  "options": [
+   "1.43",
+   "0.35",
+   "0.3",
+   "0.7"
+  ],
+  "answer": 3,
+  "exp": "Load factor α = number of keys / table size = 35/50 = 0.7.",
+  "sub": "hashing"
+ },
+ {
+  "q": "A 6 × 6 lower triangular matrix is stored in a one-dimensional array keeping only the elements on and below the diagonal. How many elements are stored?",
+  "options": [
+   "21",
+   "15",
+   "36",
+   "30"
+  ],
+  "answer": 0,
+  "exp": "n(n+1)/2 = 6×7/2 = 21.",
+  "sub": "arrays"
+ },
+ {
+  "q": "Integers 1, 2, 3, 4 are pushed onto a stack in this order, with pops allowed at any time between pushes. Which of the following pop sequences is NOT possible?",
+  "options": [
+   "3 2 4 1",
+   "4 3 2 1",
+   "3 1 2 4",
+   "2 4 3 1"
+  ],
+  "answer": 2,
+  "exp": "Once 3 is popped the stack holds 1 below 2, so 2 must be popped before 1. The sequence 3 1 2 4 violates this.",
+  "sub": "stacks"
+ },
+ {
+  "q": "What is the maximum number of comparisons needed by binary search to find a key in a sorted array of 1000 elements?",
+  "options": [
+   "9",
+   "10",
+   "11",
+   "12"
+  ],
+  "answer": 1,
+  "exp": "Maximum comparisons = floor(log₂ 1000) + 1 = 9 + 1 = 10.",
+  "sub": "searching"
+ },
+ {
+  "q": "The keys 50, 30, 70, 20, 40, 60, 80, 35 are inserted in this order into an empty BST. What is the height of the tree (counted in edges)?",
+  "options": [
+   "2",
+   "4",
+   "5",
+   "3"
+  ],
+  "answer": 3,
+  "exp": "The path 50 -> 30 -> 40 -> 35 has 3 edges and is the longest.",
+  "sub": "trees"
+ },
+ {
+  "q": "A directed graph has adjacency lists 1:{2,3}, 2:{4}, 3:{4}, 4:{}. Depth first search starts at vertex 1 and visits neighbours in ascending order. What is the visiting order?",
+  "options": [
+   "1 2 4 3",
+   "1 2 3 4",
+   "1 3 4 2",
+   "1 3 2 4"
+  ],
+  "answer": 0,
+  "exp": "From 1 go to 2, then 4, backtrack to 1 and visit 3 (4 already visited).",
+  "sub": "graphs"
+ },
+ {
+  "q": "A circular queue is implemented in an array of size 8 using the convention that the queue is full when (rear + 1) mod 8 = front. What is the maximum number of elements it can hold?",
+  "options": [
+   "8",
+   "6",
+   "7",
+   "9"
+  ],
+  "answer": 2,
+  "exp": "One slot is left unused to distinguish full from empty, so capacity is 8 - 1 = 7.",
+  "sub": "queues"
+ },
+ {
+  "q": "What is returned by f(4825)?\nint f(int x){ if(x==0) return 0; return x%10 + f(x/10); }",
+  "options": [
+   "21",
+   "16",
+   "24",
+   "19"
+  ],
+  "answer": 3,
+  "exp": "It sums the digits: 5 + 2 + 8 + 4 = 19.",
+  "sub": "recursion"
+ },
+ {
+  "q": "The array 4 10 3 5 1 is converted into a max-heap using the bottom-up heapify method. What is the resulting array?",
+  "options": [
+   "10 5 3 4 1",
+   "10 4 3 5 1",
+   "5 10 3 4 1",
+   "10 5 4 3 1"
+  ],
+  "answer": 0,
+  "exp": "Heapify 10 (fine); heapify 4: swap with 10 giving 10 4 3 5 1, then 4 swaps with 5 giving 10 5 3 4 1.",
+  "sub": "heaps"
+ },
+ {
+  "q": "A hash table of size 7 uses double hashing with h1(k) = k mod 7 and h2(k) = 5 - (k mod 5), and probe i position (h1 + i·h2) mod 7. Key 10 is inserted first, then key 17. In which slot is 17 placed?",
+  "options": [
+   "5",
+   "6",
+   "4",
+   "0"
+  ],
+  "answer": 1,
+  "exp": "10 goes to slot 3. For 17: h1=3 (occupied), h2 = 5-2 = 3, so next slot = (3+3) mod 7 = 6.",
+  "sub": "hashing"
+ },
+ {
+  "q": "The running time of an algorithm satisfies T(n) = 2T(n/2) + n. Which is its complexity?",
+  "options": [
+   "O(n)",
+   "O(n²)",
+   "O(n log n)",
+   "O(log n)"
+  ],
+  "answer": 2,
+  "exp": "By the master theorem a=2, b=2, f(n)=n = n^(log₂2), giving Θ(n log n).",
+  "sub": "complexity"
+ }
+]

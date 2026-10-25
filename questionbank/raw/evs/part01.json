@@ -1,0 +1,482 @@
+[
+ {
+  "q": "The scientific study of the relationship between living organisms and their physical environment is called",
+  "options": [
+   "Genetics",
+   "Ethology",
+   "Ecology",
+   "Taxonomy"
+  ],
+  "answer": 2,
+  "exp": "Ecology (term coined by Ernst Haeckel) studies organisms and their interactions with the environment.",
+  "sub": "Ecology basics"
+ },
+ {
+  "q": "In the food chain Grass → Grasshopper → Frog → Snake → Hawk, which organism is the secondary consumer?",
+  "options": [
+   "Hawk",
+   "Grasshopper",
+   "Snake",
+   "Frog"
+  ],
+  "answer": 3,
+  "exp": "Grasshopper is the primary consumer; frog, which eats it, is the secondary consumer.",
+  "sub": "Food chain"
+ },
+ {
+  "q": "The Montreal Protocol (1987) was adopted to control the production and use of",
+  "options": [
+   "Ozone-depleting substances such as CFCs",
+   "Greenhouse gases such as CO2",
+   "Hazardous wastes",
+   "Trade in endangered species"
+  ],
+  "answer": 0,
+  "exp": "The Montreal Protocol phases out substances such as CFCs and halons that deplete the ozone layer.",
+  "sub": "Conventions"
+ },
+ {
+  "q": "The Chipko Movement, which involved hugging trees to prevent felling, began in the 1970s in which present-day state?",
+  "options": [
+   "Karnataka",
+   "Uttarakhand",
+   "Kerala",
+   "Rajasthan"
+  ],
+  "answer": 1,
+  "exp": "Chipko began in Chamoli district (now Uttarakhand); Sunderlal Bahuguna and Gaura Devi are associated with it.",
+  "sub": "Environmental movements"
+ },
+ {
+  "q": "Which of the following is NOT a greenhouse gas?",
+  "options": [
+   "Methane",
+   "Carbon dioxide",
+   "Nitrogen (N2)",
+   "Nitrous oxide"
+  ],
+  "answer": 2,
+  "exp": "Greenhouse gases absorb infrared radiation; molecular nitrogen does not.",
+  "sub": "Climate change"
+ },
+ {
+  "q": "The Wildlife (Protection) Act of India was enacted in the year",
+  "options": [
+   "1972",
+   "1962",
+   "1980",
+   "1986"
+  ],
+  "answer": 0,
+  "exp": "The Wildlife (Protection) Act, 1972 provides for protection of wild animals, birds and plants.",
+  "sub": "Environmental laws"
+ },
+ {
+  "q": "Ozone layer, which absorbs harmful ultraviolet rays, is present in which layer of the atmosphere?",
+  "options": [
+   "Troposphere",
+   "Stratosphere",
+   "Mesosphere",
+   "Thermosphere"
+  ],
+  "answer": 1,
+  "exp": "About 90% of atmospheric ozone lies in the stratosphere (15-35 km).",
+  "sub": "Atmosphere"
+ },
+ {
+  "q": "Which of the following pollutants is mainly responsible for acid rain?",
+  "options": [
+   "Lead and mercury",
+   "Carbon monoxide and methane",
+   "Ozone and chlorofluorocarbons",
+   "Sulphur dioxide and oxides of nitrogen"
+  ],
+  "answer": 3,
+  "exp": "SO2 and NOx form sulphuric and nitric acids, lowering rain pH below 5.6.",
+  "sub": "Pollution"
+ },
+ {
+  "q": "According to Lindeman's 10 per cent law, how much energy is transferred from one trophic level to the next?",
+  "options": [
+   "About 1 per cent",
+   "About 10 per cent",
+   "About 50 per cent",
+   "About 90 per cent"
+  ],
+  "answer": 1,
+  "exp": "Only about one-tenth of energy is passed to the next trophic level; the rest is lost as heat and respiration.",
+  "sub": "Ecosystem"
+ },
+ {
+  "q": "Which of the following is an ex-situ method of conserving biodiversity?",
+  "options": [
+   "Botanical garden",
+   "National park",
+   "Biosphere reserve",
+   "Sacred grove"
+  ],
+  "answer": 0,
+  "exp": "Ex-situ conservation protects species outside their natural habitat, e.g. zoos, botanical gardens, seed banks.",
+  "sub": "Conservation"
+ },
+ {
+  "q": "Which of the following is NOT one of the biodiversity hotspots found in India?",
+  "options": [
+   "Indo-Burma region",
+   "Western Ghats",
+   "Eastern Himalaya",
+   "Amazon basin"
+  ],
+  "answer": 3,
+  "exp": "The Amazon basin is in South America; India has parts of Himalaya, Western Ghats, Indo-Burma and Sundaland hotspots.",
+  "sub": "Biodiversity"
+ },
+ {
+  "q": "Statement I: Carbon dioxide is the main gas responsible for enhanced global warming due to human activities.\nStatement II: Burning of fossil fuels and deforestation increase atmospheric CO2.",
+  "options": [
+   "Both Statement I and Statement II are true",
+   "Statement I is true but Statement II is false",
+   "Statement I is false but Statement II is true",
+   "Both Statement I and Statement II are false"
+  ],
+  "answer": 0,
+  "exp": "Fossil fuel burning and deforestation raise CO2, the largest contributor to anthropogenic warming.",
+  "sub": "Climate change"
+ },
+ {
+  "q": "Eutrophication of a lake is mainly caused by an excess of",
+  "options": [
+   "Sodium and chloride",
+   "Oxygen and carbon dioxide",
+   "Nitrates and phosphates",
+   "Lead and cadmium"
+  ],
+  "answer": 2,
+  "exp": "Nutrient enrichment causes algal blooms; decay of algae depletes dissolved oxygen.",
+  "sub": "Water pollution"
+ },
+ {
+  "q": "The Indian Parliament enacted the Environment (Protection) Act in 1986 following which event?",
+  "options": [
+   "Bhopal gas tragedy",
+   "Chernobyl accident",
+   "Minamata incident",
+   "Exxon Valdez oil spill"
+  ],
+  "answer": 0,
+  "exp": "The Bhopal gas leak (1984) of methyl isocyanate prompted the umbrella Environment (Protection) Act, 1986.",
+  "sub": "Environmental laws"
+ },
+ {
+  "q": "The Kyoto Protocol, adopted in 1997, mainly aims at",
+  "options": [
+   "Protecting wetlands",
+   "Reducing greenhouse gas emissions of industrialised countries",
+   "Controlling trade in wild fauna and flora",
+   "Banning transboundary movement of hazardous wastes"
+  ],
+  "answer": 1,
+  "exp": "The Kyoto Protocol set legally binding GHG reduction targets for developed countries.",
+  "sub": "Conventions"
+ },
+ {
+  "q": "Biomagnification refers to the",
+  "options": [
+   "Increase in biomass of producers",
+   "Increase in population of herbivores",
+   "Decrease in energy at higher trophic levels",
+   "Increase in concentration of a non-degradable toxin at successive trophic levels"
+  ],
+  "answer": 3,
+  "exp": "Substances such as DDT and mercury accumulate and are present in higher concentration at higher trophic levels.",
+  "sub": "Pollution"
+ },
+ {
+  "q": "The Silent Valley movement in Kerala was launched to oppose",
+  "options": [
+   "A hydroelectric project on the Kunthipuzha river",
+   "A mining project in the Western Ghats",
+   "A nuclear power plant",
+   "A highway through a tiger reserve"
+  ],
+  "answer": 0,
+  "exp": "The protest saved the Silent Valley rainforest and led to a National Park (1985).",
+  "sub": "Environmental movements"
+ },
+ {
+  "q": "The Ramsar Convention, 1971, deals with the conservation of",
+  "options": [
+   "Forests",
+   "Wetlands",
+   "Coral reefs only",
+   "Deserts"
+  ],
+  "answer": 1,
+  "exp": "Ramsar (Iran) Convention provides for wise use and conservation of wetlands.",
+  "sub": "Conventions"
+ },
+ {
+  "q": "Which of the following is a non-renewable source of energy?",
+  "options": [
+   "Tidal energy",
+   "Biogas",
+   "Natural gas",
+   "Geothermal energy"
+  ],
+  "answer": 2,
+  "exp": "Natural gas is a fossil fuel formed over millions of years and cannot be replenished quickly.",
+  "sub": "Natural resources"
+ },
+ {
+  "q": "A solar photovoltaic cell converts",
+  "options": [
+   "Chemical energy into light",
+   "Heat into mechanical energy",
+   "Wind energy into electricity",
+   "Sunlight directly into electricity"
+  ],
+  "answer": 3,
+  "exp": "Photovoltaic cells (usually silicon) use the photoelectric effect to produce electricity from sunlight.",
+  "sub": "Renewable energy"
+ },
+ {
+  "q": "The major component of biogas is",
+  "options": [
+   "Carbon monoxide",
+   "Methane",
+   "Hydrogen sulphide",
+   "Ethane"
+  ],
+  "answer": 1,
+  "exp": "Biogas, produced by anaerobic decomposition of organic matter, contains about 55-65% methane.",
+  "sub": "Renewable energy"
+ },
+ {
+  "q": "Project Tiger was launched in India in the year",
+  "options": [
+   "1980",
+   "1952",
+   "1973",
+   "1992"
+  ],
+  "answer": 2,
+  "exp": "Project Tiger started on 1 April 1973 from Jim Corbett National Park.",
+  "sub": "Conservation"
+ },
+ {
+  "q": "Which was the first biosphere reserve of India, established in 1986?",
+  "options": [
+   "Gulf of Mannar",
+   "Sundarbans",
+   "Nanda Devi",
+   "Nilgiri Biosphere Reserve"
+  ],
+  "answer": 3,
+  "exp": "The Nilgiri Biosphere Reserve was the first in India, covering parts of Tamil Nadu, Kerala and Karnataka.",
+  "sub": "Conservation"
+ },
+ {
+  "q": "Which statutory body at the national level is headed by the Prime Minister under the Disaster Management Act, 2005?",
+  "options": [
+   "National Disaster Management Authority",
+   "National Green Tribunal",
+   "Central Pollution Control Board",
+   "National Biodiversity Authority"
+  ],
+  "answer": 0,
+  "exp": "NDMA, established under the 2005 Act, has the Prime Minister as chairperson.",
+  "sub": "Disaster management"
+ },
+ {
+  "q": "Tsunamis are mostly caused by",
+  "options": [
+   "Heavy rainfall",
+   "Strong winds",
+   "Undersea earthquakes",
+   "Volcanic dust in the atmosphere"
+  ],
+  "answer": 2,
+  "exp": "Sudden vertical displacement of the sea floor during undersea earthquakes generates tsunami waves.",
+  "sub": "Disaster management"
+ },
+ {
+  "q": "The Brundtland Commission report 'Our Common Future' (1987) defined sustainable development as development that",
+  "options": [
+   "Focuses only on economic growth",
+   "Maximises industrial output",
+   "Stops all use of natural resources",
+   "Meets present needs without compromising the ability of future generations to meet their needs"
+  ],
+  "answer": 3,
+  "exp": "This definition of sustainable development comes from the World Commission on Environment and Development.",
+  "sub": "Sustainable development"
+ },
+ {
+  "q": "How many Sustainable Development Goals (SDGs) were adopted by the UN in 2015 for achievement by 2030?",
+  "options": [
+   "17",
+   "8",
+   "10",
+   "12"
+  ],
+  "answer": 0,
+  "exp": "The 2030 Agenda adopted 17 SDGs with 169 targets; the Millennium Development Goals were eight.",
+  "sub": "Sustainable development"
+ },
+ {
+  "q": "Carbon monoxide is harmful to humans because it",
+  "options": [
+   "Damages the ozone layer",
+   "Combines with haemoglobin to form carboxyhaemoglobin",
+   "Causes acid rain",
+   "Increases blood oxygen content"
+  ],
+  "answer": 1,
+  "exp": "CO has far greater affinity for haemoglobin than oxygen, reducing oxygen transport.",
+  "sub": "Air pollution"
+ },
+ {
+  "q": "The Water (Prevention and Control of Pollution) Act was passed in India in",
+  "options": [
+   "1974",
+   "1972",
+   "1981",
+   "1986"
+  ],
+  "answer": 0,
+  "exp": "The Water Act was passed in 1974; the Air Act followed in 1981.",
+  "sub": "Environmental laws"
+ },
+ {
+  "q": "Noise level is measured in",
+  "options": [
+   "Hertz",
+   "Decibel",
+   "Pascal",
+   "Lux"
+  ],
+  "answer": 1,
+  "exp": "The decibel (dB) is the unit of sound intensity level.",
+  "sub": "Pollution"
+ },
+ {
+  "q": "Minamata disease, first reported in Japan, is caused by poisoning from",
+  "options": [
+   "Lead",
+   "Cadmium",
+   "Mercury",
+   "Arsenic"
+  ],
+  "answer": 2,
+  "exp": "Methylmercury released in industrial waste accumulated in fish eaten by local people.",
+  "sub": "Pollution"
+ },
+ {
+  "q": "The Bhopal gas tragedy of December 1984 was caused by the leakage of",
+  "options": [
+   "Phosgene",
+   "Chlorine",
+   "Sulphur dioxide",
+   "Methyl isocyanate"
+  ],
+  "answer": 3,
+  "exp": "Methyl isocyanate (MIC) leaked from the Union Carbide pesticide plant at Bhopal.",
+  "sub": "Pollution"
+ },
+ {
+  "q": "Which organisation maintains the Red Data Book (Red List) of threatened species?",
+  "options": [
+   "UNEP",
+   "WWF",
+   "IUCN",
+   "IPCC"
+  ],
+  "answer": 2,
+  "exp": "The International Union for Conservation of Nature maintains the IUCN Red List.",
+  "sub": "Conservation"
+ },
+ {
+  "q": "A species found only in a particular geographical area and nowhere else is called",
+  "options": [
+   "Pioneer species",
+   "Keystone species",
+   "Exotic species",
+   "Endemic species"
+  ],
+  "answer": 3,
+  "exp": "Endemic species are restricted to a specific region, e.g. lion-tailed macaque of the Western Ghats.",
+  "sub": "Biodiversity"
+ },
+ {
+  "q": "The first species to colonise bare rock in primary succession are usually",
+  "options": [
+   "Mosses",
+   "Lichens",
+   "Shrubs",
+   "Grasses"
+  ],
+  "answer": 1,
+  "exp": "Crustose lichens secrete acids that weather rock and start soil formation.",
+  "sub": "Ecology basics"
+ },
+ {
+  "q": "Free-living nitrogen-fixing bacteria in soil include",
+  "options": [
+   "Azotobacter",
+   "Rhizobium",
+   "Nitrosomonas",
+   "Nitrobacter"
+  ],
+  "answer": 0,
+  "exp": "Azotobacter fixes nitrogen without a host; Rhizobium lives symbiotically in legume root nodules.",
+  "sub": "Biogeochemical cycles"
+ },
+ {
+  "q": "The process by which plants release water vapour into the atmosphere is called",
+  "options": [
+   "Condensation",
+   "Transpiration",
+   "Percolation",
+   "Precipitation"
+  ],
+  "answer": 1,
+  "exp": "Transpiration through stomata returns water to the atmosphere in the water cycle.",
+  "sub": "Biogeochemical cycles"
+ },
+ {
+  "q": "In an ecosystem, the pyramid of energy is always",
+  "options": [
+   "Either upright or inverted",
+   "Inverted",
+   "Spindle-shaped",
+   "Upright"
+  ],
+  "answer": 3,
+  "exp": "Energy decreases at each trophic level, so the energy pyramid cannot be inverted.",
+  "sub": "Ecosystem"
+ },
+ {
+  "q": "A lichen is an example of which type of ecological interaction?",
+  "options": [
+   "Mutualism",
+   "Commensalism",
+   "Parasitism",
+   "Predation"
+  ],
+  "answer": 0,
+  "exp": "A lichen is an association of an alga (or cyanobacterium) and a fungus benefiting both.",
+  "sub": "Ecology basics"
+ },
+ {
+  "q": "Which gas listed below has the highest Global Warming Potential per molecule over 100 years?",
+  "options": [
+   "Methane",
+   "Carbon dioxide",
+   "Sulphur hexafluoride",
+   "Nitrous oxide"
+  ],
+  "answer": 2,
+  "exp": "SF6 has a GWP of more than 20,000 times CO2.",
+  "sub": "Climate change"
+ }
+]

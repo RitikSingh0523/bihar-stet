@@ -1,0 +1,482 @@
+[
+ {
+  "q": "A hash table of size 10 uses h(k) = k mod 10 with quadratic probing, trying slots (h + i²) mod 10 for i = 1, 2, ... Keys 31, 41 and 51 are inserted in order. In which slot is 51 stored?",
+  "options": [
+   "3",
+   "5",
+   "4",
+   "6"
+  ],
+  "answer": 1,
+  "exp": "31 goes to slot 1; 41 finds slot 1 full and takes (1+1)=2; 51 finds 1 and 2 full, and (1+4)=5 is free.",
+  "sub": "hashing"
+ },
+ {
+  "q": "Binary search (mid = floor((low+high)/2)) is performed for 72 in the array 3 8 12 16 23 38 56 72 91 (indices 0 to 8). How many elements are examined (probed) before success including the matching one?",
+  "options": [
+   "1",
+   "2",
+   "4",
+   "3"
+  ],
+  "answer": 3,
+  "exp": "Probes: index 4 (23), index 6 (56), index 7 (72) = 3 probes.",
+  "sub": "searching"
+ },
+ {
+  "q": "Which of the following strings of brackets is balanced?",
+  "options": [
+   "{()[{}]}",
+   "([)]",
+   "{[(])}",
+   "((())"
+  ],
+  "answer": 0,
+  "exp": "Each opening bracket is closed in correct nesting order only in {()[{}]}.",
+  "sub": "stacks"
+ },
+ {
+  "q": "What is the number of comparisons needed to find the largest element in an unsorted array of n elements?",
+  "options": [
+   "n",
+   "n + 1",
+   "n - 1",
+   "n/2"
+  ],
+  "answer": 2,
+  "exp": "Each of the remaining n-1 elements is compared once with the current maximum.",
+  "sub": "arrays"
+ },
+ {
+  "q": "A queue is implemented with a singly linked list that has only a head pointer (front at head). What is the time complexity of enqueue?",
+  "options": [
+   "O(1)",
+   "O(log n)",
+   "O(n²)",
+   "O(n)"
+  ],
+  "answer": 3,
+  "exp": "To add at the tail the whole list must be traversed since there is no tail pointer.",
+  "sub": "queues"
+ },
+ {
+  "q": "In the Josephus problem 5 people stand in a circle numbered 1 to 5. Starting the count at 1, every second person is eliminated. Which person survives?",
+  "options": [
+   "1",
+   "3",
+   "4",
+   "5"
+  ],
+  "answer": 1,
+  "exp": "Eliminations are 2, 4, 1, 5, leaving 3.",
+  "sub": "linked lists"
+ },
+ {
+  "q": "A BST has the preorder traversal 8 3 1 6 4 7 10 14 13. What is its height in edges?",
+  "options": [
+   "2",
+   "4",
+   "3",
+   "5"
+  ],
+  "answer": 2,
+  "exp": "Tree: 8(3(1,6(4,7)),10(-,14(13,-))). The longest paths, such as 8-3-6-4 and 8-10-14-13, have 3 edges.",
+  "sub": "trees"
+ },
+ {
+  "q": "According to Cayley's formula, how many distinct labelled spanning trees does the complete graph K₄ have?",
+  "options": [
+   "16",
+   "12",
+   "24",
+   "8"
+  ],
+  "answer": 0,
+  "exp": "Cayley's formula gives nⁿ⁻² = 4² = 16.",
+  "sub": "graphs"
+ },
+ {
+  "q": "What does f(13) print?\nvoid f(int n){ if(n==0) return; printf(\"%d\", n%2); f(n/2); }",
+  "options": [
+   "1101",
+   "0111",
+   "1011",
+   "1110"
+  ],
+  "answer": 2,
+  "exp": "13%2=1, 6%2=0, 3%2=1, 1%2=1, printed in that order: 1011 (binary 1101 reversed).",
+  "sub": "recursion"
+ },
+ {
+  "q": "What is the amortized time complexity of appending an element to a dynamic array that doubles its capacity when full?",
+  "options": [
+   "O(1)",
+   "O(n)",
+   "O(log n)",
+   "O(n log n)"
+  ],
+  "answer": 0,
+  "exp": "Occasional O(n) copies are spread over many cheap appends, giving O(1) amortized.",
+  "sub": "complexity"
+ },
+ {
+  "q": "A lower triangular matrix is stored row by row in a 1D array using 1-based indexing for both matrix and array, so a[i][j] (i ≥ j) is at position i(i-1)/2 + j. What is the position of a[5][3]?",
+  "options": [
+   "12",
+   "13",
+   "15",
+   "14"
+  ],
+  "answer": 1,
+  "exp": "5×4/2 + 3 = 10 + 3 = 13.",
+  "sub": "arrays"
+ },
+ {
+  "q": "What is the prefix form of A+B*C-D?",
+  "options": [
+   "+-A*BCD",
+   "-A+B*CD",
+   "+A*BC-D",
+   "-+A*BCD"
+  ],
+  "answer": 3,
+  "exp": "A+B*C-D = (A+(B*C))-D, giving -+A*BCD.",
+  "sub": "stacks"
+ },
+ {
+  "q": "A queue is built from two stacks s1 and s2. enqueue pushes onto s1. dequeue pops from s2 and, when s2 is empty, first moves all elements from s1 to s2. The operations are enqueue(1), enqueue(2), enqueue(3), dequeue, enqueue(4), dequeue. What value does the second dequeue return?",
+  "options": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "answer": 1,
+  "exp": "The first dequeue moves 1,2,3 to s2 and returns 1; the second pops 2 from s2.",
+  "sub": "queues"
+ },
+ {
+  "q": "What is the time complexity of merging two sorted singly linked lists of lengths m and n into one sorted list?",
+  "options": [
+   "O(m + n)",
+   "O(m × n)",
+   "O(m log n)",
+   "O(n log m)"
+  ],
+  "answer": 0,
+  "exp": "Each node is visited once while comparing the heads of the two lists.",
+  "sub": "linked lists"
+ },
+ {
+  "q": "How many leaf nodes does a binary heap (complete binary tree) with 25 nodes have?",
+  "options": [
+   "12",
+   "14",
+   "11",
+   "13"
+  ],
+  "answer": 3,
+  "exp": "Leaves = n - floor(n/2) = 25 - 12 = 13.",
+  "sub": "heaps"
+ },
+ {
+  "q": "What is the time complexity of the Floyd-Warshall all-pairs shortest path algorithm on a graph with V vertices?",
+  "options": [
+   "O(V²)",
+   "O(V + E)",
+   "O(V³)",
+   "O(E log V)"
+  ],
+  "answer": 2,
+  "exp": "It uses three nested loops over the vertices.",
+  "sub": "graphs"
+ },
+ {
+  "q": "Which of the following is NOT a property of a good hash function?",
+  "options": [
+   "It produces many collisions",
+   "It distributes keys uniformly",
+   "It is quick to compute",
+   "It maps the same key to the same index every time"
+  ],
+  "answer": 0,
+  "exp": "A good hash function minimises collisions.",
+  "sub": "hashing"
+ },
+ {
+  "q": "Bubble sort with an early-exit check (stops after a pass with no swap) sorts 3 2 1 4 5. How many passes are made including the final pass that finds no swap?",
+  "options": [
+   "2",
+   "4",
+   "3",
+   "5"
+  ],
+  "answer": 2,
+  "exp": "Pass 1 gives 2 1 3 4 5; pass 2 gives 1 2 3 4 5; pass 3 has no swap, so it stops: 3 passes.",
+  "sub": "sorting"
+ },
+ {
+  "q": "What is the value of g(4)?\nint g(int n){ if(n==0) return 1; return 2*g(n-1)+1; }",
+  "options": [
+   "15",
+   "31",
+   "63",
+   "16"
+  ],
+  "answer": 1,
+  "exp": "g(0)=1, g(1)=3, g(2)=7, g(3)=15, g(4)=31.",
+  "sub": "recursion"
+ },
+ {
+  "q": "What is the best-case time complexity of insertion sort?",
+  "options": [
+   "O(log n)",
+   "O(n²)",
+   "O(n log n)",
+   "O(n)"
+  ],
+  "answer": 3,
+  "exp": "For an already sorted array each element needs only one comparison.",
+  "sub": "sorting"
+ },
+ {
+  "q": "A two-dimensional float array float M[20][30] is declared. If each float takes 4 bytes, how many bytes does it occupy?",
+  "options": [
+   "2400",
+   "600",
+   "120",
+   "4800"
+  ],
+  "answer": 0,
+  "exp": "20 × 30 × 4 = 2400 bytes.",
+  "sub": "arrays"
+ },
+ {
+  "q": "Attempting to pop from an empty stack is called",
+  "options": [
+   "Overflow",
+   "Deadlock",
+   "Underflow",
+   "Segmentation"
+  ],
+  "answer": 2,
+  "exp": "Removing from an empty stack is stack underflow.",
+  "sub": "stacks"
+ },
+ {
+  "q": "Three processes P1, P2, P3 with burst times 5, 3 and 2 arrive at time 0 and are scheduled by round robin with a time quantum of 2 using a FIFO ready queue. At what time does P1 complete?",
+  "options": [
+   "8",
+   "9",
+   "6",
+   "10"
+  ],
+  "answer": 3,
+  "exp": "Slices: P1 0-2, P2 2-4, P3 4-6 (done), P1 6-8, P2 8-9 (done), P1 9-10 (done).",
+  "sub": "queues"
+ },
+ {
+  "q": "In an XOR (memory-efficient) doubly linked list, each node stores which value in its single link field?",
+  "options": [
+   "The sum of the addresses of the previous and next nodes",
+   "The bitwise XOR of the addresses of the previous and next nodes",
+   "The address of the next node only",
+   "The difference of the addresses of previous and next nodes"
+  ],
+  "answer": 1,
+  "exp": "Using XOR, one field encodes both neighbours, and traversal recovers the next address by XOR with the previous one.",
+  "sub": "linked lists"
+ },
+ {
+  "q": "The keys 10, 20, 30 are inserted in this order into an empty AVL tree. Which rotation is performed to restore balance?",
+  "options": [
+   "Right rotation",
+   "Left-Right rotation",
+   "Left rotation",
+   "Right-Left rotation"
+  ],
+  "answer": 2,
+  "exp": "Inserting 30 makes the tree right-right heavy at 10, which a single left rotation fixes, giving root 20.",
+  "sub": "AVL trees"
+ },
+ {
+  "q": "What is the maximum number of edges in a simple directed graph (no self-loops, no parallel edges) on 6 vertices?",
+  "options": [
+   "30",
+   "15",
+   "36",
+   "25"
+  ],
+  "answer": 0,
+  "exp": "Each vertex can have an edge to each of the other 5: 6×5 = 30.",
+  "sub": "graph representation"
+ },
+ {
+  "q": "In open addressing with linear probing, simply emptying the slot of a deleted key can break later searches. Which technique solves this problem?",
+  "options": [
+   "Rehashing only that key",
+   "Switching to a smaller table",
+   "Always searching from slot 0",
+   "Marking the slot as deleted (a tombstone) instead of empty"
+  ],
+  "answer": 3,
+  "exp": "A tombstone lets searches continue probing past the deleted slot.",
+  "sub": "hashing"
+ },
+ {
+  "q": "How many element shifts (moves to the right) does insertion sort perform on the array 5 1 4 2 3?",
+  "options": [
+   "5",
+   "6",
+   "7",
+   "10"
+  ],
+  "answer": 1,
+  "exp": "Shifts equal the number of inversions: (5,1),(5,4),(5,2),(5,3),(4,2),(4,3) = 6.",
+  "sub": "sorting"
+ },
+ {
+  "q": "Consider:\nint p(int x,int n){ if(n==0) return 1; int t=p(x,n/2); if(n%2==0) return t*t; return x*t*t; }\nHow many calls to p are made, including the first, for p(3,16)?",
+  "options": [
+   "4",
+   "5",
+   "6",
+   "16"
+  ],
+  "answer": 2,
+  "exp": "n takes the values 16, 8, 4, 2, 1, 0, which is 6 calls.",
+  "sub": "recursion"
+ },
+ {
+  "q": "Which of the following functions grows asymptotically fastest?",
+  "options": [
+   "n!",
+   "2ⁿ",
+   "n³",
+   "n log n"
+  ],
+  "answer": 0,
+  "exp": "The order is n log n < n³ < 2ⁿ < n!.",
+  "sub": "complexity"
+ },
+ {
+  "q": "A 100 × 100 sparse matrix has 30 non-zero elements. It is stored in the triplet (row, column, value) form including one header row giving rows, columns and number of non-zeros. How many numbers are stored in total?",
+  "options": [
+   "90",
+   "93",
+   "120",
+   "31"
+  ],
+  "answer": 1,
+  "exp": "There are 30 + 1 = 31 triplet rows with 3 numbers each = 93.",
+  "sub": "arrays"
+ },
+ {
+  "q": "Operations on an empty stack: push 5, push 3, pop, push 8, push 2, pop, pop, push 9. What are the top element and the size of the stack now?",
+  "options": [
+   "top = 5, size = 2",
+   "top = 8, size = 2",
+   "top = 9, size = 3",
+   "top = 9, size = 2"
+  ],
+  "answer": 3,
+  "exp": "After the pops the stack holds 5, and pushing 9 gives 5 9 (top 9, size 2).",
+  "sub": "stacks"
+ },
+ {
+  "q": "A circular queue uses an array of size 10 and the full condition (rear + 1) mod 10 = front, where rear is the index at which the next element will be inserted. If front = 7 and rear = 2, how many elements are in the queue?",
+  "options": [
+   "5",
+   "4",
+   "6",
+   "3"
+  ],
+  "answer": 0,
+  "exp": "Elements = (rear - front + 10) mod 10 = (2 - 7 + 10) mod 10 = 5 (indices 7,8,9,0,1).",
+  "sub": "queues"
+ },
+ {
+  "q": "What does sum(head) return for the list 5->8->3->9?\nint sum(Node* h){ if(h==NULL) return 0; return h->data + sum(h->next); }",
+  "options": [
+   "17",
+   "22",
+   "20",
+   "25"
+  ],
+  "answer": 3,
+  "exp": "5 + 8 + 3 + 9 = 25.",
+  "sub": "linked lists"
+ },
+ {
+  "q": "What is the maximum number of nodes in a binary tree of height 5 (height of the root alone is 0)?",
+  "options": [
+   "31",
+   "32",
+   "63",
+   "64"
+  ],
+  "answer": 2,
+  "exp": "Maximum nodes = 2^(h+1) - 1 = 2⁶ - 1 = 63.",
+  "sub": "trees"
+ },
+ {
+  "q": "A directed graph has adjacency lists A:{B,C}, B:{D}, C:{D,E}, D:{F}, E:{F}, F:{}. What is the Breadth First Search order starting from A (neighbours in listed order)?",
+  "options": [
+   "A B D C E F",
+   "A B C D E F",
+   "A C B E D F",
+   "A B C E D F"
+  ],
+  "answer": 1,
+  "exp": "Level 0: A; level 1: B C; level 2: D E; level 3: F.",
+  "sub": "graphs"
+ },
+ {
+  "q": "A hash table of size 11 is rehashed whenever the load factor exceeds 0.75. Which insertion (counting from the first key) triggers rehashing?",
+  "options": [
+   "The 9th",
+   "The 8th",
+   "The 10th",
+   "The 11th"
+  ],
+  "answer": 0,
+  "exp": "8/11 ≈ 0.727 does not exceed 0.75 but 9/11 ≈ 0.818 does.",
+  "sub": "hashing"
+ },
+ {
+  "q": "Quick sort uses Lomuto partition with the last element as pivot on the array 10 80 30 90 40 50 70. What is the array after this first partition?",
+  "options": [
+   "10 30 40 50 80 90 70",
+   "10 30 80 90 40 50 70",
+   "10 30 40 50 70 90 80",
+   "10 30 40 70 50 90 80"
+  ],
+  "answer": 2,
+  "exp": "Elements ≤ 70 (10,30,40,50) move to the front, and the pivot 70 is swapped into position 4, swapping 80 to the end.",
+  "sub": "sorting"
+ },
+ {
+  "q": "The recursive factorial function fact(n) returns 1 for n = 0 and n × fact(n-1) otherwise. What is the maximum number of simultaneous stack frames when fact(5) is called?",
+  "options": [
+   "4",
+   "5",
+   "7",
+   "6"
+  ],
+  "answer": 3,
+  "exp": "Calls for n = 5, 4, 3, 2, 1, 0 are all active at the deepest point: 6 frames.",
+  "sub": "recursion"
+ },
+ {
+  "q": "What is the solution of the recurrence T(n) = 4T(n/2) + n²?",
+  "options": [
+   "Θ(n²)",
+   "Θ(n² log n)",
+   "Θ(n³)",
+   "Θ(n log n)"
+  ],
+  "answer": 1,
+  "exp": "a=4, b=2, n^(log₂4) = n² = f(n), so by case 2 the result is Θ(n² log n).",
+  "sub": "complexity"
+ }
+]

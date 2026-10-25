@@ -1,0 +1,482 @@
+[
+ {
+  "q": "Assertion (A): A recursive solution generally uses more memory than an equivalent iterative one.\nReason (R): Every recursive call creates a new stack frame that stays until the call returns.",
+  "options": [
+   "Both A and R are true but R is not the correct explanation of A",
+   "A is true but R is false",
+   "A is false but R is true",
+   "Both A and R are true and R is the correct explanation of A"
+  ],
+  "answer": 3,
+  "exp": "Stack frames pile up with recursion depth, causing the extra memory use.",
+  "sub": "Recursion"
+ },
+ {
+  "q": "What is the output of the following code?\ndef f(n):\n    if n == 0:\n        return 0\n    return n % 10 + f(n // 10)\nprint(f(2475))",
+  "options": [
+   "24",
+   "5",
+   "18",
+   "2475"
+  ],
+  "answer": 2,
+  "exp": "Digit sum 5+7+4+2 = 18.",
+  "sub": "Recursion"
+ },
+ {
+  "q": "What is the output of the following code?\nimport numpy as np\na = np.linspace(0, 1, 5)\nprint(a[2], a.size, np.ones(3, dtype=int).sum())",
+  "options": [
+   "0.5 5 3",
+   "0.25 5 3",
+   "0.5 4 3",
+   "0.5 5 3.0"
+  ],
+  "answer": 0,
+  "exp": "linspace gives 0, 0.25, 0.5, 0.75, 1; the element at index 2 is 0.5; three ones sum to 3.",
+  "sub": "NumPy"
+ },
+ {
+  "q": "Which expression creates an empty set in Python?",
+  "options": [
+   "{}",
+   "set()",
+   "[]",
+   "set{}"
+  ],
+  "answer": 1,
+  "exp": "{} creates an empty dictionary; set() is the only way to make an empty set.",
+  "sub": "Sets"
+ },
+ {
+  "q": "What is the output of the following code?\nprint(\"%s has %d marks (%.1f%%)\" % (\"Ravi\", 45, 90.0))",
+  "options": [
+   "Ravi has 45 marks (90.0%)",
+   "Ravi has 45 marks (90.0)",
+   "Ravi has 45.0 marks (90%)",
+   "Ravi has 45 marks (90.00%)"
+  ],
+  "answer": 0,
+  "exp": "%s, %d and %.1f format the values and %% prints a literal percent sign.",
+  "sub": "Strings"
+ },
+ {
+  "q": "What is the output of the following code?\nL = [5, 3, 8, 1]\nL.sort(reverse=True)\nM = sorted(L)\nprint(L, M, L.pop(1), L)",
+  "options": [
+   "[8, 5, 3, 1] [1, 3, 5, 8] 5 [8, 3, 1]",
+   "[8, 3, 1] [1, 3, 5, 8] 5 [8, 5, 3, 1]",
+   "[8, 3, 1] [1, 3, 5, 8] 5 [8, 3, 1]",
+   "[8, 5, 3, 1] [1, 3, 5, 8] 3 [8, 5, 1]"
+  ],
+  "answer": 2,
+  "exp": "L becomes [8,5,3,1]; pop(1) removes 5 before print displays anything, and both L arguments refer to the same list.",
+  "sub": "Lists"
+ },
+ {
+  "q": "Which module provides the functions mean(), median() and mode()?",
+  "options": [
+   "math",
+   "statistics",
+   "random",
+   "numpy.core"
+  ],
+  "answer": 1,
+  "exp": "The standard library module statistics offers these functions.",
+  "sub": "Modules"
+ },
+ {
+  "q": "What is the output of the following code?\ntry:\n    raise ValueError(\"bad\")\nexcept (TypeError, ValueError) as e:\n    print(type(e).__name__, e.args[0])",
+  "options": [
+   "TypeError bad",
+   "ValueError ('bad',)",
+   "bad ValueError",
+   "ValueError bad"
+  ],
+  "answer": 3,
+  "exp": "The tuple of exceptions catches ValueError; e.args[0] is the message.",
+  "sub": "Exceptions"
+ },
+ {
+  "q": "What is the output of the following code?\nimport pandas as pd\ns = pd.Series([5, 3, 8], index=[2, 0, 1])\nprint(s[0], s.iloc[0], s.sort_index().tolist())",
+  "options": [
+   "5 5 [3, 8, 5]",
+   "3 5 [3, 8, 5]",
+   "3 3 [3, 5, 8]",
+   "5 3 [5, 3, 8]"
+  ],
+  "answer": 1,
+  "exp": "s[0] uses the label 0 (value 3), iloc[0] is the first position (5), sort_index orders labels 0,1,2 giving 3,8,5.",
+  "sub": "Pandas"
+ },
+ {
+  "q": "How many times does the loop body execute?\nfor i in range(3, 20, 4):\n    print(i)",
+  "options": [
+   "4",
+   "6",
+   "5",
+   "17"
+  ],
+  "answer": 2,
+  "exp": "i takes 3, 7, 11, 15, 19 which is five values.",
+  "sub": "Control flow"
+ },
+ {
+  "q": "What is the output of the following code?\nprint(7 // 2 * 2 + 7 % 2, 2 ** -1, 10 / 4, int(-3.9), 5 if 0 else 6)",
+  "options": [
+   "7 0.5 2.5 -3 6",
+   "7 0.5 2 -4 6",
+   "6 0.5 2.5 -3 6",
+   "7 0.5 2.5 -3 5"
+  ],
+  "answer": 0,
+  "exp": "7//2*2=6, +1 gives 7; 2**-1=0.5; 10/4=2.5; int truncates toward zero; the conditional picks 6.",
+  "sub": "Operators & precedence"
+ },
+ {
+  "q": "What is the output of the following code?\ns = \"a,b;c d\"\nprint(len(s.split()), s.split(\";\")[0].split(\",\"), s.find(\"z\"), s.rfind(\",\"))",
+  "options": [
+   "4 ['a', 'b'] -1 1",
+   "2 ['a', 'b'] 0 1",
+   "2 ['a,b'] -1 1",
+   "2 ['a', 'b'] -1 1"
+  ],
+  "answer": 3,
+  "exp": "split() splits on whitespace giving 2 parts; the other pieces follow; find gives -1; rfind of ',' is index 1.",
+  "sub": "Strings"
+ },
+ {
+  "q": "What is the data type of the value returned by readlines() on a text file object?",
+  "options": [
+   "a single string",
+   "tuple of characters",
+   "dictionary of line numbers",
+   "list of strings"
+  ],
+  "answer": 3,
+  "exp": "readlines() returns a list in which each element is one line including its newline.",
+  "sub": "File handling"
+ },
+ {
+  "q": "What is the output of the following code?\ndef f(L):\n    L.append(1)\n    L = [9]\n    L.append(2)\n    return L\na = [0]\nb = f(a)\nprint(a, b)",
+  "options": [
+   "[0, 1] [9, 2]",
+   "[0] [9, 2]",
+   "[0, 1] [0, 1, 2]",
+   "[9, 2] [9, 2]"
+  ],
+  "answer": 0,
+  "exp": "The first append changes the caller's list; rebinding L then creates a new local list.",
+  "sub": "Functions"
+ },
+ {
+  "q": "What is the output of the following code?\nprint(sum([i * i for i in range(4)]), sum(i for i in range(4) if i % 2), any([0, '']), all([]), max('apple', 'pear'))",
+  "options": [
+   "14 4 False False pear",
+   "14 4 False True pear",
+   "14 6 False True pear",
+   "14 4 True True apple"
+  ],
+  "answer": 1,
+  "exp": "0+1+4+9=14; odd numbers 1+3=4; any of falsy values is False; all of empty is True; 'pear' is greater.",
+  "sub": "Functions"
+ },
+ {
+  "q": "Which expression returns a reversed copy of the list L without changing L?",
+  "options": [
+   "L.reverse()",
+   "L.sort(reverse=True)",
+   "L[::-1]",
+   "L.pop()"
+  ],
+  "answer": 2,
+  "exp": "Slicing with step -1 builds a new reversed list; reverse() works in place and returns None.",
+  "sub": "Lists"
+ },
+ {
+  "q": "What is the output of the following code?\nst = []\nfor c in '(()':\n    if c == '(':\n        st.append(c)\n    else:\n        st.pop()\nprint(len(st))",
+  "options": [
+   "0",
+   "2",
+   "3",
+   "1"
+  ],
+  "answer": 3,
+  "exp": "Two pushes and one pop leave one element on the stack.",
+  "sub": "Lists"
+ },
+ {
+  "q": "What is the output of the following code?\nd1 = {'a': 1, 'b': 2}\nd2 = d1\nd3 = d1.copy()\nd1['a'] = 99\nprint(d2['a'], d3['a'], d1 is d2)",
+  "options": [
+   "99 1 True",
+   "99 99 True",
+   "1 1 False",
+   "1 99 False"
+  ],
+  "answer": 0,
+  "exp": "d2 is another name for the same dict; d3 is an independent shallow copy.",
+  "sub": "Dictionaries"
+ },
+ {
+  "q": "Which NumPy attribute gives the number of dimensions of an array?",
+  "options": [
+   "shape",
+   "ndim",
+   "size",
+   "dtype"
+  ],
+  "answer": 1,
+  "exp": "ndim is the number of axes; shape gives the sizes along each axis and size the total elements.",
+  "sub": "NumPy"
+ },
+ {
+  "q": "What is the output of the following code?\nwith open(\"t.txt\", \"w\") as f:\n    f.write(\"A\\nBB\\nCCC\\n\")\nwith open(\"t.txt\") as f:\n    lines = f.readlines()\nprint(len(lines), len(lines[1]), lines[2].strip())",
+  "options": [
+   "3 2 CCC",
+   "4 3 CCC",
+   "3 3 CCC",
+   "3 3 CCC\\n"
+  ],
+  "answer": 2,
+  "exp": "Three lines are written; lines[1] is 'BB\\n' with length 3.",
+  "sub": "File handling"
+ },
+ {
+  "q": "What is the output of the following code?\nimport pandas as pd\ndf = pd.DataFrame({'n': ['A', 'B', 'C', 'D'], 's': [50, 70, 60, 90]})\nprint(df.sort_values('s', ascending=False).head(2)['n'].tolist(), df['s'].max() - df['s'].min())",
+  "options": [
+   "['D', 'C'] 40",
+   "['D', 'B'] 40",
+   "['A', 'C'] 40",
+   "['D', 'B'] 90"
+  ],
+  "answer": 1,
+  "exp": "Top two scores are 90 (D) and 70 (B); the range is 90-50=40.",
+  "sub": "Pandas"
+ },
+ {
+  "q": "Statement I: A tuple can be used as a dictionary key if all its elements are immutable.\nStatement II: A list can be used as a dictionary key.\nWhich is correct?",
+  "options": [
+   "Both statements are true",
+   "Statement I is false and Statement II is true",
+   "Statement I is true and Statement II is false",
+   "Both statements are false"
+  ],
+  "answer": 2,
+  "exp": "Lists are unhashable so they raise TypeError when used as keys.",
+  "sub": "Dictionaries"
+ },
+ {
+  "q": "What is the output of the following code?\ndef count(n):\n    if n > 0:\n        print(n, end=' ')\n        count(n - 2)\ncount(7)",
+  "options": [
+   "7 5 3 1",
+   "7 5 3 1 -1",
+   "1 3 5 7",
+   "7 5 3"
+  ],
+  "answer": 0,
+  "exp": "Prints n before the recursive call; the sequence 7,5,3,1 stops when n becomes -1.",
+  "sub": "Recursion"
+ },
+ {
+  "q": "What is the output of the following code?\nprint(\"Hello\"[1:3] + \"World\"[-3:], \"ab\" < \"b\", \"Z\" < \"a\", [1, 2] < [1, 3])",
+  "options": [
+   "elrld True False True",
+   "ello True True True",
+   "elrld False True True",
+   "elrld True True True"
+  ],
+  "answer": 3,
+  "exp": "Slices give 'el' and 'rld'; strings compare by character code, so 'ab'<'b' and 'Z'<'a'; lists compare element-wise.",
+  "sub": "Strings"
+ },
+ {
+  "q": "What is the output of the following code?\nx = 10\ndef f():\n    x = 20\n    def g():\n        print(x)\n    g()\nf()\nprint(x)",
+  "options": [
+   "10 | 10",
+   "20 | 20",
+   "10 | 20",
+   "20 | 10"
+  ],
+  "answer": 3,
+  "exp": "g sees f's x (enclosing scope) which is 20; the global x stays 10.",
+  "sub": "Scope"
+ },
+ {
+  "q": "What is the output of the following code?\nprint(list(zip([1, 2, 3], 'ab')), dict(zip('xy', [1, 2])), list(enumerate('pq', 1)))",
+  "options": [
+   "[(1, 'a'), (2, 'b')] {'x': 1, 'y': 2} [(1, 'p'), (2, 'q')]",
+   "[(1, 'a'), (2, 'b'), (3, None)] {'x': 1, 'y': 2} [(1, 'p'), (2, 'q')]",
+   "[(1, 'a'), (2, 'b')] {'x': 1, 'y': 2} [(0, 'p'), (1, 'q')]",
+   "[(1, 'a'), (2, 'b')] {1: 'x', 2: 'y'} [(1, 'p'), (2, 'q')]"
+  ],
+  "answer": 0,
+  "exp": "zip stops at the shortest input; enumerate with start=1 numbers from 1.",
+  "sub": "Functions"
+ },
+ {
+  "q": "What is the output of the following code?\nprint(6 & 3, 6 | 3, 6 ^ 3, 1 << 4, ~5, 17 >> 2)",
+  "options": [
+   "2 7 5 16 -5 4",
+   "2 7 5 8 -6 4",
+   "2 7 5 16 -6 4",
+   "3 7 5 16 -6 4"
+  ],
+  "answer": 2,
+  "exp": "110&011=010; 110|011=111; 110^011=101; 1<<4=16; ~5=-6; 17>>2=4.",
+  "sub": "Operators & precedence"
+ },
+ {
+  "q": "What is the output of the following code?\nimport numpy as np\na = np.arange(1, 13).reshape(3, 4)\nprint(a.shape, a[:, 1], a.sum(axis=0))",
+  "options": [
+   "(3, 4) [ 5  6  7  8] [10 26 42]",
+   "(3, 4) [ 2  6 10] [15 18 21 24]",
+   "(4, 3) [ 2  6 10] [15 18 21 24]",
+   "(3, 4) [ 2  6 10] [10 26 42]"
+  ],
+  "answer": 1,
+  "exp": "Column 1 holds 2,6,10; axis=0 sums down each column to 15,18,21,24.",
+  "sub": "NumPy"
+ },
+ {
+  "q": "What is the output of the following code?\nfor i in range(3):\n    try:\n        if i == 1:\n            continue\n        print(i, end=' ')\n    finally:\n        print('f', end=' ')",
+  "options": [
+   "0 f 2 f",
+   "0 f 1 f 2 f",
+   "0 f f 2 f",
+   "0 2 f f f"
+  ],
+  "answer": 2,
+  "exp": "finally runs on every iteration, even when continue skips the print for i=1.",
+  "sub": "Exceptions"
+ },
+ {
+  "q": "What is the output of the following code?\ndef h(n):\n    return 1 if n == 0 else 2 * h(n - 1) + 1\nprint(h(4))",
+  "options": [
+   "16",
+   "31",
+   "15",
+   "9"
+  ],
+  "answer": 1,
+  "exp": "h(0)=1, h(1)=3, h(2)=7, h(3)=15, h(4)=31.",
+  "sub": "Recursion"
+ },
+ {
+  "q": "Match the Pandas DataFrame feature with its purpose:\n(i) df.head()  (ii) df.shape  (iii) df.describe()  (iv) df.drop('x', axis=1)\n(a) removes a column  (b) tuple of rows and columns  (c) first five rows  (d) summary statistics",
+  "options": [
+   "(i)-(c), (ii)-(d), (iii)-(b), (iv)-(a)",
+   "(i)-(b), (ii)-(c), (iii)-(d), (iv)-(a)",
+   "(i)-(c), (ii)-(b), (iii)-(a), (iv)-(d)",
+   "(i)-(c), (ii)-(b), (iii)-(d), (iv)-(a)"
+  ],
+  "answer": 3,
+  "exp": "head shows the first 5 rows, shape is (rows, columns), describe gives statistics, drop removes a column.",
+  "sub": "Pandas"
+ },
+ {
+  "q": "What is the output of the following code?\nprint(sorted({x % 4 for x in range(10)}), {1, 2}.issubset({1, 2, 3}), {1, 2}.isdisjoint({2, 3}))",
+  "options": [
+   "[0, 1, 2, 3] True False",
+   "[0, 1, 2, 3, 4] True False",
+   "[0, 1, 2, 3] False False",
+   "[0, 1, 2, 3] True True"
+  ],
+  "answer": 0,
+  "exp": "Remainders mod 4 are 0-3; {1,2} is a subset of {1,2,3}; it shares 2 with {2,3}, so not disjoint.",
+  "sub": "Sets"
+ },
+ {
+  "q": "What is the output of the following code?\nprint(\"Python\".find(\"th\"), \"banana\".index(\"n\", 3), \"banana\".rstrip(\"na\"), \"x\".join(\"abc\"))",
+  "options": [
+   "2 4 bana axbxc",
+   "2 4 b axbxc",
+   "3 4 b axbxc",
+   "2 2 b xaxbxc"
+  ],
+  "answer": 1,
+  "exp": "'th' starts at index 2; 'n' at or after index 3 is index 4; rstrip removes any trailing a/n characters leaving 'b'; join puts x between letters.",
+  "sub": "Strings"
+ },
+ {
+  "q": "A binary file is 20 bytes long. After f = open('d.bin','rb') and f.read(8), what does f.tell() return?",
+  "options": [
+   "12",
+   "0",
+   "8",
+   "20"
+  ],
+  "answer": 2,
+  "exp": "Reading 8 bytes advances the file pointer to offset 8.",
+  "sub": "File handling"
+ },
+ {
+  "q": "What is the output of the following code?\nx = [1, 2, 3]\nfor i in x:\n    x.remove(i)\nprint(x)",
+  "options": [
+   "[2]",
+   "[]",
+   "[1, 3]",
+   "[3]"
+  ],
+  "answer": 0,
+  "exp": "Removing during iteration shifts items: i=1 removes 1 giving [2,3]; next index 1 gives 3 which is removed, leaving [2].",
+  "sub": "Lists"
+ },
+ {
+  "q": "What is the output of the following code?\nprint(round(7.456, 2), 7 // 0.5, abs(3 + 4j), (1 + 2j) * (1 - 2j))",
+  "options": [
+   "7.45 14.0 5.0 (5+0j)",
+   "7.46 14 5 5",
+   "7.46 14.0 7.0 (5+4j)",
+   "7.46 14.0 5.0 (5+0j)"
+  ],
+  "answer": 3,
+  "exp": "7//0.5 is 14.0 (float); abs of complex is sqrt(9+16)=5.0; (1+2j)(1-2j)=1+4=5.",
+  "sub": "Data types & operators"
+ },
+ {
+  "q": "What is the output of the following code?\nimport pandas as pd\ndf = pd.DataFrame({'k': ['a', 'b', 'a', 'b', 'a'], 'v': [1, 2, 3, 4, 5]})\nprint(df.groupby('k')['v'].sum().to_dict())",
+  "options": [
+   "{'a': 3, 'b': 2}",
+   "{'a': 9, 'b': 6}",
+   "{'a': 6, 'b': 9}",
+   "{'a': 5, 'b': 4}"
+  ],
+  "answer": 1,
+  "exp": "a rows have v=1,3,5 (sum 9); b rows have 2,4 (sum 6).",
+  "sub": "Pandas"
+ },
+ {
+  "q": "What is the minimum number of moves needed to solve the Tower of Hanoi puzzle with 5 disks?",
+  "options": [
+   "31",
+   "25",
+   "32",
+   "15"
+  ],
+  "answer": 0,
+  "exp": "The recursive relation T(n)=2T(n-1)+1 gives 2^n - 1 = 31 for n=5.",
+  "sub": "Recursion"
+ },
+ {
+  "q": "What is the output of the following code?\ndef mystery(a, b):\n    if b == 0:\n        return a\n    return mystery(b, a % b)\nprint(mystery(48, 18))",
+  "options": [
+   "18",
+   "12",
+   "6",
+   "3"
+  ],
+  "answer": 2,
+  "exp": "This is Euclid's algorithm: (48,18)->(18,12)->(12,6)->(6,0) returns 6, the GCD.",
+  "sub": "Recursion"
+ },
+ {
+  "q": "What is the output of the following code?\ndef mk(n):\n    return [lambda x, i=i: x + i for i in range(n)]\nfs = mk(3)\nprint([f(10) for f in fs])",
+  "options": [
+   "[12, 12, 12]",
+   "[10, 10, 10]",
+   "[11, 12, 13]",
+   "[10, 11, 12]"
+  ],
+  "answer": 3,
+  "exp": "The default argument i=i captures each loop value, so the lambdas add 0, 1 and 2.",
+  "sub": "Functions & lambda"
+ }
+]
