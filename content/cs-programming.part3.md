@@ -125,6 +125,13 @@ for (i = 0; i < 3; i++)
 - **Dynamic memory** (`<stdlib.h>`): `malloc(n * sizeof(int))` (uninitialised, returns `void *`, NULL on failure), `calloc(n, size)` (**zero-initialised**), `realloc(p, newsize)`, `free(p)`. Memory comes from the **heap**; forgetting `free` → memory leak.
 - Static memory regions: code, data (globals/static), stack (locals, function frames), heap.
 
+### 10.3b Function pointers, 2D arrays and pointers
+- **Pointer to function**: `int (*fp)(int, int) = add;` then `fp(2,3)` or `(*fp)(2,3)`. Without the parentheses, `int *fp(int,int)` declares a **function returning int***. Used for callbacks and menu tables.
+- 2D array `int a[2][3]` is stored row by row (row-major). `a[i][j] == *(*(a+i)+j)`; `a+1` points to the whole **row 1**, `*(a+1)` is that row decayed to `int*`. Passing to a function needs the column size: `void f(int a[][3], int r)`.
+- `sizeof` of a char array includes the `'\0'`: `char s[]="abcd"` gives sizeof 5, strlen 4; `char *p="abcd"` gives sizeof(p) = pointer size (string literal must not be modified).
+- Nested loops: `break` leaves only the **innermost** loop; `continue` skips to the next iteration of the innermost loop; `goto label;` jumps within a function (avoid in structured code).
+- A function can return only one value directly; to "return" several, pass pointers or return a structure.
+
 ### 10.4 Functions
 - Declaration (prototype) `int add(int, int);` → definition → call. Return type `void` means nothing returned. `main` returns int (0 = success). Default return type of an undeclared function in C89 is int.
 - **Call by value** (default): copies of arguments are passed; changes inside do not affect the caller. **Call by reference** is simulated by passing **addresses** (pointers).
@@ -330,3 +337,5 @@ f(); f(); f();     → 1 2 3
 23. `printf` returns chars printed; `i++ + ++i` is undefined (textbook 12 for i = 5); `SQ(x) x*x` with `2+3` gives 11.
 24. `switch` falls through without `break`; `do-while` runs once at least; dangling else goes to the nearest `if`.
 25. `p + n` moves `n × sizeof(*p)` bytes; `a[i] == *(a+i)`; `char s[]="hello"` → strlen 5, sizeof 6; C is call by value (use pointers to swap); union size = largest member; `static` locals keep value, default 0; `auto` garbage; `fopen` returns NULL on failure; `r+` needs the file, `w+` erases; flowchart: oval = start/stop, parallelogram = I/O, diamond = decision, rectangle = process; compiler = whole program, interpreter = line by line; C → procedural, Java → OOP, Prolog → logic, Haskell → functional.
+- C extras: function pointer `int (*fp)(int,int)` vs function returning pointer `int *fp(int,int)`; `a[i][j] == *(*(a+i)+j)`; `calloc` zero-fills, `malloc` returns NULL on failure; `break` leaves only the innermost loop; `char s[]="abcd"` has sizeof 5 and strlen 4.
+- Python extras: `yield` makes a generator (third `next` past the end raises StopIteration); loop `else` runs only if no `break`; abstract class = `ABC` + `@abstractmethod` (instantiation gives TypeError); `__del__` is the destructor.

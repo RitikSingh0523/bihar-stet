@@ -232,6 +232,36 @@ S2: r1(X) w1(X) r2(X) w2(X) conflicts all T1→T2, no cycle => serializable (equ
 
 **⚡ Exam tip:** NoSQL types = key-value, document, column-family, graph; warehouse = subject-oriented, integrated, time-variant, non-volatile; CRUD maps to INSERT/SELECT/UPDATE/DELETE.
 
+## 10. Distributed Transactions & Two-Phase Commit (2PC)
+
+### Why 2PC
+- A **distributed transaction** updates data at several sites (nodes). **Atomicity** must hold globally: either **all** sites commit or **all** abort, even if some sites or messages fail.
+- **Two-Phase Commit (2PC)** is the standard **atomic commit protocol**. One site acts as **coordinator** (transaction manager); the others are **participants** (cohorts / resource managers).
+- Do not confuse: **2PL** = two-phase *locking* (concurrency control, growing + shrinking); **2PC** = two-phase *commit* (atomicity across sites, voting + decision).
+
+### The two phases
+
+| Phase | Coordinator | Participant |
+|---|---|---|
+| **Phase 1: Prepare / Voting** | writes `<prepare T>` in log, sends **PREPARE** (vote request) to all | if it can commit: forces log records to disk, writes `<ready T>`, replies **VOTE-COMMIT (YES)**; else writes `<no T>`, replies **VOTE-ABORT (NO)** and aborts locally |
+| **Phase 2: Decision / Completion** | all YES -> writes `<commit T>`, sends **GLOBAL-COMMIT**; any NO (or timeout) -> writes `<abort T>`, sends **GLOBAL-ABORT** | obeys decision, commits or aborts, releases locks, sends **ACK**; coordinator then writes `<end T>` |
+
+- **Commit point** = the instant the coordinator writes the global-commit record in its log. After a participant votes YES it is in the **uncertain / ready state**: it cannot unilaterally commit or abort; it must wait for the coordinator.
+- **Unanimity rule**: commit only if **every** participant votes YES; a single NO forces global abort.
+- Messages for n participants (no failures): 2 phases x 2 messages each = **4n** (n prepare + n votes + n decisions + n acks).
+
+### Failures and the blocking problem
+- Participant fails before voting -> coordinator times out -> global abort. Participant recovers in ready state -> asks coordinator for the outcome.
+- **Coordinator fails after participants voted YES** -> participants stay **blocked** (holding locks) until it recovers. Hence **2PC is a blocking protocol**.
+- **Three-Phase Commit (3PC)** adds a **pre-commit** phase (can-commit, pre-commit, do-commit) to avoid blocking under simple crash failures; costlier, rarely used. Alternative: **Paxos Commit**, and **sagas** (compensating transactions) in microservices.
+- 2PC in practice: **XA standard** (X/Open DTP), JTA, distributed databases.
+
+### Related distributed-DB vocabulary
+- **Replication** (copies for availability/speed) vs **fragmentation** (horizontal = rows split, vertical = columns split). **Homogeneous** vs **heterogeneous** distributed DBMS. **Distribution transparency**: location, replication, fragmentation transparency.
+- **Distributed deadlock**: local wait-for graphs show no cycle but the **global** graph does; detected by merging graphs at a coordinator or by timeouts.
+
+**⚡ Exam tip:** 2PC = Phase 1 voting (prepare, ready/abort), Phase 2 decision (commit/abort); commit only if ALL vote YES; coordinator crash can block participants. 2PC is for atomic commit across sites; 2PL is for serializability on one site.
+
 ## Quick Revision Sheet
 - DBMS = software that **stores, modifies, retrieves** and manages data; DBA manages it; metadata = data about data (data dictionary).
 - Three-schema levels: **external (views) / conceptual / internal (physical)**; logical independence is harder than physical.
@@ -259,3 +289,4 @@ S2: r1(X) w1(X) r2(X) w2(X) conflicts all T1→T2, no cycle => serializable (equ
 - NoSQL types: key-value, document (MongoDB), column-family (Cassandra), graph (Neo4j); BASE and CAP.
 - Data warehouse: subject-oriented, integrated, time-variant, non-volatile; OLAP ops roll-up, drill-down, slice, dice, pivot; ETL.
 - CRUD = Create, Read, Update, Delete = INSERT, SELECT, UPDATE, DELETE.
+- 2PC (atomic commit across sites): Phase 1 prepare/vote, Phase 2 global commit/abort; all-YES needed; blocking if coordinator crashes; 3PC adds pre-commit. 2PL (locking) is different.

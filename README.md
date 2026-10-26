@@ -7,7 +7,7 @@ React + Vite + Tailwind CSS. No backend: everything is static, and progress/resu
   Part I Computer Science 100, Part II Teaching Aptitude 30, Part III General 20 (GK 5, Environment 5, Maths 5, Reasoning 5).
   Timer that survives refresh, question palette, mark-for-review, section/topic-wise results, answer review with explanations.
 - **Subject Tests** (`#/subjects`): one test per subject (23 in total) containing every MCQ of that subject, e.g. all 140 Computer Networks questions.
-- **Learn** (`#/learn`): full-text search across every chapter (press `/` to focus, quotes for exact phrases), concept notes for 20 topics (224 chapters), a day-by-day plan counting down to the exam on 7 Nov 2026,
+- **Learn** (`#/learn`): full-text search across every chapter (press `/` to focus, quotes for exact phrases), concept notes for 20 topics (249 chapters, mapped to the official 15-unit syllabus), a day-by-day plan counting down to the exam on 7 Nov 2026,
   chapter progress tracking, weak-area suggestions from your mock results and a one-page *Quick Revision Sheets* view (`#/learn/revise`, printable).
 
 ## Run locally
@@ -31,3 +31,7 @@ The app is an installable Progressive Web App (`vite-plugin-pwa`): a service wor
 so everything (mock tests, subject tests, Learn, results) works offline after the first visit. Use *Install app* in the header (or the browser's
 install / "Add to Home screen" option). Icons are generated from `public/icon.svg` with `node scripts/make-icons.mjs`.
 Note: PWAs need HTTPS (GitHub Pages, Vercel and Netlify all provide it) or `localhost`.
+
+## Syllabus alignment
+Notes and MCQs follow the official 15-unit Computer Science syllabus (100 marks): see `questionbank/SYLLABUS-BRIEF.md` and the *Official syllabus* panel on `#/learn`.
+Questions added/replaced for the syllabus carry `"v": 2` in `questionbank/raw`. `node scripts/syllabus-audit.mjs` gives a rough keyword coverage report.

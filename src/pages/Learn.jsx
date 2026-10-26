@@ -4,6 +4,7 @@ import LearnSearch from '../components/LearnSearch.jsx';
 import { Badge, Button, Wrap, cx } from '../components/ui.jsx';
 import { EXAM_DATE, GROUPS, PLAN, PLAN_START, TOPICS, topicById, topicForLabel } from '../learn/topics.js';
 import { doneChapters, hasContent, loadTopic } from '../learn/content.js';
+import { SYLLABUS } from '../learn/syllabus.js';
 import { getHistory } from '../storage.js';
 import { go } from '../useHashRoute.js';
 
@@ -100,6 +101,27 @@ export default function Learn() {
             </div>
           </section>
         )}
+
+        <details className="mb-2 mt-6 rounded-xl border border-slate-200 bg-white">
+          <summary className="cursor-pointer select-none px-4 py-3 text-lg font-semibold">📋 Official syllabus – Computer Science (100 marks) · 15 units</summary>
+          <div className="divide-y divide-slate-100 border-t border-slate-100">
+            {SYLLABUS.map((u) => (
+              <div key={u.unit} className="grid gap-1 px-4 py-3 sm:grid-cols-[210px_1fr]">
+                <div>
+                  <b>Unit {u.unit}: {u.title}</b>
+                  <div className="mt-1 flex flex-wrap gap-1.5">
+                    {u.topics.map((id) => (
+                      <button key={id} onClick={() => go(`learn/${id}`)} className="cursor-pointer rounded-full border border-emerald-300 bg-emerald-50 px-2 py-0.5 text-xs text-emerald-800 hover:border-emerald-500">
+                        {topicById(id).icon} {topicById(id).title}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+                <p className="text-sm text-slate-600">{u.items}</p>
+              </div>
+            ))}
+          </div>
+        </details>
 
         <h2 className="mb-2 mt-6 text-xl font-semibold">Study plan</h2>
         <div className="grid gap-3 md:grid-cols-2">

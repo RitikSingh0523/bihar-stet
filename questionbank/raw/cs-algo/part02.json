@@ -60,16 +60,17 @@
   "sub": "Greedy"
  },
  {
-  "q": "Using Strassen's method recursively, the number of scalar multiplications needed to multiply two 4×4 matrices is",
+  "q": "Kosaraju's algorithm finds the strongly connected components of a directed graph in time",
   "options": [
-   "64",
-   "56",
-   "49",
-   "42"
+   "O(V^3)",
+   "O(VE)",
+   "O(V + E)",
+   "O(V log V) only"
   ],
   "answer": 2,
-  "exp": "Seven multiplications of 2×2 blocks, each done with 7 scalar multiplications: 7×7 = 49.",
-  "sub": "Divide and Conquer"
+  "exp": "It performs two DFS passes (one on the graph, one on its transpose), each O(V + E) with adjacency lists.",
+  "sub": "Graph Algorithms",
+  "v": 2
  },
  {
   "q": "Dynamic programming is applicable to a problem when it has",
@@ -108,16 +109,17 @@
   "sub": "Dynamic Programming"
  },
  {
-  "q": "Jobs with (deadline, profit): (4,20), (1,10), (1,40), (1,30). With unit processing time, the maximum profit by job sequencing is",
+  "q": "How many topological orderings does the DAG with edges A->C and B->C have?",
   "options": [
-   "70",
-   "100",
-   "60",
-   "40"
+   "1",
+   "3",
+   "6",
+   "2"
   ],
-  "answer": 2,
-  "exp": "Take profit 40 in slot 1 and profit 20 in slot 4; others have deadline 1 and are rejected.",
-  "sub": "Greedy"
+  "answer": 3,
+  "exp": "C must be last; A and B can come in either order: A B C and B A C.",
+  "sub": "Graph Algorithms",
+  "v": 2
  },
  {
   "q": "The time complexity of Kruskal's algorithm on a graph with V vertices and E edges is",
@@ -192,16 +194,17 @@
   "sub": "Asymptotic Notation"
  },
  {
-  "q": "Edges: A-B 4, A-C 2, B-C 1, B-D 5, C-D 8, C-E 10, D-E 2. The weight of the minimum spanning tree is",
+  "q": "To prove that CLIQUE is NP-complete, which known NP-complete problem is commonly reduced to it?",
   "options": [
-   "9",
-   "11",
-   "10",
-   "12"
+   "Minimum spanning tree",
+   "3-SAT",
+   "Single-source shortest path",
+   "Sorting"
   ],
-  "answer": 2,
-  "exp": "Edges chosen: B-C 1, A-C 2, D-E 2, B-D 5, total 10.",
-  "sub": "Greedy"
+  "answer": 1,
+  "exp": "3-SAT is polynomial-time reduced to CLIQUE (one vertex per literal occurrence, edges between consistent literals of different clauses); CLIQUE is also in NP.",
+  "sub": "P NP NP-Complete",
+  "v": 2
  },
  {
   "q": "Which sorting algorithm below is stable and has worst-case running time O(n log n)?",
@@ -264,16 +267,17 @@
   "sub": "Recurrences"
  },
  {
-  "q": "Symbols with frequencies 1, 1, 2, 3, 5, 8 are Huffman coded. The total weighted code length is",
+  "q": "A directed graph with n vertices has no edges at all. How many topological orderings does it have?",
   "options": [
-   "40",
-   "48",
-   "45",
-   "50"
+   "n!",
+   "1",
+   "n",
+   "2^n"
   ],
-  "answer": 2,
-  "exp": "Merges: 1+1=2, 2+2=4, 3+4=7, 5+7=12, 8+12=20; sum = 2+4+7+12+20 = 45.",
-  "sub": "Greedy"
+  "answer": 0,
+  "exp": "With no constraints every permutation of the vertices is a valid topological order.",
+  "sub": "Graph Algorithms",
+  "v": 2
  },
  {
   "q": "A knapsack of capacity 5 has items (weight, value): (2,3), (3,4), (4,5), (5,6). The best 0/1 knapsack value is",
@@ -324,16 +328,17 @@
   "sub": "Greedy"
  },
  {
-  "q": "Dijkstra's algorithm with a binary min-heap on a graph with V vertices and E edges runs in time",
+  "q": "The longest path in a weighted DAG can be found in time",
   "options": [
-   "O(V³)",
-   "O(V·E)",
-   "O((V + E) log V)",
-   "O(V²·E)"
+   "O(V + E), by processing vertices in topological order",
+   "exponential, since the problem is NP-hard even on DAGs",
+   "O(V^3) only, using Floyd-Warshall",
+   "it cannot be found since DAGs have no paths"
   ],
-  "answer": 2,
-  "exp": "Each vertex and edge causes O(log V) heap operations.",
-  "sub": "Greedy"
+  "answer": 0,
+  "exp": "DP over a topological order gives dist(v) = max over incoming u of dist(u) + w(u, v). Longest path in a general graph is NP-hard.",
+  "sub": "Graph Algorithms",
+  "v": 2
  },
  {
   "q": "In the Floyd–Warshall algorithm, after the k-th iteration the entry d[i][j] is the shortest path length from i to j using intermediate vertices only from",
@@ -396,16 +401,17 @@
   "sub": "Recurrences"
  },
  {
-  "q": "If f(n) = O(n²) and g(n) = O(n³), then f(n) · g(n) is",
+  "q": "An iterative binary search on a sorted array of n elements uses auxiliary space of",
   "options": [
-   "O(n⁵)",
-   "Θ(n⁵)",
-   "Θ(n⁶)",
-   "O(n²)"
+   "O(log n)",
+   "O(n)",
+   "O(n log n)",
+   "O(1)"
   ],
-  "answer": 0,
-  "exp": "Product of upper bounds is an upper bound: O(n⁵), but equality is not guaranteed.",
-  "sub": "Asymptotic Notation"
+  "answer": 3,
+  "exp": "It keeps only low, high and mid; no recursion stack is used.",
+  "sub": "Complexity",
+  "v": 2
  },
  {
   "q": "The fractional knapsack problem with n items is solved by the greedy method in time",
@@ -468,15 +474,16 @@
   "sub": "Dynamic Programming"
  },
  {
-  "q": "In Dijkstra's algorithm on a graph with edges S-A 7, S-B 2, B-A 3, A-C 1, B-C 8, starting at S, the order in which vertices are finalised is",
+  "q": "Johnson's algorithm is used to",
   "options": [
-   "S, A, B, C",
-   "S, B, C, A",
-   "S, A, C, B",
-   "S, B, A, C"
+   "find the minimum spanning tree of a dense graph",
+   "find strongly connected components",
+   "compute all-pairs shortest paths in a sparse graph that may have negative edges but no negative cycle",
+   "produce a topological order"
   ],
-  "answer": 3,
-  "exp": "Distances: B=2, A=min(7,5)=5, C=min(6,10)=6, so the order is S, B, A, C.",
-  "sub": "Greedy"
+  "answer": 2,
+  "exp": "It reweights the edges using Bellman-Ford potentials and then runs Dijkstra from every vertex: O(V^2 log V + VE).",
+  "sub": "Graph Algorithms",
+  "v": 2
  }
 ]

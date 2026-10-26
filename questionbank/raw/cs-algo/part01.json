@@ -60,16 +60,17 @@
   "sub": "Dynamic Programming"
  },
  {
-  "q": "How many distinct solutions does the 6-queens problem have?",
+  "q": "Depth First Search on a graph with V vertices and E edges takes time ____ with an adjacency list and ____ with an adjacency matrix.",
   "options": [
-   "2",
-   "4",
-   "3",
-   "8"
+   "O(V^2); O(V + E)",
+   "O(E); O(V)",
+   "O(V log V); O(V^2)",
+   "O(V + E); O(V^2)"
   ],
-  "answer": 1,
-  "exp": "The 6×6 board admits exactly 4 non-attacking arrangements of 6 queens.",
-  "sub": "Backtracking"
+  "answer": 3,
+  "exp": "With lists each vertex and edge is examined once, O(V + E); with a matrix each vertex scans a whole row of V entries, O(V^2).",
+  "sub": "Graph Algorithms",
+  "v": 2
  },
  {
   "q": "Strassen's matrix multiplication algorithm multiplies two n × n matrices in time",
@@ -84,16 +85,17 @@
   "sub": "Divide and Conquer"
  },
  {
-  "q": "In a graph with edges A-B (4), A-C (1), C-B (2), B-D (1), C-D (5), D-E (3), the shortest distance from A to E, found by Dijkstra's algorithm, is",
+  "q": "Edges are listed in the order s->a 4, s->b 5, a->b -3, b->c 2 with source s. In the first pass of Bellman-Ford (relaxing the edges in this order), what is the value of d[c] at the end of the pass?",
   "options": [
-   "6",
-   "8",
-   "9",
-   "7"
+   "7",
+   "2",
+   "3",
+   "infinity"
   ],
-  "answer": 3,
-  "exp": "Distances: C=1, B=min(4,1+2)=3, D=min(3+1,1+5)=4, E=4+3=7 via A-C-B-D-E.",
-  "sub": "Greedy"
+  "answer": 2,
+  "exp": "a = 4; b = 5 then 4 - 3 = 1; c = 1 + 2 = 3. Within one pass the updates propagate along the listed order.",
+  "sub": "Graph Algorithms",
+  "v": 2
  },
  {
   "q": "The Held-Karp dynamic programming algorithm solves the Travelling Salesman Problem for n cities in time",
@@ -156,16 +158,17 @@
   "sub": "Recurrences"
  },
  {
-  "q": "Edges of a graph: A-B 2, B-C 3, A-C 4, C-D 1, B-D 5, D-E 6, C-E 7. The weight of a minimum spanning tree found by Kruskal's algorithm is",
+  "q": "BFS is run on a connected undirected graph. The graph is bipartite if and only if",
   "options": [
-   "12",
-   "10",
-   "11",
-   "13"
+   "BFS visits every vertex",
+   "no edge joins two vertices at the same BFS level",
+   "every vertex has even degree",
+   "no edge joins vertices in consecutive levels"
   ],
-  "answer": 0,
-  "exp": "Pick C-D 1, A-B 2, B-C 3, skip A-C and B-D (cycles), pick D-E 6: total 12.",
-  "sub": "Greedy"
+  "answer": 1,
+  "exp": "Colour vertices by level parity; an edge inside one level would close an odd cycle.",
+  "sub": "Graph Algorithms",
+  "v": 2
  },
  {
   "q": "A 0/1 knapsack has capacity 7 and items (weight, value): (1,1), (3,4), (4,5), (5,7). The maximum total value is",
@@ -228,16 +231,17 @@
   "sub": "Greedy"
  },
  {
-  "q": "The Floyd–Warshall algorithm for all-pairs shortest paths on a graph with n vertices runs in time",
+  "q": "During DFS on a directed graph an edge is found from the current vertex to a vertex that is still on the recursion stack. This edge is",
   "options": [
-   "Θ(n²)",
-   "Θ(n² log n)",
-   "Θ(2ⁿ)",
-   "Θ(n³)"
+   "a back edge, so the graph contains a cycle",
+   "a cross edge, so the graph is acyclic",
+   "a forward edge, so the graph is a DAG",
+   "a tree edge, so the graph is a tree"
   ],
-  "answer": 3,
-  "exp": "Three nested loops over k, i, j each run n times.",
-  "sub": "Dynamic Programming"
+  "answer": 0,
+  "exp": "An edge to an ancestor in the DFS tree is a back edge, and it closes a cycle. A directed graph is a DAG iff DFS finds no back edge.",
+  "sub": "Graph Algorithms",
+  "v": 2
  },
  {
   "q": "Matrices A (10×20), B (20×30) and C (30×40) are to be multiplied. The minimum number of scalar multiplications is",
@@ -288,16 +292,17 @@
   "sub": "P NP NP-Complete"
  },
  {
-  "q": "The fractional knapsack problem has capacity 50 and items (weight, value): (10,60), (20,100), (30,120). The maximum value obtainable is",
+  "q": "A recursive binary search on n sorted elements uses auxiliary stack space of",
   "options": [
-   "220",
-   "240",
-   "260",
-   "200"
+   "O(log n)",
+   "O(1)",
+   "O(n)",
+   "O(n log n)"
   ],
-  "answer": 1,
-  "exp": "Ratios 6, 5, 4. Take items 1 and 2 (value 160) and 20/30 of item 3 (value 80): total 240.",
-  "sub": "Greedy"
+  "answer": 0,
+  "exp": "Each call halves the range, so the recursion depth is about log2 n and each frame is O(1).",
+  "sub": "Complexity",
+  "v": 2
  },
  {
   "q": "If T(n) = T(n−1) + n with T(1) = 1, then T(10) equals",
@@ -420,28 +425,30 @@
   "sub": "P NP NP-Complete"
  },
  {
-  "q": "For T(n) = 2T(n/2) + 1 with T(1) = 1, the value of T(8) is",
+  "q": "The Bellman-Ford shortest path algorithm on a graph with V vertices and E edges runs in time",
   "options": [
-   "8",
-   "15",
-   "16",
-   "14"
-  ],
-  "answer": 1,
-  "exp": "T(2)=3, T(4)=7, T(8)=15, i.e. T(n) = 2n − 1.",
-  "sub": "Recurrences"
- },
- {
-  "q": "Dijkstra's algorithm may give an incorrect result when the graph contains",
-  "options": [
-   "self-loops of positive weight",
-   "more edges than vertices",
-   "edges with negative weights",
-   "a cycle of positive weight"
+   "O(V + E)",
+   "O(E log V)",
+   "O(VE)",
+   "O(V^3)"
   ],
   "answer": 2,
-  "exp": "The greedy finalisation of a vertex's distance assumes no later path can be shorter, which fails with negative edges.",
-  "sub": "Greedy"
+  "exp": "It relaxes all E edges in each of V - 1 passes.",
+  "sub": "Graph Algorithms",
+  "v": 2
+ },
+ {
+  "q": "After V - 1 passes of Bellman-Ford, some edge (u, v) can still be relaxed. This means",
+  "options": [
+   "the graph is disconnected",
+   "all shortest paths have been found",
+   "a negative-weight cycle is reachable from the source",
+   "the source has no outgoing edge"
+  ],
+  "answer": 2,
+  "exp": "Without negative cycles shortest paths have at most V - 1 edges and are final after V - 1 passes; a further improvement implies a negative cycle.",
+  "sub": "Graph Algorithms",
+  "v": 2
  },
  {
   "q": "If quick sort always splits the array in the ratio 9:1, its recurrence T(n) = T(9n/10) + T(n/10) + n has solution",

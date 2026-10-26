@@ -238,6 +238,42 @@ Request queue (cylinders): **98, 183, 37, 122, 14, 124, 65, 67**. Head at **53**
 
 ---
 
+## 10. OS Services, Structures, Security and Recovery (Syllabus Supplement)
+
+### 10.1 Services an OS provides
+- **User-helpful services:** user interface (CLI/GUI/batch), **program execution**, **I/O operations**, **file-system manipulation**, **communication** (shared memory / message passing), **error detection**.
+- **System-efficiency services:** **resource allocation**, **accounting** (usage statistics), **protection and security**.
+- **Dual-mode operation:** mode bit distinguishes **user mode (1)** and **kernel mode (0)**; privileged instructions (I/O, set timer, halt, modify mode bit) run only in kernel mode. **Timer** prevents a process hogging the CPU.
+
+### 10.2 OS structures compared
+
+| Structure | Idea | Example | Pros / cons |
+|---|---|---|---|
+| Monolithic | whole OS in one kernel address space | early UNIX, MS-DOS (simple) | fast; hard to maintain, one bug crashes all |
+| Layered | layers 0..N, each uses only lower layer | THE OS | easy debug; slow, layers hard to define |
+| Microkernel | only IPC, basic scheduling and memory in kernel; rest are user-space servers | Mach, QNX, MINIX | secure, extensible; message-passing overhead |
+| Modular | loadable kernel modules | Linux, Solaris | flexible and efficient |
+| Hybrid | microkernel + monolithic parts | Windows NT, macOS | compromise |
+| Virtual machine | hypervisor gives each guest OS a virtual copy of hardware | VMware, VirtualBox, KVM | isolation; Type 1 = bare metal, Type 2 = hosted |
+
+### 10.3 Security in more detail
+- **Four levels of security:** physical, human (social engineering), operating system, network.
+- **Threat types:** breach of confidentiality (stealing data), breach of integrity (modifying), breach of availability (destroying / DoS), theft of service, **masquerading**, **replay**, **man-in-the-middle**.
+- **Authentication factors:** something you **know** (password), **have** (token, smart card), **are** (biometric). Passwords are stored as **salted hashes**; one-time passwords and 2FA reduce risk.
+- **Encryption:** symmetric (DES, AES; one shared key, fast) vs asymmetric (RSA; public/private pair, used for key exchange and digital signatures).
+- **Defences:** firewall, **IDS/IPS**, antivirus, patching, least privilege, **audit/logging**, **sandboxing**, address-space layout randomisation against buffer overflow.
+- **Trusted-system ideas:** TCB (Trusted Computing Base) = all hardware/software that enforce security policy; Orange Book classes D (minimal) to A (verified).
+
+### 10.4 Recovery
+- **File-system recovery:** **consistency checking** (fsck on Unix, chkdsk on Windows) compares directory structure with block bitmap/inode counts after a crash and repairs; **journaling / log-structured** file systems write intended changes to a log first, so recovery just replays or discards the log (fast).
+- **Backup types:** **full** (all files), **incremental** (changed since the LAST backup of any kind; small, slow restore needs full + all incrementals), **differential** (changed since last FULL backup; restore needs full + latest differential). **Snapshots** and RAID mirroring add redundancy but RAID is not a backup.
+- **Process/transaction recovery:** **checkpoint** = saved consistent state to restart from; **rollback** undoes work; deadlock recovery = process termination (all, or one at a time) or resource preemption with rollback and starvation control.
+- **Boot and crash recovery:** bootstrap loader in ROM loads boot block, then the kernel; **safe mode / recovery partition** repair a damaged OS.
+
+**⚡ Exam tip:** Microkernel = minimal kernel + user-space services (Mach, QNX); Linux = monolithic with loadable modules; Windows NT/macOS = hybrid. fsck/journaling = file-system recovery; incremental backup = since last backup, differential = since last full. Dual-mode: mode bit 0 = kernel.
+
+---
+
 ## Quick Revision Sheet
 
 1. OS = interface between user and hardware + resource manager; kernel = core in privileged mode; shell = command interpreter.
@@ -265,3 +301,6 @@ Request queue (cylinders): **98, 183, 37, 122, 14, 124, 65, 67**. Head at **53**
 23. I/O: polling < interrupt-driven < DMA (for bulk); I/O subsystem does scheduling, buffering, caching, spooling, error handling.
 24. Unix: created by Thompson and Ritchie (1969, Bell Labs, C); Linux by Torvalds (1991); `chmod 755`, `ls`, `ps`, `grep`, `kill`, pipe `|`, `>` redirect.
 25. Protection = controlling access to resources (access matrix, ACL, capability list); security = defence vs external threats (virus, worm, Trojan, DoS); least privilege.
+26. OS services: program execution, I/O, file manipulation, communication, error detection, resource allocation, accounting, protection; dual mode (kernel = 0).
+27. Structures: monolithic, layered (THE), microkernel (Mach, QNX), modular (Linux), hybrid (Windows NT, macOS); hypervisor Type 1 bare metal, Type 2 hosted.
+28. Authentication = know/have/are; salted hash passwords; recovery = fsck/chkdsk, journaling, checkpoint/rollback; incremental = since last backup, differential = since last full.

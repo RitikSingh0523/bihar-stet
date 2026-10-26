@@ -1,482 +1,487 @@
 [
- {
-  "q": "Which scheduling algorithm gives the minimum average waiting time for a given set of processes that are all available at the same time?",
-  "options": [
-   "First Come First Served",
-   "Shortest Job First",
-   "Round Robin",
-   "Longest Job First"
-  ],
-  "answer": 1,
-  "exp": "SJF is provably optimal for minimizing average waiting time.",
-  "sub": "CPU Scheduling"
- },
- {
-  "q": "Memory has free partitions of 100, 500, 200, 300 and 600 KB (in order). Processes of 212, 417, 112 and 426 KB arrive in that order. Which strategy can place all four processes?",
-  "options": [
-   "First fit",
-   "Worst fit",
-   "None of the strategies",
-   "Best fit"
-  ],
-  "answer": 3,
-  "exp": "Best fit: 212→300, 417→500, 112→200, 426→600. First fit and worst fit leave 426 KB unplaced.",
-  "sub": "Memory Management"
- },
- {
-  "q": "A 16 GB disk has 4 KB blocks. A bit-vector (bitmap) is used for free-space management with one bit per block. What is the size of the bitmap?",
-  "options": [
-   "4 MB",
-   "16 KB",
-   "512 KB",
-   "128 KB"
-  ],
-  "answer": 2,
-  "exp": "Blocks = 2^34 / 2^12 = 2^22 bits = 2^19 bytes = 512 KB.",
-  "sub": "File Systems"
- },
- {
-  "q": "What is the key difference between a mutex and a binary semaphore?",
-  "options": [
-   "A mutex has ownership: only the thread that locked it should unlock it",
-   "A binary semaphore cannot be used for signalling",
-   "A mutex can take any non-negative integer value",
-   "A mutex is used only between processes"
-  ],
-  "answer": 0,
-  "exp": "Mutexes are owned by the locking thread, whereas a binary semaphore can be signalled by a different thread.",
-  "sub": "Process Synchronization"
- },
- {
-  "q": "Which statement about shell redirection is correct?",
-  "options": [
-   "> overwrites the target file whereas >> appends to it",
-   "Both read input from the file",
-   "> appends and >> overwrites",
-   "Both overwrite the file"
-  ],
-  "answer": 0,
-  "exp": "cmd > f truncates f first; cmd >> f appends output at the end.",
-  "sub": "Unix/Linux Commands"
- },
- {
-  "q": "The Banker's algorithm is an example of:",
-  "options": [
-   "deadlock prevention",
-   "deadlock detection",
-   "deadlock avoidance",
-   "deadlock recovery"
-  ],
-  "answer": 2,
-  "exp": "Banker's algorithm checks that each allocation leaves the system in a safe state before granting it.",
-  "sub": "Deadlock"
- },
- {
-  "q": "Reference string: 1,2,3,2,1,4,5,2,1,2,3,4 with 4 frames and the Optimal policy. How many page faults occur?",
-  "options": [
-   "8",
-   "6",
-   "7",
-   "5"
-  ],
-  "answer": 1,
-  "exp": "Faults on 1,2,3,4,5 and the final 4 (page 5 is evicted since it is never used again) = 6.",
-  "sub": "Page Replacement"
- },
- {
-  "q": "A process that has finished execution but still has an entry in the process table because its parent has not yet called wait() is known as a:",
-  "options": [
-   "foreground process",
-   "daemon process",
-   "orphan process",
-   "zombie process"
-  ],
-  "answer": 3,
-  "exp": "A terminated child whose exit status has not been collected by the parent remains as a zombie.",
-  "sub": "Process and Thread"
- },
- {
-  "q": "What is the average rotational latency of a disk rotating at 7200 RPM?",
-  "options": [
-   "About 4.17 ms",
-   "About 2.08 ms",
-   "About 8.33 ms",
-   "About 16.7 ms"
-  ],
-  "answer": 0,
-  "exp": "One rotation = 60/7200 s = 8.33 ms; the average latency is half of that, 4.17 ms.",
-  "sub": "Disk Scheduling"
- },
- {
-  "q": "Match the system with its category: (i) VxWorks (ii) MS-DOS (iii) UNIX. Which mapping is correct?",
-  "options": [
-   "(i) single-user OS, (ii) multi-user OS, (iii) real-time OS",
-   "(i) Real-time OS, (ii) single-user single-tasking OS, (iii) multi-user multitasking OS",
-   "(i) real-time OS, (ii) multi-user OS, (iii) single-user OS",
-   "(i) multi-user OS, (ii) real-time OS, (iii) single-user OS"
-  ],
-  "answer": 1,
-  "exp": "VxWorks is an RTOS, MS-DOS ran one task at a time for one user, and UNIX supports many users and processes.",
-  "sub": "OS Types and Basics"
- },
- {
-  "q": "In a microkernel design:",
-  "options": [
-   "all OS services including file systems and drivers run in kernel space",
-   "there is no kernel at all",
-   "applications run in kernel mode for speed",
-   "only minimal services (IPC, basic scheduling, memory management) run in kernel space and other services run in user space"
-  ],
-  "answer": 3,
-  "exp": "A microkernel keeps the kernel small; the cost is extra message-passing overhead between user-space servers.",
-  "sub": "System Calls and Kernel"
- },
- {
-  "q": "A page fault occurs when:",
-  "options": [
-   "a process accesses a page that is not currently in main memory",
-   "a page is replaced using the LRU algorithm",
-   "the CPU runs out of registers",
-   "two processes access the same page"
-  ],
-  "answer": 0,
-  "exp": "A page fault is raised when the referenced page is not present in a frame; the OS then loads it from disk.",
-  "sub": "I/O Management"
- },
- {
-  "q": "Starvation of low-priority processes in priority scheduling is commonly solved by:",
-  "options": [
-   "aging",
-   "spooling",
-   "increasing the time quantum",
-   "swapping"
-  ],
-  "answer": 0,
-  "exp": "Aging gradually raises the priority of a process that has waited long, ensuring it eventually runs.",
-  "sub": "CPU Scheduling"
- },
- {
-  "q": "External fragmentation in contiguous memory allocation can be reduced by:",
-  "options": [
-   "increasing the page size",
-   "compaction",
-   "using a larger TLB",
-   "spooling"
-  ],
-  "answer": 1,
-  "exp": "Compaction shuffles processes to merge scattered free holes into one large block.",
-  "sub": "Memory Management"
- },
- {
-  "q": "Which directory structure allows a file to be shared among users without making copies, but needs care to avoid dangling references?",
-  "options": [
-   "Two-level directory",
-   "Single-level directory",
-   "Acyclic-graph directory",
-   "Simple tree directory with no links"
-  ],
-  "answer": 2,
-  "exp": "Acyclic-graph directories permit shared files or subdirectories through links.",
-  "sub": "File Systems"
- },
- {
-  "q": "In the dining philosophers problem with five philosophers and five chopsticks, which approach avoids deadlock?",
-  "options": [
-   "Give each philosopher a time quantum",
-   "Let philosophers eat in parallel without any lock",
-   "Let every philosopher pick up the left chopstick first and then the right one",
-   "Allow at most four philosophers to sit at the table at the same time"
-  ],
-  "answer": 3,
-  "exp": "If every philosopher grabs the left chopstick, circular wait occurs; limiting to four ensures at least one can get two chopsticks.",
-  "sub": "Process Synchronization"
- },
- {
-  "q": "What does the command ls | wc -l display?",
-  "options": [
-   "The number of words in each file",
-   "The size of the current directory in bytes",
-   "The number of entries listed in the current directory",
-   "The longest filename"
-  ],
-  "answer": 2,
-  "exp": "The pipe sends the listing (one entry per line) to wc -l, which counts lines.",
-  "sub": "Unix/Linux Commands"
- },
- {
-  "q": "Deadlock can be prevented by breaking circular wait through:",
-  "options": [
-   "using a larger time quantum",
-   "making all resources sharable",
-   "allowing processes to hold resources while waiting",
-   "imposing a total ordering on resource types and requesting resources in that order"
-  ],
-  "answer": 3,
-  "exp": "If every process requests resources in increasing order of number, a cycle cannot form.",
-  "sub": "Deadlock"
- },
- {
-  "q": "Reference string: 1,2,3,2,1,4,5,2,1,2,3,4 with 4 frames and LRU. How many page faults occur?",
-  "options": [
-   "8",
-   "7",
-   "6",
-   "9"
-  ],
-  "answer": 1,
-  "exp": "Faults at 1,2,3,4,5,3,4 = 7.",
-  "sub": "Page Replacement"
- },
- {
-  "q": "Which transition is NOT possible in the standard five-state process model?",
-  "options": [
-   "Ready → Waiting (Blocked)",
-   "Waiting (Blocked) → Ready",
-   "Running → Terminated",
-   "Running → Ready"
-  ],
-  "answer": 0,
-  "exp": "A ready process is not running, so it cannot issue an I/O request; only a running process can move to waiting.",
-  "sub": "Process and Thread"
- },
- {
-  "q": "If the time quantum in Round Robin scheduling is made extremely large, the algorithm behaves like:",
-  "options": [
-   "FCFS",
-   "Multilevel feedback queue",
-   "SJF",
-   "Priority scheduling"
-  ],
-  "answer": 0,
-  "exp": "If the quantum exceeds every burst, no process is preempted and processes run in arrival order.",
-  "sub": "CPU Scheduling"
- },
- {
-  "q": "A disk has 4 surfaces, 1024 tracks per surface, 64 sectors per track and 512 bytes per sector. What is its capacity?",
-  "options": [
-   "256 MB",
-   "64 MB",
-   "128 MB",
-   "32 MB"
-  ],
-  "answer": 2,
-  "exp": "4 × 1024 × 64 × 512 B = 2^27 B = 128 MB.",
-  "sub": "Disk Scheduling"
- },
- {
-  "q": "The UNIX operating system was originally developed at:",
-  "options": [
-   "Microsoft Corporation",
-   "AT&T Bell Laboratories",
-   "Sun Microsystems",
-   "IBM Research"
-  ],
-  "answer": 1,
-  "exp": "Ken Thompson and Dennis Ritchie developed UNIX at Bell Labs around 1969-1971.",
-  "sub": "OS Types and Basics"
- },
- {
-  "q": "The exec() family of system calls:",
-  "options": [
-   "terminates the parent process",
-   "waits for the child to finish",
-   "creates a new child process",
-   "replaces the current process image with a new program while keeping the same PID"
-  ],
-  "answer": 3,
-  "exp": "exec loads a new program into the calling process's address space; no new process is created.",
-  "sub": "System Calls and Kernel"
- },
- {
-  "q": "Statement I: Paging eliminates external fragmentation.\nStatement II: Pure segmentation suffers mainly from internal fragmentation.\nWhich option is correct?",
-  "options": [
-   "Only Statement I is true",
-   "Both statements are false",
-   "Only Statement II is true",
-   "Both statements are true"
-  ],
-  "answer": 0,
-  "exp": "Paging uses fixed-size frames so there is no external fragmentation; segmentation uses variable sizes and suffers external fragmentation.",
-  "sub": "Memory Management"
- },
- {
-  "q": "A file of size 10 KB is stored on a disk with 4 KB blocks. How much space is lost to internal fragmentation?",
-  "options": [
-   "4 KB",
-   "1 KB",
-   "6 KB",
-   "2 KB"
-  ],
-  "answer": 3,
-  "exp": "3 blocks (12 KB) are used for 10 KB of data, so 2 KB is wasted in the last block.",
-  "sub": "File Systems"
- },
- {
-  "q": "In a Round Robin system the time quantum is 2 ms and each context switch takes 0.5 ms. What is the CPU efficiency (useful fraction of time)?",
-  "options": [
-   "90%",
-   "80%",
-   "75%",
-   "60%"
-  ],
-  "answer": 1,
-  "exp": "Efficiency = 2 / (2 + 0.5) = 0.8 = 80%.",
-  "sub": "CPU Scheduling"
- },
- {
-  "q": "A spinlock is most appropriate when:",
-  "options": [
-   "the waiting threads should sleep to save power",
-   "there is only one CPU and the holder is not running",
-   "the lock is expected to be held for a very short time on a multiprocessor",
-   "the lock will be held for several seconds"
-  ],
-  "answer": 2,
-  "exp": "Spinning wastes CPU, so it pays off only when the wait is shorter than a context switch.",
-  "sub": "Process Synchronization"
- },
- {
-  "q": "Which command creates a symbolic (soft) link named mylink pointing to the file data.txt?",
-  "options": [
-   "ln data.txt mylink",
-   "link -s mylink data.txt",
-   "ln -s data.txt mylink",
-   "cp -s data.txt mylink"
-  ],
-  "answer": 2,
-  "exp": "ln -s TARGET LINKNAME creates a symbolic link; without -s a hard link is made.",
-  "sub": "Unix/Linux Commands"
- },
- {
-  "q": "The 'ostrich algorithm' for deadlocks means:",
-  "options": [
-   "ignoring the problem and assuming it rarely occurs",
-   "always aborting the youngest process",
-   "using the Banker's algorithm at each request",
-   "preempting all resources periodically"
-  ],
-  "answer": 0,
-  "exp": "Systems like UNIX and Windows largely ignore deadlock because prevention and detection are costly.",
-  "sub": "Deadlock"
- },
- {
-  "q": "What is 'cycle stealing' in DMA?",
-  "options": [
-   "The CPU takes extra clock cycles from the DMA",
-   "The DMA controller takes the memory bus for a few cycles, delaying the CPU",
-   "Instruction cycles are skipped to save power",
-   "Two processes share one CPU cycle"
-  ],
-  "answer": 1,
-  "exp": "In cycle-stealing mode, DMA transfers one word at a time by briefly taking over the bus.",
-  "sub": "I/O Management"
- },
- {
-  "q": "Reference string: 2,3,2,1,5,2,4,5,3,2,5,2 with 3 frames and LRU gives 7 faults. What is the hit ratio?",
-  "options": [
-   "7/12",
-   "1/2",
-   "2/3",
-   "5/12"
-  ],
-  "answer": 3,
-  "exp": "Hits = 12 - 7 = 5, so hit ratio = 5/12.",
-  "sub": "Page Replacement"
- },
- {
-  "q": "Which interprocess communication mechanism is generally the fastest once it has been set up?",
-  "options": [
-   "Sockets over a network",
-   "Pipes",
-   "Message passing through the kernel",
-   "Shared memory"
-  ],
-  "answer": 3,
-  "exp": "After setup, shared memory accesses need no system calls or kernel copying, unlike message passing.",
-  "sub": "Process and Thread"
- },
- {
-  "q": "A disk has average seek time 6 ms, rotates at 6000 RPM and has 100 sectors per track. What is the average time to read one sector?",
-  "options": [
-   "6.1 ms",
-   "16.1 ms",
-   "11.1 ms",
-   "10.1 ms"
-  ],
-  "answer": 2,
-  "exp": "Rotation = 10 ms; average latency 5 ms; transfer = 10/100 = 0.1 ms; total = 6 + 5 + 0.1 = 11.1 ms.",
-  "sub": "Disk Scheduling"
- },
- {
-  "q": "Which of the following is NOT an operating system?",
-  "options": [
-   "Mozilla Firefox",
-   "Android",
-   "FreeBSD",
-   "Solaris"
-  ],
-  "answer": 0,
-  "exp": "Firefox is a web browser application; the others are operating systems.",
-  "sub": "OS Types and Basics"
- },
- {
-  "q": "An inverted page table has:",
-  "options": [
-   "one entry for each logical page of every process",
-   "one entry for each physical frame",
-   "one entry for each disk block",
-   "one entry for each TLB line only"
-  ],
-  "answer": 1,
-  "exp": "It is indexed by frame and stores (process id, page number), reducing table size at the cost of search time.",
-  "sub": "Memory Management"
- },
- {
-  "q": "In the FAT file system, the information about the next block of a file is found in:",
-  "options": [
-   "the File Allocation Table entry for the current block",
-   "the inode of the file",
-   "the first byte of the block itself",
-   "the boot sector"
-  ],
-  "answer": 0,
-  "exp": "The FAT stores a chain of cluster numbers; each entry points to the next cluster or an end-of-file marker.",
-  "sub": "File Systems"
- },
- {
-  "q": "Which of the following scheduling algorithms is inherently non-preemptive?",
-  "options": [
-   "Round Robin",
-   "First Come First Served",
-   "Shortest Remaining Time First",
-   "Preemptive priority"
-  ],
-  "answer": 1,
-  "exp": "FCFS lets a process run until it finishes or blocks; the others can preempt a running process.",
-  "sub": "CPU Scheduling"
- },
- {
-  "q": "Semaphore x is initialised to 0. Process P1 executes: S1; signal(x). Process P2 executes: wait(x); S2. What is guaranteed?",
-  "options": [
-   "S1 and S2 execute at the same time",
-   "S2 always executes before S1",
-   "A deadlock always occurs",
-   "S1 always executes before S2"
-  ],
-  "answer": 3,
-  "exp": "P2 blocks on wait(x) until P1 signals after S1, enforcing the order S1 then S2.",
-  "sub": "Process Synchronization"
- },
- {
-  "q": "What is printed by the bash command?\necho $((5 + 3 * 2))",
-  "options": [
-   "10",
-   "16",
-   "11",
-   "13"
-  ],
-  "answer": 2,
-  "exp": "Multiplication has higher precedence: 3 × 2 = 6, then 5 + 6 = 11.",
-  "sub": "Unix/Linux Commands"
- }
+  {
+    "q": "Which scheduling algorithm gives the minimum average waiting time for a given set of processes that are all available at the same time?",
+    "options": [
+      "First Come First Served",
+      "Shortest Job First",
+      "Round Robin",
+      "Longest Job First"
+    ],
+    "answer": 1,
+    "exp": "SJF is provably optimal for minimizing average waiting time.",
+    "sub": "CPU Scheduling"
+  },
+  {
+    "q": "Memory has free partitions of 100, 500, 200, 300 and 600 KB (in order). Processes of 212, 417, 112 and 426 KB arrive in that order. Which strategy can place all four processes?",
+    "options": [
+      "First fit",
+      "Worst fit",
+      "None of the strategies",
+      "Best fit"
+    ],
+    "answer": 3,
+    "exp": "Best fit: 212→300, 417→500, 112→200, 426→600. First fit and worst fit leave 426 KB unplaced.",
+    "sub": "Memory Management"
+  },
+  {
+    "q": "A 16 GB disk has 4 KB blocks. A bit-vector (bitmap) is used for free-space management with one bit per block. What is the size of the bitmap?",
+    "options": [
+      "4 MB",
+      "16 KB",
+      "512 KB",
+      "128 KB"
+    ],
+    "answer": 2,
+    "exp": "Blocks = 2^34 / 2^12 = 2^22 bits = 2^19 bytes = 512 KB.",
+    "sub": "File Systems"
+  },
+  {
+    "q": "What is the key difference between a mutex and a binary semaphore?",
+    "options": [
+      "A mutex has ownership: only the thread that locked it should unlock it",
+      "A binary semaphore cannot be used for signalling",
+      "A mutex can take any non-negative integer value",
+      "A mutex is used only between processes"
+    ],
+    "answer": 0,
+    "exp": "Mutexes are owned by the locking thread, whereas a binary semaphore can be signalled by a different thread.",
+    "sub": "Process Synchronization"
+  },
+  {
+    "q": "Which statement about shell redirection is correct?",
+    "options": [
+      "> overwrites the target file whereas >> appends to it",
+      "Both read input from the file",
+      "> appends and >> overwrites",
+      "Both overwrite the file"
+    ],
+    "answer": 0,
+    "exp": "cmd > f truncates f first; cmd >> f appends output at the end.",
+    "sub": "Unix/Linux Commands"
+  },
+  {
+    "q": "The Banker's algorithm is an example of:",
+    "options": [
+      "deadlock prevention",
+      "deadlock detection",
+      "deadlock avoidance",
+      "deadlock recovery"
+    ],
+    "answer": 2,
+    "exp": "Banker's algorithm checks that each allocation leaves the system in a safe state before granting it.",
+    "sub": "Deadlock"
+  },
+  {
+    "q": "In demand paging, a page-table entry whose valid-invalid bit is \"invalid\" means that the page:",
+    "options": [
+      "is not in main memory (or is not part of the process address space)",
+      "is read-only",
+      "has been modified since loading",
+      "is shared with another process"
+    ],
+    "answer": 0,
+    "exp": "An invalid bit signals that the page is not currently in physical memory (or the address is illegal). Access causes a trap; if the page is legal, the OS brings it in (page fault).",
+    "sub": "Memory Management",
+    "v": 2
+  },
+  {
+    "q": "A process that has finished execution but still has an entry in the process table because its parent has not yet called wait() is known as a:",
+    "options": [
+      "foreground process",
+      "daemon process",
+      "orphan process",
+      "zombie process"
+    ],
+    "answer": 3,
+    "exp": "A terminated child whose exit status has not been collected by the parent remains as a zombie.",
+    "sub": "Process and Thread"
+  },
+  {
+    "q": "What is the average rotational latency of a disk rotating at 7200 RPM?",
+    "options": [
+      "About 4.17 ms",
+      "About 2.08 ms",
+      "About 8.33 ms",
+      "About 16.7 ms"
+    ],
+    "answer": 0,
+    "exp": "One rotation = 60/7200 s = 8.33 ms; the average latency is half of that, 4.17 ms.",
+    "sub": "Disk Scheduling"
+  },
+  {
+    "q": "Match the system with its category: (i) VxWorks (ii) MS-DOS (iii) UNIX. Which mapping is correct?",
+    "options": [
+      "(i) single-user OS, (ii) multi-user OS, (iii) real-time OS",
+      "(i) Real-time OS, (ii) single-user single-tasking OS, (iii) multi-user multitasking OS",
+      "(i) real-time OS, (ii) multi-user OS, (iii) single-user OS",
+      "(i) multi-user OS, (ii) real-time OS, (iii) single-user OS"
+    ],
+    "answer": 1,
+    "exp": "VxWorks is an RTOS, MS-DOS ran one task at a time for one user, and UNIX supports many users and processes.",
+    "sub": "OS Types and Basics"
+  },
+  {
+    "q": "In a microkernel design:",
+    "options": [
+      "all OS services including file systems and drivers run in kernel space",
+      "there is no kernel at all",
+      "applications run in kernel mode for speed",
+      "only minimal services (IPC, basic scheduling, memory management) run in kernel space and other services run in user space"
+    ],
+    "answer": 3,
+    "exp": "A microkernel keeps the kernel small; the cost is extra message-passing overhead between user-space servers.",
+    "sub": "System Calls and Kernel"
+  },
+  {
+    "q": "In segmentation with paging (as in MULTICS and Intel x86 designs):",
+    "options": [
+      "each page is divided into segments",
+      "each segment is divided into pages",
+      "the whole process is kept in one contiguous segment",
+      "frames are of variable size"
+    ],
+    "answer": 1,
+    "exp": "Paging each segment removes the external-fragmentation problem of pure segmentation while keeping the programmer's logical view and sharing/protection benefits.",
+    "sub": "Memory Management",
+    "v": 2
+  },
+  {
+    "q": "Starvation of low-priority processes in priority scheduling is commonly solved by:",
+    "options": [
+      "aging",
+      "spooling",
+      "increasing the time quantum",
+      "swapping"
+    ],
+    "answer": 0,
+    "exp": "Aging gradually raises the priority of a process that has waited long, ensuring it eventually runs.",
+    "sub": "CPU Scheduling"
+  },
+  {
+    "q": "External fragmentation in contiguous memory allocation can be reduced by:",
+    "options": [
+      "increasing the page size",
+      "compaction",
+      "using a larger TLB",
+      "spooling"
+    ],
+    "answer": 1,
+    "exp": "Compaction shuffles processes to merge scattered free holes into one large block.",
+    "sub": "Memory Management"
+  },
+  {
+    "q": "Which directory structure allows a file to be shared among users without making copies, but needs care to avoid dangling references?",
+    "options": [
+      "Two-level directory",
+      "Single-level directory",
+      "Acyclic-graph directory",
+      "Simple tree directory with no links"
+    ],
+    "answer": 2,
+    "exp": "Acyclic-graph directories permit shared files or subdirectories through links.",
+    "sub": "File Systems"
+  },
+  {
+    "q": "In the dining philosophers problem with five philosophers and five chopsticks, which approach avoids deadlock?",
+    "options": [
+      "Give each philosopher a time quantum",
+      "Let philosophers eat in parallel without any lock",
+      "Let every philosopher pick up the left chopstick first and then the right one",
+      "Allow at most four philosophers to sit at the table at the same time"
+    ],
+    "answer": 3,
+    "exp": "If every philosopher grabs the left chopstick, circular wait occurs; limiting to four ensures at least one can get two chopsticks.",
+    "sub": "Process Synchronization"
+  },
+  {
+    "q": "RAID level 1 provides fault tolerance by:",
+    "options": [
+      "striping data with no redundancy",
+      "distributed parity across all disks",
+      "mirroring the data on two disks",
+      "compressing data"
+    ],
+    "answer": 2,
+    "exp": "RAID 1 writes identical copies to two disks (100% capacity overhead). RAID 0 is striping without redundancy; RAID 5 uses distributed parity.",
+    "sub": "Disk Scheduling",
+    "v": 2
+  },
+  {
+    "q": "Deadlock can be prevented by breaking circular wait through:",
+    "options": [
+      "using a larger time quantum",
+      "making all resources sharable",
+      "allowing processes to hold resources while waiting",
+      "imposing a total ordering on resource types and requesting resources in that order"
+    ],
+    "answer": 3,
+    "exp": "If every process requests resources in increasing order of number, a cycle cannot form.",
+    "sub": "Deadlock"
+  },
+  {
+    "q": "Reference string: 1,2,3,2,1,4,5,2,1,2,3,4 with 4 frames and LRU. How many page faults occur?",
+    "options": [
+      "8",
+      "7",
+      "6",
+      "9"
+    ],
+    "answer": 1,
+    "exp": "Faults at 1,2,3,4,5,3,4 = 7.",
+    "sub": "Page Replacement"
+  },
+  {
+    "q": "Which transition is NOT possible in the standard five-state process model?",
+    "options": [
+      "Ready → Waiting (Blocked)",
+      "Waiting (Blocked) → Ready",
+      "Running → Terminated",
+      "Running → Ready"
+    ],
+    "answer": 0,
+    "exp": "A ready process is not running, so it cannot issue an I/O request; only a running process can move to waiting.",
+    "sub": "Process and Thread"
+  },
+  {
+    "q": "If the time quantum in Round Robin scheduling is made extremely large, the algorithm behaves like:",
+    "options": [
+      "FCFS",
+      "Multilevel feedback queue",
+      "SJF",
+      "Priority scheduling"
+    ],
+    "answer": 0,
+    "exp": "If the quantum exceeds every burst, no process is preempted and processes run in arrival order.",
+    "sub": "CPU Scheduling"
+  },
+  {
+    "q": "A disk has 4 surfaces, 1024 tracks per surface, 64 sectors per track and 512 bytes per sector. What is its capacity?",
+    "options": [
+      "256 MB",
+      "64 MB",
+      "128 MB",
+      "32 MB"
+    ],
+    "answer": 2,
+    "exp": "4 × 1024 × 64 × 512 B = 2^27 B = 128 MB.",
+    "sub": "Disk Scheduling"
+  },
+  {
+    "q": "The UNIX operating system was originally developed at:",
+    "options": [
+      "Microsoft Corporation",
+      "AT&T Bell Laboratories",
+      "Sun Microsystems",
+      "IBM Research"
+    ],
+    "answer": 1,
+    "exp": "Ken Thompson and Dennis Ritchie developed UNIX at Bell Labs around 1969-1971.",
+    "sub": "OS Types and Basics"
+  },
+  {
+    "q": "The exec() family of system calls:",
+    "options": [
+      "terminates the parent process",
+      "waits for the child to finish",
+      "creates a new child process",
+      "replaces the current process image with a new program while keeping the same PID"
+    ],
+    "answer": 3,
+    "exp": "exec loads a new program into the calling process's address space; no new process is created.",
+    "sub": "System Calls and Kernel"
+  },
+  {
+    "q": "Statement I: Paging eliminates external fragmentation.\nStatement II: Pure segmentation suffers mainly from internal fragmentation.\nWhich option is correct?",
+    "options": [
+      "Only Statement I is true",
+      "Both statements are false",
+      "Only Statement II is true",
+      "Both statements are true"
+    ],
+    "answer": 0,
+    "exp": "Paging uses fixed-size frames so there is no external fragmentation; segmentation uses variable sizes and suffers external fragmentation.",
+    "sub": "Memory Management"
+  },
+  {
+    "q": "A file of size 10 KB is stored on a disk with 4 KB blocks. How much space is lost to internal fragmentation?",
+    "options": [
+      "4 KB",
+      "1 KB",
+      "6 KB",
+      "2 KB"
+    ],
+    "answer": 3,
+    "exp": "3 blocks (12 KB) are used for 10 KB of data, so 2 KB is wasted in the last block.",
+    "sub": "File Systems"
+  },
+  {
+    "q": "In a Round Robin system the time quantum is 2 ms and each context switch takes 0.5 ms. What is the CPU efficiency (useful fraction of time)?",
+    "options": [
+      "90%",
+      "80%",
+      "75%",
+      "60%"
+    ],
+    "answer": 1,
+    "exp": "Efficiency = 2 / (2 + 0.5) = 0.8 = 80%.",
+    "sub": "CPU Scheduling"
+  },
+  {
+    "q": "A spinlock is most appropriate when:",
+    "options": [
+      "the waiting threads should sleep to save power",
+      "there is only one CPU and the holder is not running",
+      "the lock is expected to be held for a very short time on a multiprocessor",
+      "the lock will be held for several seconds"
+    ],
+    "answer": 2,
+    "exp": "Spinning wastes CPU, so it pays off only when the wait is shorter than a context switch.",
+    "sub": "Process Synchronization"
+  },
+  {
+    "q": "Which command creates a symbolic (soft) link named mylink pointing to the file data.txt?",
+    "options": [
+      "ln data.txt mylink",
+      "link -s mylink data.txt",
+      "ln -s data.txt mylink",
+      "cp -s data.txt mylink"
+    ],
+    "answer": 2,
+    "exp": "ln -s TARGET LINKNAME creates a symbolic link; without -s a hard link is made.",
+    "sub": "Unix/Linux Commands"
+  },
+  {
+    "q": "The 'ostrich algorithm' for deadlocks means:",
+    "options": [
+      "ignoring the problem and assuming it rarely occurs",
+      "always aborting the youngest process",
+      "using the Banker's algorithm at each request",
+      "preempting all resources periodically"
+    ],
+    "answer": 0,
+    "exp": "Systems like UNIX and Windows largely ignore deadlock because prevention and detection are costly.",
+    "sub": "Deadlock"
+  },
+  {
+    "q": "What is 'cycle stealing' in DMA?",
+    "options": [
+      "The CPU takes extra clock cycles from the DMA",
+      "The DMA controller takes the memory bus for a few cycles, delaying the CPU",
+      "Instruction cycles are skipped to save power",
+      "Two processes share one CPU cycle"
+    ],
+    "answer": 1,
+    "exp": "In cycle-stealing mode, DMA transfers one word at a time by briefly taking over the bus.",
+    "sub": "I/O Management"
+  },
+  {
+    "q": "In the one-to-one multithreading model:",
+    "options": [
+      "all user threads share a single kernel thread",
+      "kernel threads are created only for the main thread",
+      "user threads cannot run in parallel on multiprocessors",
+      "each user thread maps to its own kernel thread, so one blocking call does not block the others"
+    ],
+    "answer": 3,
+    "exp": "One-to-one (Linux, Windows) gives true parallelism on multiprocessors and avoids blocking the entire process, at the cost of creating a kernel thread per user thread.",
+    "sub": "Process and Thread",
+    "v": 2
+  },
+  {
+    "q": "Which interprocess communication mechanism is generally the fastest once it has been set up?",
+    "options": [
+      "Sockets over a network",
+      "Pipes",
+      "Message passing through the kernel",
+      "Shared memory"
+    ],
+    "answer": 3,
+    "exp": "After setup, shared memory accesses need no system calls or kernel copying, unlike message passing.",
+    "sub": "Process and Thread"
+  },
+  {
+    "q": "A disk has average seek time 6 ms, rotates at 6000 RPM and has 100 sectors per track. What is the average time to read one sector?",
+    "options": [
+      "6.1 ms",
+      "16.1 ms",
+      "11.1 ms",
+      "10.1 ms"
+    ],
+    "answer": 2,
+    "exp": "Rotation = 10 ms; average latency 5 ms; transfer = 10/100 = 0.1 ms; total = 6 + 5 + 0.1 = 11.1 ms.",
+    "sub": "Disk Scheduling"
+  },
+  {
+    "q": "Which of the following is NOT an operating system?",
+    "options": [
+      "Mozilla Firefox",
+      "Android",
+      "FreeBSD",
+      "Solaris"
+    ],
+    "answer": 0,
+    "exp": "Firefox is a web browser application; the others are operating systems.",
+    "sub": "OS Types and Basics"
+  },
+  {
+    "q": "An inverted page table has:",
+    "options": [
+      "one entry for each logical page of every process",
+      "one entry for each physical frame",
+      "one entry for each disk block",
+      "one entry for each TLB line only"
+    ],
+    "answer": 1,
+    "exp": "It is indexed by frame and stores (process id, page number), reducing table size at the cost of search time.",
+    "sub": "Memory Management"
+  },
+  {
+    "q": "In the FAT file system, the information about the next block of a file is found in:",
+    "options": [
+      "the File Allocation Table entry for the current block",
+      "the inode of the file",
+      "the first byte of the block itself",
+      "the boot sector"
+    ],
+    "answer": 0,
+    "exp": "The FAT stores a chain of cluster numbers; each entry points to the next cluster or an end-of-file marker.",
+    "sub": "File Systems"
+  },
+  {
+    "q": "Which of the following scheduling algorithms is inherently non-preemptive?",
+    "options": [
+      "Round Robin",
+      "First Come First Served",
+      "Shortest Remaining Time First",
+      "Preemptive priority"
+    ],
+    "answer": 1,
+    "exp": "FCFS lets a process run until it finishes or blocks; the others can preempt a running process.",
+    "sub": "CPU Scheduling"
+  },
+  {
+    "q": "Semaphore x is initialised to 0. Process P1 executes: S1; signal(x). Process P2 executes: wait(x); S2. What is guaranteed?",
+    "options": [
+      "S1 and S2 execute at the same time",
+      "S2 always executes before S1",
+      "A deadlock always occurs",
+      "S1 always executes before S2"
+    ],
+    "answer": 3,
+    "exp": "P2 blocks on wait(x) until P1 signals after S1, enforcing the order S1 then S2.",
+    "sub": "Process Synchronization"
+  },
+  {
+    "q": "In the first readers-writers problem (readers have priority), the main risk is:",
+    "options": [
+      "starvation of readers",
+      "starvation of writers",
+      "deadlock between readers",
+      "priority inversion of readers"
+    ],
+    "answer": 1,
+    "exp": "If readers keep arriving, a writer may wait indefinitely because new readers are allowed in while others are reading. The second variant favours writers and can starve readers.",
+    "sub": "Process Synchronization",
+    "v": 2
+  }
 ]

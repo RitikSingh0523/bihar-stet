@@ -108,16 +108,17 @@
   "sub": "Hashing"
  },
  {
-  "q": "Under the Indian Copyright Act, 1957, copyright in a literary work generally lasts for",
+  "q": "The \"zero trust\" security model is based on the principle",
   "options": [
-   "The author's lifetime plus 25 years",
-   "The author's lifetime plus 100 years",
-   "The author's lifetime plus 60 years",
-   "20 years from the date of publication"
+   "trust everything inside the corporate network",
+   "trust any user with a valid IP address",
+   "never trust, always verify every access request",
+   "trust devices that were once authenticated forever"
   ],
   "answer": 2,
-  "exp": "For original literary, dramatic, musical and artistic works the term is the author's life plus 60 years.",
-  "sub": "Copyright and IPR"
+  "exp": "Zero trust authenticates and authorises each request regardless of network location.",
+  "sub": "Cyber security basics",
+  "v": 2
  },
  {
   "q": "In an RSA system p = 3, q = 11 and e = 7. The ciphertext for plaintext m = 2 is",
@@ -204,16 +205,17 @@
   "sub": "Symmetric cryptography"
  },
  {
-  "q": "A company invents a new type of water-purification machine and wants exclusive rights over the invention. Which form of IPR applies?",
+  "q": "Using several layers of controls (physical, network, host, application, data) so that failure of one layer does not expose the system is called",
   "options": [
-   "Copyright",
-   "Trademark",
-   "Geographical indication",
-   "Patent"
+   "defence in depth",
+   "security through obscurity",
+   "single sign-on",
+   "load balancing"
   ],
-  "answer": 3,
-  "exp": "Patents protect new, useful, non-obvious inventions.",
-  "sub": "Copyright and IPR"
+  "answer": 0,
+  "exp": "Defence in depth layers independent controls so an attacker must defeat all of them.",
+  "sub": "Cyber security basics",
+  "v": 2
  },
  {
   "q": "The default TCP port used by HTTPS is",
@@ -300,16 +302,17 @@
   "sub": "VPN"
  },
  {
-  "q": "The DES algorithm processes 64-bit blocks using how many rounds?",
+  "q": "An intrusion detection system that raises an alert after suspicious activity is an example of which type of security control?",
   "options": [
-   "16",
-   "8",
-   "10",
-   "14"
+   "Preventive",
+   "Corrective",
+   "Deterrent",
+   "Detective"
   ],
-  "answer": 0,
-  "exp": "DES is a 16-round Feistel cipher with a 56-bit effective key.",
-  "sub": "Symmetric cryptography"
+  "answer": 3,
+  "exp": "Detective controls (IDS, log monitoring, CCTV) discover incidents; preventive ones (firewall) stop them.",
+  "sub": "Cyber security basics",
+  "v": 2
  },
  {
   "q": "Which attack injects malicious client-side script into a web page that is later viewed by other users?",

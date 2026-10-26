@@ -60,16 +60,17 @@
   "sub": "String Matching"
  },
  {
-  "q": "Items: A (weight 6, value 9), B (weight 5, value 7), C (weight 5, value 7); capacity 10. The optimal 0/1 knapsack value (greedy-by-highest-value would give only 9) is",
+  "q": "Single-source shortest paths in a weighted DAG (edges may be negative) can be computed in time",
   "options": [
-   "9",
-   "16",
-   "14",
-   "23"
+   "O(VE)",
+   "O(V + E)",
+   "O(V log V)",
+   "O(V^3)"
   ],
-  "answer": 2,
-  "exp": "B and C together weigh 10 and give 14.",
-  "sub": "Greedy"
+  "answer": 1,
+  "exp": "Relax the outgoing edges of each vertex in topological order; each edge is relaxed once.",
+  "sub": "Graph Algorithms",
+  "v": 2
  },
  {
   "q": "With coin denominations {1, 3, 4}, the minimum number of coins needed to make 6 is",
@@ -156,16 +157,17 @@
   "sub": "Dynamic Programming"
  },
  {
-  "q": "Statement I: Prim's algorithm correctly finds an MST even when some edge weights are negative.\nStatement II: Dijkstra's algorithm correctly finds shortest paths even when some edge weights are negative.\nWhich is correct?",
+  "q": "In a BFS of an undirected graph, every non-tree edge joins two vertices whose BFS levels differ by",
   "options": [
-   "Both Statement I and II are true",
-   "Only Statement II is true",
-   "Only Statement I is true",
-   "Neither is true"
+   "exactly 0",
+   "at least 2",
+   "at most 1",
+   "any amount"
   ],
   "answer": 2,
-  "exp": "MST algorithms depend only on relative order of weights; Dijkstra's fails with negative edges.",
-  "sub": "Greedy"
+  "exp": "If an edge joined levels differing by 2 or more, BFS would have discovered the farther vertex earlier through that edge.",
+  "sub": "Graph Algorithms",
+  "v": 2
  },
  {
   "q": "The chromatic number of a cycle graph with 5 vertices (found by graph colouring) is",
@@ -228,16 +230,17 @@
   "sub": "Divide and Conquer"
  },
  {
-  "q": "A file has 100 characters over {a, b, c, d} with frequencies 40, 30, 20, 10. The total number of bits used by the Huffman code is",
+  "q": "The 2-SAT problem (every clause has two literals) can be solved in",
   "options": [
-   "200",
-   "180",
-   "190",
-   "170"
+   "exponential time only, since it is NP-complete",
+   "polynomial (linear) time using strongly connected components",
+   "polynomial time only if P = NP",
+   "no algorithm, since it is undecidable"
   ],
-  "answer": 2,
-  "exp": "Code lengths are 1, 2, 3, 3: 40 + 60 + 60 + 30 = 190 bits.",
-  "sub": "Greedy"
+  "answer": 1,
+  "exp": "2-SAT is in P, using the implication graph and SCCs; 3-SAT is the NP-complete case.",
+  "sub": "P NP NP-Complete",
+  "v": 2
  },
  {
   "q": "The class NP consists of decision problems that",
@@ -288,16 +291,17 @@
   "sub": "Asymptotic Notation"
  },
  {
-  "q": "A connected graph has 12 vertices and 30 edges. The number of edges in its minimum spanning tree is",
+  "q": "A topological ordering of a directed graph exists if and only if the graph",
   "options": [
-   "12",
-   "11",
-   "18",
-   "29"
+   "is connected",
+   "has no directed cycle",
+   "is strongly connected",
+   "is a tree"
   ],
   "answer": 1,
-  "exp": "Any spanning tree of V vertices has V − 1 edges.",
-  "sub": "Greedy"
+  "exp": "A cycle makes it impossible to place all its vertices before their successors; every DAG has an order.",
+  "sub": "Graph Algorithms",
+  "v": 2
  },
  {
   "q": "In 4-queens with queens already placed at (row 1, column 2), (row 2, column 4), (row 3, column 1), the column of the queen in row 4 that gives a solution is",
@@ -348,16 +352,17 @@
   "sub": "Dynamic Programming"
  },
  {
-  "q": "Which data structure is typically used by Kruskal's algorithm to detect cycles efficiently?",
+  "q": "In a depth first search of an undirected graph, every non-tree edge is",
   "options": [
-   "Stack",
-   "Disjoint-set (union-find)",
-   "Queue",
-   "Hash table of vertices"
+   "a cross edge",
+   "a back edge (it joins a vertex to one of its ancestors)",
+   "a forward edge only",
+   "a tree edge"
   ],
   "answer": 1,
-  "exp": "Union-find checks whether two endpoints are already in the same component.",
-  "sub": "Greedy"
+  "exp": "An undirected graph has only tree edges and back edges in a DFS forest; cross edges cannot occur.",
+  "sub": "Graph Algorithms",
+  "v": 2
  },
  {
   "q": "Karatsuba's algorithm multiplies two n-digit numbers using T(n) = 3T(n/2) + O(n), which gives",
@@ -468,15 +473,16 @@
   "sub": "Backtracking"
  },
  {
-  "q": "In the Rabin–Karp algorithm over decimal digits with window size 3, the rolling hash of window 273 in text 27358 is 273. The hash of the next window is computed as",
+  "q": "For T(n) = 2T(n/2) + n with T(1) = 1 and n = 16, how many levels (counting the root level and the leaf level) does the recursion tree have?",
   "options": [
-   "273 + 5 = 278",
-   "(273 − 7)·10 + 5 = 2665",
-   "(273 − 2·100)·10 + 5 = 735",
-   "273·10 + 5 = 2735"
+   "5",
+   "4",
+   "16",
+   "8"
   ],
-  "answer": 2,
-  "exp": "Remove the leading digit's contribution, shift by base 10 and add the new digit.",
-  "sub": "String Matching"
+  "answer": 0,
+  "exp": "Problem sizes 16, 8, 4, 2, 1 give 5 levels = log2 16 + 1.",
+  "sub": "Recurrences",
+  "v": 2
  }
 ]

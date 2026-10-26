@@ -234,6 +234,91 @@ Shear in x: x' = x + shx·y, y' = y
 
 **⚡ Exam tip:** JPEG/MP3/MPEG = lossy; PNG/GIF/FLAC/ZIP = lossless; GIF = 256 colours + animation; MIDI stores notes, not sound; CD audio = 44.1 kHz, 16 bit.
 
+## 11. Inference, Bayesian Networks, Planning and Rule-Based Systems
+
+### Inference: forward and backward chaining
+- **Forward chaining (data-driven):** start with known facts, fire every rule whose conditions are satisfied, add the conclusions to the facts, repeat until the goal appears or nothing new fires. Good when many facts are known and the goal is open (monitoring, configuration - XCON).
+- **Backward chaining (goal-driven):** start with the goal, find a rule whose conclusion matches it, then make that rule's conditions new sub-goals; stop when sub-goals are known facts. Good for diagnosis with one clear hypothesis (MYCIN; Prolog uses backward chaining with depth-first search and backtracking).
+
+Worked example. Facts: A, B. Rules: R1: A AND B → C; R2: C → D; R3: D AND E → F.
+```
+Forward : A,B known -> R1 fires -> C ; R2 fires -> D ; R3 needs E (unknown) -> stop. Facts = {A,B,C,D}
+Backward: goal D <- R2 needs C <- R1 needs A and B -> both are facts -> D proved.
+```
+
+| | Forward chaining | Backward chaining |
+|---|---|---|
+| Direction | facts → goal | goal → facts |
+| Driven by | data | goal/hypothesis |
+| Rules examined | all that match current facts | only those that conclude the goal |
+| Typical use | monitoring, planning, configuration | diagnosis, query answering, Prolog |
+
+- **Resolution** + **unification** is the complete inference method for first-order logic; the Prolog rule "grandparent(X,Z) :- parent(X,Y), parent(Y,Z)." is a Horn clause (one conclusion, several conditions).
+- **Production system** = working memory (facts) + rule base (IF-THEN) + inference engine running the **recognise-act cycle**: match → conflict set → **conflict resolution** (choose one rule: priority, specificity, recency) → act.
+- **Frames:** a frame "Bird" has slots (covering = feathers, can_fly = yes as a default); the child frame "Penguin" is-a Bird and overrides can_fly = no. Slots may hold default values, ranges, or **if-needed / if-added procedures (demons)**.
+- **Certainty factor (MYCIN):** a number from −1 (certainly false) to +1 (certainly true) attached to a rule's conclusion; lets rule-based systems reason with uncertainty.
+
+### Probability and Bayesian networks
+- **Bayes' theorem:** P(H|E) = P(E|H) × P(H) / P(E). Prior P(H), likelihood P(E|H), posterior P(H|E).
+- Example: disease prevalence 1%, test sensitivity 90%, false-positive rate 10%. P(+) = 0.9×0.01 + 0.1×0.99 = 0.108; P(D|+) = 0.009/0.108 = 0.083 (about 8.3%), small because the disease is rare.
+- **Bayesian (belief) network:** a **directed acyclic graph** in which each node is a random variable and each edge shows direct influence (parent → child). Each node stores a **conditional probability table (CPT)** P(node | parents); a root node stores just its prior.
+- The joint probability factorises: P(X1,...,Xn) = product of P(Xi | parents(Xi)).
+- Example (chain Rain → WetGrass → Slip): P(R, W, S) = P(R) × P(W|R) × P(S|W). Given W, S is independent of R (conditional independence).
+- A network of n boolean variables with at most k parents each needs only about n × 2^k numbers instead of 2^n − 1 for the full joint table.
+- Uses: medical diagnosis, spam filtering, fault diagnosis; inference by enumeration, variable elimination, or approximation (sampling).
+- **Naive Bayes classifier:** applies Bayes' theorem assuming features are conditionally independent given the class; choose the class with the largest P(C) × product of P(xi | C). Simple, fast, popular for text/spam classification.
+
+### Planning
+- **Planning** = finding a sequence of actions that takes the agent from an initial state to a goal state.
+- **STRIPS** representation: each action has **preconditions**, an **add list** (new facts) and a **delete list** (facts that become false). Example: Move(X from Y to Z): pre = clear(X), clear(Z), on(X,Y); add = on(X,Z), clear(Y); delete = on(X,Y), clear(Z).
+- Approaches: **forward (progression) state-space** planning, **backward (regression)** from the goal, **goal-stack planning** (stack of goals/subgoals), **means-ends analysis** (General Problem Solver - reduce the difference between current state and goal), **partial-order planning** (leave action ordering open until needed), **hierarchical task network (HTN)** planning.
+- **PDDL** is the standard language to describe planning problems. Classic domains: blocks world, robot navigation. The **frame problem** = stating what does NOT change when an action is performed.
+- Planning differs from plain search by using a structured (logical) description of states and actions, which allows heuristics and subgoal decomposition.
+
+### Machine learning and expert systems: syllabus recap
+- ML types and metrics are in chapter 6; expert-system parts and shells are in chapter 4. Expert systems use knowledge base + inference engine (forward/backward chaining) + explanation facility; learning systems improve from data, classic expert systems do not.
+
+**⚡ Exam tip:** Forward = data-driven, backward = goal-driven (Prolog, MYCIN). Bayesian network = DAG + CPTs, joint = product of P(node | parents). STRIPS action = precondition + add list + delete list. Certainty factor range −1 to +1. DFS stack, BFS queue.
+
+## 12. Multimedia: Hardware, Software, Applications and Project Design
+
+### Multimedia system components
+- **Hardware:** input - keyboard, mouse, scanner, digital camera, microphone, graphics tablet, video capture card; processing - fast CPU, large RAM, **sound card** (ADC/DAC), **graphics card (GPU)**; storage - hard disk/SSD, CD-ROM, DVD, Blu-ray, pen drive; output - high-resolution monitor, speakers/headphones, projector, printer; networking - broadband for streaming.
+- **Software:**
+  - Image editing: Adobe Photoshop, GIMP, CorelDRAW (vector), Illustrator.
+  - Audio editing: Audacity, Sound Forge, Adobe Audition.
+  - Video editing: Adobe Premiere, Final Cut Pro, DaVinci Resolve.
+  - Animation: Adobe Flash/Animate, Maya, 3ds Max, Blender.
+  - **Authoring tools:** Adobe Director, Authorware, Flash, ToolBook, PowerPoint - combine media into one interactive product.
+- **Authoring metaphors:** **timeline-based** (Flash, Director - frames along a time axis), **card/page-based** (HyperCard, ToolBook - pages linked by buttons), **icon/flow-based** (Authorware - icons on a flowline), **scripting-based**.
+- **Applications:** education and e-learning, entertainment and games, **video conferencing**, **video on demand**, digital libraries, advertising and kiosks, medical imaging and simulation, virtual reality, training/simulation, web multimedia.
+
+### Text
+- Static text and **hypertext** (nodes joined by links; HTML is a hypertext markup language). Character sets: ASCII (7-bit), **Unicode** (all languages; UTF-8, UTF-16). Fonts: **bitmap** fonts (fixed size) and **outline** fonts (TrueType, PostScript - scalable). Typeface = design family, font = size/style instance; serif vs sans-serif.
+
+### Audio in detail
+- **Sampling theorem (Nyquist):** sampling rate ≥ 2 × highest frequency. A 4 kHz signal needs at least 8000 samples/s. Telephone speech: 8 kHz, 8-bit, mono = 64 kbps.
+- Audio file size = rate × bits/8 × channels × seconds. Example: 8 kHz, 8-bit, mono, 10 s = 8000 × 1 × 1 × 10 = 80,000 bytes.
+- **MP3 (MPEG-1 Audio Layer III):** lossy; uses **psychoacoustic (perceptual) coding** - removes sounds the human ear cannot hear (masked frequencies) - then Huffman coding; typical bit rates 128-320 kbps, about 10:1 over CD audio.
+- **MIDI (Musical Instrument Digital Interface):** a protocol and file format carrying **event messages** (note on/off, pitch, velocity, instrument/patch, controller) instead of sampled sound; extremely small files, easy to edit, sound depends on the synthesiser/sound bank; 16 channels per cable; file extension .mid. Cannot store a human voice recording.
+- Other: WAV (uncompressed PCM), AIFF (Apple), AAC, OGG, FLAC, WMA, RealAudio (streaming).
+
+### Graphics, animation and video
+- **Graphics:** raster/bitmap (BMP, JPEG, GIF, PNG, TIFF - pixel based) vs vector (SVG, CDR, AI, EPS - mathematical objects, scalable). Colour models: RGB (screens, additive), CMYK (print, subtractive), HSB.
+- **Animation:** illusion of motion produced by showing frames faster than about 12-15 fps (**persistence of vision**); smooth animation 24-30 fps. Types: **cel animation**, **path/keyframe animation**, **tweening** (software generates the in-between frames), **morphing**, 2D vs 3D, stop-motion; techniques: **onion skinning**, rendering and **rigging** for 3D. Formats: animated GIF, SWF, FLV.
+- **Video:** broadcast standards **NTSC** (USA/Japan, 29.97 ≈ 30 fps, 525 lines), **PAL** (India/Europe, **25 fps**, 625 lines), SECAM (France). Digital standards: **MPEG-1** (VCD), **MPEG-2** (DVD, digital TV), **MPEG-4** (internet, H.264); MP4/AVI/MOV/MKV are container formats. Uncompressed size = width × height × bytes/pixel × fps × seconds, hence compression with codecs (I, P, B frames).
+- **Streaming** media: played while downloading, needs buffering; protocols RTP, RTSP; **progressive download** is not true streaming.
+
+### Multimedia project design
+- Phases: **analysis** (needs and audience) → **design** (concept, structure/navigation map, **storyboard** = sequence of sketches showing screens, media, interactions) → **content collection/production** (create or acquire text, images, audio, video; check copyright) → **authoring and integration** (build in an authoring tool, add interactivity) → **testing** (functionality, usability, compatibility) → **delivery/distribution** (CD/DVD, web, app) → **maintenance and evaluation**.
+- Documents: **script**, **storyboard**, **flowchart/navigation structure**, asset list. Navigation structures: linear, hierarchical, non-linear (hypermedia), composite.
+- Design principles: consistency, clear navigation, readable text with good contrast, balanced media (avoid overload), small file sizes, accessibility, testing on target hardware.
+
+### Future trends
+- **Virtual reality (VR)** - fully immersive 3D environment (head-mounted display); **augmented reality (AR)** - overlays digital objects on the real view (Pokemon Go); **mixed reality**; **3D and holographic displays**; 360-degree video; **HD/4K/8K** and HEVC (H.265)/AV1 codecs; cloud and **streaming** services (OTT); 5G; AI-generated and AI-edited media; interactive TV; **multimedia on mobile** and wearables; the Metaverse; haptic (touch feedback) interfaces.
+
+**⚡ Exam tip:** Nyquist = 2 × fmax; MP3 = lossy perceptual coding; MIDI = note instructions, not sound; PAL = 25 fps (India), NTSC = 30 fps; tweening = in-between frames; storyboard = design-phase tool; timeline tool = Flash/Director; AR overlays, VR immerses.
+
 ## Quick Revision Sheet
 
 - AI term coined by **John McCarthy, 1956**; LISP by McCarthy (1958); Prolog by Colmerauer (1972).
@@ -262,3 +347,9 @@ Shear in x: x' = x + shx·y, y' = y
 - DDA floating point; Bresenham integer: p0 = 2dy − dx; p<0 → p+2dy, else p+2dy−2dx.
 - Homogeneous 3×3 matrices make translation a multiplication; transformations not commutative.
 - Cohen-Sutherland: code 0000 accept, AND ≠ 0 reject. CD audio 44.1 kHz/16 bit; MIDI = notes; MP3 lossy.
+- Forward chaining = data-driven; backward chaining = goal-driven (Prolog, MYCIN). Conflict resolution picks one rule from the conflict set.
+- Bayesian network = DAG with CPTs; joint = product of P(Xi | parents); Naive Bayes assumes conditionally independent features.
+- STRIPS action: preconditions + add list + delete list; means-ends analysis (GPS); PDDL describes planning problems; certainty factor in [-1, +1].
+- BFS order on tree S(A(C,D),B(E)) = S A B C D E; DFS = S A C D B E.
+- Multimedia: Nyquist rate = 2 x fmax; MP3 = psychoacoustic lossy coding; MIDI = events (note on/off), tiny, 16 channels; PAL 25 fps, NTSC about 30 fps.
+- Authoring tools: Flash/Director (timeline), ToolBook (card/page), Authorware (icon); storyboard = design phase; VR immerses, AR overlays; future: 4K/8K, 360 video, 5G, AI media.

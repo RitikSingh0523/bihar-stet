@@ -105,6 +105,11 @@ def total(n): return 0 if n == 0 else n + total(n-1)      total(4) → 10
 - Recursion vs iteration: recursion is shorter but uses stack memory.
 - `def f(): f()` → RecursionError (no base case).
 
+### 4.x Generators and iteration
+- A function containing **yield** is a **generator function**; calling it returns a generator object and runs nothing yet. Each `next(g)` resumes execution up to the next `yield` and returns that value; when the function ends, `next` raises **StopIteration** (a `for` loop handles this silently).
+- Generators produce values lazily (low memory): `def g(): yield 1; yield 2` then `it = g(); next(it)` gives 1, `next(it)` gives 2, a third `next(it)` raises StopIteration. `(x*x for x in range(3))` is a generator expression.
+- `return` ends a normal function with a value; `yield` pauses and keeps the local state.
+
 **⚡ Exam tip:** non-default parameter after a default one is a SyntaxError; `*args` is a tuple, `**kwargs` a dict; mutable default lists persist across calls; assigning to a global name inside a function without `global` gives UnboundLocalError; a function with no `return` returns `None`.
 
 ## 5. Files, CSV, Exceptions, Modules
@@ -244,6 +249,21 @@ Dog("d", "x").speak()              → Bark
 - Everything in Python is an object (ints, functions, classes). `object` is the root base class.
 - `type(obj)` → `<class '__main__.Student'>`; `obj.__dict__` holds attributes; `hasattr`, `getattr`, `setattr`, `delattr`.
 - Not specifying `self` in a method definition and calling it → TypeError (takes 0 positional arguments but 1 given).
+
+### Abstract classes in Python
+- Python has no `abstract` keyword; use the **abc** module: `from abc import ABC, abstractmethod`; derive the class from `ABC` and decorate methods with `@abstractmethod`.
+```
+class Shape(ABC):
+    @abstractmethod
+    def area(self): pass
+class Sq(Shape):
+    def __init__(self, s): self.s = s
+    def area(self): return self.s ** 2
+Shape()        → TypeError (cannot instantiate abstract class)
+Sq(3).area()   → 9
+```
+- A subclass that does not override every abstract method is itself abstract (instantiation → TypeError). An abstract method may still contain code that subclasses call via `super()`.
+- Destructor: `__del__` runs when the reference count drops to 0 (timing not guaranteed). Constructor overloading is not supported: use default arguments or `@classmethod` factories.
 
 **⚡ Exam tip:** `__init__` is the constructor, `self` is not a keyword, `super()` calls the parent, `__x` private is name-mangled, Python has no method overloading, and multiple inheritance is allowed.
 

@@ -277,6 +277,95 @@ Output: **true false true**.
 
 **⚡ Exam tip:** For output questions: (1) find static vs dynamic type, (2) check whether the method is virtual / overridden, (3) list constructor order base → member → derived body, (4) remember destructors run in reverse, (5) in Java, methods are polymorphic but fields and static methods are not.
 
+## 11. C++ and Java Fundamentals: Control Flow, Arrays, Pointers, Structures, File Handling
+
+The syllabus asks for fundamentals of C, C++, Java and Python. C and Python are in the Programming notes; this chapter gives the C++ and Java equivalents and the common comparison points.
+
+### 11.1 Control flow (C++ and Java)
+- Same constructs as C: `if / else if / else`, `switch`, `for`, `while`, `do-while`, `break`, `continue`.
+- `switch` **falls through** to the next case until a `break` (or the end). Java `switch` works on `int`, `char`, `byte`, `short`, enum and `String` (not `long`, `float`, `double`, `boolean`); case labels must be constants.
+- `break` leaves only the **innermost** loop (or the switch); `continue` skips to the next iteration. Java adds **labelled break/continue**: `outer: for(...) { for(...) { break outer; } }`.
+- Java condition must be a **boolean** expression (`if (x = 5)` is a compile error; in C/C++ it is legal and always true). Java has no `goto` (reserved word).
+- Enhanced for: Java `for (int x : arr)`, C++11 `for (int x : v)`; read-only copy of each element.
+
+```
+for (int i = 1; i <= 5; i++) { if (i == 3) continue; if (i == 5) break; cout << i; }   → 124
+for (int i=1;i<=3;i++) for (int j=1;j<=3;j++) { if (j==2) break; print(i*j); }          → 123
+```
+
+### 11.2 Arrays
+
+| | C++ | Java |
+|---|---|---|
+| Declare | `int a[5];` `int a[] = {1,2,3};` | `int[] a = new int[5];` `int[] a = {1,2,3};` |
+| Default values | **garbage** for local arrays | **0** / false / null (arrays are objects on the heap) |
+| Length | `sizeof(a)/sizeof(a[0])` (only in the declaring scope) | `a.length` (a field, no brackets); `s.length()` for String |
+| Bounds check | **none** (undefined behaviour) | `ArrayIndexOutOfBoundsException` |
+| 2-D | `int m[2][3];` contiguous, row-major | `int[][] m = new int[2][3];` array of arrays; rows may differ (jagged) |
+| Passing | decays to a pointer | reference to the array object |
+
+- `int[][] a = new int[3][4];` → `a.length` = 3 (rows), `a[0].length` = 4 (columns).
+- `int[] b = a;` copies the **reference**; `b[0] = 9` changes `a[0]` too. Use `clone()` or `Arrays.copyOf` for a real copy. `Arrays.sort`, `Arrays.toString`, `Arrays.fill` are in `java.util.Arrays`.
+- C++ `vector<int>` is the resizable array (`push_back`, `size`, `at()` with bounds check).
+
+### 11.3 Pointers and references in C++ (Java has none)
+- Same pointer rules as C: `*p`, `&x`, pointer arithmetic scaled by type size, `a[i] == *(a+i)`, `NULL`/`nullptr`.
+- `int a[] = {10,20,30,40}; cout << *(a+1) + sizeof(a)/sizeof(a[0]);` → 20 + 4 = **24**.
+- **Reference** `int &r = x;` is an alias: must be initialised, cannot be reseated, no null reference. Pass by reference avoids the copy: `void swap(int &a, int &b)`.
+- Dynamic memory: `int *p = new int(5);` ... `delete p;` and `int *q = new int[10];` ... `delete[] q;` (mismatch → undefined behaviour). `new` calls the constructor, `delete` calls the destructor; `malloc/free` do not.
+- Object pointers use `->`: `Student *s = new Student; s->show();`.
+- Java: no pointers; objects are accessed through **references**, all on the heap, freed by the garbage collector. `null` reference → `NullPointerException`. Arguments are passed **by value** (a copy of the reference).
+
+### 11.4 Structures in C++ and Java
+- C++ `struct` is a class whose members (and inheritance) are **public by default**; it can have member functions, constructors and inheritance. `class` defaults to **private**. Otherwise they are the same.
+- Structures are copied member-wise on assignment and when passed by value: `void f(P p){ p.x = 9; }` does not change the caller's object. A `union` shares memory between members, exactly as in C.
+- Java has **no struct and no union**; a class (usually with public fields or getters/setters) plays that role. Objects are always handled through references, so `f(Point p){ p.x = 9; }` **does** change the caller's object (but reassigning `p` inside `f` does not).
+
+### 11.5 File handling in C++ (`<fstream>`)
+- Classes: `ifstream` (input), `ofstream` (output), `fstream` (both). `#include <fstream>`.
+```
+ofstream out("a.txt");        // creates, ERASES old content by default
+out << "Hello " << 10 << endl;
+out.close();
+ifstream in("a.txt");
+string w; int n;
+in >> w >> n;                 // reads whitespace-separated tokens: Hello 10
+getline(in, line);            // reads a whole line
+while (in >> x) { ... }       // loop until extraction fails (end of file)
+```
+
+| Mode flag | Meaning |
+|---|---|
+| `ios::in` | open for reading (default for `ifstream`) |
+| `ios::out` | open for writing, truncates (default for `ofstream`) |
+| `ios::app` | append: every write goes to the end, old content kept |
+| `ios::ate` | go to end on open, but writes may be repositioned |
+| `ios::trunc` | erase existing content |
+| `ios::binary` | binary mode (use `read()` / `write()`) |
+
+- Combine flags with `|`: `fstream f("a.dat", ios::in | ios::out | ios::binary);`.
+- Test: `if (!in)` or `in.is_open()`; `in.eof()` is true only **after** a read hits the end; `fail()`, `good()`, `bad()` give the stream state.
+- Positioning: `seekg(pos)` / `tellg()` for the get (read) pointer, `seekp(pos)` / `tellp()` for the put (write) pointer.
+
+### 11.6 File handling in Java (`java.io`)
+- **Byte streams**: `FileInputStream`, `FileOutputStream` (abstract parents `InputStream`, `OutputStream`). **Character streams**: `FileReader`, `FileWriter` (parents `Reader`, `Writer`). Buffered wrappers: `BufferedReader` (`readLine()`), `BufferedWriter`, `PrintWriter`. `Scanner(new File("a.txt"))` reads tokens/lines. `File` class represents a path: `exists()`, `length()`, `delete()`, `isDirectory()`, `mkdir()`.
+- `new FileWriter("a.txt")` truncates; `new FileWriter("a.txt", true)` **appends**. `FileReader` on a missing file throws **FileNotFoundException** (a checked subclass of `IOException`).
+- Object serialisation: class implements the marker interface `Serializable`; `ObjectOutputStream.writeObject()` / `ObjectInputStream.readObject()`; `transient` fields are skipped.
+```
+try (BufferedReader br = new BufferedReader(new FileReader("a.txt"))) {
+    String line;
+    while ((line = br.readLine()) != null) System.out.println(line);   // null at end of file
+} catch (IOException e) { System.out.println("error"); }
+```
+- try-with-resources closes the resource automatically **before** the catch block runs: the resource's `close()` output comes before the catch output, and `finally` last.
+
+### 11.7 Abstract methods, destructor order and exception design (quick additions)
+- **Abstract method** (Java): signature only, ends with `;`, declared `abstract`, can never be `private`, `final` or `static`; the first concrete subclass must implement it. An abstract **class** can still have constructors (run via `super()`), fields and concrete methods.
+- **Destructor order** (C++): local objects are destroyed in **reverse** order of construction; with inheritance, the derived destructor runs first, then the base destructor. `delete p` on a base pointer needs a **virtual destructor** to run the derived part.
+- **Catch order**: Java requires specific before general (`catch (ArithmeticException)` before `catch (Exception)`), otherwise a compile-time error. A checked exception thrown without `try-catch` or a `throws` clause is a compile-time error. In C++ `throw;` inside a handler re-throws the current exception to the outer handler.
+
+**⚡ Exam tip:** `ofstream` truncates unless `ios::app`; Java `FileWriter(name, true)` appends; Java arrays default to 0/null and have `.length`, C++ locals are garbage and unchecked; C++ struct = public by default, class = private; Java has no pointers, struct or union; `FileNotFoundException` is checked; try-with-resources closes before catch.
+
 ## Quick Revision Sheet
 
 - Four pillars: encapsulation, abstraction, inheritance, polymorphism; information hiding via access specifiers.
@@ -305,3 +394,6 @@ Output: **true false true**.
 - Thread: `start()` creates a new thread, `run()` doesn't; Runnable preferred; `synchronized` prevents races.
 - `Set` no duplicates, `List` ordered with duplicates, `HashMap` allows one null key, `Hashtable` none.
 - UML: class = static structure, sequence = time order, use case = actors, composition = filled diamond, aggregation = hollow diamond.
+- C++/Java fundamentals: `switch` falls through without `break`; Java arrays default to 0/null with `.length`, C++ locals are garbage and unchecked; Java has no pointers, struct or union; C++ struct members public by default, class private.
+- Files: C++ `ofstream` truncates unless `ios::app`; `ifstream`/`ofstream`/`fstream`; Java `FileReader`/`FileWriter(name, true)` appends, `BufferedReader.readLine()` returns null at EOF, `FileNotFoundException` is checked (extends IOException); try-with-resources closes before catch.
+- Destructors run in reverse order of construction (derived before base); Java catch order specific to general; abstract methods have no body and need a concrete subclass; abstract classes may have constructors.

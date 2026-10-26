@@ -273,6 +273,157 @@ x.send();
 
 **⚡ Exam tip:** Cookie = client side, ~4 KB; session = server side. WordPress = CMS built in PHP/MySQL. Search engine order: crawl -> index -> rank.
 
+## jQuery
+
+- **jQuery** = fast, small, cross-browser **JavaScript library** (John Resig, 2006) -- "write less, do more". It simplifies DOM selection/manipulation, event handling, animation and AJAX. It is a library, not a new language; all jQuery is JavaScript. Loaded from a local file or a CDN with `<script src="jquery.min.js"></script>`.
+- Syntax: **`$(selector).action()`**. `$` is an alias of the `jQuery` function; the selector uses CSS syntax.
+- Run code only after the DOM is ready: `$(document).ready(function(){ ... });` or the short form `$(function(){ ... });`.
+
+```javascript
+$(document).ready(function(){
+  $("p").hide();                 // element selector
+  $("#box").css("color","red");  // id selector
+  $(".note").addClass("big");    // class selector
+  $("button").click(function(){ $("#msg").text("Hi").fadeIn(); });
+});
+```
+
+| Category | Common methods |
+|---|---|
+| Selectors | `$("p")`, `$("#id")`, `$(".cls")`, `$("ul li:first")`, `$("[href]")` |
+| Content | `.text()` (plain text), `.html()` (markup), `.val()` (form value), `.attr()` |
+| Style/DOM | `.css()`, `.addClass()`, `.removeClass()`, `.append()`, `.prepend()`, `.before()`, `.after()`, `.remove()`, `.empty()` |
+| Events | `.click()`, `.dblclick()`, `.hover()`, `.on("event", fn)`, `.off()`, `.submit()`, `.keyup()` |
+| Effects | `.hide()`, `.show()`, `.toggle()`, `.fadeIn()`, `.fadeOut()`, `.slideUp()`, `.slideDown()`, `.animate()` |
+| AJAX | `$.ajax()`, `$.get()`, `$.post()`, `.load()`, `$.getJSON()` |
+
+- **Method chaining:** each method returns the jQuery object, so `$("#a").css("color","red").slideUp(2000).slideDown(2000);` works.
+- Getters return the value of the first matched element; setters apply to all matched elements.
+- `.text()` treats content as plain text; `.html()` parses markup. `.append()` inserts at the **end inside** the element; `.after()` inserts **outside, after** it.
+
+**⚡ Exam tip:** jQuery syntax = `$(selector).action()`; `$(document).ready()` waits for the DOM; jQuery is a JavaScript library (not a separate language); `.text()` vs `.html()` vs `.val()` is a frequent distinction.
+
+## Node.js and npm
+
+- **Node.js** = open-source, cross-platform **JavaScript runtime** built on Chrome's **V8 engine** (Ryan Dahl, 2009). Lets JavaScript run on the **server** (outside the browser). Not a language and not a framework.
+- **Event-driven, non-blocking (asynchronous) I/O** with a **single-threaded event loop**: good for I/O-heavy apps (APIs, chat, streaming); weak for CPU-heavy tasks.
+- **npm** (Node Package Manager) installs libraries: `npm install express`; project metadata and dependencies live in **package.json**; installed code in `node_modules`. Run a script with `node app.js`.
+- Core modules: `http` (create server), `fs` (file system), `path`, `os`, `events`, `url`. Load a module with `require()` (CommonJS) or `import` (ES modules).
+- **Express.js** = minimal web framework on top of Node.js (routing, middleware). MEAN/MERN stack = MongoDB + Express + Angular/React + Node.
+
+```javascript
+const http = require("http");
+http.createServer(function(req, res){
+  res.writeHead(200, {"Content-Type": "text/html"});
+  res.end("Hello World");
+}).listen(8080);          // browse http://localhost:8080
+```
+
+| Node.js | PHP (traditional) |
+|---|---|
+| JavaScript on server; one language on client and server | Server-side scripting embedded in HTML |
+| Non-blocking, event loop | Blocking, one process/thread per request (Apache) |
+| Runs its own HTTP server | Usually runs under Apache/Nginx |
+
+**⚡ Exam tip:** Node.js = JavaScript runtime on V8, event-driven non-blocking, single-threaded; npm = package manager; `package.json` lists dependencies; `http.createServer()` builds a server.
+
+## Git and Version Control
+
+- **Version control system (VCS)** records changes to files over time so you can recall versions, compare, branch and collaborate. **Git** (Linus Torvalds, 2005) is a **distributed** VCS: every clone holds the complete history. **GitHub / GitLab / Bitbucket** are hosting services for Git repositories (Git is the tool, GitHub is a service).
+- Areas: **working directory** -> (`git add`) -> **staging area (index)** -> (`git commit`) -> **local repository** -> (`git push`) -> **remote repository**.
+
+| Command | Purpose |
+|---|---|
+| `git init` | create a new repository |
+| `git clone <url>` | copy a remote repository (with history) |
+| `git status` | show changed/staged files |
+| `git add <file>` / `git add .` | stage changes |
+| `git commit -m "msg"` | save staged snapshot to local repo |
+| `git log` | view commit history |
+| `git branch` / `git checkout -b <b>` (or `git switch -c <b>`) | list / create-and-switch branch |
+| `git merge <b>` | merge a branch into the current one |
+| `git pull` | fetch + merge from remote |
+| `git push` | upload local commits to remote |
+| `git fetch` | download remote changes without merging |
+| `git diff` | show unstaged differences |
+| `git revert` / `git reset` | undo a commit safely / move HEAD back |
+
+- **Branch** = independent line of development (default `main`/`master`); **HEAD** = pointer to current commit/branch; **merge conflict** = same lines changed in two branches, must be resolved manually then committed; **pull request** = request to merge a branch (GitHub workflow); **fork** = personal copy of someone's repository; `.gitignore` lists files Git should not track.
+- Commits are identified by a 40-hex-digit **SHA-1 hash**. Centralised VCS (SVN, CVS) keep history only on the server; Git is distributed.
+
+**⚡ Exam tip:** add -> commit -> push is the flow; `git clone` copies a repo, `git init` makes a new one; `git pull` = fetch + merge; Git is distributed and different from GitHub.
+
+## PHP with MySQL and Sessions
+
+### PHP essentials
+- Code between `<?php ... ?>`; statements end with `;`; variables start with `$` and are loosely typed; `echo`/`print` output; `.` concatenates strings (`"5" . "3"` = "53"); arrays: `$a = array(1,2)` or `[1,2]`, `count($a)`; `include` (warning on failure, script continues) vs `require` (fatal error, script stops); `_once` variants include a file only once.
+- Superglobals: `$_GET` (query string, visible in URL), `$_POST` (form body), `$_REQUEST`, `$_SESSION`, `$_COOKIE`, `$_SERVER`, `$_FILES`.
+- Form handling: `<form action="process.php" method="post">`; read with `$_POST["name"]`. Always validate/escape input (`htmlspecialchars()`) to stop XSS.
+
+### MySQL integration
+- **MySQL** = open-source relational DBMS (SQL); with **Apache + PHP** it forms the **LAMP/XAMPP/WAMP** stack (Linux/Windows + Apache + MySQL + PHP). **phpMyAdmin** = web GUI to manage MySQL.
+- PHP connects through **MySQLi** (`mysqli_*`, MySQL only) or **PDO** (PHP Data Objects, works with many databases). The old `mysql_*` functions were removed in PHP 7.
+- Steps: connect -> select database -> run query -> process result -> close.
+
+```php
+<?php
+$conn = mysqli_connect("localhost", "root", "", "school");  // host, user, password, database
+if (!$conn) { die("Connection failed: " . mysqli_connect_error()); }
+$res = mysqli_query($conn, "SELECT id, name FROM student");
+while ($row = mysqli_fetch_assoc($res)) {      // one row as associative array
+    echo $row["id"] . " - " . $row["name"] . "<br>";
+}
+mysqli_close($conn);
+?>
+```
+
+- Useful calls: `mysqli_num_rows()`, `mysqli_fetch_array()`, `mysqli_error()`, `mysqli_real_escape_string()`.
+- **Prepared statements** (`$stmt = $conn->prepare("SELECT * FROM t WHERE id = ?"); $stmt->bind_param("i", $id);`) separate SQL from data and are the standard defence against **SQL injection** (input like `' OR '1'='1`).
+
+### Sessions in PHP
+- Call **`session_start()`** before any output (it sends a header, so it must precede HTML). PHP creates a unique session ID, sends it to the browser in the cookie **PHPSESSID**, and stores the data on the server in `$_SESSION`.
+- Set: `$_SESSION["user"] = "ravi";` Read on any other page after `session_start()`. End: `session_unset()` (clear variables) then `session_destroy()` (delete session).
+- Cookies: `setcookie("name", "value", time()+3600);` must also be called before output; read with `$_COOKIE`.
+- Session fixation/hijacking defences: regenerate the ID after login (`session_regenerate_id()`), HTTPS, HttpOnly cookie.
+
+### HTTP forms: GET vs POST
+
+| GET | POST |
+|---|---|
+| Data appended to URL (`?a=1&b=2`) | Data in the request body |
+| Visible, bookmarkable, limited length | Hidden from URL, no practical size limit, can upload files |
+| Should be idempotent (search) | Used for passwords, changes, uploads |
+| `$_GET` | `$_POST` |
+
+- Upload forms need `enctype="multipart/form-data"` with `method="post"`; default encoding is `application/x-www-form-urlencoded`.
+
+**⚡ Exam tip:** `mysqli_connect(host, user, pass, db)`; `session_start()` first, data in `$_SESSION`, ID in cookie `PHPSESSID`; prepared statements prevent SQL injection; `require` is fatal, `include` only warns.
+
+## Web Application Structures: Client-Server, 2-Tier, 3-Tier, MVC
+
+| Architecture | Layers / split | Notes |
+|---|---|---|
+| **Client-server** | Clients request, server provides | Basis of the web; HTTP request-response; stateless |
+| **1-tier** | UI, logic and data on one machine | Standalone desktop app |
+| **2-tier** | Client (UI + business logic) <-> database server | Fast, simple; "fat client", hard to scale/maintain; client talks directly to the DB (e.g. JDBC/ODBC desktop apps) |
+| **3-tier** | Presentation (browser/UI) <-> Application/business logic (web/app server) <-> Data (DBMS) | Thin client, scalable, secure (DB hidden behind app server), easy maintenance; typical web app: browser - Apache/Tomcat/Node - MySQL |
+| **n-tier** | 3-tier plus extra layers (cache, load balancer, API gateway, microservices) | Highest scalability |
+
+- **Browser = presentation tier; web/application server running PHP/JSP/Node code = logic tier; database server = data tier.**
+- Thin client (browser, little logic) vs fat client (much logic on the client).
+- **Static** site = ready-made HTML files; **dynamic** site = pages generated by server-side code from a database.
+
+### MVC (Model-View-Controller)
+- Design pattern separating an application into three parts (Trygve Reenskaug, Smalltalk, 1979):
+  - **Model** = data and business rules (database access, validation); independent of UI.
+  - **View** = presentation/UI (HTML templates) that displays model data.
+  - **Controller** = receives user input/request, calls the model, selects the view; the intermediary.
+- Request flow in web MVC: browser request -> **Controller** -> **Model** (query data) -> data returned -> **Controller** picks **View** -> HTML response.
+- Benefits: separation of concerns, parallel work (designers on views, developers on models), reuse, easy testing. Frameworks: Laravel, CodeIgniter (PHP), Spring MVC, ASP.NET MVC, Django (MTV), Ruby on Rails.
+- MVC is a code-organisation pattern inside the application tier; 3-tier is a deployment/logical structure -- they are not the same.
+
+**⚡ Exam tip:** The browser belongs to the presentation tier in 3-tier; the client never accesses the DB directly in 3-tier; Controller handles input, Model handles data, View handles display.
+
 ## Quick Revision Sheet
 
 - Internet = network of networks; WWW = service on it, invented by Tim Berners-Lee (CERN, 1989-91).
@@ -303,3 +454,7 @@ x.send();
 - Cookie = client-side (~4 KB); session = server-side with session ID.
 - CMS examples: WordPress, Joomla, Drupal; SMTP sends, POP3/IMAP receive; Bcc hides recipients.
 - Responsive design: viewport meta tag + media queries + fluid grids; Bootstrap has 12 columns.
+- jQuery: $(selector).action(); $(document).ready(); it is a JavaScript library. Node.js: JavaScript runtime on V8, event-driven non-blocking; npm + package.json.
+- Git: distributed VCS; init/clone, add -> commit -> push, pull = fetch + merge, branch/merge; GitHub is a hosting service.
+- PHP + MySQL: mysqli_connect(host,user,pass,db), mysqli_query, mysqli_fetch_assoc; prepared statements stop SQL injection; session_start() first, data in $_SESSION, cookie PHPSESSID.
+- GET = data in URL (visible); POST = in body. 2-tier = client + DB; 3-tier = presentation (browser) - logic (web/app server) - data (DB); MVC = Model (data), View (UI), Controller (input).

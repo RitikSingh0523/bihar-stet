@@ -263,6 +263,100 @@ Congestion = too much traffic for the network. Sender uses **congestion window (
 
 ---
 
+## 11. Data Transmission, Line Encoding, Compression and Impairments
+
+### 11.1 Transmission modes
+- **Direction**: **simplex** (one way only: keyboard, TV broadcast), **half duplex** (both ways, one at a time: walkie-talkie), **full duplex** (both at once: telephone, modern Ethernet switch).
+- **Parallel** (n bits on n wires, short distance, e.g. printer/bus, clock skew limits distance) vs **serial** (one bit at a time on one channel, long distance, cheaper).
+- Serial can be **asynchronous** (each byte framed by start bit + stop bit, gaps allowed, extra overhead per byte) or **synchronous** (continuous block of bits with clock synchronisation, no per-byte overhead, faster).
+- **Baseband** = digital signal sent directly on the medium (Ethernet). **Broadband** = signal modulated on a carrier, many channels share the medium (cable TV, ADSL).
+
+### 11.2 Digital data to digital signal (line coding)
+
+| Scheme | Rule | Remarks |
+|---|---|---|
+| **Unipolar NRZ** | 1 = positive voltage, 0 = zero voltage | simple; DC component; long runs lose sync |
+| **NRZ-L** | level encodes the bit (e.g. 1 = high, 0 = low) | long 0s or 1s cause loss of synchronisation |
+| **NRZ-I** | **transition** at start of a 1, no transition for 0 | helps with long runs of 1s only |
+| **RZ** | signal returns to zero in mid-bit | needs 3 levels, more bandwidth |
+| **Manchester** | **transition in the middle of every bit** (direction of transition gives the bit value) | self-clocking; **bandwidth doubled**; used in classic 10 Mbps Ethernet (IEEE 802.3) |
+| **Differential Manchester** | mid-bit transition always (clock); bit value shown by presence or absence of a transition at the **start** of the bit | self-clocking; Token Ring (IEEE 802.5) |
+| **AMI** (bipolar) | 0 = zero level; 1 = alternating +V and -V | no DC component; long 0s still a problem |
+| **B8ZS / HDB3** | AMI with long zero runs replaced by violation patterns | B8ZS (North America), HDB3 (Europe) |
+| **4B/5B** | block code: 4 data bits mapped to 5 code bits (no long zero runs), then NRZ-I | 100BASE-TX / FDDI; 80% efficiency |
+| **8B/10B** | 8 data bits to 10 code bits | Gigabit Ethernet, USB 3.0, SATA |
+
+- **Self-synchronising** codes (Manchester, differential Manchester) carry clock information in the signal; the cost is a doubled signalling rate (2 signal elements per bit). Manchester: baud rate = 2 x bit rate.
+- **Analog data to digital signal**: **PCM** (Pulse Code Modulation) = **sampling** (rate at least 2 x highest frequency, Nyquist sampling theorem) -> **quantisation** -> **encoding**. Voice: 4 kHz band -> 8000 samples/s x 8 bits = **64 kbps** (DS0). **Delta modulation** sends only 1 bit per sample (step up or down).
+- **Digital data to analog signal (modulation)**: **ASK** (amplitude), **FSK** (frequency), **PSK** (phase), **QAM** (amplitude + phase). Bits per baud: BPSK 1, **QPSK 2**, 16-QAM 4, 64-QAM 6. Bit rate = baud rate x bits per signal element. A modem performs modulation and demodulation.
+- **Analog data to analog signal**: **AM**, **FM**, **PM** (radio broadcasts).
+
+### 11.3 Data compression
+- Goal: reduce the number of bits stored or transmitted (applications, or the **presentation layer**). **Compression ratio** = original size / compressed size.
+
+| Type | Idea | Examples |
+|---|---|---|
+| **Lossless** (original exactly recoverable) | remove redundancy | **RLE**, **Huffman**, **LZ77/LZ78/LZW**, ZIP, GZIP, PNG, GIF, FLAC |
+| **Lossy** (some information discarded) | drop details human senses cannot notice | **JPEG** (images), **MP3/AAC** (audio), **MPEG/H.264** (video) |
+
+- **Run-length encoding**: AAAABBBCC becomes 4A3B2C (9 symbols -> 3 pairs). Good for long runs (fax, simple bitmaps).
+- **Huffman coding** (variable-length, prefix-free, optimal for known frequencies): frequent symbols get shorter codes; built by repeatedly merging the two least frequent nodes.
+- **LZW** (dictionary based, dictionary rebuilt by the decoder, not sent): GIF, Unix compress.
+- Text, programs and medical data need **lossless**; photos, music and video tolerate **lossy**.
+
+### 11.4 Transmission impairments
+The received signal differs from the transmitted one because of:
+
+| Impairment | Cause / effect | Remedy |
+|---|---|---|
+| **Attenuation** | signal strength falls with distance (resistance, absorption); measured in **dB**; worse at high frequencies | **amplifiers** (analog) / **repeaters** (digital), equalisers |
+| **Distortion** | signal shape changes because frequency components travel at different speeds (**delay distortion**); causes **inter-symbol interference** | equalisation, shorter links |
+| **Noise** | unwanted extra signal: **thermal** (random electron motion, unavoidable), **induced** (motors, appliances), **crosstalk** (coupling from a neighbouring wire; reduced by twisting/shielding), **impulse** (short spikes: lightning, switching) | shielding, twisting, fibre, error control |
+
+- **Attenuation in dB**: dB = 10 log10(P2/P1). Output half of input = **-3 dB**. A loss of 30 dB means output = 1/1000 of input. dB values simply add along a chain of links and amplifiers.
+- **SNR** = average signal power / average noise power; SNR_dB = 10 log10(SNR). Higher SNR = better quality; Shannon capacity depends on it.
+- Other terms: **jitter** (variation in packet delay, hurts voice/video), **echo**, **bit error rate (BER)** = erroneous bits / total bits.
+- Fibre has the least attenuation and is immune to EMI/crosstalk; UTP suffers most.
+
+**Worked example:** a 10 mW signal passes a line with 20 dB loss: P2 = 10 mW x 10^(-20/10) = 0.1 mW. An amplifier with 20 dB gain restores it to 10 mW.
+
+**⚡ Exam tip:** Manchester = mid-bit transition (self-clocking, double bandwidth, 802.3); NRZ-I changes level on 1; AMI alternates polarity for 1s; PCM = sample, quantise, encode (64 kbps for voice); QPSK carries 2 bits per baud; lossless (ZIP, PNG, Huffman, RLE) vs lossy (JPEG, MP3, MPEG); attenuation is fixed by repeaters/amplifiers, thermal noise cannot be removed; -3 dB = half power.
+
+---
+
+## 12. Congestion Control, ARP, SMTP and FTP in Detail
+
+### 12.1 Congestion control (network layer view)
+- **Congestion** = offered load exceeds network capacity, so queues overflow, delay rises and throughput collapses. **Flow control** is end-to-end between sender and receiver buffer; **congestion control** protects the whole network.
+- **Open-loop** (prevention): good design, **admission control**, **traffic shaping/policing**. **Closed-loop** (reaction using feedback): **backpressure**, **choke packet** (router tells the source to slow down), **implicit signalling** (source infers from loss/delay, as TCP does), **explicit signalling** (ECN, FECN/BECN bits), **load shedding** (drop packets; **RED** = Random Early Detection drops early at random to avoid global synchronisation).
+- **Leaky bucket**: packets enter a bucket (queue) of finite capacity and leave at a **constant rate** regardless of input burstiness; overflow is discarded. Turns bursty traffic into smooth fixed-rate output.
+- **Token bucket**: tokens are generated at rate r into a bucket of capacity C; a packet needs a token to leave; idle time **saves tokens**, so a **burst** up to C can be sent at full speed, after which the rate falls to r. More flexible than leaky bucket (which never allows bursts).
+- Maximum burst length with a token bucket: S = C / (M - r), where M = maximum output (line) rate and r = token rate (M > r). Example: C = 1 MB, r = 2 MB/s, M = 10 MB/s gives S = 1/(10 - 2) = **0.125 s**.
+- TCP congestion control (slow start, AIMD) is the **transport layer** mechanism covered in chapter 8.
+
+### 12.2 ARP in detail
+- **ARP (Address Resolution Protocol)** maps a known **IP address to a MAC address** on the same LAN. The ARP **request** is **broadcast** (destination MAC FF:FF:FF:FF:FF:FF) asking "who has IP x?"; the ARP **reply** is **unicast** from the owner. The result is kept in the **ARP cache** (temporary, expires after a timeout).
+- ARP packet fields: hardware type, protocol type, hardware length (6), protocol length (4), **operation (1 = request, 2 = reply)**, sender MAC and IP, target MAC (all zeros in a request) and IP. It is carried directly in an Ethernet frame (EtherType 0x0806), **not** inside IP; 28 bytes for IPv4 over Ethernet.
+- If the destination is on a **different network**, the host ARPs for its **default gateway's** MAC, not the remote host's.
+- Variants: **Proxy ARP** (router answers on behalf of another host), **Gratuitous ARP** (host announces its own mapping; detects duplicate IPs), **ARP spoofing/poisoning** (fake replies for man-in-the-middle attacks). **RARP** (MAC to IP) is obsolete; **IPv6 uses NDP**, not ARP.
+
+### 12.3 SMTP in detail
+- **SMTP (Simple Mail Transfer Protocol)** is a **push** protocol over **TCP port 25** (587 for submission). Components: **MUA** (mail user agent, e.g. Outlook), **MTA** (mail transfer agent: sending and receiving servers), **MDA** (delivery to mailbox). Mail moves MUA -> MTA -> MTA -> MDA, then the user **pulls** it with **POP3 or IMAP**.
+- Text-based command/reply dialogue: **HELO/EHLO** (greeting), **MAIL FROM:**, **RCPT TO:**, **DATA** (message body, ends with a line containing only a dot), **QUIT**. Reply codes: **220** service ready, **250** OK, **354** start mail input, **221** closing, **550** mailbox unavailable.
+- Phases: connection setup -> mail transfer -> closing. Original SMTP carries only **7-bit ASCII**; **MIME** encodes images/attachments as text (adds Content-Type headers). The DNS **MX** record locates the destination mail server.
+
+### 12.4 FTP in detail
+- **FTP** uses **two TCP connections**: the **control connection** (port **21**, open for the whole session, carries commands and replies in ASCII) and the **data connection** (opened per file transfer or directory listing, port **20** in active mode).
+- **Active mode**: client sends its port with the PORT command and the **server initiates** the data connection from port 20 to the client (trouble with client firewalls/NAT). **Passive mode (PASV)**: server opens a random port and the **client initiates** the data connection (firewall friendly).
+- Commands: **USER, PASS, LIST, CWD, RETR** (download), **STOR** (upload), **PWD, DELE, QUIT**. Reply codes: **220** ready, **230** logged in, **150** opening data connection, **226** transfer complete, **530** not logged in.
+- Data types: ASCII or binary (image); transmission modes: **stream** (default), block, compressed. Credentials travel in **clear text**, so use **SFTP** (over SSH, port 22) or **FTPS** (FTP over TLS). **TFTP** = trivial, UDP port 69, no login.
+
+### 12.5 HTTP versions in brief
+- HTTP/1.0 = **non-persistent** (one TCP connection per object); HTTP/1.1 = **persistent** (default) with pipelining; **HTTP/2** = binary framing, **multiplexing** many requests on one connection, header compression; **HTTP/3** runs over **QUIC (UDP)**.
+- **Idempotent** methods: GET, PUT, DELETE, HEAD (repeating gives the same effect); **POST** is not. GET carries parameters in the URL, POST in the body. Header examples: Host, User-Agent, Content-Type, Set-Cookie/Cookie.
+
+**⚡ Exam tip:** Leaky bucket = constant output rate, no bursts; token bucket = allows bursts. ARP request is a broadcast, reply is unicast; ARP sits inside an Ethernet frame, not IP. SMTP commands: HELO, MAIL FROM, RCPT TO, DATA, QUIT. FTP: control 21 persistent, data 20; passive mode = client opens the data connection.
+
 ## Quick Revision Sheet
 
 1. Full mesh of n nodes has n(n−1)/2 links; each node has n−1 ports.
@@ -290,3 +384,7 @@ Congestion = too much traffic for the network. Sender uses **congestion window (
 23. SMTP sends e-mail; POP3 downloads (and deletes); IMAP keeps mail on server. SSH = secure remote login.
 24. Mobile: 1G analog, 2G GSM digital/SMS, 3G UMTS data, 4G LTE all-IP, 5G NR ~1 ms latency.
 25. Bluetooth: 802.15.1, 2.4 GHz, piconet = 1 master + 7 slaves; Zigbee: 802.15.4, low-power mesh, 250 kbps.
+26. Line codes: Manchester = mid-bit transition (self-clocking, 802.3); NRZ-I flips on 1; AMI alternates for 1s; 4B/5B = 80% efficient. PCM: sample (>= 2f), quantise, encode; voice = 64 kbps.
+27. Compression: lossless (RLE, Huffman, LZW, ZIP, PNG) vs lossy (JPEG, MP3, MPEG). Impairments: attenuation (repeaters), distortion, noise (thermal, crosstalk, impulse); -3 dB = half power.
+28. Congestion control: leaky bucket (constant rate) vs token bucket (bursts); choke packet, backpressure, RED. ARP request broadcast, reply unicast, carried in Ethernet not IP.
+29. SMTP: HELO, MAIL FROM, RCPT TO, DATA, QUIT (replies 220/250/354). FTP: control 21 + data 20; passive mode client opens data connection; credentials in clear text.

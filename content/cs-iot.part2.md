@@ -240,6 +240,145 @@
 
 **⚡ Exam tip:** Babbage = father of the computer; ENIAC (1946) = first electronic general-purpose computer; transistor -> 2nd gen, IC -> 3rd, microprocessor -> 4th. 1 byte = 8 bits, 1 KB = 1024 bytes. Ctrl+Y = redo, Ctrl+H = replace, F12 = Save As.
 
+## 10. IoT Middleware, Modbus, IIoT, Cloud/Mobile in IoT, Security and Privacy
+
+### IoT middleware
+- **Middleware** = software layer between the devices/network (below) and applications (above). It hides hardware and protocol heterogeneity and gives applications a uniform API. It is the **Processing/Middleware layer** of the 5-layer IoT model.
+- Functions: **device management** (registration, firmware update, monitoring), **protocol translation/interoperability** (MQTT, CoAP, HTTP, Modbus), **data collection, filtering and aggregation**, storage, **event processing / rules engine**, **security** (authentication, authorisation), **service discovery**, and exposing APIs to applications.
+- Types by approach: service-oriented (SOA), message-oriented (MQTT/AMQP brokers), database-oriented (sensor network seen as a database), agent-based, and **cloud-based IoT platforms** (AWS IoT Core, Azure IoT Hub).
+- Examples: FIWARE, Eclipse Kura, OpenIoT, Kaa, ThingsBoard, Node-RED (flow-based wiring tool).
+- Middleware challenges: heterogeneity, scalability, real-time response, resource limits, security.
+
+### Modbus (industrial protocol)
+- **Modbus** = serial **master-slave (client-server) request/response** protocol created by **Modicon (1979)** for PLCs. Open, simple, royalty-free; the de-facto industrial standard.
+- One **master** (client) starts every transaction; up to **247 slave** addresses (1-247; 0 = broadcast) on a serial bus.
+- Variants:
+
+| Variant | Medium / encoding |
+|---|---|
+| **Modbus RTU** | binary on serial **RS-485** / RS-232; CRC-16 error check |
+| **Modbus ASCII** | text hex characters on serial; LRC check |
+| **Modbus TCP/IP** | over Ethernet, **TCP port 502**; no CRC (TCP handles it) |
+
+- Data model: **coils** (1-bit read/write outputs), **discrete inputs** (1-bit read-only), **input registers** (16-bit read-only), **holding registers** (16-bit read/write). Function codes: 01 read coils, 03 read holding registers, 05 write single coil, 06 write single register, 16 write multiple registers.
+- Used in SCADA, PLCs, energy meters, building automation. Weakness: **no built-in authentication or encryption** (use VPN/firewall/Modbus-TLS). A gateway converts Modbus to MQTT/OPC UA for the cloud. Other industrial buses: Profibus, CAN, HART, **OPC UA**.
+
+### Cloud computing in IoT
+- IoT devices produce huge data but have little storage/CPU, so the **cloud** gives elastic storage, analytics (big data, ML), device management, dashboards, and pay-per-use (SaaS/PaaS/IaaS for IoT: AWS IoT, Azure IoT Hub, Google Cloud IoT, IBM Watson IoT, ThingSpeak).
+- Flow: Device -> Gateway -> MQTT/HTTP -> Cloud broker -> Storage/Analytics -> Application / command back to actuator.
+- Problem: **latency, bandwidth cost, privacy, dependence on connectivity** -> solved by **edge computing** (process at the device/gateway) and **fog computing** (local nodes between edge and cloud). Cloud = heavy, long-term analytics; edge = fast local decisions.
+- **Sensor-cloud**: sensor data virtualised and offered as a cloud service. **Digital twin** = virtual replica of a physical asset kept in sync using IoT data.
+
+### Mobile computing in IoT
+- The smartphone is the **user interface, controller and sometimes the gateway** of IoT: an app controls the smart home, reads wearables over **BLE/NFC/Wi-Fi**, and uses its own sensors (GPS, accelerometer, camera) as IoT sensors (**mobile crowdsensing**).
+- Cellular IoT: **NB-IoT, LTE-M (Cat-M1)**, 5G mMTC (massive machine-type communication, up to about 1 million devices per km2), URLLC (ultra-reliable low latency); eSIM for devices.
+- Mobile issues: limited battery, intermittent connectivity, handoff, security of apps, bandwidth. **Mobile-edge computing (MEC)** brings compute to the base station.
+
+### Industrial IoT (IIoT)
+- **IIoT** = IoT applied to **industry** (manufacturing, energy, oil and gas, mining, logistics, utilities) - machines, sensors, PLCs/SCADA connected to analytics. Core of **Industry 4.0**.
+- Differences from consumer IoT:
+
+| Aspect | Consumer IoT | IIoT |
+|---|---|---|
+| Aim | convenience | efficiency, uptime, safety |
+| Failure impact | inconvenience | safety hazard, production loss |
+| Latency / reliability | moderate | **real-time, deterministic, very high** |
+| Protocols | Wi-Fi, BLE, MQTT | **Modbus, OPC UA, Profibus, MQTT, TSN**, private 5G |
+| Lifespan | 2-5 years | 10-30 years (legacy "brownfield" machines) |
+| Security need | privacy | **safety + availability first** |
+
+- Key applications: **predictive maintenance** (vibration/temperature sensors predict failure), asset tracking, remote monitoring, quality control, digital twin, smart grid, supply chain, robotics, worker safety.
+- Concepts: **SCADA** (supervisory control and data acquisition), **PLC** (programmable logic controller), **HMI**, **DCS**, **CPS**, edge gateway, **OT vs IT** (operational vs information technology convergence).
+
+### Security and privacy in IoT
+- **CIA triad**: Confidentiality, Integrity, Availability, plus authentication, authorisation, non-repudiation.
+- Layer-wise threats:
+
+| Layer | Attacks |
+|---|---|
+| Perception | physical tampering, node capture, **spoofing/cloning RFID tags**, eavesdropping, side-channel, fake sensor data |
+| Network | **DoS/DDoS**, man-in-the-middle, sniffing, replay, sinkhole/wormhole, jamming |
+| Application | malware, SQL injection, weak/default passwords, insecure APIs, firmware flaws |
+
+- Famous case: **Mirai botnet (2016)** - infected cameras/routers with default passwords and launched DDoS. **Stuxnet** attacked industrial PLCs.
+- Countermeasures: strong unique credentials, **encryption (AES; TLS for MQTT on 8883, DTLS for CoAP)**, secure boot, signed **OTA firmware updates**, lightweight cryptography (ECC), device identity/PKI certificates, network segmentation, firewalls/IDS, secure gateway, regular patching, blockchain for device identity.
+- **Privacy**: IoT collects personal data (location, health, habits). Principles: data minimisation, consent, anonymisation, encryption, user control. Law: India **DPDP Act 2023**, EU **GDPR**; IT Act 2000.
+- Resource-constrained devices cannot run heavy security, so lightweight protocols are needed.
+
+**⚡ Exam tip:** Middleware = hides heterogeneity, sits between devices and apps. Modbus = master-slave, RTU/ASCII/TCP (port 502), 247 slaves, no security. IIoT = Industry 4.0 for factories (predictive maintenance, SCADA/PLC). Mirai = default-password DDoS botnet. Edge solves cloud latency.
+
+## 11. E-Commerce Framework, Internet Infrastructure, Network Security and Payment Systems
+
+### E-commerce framework and applications
+- **Framework layers** (Kalakota-Whinston): Applications (B2B, B2C, supply-chain, e-governance, e-banking, e-learning, e-ticketing, online auction) on top of **common business services** (security, payments, directories) -> **messaging and information distribution** (EDI, e-mail, HTTP) -> **multimedia content and network publishing** (HTML, web) -> **network infrastructure** (Internet, telecom, cable, wireless). Supported by **public policy, legal and technical standards**.
+- Applications: online retail, online banking, e-ticketing (IRCTC), online auctions, e-learning, e-governance, digital content (OTT, music), travel booking, stock trading, supply-chain management.
+- Revenue models: sales, advertising, subscription, commission/affiliate, freemium. **Brick-and-click** = physical + online. **m-commerce** = commerce on mobile devices.
+
+### Internet as infrastructure
+- Internet = global TCP/IP packet-switched network of networks, the backbone of e-commerce. Parts: ISPs (Tier 1/2/3), **IXPs**, backbone, DNS, web servers, CDNs, data centres/cloud.
+- **Intranet** = private network of an organisation using Internet technology; **Extranet** = intranet extended to trusted partners (suppliers, customers), used in B2B/EDI; **VPN** = encrypted tunnel over the public Internet (IPsec, SSL VPN).
+- Key services: **DNS** (name to IP), **HTTP/HTTPS**, SMTP/IMAP mail, FTP, web hosting, **CDN** (content delivered from servers near the user), cloud hosting, domain registration.
+- Digital certificate (X.509) from a **CA** binds a public key to an identity; the framework is **PKI**.
+
+### Firewalls and network security
+- **Firewall** = hardware/software placed between a trusted internal network and an untrusted network (Internet) that **filters traffic by rules**; blocks unauthorised access (it does not remove viruses already inside, nor stop insiders).
+
+| Type | Works at | Idea |
+|---|---|---|
+| **Packet-filtering** | network/transport layer | allow/deny by source/destination IP, port, protocol; stateless; fast |
+| **Stateful inspection** | network + transport | tracks connection state (TCP handshake) |
+| **Circuit-level gateway** | session layer | validates sessions (e.g., SOCKS) |
+| **Application-level gateway / proxy** | application layer | inspects content (HTTP, FTP); most secure, slower |
+| **NGFW** | all | deep packet inspection, IPS, application awareness |
+
+- **DMZ** (demilitarised zone) = separate subnet holding public servers (web, mail) between two firewalls. **IDS** detects intrusion (alerts), **IPS** blocks it. **Proxy server** hides internal hosts; **NAT** hides private IPs.
+- Security goals: confidentiality, integrity, authentication, **non-repudiation**, availability.
+- Cryptography: **symmetric** (one shared key; DES, 3DES, AES; fast), **asymmetric** (public/private pair; RSA, ECC; key exchange, signatures), **hash** (MD5, SHA-256; integrity), **digital signature** (hash encrypted with the sender's private key: authentication + integrity + non-repudiation). Typical hybrid: asymmetric to exchange a session key, symmetric for the data.
+- Protocols: **SSL/TLS** (https, 443), **SET**, **IPsec**, S/MIME and PGP (email), **SSH** (22).
+- Threats: **phishing, spoofing, sniffing, man-in-the-middle, DoS/DDoS, SQL injection, malware (virus, worm, trojan, ransomware), spyware, brute force**, cross-site scripting.
+- Defences: firewall, antivirus, IDS/IPS, encryption, strong passwords, 2FA/OTP, patching, backups, secure coding.
+
+### Payment systems
+- **Smart card**: plastic card with an embedded **microprocessor chip** (can compute, store data, run cryptography) vs a magnetic stripe (storage only). **EMV** (Europay-Mastercard-Visa) chip standard. Types: **contact** (inserted, ISO 7816), **contactless** (NFC, ISO 14443, 13.56 MHz). Uses: bank chip cards, SIM, ID cards, transit cards, e-passport. Needs PIN; much harder to clone than a magstripe card.
+- **Credit card flow**: cardholder -> merchant -> **payment gateway** -> **acquiring bank** (merchant's bank) -> **card network** (Visa/Mastercard/RuPay) -> **issuing bank** (cardholder's bank) -> authorisation, then settlement. Five parties: cardholder, merchant, issuer, acquirer, network. Bank income: interest, **MDR** (merchant discount rate), annual fees. Credit = pay later within credit limit and billing cycle.
+- **Debit card** deducts instantly; **prepaid/gift card** has loaded value; **charge card** must be paid in full each month.
+- **Digital tokens (electronic tokens)**: digital representation of value that can be exchanged. Two kinds:
+  - **Cash-like (prepaid) tokens**: e-cash, e-wallet balance, bearer tokens such as **DigiCash / Ecash** (David Chaum, blind signatures give anonymity), Mondex. The holder pays from stored value; the bank must prevent **double spending**.
+  - **Check-like (postpaid) tokens**: **e-cheque**, NetBill, NetCheque; a payment instruction cleared later through the bank.
+  - **Payment tokenization** (card-network tokens) replaces the card number (PAN) with a random token so merchants never store the real number. **CBDC (e-rupee)** is a central-bank digital token.
+- Requirements for e-payment: security, authentication, integrity, non-repudiation, **anonymity** (for cash), divisibility, convertibility, low transaction cost.
+- Other systems: e-wallet, net banking, UPI, e-cheque, micropayments (very small amounts, e.g., Millicent).
+
+### EDI (Electronic Data Interchange)
+- Structured **computer-to-computer exchange of business documents** (purchase order, invoice, shipping notice, payment advice) in a **standard format**, with no manual re-keying; reduces errors, cost and cycle time.
+- Standards: **ANSI X12** (North America), **UN/EDIFACT** (international, ISO 9735), also TRADACOMS, HL7 (health).
+- Components: **trading partners**, **EDI translator** (internal format <-> standard), communication link (**VAN** = value-added network, AS2/FTP/Internet EDI), mapping software. A document is built from **segments** and **data elements**.
+- **Benefits**: speed, accuracy, lower cost, supports **JIT** inventory. **Drawbacks**: setup cost, rigid standards, small firms excluded (hence XML/web EDI). Used in B2B, customs, banking (**EFT**), retail.
+
+### Digital libraries
+- **Digital library** = organised collection of digital objects (books, journals, theses, audio, video, images) with **metadata, search and retrieval, preservation, and access management**, accessible over a network. Differs from a plain website by curation, standards and long-term preservation.
+- Features: full-text search, **metadata** (Dublin Core, MARC), **persistent identifiers (DOI, handle)**, OCR digitisation, access rights/DRM, **OAI-PMH** for harvesting, interoperability, remote 24x7 access.
+- Examples: **NDLI** (National Digital Library of India, IIT Kharagpur), **INFLIBNET / N-LIST**, **e-ShodhSindhu**, **Shodhganga** (theses), **SWAYAM**, DELNET, Project Gutenberg, Internet Archive, JSTOR, IEEE Xplore; open-source software DSpace, EPrints, Greenstone.
+- Issues: copyright, digital preservation (format obsolescence), cost, digital divide.
+
+### Corporate data warehouses
+- **Data warehouse** (Bill Inmon) = **subject-oriented, integrated, time-variant, non-volatile** collection of data supporting **management decisions**. Holds historical data from many operational (OLTP) sources.
+
+| OLTP (operational DB) | Data warehouse (OLAP) |
+|---|---|
+| day-to-day transactions, insert/update | analysis, read-mostly queries |
+| current, detailed data | historical, summarised data |
+| normalised, many small queries | denormalised (**star/snowflake schema**), complex queries |
+| application-oriented | subject-oriented |
+
+- **ETL** = Extract, Transform, Load (cleaning, integration) from sources into the warehouse. **Data mart** = small department-level subset. **Metadata** describes the data. **ODS** = operational data store.
+- **Star schema**: central **fact table** (measures, e.g., sales amount) surrounded by **dimension tables** (time, product, customer, store); snowflake = normalised dimensions.
+- **OLAP operations**: **roll-up** (aggregate up a hierarchy), **drill-down**, **slice** (one dimension fixed), **dice** (sub-cube), **pivot** (rotate). Types: ROLAP, MOLAP, HOLAP. **Data cube** = multidimensional view.
+- **Data mining** (association, clustering, classification) discovers patterns in the warehouse: CRM, fraud detection, market-basket analysis, targeted offers in e-commerce.
+- Corporate use: sales trend analysis, customer segmentation, inventory forecasting, **business intelligence (BI)**, dashboards.
+
+**⚡ Exam tip:** Firewall = filters traffic between trusted and untrusted networks (packet filter at network layer; proxy at application layer). Smart card = embedded microprocessor (EMV). Acquirer = merchant's bank, issuer = cardholder's bank. Digital signature = non-repudiation. EDI standards = ANSI X12 and UN/EDIFACT. Warehouse = subject-oriented, integrated, time-variant, non-volatile.
+
 ## Quick Revision Sheet
 
 1. IoT term coined by **Kevin Ashton** (MIT Auto-ID Center, 1999).
@@ -267,3 +406,10 @@
 23. Green computing = energy saving, Energy Star, e-waste recycling, virtualization. IT Act 2000 governs cyber law in India.
 24. Generations: vacuum tube -> transistor -> IC -> microprocessor (VLSI) -> AI (ULSI). Babbage = father of computer; Ada Lovelace = first programmer; ENIAC 1946; UNIVAC first commercial.
 25. 1 byte = 8 bits; 1 KB = 1024 B; 1 nibble = 4 bits; n bits = 2ⁿ values. Ctrl+Y redo, Ctrl+H replace, F12 Save As, Ctrl+Z undo.
+26. IoT middleware = layer between devices and apps (device management, protocol translation, rules engine). Modbus = master-slave, RTU/ASCII/TCP (port 502), up to 247 slaves, no built-in security.
+27. IIoT = IoT for industry/Industry 4.0 (SCADA, PLC, predictive maintenance); needs real-time reliability and safety. Edge/fog fixes cloud latency; NB-IoT/LTE-M/5G mMTC for cellular IoT.
+28. IoT security: CIA triad; Mirai = default-password DDoS botnet; use TLS/DTLS, secure OTA updates, lightweight crypto. Privacy laws: DPDP Act 2023, GDPR.
+29. E-commerce framework: applications -> common services -> messaging (EDI, mail) -> content publishing -> network infrastructure. Intranet = private, extranet = partners, VPN = encrypted tunnel.
+30. Firewall types: packet filter (network layer), stateful, circuit-level, application proxy (most secure), NGFW. DMZ holds public servers. Digital signature = authentication + integrity + non-repudiation.
+31. Smart card = embedded microprocessor chip (EMV, ISO 7816; contactless ISO 14443). Credit card: acquirer = merchant's bank, issuer = customer's bank. Digital tokens: cash-like (e-cash, blind signature, anonymity) vs check-like (e-cheque).
+32. EDI standards ANSI X12 and UN/EDIFACT; VAN; supports JIT. Digital library: metadata, DOI, NDLI, INFLIBNET, Shodhganga. Data warehouse = subject-oriented, integrated, time-variant, non-volatile; ETL; star schema; OLAP roll-up/drill-down/slice/dice/pivot.

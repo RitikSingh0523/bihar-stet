@@ -36,16 +36,17 @@
   "sub": "Malware"
  },
  {
-  "q": "In India, a registered trade mark is initially valid for",
+  "q": "In the standard phases of hacking, using a tool such as Nmap to find open ports and running services belongs to the phase of",
   "options": [
-   "5 years, non-renewable",
-   "20 years, non-renewable",
-   "Lifetime of the owner",
-   "10 years, renewable"
+   "covering tracks",
+   "scanning",
+   "maintaining access",
+   "reporting"
   ],
-  "answer": 3,
-  "exp": "Trade mark registration lasts 10 years and can be renewed indefinitely for further 10-year periods.",
-  "sub": "Copyright and IPR"
+  "answer": 1,
+  "exp": "Phases: reconnaissance, scanning, gaining access, maintaining access, covering tracks; port scanning is the scanning phase.",
+  "sub": "Ethical hacking",
+  "v": 2
  },
  {
   "q": "How does an Intrusion Prevention System (IPS) differ from an Intrusion Detection System (IDS)?",
@@ -144,16 +145,17 @@
   "sub": "Firewalls"
  },
  {
-  "q": "A full backup is taken on Sunday and a differential backup each night from Monday to Saturday. The system fails on Friday morning. How many backup sets are needed to restore it?",
+  "q": "In an ARP spoofing attack on a LAN, the attacker",
   "options": [
-   "2",
-   "1",
-   "4",
-   "5"
+   "floods the server with TCP SYN packets",
+   "encrypts all files and demands payment",
+   "associates his own MAC address with the IP address of another host such as the gateway",
+   "guesses passwords by trying a dictionary"
   ],
-  "answer": 0,
-  "exp": "Only the Sunday full backup and Thursday night's differential (all changes since Sunday) are needed.",
-  "sub": "Backup and recovery"
+  "answer": 2,
+  "exp": "Forged ARP replies poison ARP caches so traffic passes through the attacker, enabling man-in-the-middle attacks.",
+  "sub": "Network attacks",
+  "v": 2
  },
  {
   "q": "How many different passwords of exactly 3 lowercase letters (a-z, repetition allowed) are possible?",
@@ -228,16 +230,17 @@
   "sub": "Symmetric cryptography"
  },
  {
-  "q": "According to netiquette, typing an entire message in capital letters is generally regarded as",
+  "q": "A firewall policy that blocks all traffic except what is explicitly permitted is called",
   "options": [
-   "Politeness",
-   "Shouting",
-   "A formal e-mail format",
-   "A form of encryption"
+   "default deny",
+   "default allow",
+   "promiscuous mode",
+   "open relay"
   ],
-  "answer": 1,
-  "exp": "All capitals is read as shouting in online communication.",
-  "sub": "Digital ethics"
+  "answer": 0,
+  "exp": "Default deny (whitelist) is safer than default allow: anything not matched by an allow rule is dropped.",
+  "sub": "Firewalls",
+  "v": 2
  },
  {
   "q": "Alice wants to send Bob a confidential message using public-key cryptography. She should encrypt it with",
@@ -276,16 +279,17 @@
   "sub": "Hashing"
  },
  {
-  "q": "Cyber terrorism under Section 66F of the IT Act is punishable with",
+  "q": "Which default TCP port is used by the Secure Shell (SSH) protocol?",
   "options": [
-   "Imprisonment up to 3 years",
-   "Imprisonment up to 7 years",
-   "A fine only",
-   "Imprisonment which may extend to life"
+   "23",
+   "25",
+   "80",
+   "22"
   ],
   "answer": 3,
-  "exp": "Section 66F prescribes imprisonment that may extend to imprisonment for life.",
-  "sub": "IT Act 2000"
+  "exp": "SSH uses port 22; Telnet uses 23, SMTP 25, HTTP 80.",
+  "sub": "Network security",
+  "v": 2
  },
  {
   "q": "In disaster recovery planning, a 'hot site' is",
@@ -384,16 +388,17 @@
   "sub": "DoS attacks"
  },
  {
-  "q": "In India, a patent is granted for a term of",
+  "q": "Unlike a vulnerability assessment, a penetration test",
   "options": [
-   "20 years from the date of filing",
-   "10 years from grant",
-   "14 years from grant",
-   "25 years from publication"
+   "only lists installed software versions",
+   "actively exploits the weaknesses to demonstrate their real impact",
+   "is performed without any authorisation",
+   "never touches the live system or its network"
   ],
-  "answer": 0,
-  "exp": "Under the Patents Act, 1970 the term is 20 years from the filing date.",
-  "sub": "Copyright and IPR"
+  "answer": 1,
+  "exp": "A vulnerability assessment identifies weaknesses; a penetration test goes further and exploits them under authorisation.",
+  "sub": "Ethical hacking",
+  "v": 2
  },
  {
   "q": "Which kind of software is available free of cost but its source code is not made available?",
@@ -444,16 +449,17 @@
   "sub": "Malware"
  },
  {
-  "q": "Section 43A of the IT Act (inserted in 2008) deals with",
+  "q": "Network Address Translation (NAT) helps security mainly because it",
   "options": [
-   "Punishment for cyber terrorism",
-   "Compensation when a body corporate fails to protect sensitive personal data",
-   "Cheating by personation using a computer resource",
-   "Publishing obscene material in electronic form"
+   "encrypts the payload of every packet",
+   "removes viruses from downloads",
+   "hides the internal private IP addresses behind a public address",
+   "verifies digital certificates"
   ],
-  "answer": 1,
-  "exp": "Section 43A makes a body corporate liable to pay compensation for negligence in protecting sensitive personal data.",
-  "sub": "IT Act 2000"
+  "answer": 2,
+  "exp": "With NAT, outsiders see only the router's public IP and cannot directly address internal hosts.",
+  "sub": "Network security",
+  "v": 2
  },
  {
   "q": "Which of the following is a passive attack?",

@@ -1,4 +1,4 @@
-// Study topics shown in /learn. `id` matches content/<id>.md (or <id>.part*.md).
+// Study topics shown in /learn (Part I follows the order of the official syllabus units). `id` matches content/<id>.md (or <id>.part*.md).
 // `marks` = approx. questions per paper; `labels` = topic labels used in the mock tests (see scripts/build-tests.mjs).
 export const EXAM_DATE = new Date('2026-11-07T00:00:00');
 export const PLAN_START = new Date('2026-10-25T00:00:00');
@@ -13,19 +13,19 @@ export const TOPICS = [
   { id: 'cs-logic', group: 'cs', title: 'Digital Logic & Number Systems', marks: 6, icon: '🔢', labels: ['Digital Logic & Number Systems'] },
   { id: 'cs-coa', group: 'cs', title: 'Computer Organization', marks: 6, icon: '🧮', labels: ['Computer Organization'] },
   { id: 'cs-micro', group: 'cs', title: 'Microprocessor & Microcontroller', marks: 5, icon: '🔌', labels: ['Microprocessor & Microcontroller'] },
+  { id: 'cs-ds', group: 'cs', title: 'Data Structures', marks: 8, icon: '🌳', labels: ['Data Structures'] },
+  { id: 'cs-programming', group: 'cs', title: 'Python & C Programming', marks: 10, icon: '🐍', labels: ['Python', 'C Programming'] },
+  { id: 'cs-algo', group: 'cs', title: 'Algorithms (DAA)', marks: 6, icon: '⚙️', labels: ['Algorithms (DAA)'] },
   { id: 'cs-os', group: 'cs', title: 'Operating Systems', marks: 8, icon: '🖥️', labels: ['Operating Systems'] },
   { id: 'cs-dbms', group: 'cs', title: 'DBMS & SQL', marks: 8, icon: '🗄️', labels: ['DBMS & SQL'] },
   { id: 'cs-net', group: 'cs', title: 'Computer Networks', marks: 7, icon: '🌐', labels: ['Computer Networks'] },
-  { id: 'cs-sec', group: 'cs', title: 'Security & Cyber Law', marks: 5, icon: '🔐', labels: ['Security & Cyber Law'] },
-  { id: 'cs-oop', group: 'cs', title: 'OOP (C++ & Java)', marks: 7, icon: '🧩', labels: ['OOP (C++/Java)'] },
-  { id: 'cs-ds', group: 'cs', title: 'Data Structures', marks: 8, icon: '🌳', labels: ['Data Structures'] },
-  { id: 'cs-algo', group: 'cs', title: 'Algorithms (DAA)', marks: 6, icon: '⚙️', labels: ['Algorithms (DAA)'] },
-  { id: 'cs-toc', group: 'cs', title: 'TOC & Compiler Design', marks: 6, icon: '📐', labels: ['TOC & Compiler Design'] },
-  { id: 'cs-programming', group: 'cs', title: 'Python & C Programming', marks: 10, icon: '🐍', labels: ['Python', 'C Programming'] },
-  { id: 'cs-web', group: 'cs', title: 'Web Technologies', marks: 5, icon: '🕸️', labels: ['Web Technologies'] },
   { id: 'cs-se', group: 'cs', title: 'Software Engineering', marks: 4, icon: '🛠️', labels: ['Software Engineering'] },
+  { id: 'cs-oop', group: 'cs', title: 'OOP (C++ & Java)', marks: 7, icon: '🧩', labels: ['OOP (C++/Java)'] },
+  { id: 'cs-web', group: 'cs', title: 'Web Technologies', marks: 5, icon: '🕸️', labels: ['Web Technologies'] },
+  { id: 'cs-toc', group: 'cs', title: 'TOC & Compiler Design', marks: 6, icon: '📐', labels: ['TOC & Compiler Design'] },
   { id: 'cs-iot', group: 'cs', title: 'IoT, Cloud, E-Commerce & ICT', marks: 5, icon: '☁️', labels: ['IoT, Cloud, E-Commerce & ICT'] },
   { id: 'cs-ai', group: 'cs', title: 'AI, ML, Image Processing & Graphics', marks: 4, icon: '🤖', labels: ['AI, ML & Image Processing'] },
+  { id: 'cs-sec', group: 'cs', title: 'Security & Cyber Law', marks: 5, icon: '🔐', labels: ['Security & Cyber Law'] },
   { id: 'tch-a', group: 'tch', title: 'Educational Psychology & Foundations', marks: 15, icon: '🧠', labels: ['Educational Psychology'] },
   { id: 'tch-b', group: 'tch', title: 'Teaching Methods, Assessment & ICT', marks: 15, icon: '👩‍🏫', labels: ['Teaching Methods & Assessment'] },
   { id: 'gk-evs', group: 'gen', title: 'GK (India & Bihar) & Environment', marks: 10, icon: '🌏', labels: ['General Knowledge', 'Environmental Science'] },

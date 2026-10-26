@@ -244,6 +244,44 @@ Security: discrete logarithm problem. Elliptic Curve Cryptography (ECC) gives sa
 
 **⚡ Exam tip:** Copyright = life + 60 yrs; patent = 20 yrs; trademark = 10 yrs renewable. GPL = copyleft; MIT/BSD/Apache = permissive. Free software = freedom (Stallman), freeware = price only.
 
+## 10. Cyber Security Fundamentals and Network Defence
+
+### Core vocabulary
+- **Asset** (what is worth protecting), **vulnerability** (weakness, e.g. unpatched software), **threat** (potential danger, e.g. a hacker or malware), **exploit** (code/technique that uses a vulnerability), **attack** (an actual attempt), **risk** = threat × vulnerability × impact, **countermeasure/control** (reduces risk).
+- **Attack surface** = all points where an attacker can try to enter. **Attack vector** = the route used (email attachment, open port, USB drive, web form).
+- **Security services:** confidentiality, integrity, availability, **authentication**, **authorisation**, **non-repudiation**, **accountability/auditing** (AAA = Authentication, Authorisation, Accounting).
+
+### Types of security controls
+
+| Type | Purpose | Examples |
+|---|---|---|
+| **Preventive** | stop an incident | firewall, encryption, locks, access control, training |
+| **Detective** | discover an incident | IDS, log monitoring, CCTV, audits |
+| **Corrective/recovery** | repair after an incident | backups, patching, incident response, disaster recovery |
+| **Deterrent** | discourage attackers | warning banners, legal penalties |
+
+- By nature: **administrative** (policies, awareness), **technical** (software/hardware), **physical** (guards, doors, biometrics).
+- **Defence in depth** = several layers of controls (physical, network, host, application, data), so that one failure does not expose everything. **Zero trust** = "never trust, always verify": authenticate and authorise every request, even inside the network.
+
+### Ethical hacking and penetration testing
+- A **white-hat** (ethical) hacker tests with written permission; **black-hat** attacks illegally; **grey-hat** works without permission but without malicious intent. **Script kiddie** uses ready-made tools; **hacktivist** has political motives.
+- Phases of an attack / penetration test: **1 Reconnaissance** (footprinting; passive or active) → **2 Scanning** (ports, services, vulnerabilities - e.g. Nmap) → **3 Gaining access** (exploitation) → **4 Maintaining access** (backdoors, rootkits) → **5 Covering tracks** (clearing logs). A pen-test then ends with a **report**.
+- **Vulnerability assessment** only finds and lists weaknesses; **penetration testing** actively exploits them to prove impact. Black-box (no knowledge), white-box (full knowledge), grey-box testing.
+
+### Network security basics
+- **Port scanning** finds open ports/services (Nmap); **packet sniffing** captures traffic (Wireshark) - harmless on encrypted traffic; **ARP spoofing/poisoning** links the attacker's MAC to the gateway IP to become a man-in-the-middle on a LAN; **DNS spoofing/cache poisoning** returns fake IP answers (pharming); **MAC flooding**, **session hijacking**, **IP spoofing**, **ping of death**, **smurf** (ICMP broadcast amplification).
+- **Common ports:** FTP 21, SSH 22, Telnet 23, SMTP 25, DNS 53, HTTP 80, POP3 110, IMAP 143, HTTPS 443, RDP 3389. Secure rule: close unused ports, replace Telnet/FTP/HTTP with SSH/SFTP/HTTPS.
+- **NAT** (Network Address Translation) hides internal private addresses behind one public IP, giving some protection. A **proxy server** relays requests for clients (hides client IP, caches, filters content); a **reverse proxy** protects servers. **Web application firewall (WAF)** filters HTTP traffic to stop SQL injection and XSS. **Network segmentation/VLANs** and a **DMZ** limit the spread of an attack.
+- **Firewall rule evaluation:** rules are checked top-down; first match wins; the last rule is normally **default deny** (block everything not explicitly allowed - safer than default allow). Ingress filtering = inbound, egress filtering = outbound.
+- **Endpoint protection:** antivirus (signature + heuristic), anti-malware, host firewall, EDR, disk encryption (BitLocker), **patch management** (apply updates promptly; a **zero-day** has no patch yet), **hardening** (remove unused services, change default passwords).
+
+### Cyber hygiene and incident response
+- Safe practice: strong unique passwords + password manager, enable MFA, update software, backup (3-2-1), avoid public Wi-Fi without VPN, check HTTPS and sender before clicking, do not install pirated software, review app permissions, log out of shared computers, report phishing.
+- **Incident response lifecycle (NIST):** Preparation → Detection and analysis → Containment, eradication and recovery → Post-incident activity (lessons learned). **Digital forensics** preserves evidence with a **chain of custody**; work on a copy (disk image) and verify with a hash.
+- **Honeypot** = decoy system to study attackers; **SIEM** = collects and correlates logs from many devices; **SOC** = team monitoring security 24x7.
+
+**⚡ Exam tip:** Risk = threat × vulnerability × impact; preventive = firewall, detective = IDS, corrective = backup. Attack phases: recon → scan → gain access → maintain → clear tracks. ARP spoofing = LAN MITM; default-deny is the safe firewall policy; WAF protects web apps; zero trust = never trust, always verify.
+
 ## Quick Revision Sheet
 - CIA = Confidentiality, Integrity, Availability; DoS/DDoS hits availability; encryption protects confidentiality; hashing protects integrity.
 - Passive attacks (sniffing, traffic analysis) don't alter data; active ones (replay, masquerade, DoS, MITM) do.
@@ -268,3 +306,6 @@ Security: discrete logarithm problem. Elliptic Curve Cryptography (ECC) gives sa
 - CERT-In = national nodal agency for cyber incidents; cyber crime helpline 1930; portal cybercrime.gov.in.
 - Copyright life+60 yrs, patent 20 yrs, trademark 10 yrs renewable; plagiarism = passing off others' work as own.
 - GPL = copyleft; MIT, BSD, Apache = permissive; freeware ≠ free software; Creative Commons for content.
+- Risk = threat x vulnerability x impact; controls: preventive (firewall), detective (IDS, logs), corrective (backup, patch); defence in depth; zero trust = never trust, always verify.
+- Attack phases: reconnaissance, scanning (Nmap), gaining access, maintaining access, covering tracks; vulnerability assessment lists weaknesses, penetration test exploits them.
+- ARP spoofing = LAN man-in-the-middle; DNS spoofing = pharming; ports: SSH 22, Telnet 23, SMTP 25, DNS 53, HTTP 80, HTTPS 443; firewall default-deny; NAT hides private IPs; WAF guards web apps; incident response: prepare, detect, contain/eradicate/recover, lessons learned.

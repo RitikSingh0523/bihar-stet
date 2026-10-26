@@ -170,6 +170,48 @@ Binary search, merge sort, quick sort, tree traversals, DFS
 
 **⚡ Exam tip:** Naive Fibonacci is exponential (2ⁿ), Hanoi needs 2ⁿ − 1 moves, T(n) = 2T(n/2) + n is n log n — memorise these three.
 
+## 12. Syllabus Add-ons: Data Types, Sparse Matrices, Polynomials, Backtracking, Worked Sorts
+
+### Data types and ADTs
+- **Data type** = set of values + operations + storage size. **Built-in (primitive)**: char, int, float, double, boolean. **Derived**: array, pointer, function. **User-defined**: struct, union, enum, typedef, class. **void** = no value.
+- Typical C sizes: char 1 byte, short 2, int 4, float 4, long 4 (Windows) or 8 (Linux 64-bit), double 8. Signed n-bit range = −2^(n−1) … 2^(n−1) − 1 (32-bit int: −2147483648 … 2147483647); unsigned = 0 … 2ⁿ − 1.
+- **ADT vs data type**: a data type fixes the representation; an ADT specifies only the operations (interface), and the user cannot see the representation (information hiding). Stack ADT: push, pop, peek, isEmpty, isFull. Queue ADT: enqueue, dequeue. List ADT: insert, delete, search, traverse.
+- Algorithm design techniques: brute force, divide and conquer, greedy, dynamic programming, backtracking, branch and bound, randomised, approximation.
+
+### Sparse matrices (triplet form)
+- A matrix with few non-zero elements. Store a header row (rows, columns, t = number of non-zeros) followed by t triplets (row, col, value) → **(t + 1) rows × 3 columns**.
+- Worked: 4 × 5 matrix with non-zeros A[0][1] = 3, A[1][3] = 7, A[3][0] = 5 → triplet array: (4,5,3), (0,1,3), (1,3,7), (3,0,5).
+- Triplet form saves memory only when 3(t + 1) < m × n. A 100 × 100 matrix with 30 non-zeros needs 93 cells instead of 10000.
+- **Transpose**: swap row and col of each triplet and re-order by the new row. Simple method O(columns × t); **fast transpose** (count entries per column, then place directly) **O(columns + t)**.
+- Linked (orthogonal-list) representation: each non-zero node has row, col, value, right pointer, down pointer. Adding two sparse matrices by merging their triplet lists: O(t1 + t2).
+
+### Polynomial operations on linked lists
+- Node = (coefficient, exponent, next); keep terms in **decreasing exponent** order. Zero terms are not stored.
+- Example: 5x³ + 4x + 2 is the list (5,3) → (4,1) → (2,0).
+- **Addition** (merge): compare exponents of the two current nodes — the larger exponent is copied; equal exponents add the coefficients (drop the node if the sum is 0); then append the leftover list. Time **O(m + n)** for m and n terms.
+- Worked: (3x² + 2x) + (4x² + 5) = 7x² + 2x + 5.
+- **Multiplication**: multiply every term of P by every term of Q (m × n products) and combine like terms. The product has at most m × n terms.
+- **Evaluation**: Horner's rule, a_n x^n + … + a_0 = (…((a_n x + a_{n−1}) x + …) x + a_0), needs n multiplications and n additions.
+- A circular list with a header (dummy) node is often used so the end test is simple.
+
+### Backtracking in data-structure problems
+- Try a choice, recurse, and **undo** the choice if it leads to a dead end. Recursion supplies the implicit stack.
+- Template: solve(state): if complete → record; for each choice: if safe → make it, solve(next), undo it.
+- Classic problems: N-Queens (4 → 2 solutions, 8 → 92), rat in a maze, sudoku, subset sum, permutations (n! leaves), Hamiltonian cycle, graph colouring.
+- Rat in a maze: from (r, c) try down, right, up, left; mark the cell as part of the path and recurse; if all four fail, unmark and return false (backtrack). Worst-case time is exponential.
+- Generating all permutations of n distinct items visits n! leaves; all subsets: 2ⁿ.
+
+### Counting sort and bucket sort worked
+- Counting sort of 4 2 2 8 3 3 1 (k = 8): counts for 1..8 = 1,2,2,1,0,0,0,1 → cumulative = 1,3,5,6,6,6,6,7. Scan the input **right to left**, put each x at position cumulative[x] − 1 and decrement it → output 1 2 2 3 3 4 8 (stable).
+- Time O(n + k), extra space O(n + k); poor when k is much larger than n.
+- Bucket sort of 0.78, 0.17, 0.39, 0.26, 0.72, 0.94, 0.21 with 10 buckets by floor(10x): b1 = 0.17; b2 = 0.26, 0.21 → 0.21, 0.26; b3 = 0.39; b7 = 0.78, 0.72 → 0.72, 0.78; b9 = 0.94 → result 0.17 0.21 0.26 0.39 0.72 0.78 0.94. Average O(n) for uniform data; worst O(n²) if all keys fall in one bucket.
+
+### B-tree insertion worked
+- Order 3 (max 2 keys per node), insert 10, 20, 30, 40, 50: after 30 the root [10,20,30] overflows → split, median 20 goes up: root [20], leaves [10] [30]. Insert 40 → [30,40]. Insert 50 → [30,40,50] overflows → median 40 goes up: root [20,40], leaves [10] [30] [50]. Height grows only when the root splits.
+- Order 5, insert 10, 20, 30, 40, 50: the fifth key makes [10,20,30,40,50] overflow → split at median 30: root [30], children [10,20] and [40,50].
+
+**⚡ Exam tip:** Triplet storage = 3 × (t + 1) cells; polynomial addition by linked-list merge = O(m + n); backtracking = DFS + undo; counting sort fills the output from the right to stay stable.
+
 ## Quick Revision Sheet
 
 - ADT = values + operations, implementation hidden; linear: array, list, stack, queue; non-linear: tree, graph.
@@ -194,3 +236,5 @@ Binary search, merge sort, quick sort, tree traversals, DFS
 - Sorting: bubble/insertion best O(n); selection always n(n−1)/2 comparisons; merge O(n log n) + O(n) space, stable; quick worst O(n²); heap O(1) space; counting O(n+k) stable.
 - Binary search: sorted array only, max ⌊log₂ n⌋ + 1 comparisons; linear search O(n).
 - Recursion: needs base case, uses call stack; naive fib O(2ⁿ); Hanoi 2ⁿ − 1; T(n)=2T(n/2)+n → O(n log n).
+- Triplet storage of a sparse matrix needs 3(t + 1) cells; fast transpose O(columns + t); polynomial addition by merging linked lists O(m + n); Horner's rule evaluates degree n with n multiplications.
+- Backtracking = recursion + undo (N-Queens 4→2, 8→92); counting sort scans input right to left (stable) with cumulative counts; bucket sort average O(n), worst O(n²); B-tree splits push the median key up.

@@ -48,16 +48,17 @@
   "sub": "Malware"
  },
  {
-  "q": "Compared with a differential backup, an incremental backup",
+  "q": "Which is the correct order of the incident response lifecycle?",
   "options": [
-   "Takes less time and space per run, but restoration needs more backup sets",
-   "Takes more space but restores from only two sets",
-   "Copies every file each time",
-   "Cannot be combined with a full backup"
+   "Preparation, detection and analysis, containment/eradication/recovery, post-incident activity",
+   "Detection, recovery, preparation, containment",
+   "Containment, preparation, post-incident activity, detection",
+   "Recovery, detection and analysis, preparation, containment"
   ],
   "answer": 0,
-  "exp": "Incremental backups store only changes since the last backup of any kind, so a restore chains many sets.",
-  "sub": "Backup and recovery"
+  "exp": "NIST lifecycle: prepare; detect and analyse; contain, eradicate and recover; learn lessons afterwards.",
+  "sub": "Cyber security basics",
+  "v": 2
  },
  {
   "q": "Which section of the IT Act empowers the government to intercept, monitor or decrypt information in the interest of national security?",
@@ -120,16 +121,17 @@
   "sub": "SSL/TLS"
  },
  {
-  "q": "Which practice is environmentally responsible for disposing of an old computer?",
+  "q": "A Web Application Firewall (WAF) mainly protects a website against",
   "options": [
-   "Burning it in the open",
-   "Dumping it in a landfill",
-   "Handing it over to an authorised e-waste recycler",
-   "Throwing it into a river"
+   "power failures",
+   "physical theft of servers",
+   "loss of backup tapes",
+   "application-layer attacks such as SQL injection and XSS"
   ],
-  "answer": 2,
-  "exp": "E-waste contains toxic materials such as lead and mercury and must be recycled through authorised channels.",
-  "sub": "Digital ethics"
+  "answer": 3,
+  "exp": "A WAF inspects HTTP requests/responses and blocks malicious input patterns like SQLi and XSS.",
+  "sub": "Network security",
+  "v": 2
  },
  {
   "q": "Creative Commons licences are used to",
@@ -216,16 +218,17 @@
   "sub": "Attacks"
  },
  {
-  "q": "Backups run at 00:00, 06:00, 12:00 and 18:00. A failure occurs at 17:30 and the system is restored from the latest backup. How much data (in time) is lost?",
+  "q": "A weakness in software or configuration that an attacker may exploit is called a",
   "options": [
-   "5.5 hours",
-   "11.5 hours",
-   "6 hours",
-   "17.5 hours"
+   "threat",
+   "vulnerability",
+   "asset",
+   "countermeasure"
   ],
-  "answer": 0,
-  "exp": "The latest backup is at 12:00, so work from 12:00 to 17:30 = 5.5 hours is lost.",
-  "sub": "Backup and recovery"
+  "answer": 1,
+  "exp": "A vulnerability is the weakness; a threat is the potential danger that may exploit it; risk combines both with impact.",
+  "sub": "Cyber security basics",
+  "v": 2
  },
  {
   "q": "The main objective of the Information Technology Act, 2000 is to",

@@ -319,6 +319,147 @@ D → JK  :  D = JQ' + K'Q
 
 **⚡ Exam tip:** Moore = output from state only; Mealy = state + input (fewer states). One-hot = one FF per state; binary = ⌈log₂N⌉. Static-1 hazard is removed by adding a redundant K-map group.
 
+## Venn Diagrams & Set View of Boolean Algebra
+
+A Venn diagram shows Boolean variables as overlapping regions inside a rectangle (the universal set = logic 1; empty set = logic 0).
+
+| Boolean | Set operation | Region shaded |
+|---|---|---|
+| A + B (OR) | Union A ∪ B | Everything inside A or B (or both) |
+| A·B (AND) | Intersection A ∩ B | Only the overlap |
+| A' (NOT) | Complement | Everything outside A |
+| A ⊕ B (XOR) | Symmetric difference | A or B but NOT the overlap |
+| (A + B)' = A'B' | Outside both circles | De Morgan 1 |
+| (AB)' = A' + B' | Everything except the overlap | De Morgan 2 |
+
+- n variables divide the diagram into **2ⁿ regions** (4 for two variables, 8 for three); each region is one **minterm**. A function is the union of its minterm regions, so a Venn diagram is a picture of the SOP form and a K-map is a rectangular Venn diagram.
+- Proving identities by Venn: shade LHS and RHS separately; identical shading = identity. Absorption A + AB = A: AB lies inside A, so the union is A. A + A'B = A + B: the part of B outside A plus A is just A ∪ B.
+- Disjoint (mutually exclusive) sets: A·B = 0. Subset: A ⊆ B means AB = A and A + B = B.
+- Boolean algebra is a set algebra: AND/OR/NOT correspond to ∩/∪/complement, 1 = universal set, 0 = empty set.
+
+**⚡ Exam tip:** XOR = the two crescent parts without the overlap; (A + B)' = the region outside both circles; two variables → 4 regions, three → 8.
+
+---
+
+## Parity Generators & Checkers
+
+- **Parity generator:** combinational circuit that produces the parity bit for an n-bit word using XOR gates. Even parity bit P = D1 ⊕ D2 ⊕ ... ⊕ Dn (P makes the total number of 1s even). The odd parity bit is the complement of the even parity bit.
+- 3-bit even-parity generator: P = A ⊕ B ⊕ C. Data 101 → P = 0; data 111 → P = 1. An n-bit generator needs **n − 1 two-input XOR gates**.
+- **Parity checker:** XOR of all received bits including the parity bit; for even parity the error flag is 1 when an odd number of bits are wrong, 0 otherwise. 4-bit checker: E = A ⊕ B ⊕ C ⊕ P.
+- Detects only an **odd number** of bit errors (1, 3, ...); misses 2-bit errors; cannot locate or correct an error.
+- ICs: 74180 (8-bit parity generator/checker), 74280 (9-bit). Serial links (UART) send a parity bit with each character.
+
+**⚡ Exam tip:** Parity generator = chain of XOR gates; XOR output is 1 for an odd number of 1s; one parity bit detects single-bit errors only.
+
+---
+
+## A/D and D/A Conversion
+
+Real-world signals (temperature, sound, voltage) are analog; digital circuits need binary numbers. **ADC** (analog-to-digital) and **DAC** (digital-to-analog) interface the two worlds.
+
+### Key terms
+- **Resolution:** smallest change = one LSB = Vref / 2ⁿ (n-bit). More bits → finer resolution. Number of levels = 2ⁿ (8-bit: 256, 12-bit: 4096).
+- **Quantisation error:** ± ½ LSB for an ideal ADC. **Sampling theorem (Nyquist):** sampling frequency fs ≥ 2 × highest signal frequency fmax; otherwise **aliasing** occurs.
+- **Conversion time:** time one conversion takes; a **sample-and-hold** circuit keeps the input steady during conversion.
+
+### DAC (digital → analog)
+- Output Vout = Vref × (D / 2ⁿ) where D is the decimal value of the digital input. Example: 4-bit DAC with a 1 V step, input 1011 (11) → 11 V.
+- **Binary-weighted resistor DAC:** op-amp summing amplifier with resistors R, 2R, 4R, 8R ...; needs a very wide resistor range and precision, impractical above about 8 bits.
+- **R-2R ladder DAC:** only two resistor values (R and 2R), easy to match, preferred.
+
+### ADC (analog → digital)
+
+| Type | Idea | Speed / notes |
+|---|---|---|
+| **Flash (parallel)** | 2ⁿ − 1 comparators + priority encoder | **Fastest** (one step); most hardware (3-bit: 7 comparators, 8-bit: 255) |
+| **Counter (ramp) type** | Counter drives a DAC; stop when DAC output ≥ input | Slow; up to 2ⁿ clock pulses; time depends on input |
+| **Tracking** | Up/down counter follows the input | Good for slowly varying signals |
+| **Successive approximation (SAR)** | Binary search: test MSB first, keep or clear, move to next bit | **n clock pulses for n bits**, constant time; common in microcontrollers |
+| **Dual slope (integrating)** | Integrate input for a fixed time, then de-integrate with Vref | **Slowest, most accurate**, rejects noise/mains hum; used in digital voltmeters |
+
+- Speed order: flash > SAR > counter/tracking > dual slope.
+- Examples: ADC0804/ADC0809 (8-bit SAR), DAC0808 (8-bit). Microcontrollers (PIC16F877A 10-bit ADC, AVR) read sensors through ADCs; PWM or a DAC gives analog output.
+- Quick calculation: an 8-bit ADC with Vref = 5.12 V has resolution 5.12/256 = 20 mV; input 2.50 V → 2.50/0.02 = 125 = 01111101.
+
+**⚡ Exam tip:** Flash = fastest (2ⁿ−1 comparators); SAR = n clocks; dual slope = slowest but accurate; R-2R ladder needs only two resistor values; Nyquist: fs ≥ 2·fmax.
+
+---
+
+## Logic Families: TTL, ECL, MOS, CMOS
+
+A logic family is a set of ICs built with the same circuit technology and compatible voltage levels.
+
+### Characteristics used to compare families
+- **Propagation delay** (speed), **power dissipation**, **fan-out** (gates one output can drive), **noise margin** (immunity to noise), **speed-power product** (figure of merit; lower is better).
+- Noise margin: NMH = VOH(min) − VIH(min); NML = VIL(max) − VOL(max).
+
+### TTL (Transistor-Transistor Logic) - bipolar
+- Uses BJTs; supply **+5 V**; basic gate = **NAND**. Levels: VIL max 0.8 V, VIH min 2.0 V, VOL max 0.4 V, VOH min 2.4 V; noise margin ≈ 0.4 V; fan-out ≈ 10; delay ≈ 10 ns, power ≈ 10 mW per gate (standard 74 series).
+- **Totem-pole output** (active pull-up) gives fast switching; **open-collector** outputs allow wired-AND and need an external pull-up; **tri-state** outputs allow bus sharing.
+- Sub-families: 74 (standard), 74L (low power, slow), 74H (high speed, more power), **74S (Schottky clamp - no saturation, faster)**, **74LS (low-power Schottky - most popular)**, 74AS, 74ALS, 74F.
+- An unconnected (floating) TTL input acts as logic 1.
+
+### ECL (Emitter-Coupled Logic) - bipolar, non-saturating
+- Transistors never saturate (differential amplifier) → **fastest family** (delay under 1 ns), but **high power** and **low noise margin** (≈ 0.2 V).
+- Supply −5.2 V (VEE) with VCC = 0 V; logic levels about −0.9 V (1) and −1.75 V (0). Provides **OR and NOR outputs simultaneously**. Used in supercomputers and high-speed communication. Also called Current-Mode Logic (CML).
+
+### MOS (Metal-Oxide-Semiconductor) - unipolar FET
+- Uses MOSFETs, not BJTs: PMOS (slow, obsolete), **NMOS** (faster than PMOS because electron mobility is higher) and CMOS. Very **high packing density, simple fabrication, low power**; widely used in LSI/VLSI: memories and microprocessors (the 8085 is NMOS). Slower than TTL; very high input impedance; sensitive to static charge.
+- **I²L (integrated-injection logic)** is a high-density bipolar family used in LSI.
+
+### CMOS (Complementary MOS)
+- Each gate has a **PMOS pull-up network and NMOS pull-down network**; in either steady state one network is off, so **static power is almost zero** - power is used only while switching: P = C·V²·f (dynamic).
+- Wide supply range (3-15 V for the 4000 series), **noise margin ≈ 45% of VDD** (high), **very high fan-out** (over 50, limited by capacitive load). Old CMOS was slower than TTL; modern HC/AC families are as fast. CMOS inverter: 1 PMOS + 1 NMOS; CMOS NAND: 2 PMOS in parallel, 2 NMOS in series.
+- Unused CMOS inputs must be tied high/low (never floated); handle with anti-static precautions (ESD). Used in almost all modern processors and memories. 74HCT = CMOS with TTL-compatible input levels.
+
+| Family | Speed | Power | Noise margin | Fan-out | Main use |
+|---|---|---|---|---|---|
+| TTL (74LS) | Fast | Medium | Medium (0.4 V) | about 10 | General logic |
+| ECL | Fastest | Highest | Lowest | about 25 | High-speed systems |
+| NMOS | Slow-medium | Low | Medium | High | Old LSI (8085) |
+| CMOS | Medium-fast | Lowest | Highest | over 50 | VLSI, battery devices |
+
+**⚡ Exam tip:** Fastest = ECL; lowest power and best noise margin = CMOS; TTL basic gate = NAND at 5 V (74LS most common); MOS family is unipolar and used for LSI/memories; ECL is non-saturating.
+
+---
+
+## Memory Systems & PLDs (RAM, ROM, EPROM, EEPROM)
+
+### Memory capacity and expansion
+- A memory with n address lines and m data lines holds 2ⁿ words × m bits. 4K × 8 → 12 address lines, 8 data lines, 32 Kbit. 16K × 16 needs 14 address and 16 data lines.
+- Chips needed = total capacity / chip capacity. 16K × 16 from 4K × 8 chips: 4 rows (depth) × 2 (width) = 8 chips; the upper address bits go through a decoder to the chip-select inputs.
+- Volatile = loses data without power (SRAM, DRAM); non-volatile = ROM family, flash.
+
+### RAM and ROM types in digital design
+
+| Device | Cell / property | Programming |
+|---|---|---|
+| SRAM | Flip-flop (6 transistors), no refresh, fast | Read/write, volatile |
+| DRAM | 1 transistor + capacitor, needs refresh | Read/write, volatile |
+| Mask ROM | Metal-mask connections | At factory; fixed |
+| PROM | Fuse links | Once, with a PROM programmer |
+| EPROM | Floating-gate transistor | Erase with **UV light** through a quartz window; reprogram |
+| EEPROM (E²PROM) | Floating gate | **Electrically** erasable byte by byte, in circuit; limited write cycles |
+| Flash | EEPROM variant | Block (sector) erase, fast, high density |
+
+- ROM is a combinational circuit (a decoder AND array feeding an OR array) - it can realise any truth table, e.g. code converters and look-up tables. A 3-input, 4-output function table needs an 8 × 4 ROM.
+
+### Programmable Logic Devices (PLDs)
+
+| Device | AND array | OR array |
+|---|---|---|
+| PROM | Fixed (decoder) | Programmable |
+| **PAL** | Programmable | Fixed |
+| **PLA** | Programmable | Programmable |
+| GAL | Reprogrammable (E²CMOS) PAL with output macrocells | |
+
+- **SPLD** = PROM, PAL, PLA, GAL; **CPLD** = several PAL-like blocks with programmable interconnect (non-volatile); **FPGA** = logic blocks built from **look-up tables (LUTs)** and flip-flops plus programmable routing, configuration usually held in SRAM (volatile, reloaded at power-on).
+- A PLA program table lists product terms and output connections; a PLA implements several functions sharing product terms, so it is more compact than a ROM when many minterms are unused. Programmable links in a PLA with n inputs, k product terms and m outputs: 2n × k (AND array) + k × m (OR array).
+
+**⚡ Exam tip:** UV erase = EPROM; electrical erase = EEPROM; one-time = PROM; PAL = programmable AND only; PLA = both; FPGA = LUT + SRAM configuration; memory expansion: chips = total capacity / chip capacity.
+
+---
+
 ## Quick Revision Sheet
 
 - Hex digit = 4 bits; octal digit = 3 bits; (FF)₁₆ = 255; (777)₈ = 511.
@@ -346,3 +487,8 @@ D → JK  :  D = JQ' + K'Q
 - Mod-N counter needs ⌈log₂N⌉ FFs; ripple counter delays add up; synchronous counter is faster; ring = n states, Johnson = 2n states.
 - Moore: output from state only; Mealy: state + input; one-hot = N FFs, binary = ⌈log₂N⌉ FFs.
 - Static-1 hazard removed by adding redundant prime implicant; stuck-at faults: 2 per line.
+- Venn: n variables = 2ⁿ regions (minterms); XOR = union minus overlap; AND = overlap.
+- Parity generator = XOR chain (n−1 gates); checker XORs all bits incl. parity; detects odd number of errors only.
+- DAC: Vout = Vref·D/2ⁿ; R-2R ladder preferred; ADC: flash fastest (2ⁿ−1 comparators), SAR n clocks, dual slope slowest/most accurate; Nyquist fs ≥ 2fmax; resolution = Vref/2ⁿ.
+- TTL = BJT, 5 V, NAND basic, 74LS popular, totem-pole; ECL = fastest, non-saturated, −5.2 V; MOS = unipolar, LSI/memory; CMOS = lowest power, best noise margin, highest fan-out.
+- EPROM = UV erase; EEPROM = electrical byte erase; Flash = block erase; FPGA = LUT-based, SRAM-configured; CPLD = several PAL blocks.

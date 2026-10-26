@@ -84,6 +84,22 @@ A*                : f(n) = g(n) + h(n)     g = cost so far
 - **Alpha-beta pruning:** same result as minimax but skips branches that cannot affect the decision. α = best (highest) value found for MAX so far, β = best (lowest) for MIN; **prune when α ≥ β**. Best case time **O(b^(m/2))** (doubles the searchable depth) with perfect move ordering; worst case = minimax.
 - Worked mini-example: root MAX with two MIN children; left MIN leaves (3, 5) → value 3; in right MIN node first leaf is 2 (≤ 3), so it is already worse for MAX → remaining leaves pruned. Root = 3.
 
+### Worked example: BFS vs DFS order
+Tree: S has children A, B (left to right); A has children C, D; B has child E.
+
+```
+        S
+      /   \
+     A     B
+    / \     \
+   C   D     E
+```
+
+- **BFS** (queue, level by level): S, A, B, C, D, E.
+- **DFS** (stack/recursion, goes deep first, left child first): S, A, C, D, B, E.
+- Hill climbing follows only one path and keeps just the current node, so it needs O(1) memory but may stop at a local maximum.
+- Hill climbing in one line: current = start; loop: pick the best neighbour; if it is not better than current, return current.
+
 **⚡ Exam tip:** BFS=queue, DFS=stack; UCS & A* use priority queue; A* optimal only if h is admissible; alpha-beta never changes the minimax answer, only the work done.
 
 ## 3. Knowledge Representation and Logic

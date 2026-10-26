@@ -238,6 +238,11 @@ Mode 2 example: 250 µs at 12 MHz -> TH = 256 − 250 = 06H.
 - Watchdog timer resets a hung system. Interrupt-driven vs polling I/O.
 - **Low-cost dedicated control (TV remote, toy)** → 8-bit MCU, not a PC-class MPU.
 
+### Sensor interfacing: ADC and DAC
+- Sensors give **analog** voltages; the MCU needs digital values, so an **ADC** converts them: 8051 uses an external ADC (ADC0804/0809, successive approximation); PIC16F877A and AVR have an **on-chip 10-bit ADC**. Digital value = Vin / Vref × 2ⁿ (e.g. 10-bit, Vref 5 V: 2.5 V → 512).
+- A **DAC** (R-2R ladder, e.g. DAC0808) or **PWM** (duty cycle ∝ average voltage, used for motor speed and LED brightness) provides analog output.
+- ADC start/end-of-conversion handshake uses control pins (SC/EOC) or an interrupt.
+
 ### ARM, PIC, AVR comparison
 
 | Family | Maker | Bits | Architecture | Notes |

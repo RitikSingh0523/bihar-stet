@@ -161,6 +161,34 @@ Paths: A-B-D = 3 + 5 + 4 = **12**; A-C-D = 3 + 2 + 4 = 9. Critical path **A-B-D*
 
 **⚡ Exam tip:** Maintenance types: **C-A-P-P** (Corrective, Adaptive, Perfective, Preventive). Refactoring = **preventive**; new feature = **perfective**; OS port = **adaptive**. CMM L1-L5: Initial, Repeatable, Defined, Managed, Optimizing. Availability = MTTF/(MTTF + MTTR).
 
+## 9. Design Principles, Testing Strategy and Requirements Management (Syllabus Supplement)
+
+### 9.1 Design principles
+- **Core principles:** abstraction, modularity (high cohesion, low coupling), information hiding (Parnas), stepwise refinement, separation of concerns, **reuse**, design for change.
+- **General rules:** **KISS** (keep it simple), **DRY** (do not repeat yourself), **YAGNI** (do not build what is not needed), **Law of Demeter** (talk only to immediate neighbours).
+- **SOLID (object-oriented design):** **S** Single Responsibility (one reason to change), **O** Open/Closed (open for extension, closed for modification), **L** Liskov Substitution (subclass usable wherever base class is), **I** Interface Segregation (many small interfaces), **D** Dependency Inversion (depend on abstractions, not concretions).
+- **Object-oriented concepts used in design:** object, class, encapsulation, inheritance, polymorphism, abstraction, message passing. **OOAD steps:** identify use cases and classes (nouns = classes, verbs = methods) -> class diagram -> interaction (sequence) diagrams -> state diagrams.
+- **Design patterns (GoF, 23 patterns):** **creational** (Singleton, Factory, Abstract Factory, Builder, Prototype), **structural** (Adapter, Bridge, Composite, Decorator, Facade, Proxy), **behavioural** (Observer, Strategy, Command, Iterator, State). Architectural styles: layered, client-server, MVC, pipe-and-filter.
+- **Structured design flow:** requirements -> DFD (structured analysis) -> **transform or transaction analysis** -> structure chart -> module specification.
+
+### 9.2 Testing strategy
+- **Strategy order:** unit -> integration -> system -> acceptance (inside-out); verification (static reviews) runs alongside validation (dynamic).
+- **Integration approaches:** top-down (stubs), bottom-up (drivers), **sandwich/hybrid**, big-bang, **incremental**.
+- **Test case design:** **black-box** (equivalence partitioning, boundary value, decision table, cause-effect graph, error guessing) vs **white-box** (statement, branch, condition, path coverage, basis-path using cyclomatic complexity, data-flow, loop testing). **Grey-box** mixes both.
+- **Test plan** (IEEE 829) lists scope, approach, resources, schedule, entry/exit criteria; **test levels** vs **test types** (functional, performance, security, usability, compatibility, regression).
+- **Debugging approaches:** brute force, backtracking, cause elimination, program slicing. Testing finds failures; debugging finds and fixes the fault.
+- **Coverage ordering:** path subsumes branch subsumes statement (100% branch implies 100% statement, not the reverse).
+
+### 9.3 Requirements engineering: process and management
+- **Process:** feasibility study -> **elicitation** -> **analysis and negotiation** (resolve conflicts, prioritise, e.g. MoSCoW: Must, Should, Could, Won't) -> **specification (SRS)** -> **validation** (reviews, prototyping, test-case generation, walkthroughs) -> **management**.
+- **Requirements management:** requirements change is inevitable; use change control, version baselines and a **requirements traceability matrix** (links requirement to design, code, test).
+- **Analysis models:** use case, DFD, ER diagram, state diagram, data dictionary, **decision table**.
+- **Quality attributes** (ISO 9126): functionality, reliability, usability, efficiency, maintainability, portability. McCall groups factors into product operation, product revision and product transition.
+
+**⚡ Exam tip:** SOLID = SRP, OCP, LSP, ISP, DIP. Singleton/Factory = creational; Adapter/Facade = structural; Observer/Strategy = behavioural. Branch coverage subsumes statement coverage. Validation of requirements = reviews + prototypes; traceability matrix links requirements to tests.
+
+---
+
 ## Quick Revision Sheet
 
 1. Software = programs + data + documentation; does **not wear out** but **deteriorates**; software crisis ~ **1960s** (NATO 1968).
@@ -188,3 +216,6 @@ Paths: A-B-D = 3 + 5 + 4 = **12**; A-C-D = 3 + 2 + 4 = 9. Critical path **A-B-D*
 23. Maintenance: corrective (bugs), adaptive (environment), perfective (features), preventive (refactor); annual maintenance = ACT × dev effort.
 24. Git `pull` = fetch + merge; CI = auto build + test on every commit; Continuous Delivery = manual deploy gate, Deployment = automatic.
 25. MTBF = MTTF + MTTR; Availability = MTTF/(MTTF + MTTR); Brooks' law: adding people to a late project makes it later.
+26. Design principles: abstraction, modularity, information hiding, KISS, DRY, YAGNI; SOLID = SRP, OCP, LSP, ISP, DIP; GoF patterns: creational, structural, behavioural.
+27. Integration: top-down (stubs), bottom-up (drivers), sandwich, big-bang; debugging: brute force, backtracking, cause elimination.
+28. RE process: elicitation, analysis and negotiation (MoSCoW), specification, validation, management; traceability matrix; ISO 9126 six characteristics.

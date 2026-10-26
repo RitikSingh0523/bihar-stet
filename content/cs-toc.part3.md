@@ -211,6 +211,53 @@ Goals: reduce execution time/space without changing the program's meaning. Appli
 
 **⚡ Exam tip:** Assembler pass 1 = symbol table building; pass 2 = code generation. Loader = loads to memory; linker = resolves external references. Peephole = machine-dependent; constant folding/CSE = machine-independent. Macro expansion occurs before assembly.
 
+## Worked Constructions: CNF, GNF, PDA and Turing Machine Design
+
+### Converting a CFG to Chomsky Normal Form (CNF)
+Steps in order: (1) remove ε-productions, (2) remove unit productions, (3) remove useless symbols, (4) replace terminals inside long bodies by new variables, (5) break bodies longer than 2 into chains of two variables.
+
+Example: S → aSb | ab
+- Step 4: introduce Ca → a, Cb → b: S → CaSCb | CaCb.
+- Step 5: break: S → Ca D | Ca Cb, D → S Cb. Final CNF: S → CaD | CaCb; D → SCb; Ca → a; Cb → b.
+- Check: "aabb" needs 2n - 1 = 7 derivation steps in CNF.
+
+### Converting to Greibach Normal Form (GNF)
+1. Get the grammar into CNF (or at least no ε, no unit productions) and order variables A1..An.
+2. Make each Ai → Aj α satisfy j > i (substitute), removing left recursion (Ai → Ai α becomes Ai → β | β Zi, Zi → α | α Zi).
+3. Back-substitute so every body begins with a terminal.
+
+Example: S → aSb | ab has GNF **S → aSB | aB, B → b** (every body = terminal followed by variables). A string of length n is derived in exactly n steps.
+
+### Designing PDAs (stack = unbounded memory with LIFO access)
+
+| Language | Idea |
+|---|---|
+| a^n b^n (n ≥ 1) | push A for each a; pop A for each b; accept when stack returns to bottom marker and input ends (DPDA) |
+| w c w^R | push w, see c, then pop and match (DPDA, centre marker known) |
+| w w^R (even palindromes) | must **guess** the middle -> needs nondeterminism (NPDA only) |
+| a^i b^j c^k with i = j or j = k | NPDA guesses which equality to check |
+| equal number of a's and b's | push/pop on the opposite symbol (DPDA) |
+| a^n b^n c^n, ww | **not** CFL (one stack insufficient) |
+
+- Acceptance by **final state** vs **empty stack**: equivalent for NPDA; each can be converted to the other.
+- **CFG -> PDA:** one state; for S: push start symbol; for each variable A, replace it on the stack by body of a production (ε-move); for each terminal a, match input a with stack top a and pop. Accept by empty stack.
+- **PDA -> CFG:** variables [p X q] meaning "going from p to q while popping X"; the construction gives a CFG for exactly the same language, so **CFL ≡ NPDA**.
+
+### Designing a Turing machine
+- TM for a^n b^n (n ≥ 1): repeatedly (i) mark the leftmost unmarked a as X, (ii) move right and mark the leftmost unmarked b as Y, (iii) return to the left; when no a remains, check no b remains and accept. It uses the tape for counting, impossible for a PDA when three counts must match.
+- TM for a^n b^n c^n: same marking idea with three symbols (so a CSL, in fact decided by a TM/LBA).
+- Computing functions: unary addition (replace the separating 0 by 1 and erase one 1); copying and comparing use marking.
+- Church-Turing thesis: anything "algorithmically computable" is computable by a TM (a thesis, not a theorem). The TM transition is δ(q, a) = (p, b, L/R).
+
+### Recursive vs recursively enumerable, and the halting problem (recap)
+- **Recursive (decidable):** a TM exists that halts on every input with accept/reject. **RE (recognisable):** a TM halts and accepts every string in L, but may loop on strings outside L.
+- Recursive is closed under complement; RE is not. L recursive ⇔ L and its complement are both RE.
+- **Halting problem:** given (M, w), does M halt on w? It is RE but not recursive; proof by diagonalisation. Its complement is not RE.
+- Reductions: if A reduces to B and A is undecidable then B is undecidable. Standard undecidable problems: A_TM, HALT_TM, emptiness/equality/regularity of a TM's language (Rice's theorem), PCP, CFG ambiguity, CFG equivalence.
+- Context-sensitive languages are decidable (LBA); a recursive language need not be context-sensitive.
+
+**⚡ Exam tip:** CNF: A → BC | a (2n - 1 steps); GNF: A → aα (n steps). PDA cannot do a^n b^n c^n; even palindromes need nondeterminism; halting problem = undecidable but recursively enumerable.
+
 ## Quick Revision Sheet
 
 1. Σ\* is countably infinite; L = ∅ ≠ {ε}. Number of binary strings of length n = 2ⁿ.
@@ -242,3 +289,5 @@ Goals: reduce execution time/space without changing the program's meaning. Appli
 27. Optimisations: constant folding, CSE, dead-code elimination, strength reduction, loop-invariant code motion, peephole (machine-dependent).
 28. Assembler: pass 1 symbol table, pass 2 object code. Linker resolves references; loader loads (allocation, relocation, linking); macros use MNT/MDT/ALA.
 29. Compiler translates whole program (faster run, all errors at once); interpreter line by line (slower, easier debugging).
+30. CNF: A -> BC | a (2n-1 steps); GNF: A -> a(variables) (n steps). Simplify CFG order: epsilon, unit, useless. Even palindromes need an NPDA; a^n b^n c^n needs a TM/LBA.
+31. Recursive = decidable (halts always); RE = may loop on non-members; halting problem is RE but not recursive; DFA minimisation = table filling / Myhill-Nerode classes.

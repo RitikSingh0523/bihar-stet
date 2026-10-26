@@ -1,410 +1,420 @@
 [
- {
-  "q": "In the three-layer architecture of the Internet of Things, which layer is responsible for sensing physical quantities and identifying objects?",
-  "options": [
-   "Network layer",
-   "Application layer",
-   "Perception layer",
-   "Business layer"
-  ],
-  "answer": 2,
-  "exp": "The perception (sensing) layer contains sensors, actuators and tags that collect data from the physical world.",
-  "sub": "IoT architecture"
- },
- {
-  "q": "Google App Engine, which lets developers deploy their code without managing servers or operating systems, is best classified as:",
-  "options": [
-   "PaaS",
-   "IaaS",
-   "SaaS",
-   "Storage as a Service"
-  ],
-  "answer": 0,
-  "exp": "It provides a platform (runtime and tools) for building applications, which is Platform as a Service.",
-  "sub": "Cloud computing"
- },
- {
-  "q": "How many bits are there in 2 KB, taking 1 KB = 1024 bytes?",
-  "options": [
-   "2048",
-   "16384",
-   "8192",
-   "16000"
-  ],
-  "answer": 1,
-  "exp": "2 × 1024 bytes = 2048 bytes; 2048 × 8 = 16384 bits.",
-  "sub": "Data units"
- },
- {
-  "q": "Who is credited with writing the first algorithm meant to be executed on a machine, for Babbage's Analytical Engine?",
-  "options": [
-   "Grace Hopper",
-   "Hedy Lamarr",
-   "Ada Lovelace",
-   "Mary Somerville"
-  ],
-  "answer": 2,
-  "exp": "Ada Lovelace's notes on the Analytical Engine contained an algorithm to compute Bernoulli numbers, regarded as the first program.",
-  "sub": "History of computing"
- },
- {
-  "q": "In MS Word, which shortcut key opens the Find and Replace dialog box with the Replace tab active?",
-  "options": [
-   "Ctrl+F",
-   "Ctrl+R",
-   "Ctrl+H",
-   "Ctrl+P"
-  ],
-  "answer": 2,
-  "exp": "Ctrl+H opens Replace; Ctrl+F opens Find/Navigation, Ctrl+R right-aligns and Ctrl+P prints.",
-  "sub": "MS Office shortcuts"
- },
- {
-  "q": "What is the default TCP port used by an MQTT broker for unencrypted connections?",
-  "options": [
-   "5683",
-   "8883",
-   "443",
-   "1883"
-  ],
-  "answer": 3,
-  "exp": "MQTT uses port 1883 for plain connections; 8883 is used for MQTT over TLS, and 5683 is the CoAP UDP port.",
-  "sub": "IoT protocols"
- },
- {
-  "q": "What makes the blocks in a blockchain linked together and the chain tamper-evident?",
-  "options": [
-   "Each block stores the IP address of its miner",
-   "Each block stores the private key of the sender",
-   "Each block stores the hash of the previous block",
-   "Each block stores a timestamp of the next block"
-  ],
-  "answer": 2,
-  "exp": "Changing any block alters its hash and breaks the previous-hash link stored in the next block.",
-  "sub": "Blockchain"
- },
- {
-  "q": "A tyre manufacturer sells directly through its web portal to car-making companies. Which e-commerce model does this represent?",
-  "options": [
-   "B2C",
-   "B2B",
-   "C2C",
-   "C2B"
-  ],
-  "answer": 1,
-  "exp": "Business selling to another business is B2B.",
-  "sub": "E-commerce models"
- },
- {
-  "q": "Which generation of mobile networks first introduced digital voice transmission (GSM) and SMS text messaging?",
-  "options": [
-   "1G",
-   "3G",
-   "4G",
-   "2G"
-  ],
-  "answer": 3,
-  "exp": "1G was analog; 2G made voice digital and introduced SMS.",
-  "sub": "Mobile communication"
- },
- {
-  "q": "Which of the following is NOT one of the three original Vs of Big Data?",
-  "options": [
-   "Vulnerability",
-   "Volume",
-   "Velocity",
-   "Variety"
-  ],
-  "answer": 0,
-  "exp": "The original 3 Vs are Volume, Velocity and Variety; vulnerability is not a V of big data.",
-  "sub": "Big data"
- },
- {
-  "q": "ZigBee is based on which IEEE standard for low-rate wireless personal area networks?",
-  "options": [
-   "IEEE 802.11n",
-   "IEEE 802.15.4",
-   "IEEE 802.3",
-   "IEEE 802.16"
-  ],
-  "answer": 1,
-  "exp": "ZigBee builds its network and application layers on the IEEE 802.15.4 PHY and MAC.",
-  "sub": "ZigBee"
- },
- {
-  "q": "A Type 1 (bare-metal) hypervisor is one that:",
-  "options": [
-   "Runs as an ordinary application on top of a host operating system",
-   "Runs directly on the host hardware without a host operating system",
-   "Is a physical network switch connecting virtual machines",
-   "Is available only as a SaaS product"
-  ],
-  "answer": 1,
-  "exp": "Type 1 hypervisors such as VMware ESXi and Xen run directly on hardware.",
-  "sub": "Virtualization"
- },
- {
-  "q": "The Digital India programme was launched by the Government of India in the year:",
-  "options": [
-   "2013",
-   "2015",
-   "2017",
-   "2019"
-  ],
-  "answer": 1,
-  "exp": "Digital India was launched on 1 July 2015.",
-  "sub": "Digital India"
- },
- {
-  "q": "Which of the following is a recommended green computing practice?",
-  "options": [
-   "Enabling sleep or power-saving mode on idle computers",
-   "Keeping all desktops switched on overnight for updates",
-   "Using animated screen savers instead of sleep mode",
-   "Throwing old monitors into ordinary household waste"
-  ],
-  "answer": 0,
-  "exp": "Power management reduces energy consumption of idle systems.",
-  "sub": "Green computing"
- },
- {
-  "q": "Which of the following is the fastest storage location in a computer system?",
-  "options": [
-   "Main memory (RAM)",
-   "Solid-state drive",
-   "Hard disk drive",
-   "CPU registers"
-  ],
-  "answer": 3,
-  "exp": "Registers sit inside the CPU and have the lowest access time in the memory hierarchy.",
-  "sub": "Computer fundamentals"
- },
- {
-  "q": "Which statement about passive RFID tags is correct?",
-  "options": [
-   "They carry an internal battery that lets them transmit for kilometres",
-   "They work only when connected to a Wi-Fi router",
-   "They have no battery and are powered by the reader's radio-frequency field",
-   "They require a SIM card to transmit"
-  ],
-  "answer": 2,
-  "exp": "Passive tags harvest energy from the reader's RF signal to respond.",
-  "sub": "RFID"
- },
- {
-  "q": "A cloud infrastructure shared by several organizations that have common concerns such as security requirements and compliance policies is called a:",
-  "options": [
-   "Public cloud",
-   "Community cloud",
-   "Private cloud",
-   "Hybrid cloud"
-  ],
-  "answer": 1,
-  "exp": "Community cloud serves a specific community of organizations with shared concerns.",
-  "sub": "Cloud deployment models"
- },
- {
-  "q": "The Unified Payments Interface (UPI) in India was developed by:",
-  "options": [
-   "SEBI",
-   "NPCI",
-   "IRDAI",
-   "NABARD"
-  ],
-  "answer": 1,
-  "exp": "UPI was developed by the National Payments Corporation of India (NPCI).",
-  "sub": "Payment systems"
- },
- {
-  "q": "Which of the following was the first general-purpose electronic digital computer, completed in 1946?",
-  "options": [
-   "EDSAC",
-   "Harvard Mark I",
-   "UNIVAC I",
-   "ENIAC"
-  ],
-  "answer": 3,
-  "exp": "ENIAC (1946) was the first large general-purpose electronic computer; Mark I was electromechanical and EDSAC (1949) was stored-program.",
-  "sub": "History of computing"
- },
- {
-  "q": "In MS Excel, which shortcut inserts the current system date in the active cell?",
-  "options": [
-   "Ctrl+Shift+;",
-   "Ctrl+;",
-   "Ctrl+D",
-   "Alt+D"
-  ],
-  "answer": 1,
-  "exp": "Ctrl+; inserts the date, Ctrl+Shift+; inserts the time and Ctrl+D fills down.",
-  "sub": "MS Excel"
- },
- {
-  "q": "By default, CoAP (Constrained Application Protocol) runs over which transport protocol?",
-  "options": [
-   "TCP",
-   "SCTP",
-   "UDP",
-   "ICMP"
-  ],
-  "answer": 2,
-  "exp": "CoAP is a lightweight REST-like protocol designed for constrained devices and uses UDP.",
-  "sub": "IoT protocols"
- },
- {
-  "q": "Which sensor is commonly used to measure the intensity of ambient light?",
-  "options": [
-   "Thermistor",
-   "LDR (light dependent resistor)",
-   "Hall effect sensor",
-   "Piezoelectric sensor"
-  ],
-  "answer": 1,
-  "exp": "An LDR changes its resistance with incident light; the others sense temperature, magnetic field and pressure/vibration.",
-  "sub": "Sensors"
- },
- {
-  "q": "An Aadhaar number issued by UIDAI consists of how many digits?",
-  "options": [
-   "10",
-   "12",
-   "14",
-   "16"
-  ],
-  "answer": 1,
-  "exp": "Aadhaar is a 12-digit unique identification number.",
-  "sub": "E-governance in India"
- },
- {
-  "q": "Which of the following is a professional networking website?",
-  "options": [
-   "Pinterest",
-   "Snapchat",
-   "Telegram",
-   "LinkedIn"
-  ],
-  "answer": 3,
-  "exp": "LinkedIn is designed for professional networking and recruitment.",
-  "sub": "Social media and ICT"
- },
- {
-  "q": "What is the hexadecimal equivalent of the decimal number 255?",
-  "options": [
-   "FF",
-   "EF",
-   "FE",
-   "100"
-  ],
-  "answer": 0,
-  "exp": "255 = 15 × 16 + 15, which is FF; hexadecimal 100 equals 256.",
-  "sub": "Data representation"
- },
- {
-  "q": "In IoT, edge computing refers to:",
-  "options": [
-   "Storing all data permanently in a remote data centre",
-   "Connecting devices only through satellite links",
-   "Processing data close to where it is generated instead of sending everything to a central cloud",
-   "Encrypting data using only symmetric keys"
-  ],
-  "answer": 2,
-  "exp": "Edge computing reduces latency and bandwidth use by local processing.",
-  "sub": "IoT resource management"
- },
- {
-  "q": "Which consensus mechanism is used by the Bitcoin network?",
-  "options": [
-   "Proof of Work",
-   "Proof of Stake",
-   "Proof of Authority",
-   "Practical Byzantine Fault Tolerance"
-  ],
-  "answer": 0,
-  "exp": "Bitcoin miners compete to solve a hash puzzle, which is Proof of Work.",
-  "sub": "Blockchain"
- },
- {
-  "q": "In Hadoop's HDFS architecture, which node stores the file-system metadata (namespace and block locations)?",
-  "options": [
-   "DataNode",
-   "TaskTracker",
-   "Client node",
-   "NameNode"
-  ],
-  "answer": 3,
-  "exp": "The NameNode keeps metadata while DataNodes store the actual blocks.",
-  "sub": "Big data"
- },
- {
-  "q": "Which technology allows two devices to exchange data when brought within a few centimetres of each other, as used in contactless payments?",
-  "options": [
-   "WiMAX",
-   "NFC",
-   "ZigBee",
-   "Wi-Fi Direct"
-  ],
-  "answer": 1,
-  "exp": "Near Field Communication works at about 4 cm at 13.56 MHz.",
-  "sub": "Mobile communication"
- },
- {
-  "q": "In MS PowerPoint, which key starts the slide show from the first slide?",
-  "options": [
-   "F5",
-   "Shift+F5",
-   "Ctrl+F5",
-   "F7"
-  ],
-  "answer": 0,
-  "exp": "F5 starts from the beginning; Shift+F5 starts from the current slide.",
-  "sub": "MS Office shortcuts"
- },
- {
-  "q": "In the MQTT protocol, the server that receives messages from publishers and forwards them to the subscribed clients is called the:",
-  "options": [
-   "Gateway",
-   "Coordinator",
-   "Broker",
-   "Resolver"
-  ],
-  "answer": 2,
-  "exp": "MQTT follows a publish-subscribe model mediated by a broker.",
-  "sub": "IoT protocols"
- },
- {
-  "q": "Which essential characteristic of cloud computing means resources can be automatically scaled up and down with demand?",
-  "options": [
-   "Broad network access",
-   "Resource pooling",
-   "Multi-lingual support",
-   "Rapid elasticity"
-  ],
-  "answer": 3,
-  "exp": "Rapid elasticity lets capacity expand or shrink as demand changes.",
-  "sub": "Cloud computing"
- },
- {
-  "q": "EDI in e-commerce stands for:",
-  "options": [
-   "Electronic Digital Information",
-   "Efficient Data Integration",
-   "Electronic Data Interchange",
-   "External Data Interface"
-  ],
-  "answer": 2,
-  "exp": "EDI is the computer-to-computer exchange of standardised business documents.",
-  "sub": "EDI"
- },
- {
-  "q": "Which generation of computers used integrated circuits (ICs) as the main electronic component?",
-  "options": [
-   "First generation",
-   "Second generation",
-   "Third generation",
-   "Fourth generation"
-  ],
-  "answer": 2,
-  "exp": "First used vacuum tubes, second transistors, third ICs, fourth microprocessors (VLSI).",
-  "sub": "Computer fundamentals"
- }
+  {
+    "q": "In the three-layer architecture of the Internet of Things, which layer is responsible for sensing physical quantities and identifying objects?",
+    "options": [
+      "Network layer",
+      "Application layer",
+      "Perception layer",
+      "Business layer"
+    ],
+    "answer": 2,
+    "exp": "The perception (sensing) layer contains sensors, actuators and tags that collect data from the physical world.",
+    "sub": "IoT architecture"
+  },
+  {
+    "q": "Google App Engine, which lets developers deploy their code without managing servers or operating systems, is best classified as:",
+    "options": [
+      "PaaS",
+      "IaaS",
+      "SaaS",
+      "Storage as a Service"
+    ],
+    "answer": 0,
+    "exp": "It provides a platform (runtime and tools) for building applications, which is Platform as a Service.",
+    "sub": "Cloud computing"
+  },
+  {
+    "q": "In an IoT system, the middleware layer is mainly responsible for:",
+    "options": [
+      "Generating the radio signal used by sensors",
+      "Hiding the heterogeneity of devices and protocols and giving applications a uniform interface",
+      "Printing the final reports for end users",
+      "Supplying power to the sensor nodes"
+    ],
+    "answer": 1,
+    "exp": "Middleware sits between devices/network and applications, handling device management, protocol translation, data aggregation and APIs.",
+    "sub": "IoT middleware",
+    "v": 2
+  },
+  {
+    "q": "In the Modbus protocol, which statement is correct?",
+    "options": [
+      "Communication follows a master-slave (client-server) request/response model",
+      "Every node publishes messages to a central broker",
+      "All nodes can transmit at the same time without any addressing",
+      "It was designed mainly for sending e-mail between servers"
+    ],
+    "answer": 0,
+    "exp": "Modbus is a master-slave request/response protocol: the master starts every transaction and slaves reply.",
+    "sub": "Modbus",
+    "v": 2
+  },
+  {
+    "q": "Modbus TCP/IP uses which well-known TCP port?",
+    "options": [
+      "80",
+      "1883",
+      "502",
+      "5683"
+    ],
+    "answer": 2,
+    "exp": "Modbus TCP uses port 502 (1883 is MQTT, 5683 is CoAP, 80 is HTTP).",
+    "sub": "Modbus",
+    "v": 2
+  },
+  {
+    "q": "What is the default TCP port used by an MQTT broker for unencrypted connections?",
+    "options": [
+      "5683",
+      "8883",
+      "443",
+      "1883"
+    ],
+    "answer": 3,
+    "exp": "MQTT uses port 1883 for plain connections; 8883 is used for MQTT over TLS, and 5683 is the CoAP UDP port.",
+    "sub": "IoT protocols"
+  },
+  {
+    "q": "What makes the blocks in a blockchain linked together and the chain tamper-evident?",
+    "options": [
+      "Each block stores the IP address of its miner",
+      "Each block stores the private key of the sender",
+      "Each block stores the hash of the previous block",
+      "Each block stores a timestamp of the next block"
+    ],
+    "answer": 2,
+    "exp": "Changing any block alters its hash and breaks the previous-hash link stored in the next block.",
+    "sub": "Blockchain"
+  },
+  {
+    "q": "A tyre manufacturer sells directly through its web portal to car-making companies. Which e-commerce model does this represent?",
+    "options": [
+      "B2C",
+      "B2B",
+      "C2C",
+      "C2B"
+    ],
+    "answer": 1,
+    "exp": "Business selling to another business is B2B.",
+    "sub": "E-commerce models"
+  },
+  {
+    "q": "Which generation of mobile networks first introduced digital voice transmission (GSM) and SMS text messaging?",
+    "options": [
+      "1G",
+      "3G",
+      "4G",
+      "2G"
+    ],
+    "answer": 3,
+    "exp": "1G was analog; 2G made voice digital and introduced SMS.",
+    "sub": "Mobile communication"
+  },
+  {
+    "q": "Using vibration and temperature sensors on factory machines to forecast a failure before it occurs is called:",
+    "options": [
+      "Reactive maintenance",
+      "Load balancing",
+      "Data mirroring",
+      "Predictive maintenance"
+    ],
+    "answer": 3,
+    "exp": "Predictive maintenance is a flagship IIoT application: sensor data is analysed to predict faults and schedule repair.",
+    "sub": "Industrial IoT",
+    "v": 2
+  },
+  {
+    "q": "ZigBee is based on which IEEE standard for low-rate wireless personal area networks?",
+    "options": [
+      "IEEE 802.11n",
+      "IEEE 802.15.4",
+      "IEEE 802.3",
+      "IEEE 802.16"
+    ],
+    "answer": 1,
+    "exp": "ZigBee builds its network and application layers on the IEEE 802.15.4 PHY and MAC.",
+    "sub": "ZigBee"
+  },
+  {
+    "q": "A Type 1 (bare-metal) hypervisor is one that:",
+    "options": [
+      "Runs as an ordinary application on top of a host operating system",
+      "Runs directly on the host hardware without a host operating system",
+      "Is a physical network switch connecting virtual machines",
+      "Is available only as a SaaS product"
+    ],
+    "answer": 1,
+    "exp": "Type 1 hypervisors such as VMware ESXi and Xen run directly on hardware.",
+    "sub": "Virtualization"
+  },
+  {
+    "q": "The Digital India programme was launched by the Government of India in the year:",
+    "options": [
+      "2013",
+      "2015",
+      "2017",
+      "2019"
+    ],
+    "answer": 1,
+    "exp": "Digital India was launched on 1 July 2015.",
+    "sub": "Digital India"
+  },
+  {
+    "q": "Which of the following is a recommended green computing practice?",
+    "options": [
+      "Enabling sleep or power-saving mode on idle computers",
+      "Keeping all desktops switched on overnight for updates",
+      "Using animated screen savers instead of sleep mode",
+      "Throwing old monitors into ordinary household waste"
+    ],
+    "answer": 0,
+    "exp": "Power management reduces energy consumption of idle systems.",
+    "sub": "Green computing"
+  },
+  {
+    "q": "Which type of firewall inspects the actual content of application-layer traffic such as HTTP or FTP and is generally the most secure but slowest?",
+    "options": [
+      "Stateless packet-filtering firewall",
+      "Application-level gateway (proxy firewall)",
+      "Hub",
+      "Repeater"
+    ],
+    "answer": 1,
+    "exp": "Proxy/application gateways examine application data; packet filters only look at headers (IP, port, protocol).",
+    "sub": "Firewalls",
+    "v": 2
+  },
+  {
+    "q": "Which statement about passive RFID tags is correct?",
+    "options": [
+      "They carry an internal battery that lets them transmit for kilometres",
+      "They work only when connected to a Wi-Fi router",
+      "They have no battery and are powered by the reader's radio-frequency field",
+      "They require a SIM card to transmit"
+    ],
+    "answer": 2,
+    "exp": "Passive tags harvest energy from the reader's RF signal to respond.",
+    "sub": "RFID"
+  },
+  {
+    "q": "A cloud infrastructure shared by several organizations that have common concerns such as security requirements and compliance policies is called a:",
+    "options": [
+      "Public cloud",
+      "Community cloud",
+      "Private cloud",
+      "Hybrid cloud"
+    ],
+    "answer": 1,
+    "exp": "Community cloud serves a specific community of organizations with shared concerns.",
+    "sub": "Cloud deployment models"
+  },
+  {
+    "q": "The Unified Payments Interface (UPI) in India was developed by:",
+    "options": [
+      "SEBI",
+      "NPCI",
+      "IRDAI",
+      "NABARD"
+    ],
+    "answer": 1,
+    "exp": "UPI was developed by the National Payments Corporation of India (NPCI).",
+    "sub": "Payment systems"
+  },
+  {
+    "q": "What distinguishes a smart card from a magnetic-stripe card?",
+    "options": [
+      "It contains an embedded microprocessor chip that can store data and perform computations",
+      "It can only store a fixed account number",
+      "It works only with ATMs of the same bank",
+      "It has no PIN protection"
+    ],
+    "answer": 0,
+    "exp": "A smart card (EMV chip card) carries a microprocessor/memory chip; a magnetic stripe is passive storage and easier to clone.",
+    "sub": "Smart cards",
+    "v": 2
+  },
+  {
+    "q": "Which pair of components is typical of an industrial control (IIoT/SCADA) environment?",
+    "options": [
+      "LDR and PIR",
+      "HTML and CSS",
+      "PLC and SCADA",
+      "POP3 and IMAP"
+    ],
+    "answer": 2,
+    "exp": "PLCs (programmable logic controllers) control machines and SCADA supervises and acquires data from them.",
+    "sub": "Industrial IoT",
+    "v": 2
+  },
+  {
+    "q": "By default, CoAP (Constrained Application Protocol) runs over which transport protocol?",
+    "options": [
+      "TCP",
+      "SCTP",
+      "UDP",
+      "ICMP"
+    ],
+    "answer": 2,
+    "exp": "CoAP is a lightweight REST-like protocol designed for constrained devices and uses UDP.",
+    "sub": "IoT protocols"
+  },
+  {
+    "q": "Which sensor is commonly used to measure the intensity of ambient light?",
+    "options": [
+      "Thermistor",
+      "LDR (light dependent resistor)",
+      "Hall effect sensor",
+      "Piezoelectric sensor"
+    ],
+    "answer": 1,
+    "exp": "An LDR changes its resistance with incident light; the others sense temperature, magnetic field and pressure/vibration.",
+    "sub": "Sensors"
+  },
+  {
+    "q": "An Aadhaar number issued by UIDAI consists of how many digits?",
+    "options": [
+      "10",
+      "12",
+      "14",
+      "16"
+    ],
+    "answer": 1,
+    "exp": "Aadhaar is a 12-digit unique identification number.",
+    "sub": "E-governance in India"
+  },
+  {
+    "q": "Which of the following is a professional networking website?",
+    "options": [
+      "Pinterest",
+      "Snapchat",
+      "Telegram",
+      "LinkedIn"
+    ],
+    "answer": 3,
+    "exp": "LinkedIn is designed for professional networking and recruitment.",
+    "sub": "Social media and ICT"
+  },
+  {
+    "q": "Which problem of cloud-only IoT is reduced by edge/fog computing?",
+    "options": [
+      "Inability to store any data",
+      "Absence of IP addresses",
+      "Lack of sensors",
+      "High latency and bandwidth use because all raw data travels to a distant data centre"
+    ],
+    "answer": 3,
+    "exp": "Edge/fog nodes process data near the device, giving faster response and cutting bandwidth.",
+    "sub": "IoT cloud",
+    "v": 2
+  },
+  {
+    "q": "In IoT, edge computing refers to:",
+    "options": [
+      "Storing all data permanently in a remote data centre",
+      "Connecting devices only through satellite links",
+      "Processing data close to where it is generated instead of sending everything to a central cloud",
+      "Encrypting data using only symmetric keys"
+    ],
+    "answer": 2,
+    "exp": "Edge computing reduces latency and bandwidth use by local processing.",
+    "sub": "IoT resource management"
+  },
+  {
+    "q": "Which consensus mechanism is used by the Bitcoin network?",
+    "options": [
+      "Proof of Work",
+      "Proof of Stake",
+      "Proof of Authority",
+      "Practical Byzantine Fault Tolerance"
+    ],
+    "answer": 0,
+    "exp": "Bitcoin miners compete to solve a hash puzzle, which is Proof of Work.",
+    "sub": "Blockchain"
+  },
+  {
+    "q": "In Hadoop's HDFS architecture, which node stores the file-system metadata (namespace and block locations)?",
+    "options": [
+      "DataNode",
+      "TaskTracker",
+      "Client node",
+      "NameNode"
+    ],
+    "answer": 3,
+    "exp": "The NameNode keeps metadata while DataNodes store the actual blocks.",
+    "sub": "Big data"
+  },
+  {
+    "q": "Which technology allows two devices to exchange data when brought within a few centimetres of each other, as used in contactless payments?",
+    "options": [
+      "WiMAX",
+      "NFC",
+      "ZigBee",
+      "Wi-Fi Direct"
+    ],
+    "answer": 1,
+    "exp": "Near Field Communication works at about 4 cm at 13.56 MHz.",
+    "sub": "Mobile communication"
+  },
+  {
+    "q": "In electronic payment, a cash-like digital token (e-cash) system must especially prevent:",
+    "options": [
+      "Use of a PIN",
+      "Double spending of the same token",
+      "Packet fragmentation",
+      "Frame collisions"
+    ],
+    "answer": 1,
+    "exp": "Digital cash is only data and can be copied, so the issuer must detect and prevent the same token being spent twice.",
+    "sub": "Digital tokens",
+    "v": 2
+  },
+  {
+    "q": "In the MQTT protocol, the server that receives messages from publishers and forwards them to the subscribed clients is called the:",
+    "options": [
+      "Gateway",
+      "Coordinator",
+      "Broker",
+      "Resolver"
+    ],
+    "answer": 2,
+    "exp": "MQTT follows a publish-subscribe model mediated by a broker.",
+    "sub": "IoT protocols"
+  },
+  {
+    "q": "Which essential characteristic of cloud computing means resources can be automatically scaled up and down with demand?",
+    "options": [
+      "Broad network access",
+      "Resource pooling",
+      "Multi-lingual support",
+      "Rapid elasticity"
+    ],
+    "answer": 3,
+    "exp": "Rapid elasticity lets capacity expand or shrink as demand changes.",
+    "sub": "Cloud computing"
+  },
+  {
+    "q": "EDI in e-commerce stands for:",
+    "options": [
+      "Electronic Digital Information",
+      "Efficient Data Integration",
+      "Electronic Data Interchange",
+      "External Data Interface"
+    ],
+    "answer": 2,
+    "exp": "EDI is the computer-to-computer exchange of standardised business documents.",
+    "sub": "EDI"
+  },
+  {
+    "q": "In data warehousing, ETL stands for:",
+    "options": [
+      "Encrypt, Transmit, Log",
+      "Evaluate, Test, Launch",
+      "Extract, Transform, Load",
+      "Edit, Translate, Link"
+    ],
+    "answer": 2,
+    "exp": "ETL pulls data from sources, cleans/transforms it and loads it into the warehouse.",
+    "sub": "Data warehouse",
+    "v": 2
+  }
 ]

@@ -1,482 +1,487 @@
 [
- {
-  "q": "A wait-for graph is used to detect deadlock when:",
-  "options": [
-   "each resource type has only one instance",
-   "only memory is the resource",
-   "resources are infinitely many",
-   "all processes have equal priority"
-  ],
-  "answer": 0,
-  "exp": "A wait-for graph is obtained from the resource-allocation graph by removing resource nodes and works for single instances.",
-  "sub": "Deadlock"
- },
- {
-  "q": "A user program requests a kernel service by executing a:",
-  "options": [
-   "page fault",
-   "jump instruction",
-   "DMA request",
-   "trap (software interrupt) instruction"
-  ],
-  "answer": 3,
-  "exp": "A system call is invoked through a trap, which switches the CPU to kernel mode and runs the handler.",
-  "sub": "System Calls and Kernel"
- },
- {
-  "q": "A process arrives at time 4, has a CPU burst of 6 ms and completes at time 20 (waiting only in the ready queue). What is its waiting time?",
-  "options": [
-   "6 ms",
-   "10 ms",
-   "14 ms",
-   "16 ms"
-  ],
-  "answer": 1,
-  "exp": "Turnaround = 20 - 4 = 16; waiting = turnaround - burst = 16 - 6 = 10.",
-  "sub": "CPU Scheduling"
- },
- {
-  "q": "Thrashing occurs in a virtual memory system when:",
-  "options": [
-   "the TLB hit ratio is 100%",
-   "the CPU is idle because no process is ready",
-   "a process spends more time paging than executing",
-   "the disk is full"
-  ],
-  "answer": 2,
-  "exp": "Excessive page faults, often from too high a degree of multiprogramming, cause thrashing.",
-  "sub": "Memory Management"
- },
- {
-  "q": "The main purpose of journaling in file systems such as ext4 and NTFS is to:",
-  "options": [
-   "increase the disk rotation speed",
-   "keep the file system consistent and speed up recovery after a crash",
-   "encrypt every file",
-   "compress files automatically"
-  ],
-  "answer": 1,
-  "exp": "Changes are logged before being applied, so after a crash the log can be replayed to restore consistency.",
-  "sub": "File Systems"
- },
- {
-  "q": "Which page replacement algorithm is free from Belady's anomaly?",
-  "options": [
-   "FIFO",
-   "Second chance",
-   "Random replacement in all cases",
-   "LRU"
-  ],
-  "answer": 3,
-  "exp": "LRU and Optimal are stack algorithms; the set of pages in n frames is always a subset of that in n+1 frames.",
-  "sub": "Page Replacement"
- },
- {
-  "q": "The degree of multiprogramming is controlled by the:",
-  "options": [
-   "disk scheduler",
-   "short-term scheduler",
-   "long-term scheduler",
-   "dispatcher"
-  ],
-  "answer": 2,
-  "exp": "The long-term (job) scheduler decides how many processes are admitted into memory.",
-  "sub": "Process and Thread"
- },
- {
-  "q": "A known drawback of SSTF disk scheduling is:",
-  "options": [
-   "starvation of requests far from the current head position",
-   "it needs the disk to be empty",
-   "very high average seek time",
-   "it cannot handle more than 8 requests"
-  ],
-  "answer": 0,
-  "exp": "New requests near the head may keep arriving and delay distant requests indefinitely.",
-  "sub": "Disk Scheduling"
- },
- {
-  "q": "The primary role of an operating system is to:",
-  "options": [
-   "translate high-level programs into machine code",
-   "act as a resource manager and provide an interface between user and hardware",
-   "create hardware drivers only for printers",
-   "store data permanently on the disk"
-  ],
-  "answer": 1,
-  "exp": "The OS allocates CPU, memory and I/O devices and offers services to users and applications.",
-  "sub": "OS Types and Basics"
- },
- {
-  "q": "The starting address of the Interrupt Service Routine is obtained from the:",
-  "options": [
-   "process control block",
-   "file allocation table",
-   "page table",
-   "interrupt vector table"
-  ],
-  "answer": 3,
-  "exp": "The interrupt number indexes the vector table, which holds ISR addresses.",
-  "sub": "I/O Management"
- },
- {
-  "q": "A race condition occurs when:",
-  "options": [
-   "a process terminates abnormally",
-   "two processes have the same priority",
-   "the outcome depends on the order in which concurrent processes access shared data",
-   "a process runs faster than another"
-  ],
-  "answer": 2,
-  "exp": "Unsynchronized access to shared data makes results depend on scheduling interleaving.",
-  "sub": "Process Synchronization"
- },
- {
-  "q": "In a Linux system, user and system configuration files are generally stored in the directory:",
-  "options": [
-   "/etc",
-   "/dev",
-   "/tmp",
-   "/proc"
-  ],
-  "answer": 0,
-  "exp": "/etc holds configuration files such as passwd and hosts; /dev has device files and /proc is a virtual process file system.",
-  "sub": "Unix/Linux Commands"
- },
- {
-  "q": "Which statement distinguishes livelock from deadlock?",
-  "options": [
-   "Livelock requires a minimum of four processes",
-   "In livelock, processes keep changing state but make no progress",
-   "Livelock occurs only in single-processor systems",
-   "In livelock, processes are blocked forever without any activity"
-  ],
-  "answer": 1,
-  "exp": "Livelocked processes are not blocked; they actively respond to each other yet never finish.",
-  "sub": "Deadlock"
- },
- {
-  "q": "Which statement about a multilevel feedback queue scheduler is correct?",
-  "options": [
-   "It cannot use Round Robin in any queue",
-   "It requires prior knowledge of exact burst times",
-   "Processes can move between queues, which also helps prevent starvation",
-   "Processes are permanently assigned to one queue"
-  ],
-  "answer": 2,
-  "exp": "MLFQ promotes and demotes processes among queues based on behaviour and waiting time, so aging can prevent starvation.",
-  "sub": "CPU Scheduling"
- },
- {
-  "q": "In the buddy system, a request for 70 KB is made from a 256 KB free block. What is the internal fragmentation in the block allocated to it?",
-  "options": [
-   "6 KB",
-   "186 KB",
-   "0 KB",
-   "58 KB"
-  ],
-  "answer": 3,
-  "exp": "The 256 KB block is split into 128 KB buddies; 128 KB is allocated, wasting 128 - 70 = 58 KB.",
-  "sub": "Memory Management"
- },
- {
-  "q": "Match the file systems with their typical operating systems: (i) ext4 (ii) NTFS (iii) APFS. Which mapping is correct?",
-  "options": [
-   "(i) Linux, (ii) Windows, (iii) macOS",
-   "(i) Windows, (ii) Linux, (iii) macOS",
-   "(i) Linux, (ii) macOS, (iii) Windows",
-   "(i) macOS, (ii) Windows, (iii) Linux"
-  ],
-  "answer": 0,
-  "exp": "ext4 is the common Linux file system, NTFS is Windows, APFS is Apple's file system for macOS and iOS.",
-  "sub": "File Systems"
- },
- {
-  "q": "The Linux kernel is classified as:",
-  "options": [
-   "a hypervisor only",
-   "a pure microkernel",
-   "an exokernel",
-   "a monolithic kernel with loadable modules"
-  ],
-  "answer": 3,
-  "exp": "Linux runs most services in kernel space but supports dynamically loadable modules.",
-  "sub": "System Calls and Kernel"
- },
- {
-  "q": "The Optimal page replacement algorithm is not practical because it:",
-  "options": [
-   "requires a very large TLB",
-   "needs knowledge of future page references",
-   "cannot be simulated",
-   "produces the most page faults"
-  ],
-  "answer": 1,
-  "exp": "It replaces the page that will not be used for the longest time, which cannot be known in advance; it serves as a benchmark.",
-  "sub": "Page Replacement"
- },
- {
-  "q": "In the many-to-one multithreading model, which is a major drawback?",
-  "options": [
-   "Thread creation requires a kernel call",
-   "Each user thread needs a kernel thread",
-   "If one thread makes a blocking system call, the entire process blocks",
-   "Threads cannot share data"
-  ],
-  "answer": 2,
-  "exp": "All user threads map to one kernel thread, so a blocking call blocks all of them and there is no parallelism on multiprocessors.",
-  "sub": "Process and Thread"
- },
- {
-  "q": "The time taken by the dispatcher to stop one process and start another running is called:",
-  "options": [
-   "dispatch latency",
-   "seek time",
-   "response time",
-   "turnaround time"
-  ],
-  "answer": 0,
-  "exp": "Dispatch latency is the time for the dispatcher to perform the context switch and resume a process.",
-  "sub": "CPU Scheduling"
- },
- {
-  "q": "C-SCAN is preferred over SCAN because it:",
-  "options": [
-   "does not need any seek",
-   "works only for tape drives",
-   "provides a more uniform waiting time",
-   "gives the minimum seek time"
-  ],
-  "answer": 2,
-  "exp": "C-SCAN services requests in one direction and returns quickly, so cylinders at either end are treated more fairly.",
-  "sub": "Disk Scheduling"
- },
- {
-  "q": "Embedded operating systems are typically characterized by:",
-  "options": [
-   "need for a graphical desktop",
-   "use only in mainframes",
-   "support for thousands of users",
-   "small memory footprint and a fixed dedicated function"
-  ],
-  "answer": 3,
-  "exp": "They are designed for devices such as appliances and controllers with limited resources.",
-  "sub": "OS Types and Basics"
- },
- {
-  "q": "Priority inversion happens when:",
-  "options": [
-   "a high-priority process waits for a lock held by a low-priority process that is preempted by a medium-priority process",
-   "two processes exchange priorities voluntarily",
-   "a low-priority process always runs before higher ones",
-   "priorities are assigned in decreasing order"
-  ],
-  "answer": 0,
-  "exp": "The medium-priority process indirectly delays the high-priority one; priority inheritance is the usual fix.",
-  "sub": "Process Synchronization"
- },
- {
-  "q": "Which command displays a dynamic, continuously updated view of running processes and CPU/memory usage?",
-  "options": [
-   "pwd",
-   "top",
-   "df",
-   "ps"
-  ],
-  "answer": 1,
-  "exp": "top refreshes periodically, while ps gives a one-time snapshot.",
-  "sub": "Unix/Linux Commands"
- },
- {
-  "q": "Which of the following is NOT a method of recovering from deadlock?",
-  "options": [
-   "Aborting all deadlocked processes",
-   "Aborting processes one at a time until the cycle is broken",
-   "Increasing the time quantum of the CPU scheduler",
-   "Preempting resources with rollback"
-  ],
-  "answer": 2,
-  "exp": "Recovery uses process termination or resource preemption; changing the quantum has no effect on the deadlock.",
-  "sub": "Deadlock"
- },
- {
-  "q": "In two-level paging with a 32-bit address, 12-bit offset and a 10-bit outer-page index, how many bits index the inner page table?",
-  "options": [
-   "8",
-   "10",
-   "20",
-   "12"
-  ],
-  "answer": 1,
-  "exp": "32 - 12 - 10 = 10 bits.",
-  "sub": "Memory Management"
- },
- {
-  "q": "In the counting method of free-space management, each free-list entry contains:",
-  "options": [
-   "the address of the first free block and the number of contiguous free blocks following it",
-   "the size of the entire disk",
-   "a bit for each block",
-   "only the address of the next free block"
-  ],
-  "answer": 0,
-  "exp": "Counting exploits the fact that free blocks often occur in contiguous runs.",
-  "sub": "File Systems"
- },
- {
-  "q": "Response time in CPU scheduling is the time:",
-  "options": [
-   "a process spends waiting in the ready queue in total",
-   "from submission until the process completes",
-   "a process spends executing on the CPU",
-   "from submission of a request until the first response is produced"
-  ],
-  "answer": 3,
-  "exp": "Response time measures how soon the first output is produced, important for interactive systems.",
-  "sub": "CPU Scheduling"
- },
- {
-  "q": "A device driver is best described as:",
-  "options": [
-   "an application used to install programs",
-   "kernel-level software that lets the OS communicate with a hardware device controller",
-   "a hardware component inside the disk",
-   "a type of CPU scheduling policy"
-  ],
-  "answer": 1,
-  "exp": "Device drivers provide a uniform interface between the OS and the device-specific hardware.",
-  "sub": "I/O Management"
- },
- {
-  "q": "During system start-up, the bootstrap loader (boot loader) is responsible for:",
-  "options": [
-   "installing application software",
-   "compiling the kernel source code",
-   "locating and loading the operating system kernel into main memory",
-   "formatting the hard disk"
-  ],
-  "answer": 2,
-  "exp": "After firmware (BIOS/UEFI) tests the hardware, the boot loader loads the kernel and passes control to it.",
-  "sub": "System Calls and Kernel"
- },
- {
-  "q": "The second-chance (clock) page replacement algorithm makes use of:",
-  "options": [
-   "a reference bit for each page",
-   "a modify (dirty) bit only",
-   "the process priority",
-   "the page size"
-  ],
-  "answer": 0,
-  "exp": "A page with reference bit 1 gets a second chance (bit cleared), otherwise it is replaced.",
-  "sub": "Page Replacement"
- },
- {
-  "q": "When a parent process terminates before its child, the child process is adopted by:",
-  "options": [
-   "the child's own thread group",
-   "the shell that started the parent",
-   "the kernel scheduler",
-   "the init (PID 1) process"
-  ],
-  "answer": 3,
-  "exp": "Orphaned children are re-parented to init/systemd (PID 1), which reaps them on exit.",
-  "sub": "Process and Thread"
- },
- {
-  "q": "Seek time of a disk is the time required to:",
-  "options": [
-   "move the read/write head to the desired cylinder",
-   "transfer data to main memory",
-   "rotate the desired sector under the head",
-   "format a track"
-  ],
-  "answer": 0,
-  "exp": "Seek time is the head-positioning time; rotational latency and transfer time are separate.",
-  "sub": "Disk Scheduling"
- },
- {
-  "q": "Assertion (A): Time-sharing systems provide good interactive response.\nReason (R): The CPU is switched among users after a small time quantum.\nWhich option is correct?",
-  "options": [
-   "A is false but R is true",
-   "Both A and R are true and R is the correct explanation of A",
-   "Both A and R are true but R is not the correct explanation of A",
-   "A is true but R is false"
-  ],
-  "answer": 1,
-  "exp": "Rapid switching with a small quantum gives each user quick turns on the CPU, which explains the good response.",
-  "sub": "OS Types and Basics"
- },
- {
-  "q": "A counting semaphore is initialised to 2. Five processes each execute a P (wait) operation and none executes V. How many processes are blocked?",
-  "options": [
-   "0",
-   "2",
-   "5",
-   "3"
-  ],
-  "answer": 3,
-  "exp": "The first two P operations succeed (value 0); the remaining three block.",
-  "sub": "Process Synchronization"
- },
- {
-  "q": "The command df -h is used to:",
-  "options": [
-   "display the size of a particular file only",
-   "list the processes using disk",
-   "display disk space usage of mounted file systems in human-readable form",
-   "delete files from the disk"
-  ],
-  "answer": 2,
-  "exp": "df reports free and used space on file systems; -h prints sizes in K, M, G.",
-  "sub": "Unix/Linux Commands"
- },
- {
-  "q": "In the Banker's algorithm, if Max for a process is (7, 5, 3) and its current Allocation is (0, 1, 0), what is its Need vector?",
-  "options": [
-   "(7, 4, 3)",
-   "(0, 4, 3)",
-   "(7, 6, 3)",
-   "(7, 5, 3)"
-  ],
-  "answer": 0,
-  "exp": "Need = Max - Allocation = (7-0, 5-1, 3-0) = (7, 4, 3).",
-  "sub": "Deadlock"
- },
- {
-  "q": "Demand paging works efficiently mainly because of:",
-  "options": [
-   "dedicated I/O processors",
-   "a large TLB",
-   "locality of reference",
-   "external fragmentation"
-  ],
-  "answer": 2,
-  "exp": "Programs tend to access a small set of pages repeatedly, so few page faults occur.",
-  "sub": "Memory Management"
- },
- {
-  "q": "In Unix, the three standard file descriptors 0, 1 and 2 correspond to:",
-  "options": [
-   "stdout, stdin and stderr",
-   "stderr, stdout and stdin",
-   "stdin, stderr and stdout",
-   "stdin, stdout and stderr"
-  ],
-  "answer": 3,
-  "exp": "By convention 0 is standard input, 1 standard output, 2 standard error.",
-  "sub": "File Systems"
- },
- {
-  "q": "SJF scheduling predicts the next CPU burst by exponential averaging: τ(n+1) = α·t(n) + (1-α)·τ(n). If α = 0.5, the initial prediction τ0 = 10 ms and the first actual burst t0 = 6 ms, what is the next prediction τ1?",
-  "options": [
-   "6 ms",
-   "8 ms",
-   "16 ms",
-   "7 ms"
-  ],
-  "answer": 1,
-  "exp": "τ1 = 0.5×6 + 0.5×10 = 3 + 5 = 8 ms.",
-  "sub": "CPU Scheduling"
- }
+  {
+    "q": "A wait-for graph is used to detect deadlock when:",
+    "options": [
+      "each resource type has only one instance",
+      "only memory is the resource",
+      "resources are infinitely many",
+      "all processes have equal priority"
+    ],
+    "answer": 0,
+    "exp": "A wait-for graph is obtained from the resource-allocation graph by removing resource nodes and works for single instances.",
+    "sub": "Deadlock"
+  },
+  {
+    "q": "A user program requests a kernel service by executing a:",
+    "options": [
+      "page fault",
+      "jump instruction",
+      "DMA request",
+      "trap (software interrupt) instruction"
+    ],
+    "answer": 3,
+    "exp": "A system call is invoked through a trap, which switches the CPU to kernel mode and runs the handler.",
+    "sub": "System Calls and Kernel"
+  },
+  {
+    "q": "A process arrives at time 4, has a CPU burst of 6 ms and completes at time 20 (waiting only in the ready queue). What is its waiting time?",
+    "options": [
+      "6 ms",
+      "10 ms",
+      "14 ms",
+      "16 ms"
+    ],
+    "answer": 1,
+    "exp": "Turnaround = 20 - 4 = 16; waiting = turnaround - burst = 16 - 6 = 10.",
+    "sub": "CPU Scheduling"
+  },
+  {
+    "q": "Thrashing occurs in a virtual memory system when:",
+    "options": [
+      "the TLB hit ratio is 100%",
+      "the CPU is idle because no process is ready",
+      "a process spends more time paging than executing",
+      "the disk is full"
+    ],
+    "answer": 2,
+    "exp": "Excessive page faults, often from too high a degree of multiprogramming, cause thrashing.",
+    "sub": "Memory Management"
+  },
+  {
+    "q": "The main purpose of journaling in file systems such as ext4 and NTFS is to:",
+    "options": [
+      "increase the disk rotation speed",
+      "keep the file system consistent and speed up recovery after a crash",
+      "encrypt every file",
+      "compress files automatically"
+    ],
+    "answer": 1,
+    "exp": "Changes are logged before being applied, so after a crash the log can be replayed to restore consistency.",
+    "sub": "File Systems"
+  },
+  {
+    "q": "Which page replacement algorithm is free from Belady's anomaly?",
+    "options": [
+      "FIFO",
+      "Second chance",
+      "Random replacement in all cases",
+      "LRU"
+    ],
+    "answer": 3,
+    "exp": "LRU and Optimal are stack algorithms; the set of pages in n frames is always a subset of that in n+1 frames.",
+    "sub": "Page Replacement"
+  },
+  {
+    "q": "The degree of multiprogramming is controlled by the:",
+    "options": [
+      "disk scheduler",
+      "short-term scheduler",
+      "long-term scheduler",
+      "dispatcher"
+    ],
+    "answer": 2,
+    "exp": "The long-term (job) scheduler decides how many processes are admitted into memory.",
+    "sub": "Process and Thread"
+  },
+  {
+    "q": "Linux allows device drivers and file systems to be added to a running kernel without rebooting through:",
+    "options": [
+      "microkernel message servers",
+      "virtual machines",
+      "loadable kernel modules",
+      "overlay segments"
+    ],
+    "answer": 2,
+    "exp": "Linux is a monolithic kernel that supports dynamically loadable kernel modules (insmod/modprobe), giving modular flexibility without microkernel message-passing overhead.",
+    "sub": "System Calls and Kernel",
+    "v": 2
+  },
+  {
+    "q": "The primary role of an operating system is to:",
+    "options": [
+      "translate high-level programs into machine code",
+      "act as a resource manager and provide an interface between user and hardware",
+      "create hardware drivers only for printers",
+      "store data permanently on the disk"
+    ],
+    "answer": 1,
+    "exp": "The OS allocates CPU, memory and I/O devices and offers services to users and applications.",
+    "sub": "OS Types and Basics"
+  },
+  {
+    "q": "The starting address of the Interrupt Service Routine is obtained from the:",
+    "options": [
+      "process control block",
+      "file allocation table",
+      "page table",
+      "interrupt vector table"
+    ],
+    "answer": 3,
+    "exp": "The interrupt number indexes the vector table, which holds ISR addresses.",
+    "sub": "I/O Management"
+  },
+  {
+    "q": "A race condition occurs when:",
+    "options": [
+      "a process terminates abnormally",
+      "two processes have the same priority",
+      "the outcome depends on the order in which concurrent processes access shared data",
+      "a process runs faster than another"
+    ],
+    "answer": 2,
+    "exp": "Unsynchronized access to shared data makes results depend on scheduling interleaving.",
+    "sub": "Process Synchronization"
+  },
+  {
+    "q": "How many simultaneous disk failures can a RAID 5 array tolerate without losing data?",
+    "options": [
+      "One",
+      "None",
+      "Two",
+      "All but one"
+    ],
+    "answer": 0,
+    "exp": "RAID 5 uses block striping with distributed single parity, so any one failed disk can be rebuilt from the others. A second failure before rebuild loses data (RAID 6 tolerates two).",
+    "sub": "Disk Scheduling",
+    "v": 2
+  },
+  {
+    "q": "Which statement distinguishes livelock from deadlock?",
+    "options": [
+      "Livelock requires a minimum of four processes",
+      "In livelock, processes keep changing state but make no progress",
+      "Livelock occurs only in single-processor systems",
+      "In livelock, processes are blocked forever without any activity"
+    ],
+    "answer": 1,
+    "exp": "Livelocked processes are not blocked; they actively respond to each other yet never finish.",
+    "sub": "Deadlock"
+  },
+  {
+    "q": "Which statement about a multilevel feedback queue scheduler is correct?",
+    "options": [
+      "It cannot use Round Robin in any queue",
+      "It requires prior knowledge of exact burst times",
+      "Processes can move between queues, which also helps prevent starvation",
+      "Processes are permanently assigned to one queue"
+    ],
+    "answer": 2,
+    "exp": "MLFQ promotes and demotes processes among queues based on behaviour and waiting time, so aging can prevent starvation.",
+    "sub": "CPU Scheduling"
+  },
+  {
+    "q": "In the buddy system, a request for 70 KB is made from a 256 KB free block. What is the internal fragmentation in the block allocated to it?",
+    "options": [
+      "6 KB",
+      "186 KB",
+      "0 KB",
+      "58 KB"
+    ],
+    "answer": 3,
+    "exp": "The 256 KB block is split into 128 KB buddies; 128 KB is allocated, wasting 128 - 70 = 58 KB.",
+    "sub": "Memory Management"
+  },
+  {
+    "q": "Match the file systems with their typical operating systems: (i) ext4 (ii) NTFS (iii) APFS. Which mapping is correct?",
+    "options": [
+      "(i) Linux, (ii) Windows, (iii) macOS",
+      "(i) Windows, (ii) Linux, (iii) macOS",
+      "(i) Linux, (ii) macOS, (iii) Windows",
+      "(i) macOS, (ii) Windows, (iii) Linux"
+    ],
+    "answer": 0,
+    "exp": "ext4 is the common Linux file system, NTFS is Windows, APFS is Apple's file system for macOS and iOS.",
+    "sub": "File Systems"
+  },
+  {
+    "q": "The Linux kernel is classified as:",
+    "options": [
+      "a hypervisor only",
+      "a pure microkernel",
+      "an exokernel",
+      "a monolithic kernel with loadable modules"
+    ],
+    "answer": 3,
+    "exp": "Linux runs most services in kernel space but supports dynamically loadable modules.",
+    "sub": "System Calls and Kernel"
+  },
+  {
+    "q": "The Optimal page replacement algorithm is not practical because it:",
+    "options": [
+      "requires a very large TLB",
+      "needs knowledge of future page references",
+      "cannot be simulated",
+      "produces the most page faults"
+    ],
+    "answer": 1,
+    "exp": "It replaces the page that will not be used for the longest time, which cannot be known in advance; it serves as a benchmark.",
+    "sub": "Page Replacement"
+  },
+  {
+    "q": "In the many-to-one multithreading model, which is a major drawback?",
+    "options": [
+      "Thread creation requires a kernel call",
+      "Each user thread needs a kernel thread",
+      "If one thread makes a blocking system call, the entire process blocks",
+      "Threads cannot share data"
+    ],
+    "answer": 2,
+    "exp": "All user threads map to one kernel thread, so a blocking call blocks all of them and there is no parallelism on multiprocessors.",
+    "sub": "Process and Thread"
+  },
+  {
+    "q": "The time taken by the dispatcher to stop one process and start another running is called:",
+    "options": [
+      "dispatch latency",
+      "seek time",
+      "response time",
+      "turnaround time"
+    ],
+    "answer": 0,
+    "exp": "Dispatch latency is the time for the dispatcher to perform the context switch and resume a process.",
+    "sub": "CPU Scheduling"
+  },
+  {
+    "q": "C-SCAN is preferred over SCAN because it:",
+    "options": [
+      "does not need any seek",
+      "works only for tape drives",
+      "provides a more uniform waiting time",
+      "gives the minimum seek time"
+    ],
+    "answer": 2,
+    "exp": "C-SCAN services requests in one direction and returns quickly, so cylinders at either end are treated more fairly.",
+    "sub": "Disk Scheduling"
+  },
+  {
+    "q": "Embedded operating systems are typically characterized by:",
+    "options": [
+      "need for a graphical desktop",
+      "use only in mainframes",
+      "support for thousands of users",
+      "small memory footprint and a fixed dedicated function"
+    ],
+    "answer": 3,
+    "exp": "They are designed for devices such as appliances and controllers with limited resources.",
+    "sub": "OS Types and Basics"
+  },
+  {
+    "q": "Priority inversion happens when:",
+    "options": [
+      "a high-priority process waits for a lock held by a low-priority process that is preempted by a medium-priority process",
+      "two processes exchange priorities voluntarily",
+      "a low-priority process always runs before higher ones",
+      "priorities are assigned in decreasing order"
+    ],
+    "answer": 0,
+    "exp": "The medium-priority process indirectly delays the high-priority one; priority inheritance is the usual fix.",
+    "sub": "Process Synchronization"
+  },
+  {
+    "q": "Which statement correctly compares symmetric and asymmetric encryption?",
+    "options": [
+      "Symmetric uses a public/private key pair; asymmetric uses one shared key",
+      "Both use the same key, but asymmetric is faster",
+      "Symmetric uses one shared secret key and is faster; asymmetric uses a public/private key pair",
+      "Asymmetric encryption needs no keys at all"
+    ],
+    "answer": 2,
+    "exp": "Symmetric ciphers (DES, AES) share one secret key and are fast; asymmetric ciphers (RSA) use a key pair and suit key exchange and digital signatures.",
+    "sub": "Protection and Security",
+    "v": 2
+  },
+  {
+    "q": "Which of the following is NOT a method of recovering from deadlock?",
+    "options": [
+      "Aborting all deadlocked processes",
+      "Aborting processes one at a time until the cycle is broken",
+      "Increasing the time quantum of the CPU scheduler",
+      "Preempting resources with rollback"
+    ],
+    "answer": 2,
+    "exp": "Recovery uses process termination or resource preemption; changing the quantum has no effect on the deadlock.",
+    "sub": "Deadlock"
+  },
+  {
+    "q": "In two-level paging with a 32-bit address, 12-bit offset and a 10-bit outer-page index, how many bits index the inner page table?",
+    "options": [
+      "8",
+      "10",
+      "20",
+      "12"
+    ],
+    "answer": 1,
+    "exp": "32 - 12 - 10 = 10 bits.",
+    "sub": "Memory Management"
+  },
+  {
+    "q": "The principle of least privilege states that:",
+    "options": [
+      "all users should have administrator rights",
+      "a user or program should be given only the access rights needed to do its task",
+      "access rights should never be revoked",
+      "only the kernel may run programs"
+    ],
+    "answer": 1,
+    "exp": "Least privilege limits damage from errors or attacks by restricting each domain to the minimum rights necessary.",
+    "sub": "Protection and Security",
+    "v": 2
+  },
+  {
+    "q": "Response time in CPU scheduling is the time:",
+    "options": [
+      "a process spends waiting in the ready queue in total",
+      "from submission until the process completes",
+      "a process spends executing on the CPU",
+      "from submission of a request until the first response is produced"
+    ],
+    "answer": 3,
+    "exp": "Response time measures how soon the first output is produced, important for interactive systems.",
+    "sub": "CPU Scheduling"
+  },
+  {
+    "q": "A device driver is best described as:",
+    "options": [
+      "an application used to install programs",
+      "kernel-level software that lets the OS communicate with a hardware device controller",
+      "a hardware component inside the disk",
+      "a type of CPU scheduling policy"
+    ],
+    "answer": 1,
+    "exp": "Device drivers provide a uniform interface between the OS and the device-specific hardware.",
+    "sub": "I/O Management"
+  },
+  {
+    "q": "During system start-up, the bootstrap loader (boot loader) is responsible for:",
+    "options": [
+      "installing application software",
+      "compiling the kernel source code",
+      "locating and loading the operating system kernel into main memory",
+      "formatting the hard disk"
+    ],
+    "answer": 2,
+    "exp": "After firmware (BIOS/UEFI) tests the hardware, the boot loader loads the kernel and passes control to it.",
+    "sub": "System Calls and Kernel"
+  },
+  {
+    "q": "The second-chance (clock) page replacement algorithm makes use of:",
+    "options": [
+      "a reference bit for each page",
+      "a modify (dirty) bit only",
+      "the process priority",
+      "the page size"
+    ],
+    "answer": 0,
+    "exp": "A page with reference bit 1 gets a second chance (bit cleared), otherwise it is replaced.",
+    "sub": "Page Replacement"
+  },
+  {
+    "q": "When a parent process terminates before its child, the child process is adopted by:",
+    "options": [
+      "the child's own thread group",
+      "the shell that started the parent",
+      "the kernel scheduler",
+      "the init (PID 1) process"
+    ],
+    "answer": 3,
+    "exp": "Orphaned children are re-parented to init/systemd (PID 1), which reaps them on exit.",
+    "sub": "Process and Thread"
+  },
+  {
+    "q": "Seek time of a disk is the time required to:",
+    "options": [
+      "move the read/write head to the desired cylinder",
+      "transfer data to main memory",
+      "rotate the desired sector under the head",
+      "format a track"
+    ],
+    "answer": 0,
+    "exp": "Seek time is the head-positioning time; rotational latency and transfer time are separate.",
+    "sub": "Disk Scheduling"
+  },
+  {
+    "q": "Assertion (A): Time-sharing systems provide good interactive response.\nReason (R): The CPU is switched among users after a small time quantum.\nWhich option is correct?",
+    "options": [
+      "A is false but R is true",
+      "Both A and R are true and R is the correct explanation of A",
+      "Both A and R are true but R is not the correct explanation of A",
+      "A is true but R is false"
+    ],
+    "answer": 1,
+    "exp": "Rapid switching with a small quantum gives each user quick turns on the CPU, which explains the good response.",
+    "sub": "OS Types and Basics"
+  },
+  {
+    "q": "A counting semaphore is initialised to 2. Five processes each execute a P (wait) operation and none executes V. How many processes are blocked?",
+    "options": [
+      "0",
+      "2",
+      "5",
+      "3"
+    ],
+    "answer": 3,
+    "exp": "The first two P operations succeed (value 0); the remaining three block.",
+    "sub": "Process Synchronization"
+  },
+  {
+    "q": "Setting the setuid bit on an executable file causes the program to run with the privileges of:",
+    "options": [
+      "the file's owner",
+      "the user who started it",
+      "the root user always",
+      "the file's group only"
+    ],
+    "answer": 0,
+    "exp": "With setuid, the effective user ID becomes that of the file owner while executing (e.g. passwd runs as root so it can update the password file).",
+    "sub": "Unix/Linux Commands",
+    "v": 2
+  },
+  {
+    "q": "In the Banker's algorithm, if Max for a process is (7, 5, 3) and its current Allocation is (0, 1, 0), what is its Need vector?",
+    "options": [
+      "(7, 4, 3)",
+      "(0, 4, 3)",
+      "(7, 6, 3)",
+      "(7, 5, 3)"
+    ],
+    "answer": 0,
+    "exp": "Need = Max - Allocation = (7-0, 5-1, 3-0) = (7, 4, 3).",
+    "sub": "Deadlock"
+  },
+  {
+    "q": "Demand paging works efficiently mainly because of:",
+    "options": [
+      "dedicated I/O processors",
+      "a large TLB",
+      "locality of reference",
+      "external fragmentation"
+    ],
+    "answer": 2,
+    "exp": "Programs tend to access a small set of pages repeatedly, so few page faults occur.",
+    "sub": "Memory Management"
+  },
+  {
+    "q": "In Unix, the three standard file descriptors 0, 1 and 2 correspond to:",
+    "options": [
+      "stdout, stdin and stderr",
+      "stderr, stdout and stdin",
+      "stdin, stderr and stdout",
+      "stdin, stdout and stderr"
+    ],
+    "answer": 3,
+    "exp": "By convention 0 is standard input, 1 standard output, 2 standard error.",
+    "sub": "File Systems"
+  },
+  {
+    "q": "SJF scheduling predicts the next CPU burst by exponential averaging: τ(n+1) = α·t(n) + (1-α)·τ(n). If α = 0.5, the initial prediction τ0 = 10 ms and the first actual burst t0 = 6 ms, what is the next prediction τ1?",
+    "options": [
+      "6 ms",
+      "8 ms",
+      "16 ms",
+      "7 ms"
+    ],
+    "answer": 1,
+    "exp": "τ1 = 0.5×6 + 0.5×10 = 3 + 5 = 8 ms.",
+    "sub": "CPU Scheduling"
+  }
 ]

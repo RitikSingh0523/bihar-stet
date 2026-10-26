@@ -212,6 +212,45 @@ If P ≠ NP:                          If P = NP:
 
 **⚡ Exam tip:** amortized ≠ average-case. Dynamic array insertion and binary counter increment are both O(1) amortized even though single operations can be O(n)/O(k).
 
+## 10. Graph Algorithms Toolkit
+
+### Traversals as algorithms
+- **BFS**: queue, level by level; O(V + E) with adjacency list, O(V²) with matrix; gives shortest paths (fewest edges) in an unweighted graph; also tests bipartiteness (2-colour by level parity).
+- **DFS**: recursion/stack with discovery and finishing times; O(V + E). Edge types in a directed graph: tree, back (to an ancestor, means a **cycle**), forward, cross. An undirected graph has only tree and back edges.
+- A directed graph is a **DAG iff DFS finds no back edge**. A graph is connected iff BFS/DFS from one vertex reaches all V vertices.
+- Cut vertices and bridges by DFS low-link values: O(V + E). **Strongly connected components**: Kosaraju or Tarjan, O(V + E).
+
+### Shortest paths: choosing the algorithm
+
+| Situation | Algorithm | Time |
+|---|---|---|
+| Unweighted | BFS | O(V + E) |
+| Non-negative weights | Dijkstra (binary heap) | O((V + E) log V); array version O(V²) |
+| Negative weights, no negative cycle | Bellman-Ford | O(VE) |
+| DAG | Relax in topological order | O(V + E) |
+| All pairs | Floyd-Warshall (DP) | O(V³), space O(V²) |
+| All pairs, sparse | Johnson (reweight + Dijkstra from every vertex) | O(V² log V + VE) |
+
+- **Bellman-Ford** worked: edges s→a 4, s→b 5, a→b −3, b→c 2, source s. Pass 1 (edges in the order listed): a = 4, b = min(5, 4 − 3) = 1, c = 1 + 2 = 3. A further pass changes nothing → no negative cycle; distances s=0, a=4, b=1, c=3. If any edge can still be relaxed after V − 1 passes there is a **negative cycle** reachable from the source.
+- Dijkstra's greedy choice (a finalised vertex has the smallest tentative distance) is unsafe with negative edges; adding a constant to every weight does **not** fix it (paths with more edges are penalised more).
+- Relaxation is the common step: if d[u] + w(u,v) < d[v] then d[v] = d[u] + w(u,v).
+
+### Topological sort and DAG algorithms
+- Worked (Kahn): edges A→B, A→C, B→D, C→D. In-degrees A0 B1 C1 D2. Remove A → B and C become 0 → remove B, C → D becomes 0 → order **A B C D** (A C B D is also valid).
+- Longest path in a DAG (critical path) is solved in O(V + E) by DP in topological order; longest path in a general graph is NP-hard.
+- Counting paths in a DAG: paths(v) = sum of paths(u) over edges u→v, processed in topological order.
+
+### Minimum spanning tree facts
+- A connected graph with V vertices has an MST with **V − 1** edges. If all edge weights are distinct the MST is **unique**. Cut property: the lightest edge crossing any cut belongs to some MST; cycle property: the heaviest edge on a cycle is not needed.
+- Number of spanning trees of K_n = n^(n−2) (Cayley). Prim O(E log V) with heap (O(V²) with matrix); Kruskal O(E log E) with sorting + union-find.
+
+### Complexity analysis reminders
+- **Space complexity** = input + auxiliary. Recursive algorithms use O(depth) stack: recursive DFS O(V), merge sort O(n) array, quick sort O(log n) average and O(n) worst stack, recursive binary search O(log n) vs iterative O(1).
+- Substitution check: guess T(n) ≤ c n log n for T(n) = 2T(n/2) + n and verify. Recursion tree: each of the log n levels costs n.
+- Reduction chain for NP-completeness: SAT → 3-SAT → Clique → Vertex Cover → Hamiltonian Cycle → TSP; 3-SAT → Subset Sum → Partition/Knapsack; 3-SAT → 3-Colouring. The reduction itself must run in polynomial time.
+
+**⚡ Exam tip:** DFS back edge = cycle; Bellman-Ford handles negative edges but is O(VE); Dijkstra only non-negative; topological order exists only for DAGs; MST has V − 1 edges.
+
 ## Quick Revision Sheet
 
 1. Algorithm properties: input, output, definiteness, finiteness, effectiveness.
@@ -236,3 +275,4 @@ If P ≠ NP:                          If P = NP:
 20. Solving one NPC problem in polynomial time gives P = NP. NP-hard problems need not be in NP (halting problem).
 21. Amortized analysis methods: aggregate, accounting, potential. Dynamic array doubling and binary counter increment: O(1) amortized.
 22. Naive TSP tours: (n−1)!/2 distinct (K5 → 12); Fibonacci naive Θ(2ⁿ) → DP Θ(n).
+- Graph algorithms: DFS back edge means a cycle; Bellman-Ford O(VE) detects negative cycles after V−1 passes; Dijkstra needs non-negative weights; Johnson for sparse all-pairs; MST has V−1 edges, unique if weights are distinct.

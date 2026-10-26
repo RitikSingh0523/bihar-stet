@@ -1,482 +1,489 @@
 [
- {
-  "q": "Consider FCFS scheduling for processes P1 (arrival 0, burst 5), P2 (arrival 1, burst 3), P3 (arrival 2, burst 8). What is the average waiting time?",
-  "options": [
-   "4.00 ms",
-   "5.00 ms",
-   "3.00 ms",
-   "3.33 ms"
-  ],
-  "answer": 3,
-  "exp": "P1 starts at 0 (WT 0), P2 starts at 5 (WT 4), P3 starts at 8 (WT 6); average = 10/3 = 3.33.",
-  "sub": "CPU Scheduling"
- },
- {
-  "q": "A system has 32-bit logical addresses and 4 KB pages. How many bits are used for the page number?",
-  "options": [
-   "10",
-   "20",
-   "12",
-   "16"
-  ],
-  "answer": 1,
-  "exp": "4 KB = 2^12, so the offset is 12 bits and the page number is 32 - 12 = 20 bits.",
-  "sub": "Memory Management"
- },
- {
-  "q": "A Unix-like inode has 10 direct pointers and 1 single-indirect pointer. Block size is 1 KB and a block pointer is 4 bytes. What is the maximum file size?",
-  "options": [
-   "266 KB",
-   "256 KB",
-   "10 KB",
-   "1034 KB"
-  ],
-  "answer": 0,
-  "exp": "A single-indirect block holds 1024/4 = 256 pointers; total blocks = 10 + 256 = 266, so 266 KB.",
-  "sub": "File Systems"
- },
- {
-  "q": "Which of the following is NOT a requirement for a solution to the critical-section problem?",
-  "options": [
-   "Mutual exclusion",
-   "Progress",
-   "Process priority ordering",
-   "Bounded waiting"
-  ],
-  "answer": 2,
-  "exp": "The three requirements are mutual exclusion, progress and bounded waiting.",
-  "sub": "Process Synchronization"
- },
- {
-  "q": "The command chmod 754 file sets the permissions to:",
-  "options": [
-   "rwxr--r-x",
-   "rwxrwxr--",
-   "rw-r-xr--",
-   "rwxr-xr--"
-  ],
-  "answer": 3,
-  "exp": "7 = rwx for owner, 5 = r-x for group, 4 = r-- for others.",
-  "sub": "Unix/Linux Commands"
- },
- {
-  "q": "Which of the following is NOT a necessary condition for deadlock?",
-  "options": [
-   "Resource preemption (resources can be forcibly taken away)",
-   "Circular wait",
-   "Hold and wait",
-   "Mutual exclusion"
-  ],
-  "answer": 0,
-  "exp": "The four Coffman conditions are mutual exclusion, hold and wait, no preemption and circular wait; allowing preemption breaks deadlock.",
-  "sub": "Deadlock"
- },
- {
-  "q": "Reference string: 1,2,3,4,1,2,5,1,2,3,4,5 with 3 frames and FIFO replacement. How many page faults occur?",
-  "options": [
-   "10",
-   "8",
-   "9",
-   "7"
-  ],
-  "answer": 2,
-  "exp": "Faults on 1,2,3,4,1,2,5,3,4 (the references to 1,2 after 5 and to 5 at the end are hits) = 9.",
-  "sub": "Page Replacement"
- },
- {
-  "q": "Which of the following is NOT stored in the Process Control Block (PCB) of a process?",
-  "options": [
-   "The CPU register contents",
-   "The complete source code of the program",
-   "The process state and process ID",
-   "The program counter"
-  ],
-  "answer": 1,
-  "exp": "The PCB holds execution context and bookkeeping information (PC, registers, state, PID, scheduling data), not the source code.",
-  "sub": "Process and Thread"
- },
- {
-  "q": "The disk head is at cylinder 50. The request queue (in arrival order) is 82, 170, 43, 140, 24, 16, 190. What is the total head movement under FCFS?",
-  "options": [
-   "208 cylinders",
-   "574 cylinders",
-   "314 cylinders",
-   "642 cylinders"
-  ],
-  "answer": 3,
-  "exp": "32 + 88 + 127 + 97 + 116 + 8 + 174 = 642.",
-  "sub": "Disk Scheduling"
- },
- {
-  "q": "In a batch operating system:",
-  "options": [
-   "similar jobs are collected and executed together with no user interaction during execution",
-   "jobs must meet strict deadlines",
-   "users interact with every job through terminals in real time",
-   "the CPU is shared in equal time slices among users"
-  ],
-  "answer": 0,
-  "exp": "Batch systems group jobs with similar needs and run them sequentially without interaction.",
-  "sub": "OS Types and Basics"
- },
- {
-  "q": "How many times is the letter A printed by the following C program (assume every fork succeeds)?\nint main() {\n  fork();\n  fork();\n  printf(\"A\");\n  return 0;\n}",
-  "options": [
-   "2",
-   "4",
-   "8",
-   "3"
-  ],
-  "answer": 1,
-  "exp": "Two successive forks create 2² = 4 processes, and each prints A once.",
-  "sub": "System Calls and Kernel"
- },
- {
-  "q": "Direct Memory Access (DMA) is used to:",
-  "options": [
-   "translate virtual to physical addresses",
-   "schedule processes",
-   "transfer blocks of data between a device and memory without CPU involvement for each byte",
-   "increase the clock speed of the CPU"
-  ],
-  "answer": 2,
-  "exp": "The DMA controller moves data directly and interrupts the CPU only after the whole transfer finishes.",
-  "sub": "I/O Management"
- },
- {
-  "q": "Non-preemptive SJF: P1 (arrival 0, burst 7), P2 (2, 4), P3 (4, 1), P4 (5, 4). What is the average waiting time?",
-  "options": [
-   "4 ms",
-   "5 ms",
-   "3 ms",
-   "6 ms"
-  ],
-  "answer": 0,
-  "exp": "Order: P1 (0-7), P3 (7-8), P2 (8-12), P4 (12-16). WT: 0, 6, 3, 7 → 16/4 = 4.",
-  "sub": "CPU Scheduling"
- },
- {
-  "q": "A system has a 64 KB logical address space, 1 KB pages and 32 KB of physical memory. How many frames are there in physical memory?",
-  "options": [
-   "16",
-   "64",
-   "32",
-   "1024"
-  ],
-  "answer": 2,
-  "exp": "Number of frames = 32 KB / 1 KB = 32.",
-  "sub": "Memory Management"
- },
- {
-  "q": "With block size 4 KB and 4-byte block pointers, how many data blocks can be addressed through one single-indirect block?",
-  "options": [
-   "4096",
-   "256",
-   "512",
-   "1024"
-  ],
-  "answer": 3,
-  "exp": "4096 / 4 = 1024 pointers per indirect block.",
-  "sub": "File Systems"
- },
- {
-  "q": "A counting semaphore is initialised to 10. Then 14 P (wait) operations and 9 V (signal) operations are completed on it. What is the final value of the semaphore?",
-  "options": [
-   "9",
-   "5",
-   "-5",
-   "1"
-  ],
-  "answer": 1,
-  "exp": "Final value = 10 - 14 + 9 = 5.",
-  "sub": "Process Synchronization"
- },
- {
-  "q": "With a umask of 022, the default permissions of a newly created regular file are:",
-  "options": [
-   "644 (rw-r--r--)",
-   "022 (---w--w-)",
-   "622 (rw--w--w-)",
-   "755 (rwxr-xr-x)"
-  ],
-  "answer": 0,
-  "exp": "Files start from 666; removing the umask bits 022 gives 644.",
-  "sub": "Unix/Linux Commands"
- },
- {
-  "q": "A system has 10 identical units of one resource. Allocations are P0 = 3, P1 = 2, P2 = 2 and maximum needs are P0 = 7, P1 = 4, P2 = 5. Which of the following is NOT a safe sequence?",
-  "options": [
-   "P1, P2, P0",
-   "P2, P0, P1",
-   "P2, P1, P0",
-   "P0, P1, P2"
-  ],
-  "answer": 3,
-  "exp": "Available = 10 - 7 = 3; needs: P0 4, P1 2, P2 3. P0 cannot go first (4 > 3), so any sequence starting with P0 is unsafe. P1 or P2 can start (e.g. P1, P2, P0 and P2, P0, P1 are safe).",
-  "sub": "Deadlock"
- },
- {
-  "q": "For the reference string 1,2,3,4,1,2,5,1,2,3,4,5, FIFO gives 9 faults with 3 frames and 10 faults with 4 frames. This behaviour is called:",
-  "options": [
-   "Thrashing",
-   "Convoy effect",
-   "Internal fragmentation",
-   "Belady's anomaly"
-  ],
-  "answer": 3,
-  "exp": "More frames producing more faults under FIFO is Belady's anomaly.",
-  "sub": "Page Replacement"
- },
- {
-  "q": "In the five-state process model, a running process moves to the ready state when:",
-  "options": [
-   "the I/O it was waiting for completes",
-   "it is first created by the system",
-   "its time quantum expires",
-   "it requests an I/O operation"
-  ],
-  "answer": 2,
-  "exp": "Timer interrupt at the end of the quantum preempts the running process and places it in the ready queue; I/O request leads to blocked state.",
-  "sub": "Process and Thread"
- },
- {
-  "q": "Preemptive SJF (SRTF) with P1 (arrival 0, burst 7), P2 (2, 4), P3 (4, 1), P4 (5, 4). What is the average waiting time?",
-  "options": [
-   "3 ms",
-   "5 ms",
-   "4 ms",
-   "2.5 ms"
-  ],
-  "answer": 0,
-  "exp": "Timeline: P1 0-2, P2 2-4, P3 4-5, P2 5-7, P4 7-11, P1 11-16. WT: P1 9, P2 1, P3 0, P4 2 → 12/4 = 3.",
-  "sub": "CPU Scheduling"
- },
- {
-  "q": "Head at cylinder 50; request queue 82, 170, 43, 140, 24, 16, 190. What is the total head movement under SSTF?",
-  "options": [
-   "642 cylinders",
-   "314 cylinders",
-   "208 cylinders",
-   "240 cylinders"
-  ],
-  "answer": 2,
-  "exp": "Service order 43, 24, 16, 82, 140, 170, 190: 7+19+8+66+58+30+20 = 208.",
-  "sub": "Disk Scheduling"
- },
- {
-  "q": "A time-sharing operating system achieves good response time for many users by:",
-  "options": [
-   "giving each user a dedicated CPU",
-   "running one job to completion at a time",
-   "rejecting jobs that take long",
-   "switching the CPU rapidly among users' programs using a small time slice"
-  ],
-  "answer": 3,
-  "exp": "Time slicing makes each user feel they have a dedicated machine.",
-  "sub": "OS Types and Basics"
- },
- {
-  "q": "A C program calls fork() three times in sequence (no conditions). How many child processes are created in total?",
-  "options": [
-   "6",
-   "7",
-   "8",
-   "3"
-  ],
-  "answer": 1,
-  "exp": "Total processes = 2³ = 8, including the original, so 7 are children.",
-  "sub": "System Calls and Kernel"
- },
- {
-  "q": "Page size is 1 KB and page 2 of a process is mapped to frame 7. What physical address corresponds to logical address 2100?",
-  "options": [
-   "7168",
-   "8244",
-   "7220",
-   "2100"
-  ],
-  "answer": 2,
-  "exp": "2100 = page 2 (2048) + offset 52. Physical = 7×1024 + 52 = 7220.",
-  "sub": "Memory Management"
- },
- {
-  "q": "A disk of 128 MB uses 2 KB blocks and a FAT with 2-byte entries (one entry per block). What is the size of the FAT?",
-  "options": [
-   "64 KB",
-   "256 KB",
-   "512 KB",
-   "128 KB"
-  ],
-  "answer": 3,
-  "exp": "Blocks = 128 MB / 2 KB = 65,536 entries; × 2 B = 131,072 B = 128 KB.",
-  "sub": "File Systems"
- },
- {
-  "q": "Round Robin with time quantum 3 ms. P1, P2, P3 all arrive at 0 with bursts 7, 4 and 2 ms respectively (in that order). At what time does P2 complete?",
-  "options": [
-   "12 ms",
-   "9 ms",
-   "11 ms",
-   "13 ms"
-  ],
-  "answer": 0,
-  "exp": "Gantt: P1 0-3, P2 3-6, P3 6-8, P1 8-11, P2 11-12, P1 12-13. P2 finishes at 12.",
-  "sub": "CPU Scheduling"
- },
- {
-  "q": "For using a semaphore to enforce mutual exclusion among processes, the semaphore is initialised to:",
-  "options": [
-   "The number of processes",
-   "1",
-   "0",
-   "-1"
-  ],
-  "answer": 1,
-  "exp": "A binary semaphore initialised to 1 lets exactly one process enter the critical section.",
-  "sub": "Process Synchronization"
- },
- {
-  "q": "What does the option -i do in the command grep -i \"error\" log.txt?",
-  "options": [
-   "Inverts the match",
-   "Searches subdirectories",
-   "Prints line numbers",
-   "Ignores the case of letters while matching"
-  ],
-  "answer": 3,
-  "exp": "-i makes grep case-insensitive, so Error, ERROR and error all match.",
-  "sub": "Unix/Linux Commands"
- },
- {
-  "q": "A system has 12 tape drives. Maximum demands / current allocations: P0 10/5, P1 4/2, P2 9/2. Which sequence is safe?",
-  "options": [
-   "P1, P0, P2",
-   "P0, P2, P1",
-   "P2, P1, P0",
-   "P0, P1, P2"
-  ],
-  "answer": 0,
-  "exp": "Available = 12 - 9 = 3; needs: P0 5, P1 2, P2 7. P1 runs → avail 5; P0 runs → avail 10; P2 (7 ≤ 10) runs.",
-  "sub": "Deadlock"
- },
- {
-  "q": "Compared with interrupt-driven I/O, polling:",
-  "options": [
-   "is always faster for slow devices",
-   "makes the CPU repeatedly check the device status, wasting CPU time",
-   "needs no device status register",
-   "cannot be used for keyboards"
-  ],
-  "answer": 1,
-  "exp": "In polling the CPU busy-waits on a status bit; interrupt-driven I/O lets the CPU do other work.",
-  "sub": "I/O Management"
- },
- {
-  "q": "Reference string: 1,2,3,4,1,2,5,1,2,3,4,5 with 3 frames and LRU replacement. How many page faults occur?",
-  "options": [
-   "7",
-   "8",
-   "10",
-   "9"
-  ],
-  "answer": 2,
-  "exp": "Faults at 1,2,3,4,1,2,5,3,4,5 = 10 (only the two middle references to 1 and 2 hit).",
-  "sub": "Page Replacement"
- },
- {
-  "q": "Which of the following resources is shared by all threads of the same process?",
-  "options": [
-   "The heap memory and global variables",
-   "The program counter",
-   "The stack",
-   "The register set"
-  ],
-  "answer": 0,
-  "exp": "Threads share code, data, heap and open files; each thread has its own stack, program counter and registers.",
-  "sub": "Process and Thread"
- },
- {
-  "q": "Head at cylinder 50 moving toward cylinder 0 on a disk with cylinders 0-199; queue 82, 170, 43, 140, 24, 16, 190. What is the total head movement under SCAN?",
-  "options": [
-   "208 cylinders",
-   "390 cylinders",
-   "314 cylinders",
-   "240 cylinders"
-  ],
-  "answer": 3,
-  "exp": "50 → 0 costs 50 (servicing 43, 24, 16), then 0 → 190 costs 190; total 240.",
-  "sub": "Disk Scheduling"
- },
- {
-  "q": "Which of the following is an example of a hard real-time system?",
-  "options": [
-   "A web browser",
-   "An aircraft flight-control or pacemaker controller",
-   "A video streaming player",
-   "A word processor"
-  ],
-  "answer": 1,
-  "exp": "In hard real-time systems missing a deadline is a failure; streaming is soft real-time.",
-  "sub": "OS Types and Basics"
- },
- {
-  "q": "TLB hit ratio is 80%, TLB lookup takes 20 ns and a memory access takes 100 ns (single-level page table). What is the effective access time?",
-  "options": [
-   "120 ns",
-   "180 ns",
-   "140 ns",
-   "160 ns"
-  ],
-  "answer": 2,
-  "exp": "EAT = 0.8×(20+100) + 0.2×(20+100+100) = 96 + 44 = 140 ns.",
-  "sub": "Memory Management"
- },
- {
-  "q": "Which of the following is NOT stored in the inode of a Unix file?",
-  "options": [
-   "The file name",
-   "The pointers to data blocks",
-   "The file size",
-   "The file owner (UID)"
-  ],
-  "answer": 0,
-  "exp": "The file name is stored in the directory entry, which maps the name to an inode number.",
-  "sub": "File Systems"
- },
- {
-  "q": "For the same Round Robin case (q = 3 ms; P1, P2, P3 arrive at 0 with bursts 7, 4, 2), what is the average turnaround time?",
-  "options": [
-   "10 ms",
-   "8 ms",
-   "11 ms",
-   "12 ms"
-  ],
-  "answer": 2,
-  "exp": "Completion times are P1 13, P2 12, P3 8; all arrive at 0, so average TAT = 33/3 = 11.",
-  "sub": "CPU Scheduling"
- },
- {
-  "q": "In the bounded-buffer producer-consumer solution with a buffer of N slots, the semaphores empty, full and mutex are initialised respectively to:",
-  "options": [
-   "0, N, 1",
-   "N, 0, 1",
-   "N, N, 0",
-   "1, 0, N"
-  ],
-  "answer": 1,
-  "exp": "empty counts free slots (N), full counts filled slots (0) and mutex guards buffer access (1).",
-  "sub": "Process Synchronization"
- },
- {
-  "q": "In the output of ls -l, a line beginning with the character 'd' (for example drwxr-xr-x) represents:",
-  "options": [
-   "a device file",
-   "a symbolic link",
-   "a regular file",
-   "a directory"
-  ],
-  "answer": 3,
-  "exp": "The first character shows the file type: d for directory, - for regular file, l for symbolic link.",
-  "sub": "Unix/Linux Commands"
- }
+  {
+    "q": "Consider FCFS scheduling for processes P1 (arrival 0, burst 5), P2 (arrival 1, burst 3), P3 (arrival 2, burst 8). What is the average waiting time?",
+    "options": [
+      "4.00 ms",
+      "5.00 ms",
+      "3.00 ms",
+      "3.33 ms"
+    ],
+    "answer": 3,
+    "exp": "P1 starts at 0 (WT 0), P2 starts at 5 (WT 4), P3 starts at 8 (WT 6); average = 10/3 = 3.33.",
+    "sub": "CPU Scheduling"
+  },
+  {
+    "q": "A system has 32-bit logical addresses and 4 KB pages. How many bits are used for the page number?",
+    "options": [
+      "10",
+      "20",
+      "12",
+      "16"
+    ],
+    "answer": 1,
+    "exp": "4 KB = 2^12, so the offset is 12 bits and the page number is 32 - 12 = 20 bits.",
+    "sub": "Memory Management"
+  },
+  {
+    "q": "A Unix-like inode has 10 direct pointers and 1 single-indirect pointer. Block size is 1 KB and a block pointer is 4 bytes. What is the maximum file size?",
+    "options": [
+      "266 KB",
+      "256 KB",
+      "10 KB",
+      "1034 KB"
+    ],
+    "answer": 0,
+    "exp": "A single-indirect block holds 1024/4 = 256 pointers; total blocks = 10 + 256 = 266, so 266 KB.",
+    "sub": "File Systems"
+  },
+  {
+    "q": "Which of the following is NOT a requirement for a solution to the critical-section problem?",
+    "options": [
+      "Mutual exclusion",
+      "Progress",
+      "Process priority ordering",
+      "Bounded waiting"
+    ],
+    "answer": 2,
+    "exp": "The three requirements are mutual exclusion, progress and bounded waiting.",
+    "sub": "Process Synchronization"
+  },
+  {
+    "q": "In dual-mode operation of an operating system, the mode bit value 0 conventionally indicates:",
+    "options": [
+      "User mode",
+      "Interrupts disabled",
+      "Kernel (supervisor) mode",
+      "Real-time mode"
+    ],
+    "answer": 2,
+    "exp": "The mode bit distinguishes the two modes: 0 = kernel (privileged) mode and 1 = user mode. Privileged instructions such as I/O and setting the timer execute only in kernel mode.",
+    "sub": "OS Types and Basics",
+    "v": 2
+  },
+  {
+    "q": "Which of the following is NOT a necessary condition for deadlock?",
+    "options": [
+      "Resource preemption (resources can be forcibly taken away)",
+      "Circular wait",
+      "Hold and wait",
+      "Mutual exclusion"
+    ],
+    "answer": 0,
+    "exp": "The four Coffman conditions are mutual exclusion, hold and wait, no preemption and circular wait; allowing preemption breaks deadlock.",
+    "sub": "Deadlock"
+  },
+  {
+    "q": "Reference string: 1,2,3,4,1,2,5,1,2,3,4,5 with 3 frames and FIFO replacement. How many page faults occur?",
+    "options": [
+      "10",
+      "8",
+      "9",
+      "7"
+    ],
+    "answer": 2,
+    "exp": "Faults on 1,2,3,4,1,2,5,3,4 (the references to 1,2 after 5 and to 5 at the end are hits) = 9.",
+    "sub": "Page Replacement"
+  },
+  {
+    "q": "Which of the following is NOT stored in the Process Control Block (PCB) of a process?",
+    "options": [
+      "The CPU register contents",
+      "The complete source code of the program",
+      "The process state and process ID",
+      "The program counter"
+    ],
+    "answer": 1,
+    "exp": "The PCB holds execution context and bookkeeping information (PC, registers, state, PID, scheduling data), not the source code.",
+    "sub": "Process and Thread"
+  },
+  {
+    "q": "The disk head is at cylinder 50. The request queue (in arrival order) is 82, 170, 43, 140, 24, 16, 190. What is the total head movement under FCFS?",
+    "options": [
+      "208 cylinders",
+      "574 cylinders",
+      "314 cylinders",
+      "642 cylinders"
+    ],
+    "answer": 3,
+    "exp": "32 + 88 + 127 + 97 + 116 + 8 + 174 = 642.",
+    "sub": "Disk Scheduling"
+  },
+  {
+    "q": "In a batch operating system:",
+    "options": [
+      "similar jobs are collected and executed together with no user interaction during execution",
+      "jobs must meet strict deadlines",
+      "users interact with every job through terminals in real time",
+      "the CPU is shared in equal time slices among users"
+    ],
+    "answer": 0,
+    "exp": "Batch systems group jobs with similar needs and run them sequentially without interaction.",
+    "sub": "OS Types and Basics"
+  },
+  {
+    "q": "How many times is the letter A printed by the following C program (assume every fork succeeds)?\nint main() {\n  fork();\n  fork();\n  printf(\"A\");\n  return 0;\n}",
+    "options": [
+      "2",
+      "4",
+      "8",
+      "3"
+    ],
+    "answer": 1,
+    "exp": "Two successive forks create 2² = 4 processes, and each prints A once.",
+    "sub": "System Calls and Kernel"
+  },
+  {
+    "q": "Direct Memory Access (DMA) is used to:",
+    "options": [
+      "translate virtual to physical addresses",
+      "schedule processes",
+      "transfer blocks of data between a device and memory without CPU involvement for each byte",
+      "increase the clock speed of the CPU"
+    ],
+    "answer": 2,
+    "exp": "The DMA controller moves data directly and interrupts the CPU only after the whole transfer finishes.",
+    "sub": "I/O Management"
+  },
+  {
+    "q": "Non-preemptive SJF: P1 (arrival 0, burst 7), P2 (2, 4), P3 (4, 1), P4 (5, 4). What is the average waiting time?",
+    "options": [
+      "4 ms",
+      "5 ms",
+      "3 ms",
+      "6 ms"
+    ],
+    "answer": 0,
+    "exp": "Order: P1 (0-7), P3 (7-8), P2 (8-12), P4 (12-16). WT: 0, 6, 3, 7 → 16/4 = 4.",
+    "sub": "CPU Scheduling"
+  },
+  {
+    "q": "A system has a 64 KB logical address space, 1 KB pages and 32 KB of physical memory. How many frames are there in physical memory?",
+    "options": [
+      "16",
+      "64",
+      "32",
+      "1024"
+    ],
+    "answer": 2,
+    "exp": "Number of frames = 32 KB / 1 KB = 32.",
+    "sub": "Memory Management"
+  },
+  {
+    "q": "In a two-level directory structure, file-name collisions between different users are avoided because:",
+    "options": [
+      "each user has a separate User File Directory under a Master File Directory",
+      "all file names must be unique across the whole system",
+      "only absolute path names are allowed",
+      "directories cannot contain files"
+    ],
+    "answer": 0,
+    "exp": "The Master File Directory (MFD) points to a User File Directory (UFD) per user, so two users can each have a file with the same name. Name collision remains possible only within one user.",
+    "sub": "File Systems",
+    "v": 2
+  },
+  {
+    "q": "A counting semaphore is initialised to 10. Then 14 P (wait) operations and 9 V (signal) operations are completed on it. What is the final value of the semaphore?",
+    "options": [
+      "9",
+      "5",
+      "-5",
+      "1"
+    ],
+    "answer": 1,
+    "exp": "Final value = 10 - 14 + 9 = 5.",
+    "sub": "Process Synchronization"
+  },
+  {
+    "q": "The kernels of Windows NT and macOS are best described as:",
+    "options": [
+      "pure monolithic kernels",
+      "pure microkernels",
+      "exokernels",
+      "hybrid kernels (microkernel ideas with monolithic components)"
+    ],
+    "answer": 3,
+    "exp": "Hybrid kernels combine a microkernel-style design with some services kept in kernel space for speed. Windows NT and macOS (XNU) are standard examples; Linux is monolithic with loadable modules.",
+    "sub": "System Calls and Kernel",
+    "v": 2
+  },
+  {
+    "q": "A system has 10 identical units of one resource. Allocations are P0 = 3, P1 = 2, P2 = 2 and maximum needs are P0 = 7, P1 = 4, P2 = 5. Which of the following is NOT a safe sequence?",
+    "options": [
+      "P1, P2, P0",
+      "P2, P0, P1",
+      "P2, P1, P0",
+      "P0, P1, P2"
+    ],
+    "answer": 3,
+    "exp": "Available = 10 - 7 = 3; needs: P0 4, P1 2, P2 3. P0 cannot go first (4 > 3), so any sequence starting with P0 is unsafe. P1 or P2 can start (e.g. P1, P2, P0 and P2, P0, P1 are safe).",
+    "sub": "Deadlock"
+  },
+  {
+    "q": "A malicious program that replicates itself and spreads across a network without needing a host file or user action is called a:",
+    "options": [
+      "virus",
+      "worm",
+      "Trojan horse",
+      "logic bomb"
+    ],
+    "answer": 1,
+    "exp": "A worm is self-replicating and propagates on its own through the network. A virus needs a host file/user action, a Trojan hides inside a useful program, and a logic bomb triggers on a condition.",
+    "sub": "Protection and Security",
+    "v": 2
+  },
+  {
+    "q": "In the five-state process model, a running process moves to the ready state when:",
+    "options": [
+      "the I/O it was waiting for completes",
+      "it is first created by the system",
+      "its time quantum expires",
+      "it requests an I/O operation"
+    ],
+    "answer": 2,
+    "exp": "Timer interrupt at the end of the quantum preempts the running process and places it in the ready queue; I/O request leads to blocked state.",
+    "sub": "Process and Thread"
+  },
+  {
+    "q": "Preemptive SJF (SRTF) with P1 (arrival 0, burst 7), P2 (2, 4), P3 (4, 1), P4 (5, 4). What is the average waiting time?",
+    "options": [
+      "3 ms",
+      "5 ms",
+      "4 ms",
+      "2.5 ms"
+    ],
+    "answer": 0,
+    "exp": "Timeline: P1 0-2, P2 2-4, P3 4-5, P2 5-7, P4 7-11, P1 11-16. WT: P1 9, P2 1, P3 0, P4 2 → 12/4 = 3.",
+    "sub": "CPU Scheduling"
+  },
+  {
+    "q": "Head at cylinder 50; request queue 82, 170, 43, 140, 24, 16, 190. What is the total head movement under SSTF?",
+    "options": [
+      "642 cylinders",
+      "314 cylinders",
+      "208 cylinders",
+      "240 cylinders"
+    ],
+    "answer": 2,
+    "exp": "Service order 43, 24, 16, 82, 140, 170, 190: 7+19+8+66+58+30+20 = 208.",
+    "sub": "Disk Scheduling"
+  },
+  {
+    "q": "A time-sharing operating system achieves good response time for many users by:",
+    "options": [
+      "giving each user a dedicated CPU",
+      "running one job to completion at a time",
+      "rejecting jobs that take long",
+      "switching the CPU rapidly among users' programs using a small time slice"
+    ],
+    "answer": 3,
+    "exp": "Time slicing makes each user feel they have a dedicated machine.",
+    "sub": "OS Types and Basics"
+  },
+  {
+    "q": "A C program calls fork() three times in sequence (no conditions). How many child processes are created in total?",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "3"
+    ],
+    "answer": 1,
+    "exp": "Total processes = 2³ = 8, including the original, so 7 are children.",
+    "sub": "System Calls and Kernel"
+  },
+  {
+    "q": "Page size is 1 KB and page 2 of a process is mapped to frame 7. What physical address corresponds to logical address 2100?",
+    "options": [
+      "7168",
+      "8244",
+      "7220",
+      "2100"
+    ],
+    "answer": 2,
+    "exp": "2100 = page 2 (2048) + offset 52. Physical = 7×1024 + 52 = 7220.",
+    "sub": "Memory Management"
+  },
+  {
+    "q": "A disk of 128 MB uses 2 KB blocks and a FAT with 2-byte entries (one entry per block). What is the size of the FAT?",
+    "options": [
+      "64 KB",
+      "256 KB",
+      "512 KB",
+      "128 KB"
+    ],
+    "answer": 3,
+    "exp": "Blocks = 128 MB / 2 KB = 65,536 entries; × 2 B = 131,072 B = 128 KB.",
+    "sub": "File Systems"
+  },
+  {
+    "q": "Round Robin with time quantum 3 ms. P1, P2, P3 all arrive at 0 with bursts 7, 4 and 2 ms respectively (in that order). At what time does P2 complete?",
+    "options": [
+      "12 ms",
+      "9 ms",
+      "11 ms",
+      "13 ms"
+    ],
+    "answer": 0,
+    "exp": "Gantt: P1 0-3, P2 3-6, P3 6-8, P1 8-11, P2 11-12, P1 12-13. P2 finishes at 12.",
+    "sub": "CPU Scheduling"
+  },
+  {
+    "q": "For using a semaphore to enforce mutual exclusion among processes, the semaphore is initialised to:",
+    "options": [
+      "The number of processes",
+      "1",
+      "0",
+      "-1"
+    ],
+    "answer": 1,
+    "exp": "A binary semaphore initialised to 1 lets exactly one process enter the critical section.",
+    "sub": "Process Synchronization"
+  },
+  {
+    "q": "In the access-matrix model of protection, storing the matrix column-wise (for each object, the list of domains and their rights) gives:",
+    "options": [
+      "an access control list (ACL)",
+      "a capability list",
+      "a lock-and-key list",
+      "a page table"
+    ],
+    "answer": 0,
+    "exp": "Columns are objects, so storing a column per object yields an ACL (per-object list). Storing rows (per-domain list of objects and rights) yields capability lists.",
+    "sub": "Protection and Security",
+    "v": 2
+  },
+  {
+    "q": "A system has 12 tape drives. Maximum demands / current allocations: P0 10/5, P1 4/2, P2 9/2. Which sequence is safe?",
+    "options": [
+      "P1, P0, P2",
+      "P0, P2, P1",
+      "P2, P1, P0",
+      "P0, P1, P2"
+    ],
+    "answer": 0,
+    "exp": "Available = 12 - 9 = 3; needs: P0 5, P1 2, P2 7. P1 runs → avail 5; P0 runs → avail 10; P2 (7 ≤ 10) runs.",
+    "sub": "Deadlock"
+  },
+  {
+    "q": "Compared with interrupt-driven I/O, polling:",
+    "options": [
+      "is always faster for slow devices",
+      "makes the CPU repeatedly check the device status, wasting CPU time",
+      "needs no device status register",
+      "cannot be used for keyboards"
+    ],
+    "answer": 1,
+    "exp": "In polling the CPU busy-waits on a status bit; interrupt-driven I/O lets the CPU do other work.",
+    "sub": "I/O Management"
+  },
+  {
+    "q": "Which statement about a monitor is correct?",
+    "options": [
+      "Several processes may execute monitor procedures simultaneously",
+      "At most one process can be active inside the monitor at any time",
+      "The programmer must explicitly code P and V for mutual exclusion",
+      "Condition variables are implemented using busy waiting"
+    ],
+    "answer": 1,
+    "exp": "A monitor is a language construct that guarantees mutual exclusion automatically: only one process is active inside at a time. Condition variables (wait/signal) provide synchronisation within it.",
+    "sub": "Process Synchronization",
+    "v": 2
+  },
+  {
+    "q": "Which of the following resources is shared by all threads of the same process?",
+    "options": [
+      "The heap memory and global variables",
+      "The program counter",
+      "The stack",
+      "The register set"
+    ],
+    "answer": 0,
+    "exp": "Threads share code, data, heap and open files; each thread has its own stack, program counter and registers.",
+    "sub": "Process and Thread"
+  },
+  {
+    "q": "Head at cylinder 50 moving toward cylinder 0 on a disk with cylinders 0-199; queue 82, 170, 43, 140, 24, 16, 190. What is the total head movement under SCAN?",
+    "options": [
+      "208 cylinders",
+      "390 cylinders",
+      "314 cylinders",
+      "240 cylinders"
+    ],
+    "answer": 3,
+    "exp": "50 → 0 costs 50 (servicing 43, 24, 16), then 0 → 190 costs 190; total 240.",
+    "sub": "Disk Scheduling"
+  },
+  {
+    "q": "Which of the following is an example of a hard real-time system?",
+    "options": [
+      "A web browser",
+      "An aircraft flight-control or pacemaker controller",
+      "A video streaming player",
+      "A word processor"
+    ],
+    "answer": 1,
+    "exp": "In hard real-time systems missing a deadline is a failure; streaming is soft real-time.",
+    "sub": "OS Types and Basics"
+  },
+  {
+    "q": "TLB hit ratio is 80%, TLB lookup takes 20 ns and a memory access takes 100 ns (single-level page table). What is the effective access time?",
+    "options": [
+      "120 ns",
+      "180 ns",
+      "140 ns",
+      "160 ns"
+    ],
+    "answer": 2,
+    "exp": "EAT = 0.8×(20+100) + 0.2×(20+100+100) = 96 + 44 = 140 ns.",
+    "sub": "Memory Management"
+  },
+  {
+    "q": "Which of the following is NOT stored in the inode of a Unix file?",
+    "options": [
+      "The file name",
+      "The pointers to data blocks",
+      "The file size",
+      "The file owner (UID)"
+    ],
+    "answer": 0,
+    "exp": "The file name is stored in the directory entry, which maps the name to an inode number.",
+    "sub": "File Systems"
+  },
+  {
+    "q": "A backup that copies only the files changed since the last FULL backup is called a(n):",
+    "options": [
+      "incremental backup",
+      "mirror image backup",
+      "archival backup",
+      "differential backup"
+    ],
+    "answer": 3,
+    "exp": "Differential backups copy changes since the last full backup, so restore needs the full backup plus the latest differential. Incremental copies changes since the last backup of any kind.",
+    "sub": "Recovery",
+    "v": 2
+  },
+  {
+    "q": "In the bounded-buffer producer-consumer solution with a buffer of N slots, the semaphores empty, full and mutex are initialised respectively to:",
+    "options": [
+      "0, N, 1",
+      "N, 0, 1",
+      "N, N, 0",
+      "1, 0, N"
+    ],
+    "answer": 1,
+    "exp": "empty counts free slots (N), full counts filled slots (0) and mutex guards buffer access (1).",
+    "sub": "Process Synchronization"
+  },
+  {
+    "q": "In the output of ls -l, a line beginning with the character 'd' (for example drwxr-xr-x) represents:",
+    "options": [
+      "a device file",
+      "a symbolic link",
+      "a regular file",
+      "a directory"
+    ],
+    "answer": 3,
+    "exp": "The first character shows the file type: d for directory, - for regular file, l for symbolic link.",
+    "sub": "Unix/Linux Commands"
+  }
 ]

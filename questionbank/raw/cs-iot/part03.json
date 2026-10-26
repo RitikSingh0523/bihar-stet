@@ -1,398 +1,408 @@
 [
- {
-  "q": "Apache Spark is generally faster than classic Hadoop MapReduce mainly because it:",
-  "options": [
-   "Uses magnetic tapes for storage",
-   "Works without a cluster",
-   "Performs in-memory processing of intermediate data",
-   "Compresses all output into one file"
-  ],
-  "answer": 2,
-  "exp": "Spark keeps intermediate results in memory instead of writing to disk after each step.",
-  "sub": "Big data"
- },
- {
-  "q": "In a cellular network, the process of transferring an ongoing call from one base station to another is called:",
-  "options": [
-   "Roaming",
-   "Handoff",
-   "Multiplexing",
-   "Modulation"
-  ],
-  "answer": 1,
-  "exp": "Handoff (handover) maintains a call as the user moves between cells.",
-  "sub": "Mobile communication"
- },
- {
-  "q": "Which of the following is a classic example of a C2C e-commerce platform?",
-  "options": [
-   "IndiaMART",
-   "Alibaba.com",
-   "A bank's internet banking portal",
-   "OLX"
-  ],
-  "answer": 3,
-  "exp": "OLX is an online classifieds site where consumers sell to other consumers.",
-  "sub": "E-commerce models"
- },
- {
-  "q": "Compared with barcodes, RFID tags can be read:",
-  "options": [
-   "Only when printed on paper",
-   "Only in daylight",
-   "Only after being scanned by a laser at 1 cm",
-   "Without a direct line of sight"
-  ],
-  "answer": 3,
-  "exp": "Radio waves do not need line-of-sight reading.",
-  "sub": "RFID"
- },
- {
-  "q": "Which of the following is an open-source cloud computing platform used to build IaaS clouds?",
-  "options": [
-   "Dropbox",
-   "OpenStack",
-   "Zoom",
-   "Gmail"
-  ],
-  "answer": 1,
-  "exp": "OpenStack is an open-source IaaS platform.",
-  "sub": "Cloud computing"
- },
- {
-  "q": "Which of the following is NOT a characteristic of a public blockchain?",
-  "options": [
-   "Controlled by a single central authority",
-   "Decentralised ledger",
-   "Immutability of recorded blocks",
-   "Transparency of transactions"
-  ],
-  "answer": 0,
-  "exp": "Public blockchains have no single controlling authority.",
-  "sub": "Blockchain"
- },
- {
-  "q": "UMANG, the mobile app for government services, stands for:",
-  "options": [
-   "Unified Mobile Application for New-age Governance",
-   "Universal Mobile App for National Government",
-   "United Mobile Access for New Governance",
-   "Unique Mobile Application for National Growth"
-  ],
-  "answer": 0,
-  "exp": "UMANG provides many central and state e-services on a single platform.",
-  "sub": "E-governance in India"
- },
- {
-  "q": "How many kilobytes are there in 1 GB (taking 1 KB = 1024 bytes)?",
-  "options": [
-   "1024",
-   "1,000,000",
-   "1,073,741,824",
-   "1,048,576"
-  ],
-  "answer": 3,
-  "exp": "1 GB = 1024 MB = 1024 × 1024 KB = 1,048,576 KB.",
-  "sub": "Data units"
- },
- {
-  "q": "Match the inventor with the invention:\n1. Blaise Pascal  2. Charles Babbage  3. Herman Hollerith  4. John Napier\n(a) Pascaline  (b) Difference Engine  (c) Punched-card tabulating machine  (d) Logarithms and Napier's bones",
-  "options": [
-   "1-b, 2-a, 3-d, 4-c",
-   "1-a, 2-c, 3-b, 4-d",
-   "1-a, 2-b, 3-c, 4-d",
-   "1-d, 2-b, 3-c, 4-a"
-  ],
-  "answer": 2,
-  "exp": "Pascal built the Pascaline, Babbage the Difference Engine, Hollerith the tabulator and Napier invented logarithms and Napier's bones.",
-  "sub": "History of computing"
- },
- {
-  "q": "In MS Word, which shortcut inserts a page break?",
-  "options": [
-   "Shift+Enter",
-   "Ctrl+Enter",
-   "Alt+Enter",
-   "Ctrl+Tab"
-  ],
-  "answer": 1,
-  "exp": "Ctrl+Enter inserts a page break; Shift+Enter inserts a line break.",
-  "sub": "MS Office shortcuts"
- },
- {
-  "q": "What is the ASCII code (decimal) of the capital letter 'D', given that 'A' is 65?",
-  "options": [
-   "67",
-   "100",
-   "4",
-   "68"
-  ],
-  "answer": 3,
-  "exp": "A=65, B=66, C=67, D=68; 100 is the code of lowercase 'd'.",
-  "sub": "Data representation"
- },
- {
-  "q": "A processor has a 16-bit address bus. What is the maximum memory it can directly address?",
-  "options": [
-   "16 KB",
-   "32 KB",
-   "1 MB",
-   "64 KB"
-  ],
-  "answer": 3,
-  "exp": "2^16 = 65536 locations = 64 KB (for byte-addressable memory).",
-  "sub": "Computer fundamentals"
- },
- {
-  "q": "Which Indian law mainly deals with cybercrime and electronic commerce?",
-  "options": [
-   "Copyright Act, 1957",
-   "Telegraph Act, 1885",
-   "Cinematograph Act, 1952",
-   "Information Technology Act, 2000"
-  ],
-  "answer": 3,
-  "exp": "The IT Act, 2000 provides legal recognition to e-records and defines cyber offences.",
-  "sub": "Social media and ICT"
- },
- {
-  "q": "NB-IoT (Narrowband IoT) operates in:",
-  "options": [
-   "Only unlicensed ISM bands",
-   "Licensed cellular spectrum",
-   "Infrared band",
-   "Power-line frequencies"
-  ],
-  "answer": 1,
-  "exp": "NB-IoT is a 3GPP LPWAN technology deployed in licensed cellular bands.",
-  "sub": "IoT architecture"
- },
- {
-  "q": "'Cloud bursting' refers to:",
-  "options": [
-   "Deleting all data from a cloud",
-   "A sudden failure of all data centres",
-   "Temporarily using public cloud resources when private cloud capacity is exhausted",
-   "Merging two public clouds permanently"
-  ],
-  "answer": 2,
-  "exp": "It is a hybrid cloud technique for handling demand spikes.",
-  "sub": "Cloud deployment models"
- },
- {
-  "q": "Which of the following is an example of semi-structured data?",
-  "options": [
-   "A relational database table",
-   "A scanned photograph",
-   "A JSON or XML file",
-   "An MP3 audio file"
-  ],
-  "answer": 2,
-  "exp": "JSON and XML carry tags/keys but no fixed relational schema, so they are semi-structured.",
-  "sub": "Big data"
- },
- {
-  "q": "The Android operating system is based on which kernel?",
-  "options": [
-   "Linux",
-   "Windows NT",
-   "Darwin",
-   "Solaris"
-  ],
-  "answer": 0,
-  "exp": "Android is built on the Linux kernel.",
-  "sub": "Mobile communication"
- },
- {
-  "q": "Which statement about RTGS in India is correct?",
-  "options": [
-   "It settles high-value payments in real time on a gross basis",
-   "It settles payments in half-hourly batches on a net basis",
-   "It is used only for payments below ₹1000",
-   "It works only for card payments"
-  ],
-  "answer": 0,
-  "exp": "RTGS = Real Time Gross Settlement, meant for large-value transfers.",
-  "sub": "Payment systems"
- },
- {
-  "q": "The padlock symbol and 'https' in a browser's address bar indicate that:",
-  "options": [
-   "The website is owned by the government",
-   "The website has no advertisements",
-   "Data between browser and server is encrypted using TLS/SSL",
-   "The computer is free of viruses"
-  ],
-  "answer": 2,
-  "exp": "HTTPS uses TLS/SSL to encrypt communication.",
-  "sub": "E-commerce security"
- },
- {
-  "q": "Which of the following is an international standard for Electronic Data Interchange?",
-  "options": [
-   "HTML",
-   "SMTP",
-   "FTP",
-   "UN/EDIFACT"
-  ],
-  "answer": 3,
-  "exp": "UN/EDIFACT (and ANSI X12 in the USA) are EDI message standards.",
-  "sub": "EDI"
- },
- {
-  "q": "The JAM trinity, used for direct benefit transfer in India, stands for:",
-  "options": [
-   "Jan Dhan, Aadhaar and Mobile",
-   "Jobs, Agriculture and Manufacturing",
-   "Jan Dhan, Aadhaar and Medicine",
-   "Jan Suraksha, Aadhaar and Mudra"
-  ],
-  "answer": 0,
-  "exp": "JAM links Jan Dhan bank accounts, Aadhaar identity and mobile numbers.",
-  "sub": "Digital India"
- },
- {
-  "q": "Which of the following helps reduce power consumption in a data centre?",
-  "options": [
-   "Server consolidation using virtualization",
-   "Running every server at idle continuously",
-   "Installing more standalone physical servers for each application",
-   "Disabling all cooling optimisation"
-  ],
-  "answer": 0,
-  "exp": "Virtualization lets fewer physical servers run many workloads, saving power.",
-  "sub": "Green computing"
- },
- {
-  "q": "Which statement about compilers is correct?",
-  "options": [
-   "A compiler executes the source program line by line without producing object code",
-   "A compiler converts machine code into source code",
-   "A compiler translates the whole source program into machine code before execution",
-   "A compiler manages the files of the OS"
-  ],
-  "answer": 2,
-  "exp": "Interpreters work line by line; compilers translate the complete program.",
-  "sub": "Computer fundamentals"
- },
- {
-  "q": "Which IEEE standard describes Bluetooth-type wireless personal area networking?",
-  "options": [
-   "IEEE 802.15.4",
-   "IEEE 802.11ac",
-   "IEEE 802.3af",
-   "IEEE 802.15.1"
-  ],
-  "answer": 3,
-  "exp": "802.15.1 was the basis of Bluetooth, while 802.15.4 is used by ZigBee.",
-  "sub": "ZigBee"
- },
- {
-  "q": "The SHA-256 hash function produces a hash value of:",
-  "options": [
-   "128 bits",
-   "160 bits",
-   "512 bits",
-   "256 bits"
-  ],
-  "answer": 3,
-  "exp": "SHA-256 gives a 256-bit digest, used in Bitcoin.",
-  "sub": "Blockchain"
- },
- {
-  "q": "VoLTE stands for:",
-  "options": [
-   "Video over Local Telephone Exchange",
-   "Voice over Low-Throughput Ethernet",
-   "Voice over Long-Term Evolution",
-   "Visual over Long Terrestrial Exchange"
-  ],
-  "answer": 2,
-  "exp": "VoLTE carries voice calls as data over 4G LTE networks.",
-  "sub": "Mobile communication"
- },
- {
-  "q": "Who developed the Linux kernel in 1991?",
-  "options": [
-   "Dennis Ritchie",
-   "Richard Stallman",
-   "Linus Torvalds",
-   "James Gosling"
-  ],
-  "answer": 2,
-  "exp": "Linus Torvalds created the Linux kernel.",
-  "sub": "History of computing"
- },
- {
-  "q": "Which of the following is an absolute cell reference in MS Excel?",
-  "options": [
-   "B$2",
-   "$B2",
-   "B2",
-   "$B$2"
-  ],
-  "answer": 3,
-  "exp": "An absolute reference fixes both column and row with $ signs; B$2 and $B2 are mixed.",
-  "sub": "MS Excel"
- },
- {
-  "q": "What is the sum of the binary numbers 1011 and 0110?",
-  "options": [
-   "10001",
-   "10011",
-   "10101",
-   "01111"
-  ],
-  "answer": 0,
-  "exp": "1011 (11) + 0110 (6) = 17 = 10001 in binary.",
-  "sub": "Data representation"
- },
- {
-  "q": "Netiquette refers to:",
-  "options": [
-   "A kind of network cable",
-   "An encryption algorithm",
-   "A type of web browser",
-   "Accepted rules of polite and responsible behaviour on the internet"
-  ],
-  "answer": 3,
-  "exp": "Netiquette is network etiquette for online conduct.",
-  "sub": "Social media and ICT"
- },
- {
-  "q": "Which essential cloud characteristic allows the provider to meter usage and bill customers on a pay-as-you-go basis?",
-  "options": [
-   "Measured service",
-   "Resource pooling",
-   "Broad network access",
-   "Multi-tenancy encryption"
-  ],
-  "answer": 0,
-  "exp": "Measured service means usage is monitored and billed accordingly.",
-  "sub": "Cloud computing"
- },
- {
-  "q": "A freelance designer offers logo-design services to companies through an online marketplace. This model is:",
-  "options": [
-   "B2C",
-   "B2B",
-   "C2B",
-   "C2C"
-  ],
-  "answer": 2,
-  "exp": "An individual offering a service to businesses is consumer-to-business.",
-  "sub": "E-commerce models"
- },
- {
-  "q": "Which key combination switches between the open windows in Microsoft Windows?",
-  "options": [
-   "Ctrl+Tab",
-   "Alt+Tab",
-   "Win+D",
-   "Alt+F4"
-  ],
-  "answer": 1,
-  "exp": "Alt+Tab cycles windows; Win+D shows the desktop and Alt+F4 closes the active window.",
-  "sub": "Computer fundamentals"
- }
+  {
+    "q": "In a credit card transaction, the bank that issued the card to the customer is called the:",
+    "options": [
+      "Acquiring bank",
+      "Clearing house only",
+      "Issuing bank",
+      "Certificate authority"
+    ],
+    "answer": 2,
+    "exp": "Issuer = cardholder bank; acquirer = merchant bank; the card network sits between them.",
+    "sub": "Payment systems",
+    "v": 2
+  },
+  {
+    "q": "In a cellular network, the process of transferring an ongoing call from one base station to another is called:",
+    "options": [
+      "Roaming",
+      "Handoff",
+      "Multiplexing",
+      "Modulation"
+    ],
+    "answer": 1,
+    "exp": "Handoff (handover) maintains a call as the user moves between cells.",
+    "sub": "Mobile communication"
+  },
+  {
+    "q": "Which of the following is a classic example of a C2C e-commerce platform?",
+    "options": [
+      "IndiaMART",
+      "Alibaba.com",
+      "A bank's internet banking portal",
+      "OLX"
+    ],
+    "answer": 3,
+    "exp": "OLX is an online classifieds site where consumers sell to other consumers.",
+    "sub": "E-commerce models"
+  },
+  {
+    "q": "Compared with barcodes, RFID tags can be read:",
+    "options": [
+      "Only when printed on paper",
+      "Only in daylight",
+      "Only after being scanned by a laser at 1 cm",
+      "Without a direct line of sight"
+    ],
+    "answer": 3,
+    "exp": "Radio waves do not need line-of-sight reading.",
+    "sub": "RFID"
+  },
+  {
+    "q": "Which of the following is an open-source cloud computing platform used to build IaaS clouds?",
+    "options": [
+      "Dropbox",
+      "OpenStack",
+      "Zoom",
+      "Gmail"
+    ],
+    "answer": 1,
+    "exp": "OpenStack is an open-source IaaS platform.",
+    "sub": "Cloud computing"
+  },
+  {
+    "q": "Which of the following is NOT a characteristic of a public blockchain?",
+    "options": [
+      "Controlled by a single central authority",
+      "Decentralised ledger",
+      "Immutability of recorded blocks",
+      "Transparency of transactions"
+    ],
+    "answer": 0,
+    "exp": "Public blockchains have no single controlling authority.",
+    "sub": "Blockchain"
+  },
+  {
+    "q": "UMANG, the mobile app for government services, stands for:",
+    "options": [
+      "Unified Mobile Application for New-age Governance",
+      "Universal Mobile App for National Government",
+      "United Mobile Access for New Governance",
+      "Unique Mobile Application for National Growth"
+    ],
+    "answer": 0,
+    "exp": "UMANG provides many central and state e-services on a single platform.",
+    "sub": "E-governance in India"
+  },
+  {
+    "q": "A firewall is best described as a system that:",
+    "options": [
+      "Speeds up a network by caching web pages",
+      "Removes all viruses stored inside the computers",
+      "Converts domain names to IP addresses",
+      "Filters traffic between a trusted network and an untrusted network according to rules"
+    ],
+    "answer": 3,
+    "exp": "A firewall enforces access rules at the boundary; it does not clean existing infections or resolve names.",
+    "sub": "Firewalls",
+    "v": 2
+  },
+  {
+    "q": "Which of the following is an IoT cloud platform?",
+    "options": [
+      "Adobe Photoshop",
+      "AWS IoT Core",
+      "Windows Notepad",
+      "VLC Player"
+    ],
+    "answer": 1,
+    "exp": "AWS IoT Core, Azure IoT Hub and Google Cloud IoT are cloud platforms for connecting and managing devices.",
+    "sub": "IoT cloud",
+    "v": 2
+  },
+  {
+    "q": "In MS Word, which shortcut inserts a page break?",
+    "options": [
+      "Shift+Enter",
+      "Ctrl+Enter",
+      "Alt+Enter",
+      "Ctrl+Tab"
+    ],
+    "answer": 1,
+    "exp": "Ctrl+Enter inserts a page break; Shift+Enter inserts a line break.",
+    "sub": "MS Office shortcuts"
+  },
+  {
+    "q": "What is the ASCII code (decimal) of the capital letter 'D', given that 'A' is 65?",
+    "options": [
+      "67",
+      "100",
+      "4",
+      "68"
+    ],
+    "answer": 3,
+    "exp": "A=65, B=66, C=67, D=68; 100 is the code of lowercase 'd'.",
+    "sub": "Data representation"
+  },
+  {
+    "q": "Which cryptographic method uses a single shared secret key for both encryption and decryption?",
+    "options": [
+      "Symmetric-key encryption such as AES",
+      "RSA public-key encryption",
+      "Digital certificate",
+      "Hash function SHA-256"
+    ],
+    "answer": 0,
+    "exp": "AES/DES are symmetric: same key at both ends. RSA is asymmetric; hashes use no key.",
+    "sub": "Network security",
+    "v": 2
+  },
+  {
+    "q": "Which Indian law mainly deals with cybercrime and electronic commerce?",
+    "options": [
+      "Copyright Act, 1957",
+      "Telegraph Act, 1885",
+      "Cinematograph Act, 1952",
+      "Information Technology Act, 2000"
+    ],
+    "answer": 3,
+    "exp": "The IT Act, 2000 provides legal recognition to e-records and defines cyber offences.",
+    "sub": "Social media and ICT"
+  },
+  {
+    "q": "NB-IoT (Narrowband IoT) operates in:",
+    "options": [
+      "Only unlicensed ISM bands",
+      "Licensed cellular spectrum",
+      "Infrared band",
+      "Power-line frequencies"
+    ],
+    "answer": 1,
+    "exp": "NB-IoT is a 3GPP LPWAN technology deployed in licensed cellular bands.",
+    "sub": "IoT architecture"
+  },
+  {
+    "q": "'Cloud bursting' refers to:",
+    "options": [
+      "Deleting all data from a cloud",
+      "A sudden failure of all data centres",
+      "Temporarily using public cloud resources when private cloud capacity is exhausted",
+      "Merging two public clouds permanently"
+    ],
+    "answer": 2,
+    "exp": "It is a hybrid cloud technique for handling demand spikes.",
+    "sub": "Cloud deployment models"
+  },
+  {
+    "q": "In IoT, a smartphone commonly acts as:",
+    "options": [
+      "Only a power source for sensors",
+      "A user interface and controller (and sometimes a gateway) for IoT devices over BLE, NFC or Wi-Fi",
+      "A replacement for the IPv6 protocol",
+      "A passive RFID tag only"
+    ],
+    "answer": 1,
+    "exp": "Smartphones run control apps for smart devices and can relay data to the cloud.",
+    "sub": "IoT mobile",
+    "v": 2
+  },
+  {
+    "q": "The Android operating system is based on which kernel?",
+    "options": [
+      "Linux",
+      "Windows NT",
+      "Darwin",
+      "Solaris"
+    ],
+    "answer": 0,
+    "exp": "Android is built on the Linux kernel.",
+    "sub": "Mobile communication"
+  },
+  {
+    "q": "Which statement about RTGS in India is correct?",
+    "options": [
+      "It settles high-value payments in real time on a gross basis",
+      "It settles payments in half-hourly batches on a net basis",
+      "It is used only for payments below ₹1000",
+      "It works only for card payments"
+    ],
+    "answer": 0,
+    "exp": "RTGS = Real Time Gross Settlement, meant for large-value transfers.",
+    "sub": "Payment systems"
+  },
+  {
+    "q": "The padlock symbol and 'https' in a browser's address bar indicate that:",
+    "options": [
+      "The website is owned by the government",
+      "The website has no advertisements",
+      "Data between browser and server is encrypted using TLS/SSL",
+      "The computer is free of viruses"
+    ],
+    "answer": 2,
+    "exp": "HTTPS uses TLS/SSL to encrypt communication.",
+    "sub": "E-commerce security"
+  },
+  {
+    "q": "Which of the following is an international standard for Electronic Data Interchange?",
+    "options": [
+      "HTML",
+      "SMTP",
+      "FTP",
+      "UN/EDIFACT"
+    ],
+    "answer": 3,
+    "exp": "UN/EDIFACT (and ANSI X12 in the USA) are EDI message standards.",
+    "sub": "EDI"
+  },
+  {
+    "q": "The JAM trinity, used for direct benefit transfer in India, stands for:",
+    "options": [
+      "Jan Dhan, Aadhaar and Mobile",
+      "Jobs, Agriculture and Manufacturing",
+      "Jan Dhan, Aadhaar and Medicine",
+      "Jan Suraksha, Aadhaar and Mudra"
+    ],
+    "answer": 0,
+    "exp": "JAM links Jan Dhan bank accounts, Aadhaar identity and mobile numbers.",
+    "sub": "Digital India"
+  },
+  {
+    "q": "Which of the following helps reduce power consumption in a data centre?",
+    "options": [
+      "Server consolidation using virtualization",
+      "Running every server at idle continuously",
+      "Installing more standalone physical servers for each application",
+      "Disabling all cooling optimisation"
+    ],
+    "answer": 0,
+    "exp": "Virtualization lets fewer physical servers run many workloads, saving power.",
+    "sub": "Green computing"
+  },
+  {
+    "q": "Which of the following is the best example of a digital library repository?",
+    "options": [
+      "A school notice board",
+      "A printed encyclopedia",
+      "Shodhganga, the repository of Indian theses",
+      "A pen drive without any metadata"
+    ],
+    "answer": 2,
+    "exp": "Shodhganga (INFLIBNET) is an Indian digital repository of PhD theses.",
+    "sub": "Digital libraries",
+    "v": 2
+  },
+  {
+    "q": "Which IEEE standard describes Bluetooth-type wireless personal area networking?",
+    "options": [
+      "IEEE 802.15.4",
+      "IEEE 802.11ac",
+      "IEEE 802.3af",
+      "IEEE 802.15.1"
+    ],
+    "answer": 3,
+    "exp": "802.15.1 was the basis of Bluetooth, while 802.15.4 is used by ZigBee.",
+    "sub": "ZigBee"
+  },
+  {
+    "q": "The SHA-256 hash function produces a hash value of:",
+    "options": [
+      "128 bits",
+      "160 bits",
+      "512 bits",
+      "256 bits"
+    ],
+    "answer": 3,
+    "exp": "SHA-256 gives a 256-bit digest, used in Bitcoin.",
+    "sub": "Blockchain"
+  },
+  {
+    "q": "VoLTE stands for:",
+    "options": [
+      "Video over Local Telephone Exchange",
+      "Voice over Low-Throughput Ethernet",
+      "Voice over Long-Term Evolution",
+      "Visual over Long Terrestrial Exchange"
+    ],
+    "answer": 2,
+    "exp": "VoLTE carries voice calls as data over 4G LTE networks.",
+    "sub": "Mobile communication"
+  },
+  {
+    "q": "A small, subject-specific subset of a data warehouse built for one department (for example marketing) is called a:",
+    "options": [
+      "Data cube",
+      "Data lake index",
+      "Data dictionary",
+      "Data mart"
+    ],
+    "answer": 3,
+    "exp": "A data mart serves a single department; the enterprise-wide store is the data warehouse.",
+    "sub": "Data warehouse",
+    "v": 2
+  },
+  {
+    "q": "In an RFID system, the device that sends radio signals to power a passive tag and reads its ID is the:",
+    "options": [
+      "Reader (interrogator)",
+      "Router",
+      "Actuator",
+      "Modem"
+    ],
+    "answer": 0,
+    "exp": "A passive tag has no battery; the reader energises it and reads the stored ID.",
+    "sub": "RFID in IoT",
+    "v": 2
+  },
+  {
+    "q": "A man-in-the-middle attack means that the attacker:",
+    "options": [
+      "Floods a server with requests",
+      "Secretly intercepts and possibly alters communication between two parties",
+      "Guesses a password with a dictionary",
+      "Copies a file with a virus"
+    ],
+    "answer": 1,
+    "exp": "MITM sits between sender and receiver; flooding is DoS and password guessing is brute force/dictionary attack.",
+    "sub": "Network security",
+    "v": 2
+  },
+  {
+    "q": "Netiquette refers to:",
+    "options": [
+      "A kind of network cable",
+      "An encryption algorithm",
+      "A type of web browser",
+      "Accepted rules of polite and responsible behaviour on the internet"
+    ],
+    "answer": 3,
+    "exp": "Netiquette is network etiquette for online conduct.",
+    "sub": "Social media and ICT"
+  },
+  {
+    "q": "Which essential cloud characteristic allows the provider to meter usage and bill customers on a pay-as-you-go basis?",
+    "options": [
+      "Measured service",
+      "Resource pooling",
+      "Broad network access",
+      "Multi-tenancy encryption"
+    ],
+    "answer": 0,
+    "exp": "Measured service means usage is monitored and billed accordingly.",
+    "sub": "Cloud computing"
+  },
+  {
+    "q": "A freelance designer offers logo-design services to companies through an online marketplace. This model is:",
+    "options": [
+      "B2C",
+      "B2B",
+      "C2B",
+      "C2C"
+    ],
+    "answer": 2,
+    "exp": "An individual offering a service to businesses is consumer-to-business.",
+    "sub": "E-commerce models"
+  },
+  {
+    "q": "Compared with consumer IoT, Industrial IoT places greater emphasis on:",
+    "options": [
+      "Colourful user interfaces",
+      "Short device lifetime",
+      "Reliability, real-time operation and safety",
+      "Use of social media apps"
+    ],
+    "answer": 2,
+    "exp": "IIoT failures can cause safety hazards and production loss, so reliability, determinism and security are priorities.",
+    "sub": "IIoT vs IoT",
+    "v": 2
+  }
 ]

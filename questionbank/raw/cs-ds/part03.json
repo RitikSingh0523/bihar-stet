@@ -36,16 +36,17 @@
   "sub": "stacks"
  },
  {
-  "q": "What is the number of comparisons needed to find the largest element in an unsorted array of n elements?",
+  "q": "An undirected graph has edges A-B, A-C, B-D, C-D and D-E. Visiting neighbours in alphabetical order, BFS from A visits the vertices in the order",
   "options": [
-   "n",
-   "n + 1",
-   "n - 1",
-   "n/2"
+   "A B D C E",
+   "A C B D E",
+   "A B C E D",
+   "A B C D E"
   ],
-  "answer": 2,
-  "exp": "Each of the remaining n-1 elements is compared once with the current maximum.",
-  "sub": "arrays"
+  "answer": 3,
+  "exp": "BFS visits level by level: A; then B, C; then D (neighbour of B); then E (neighbour of D). A B D C E is the DFS order.",
+  "sub": "BFS",
+  "v": 2
  },
  {
   "q": "A queue is implemented with a singly linked list that has only a head pointer (front at head). What is the time complexity of enqueue?",
@@ -120,28 +121,30 @@
   "sub": "complexity"
  },
  {
-  "q": "A lower triangular matrix is stored row by row in a 1D array using 1-based indexing for both matrix and array, so a[i][j] (i ≥ j) is at position i(i-1)/2 + j. What is the position of a[5][3]?",
+  "q": "How many multiplications does Horner's rule need to evaluate 2x^3 + 3x^2 + 4x + 5 for a given x?",
   "options": [
-   "12",
-   "13",
-   "15",
-   "14"
+   "6",
+   "3",
+   "4",
+   "5"
   ],
   "answer": 1,
-  "exp": "5×4/2 + 3 = 10 + 3 = 13.",
-  "sub": "arrays"
+  "exp": "Horner form ((2x + 3)x + 4)x + 5 uses 3 multiplications and 3 additions; direct evaluation with repeated powers uses 3 + 2 + 1 = 6.",
+  "sub": "polynomial lists",
+  "v": 2
  },
  {
-  "q": "What is the prefix form of A+B*C-D?",
+  "q": "A graph on vertices 1 to 4 has adjacency matrix rows 1: 0110, 2: 1001, 3: 1001, 4: 0110. DFS from vertex 1, always taking the lowest-numbered unvisited neighbour first, visits vertices in the order",
   "options": [
-   "+-A*BCD",
-   "-A+B*CD",
-   "+A*BC-D",
-   "-+A*BCD"
+   "1 2 3 4",
+   "1 2 4 3",
+   "1 3 2 4",
+   "1 3 4 2"
   ],
-  "answer": 3,
-  "exp": "A+B*C-D = (A+(B*C))-D, giving -+A*BCD.",
-  "sub": "stacks"
+  "answer": 1,
+  "exp": "1 -> 2 (lowest neighbour) -> 4 (2's only other neighbour) -> 3 (4's unvisited neighbour). The BFS order would be 1 2 3 4.",
+  "sub": "DFS",
+  "v": 2
  },
  {
   "q": "A queue is built from two stacks s1 and s2. enqueue pushes onto s1. dequeue pops from s2 and, when s2 is empty, first moves all elements from s1 to s2. The operations are enqueue(1), enqueue(2), enqueue(3), dequeue, enqueue(4), dequeue. What value does the second dequeue return?",
@@ -180,16 +183,17 @@
   "sub": "heaps"
  },
  {
-  "q": "What is the time complexity of the Floyd-Warshall all-pairs shortest path algorithm on a graph with V vertices?",
+  "q": "A graph has 10000 vertices and 30000 edges. Which representation needs far less memory?",
   "options": [
-   "O(V²)",
-   "O(V + E)",
-   "O(V³)",
-   "O(E log V)"
+   "Adjacency matrix, with space O(V + E)",
+   "Adjacency matrix, with space O(E)",
+   "Adjacency list, with space O(V + E)",
+   "Both need the same space"
   ],
   "answer": 2,
-  "exp": "It uses three nested loops over the vertices.",
-  "sub": "graphs"
+  "exp": "The list needs about V + 2E = 70000 entries; the matrix needs V x V = 10^8 cells. The graph is sparse.",
+  "sub": "graph representation",
+  "v": 2
  },
  {
   "q": "Which of the following is NOT a property of a good hash function?",
@@ -240,16 +244,17 @@
   "sub": "sorting"
  },
  {
-  "q": "A two-dimensional float array float M[20][30] is declared. If each float takes 4 bytes, how many bytes does it occupy?",
+  "q": "Which statement about counting sort is TRUE?",
   "options": [
-   "2400",
-   "600",
-   "120",
-   "4800"
+   "It is in-place and needs only O(1) extra space",
+   "It is a comparison sort with an n log n lower bound",
+   "It is stable and takes O(n + k) time for integer keys in the range 0..k",
+   "It is efficient even when k is far larger than n"
   ],
-  "answer": 0,
-  "exp": "20 × 30 × 4 = 2400 bytes.",
-  "sub": "arrays"
+  "answer": 2,
+  "exp": "Counting sort uses a count array and an output array (O(n + k) space), places elements from right to left to stay stable, and is not comparison based.",
+  "sub": "counting sort",
+  "v": 2
  },
  {
   "q": "Attempting to pop from an empty stack is called",
@@ -264,16 +269,17 @@
   "sub": "stacks"
  },
  {
-  "q": "Three processes P1, P2, P3 with burst times 5, 3 and 2 arrive at time 0 and are scheduled by round robin with a time quantum of 2 using a FIFO ready queue. At what time does P1 complete?",
+  "q": "A max priority queue is implemented with an unsorted array. What are the costs of insert and extract-max?",
   "options": [
-   "8",
-   "9",
-   "6",
-   "10"
+   "O(n) and O(1)",
+   "O(1) and O(n)",
+   "O(log n) and O(log n)",
+   "O(n) and O(n)"
   ],
-  "answer": 3,
-  "exp": "Slices: P1 0-2, P2 2-4, P3 4-6 (done), P1 6-8, P2 8-9 (done), P1 9-10 (done).",
-  "sub": "queues"
+  "answer": 1,
+  "exp": "Insert just appends at the end; extract-max must scan all elements to find the maximum. A binary heap gives O(log n) for both.",
+  "sub": "priority queue",
+  "v": 2
  },
  {
   "q": "In an XOR (memory-efficient) doubly linked list, each node stores which value in its single link field?",
@@ -372,16 +378,17 @@
   "sub": "arrays"
  },
  {
-  "q": "Operations on an empty stack: push 5, push 3, pop, push 8, push 2, pop, pop, push 9. What are the top element and the size of the stack now?",
+  "q": "In the rat-in-a-maze backtracking program, when all four moves from the current cell fail, the algorithm",
   "options": [
-   "top = 5, size = 2",
-   "top = 8, size = 2",
-   "top = 9, size = 3",
-   "top = 9, size = 2"
+   "stops immediately and reports that no path exists",
+   "unmarks the cell and returns to the previous cell to try another move",
+   "marks the cell as permanently blocked and restarts from the entrance",
+   "continues moving forward ignoring the failure"
   ],
-  "answer": 3,
-  "exp": "After the pops the stack holds 5, and pushing 9 gives 5 9 (top 9, size 2).",
-  "sub": "stacks"
+  "answer": 1,
+  "exp": "Backtracking undoes the last choice (unmarks the cell on the path) and returns false to the caller, which then tries its next move.",
+  "sub": "backtracking",
+  "v": 2
  },
  {
   "q": "A circular queue uses an array of size 10 and the full condition (rear + 1) mod 10 = front, where rear is the index at which the next element will be inserted. If front = 7 and rear = 2, how many elements are in the queue?",
@@ -456,16 +463,17 @@
   "sub": "sorting"
  },
  {
-  "q": "The recursive factorial function fact(n) returns 1 for n = 0 and n × fact(n-1) otherwise. What is the maximum number of simultaneous stack frames when fact(5) is called?",
+  "q": "Which data structure does a recursive backtracking algorithm implicitly use to remember its earlier choices?",
   "options": [
-   "4",
-   "5",
-   "7",
-   "6"
+   "Queue",
+   "Heap",
+   "Hash table",
+   "Call stack"
   ],
   "answer": 3,
-  "exp": "Calls for n = 5, 4, 3, 2, 1, 0 are all active at the deepest point: 6 frames.",
-  "sub": "recursion"
+  "exp": "Each recursive call pushes an activation record on the call stack; returning from the call undoes the choice, which is why backtracking is depth-first.",
+  "sub": "backtracking",
+  "v": 2
  },
  {
   "q": "What is the solution of the recurrence T(n) = 4T(n/2) + n²?",

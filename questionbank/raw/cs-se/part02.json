@@ -1,42 +1,492 @@
 [
-{"q":"The prototyping model is most appropriate when","options":["The requirements are completely known and frozen","The system is a purely computational batch program","The customer's requirements are unclear or incomplete","The project has no user interface"],"answer":2,"exp":"Prototypes help users and developers clarify vague or incomplete requirements through early feedback.","sub":"SDLC models"},
-{"q":"The requirement 'The system should be user friendly' is deficient mainly because it is","options":["Inconsistent with other requirements","Ambiguous and not verifiable","A design decision","Technically infeasible"],"answer":1,"exp":"'User friendly' has no measurable criterion, so it cannot be objectively verified and is open to interpretation.","sub":"Requirements & SRS"},
-{"q":"In structured design, the fan-out of a module is","options":["The number of modules directly called by it","The number of modules that call it","The number of lines of code it contains","The number of parameters passed to it"],"answer":0,"exp":"Fan-out counts subordinate modules invoked by a module; fan-in counts its callers.","sub":"Design: coupling & cohesion"},
-{"q":"Bottom-up integration testing requires the use of","options":["Stubs","Mocks only","Beta testers","Drivers"],"answer":3,"exp":"In bottom-up integration, lower-level modules are tested first, so drivers are needed to simulate the higher-level callers.","sub":"Testing"},
-{"q":"In Function Point Analysis, the Complexity Adjustment Factor (0.65 + 0.01 × ΣFi, with 14 factors each rated 0 to 5) has a maximum value of","options":["1.35","1.05","1.15","1.70"],"answer":0,"exp":"Maximum ΣFi = 14 × 5 = 70, so CAF = 0.65 + 0.70 = 1.35.","sub":"Metrics: LOC & function points"},
-{"q":"According to Lehman's laws of software evolution, a program used in a real-world environment must continually be adapted or it becomes progressively less useful. This is the law of","options":["Increasing complexity","Conservation of familiarity","Declining quality","Continuing change"],"answer":3,"exp":"The law of Continuing Change states that E-type systems must be continually adapted to remain satisfactory.","sub":"Maintenance"},
-{"q":"Which of the following is a lower-CASE (back-end) tool?","options":["A data flow diagram editor","An automated test-case execution tool","An ER diagram drawing tool","A requirements tracking tool"],"answer":1,"exp":"Lower-CASE tools support implementation, testing and maintenance; DFD, ER and requirements tools are upper-CASE.","sub":"CASE & program analysis"},
-{"q":"Brooks' law states that","options":["Software complexity grows exponentially with lines of code","Project cost doubles with every new module","Adding manpower to a late software project makes it later","Every program contains at least one defect per 1000 lines"],"answer":2,"exp":"Brooks' law: adding people to a late project increases communication overhead and training effort, delaying it further.","sub":"Project management"},
-{"q":"A system has MTTF = 400 hours and MTTR = 20 hours. Its availability is approximately","options":["90.0%","95.2%","97.5%","80.0%"],"answer":1,"exp":"Availability = MTTF / (MTTF + MTTR) = 400/420 ≈ 0.952, i.e. about 95.2%.","sub":"Quality: ISO & CMM"},
-{"q":"A merge conflict in Git occurs when","options":["Both branches changed the same part of a file differently","A branch is deleted from the remote","The repository becomes larger than 1 GB","A commit message is left blank"],"answer":0,"exp":"Git cannot automatically reconcile overlapping, differing edits to the same lines from two branches.","sub":"Version control & DevOps"},
-{"q":"In the V-model of software development, acceptance testing is associated with which development phase?","options":["Coding","Architectural design","Requirements analysis","Module design"],"answer":2,"exp":"In the V-model each development phase is paired with a test level; user requirements correspond to acceptance testing.","sub":"SDLC models"},
-{"q":"Which technique describes requirements as sequences of interactions between a user and the system?","options":["Data flow diagram","Entity-relationship diagram","Decision table","Use cases"],"answer":3,"exp":"A use case captures the dialogue between an actor and the system to achieve a goal.","sub":"Requirements & SRS"},
-{"q":"In a UML class diagram, a line with a filled (solid) diamond at one end represents","options":["Inheritance","Dependency","Aggregation","Composition"],"answer":3,"exp":"A filled diamond denotes composition (strong whole-part, part cannot exist without the whole); a hollow diamond denotes aggregation.","sub":"Design: DFD & UML"},
-{"q":"Mutation testing is used to","options":["Test the user interface layout","Measure memory consumption","Evaluate the quality of a test suite by seeding small faults in the code","Convert black-box tests into white-box tests"],"answer":2,"exp":"Small mutations are introduced into the program; a good test suite should detect (kill) the mutants.","sub":"Testing"},
-{"q":"In basic COCOMO for an organic project, development time is D = 2.5 × E^0.38 months. For an effort E = 32 person-months, D is approximately","options":["9.3 months","12.0 months","6.4 months","14.5 months"],"answer":0,"exp":"32^0.38 = 2^(5×0.38) = 2^1.9 ≈ 3.73, so D ≈ 2.5 × 3.73 ≈ 9.3 months.","sub":"Metrics: COCOMO"},
-{"q":"Using Boehm's estimate, a system developed with 200 person-months of effort has an annual change traffic (ACT) of 0.1. The annual maintenance effort is","options":["10 person-months","20 person-months","40 person-months","2 person-months"],"answer":1,"exp":"Annual maintenance effort = ACT × development effort = 0.1 × 200 = 20 person-months.","sub":"Maintenance"},
-{"q":"A test coverage analyzer reports","options":["The response time of the application","The number of concurrent users supported","The percentage of code elements executed by the test suite","The defect density of the module"],"answer":2,"exp":"Coverage tools instrument code and report which statements/branches were executed during testing.","sub":"CASE & program analysis"},
-{"q":"A risk has a probability of occurrence of 0.3 and the loss if it occurs is Rs 2,00,000. The risk exposure is","options":["Rs 6,000","Rs 60,000","Rs 2,00,000","Rs 1,40,000"],"answer":1,"exp":"Risk exposure = probability × loss = 0.3 × 2,00,000 = Rs 60,000.","sub":"Project management"},
-{"q":"Level 5 (Optimizing) of the CMM is characterised by","options":["Documented and standardized processes","Basic project management practices","Quantitative measurement of processes only","Continuous process improvement using feedback"],"answer":3,"exp":"At the Optimizing level, quantitative feedback and innovative ideas drive continuous process improvement.","sub":"Quality: ISO & CMM"},
-{"q":"Assertion (A): Continuous Integration helps detect integration defects early. Reason (R): In CI, every commit to the shared repository triggers an automated build and test run. Which is correct?","options":["Both A and R are true and R is the correct explanation of A","Both A and R are true but R is not the correct explanation of A","A is true but R is false","A is false but R is true"],"answer":0,"exp":"Automatic build and tests on every commit expose integration problems immediately, explaining why defects are found early.","sub":"Version control & DevOps"},
-{"q":"According to the Agile Manifesto, which of the following is valued more?","options":["Responding to change over following a plan","Following a plan over responding to change","Processes and tools over individuals and interactions","Comprehensive documentation over working software"],"answer":0,"exp":"The manifesto values responding to change over following a plan, while acknowledging value in the items on the right.","sub":"SDLC models"},
-{"q":"One requirement states that data is entered in kilograms while another says it is entered in pounds for the same field. This is a problem of","options":["Ambiguity","Incompleteness","Redundancy","Inconsistency"],"answer":3,"exp":"Two requirements that contradict each other make the SRS inconsistent.","sub":"Requirements & SRS"},
-{"q":"Two modules communicate by reading and writing the same global data area. The type of coupling is","options":["Data coupling","Stamp coupling","Common coupling","Control coupling"],"answer":2,"exp":"Sharing global data between modules is common coupling.","sub":"Design: coupling & cohesion"},
-{"q":"Testing performed by the customer to decide whether to accept the delivered system is called","options":["Unit testing","Acceptance testing","Integration testing","Regression testing"],"answer":1,"exp":"Acceptance testing validates the system against user requirements and is used by the customer to accept or reject it.","sub":"Testing"},
-{"q":"A module has 45 defects found in 15 KLOC of code. The defect density is","options":["0.33 defects/KLOC","30 defects/KLOC","675 defects/KLOC","3 defects/KLOC"],"answer":3,"exp":"Defect density = 45 / 15 = 3 defects per KLOC.","sub":"Metrics: LOC & function points"},
-{"q":"Which combination of design characteristics makes software easiest to maintain?","options":["High coupling and low cohesion","Low coupling, high cohesion and good documentation","No comments in the code","Extensive use of global variables"],"answer":1,"exp":"Loosely coupled, cohesive and well-documented modules localize changes and are easy to understand.","sub":"Maintenance"},
-{"q":"An Integrated CASE (I-CASE) environment","options":["Provides tools sharing a common repository to support the whole life cycle","Supports only the coding phase","Supports only testing","Supports only documentation"],"answer":0,"exp":"I-CASE integrates tools across life-cycle phases around a common repository/database.","sub":"CASE & program analysis"},
-{"q":"A Work Breakdown Structure (WBS) is","options":["A network of project risks","A chart of the team's organization","A hierarchical decomposition of project work into smaller tasks and deliverables","A table of costs versus benefits"],"answer":2,"exp":"WBS breaks the project scope into manageable work packages in a tree structure.","sub":"Project management"},
-{"q":"Software Quality Assurance (SQA) activities are applied","options":["Only during the testing phase","Only to the final source code","Throughout the software process","Only after delivery"],"answer":2,"exp":"SQA is a process-wide umbrella activity covering reviews, standards, audits and testing at all phases.","sub":"Quality: ISO & CMM"},
-{"q":"The command 'git pull' is equivalent to","options":["git fetch followed by git merge","git add followed by git commit","git init followed by git clone","git branch followed by git delete"],"answer":0,"exp":"git pull downloads new commits from the remote (fetch) and integrates them into the current branch (merge).","sub":"Version control & DevOps"},
-{"q":"Statement I: The Waterfall model easily accommodates changes in requirements late in development. Statement II: Prototyping helps in clarifying requirements. Which is correct?","options":["Both statements are true","Statement I is false and Statement II is true","Statement I is true and Statement II is false","Both statements are false"],"answer":1,"exp":"Waterfall is rigid and handles late change poorly, whereas prototypes elicit user feedback that clarifies requirements.","sub":"SDLC models"},
-{"q":"The IEEE 830 recommended practice deals with","options":["Software test documentation","Software project management plans","Code review procedures","Software requirements specifications"],"answer":3,"exp":"IEEE Std 830 gives recommended practice for writing an SRS.","sub":"Requirements & SRS"},
-{"q":"Which tool shows the hierarchy of modules and the calling relationship between them?","options":["Data flow diagram","Structure chart","ER diagram","State chart"],"answer":1,"exp":"A structure chart depicts the modular hierarchy and the invocation relations among modules.","sub":"Design: DFD & UML"},
-{"q":"A program flow graph drawn as a planar graph has 6 regions (including the outer region). Its cyclomatic complexity is","options":["4","5","7","6"],"answer":3,"exp":"V(G) equals the number of regions of the planar flow graph, so V(G) = 6.","sub":"Testing: cyclomatic complexity"},
-{"q":"A team spends 20 person-months at a cost of Rs 50,000 per person-month and produces 10,000 LOC. The cost per LOC is","options":["Rs 50","Rs 200","Rs 100","Rs 500"],"answer":2,"exp":"Total cost = 20 × 50,000 = Rs 10,00,000; cost per LOC = 10,00,000 / 10,000 = Rs 100.","sub":"Metrics: LOC & function points"},
-{"q":"The 'ripple effect' in software maintenance refers to","options":["Side effects of a change spreading to other parts of the system","Gradual increase in the speed of the software","Reduction in the number of users over time","The spread of documentation across modules"],"answer":0,"exp":"A modification in one place can unintentionally affect other modules that depend on it.","sub":"Maintenance"},
-{"q":"A CASE tool that generates class skeleton code from a UML class diagram supports","options":["Forward engineering","Reverse engineering","Regression testing","Risk analysis"],"answer":0,"exp":"Generating code from design models is forward engineering; extracting models from code is reverse engineering.","sub":"CASE & program analysis"},
-{"q":"Tasks: A (3 days, no predecessor), B (5 days, after A), C (2 days, after A), D (4 days, after both B and C). The minimum project duration is","options":["9 days","11 days","12 days","14 days"],"answer":2,"exp":"Longest path A→B→D = 3+5+4 = 12 days (A→C→D is only 9 days).","sub":"Project management"},
-{"q":"ISO 9001 is primarily concerned with","options":["Environmental management","Information security management","Product safety testing","Quality management systems"],"answer":3,"exp":"ISO 9001 specifies requirements for a quality management system.","sub":"Quality: ISO & CMM"},
-{"q":"Which is the correct typical order of stages in a CI/CD pipeline?","options":["Deploy, build, test","Build, test, deploy","Test, deploy, build","Deploy, test, build"],"answer":1,"exp":"Code is first built, then automatically tested, and only then deployed.","sub":"Version control & DevOps"}
+  {
+    "q": "The prototyping model is most appropriate when",
+    "options": [
+      "The requirements are completely known and frozen",
+      "The system is a purely computational batch program",
+      "The customer's requirements are unclear or incomplete",
+      "The project has no user interface"
+    ],
+    "answer": 2,
+    "exp": "Prototypes help users and developers clarify vague or incomplete requirements through early feedback.",
+    "sub": "SDLC models"
+  },
+  {
+    "q": "Which of the following should NOT be included in a Software Requirements Specification?",
+    "options": [
+      "Choice of algorithms and design/implementation details",
+      "External interface requirements",
+      "Performance requirements",
+      "Functional requirements"
+    ],
+    "answer": 0,
+    "exp": "An SRS states what the system must do, not how; design and implementation decisions belong to the design documents (IEEE 830).",
+    "sub": "Requirements & SRS",
+    "v": 2
+  },
+  {
+    "q": "In structured design, the fan-out of a module is",
+    "options": [
+      "The number of modules directly called by it",
+      "The number of modules that call it",
+      "The number of lines of code it contains",
+      "The number of parameters passed to it"
+    ],
+    "answer": 0,
+    "exp": "Fan-out counts subordinate modules invoked by a module; fan-in counts its callers.",
+    "sub": "Design: coupling & cohesion"
+  },
+  {
+    "q": "Bottom-up integration testing requires the use of",
+    "options": [
+      "Stubs",
+      "Mocks only",
+      "Beta testers",
+      "Drivers"
+    ],
+    "answer": 3,
+    "exp": "In bottom-up integration, lower-level modules are tested first, so drivers are needed to simulate the higher-level callers.",
+    "sub": "Testing"
+  },
+  {
+    "q": "In Function Point Analysis, the Complexity Adjustment Factor (0.65 + 0.01 × ΣFi, with 14 factors each rated 0 to 5) has a maximum value of",
+    "options": [
+      "1.35",
+      "1.05",
+      "1.15",
+      "1.70"
+    ],
+    "answer": 0,
+    "exp": "Maximum ΣFi = 14 × 5 = 70, so CAF = 0.65 + 0.70 = 1.35.",
+    "sub": "Metrics: LOC & function points"
+  },
+  {
+    "q": "According to Lehman's laws of software evolution, a program used in a real-world environment must continually be adapted or it becomes progressively less useful. This is the law of",
+    "options": [
+      "Increasing complexity",
+      "Conservation of familiarity",
+      "Declining quality",
+      "Continuing change"
+    ],
+    "answer": 3,
+    "exp": "The law of Continuing Change states that E-type systems must be continually adapted to remain satisfactory.",
+    "sub": "Maintenance"
+  },
+  {
+    "q": "In MoSCoW requirements prioritisation, the letter \"W\" stands for:",
+    "options": [
+      "Wanted",
+      "Waterfall",
+      "Workable",
+      "Won't have (this time)"
+    ],
+    "answer": 3,
+    "exp": "MoSCoW = Must have, Should have, Could have, Won't have this time.",
+    "sub": "Requirements & SRS",
+    "v": 2
+  },
+  {
+    "q": "Brooks' law states that",
+    "options": [
+      "Software complexity grows exponentially with lines of code",
+      "Project cost doubles with every new module",
+      "Adding manpower to a late software project makes it later",
+      "Every program contains at least one defect per 1000 lines"
+    ],
+    "answer": 2,
+    "exp": "Brooks' law: adding people to a late project increases communication overhead and training effort, delaying it further.",
+    "sub": "Project management"
+  },
+  {
+    "q": "A system has MTTF = 400 hours and MTTR = 20 hours. Its availability is approximately",
+    "options": [
+      "90.0%",
+      "95.2%",
+      "97.5%",
+      "80.0%"
+    ],
+    "answer": 1,
+    "exp": "Availability = MTTF / (MTTF + MTTR) = 400/420 ≈ 0.952, i.e. about 95.2%.",
+    "sub": "Quality: ISO & CMM"
+  },
+  {
+    "q": "Which UML diagram models the states of an object and the transitions triggered by events?",
+    "options": [
+      "Class diagram",
+      "Deployment diagram",
+      "State machine (state chart) diagram",
+      "Component diagram"
+    ],
+    "answer": 2,
+    "exp": "State machine diagrams show an object's states and event-driven transitions. Class diagrams show static structure; component and deployment diagrams show physical organisation.",
+    "sub": "Design: DFD & UML",
+    "v": 2
+  },
+  {
+    "q": "In the V-model of software development, acceptance testing is associated with which development phase?",
+    "options": [
+      "Coding",
+      "Architectural design",
+      "Requirements analysis",
+      "Module design"
+    ],
+    "answer": 2,
+    "exp": "In the V-model each development phase is paired with a test level; user requirements correspond to acceptance testing.",
+    "sub": "SDLC models"
+  },
+  {
+    "q": "Which technique describes requirements as sequences of interactions between a user and the system?",
+    "options": [
+      "Data flow diagram",
+      "Entity-relationship diagram",
+      "Decision table",
+      "Use cases"
+    ],
+    "answer": 3,
+    "exp": "A use case captures the dialogue between an actor and the system to achieve a goal.",
+    "sub": "Requirements & SRS"
+  },
+  {
+    "q": "In a UML class diagram, a line with a filled (solid) diamond at one end represents",
+    "options": [
+      "Inheritance",
+      "Dependency",
+      "Aggregation",
+      "Composition"
+    ],
+    "answer": 3,
+    "exp": "A filled diamond denotes composition (strong whole-part, part cannot exist without the whole); a hollow diamond denotes aggregation.",
+    "sub": "Design: DFD & UML"
+  },
+  {
+    "q": "Mutation testing is used to",
+    "options": [
+      "Test the user interface layout",
+      "Measure memory consumption",
+      "Evaluate the quality of a test suite by seeding small faults in the code",
+      "Convert black-box tests into white-box tests"
+    ],
+    "answer": 2,
+    "exp": "Small mutations are introduced into the program; a good test suite should detect (kill) the mutants.",
+    "sub": "Testing"
+  },
+  {
+    "q": "In basic COCOMO for an organic project, development time is D = 2.5 × E^0.38 months. For an effort E = 32 person-months, D is approximately",
+    "options": [
+      "9.3 months",
+      "12.0 months",
+      "6.4 months",
+      "14.5 months"
+    ],
+    "answer": 0,
+    "exp": "32^0.38 = 2^(5×0.38) = 2^1.9 ≈ 3.73, so D ≈ 2.5 × 3.73 ≈ 9.3 months.",
+    "sub": "Metrics: COCOMO"
+  },
+  {
+    "q": "In structured design, transform analysis and transaction analysis are used to convert:",
+    "options": [
+      "a structure chart into source code",
+      "a data flow diagram into a structure chart",
+      "an ER diagram into tables",
+      "a use case into a class diagram"
+    ],
+    "answer": 1,
+    "exp": "Structured analysis produces DFDs; transform or transaction analysis maps the DFD to a structure chart (module hierarchy), the main structured-design output.",
+    "sub": "Design: DFD & UML",
+    "v": 2
+  },
+  {
+    "q": "A test coverage analyzer reports",
+    "options": [
+      "The response time of the application",
+      "The number of concurrent users supported",
+      "The percentage of code elements executed by the test suite",
+      "The defect density of the module"
+    ],
+    "answer": 2,
+    "exp": "Coverage tools instrument code and report which statements/branches were executed during testing.",
+    "sub": "CASE & program analysis"
+  },
+  {
+    "q": "A risk has a probability of occurrence of 0.3 and the loss if it occurs is Rs 2,00,000. The risk exposure is",
+    "options": [
+      "Rs 6,000",
+      "Rs 60,000",
+      "Rs 2,00,000",
+      "Rs 1,40,000"
+    ],
+    "answer": 1,
+    "exp": "Risk exposure = probability × loss = 0.3 × 2,00,000 = Rs 60,000.",
+    "sub": "Project management"
+  },
+  {
+    "q": "Level 5 (Optimizing) of the CMM is characterised by",
+    "options": [
+      "Documented and standardized processes",
+      "Basic project management practices",
+      "Quantitative measurement of processes only",
+      "Continuous process improvement using feedback"
+    ],
+    "answer": 3,
+    "exp": "At the Optimizing level, quantitative feedback and innovative ideas drive continuous process improvement.",
+    "sub": "Quality: ISO & CMM"
+  },
+  {
+    "q": "The application-composition model of COCOMO II estimates size using:",
+    "options": [
+      "object points",
+      "lines of code only",
+      "cyclomatic complexity",
+      "Halstead volume"
+    ],
+    "answer": 0,
+    "exp": "COCOMO II application composition (used for prototyping and GUI-based projects) is based on object points; the early-design and post-architecture models use function points or SLOC.",
+    "sub": "Metrics: COCOMO",
+    "v": 2
+  },
+  {
+    "q": "According to the Agile Manifesto, which of the following is valued more?",
+    "options": [
+      "Responding to change over following a plan",
+      "Following a plan over responding to change",
+      "Processes and tools over individuals and interactions",
+      "Comprehensive documentation over working software"
+    ],
+    "answer": 0,
+    "exp": "The manifesto values responding to change over following a plan, while acknowledging value in the items on the right.",
+    "sub": "SDLC models"
+  },
+  {
+    "q": "To unit test a module that calls other modules which are not yet developed, the tester uses:",
+    "options": [
+      "drivers",
+      "stubs",
+      "regression suites",
+      "mutants"
+    ],
+    "answer": 1,
+    "exp": "A stub is a dummy called module. A driver is a dummy calling module, used when the caller is missing.",
+    "sub": "Testing",
+    "v": 2
+  },
+  {
+    "q": "Two modules communicate by reading and writing the same global data area. The type of coupling is",
+    "options": [
+      "Data coupling",
+      "Stamp coupling",
+      "Common coupling",
+      "Control coupling"
+    ],
+    "answer": 2,
+    "exp": "Sharing global data between modules is common coupling.",
+    "sub": "Design: coupling & cohesion"
+  },
+  {
+    "q": "Testing performed by the customer to decide whether to accept the delivered system is called",
+    "options": [
+      "Unit testing",
+      "Acceptance testing",
+      "Integration testing",
+      "Regression testing"
+    ],
+    "answer": 1,
+    "exp": "Acceptance testing validates the system against user requirements and is used by the customer to accept or reject it.",
+    "sub": "Testing"
+  },
+  {
+    "q": "A module has 45 defects found in 15 KLOC of code. The defect density is",
+    "options": [
+      "0.33 defects/KLOC",
+      "30 defects/KLOC",
+      "675 defects/KLOC",
+      "3 defects/KLOC"
+    ],
+    "answer": 3,
+    "exp": "Defect density = 45 / 15 = 3 defects per KLOC.",
+    "sub": "Metrics: LOC & function points"
+  },
+  {
+    "q": "Which combination of design characteristics makes software easiest to maintain?",
+    "options": [
+      "High coupling and low cohesion",
+      "Low coupling, high cohesion and good documentation",
+      "No comments in the code",
+      "Extensive use of global variables"
+    ],
+    "answer": 1,
+    "exp": "Loosely coupled, cohesive and well-documented modules localize changes and are easy to understand.",
+    "sub": "Maintenance"
+  },
+  {
+    "q": "Decision table testing is a technique of:",
+    "options": [
+      "white-box testing",
+      "mutation testing",
+      "static code analysis",
+      "black-box testing"
+    ],
+    "answer": 3,
+    "exp": "Decision table testing derives test cases from combinations of input conditions in the specification, without looking at code, so it is black-box.",
+    "sub": "Testing",
+    "v": 2
+  },
+  {
+    "q": "A Work Breakdown Structure (WBS) is",
+    "options": [
+      "A network of project risks",
+      "A chart of the team's organization",
+      "A hierarchical decomposition of project work into smaller tasks and deliverables",
+      "A table of costs versus benefits"
+    ],
+    "answer": 2,
+    "exp": "WBS breaks the project scope into manageable work packages in a tree structure.",
+    "sub": "Project management"
+  },
+  {
+    "q": "Software Quality Assurance (SQA) activities are applied",
+    "options": [
+      "Only during the testing phase",
+      "Only to the final source code",
+      "Throughout the software process",
+      "Only after delivery"
+    ],
+    "answer": 2,
+    "exp": "SQA is a process-wide umbrella activity covering reviews, standards, audits and testing at all phases.",
+    "sub": "Quality: ISO & CMM"
+  },
+  {
+    "q": "Which of the following is a technique for requirements validation?",
+    "options": [
+      "Cyclomatic complexity analysis",
+      "Code inspection",
+      "Requirements reviews and prototyping",
+      "Path coverage testing"
+    ],
+    "answer": 2,
+    "exp": "Requirements validation checks that the SRS reflects customer needs using reviews, walkthroughs, prototyping and test-case generation.",
+    "sub": "Requirements & SRS",
+    "v": 2
+  },
+  {
+    "q": "Statement I: The Waterfall model easily accommodates changes in requirements late in development. Statement II: Prototyping helps in clarifying requirements. Which is correct?",
+    "options": [
+      "Both statements are true",
+      "Statement I is false and Statement II is true",
+      "Statement I is true and Statement II is false",
+      "Both statements are false"
+    ],
+    "answer": 1,
+    "exp": "Waterfall is rigid and handles late change poorly, whereas prototypes elicit user feedback that clarifies requirements.",
+    "sub": "SDLC models"
+  },
+  {
+    "q": "The IEEE 830 recommended practice deals with",
+    "options": [
+      "Software test documentation",
+      "Software project management plans",
+      "Code review procedures",
+      "Software requirements specifications"
+    ],
+    "answer": 3,
+    "exp": "IEEE Std 830 gives recommended practice for writing an SRS.",
+    "sub": "Requirements & SRS"
+  },
+  {
+    "q": "Which tool shows the hierarchy of modules and the calling relationship between them?",
+    "options": [
+      "Data flow diagram",
+      "Structure chart",
+      "ER diagram",
+      "State chart"
+    ],
+    "answer": 1,
+    "exp": "A structure chart depicts the modular hierarchy and the invocation relations among modules.",
+    "sub": "Design: DFD & UML"
+  },
+  {
+    "q": "A program flow graph drawn as a planar graph has 6 regions (including the outer region). Its cyclomatic complexity is",
+    "options": [
+      "4",
+      "5",
+      "7",
+      "6"
+    ],
+    "answer": 3,
+    "exp": "V(G) equals the number of regions of the planar flow graph, so V(G) = 6.",
+    "sub": "Testing: cyclomatic complexity"
+  },
+  {
+    "q": "A team spends 20 person-months at a cost of Rs 50,000 per person-month and produces 10,000 LOC. The cost per LOC is",
+    "options": [
+      "Rs 50",
+      "Rs 200",
+      "Rs 100",
+      "Rs 500"
+    ],
+    "answer": 2,
+    "exp": "Total cost = 20 × 50,000 = Rs 10,00,000; cost per LOC = 10,00,000 / 10,000 = Rs 100.",
+    "sub": "Metrics: LOC & function points"
+  },
+  {
+    "q": "The cost of fixing a defect is generally lowest when the defect is detected during:",
+    "options": [
+      "the requirements phase",
+      "coding",
+      "system testing",
+      "operation and maintenance"
+    ],
+    "answer": 0,
+    "exp": "The relative cost of correcting an error rises steeply with each later phase, so early reviews and inspections are the most economical.",
+    "sub": "Quality: ISO & CMM",
+    "v": 2
+  },
+  {
+    "q": "A CASE tool that generates class skeleton code from a UML class diagram supports",
+    "options": [
+      "Forward engineering",
+      "Reverse engineering",
+      "Regression testing",
+      "Risk analysis"
+    ],
+    "answer": 0,
+    "exp": "Generating code from design models is forward engineering; extracting models from code is reverse engineering.",
+    "sub": "CASE & program analysis"
+  },
+  {
+    "q": "Tasks: A (3 days, no predecessor), B (5 days, after A), C (2 days, after A), D (4 days, after both B and C). The minimum project duration is",
+    "options": [
+      "9 days",
+      "11 days",
+      "12 days",
+      "14 days"
+    ],
+    "answer": 2,
+    "exp": "Longest path A→B→D = 3+5+4 = 12 days (A→C→D is only 9 days).",
+    "sub": "Project management"
+  },
+  {
+    "q": "ISO 9001 is primarily concerned with",
+    "options": [
+      "Environmental management",
+      "Information security management",
+      "Product safety testing",
+      "Quality management systems"
+    ],
+    "answer": 3,
+    "exp": "ISO 9001 specifies requirements for a quality management system.",
+    "sub": "Quality: ISO & CMM"
+  },
+  {
+    "q": "A major disadvantage of using Lines of Code (LOC) as a size metric is that it:",
+    "options": [
+      "cannot be counted by tools",
+      "depends on language and programming style and is known accurately only after coding",
+      "is measured in function points",
+      "ignores the cost of the project"
+    ],
+    "answer": 1,
+    "exp": "LOC varies with language and style, penalises concise code and is hard to estimate early; function points address this by measuring functionality.",
+    "sub": "Metrics: LOC & function points",
+    "v": 2
+  }
 ]

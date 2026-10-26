@@ -83,6 +83,14 @@ Registers → Cache (L1, L2, L3) → Main Memory (RAM) → Secondary (SSD/HDD) �
 - RAM is volatile, read-write, random access. DRAM types: SDRAM, DDR (double data rate; DDR2/3/4/5), RDRAM.
 - Flash (EEPROM-based) is non-volatile: pen drive, SSD, memory card; NAND vs NOR.
 
+### SRAM vs DRAM in more detail
+
+- **DRAM** stores a bit as charge on a capacitor, which leaks, so every row must be **refreshed** every few milliseconds (typically 64 ms for all rows). A read is destructive and followed by write-back. Refresh styles: **burst** (all rows together), **distributed** (one row at intervals), **hidden** (during normal access).
+- DRAM address pins are **multiplexed**: the row address is latched with RAS, then the column address with CAS - this halves the number of address pins (a 2ⁿ-bit chip needs about n/2 address lines).
+- **SRAM** keeps the bit in a bistable flip-flop (6 transistors): no refresh, faster, more power-hungry in speed-critical use, expensive and low density; used for cache and registers.
+- **Asynchronous** DRAM vs **SDRAM** (synchronised with the system clock), DDR (transfers on both clock edges).
+- Both are **volatile** random-access read/write memories; ROM/Flash retain data without power.
+
 ### ROM family (non-volatile)
 
 | Type | Programming / erase |
@@ -315,6 +323,128 @@ Flynn (1966) classifies by number of **instruction streams** and **data streams*
 
 ---
 
+## 12. Register Transfer & Micro-operations
+
+A **micro-operation** is an elementary operation performed on data stored in registers during one clock pulse. A machine instruction is executed as a sequence of micro-operations; the control unit generates the control signals that trigger them.
+
+### Register transfer language (RTL)
+- `R2 ← R1` copies R1 into R2 (R1 unchanged). Conditional: `P: R2 ← R1` means "if P = 1 then transfer" (P is a control function).
+- Simultaneous transfers on one clock: `T: R2 ← R1, R1 ← R2` (swap).
+- Memory transfer: **read** `DR ← M[AR]`; **write** `M[AR] ← R1` (AR = address register, DR = data register).
+- Many registers share a **common bus**: a multiplexer bus system (n registers of k bits need k multiplexers of n:1) or a **tri-state buffer** bus; select lines choose the source and a load line chooses the destination.
+- Instruction fetch micro-operations: `T0: AR ← PC`; `T1: IR ← M[AR], PC ← PC + 1`; `T2: decode IR`.
+
+### Four types of micro-operations
+
+| Type | Examples |
+|---|---|
+| Register transfer | R2 ← R1 |
+| Arithmetic | add, subtract, increment, decrement, complement |
+| Logic | AND, OR, XOR, complement, clear |
+| Shift | logical, circular, arithmetic |
+
+### Arithmetic micro-operations
+- `R3 ← R1 + R2` add; `R3 ← R1 + R2' + 1` subtract (2's complement); `R1 ← R1 + 1` increment; `R1 ← R1 − 1` decrement; `R2 ← R2'` complement (1's); negate = `R2' + 1`.
+- **Arithmetic circuit:** one n-bit parallel adder. A multiplexer feeds the Y input with B, B', all 0s or all 1s while Cin is 0 or 1:
+
+| S1 S0 | Cin = 0 | Cin = 1 |
+|---|---|---|
+| 0 0 (Y = B) | A + B (add) | A + B + 1 |
+| 0 1 (Y = B') | A + B' | A + B' + 1 (subtract) |
+| 1 0 (Y = 0) | A (transfer) | A + 1 (increment) |
+| 1 1 (Y = all 1s) | A − 1 (decrement) | A (transfer) |
+
+### Logic micro-operations (bitwise)
+- Two variables → 16 possible functions; the common ones: AND (∧), OR (∨), XOR (⊕), complement, clear (all 0), set.
+- **Selective-set:** A ← A ∨ B (bits set where B = 1). **Selective-complement:** A ← A ⊕ B (bits toggled where B = 1). **Selective-clear:** A ← A ∧ B' (bits cleared where B = 1). **Mask:** A ← A ∧ B (bits cleared where B = 0). **Insert:** mask the field, then OR the new value. **Clear:** A ← A ⊕ A.
+- Example: A = 1010, B = 1100: A ∨ B = 1110; A ∧ B = 1000; A ⊕ B = 0110; A ∧ B' = 0010.
+
+### Shift micro-operations
+
+| Shift | Behaviour (register R, serial input) |
+|---|---|
+| Logical shift left / right | Zero enters; bit shifted out is lost (or goes to carry) |
+| Circular shift (rotate) | The bit shifted out re-enters at the other end |
+| Arithmetic shift right | Sign bit kept and replicated (divides by 2) |
+| Arithmetic shift left | Zero enters at LSB; multiplies by 2; **overflow** if the sign bit changes |
+
+- Example: 8-bit 1011 0100 arithmetic shift right → 1101 1010; logical shift right → 0101 1010; rotate left → 0110 1001.
+- A barrel shifter shifts by any number of positions in one step using multiplexers.
+
+**⚡ Exam tip:** Subtract = A + B' + 1; arithmetic shift right keeps the sign (divide by 2), left doubles; mask = AND, selective-set = OR, selective-complement = XOR; fetch = AR ← PC, IR ← M[AR], PC ← PC + 1.
+
+---
+
+## 13. Error Detection & Correction: Parity, Checksum, CRC, Hamming
+
+Errors (bit flips) occur in memory and communication; extra **redundant bits** let the receiver detect (and sometimes correct) them.
+
+### Parity
+- **Even parity:** parity bit chosen so total 1s is even; **odd parity:** total 1s odd. Data 1011001 (four 1s) → even parity bit 0, odd parity bit 1.
+- Detects any **odd** number of bit errors; misses even numbers; cannot locate the bad bit. Overhead 1 bit per word.
+- **Two-dimensional (block) parity:** parity for every row (VRC) and every column (LRC); locates and corrects a single-bit error (intersection of the bad row and column) and detects more.
+
+### Checksum
+- Sender adds data words (usually 8/16-bit) with **end-around carry (1's complement sum)**, then sends the **complement of the sum** as the checksum; the receiver adds all words including the checksum - the result must be all 1s (complement = 0), otherwise there is an error.
+- Example (8-bit words): 01010101 + 00110011 + 10001000 = 100010000 (272); wrap carry → 00010001 (17); complement → **11101110** (238). Receiver: 17 + 238 = 255 = 11111111, so no error.
+- Used in IP, TCP, UDP headers. Weaker than CRC: detects most but not all errors (e.g. swapped words go unnoticed).
+
+### CRC (cyclic redundancy check)
+- Data polynomial is divided (modulo-2, XOR) by a generator polynomial G(x) of degree r; the r-bit **remainder** is appended. Receiver divides the received frame: remainder 0 = no error.
+- Hardware: shift register with XOR gates. Detects all single-bit errors, all burst errors of length ≤ r and most longer bursts. Used in Ethernet (CRC-32), disks, ZIP.
+- Example: data 1101011011, G = 10011 (r = 4) → append 0000, divide, remainder is the CRC.
+
+### Hamming code (single-error correcting)
+- Hamming distance d = number of positions in which two code words differ. A code with minimum distance d **detects d − 1** errors and **corrects ⌊(d − 1)/2⌋** errors. d = 3 → single-error correcting (Hamming), d = 4 → SEC-DED.
+- For m data bits and p parity bits: **2ᵖ ≥ m + p + 1**. 4 data bits → p = 3 (7,4 code); 8 data → 4 (12 bits); 16 → 5; 32 → 6; 64 → 7.
+- Parity bits sit at positions **1, 2, 4, 8, ...** (powers of 2). Parity bit at position 2ᵏ covers all positions whose binary number has bit k set: P1 → 1, 3, 5, 7, ...; P2 → 2, 3, 6, 7, ...; P4 → 4, 5, 6, 7, ...
+- **Worked example (even parity):** data 1011 placed at positions 3, 5, 6, 7 (d3 = 1, d5 = 0, d6 = 1, d7 = 1). P1 = d3⊕d5⊕d7 = 0; P2 = d3⊕d6⊕d7 = 1; P4 = d5⊕d6⊕d7 = 0. Code word (positions 1-7) = **0110011**.
+- **Error correction:** recompute the checks C4 C2 C1 over the received word; the binary number C4C2C1 (**syndrome**) gives the position of the wrong bit (000 = no error). If bit 5 flips, the word is 0110111 → C1 = 1, C2 = 0, C4 = 1 → syndrome 101 = 5 → flip bit 5.
+- **SEC-DED:** add an overall parity bit (extended Hamming): corrects 1-bit and detects 2-bit errors; used in ECC memory.
+
+| Method | Detect | Correct |
+|---|---|---|
+| Parity | odd number of errors | none |
+| 2-D parity | multiple | single bit |
+| Checksum | most errors | none |
+| CRC | burst errors | none |
+| Hamming | 2 bits (d = 3) | 1 bit |
+
+**⚡ Exam tip:** Parity bits in Hamming sit at powers of 2 (1, 2, 4, 8); syndrome = error position; 2ᵖ ≥ m + p + 1; d = 3 corrects 1 error and detects 2; checksum receiver result must be all 1s.
+
+---
+
+## 14. ALU Design
+
+The **ALU** performs all arithmetic and logic operations of the CPU. It is purely combinational; operation select lines choose the function and results go to a register (usually the accumulator), while **status flags** are set.
+
+### Structure of an ALU
+- **Arithmetic unit** (adder with input conditioning) + **logic unit** (AND, OR, XOR, NOT gates) + (optionally) **shifter**; a final multiplexer selects which result goes out, controlled by the opcode select lines.
+- **One bit slice:** a full adder, gates for AND/OR/XOR and a 4:1 multiplexer; n identical slices are cascaded (carry ripples between slices or uses carry look-ahead) to form an n-bit ALU.
+- **Adder/subtractor:** XOR each B bit with the mode M, and Cin = M: M = 0 → A + B; M = 1 → A + B' + 1 = A − B.
+- Typical ALU IC: **74181** - 4-bit ALU, 16 logic and 16 arithmetic functions selected by S3-S0 and mode M (M = 1 logic, M = 0 arithmetic); 74182 is the carry look-ahead generator for cascading.
+
+### Status flags (condition codes)
+
+| Flag | Set when |
+|---|---|
+| **C (carry)** | Carry out of the MSB (unsigned overflow); borrow in subtraction |
+| **Z (zero)** | All result bits are 0 (NOR of all output bits) |
+| **S / N (sign)** | MSB of the result = 1 (negative) |
+| **V (overflow)** | Signed overflow = carry into MSB ⊕ carry out of MSB |
+| **P (parity)** | Result has even number of 1s (8085/8086) |
+| **AC (auxiliary carry)** | Carry from bit 3 to bit 4 (used for BCD adjust) |
+
+### Speeding up and other operations
+- **Ripple-carry adder** delay = n × delay per full adder; **carry look-ahead** computes carries in parallel from G = AB and P = A ⊕ B: Ci+1 = Gi + Pi·Ci - delay nearly independent of n.
+- **Multiplication:** shift-and-add (n additions for n bits); **Booth's algorithm** handles signed numbers in 2's complement and skips runs of 1s; array multiplier is combinational. n × n bits → 2n-bit product.
+- **Division:** restoring and non-restoring algorithms (shift-subtract). **Floating-point ALU:** align exponents, add mantissas, normalise.
+- Bit-parallel logic uses the same bus; a **BCD adder** adds 6 when the sum exceeds 9 or there is a carry.
+
+**⚡ Exam tip:** Subtract = XOR on B inputs with Cin = 1; V flag = C(n−1) ⊕ C(n); Z flag = NOR of all result bits; 74181 = 4-bit ALU; carry look-ahead reduces carry-propagation delay.
+
+---
+
 ## Quick Revision Sheet
 
 1. Generations: tube → transistor → IC → microprocessor (VLSI) → AI/ULSI.
@@ -342,3 +472,9 @@ Flynn (1966) classifies by number of **instruction streams** and **data streams*
 23. I/O: programmed (polling), interrupt-driven, DMA (block transfer, cycle stealing); NMI non-maskable; memory-mapped vs isolated I/O.
 24. Flynn: SISD (PC), SIMD (vector/GPU), MISD (rare), MIMD (multicore).
 25. Amdahl: speedup = 1 / ((1−f) + f/N).
+26. Micro-operation = elementary register-level step per clock; types: register transfer, arithmetic, logic, shift. Subtract = A + B' + 1; fetch: AR←PC, IR←M[AR], PC←PC+1.
+27. Selective-set = OR, selective-complement = XOR, mask/selective-clear = AND; arithmetic shift right keeps the sign; logical shift fills 0; rotate recirculates.
+28. Parity detects odd number of errors only; 2-D parity corrects 1 bit; checksum = complement of 1's-complement sum (receiver sum all 1s); CRC = modulo-2 division, detects bursts.
+29. Hamming: 2ᵖ ≥ m + p + 1; parity at positions 1, 2, 4, 8; syndrome = error position; distance d detects d−1, corrects ⌊(d−1)/2⌋; SEC-DED adds one overall parity bit.
+30. ALU = arithmetic unit + logic unit + shifter + output MUX; flags C, Z, S, V (= carry into MSB ⊕ carry out of MSB); 74181 = 4-bit ALU; carry look-ahead Ci+1 = Gi + Pi·Ci.
+31. DRAM: multiplexed row/column address (RAS/CAS), refresh every few ms (burst, distributed, hidden); SRAM faster, no refresh, used for cache.
