@@ -1,5 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import Header from '../components/Header.jsx';
+import LearnSearch from '../components/LearnSearch.jsx';
 import { Badge, Button, Wrap, cx } from '../components/ui.jsx';
 import { EXAM_DATE, GROUPS, PLAN, PLAN_START, TOPICS, topicById, topicForLabel } from '../learn/topics.js';
 import { doneChapters, hasContent, loadTopic } from '../learn/content.js';
@@ -48,6 +49,8 @@ export function useProgress() {
 
 export default function Learn() {
   const prog = useProgress();
+  const [q, setQ] = useState(() => sessionStorage.getItem('stet.learn.q') || '');
+  useEffect(() => { sessionStorage.setItem('stet.learn.q', q); }, [q]);
   const today = startOfDay(new Date());
   const daysLeft = Math.ceil((startOfDay(EXAM_DATE) - today) / DAY);
   const planDay = Math.floor((today - startOfDay(PLAN_START)) / DAY);
@@ -81,6 +84,9 @@ export default function Learn() {
           </div>
         </section>
 
+        <LearnSearch q={q} setQ={setQ} />
+
+        {!q.trim() && <>
         {weak.length > 0 && (
           <section className="mb-6 rounded-xl border border-red-200 bg-red-50 p-4">
             <h2 className="text-lg font-semibold text-red-800">Weak areas from your mock tests</h2>
@@ -150,6 +156,7 @@ export default function Learn() {
             </div>
           </section>
         ))}
+        </>}
       </Wrap>
     </>
   );

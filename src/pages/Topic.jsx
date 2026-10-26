@@ -3,18 +3,29 @@ import Header from '../components/Header.jsx';
 import Markdown from '../components/Markdown.jsx';
 import { Button, cx } from '../components/ui.jsx';
 import { doneChapters, loadTopic, readMinutes, setChapterDone, wordCount } from '../learn/content.js';
+import { parseQuery } from '../learn/search.js';
 import { topicById } from '../learn/topics.js';
 import { go } from '../useHashRoute.js';
 
-export default function Topic({ id, chapter }) {
+export default function Topic({ id, chapter, query = '' }) {
   const meta = topicById(id);
   const [data, setData] = useState(undefined); // undefined = loading, null = missing
   const [done, setDone] = useState(() => doneChapters(id));
   const [menu, setMenu] = useState(false);
   const idx = Math.max(0, Number(chapter) || 0);
+  const terms = parseQuery(query);
+  const termKey = terms.join('|');
 
   useEffect(() => { loadTopic(id).then(setData); }, [id]);
-  useEffect(() => { window.scrollTo(0, 0); setMenu(false); }, [id, idx]);
+  useEffect(() => {
+    setMenu(false);
+    if (data === undefined) return undefined;
+    const t = setTimeout(() => {
+      const m = termKey && document.querySelector('article mark');
+      if (m) m.scrollIntoView({ block: 'center' }); else window.scrollTo(0, 0);
+    }, 30);
+    return () => clearTimeout(t);
+  }, [id, idx, termKey, data]);
 
   if (!meta) return <><Header /><main className="p-6">Unknown topic. <a className="text-brand" href="#/learn">Back to Learn</a></main></>;
   if (data === undefined) return <><Header /><main className="p-6 text-slate-500">Loading notes…</main></>;
@@ -25,7 +36,11 @@ export default function Topic({ id, chapter }) {
   const cur = Math.min(idx, n - 1);
   const isDone = done.includes(cur);
   const toggle = () => { setChapterDone(id, cur, !isDone); setDone(doneChapters(id)); };
-  const open = (i) => go(`learn/${id}/${i}`);
+  const open = (i) => go(`learn/${id}/${i}${query ? `/${encodeURIComponent(query)}` : ''}`);
+  const hits = terms.length
+    ? data.chapters.map((c, i) => (terms.every((t) => `${c.title} ${c.body}`.toLowerCase().includes(t)) ? i : -1)).filter((i) => i >= 0)
+    : [];
+  const nextHit = hits.find((i) => i > cur) ?? hits.find((i) => i !== cur);
   const finish = () => { if (!isDone) { setChapterDone(id, cur, true); setDone(doneChapters(id)); } open(cur + 1); };
 
   const toc = (
@@ -37,7 +52,8 @@ export default function Topic({ id, chapter }) {
         <button key={i} onClick={() => open(i)}
           className={cx('flex w-full cursor-pointer items-start gap-2 rounded-lg px-2.5 py-1.5 text-left text-sm', i === cur ? 'bg-emerald-50 font-semibold text-emerald-800' : 'hover:bg-slate-100')}>
           <span className={cx('mt-0.5 grid h-4 w-4 shrink-0 place-items-center rounded-full border text-[10px]', done.includes(i) ? 'border-emerald-500 bg-emerald-500 text-white' : 'border-slate-300')}>{done.includes(i) ? '✓' : ''}</span>
-          <span>{c.title}</span>
+          <span className="flex-1">{c.title}</span>
+          {hits.includes(i) && <span title="Contains your search" className="mt-1 h-2 w-2 shrink-0 rounded-full bg-yellow-400" />}
         </button>
       ))}
     </nav>
@@ -60,11 +76,22 @@ export default function Topic({ id, chapter }) {
           </div>
           {menu && <div className="mb-4 rounded-xl border border-slate-200 bg-white p-3 lg:hidden">{toc}</div>}
 
+          {terms.length > 0 && (
+            <div className="mb-3 flex flex-wrap items-center gap-2 rounded-xl border border-yellow-300 bg-yellow-50 px-3.5 py-2.5 text-sm">
+              <span>🔍 Highlighting <b>{terms.join(' + ')}</b> · {hits.length} chapter{hits.length === 1 ? '' : 's'} in this topic</span>
+              <span className="ml-auto flex gap-2">
+                {nextHit !== undefined && <Button size="sm" onClick={() => open(nextHit)}>Next match →</Button>}
+                <Button size="sm" onClick={() => go('learn')}>← Search results</Button>
+                <Button size="sm" onClick={() => go(`learn/${id}/${cur}`)}>Clear</Button>
+              </span>
+            </div>
+          )}
+
           <article className="rounded-2xl border border-slate-200 bg-white p-5 sm:p-8">
             <p className="text-sm text-slate-500">{meta.title} · Chapter {cur + 1} of {n} · {readMinutes(wordCount(ch.body))} min read</p>
             <h1 className="mb-4 mt-1 text-2xl font-bold">{ch.title}</h1>
-            {cur === 0 && data.intro && <div className="mb-4 rounded-lg bg-slate-50 p-3 text-sm"><Markdown>{data.intro}</Markdown></div>}
-            <Markdown>{ch.body}</Markdown>
+            {cur === 0 && data.intro && <div className="mb-4 rounded-lg bg-slate-50 p-3 text-sm"><Markdown terms={terms}>{data.intro}</Markdown></div>}
+            <Markdown terms={terms}>{ch.body}</Markdown>
           </article>
 
           <div className="mt-4 flex flex-wrap items-center gap-2.5">

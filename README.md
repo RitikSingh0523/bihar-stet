@@ -7,7 +7,7 @@ React + Vite + Tailwind CSS. No backend: everything is static, and progress/resu
   Part I Computer Science 100, Part II Teaching Aptitude 30, Part III General 20 (GK 5, Environment 5, Maths 5, Reasoning 5).
   Timer that survives refresh, question palette, mark-for-review, section/topic-wise results, answer review with explanations.
 - **Subject Tests** (`#/subjects`): one test per subject (23 in total) containing every MCQ of that subject, e.g. all 140 Computer Networks questions.
-- **Learn** (`#/learn`): concept notes for 20 topics (224 chapters), a day-by-day plan counting down to the exam on 7 Nov 2026,
+- **Learn** (`#/learn`): full-text search across every chapter (press `/` to focus, quotes for exact phrases), concept notes for 20 topics (224 chapters), a day-by-day plan counting down to the exam on 7 Nov 2026,
   chapter progress tracking, weak-area suggestions from your mock results and a one-page *Quick Revision Sheets* view (`#/learn/revise`, printable).
 
 ## Run locally

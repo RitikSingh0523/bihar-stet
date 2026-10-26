@@ -12,7 +12,7 @@ import Revise from './pages/Revise.jsx';
 import Subjects from './pages/Subjects.jsx';
 
 export default function App() {
-  const [page, id, extra] = useHashRoute();
+  const [page, id, extra, rawQuery] = useHashRoute();
   const tid = parseTestId(id); // number for mocks, "s-..." string for subject tests
   switch (page) {
     case 'subjects': return <Subjects />;
@@ -23,7 +23,7 @@ export default function App() {
     case 'learn':
       if (!id) return <Learn />;
       if (id === 'revise') return <Revise />;
-      return <Topic key={id} id={id} chapter={extra} />;
+      return <Topic key={id} id={id} chapter={extra} query={rawQuery ? decodeURIComponent(rawQuery) : ''} />;
     default: return <Home />;
   }
 }
