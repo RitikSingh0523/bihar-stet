@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import Header from '../components/Header.jsx';
 import { Badge, Button, Wrap, cx } from '../components/ui.jsx';
-import { getHistory, loadTest } from '../storage.js';
+import { getHistory, isSubjectId, loadTest } from '../storage.js';
 import { go } from '../useHashRoute.js';
 
 const mins = (s) => `${Math.floor(s / 60)}m ${s % 60}s`;
@@ -72,7 +72,7 @@ export default function Result({ id, attemptId }) {
     <>
       <Header />
       <Wrap>
-        <h1 className="mb-1 mt-4 text-2xl font-bold">Mock Test {id} – Result</h1>
+        <h1 className="mb-1 mt-4 text-2xl font-bold">{attempt.title || `Mock Test ${id}`} – Result</h1>
         <p className="text-sm text-slate-500">Submitted {new Date(attempt.at).toLocaleString()} · Time taken {mins(attempt.timeTaken)}</p>
 
         <section className="mt-3 flex flex-wrap items-center gap-6 rounded-2xl border border-slate-200 bg-white p-5">
@@ -96,14 +96,15 @@ export default function Result({ id, attemptId }) {
 
         <div className="mt-5 flex gap-2.5">
           <Button variant="primary" onClick={() => go(`instructions/${id}`)}>Re-attempt</Button>
-          <Button onClick={() => go('home')}>All tests</Button>
+          <Button onClick={() => go(isSubjectId(id) ? 'subjects' : 'home')}>{isSubjectId(id) ? 'All subject tests' : 'All tests'}</Button>
+          {isSubjectId(id) && <Button onClick={() => go('learn')}>Revise in Learn</Button>}
         </div>
 
         <h2 className={H2}>Review answers &amp; explanations</h2>
         <div className="flex flex-wrap items-center gap-2.5">
           {['all', 'correct', 'wrong', 'skipped'].map((f) => <Chip key={f} on={filter === f} onClick={() => setFilter(f)}>{f}</Chip>)}
-          <span className="h-5 w-px bg-slate-200" />
-          {[['all', 'All parts'], ['cs', 'CS'], ['tch', 'Teaching'], ['gen', 'General']].map(([k, l]) => (
+          {attempt.sections.length > 1 && <span className="h-5 w-px bg-slate-200" />}
+          {attempt.sections.length > 1 && [['all', 'All parts'], ['cs', 'CS'], ['tch', 'Teaching'], ['gen', 'General']].map(([k, l]) => (
             <Chip key={k} on={secKey === k} onClick={() => setSecKey(k)}>{l}</Chip>
           ))}
         </div>

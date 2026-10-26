@@ -11,11 +11,18 @@ export const getProgress = (id) => read(K.prog(id), null);
 export const saveProgress = (id, p) => localStorage.setItem(K.prog(id), JSON.stringify(p));
 export const clearProgress = (id) => localStorage.removeItem(K.prog(id));
 
-export async function loadTest(id) {
-  const res = await fetch(`${import.meta.env.BASE_URL}tests/mock-${String(id).padStart(2, '0')}.json`);
+// Test ids: numbers (1-20) are full mocks, strings like "s-cs-net" are subject tests.
+export const isSubjectId = (id) => typeof id === 'string' && id.startsWith('s-');
+export const parseTestId = (raw) => (/^\d+$/.test(raw) ? Number(raw) : raw);
+
+async function getJson(file) {
+  const res = await fetch(`${import.meta.env.BASE_URL}tests/${file}.json`);
   if (!res.ok) throw new Error('Test not found');
   return res.json();
 }
+
+export const loadTest = (id) => getJson(isSubjectId(id) ? id : `mock-${String(id).padStart(2, '0')}`);
+export const loadSubjects = () => getJson('subjects');
 
 export function bestScores() {
   const best = {};

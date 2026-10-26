@@ -72,7 +72,7 @@ export default function Topic({ id, chapter }) {
             <Button onClick={toggle}>{isDone ? '✓ Completed (undo)' : 'Mark as done'}</Button>
             {cur < n - 1
               ? <Button variant="primary" className="sm:ml-auto" onClick={finish}>Done & next chapter →</Button>
-              : <Button variant="primary" className="sm:ml-auto" onClick={() => { if (!isDone) toggle(); go('home'); }}>Finish · practise mocks →</Button>}
+              : <Button variant="primary" className="sm:ml-auto" onClick={() => { if (!isDone) toggle(); go('subjects'); }}>Finish · practise subject tests →</Button>}
           </div>
         </main>
       </div>

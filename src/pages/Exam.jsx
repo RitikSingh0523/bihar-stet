@@ -71,7 +71,7 @@ export default function Exam({ id }) {
     const at = Date.now();
     const r = evaluate(test, st.answers);
     addAttempt({
-      testId: id, at, ...r, answers: st.answers,
+      testId: id, title: test.title, at, ...r, answers: st.answers,
       timeTaken: Math.min(Math.round((at - st.startAt) / 1000), test.duration * 60),
     });
     clearProgress(id);
@@ -114,7 +114,7 @@ export default function Exam({ id }) {
         </div>
       </div>
 
-      <div className="flex gap-1 overflow-x-auto border-b border-slate-200 bg-white px-4">
+      <div className={cx('flex gap-1 overflow-x-auto border-b border-slate-200 bg-white px-4', test.sections.length < 2 && 'hidden')}>
         {test.sections.map((s, i) => (
           <button key={s.key} onClick={() => jump(starts[i])}
             className={cx('cursor-pointer whitespace-nowrap border-b-[3px] px-3.5 py-2.5 text-sm', q.si === i ? 'border-brand font-semibold text-brand' : 'border-transparent')}>

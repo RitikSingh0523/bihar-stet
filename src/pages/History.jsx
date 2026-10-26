@@ -29,10 +29,12 @@ export default function History() {
               <tbody>
                 {list.map((a) => (
                   <tr key={a.at}>
-                    <td className={TD}>Mock {a.testId}</td>
+                    <td className={TD}>{a.title || `Mock ${a.testId}`}</td>
                     <td className={TD}>{new Date(a.at).toLocaleString()}</td>
                     <td className={TD}><b>{a.score}/{a.total}</b></td>
-                    {a.sections.map((s) => <td key={s.name} className={TD}>{s.score}/{s.total}</td>)}
+                    {a.sections.length === 1
+                      ? <td colSpan={3} className={`${TD} text-slate-500`}>Subject test · {a.sections[0].attempted} attempted</td>
+                      : a.sections.map((s) => <td key={s.name} className={TD}>{s.score}/{s.total}</td>)}
                     <td className={TD}><Button size="sm" onClick={() => go(`result/${a.testId}/${a.at}`)}>View</Button></td>
                   </tr>
                 ))}

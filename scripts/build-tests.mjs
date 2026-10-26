@@ -69,5 +69,20 @@ for (let m = 1; m <= MOCKS; m++) {
   fs.writeFileSync(path.join(OUT, `mock-${String(m).padStart(2, '0')}.json`),
     JSON.stringify({ id: m, title: `Mock Test ${m}`, duration: 150, sections }));
 }
+// ---- Subject-wise tests: one test per topic pool, containing every question of that pool ----
+const manifest = [];
+for (const s of SECTIONS) for (const [id, label] of s.topics) {
+  const qs = shuffle(pools[id].map((x) => ({ q: x.q, options: x.options, answer: x.answer, exp: x.exp || '', topic: label })), rng(77 + id.length * 131 + id.charCodeAt(id.length - 1)));
+  const duration = qs.length; // 1 minute per question, as in the real paper
+  const sid = `s-${id}`;
+  fs.writeFileSync(path.join(OUT, `${sid}.json`), JSON.stringify({
+    id: sid, title: `${label} – Subject Test`, duration,
+    sections: [{ key: s.key, name: label, short: label, questions: qs }],
+  }));
+  manifest.push({ id: sid, title: label, group: s.key, count: qs.length, duration });
+}
+fs.writeFileSync(path.join(OUT, 'subjects.json'), JSON.stringify(manifest));
+console.log(`Built ${manifest.length} subject tests, ${manifest.reduce((a, m) => a + m.count, 0)} questions.`);
+
 console.log(`Built ${MOCKS} mocks, ${total} questions.`);
 if (problems.length) { console.log(`\n${problems.length} PROBLEMS:`); problems.slice(0, 60).forEach((p) => console.log(' -', p)); process.exitCode = 1; }

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useHashRoute } from './useHashRoute.js';
+import { parseTestId } from './storage.js';
 import Home from './pages/Home.jsx';
 import Instructions from './pages/Instructions.jsx';
 import Exam from './pages/Exam.jsx';
@@ -8,14 +9,16 @@ import History from './pages/History.jsx';
 import Learn from './pages/Learn.jsx';
 import Topic from './pages/Topic.jsx';
 import Revise from './pages/Revise.jsx';
+import Subjects from './pages/Subjects.jsx';
 
 export default function App() {
   const [page, id, extra] = useHashRoute();
-  const n = Number(id);
+  const tid = parseTestId(id); // number for mocks, "s-..." string for subject tests
   switch (page) {
-    case 'instructions': return <Instructions id={n} />;
-    case 'exam': return <Exam key={n} id={n} />;
-    case 'result': return <Result key={`${n}-${extra}`} id={n} attemptId={extra ? Number(extra) : null} />;
+    case 'subjects': return <Subjects />;
+    case 'instructions': return <Instructions key={tid} id={tid} />;
+    case 'exam': return <Exam key={tid} id={tid} />;
+    case 'result': return <Result key={`${tid}-${extra}`} id={tid} attemptId={extra ? Number(extra) : null} />;
     case 'history': return <History />;
     case 'learn':
       if (!id) return <Learn />;

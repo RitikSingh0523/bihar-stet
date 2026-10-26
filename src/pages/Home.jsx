@@ -46,6 +46,11 @@ export default function Home() {
           <span className="shrink-0 font-semibold text-emerald-700">Learn →</span>
         </button>
 
+        <button onClick={() => go('subjects')} className="mt-3 flex w-full cursor-pointer items-center justify-between gap-3 rounded-xl border border-fuchsia-200 bg-fuchsia-50 px-4 py-3 text-left hover:border-fuchsia-400">
+          <span><b className="text-fuchsia-900">🎯 Want to drill one subject?</b> <span className="text-sm text-fuchsia-800">Subject-wise tests – all MCQs of Networks, OS, DBMS… in a single test.</span></span>
+          <span className="shrink-0 font-semibold text-fuchsia-700">Subject Tests →</span>
+        </button>
+
         <div className="mb-3 mt-6 flex items-center justify-between">
           <h2 className="text-xl font-semibold">Choose a test</h2>
           <span className="text-sm text-slate-500">{done}/{TOTAL} completed{done ? ` · average best score ${avg}/150` : ''}</span>

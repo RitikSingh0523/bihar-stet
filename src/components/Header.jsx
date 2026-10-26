@@ -12,6 +12,7 @@ export default function Header() {
         <nav className="flex gap-4 text-sm">
           <button className="cursor-pointer font-semibold text-emerald-700 hover:text-emerald-900" onClick={() => go('learn')}>Learn</button>
           <button className="cursor-pointer hover:text-brand" onClick={() => go('home')}>Mock Tests</button>
+          <button className="cursor-pointer hover:text-brand" onClick={() => go('subjects')}>Subject Tests</button>
           <button className="cursor-pointer hover:text-brand" onClick={() => go('history')}>My Attempts</button>
         </nav>
       </div>
