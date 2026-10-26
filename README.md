@@ -25,3 +25,9 @@ React + Vite + Tailwind CSS. No backend: everything is static, and progress/resu
 Static site using hash routing and relative asset paths, so it works on any static host.
 - **GitHub Pages:** repo *Settings → Pages → Source: GitHub Actions*; `.github/workflows/deploy.yml` builds and publishes on every push to `main`.
 - **Vercel / Netlify:** build command `npm run build`, output directory `dist`.
+
+## PWA / offline
+The app is an installable Progressive Web App (`vite-plugin-pwa`): a service worker precaches the app shell, all notes and all 43 test files,
+so everything (mock tests, subject tests, Learn, results) works offline after the first visit. Use *Install app* in the header (or the browser's
+install / "Add to Home screen" option). Icons are generated from `public/icon.svg` with `node scripts/make-icons.mjs`.
+Note: PWAs need HTTPS (GitHub Pages, Vercel and Netlify all provide it) or `localhost`.

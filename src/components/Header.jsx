@@ -1,5 +1,6 @@
 import React from 'react';
 import { go } from '../useHashRoute.js';
+import InstallButton from './InstallButton.jsx';
 
 export default function Header() {
   return (
@@ -9,7 +10,8 @@ export default function Header() {
           <span className="grid h-7 w-7 place-items-center rounded-lg bg-brand text-white">S</span>
           Bihar STET <small className="hidden font-normal text-slate-500 sm:inline">Computer Science · Paper II</small>
         </a>
-        <nav className="flex gap-4 text-sm">
+        <nav className="flex items-center gap-3 overflow-x-auto whitespace-nowrap text-sm sm:gap-4">
+          <InstallButton />
           <button className="cursor-pointer font-semibold text-emerald-700 hover:text-emerald-900" onClick={() => go('learn')}>Learn</button>
           <button className="cursor-pointer hover:text-brand" onClick={() => go('home')}>Mock Tests</button>
           <button className="cursor-pointer hover:text-brand" onClick={() => go('subjects')}>Subject Tests</button>
